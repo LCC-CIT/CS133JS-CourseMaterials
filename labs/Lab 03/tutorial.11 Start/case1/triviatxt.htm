@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      New Perspectives on HTML, CSS, and JavaScript
+      Tutorial 11
+      Case Problem 1
+
+      Trivia Quiz: Movies
+      Author: 
+      Date:   
+
+      Filename:         trivia.htm
+      Supporting files: functions.js, modernizr-1.5.js,
+                        quiz.css, tlogo.png
+
+   -->
+
+      <meta charset="UTF-8" />
+      <title>Trivia Quiz: Movies</title>
+      <script src="modernizr-1.5.js" type="text/javascript" ></script>
+      <link href="quiz.css" rel="stylesheet" type="text/css" />
+
+
+   </head>
+
+   <body>
+      <form id="quiz" name="quiz" action="">
+
+      <header>
+         <img src="tlogo.png" alt="Online Trivia" />
+         <nav class="horizontal">
+            <ul>
+            <li><a href="#">Top Scores</a></li>
+            <li><a href="#">Submit a Quiz</a></li>
+            <li><a href="#">Quiz Bowl</a></li>
+            <li><a href="#">Your Account</a></li>
+         </ul>
+      </nav>
+
+      </header>
+
+      <nav class="vertical">
+         <h1>Categories</h1>
+         <ul>
+            <li><a href="#">Arts</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Culture</a></li>
+            <li><a href="#">Geography</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Random</a></li>
+            <li><a href="#">Science</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Television</a></li>
+         </ul>
+      </nav>
+
+      <section id="main">
+         <h1>Movie Trivia</h1>
+
+         <p>All of our trivia quizzes are scored on the number of correct
+            answers and the time required to submit those answers.
+         </p>
+         <p>To start the quiz, click the <b>Start Quiz</b> button below, 
+            which will reveal the first page of quiz questions and start 
+            the timer. When you have completed the questions, click 
+            the <b>Submit Answers</b> button on the quiz form.
+         </p>
+
+         <aside>
+            <input name="quizclock" id="quizclock" value="0" />
+            <input id="start" type="button" value="Start Quiz" />
+            <input id="stop" type="button" value="Submit Answers" />
+
+         </aside>
+
+    
+         <table id="quiztable">
+            <tr>
+               <th rowspan="3">1.</th>
+               <td colspan="2">
+                  Finish this famous line from <i>The Godfather</i>: 'Leave the gun, take the _____'
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <input type="radio" name="q1" id="q1a" /> <label for="q1a"> a) money</label>
+               </td>
+               <td id="cor1">
+                  <input type="radio" name="q1" id="q1c" /> <label for="q1c"> c) cannoli</label>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <input type="radio" name="q1" id="q1b" /> <label for="q1b"> b) bullets</label>
+               </td>
+               <td>
+                  <input type="radio" name="q1" id="q1d" /> <label for="q1d"> d) body</label>
+               </td>
+            </tr>
+
+
+            <tr>
+               <th rowspan="3">2.</th>
+               <td colspan="2">
+                  What was John Wayne's last film?
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <input type="radio" name="q2" id="q2a" /> <label for="q1"> <label for="q2a"> a) The Green Berets</label>
+               </td>
+               <td>
+                  <input type="radio" name="q2" id="q2c" /> <label for="q1"> <label for="q2c"> c) The Cowboys</label>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <input type="radio" name="q2" id="q2b" /> <label for="q1"> <label for="q2b"> b) Rooster Cogburn</label>
+                </td>
+                <td id="cor2">
+                   <input type="radio" name="q2" id="q2d" /> <label for="q1"> <label for="q2d"> d) The Shootist</label>
+                </td>
+            </tr>
+
+            <tr>
+               <th rowspan="3">3.</th>
+               <td colspan="2">
+                  In what country does <i>The Sound of Music</i> take place?
+               </td>
+            </tr>
+            <tr>
+               <td id="cor3">
+                  <input type="radio" name="q3" id="q3a" /> <label for="q3a"> a) Austria</label>
+               </td>
+               <td>
+                  <input type="radio" name="q3" id="q3c" /> <label for="q3c"> c) Poland</label>
+               </td>
+            </tr>  
+            <tr>
+               <td>
+                  <input type="radio" name="q3" id="q3b" /> <label for="q3b"> b) Germany</label>
+               </td>
+               <td>
+                  <input type="radio" name="q3" id="q3d" /> <label for="q3d"> d) Switzerland</label>
+               </td>
+            </tr>
+
+            <tr>
+               <th rowspan="3">4.</th>
+               <td colspan="2">
+                  Which of the following did not play a golfer in a movie?
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <input type="radio" name="q4" id="q4a" /> <label for="q4a"> a) Kevin Costner</label>
+               </td>
+               <td>
+                  <input type="radio" name="q4" id="q4c" /> <label for="q4c"> c) Adam Sandler</label>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <input type="radio" name="q4" id="q4b" /> <label for="q4b"> b) Katharine Hepburn</label>
+               </td>
+               <td id="cor4">
+                  <input type="radio" name="q4" id="q4d" /> <label for="q4d"> d) Jimmy Stewart</label>
+               </td>
+            </tr>
+
+            <tr>
+               <th rowspan="3">5.</th>
+               <td colspan="2">
+                  Which of the following movies does not involve a baby?
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <input type="radio" name="q5" id="q5a" /> <label for="q5a"> a) Raising Arizona</label>
+               </td>
+               <td>
+                  <input type="radio" name="q5" id="q5c" /> <label for="q5c"> c) Three Men and a Baby</label>
+               </td>
+            </tr>
+            <tr>
+               <td id="cor5">
+                  <input type="radio" name="q5" id="q5b" /> <label for="q5b"> b) Bringing up Baby</label>
+               </td>
+               <td>
+                  <input type="radio" name="q5" id="q5d" /> <label for="q5d"> d) For Keeps</label>
+               </td>
+            </tr>
+
+         </table>
+
+      </section>
+
+      <footer>#</footer>
+      </form>
+
+   </body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Brian Bird
+		 Lane Community College
+		 1/24/13
+	-->
+	<title>Tutorial 11 Concepts</title>
+</head>
+<body>
+	<h1>Arithmetic operators</h1>
+	<p>Write code to do the five basic math operations and
+	show results</p>
+	
+	<script type="text/javascript">
+		var x = 4;
+		var y = 9;
+		var z;
+		
+		z = x + y;
+		document.write("The sum is: " + z);
+		z = y / x;
+		document.write("The quotient is: " + z);
+		z = y % x;
+		document.write("The remainder is: " + z);
+	
+		
+	</script>
+	
+	<p>Use the increment and decrement operators.</p>
+	<script type="text/javascript">
+		var x = 0;
+		x++;
+		document.write("x incremented: " + ++x + "<br />");
+		document.write("x incremented again: " + x++ + "<br />");
+		document.write("x after postfix inc: " + x + "<br />");
+		document.write("x after decrement: " + --x + "<br />");
+		z = -x;
+		document.write("x after reversing sign: " + z + "<br />");
+		y = 5;
+		document.write("y negated: " + -y + "<br />");
+		document.write("y after being negated: " + y + "<br />");
+	</script>
+
+	<h1>Combined math and assignment operators</h1>
+	<p>Rewrite the five basic math operations using the combined
+	assignments and math operators</p>
+	<script type="text/javascript">
+		var x = 4;
+		var y = 4;
+		var z;
+		
+		x = x + 5;
+		document.write("The sum is: " + x + "<br />");
+		y += 5;
+		document.write("The sum is: " + y + "<br />"); // 9
+		x *= 10;
+		document.write("The sum is: " + x + "<br />"); // 90
+		x /= 5;
+		document.write("The sum is: " + x + "<br />"); // 18
+		x -= 8;
+		document.write("The sum is: " + x + "<br />"); // 10
+		x %= 4;
+		document.write("The sum is: " + x + "<br />"); // 2
+	
+		
+	</script>
+	
+
+	<h1>Math object</h1>
+	<p>Use some of the math functions like: ceil(x), floor(x), 
+	max(x, y), min(x, y), random(), round(x), PI</p>
+	<script type="text/javascript">
+		document.write("The ceiling of 3.2 is: " 
+									+ Math.ceil(3.2) + "<br />");
+		document.write("The floor of 3.2 is: " 
+									+ Math.floor(3.2) + "<br />");
+		document.write("The round of 3.5 is: " 
+									+ Math.round(3.5) + "<br />");
+		document.write("The random function returns: " 
+									+ Math.random() + "<br />");
+
+		y = Math.ceil(6 * Math.random());
+		document.write(y);
+		
+	</script>
+	<h1>Number format</h1>
+	Use .toFixed to change the number of decimal places displayed
+	
+	<h1>Conversions</h1>
+	Convert a number to a string by appending a string to it.
+	
+	Use parseFloat and parseInt to extract numbers from strings
+	
+
+</body>
+</html>

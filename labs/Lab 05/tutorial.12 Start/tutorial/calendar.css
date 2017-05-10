@@ -1,0 +1,75 @@
+/*
+   New Perspectives on HTML, CSS, and JavaScript
+   Tutorial 5
+   Case Problem 2
+
+   CCC Calendar Table style sheet
+   Author: Lewis Kern
+   Date:   3/1/2014
+
+   Filename:         calendar.css
+   Supporting Files: bottom.jpg, bottomleft.jpg, bottomright.jpg,
+                     left.jpg, right.jpg, top.jpg,
+                     tab.jpg, topleft.jpg, topright.jpg, redtab.jpg
+
+*/
+
+
+#calendar_table {
+   background-color: rgb(246, 224, 224); 
+   border: 10px outset rgb(191, 191, 191);
+ 
+   font-size: 10px; 
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0px 0px 5px 5px;
+   width: 100%;
+
+   -moz-box-shadow: -5px 5px 22px black;
+   -webkit-box-shadow: -5px 5px 22px black;
+   box-shadow: -5px 5px 22px black;
+
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+}
+
+#calendar_head {
+   color: rgb(211, 211, 211); 
+   letter-spacing: 5px;
+   height: 25px;
+   line-height: 25px;
+   font-size: 14px;
+
+   background-color: rgb(223,29,29); 
+   background: -o-linear-gradient(0deg, rgb(223, 29, 29), black, rgb(223, 29, 29));
+   background: -ms-linear-gradient(0deg, rgb(223, 29, 29), black, rgb(223, 29, 29));
+   background: -moz-linear-gradient(0deg, rgb(223, 29, 29), black, rgb(223, 29, 29));
+   background: -webkit-linear-gradient(0deg, rgb(223, 29, 29), black, rgb(223, 29, 29)); 
+   background: linear-gradient(0deg, rgb(223, 29, 29), black, rgb(223, 29, 29));
+}
+
+.calendar_weekdays {
+   background-color: white;
+   width: 14%; 
+   font-size: 12px; 
+   border-bottom: 3px solid gray;
+}
+
+.calendar_dates {
+   text-align: left; 
+   vertical-align: top;
+   font-size: 9px;
+   padding: 3px;
+   border: 1px dotted gray;
+   background-color: white;
+   height: 60px;
+}
+
+#calendar_today {
+   font-weight: bold; 
+   color: rgb(223,29,29); 
+   background-color: ivory;
+   border: 1px solid black;
+}
+
+

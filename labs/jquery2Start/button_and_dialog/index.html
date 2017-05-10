@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Button and dialog</title>
+    <!-- jQuery UI style sheet reference. Smoothness is the theme used. -->
+    <link href="css/smoothness/jquery-ui-1.8.23.custom.css" type="text/css" rel="stylesheet">
+	<!-- Normal style sheet used for layout and general formatting. -->
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <!-- HTML5 shim/shiv for HTML5 section element backward compatibility. -->
+	<script src="../modernizer-1.5.js"></script>
+    <!-- jQuery library reference. Latest is always referenced from jQuery's CDN. -->
+	<script src="../jquery-1.8.2.min.js"></script>    
+    <!-- jQuery UI JavaScript library reference. -->
+    <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+    <!-- jQuery to convert standard input type buttons into jQuery UI buttons. -->
+    <!-- Also contains code to display modal dialog boxes when the buttons are clicked. -->
+	<script>
+		$(document).ready(function() {
+			$("#book").button();
+	
+			$("#book").click(function() { 
+				$("#dialog").dialog({modal:true});
+			});
+		});
+	</script>
+</head>
+	
+<body>
+    <section>
+    	<h1>Featured Book</h1>
+        <a id="book"><img src="images/javascriptbook.jpg" alt="JavaScript book" width="159" height="192" /></a>
+        <div id="dialog" title="JavaScript and DOM Scripting" style="display: none;">
+            <p>Go from JavaScript beginner to DOM scripting expert in a 
+		    single book! Fast-paced, professional, and packed with expert practices, our 
+			new JavaScript book guides you through each step as you learn how to program 
+			sites that enhance the user experience and ensure browser compatibility.</p>
+        </div>
+        <br><br><br><br><br><br>
+    </section>	
+</body>
+</html>

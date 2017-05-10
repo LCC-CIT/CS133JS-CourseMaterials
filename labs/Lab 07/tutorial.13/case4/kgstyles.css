@@ -1,0 +1,132 @@
+/*
+   New Perspectives on HTML5, CSS and JavaScript
+   Tutorial 13
+   Case Problem 4
+
+   The Word Search Style Sheet
+
+   Filename:         kgstyles.css
+   Supporting Files: 
+
+*/
+
+
+/* Display HTML5 structural elements as blocks */
+
+article, aside, figure, figcaption, footer, hgroup, header, 
+section, nav {
+   display: block;
+}
+
+
+/* Set the default page element styles */
+
+body {
+   margin: 0px;
+}
+
+body * {
+
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 100%;
+   font-weight: inherit;
+   line-height: 1.2em;
+   margin: 0px;
+   padding: 0px;
+   text-decoration: none;
+   vertical-align: baseline;
+
+}
+
+
+/* Styles for the main page section */
+section {
+   position: absolute;
+   margin: 0px auto;
+   width: 100%;
+   
+}
+
+
+header img {
+   margin-top: 10px;
+   margin-left: 54px;
+}
+
+#links {
+   position: absolute;
+   left: 0px;
+   top: 102px;
+}
+
+
+
+/* Styles for the main article */
+article {
+   position: absolute;
+   left: 213px;
+   top: 106px;
+}
+
+article img {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+
+article #h1img {
+   position: absolute;
+   top: 48px;
+   left: 129px;
+}
+
+
+
+
+
+/* Word search table placement */
+
+figure#wordTable {
+   float: left;
+   margin-top: 150px;
+   width: 600px;
+}
+
+
+/* Placement of the aside element containing the list of hidden words */
+
+aside {
+   float: left;
+   width: 220px;
+   margin-top: 150px;
+   margin-left: 10px;
+}
+
+aside h1 {
+   font-size: 24px;
+   letter-spacing: 5px;
+   margin: 0px 0px 20px 0px;
+}
+
+aside p {
+   font-size: 14px;
+   margin: 10px 0px;
+}
+
+
+
+/* div element containing the Show Solution button */
+
+article div {
+   clear: left;
+   float: left;
+   width: 600px;
+   margin-top: 10px;
+   text-align: center;
+}
+
+article div input {
+   width: 150px;
+   font-size: 14px;
+   height: 30px;
+}

@@ -1,0 +1,118 @@
+/*
+   New Perspectives on HTML, CSS, and JavaScript
+   Tutorial 12
+   Case Problem 2
+   Filename: results.css
+
+   This file contains styles used in the election.htm file
+
+*/
+
+
+/* Default Styles */
+
+* {
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+}
+
+header, figure, footer, article, nav, section {
+   display: block;
+}
+
+body {
+   background: white url(back.jpg) top left repeat-y;
+   font-family: Verdana, Geneva, sans-serif;
+}
+
+nav {
+   float: left;
+   width: 200px;
+}
+
+nav ul {
+   margin-left: 15px;
+}
+
+nav ul li {
+   line-height: 35px;
+   height: 35px;
+   margin: 5px 0px;
+}
+
+nav ul li a {
+   color: black;
+   font-size: 0.9em;
+   text-decoration: none;
+}
+
+nav ul li a:hover {
+   text-decoration: underline;
+}
+
+article {
+   float: left;
+   margin: 20px 0px 0px 20px;
+}
+
+
+
+article h1 {
+   font-size: 22px; 
+   letter-spacing: 5px; 
+   margin: 0px;
+}
+
+article h2 {
+   font-size: 14px; 
+   margin-top: 12px; 
+   margin-bottom: 0px;
+}
+
+article table {
+   font-size: 10px; 
+   margin-top: 0px;
+   border-collapse: collapse;
+}
+
+article th {
+   width: 170px; 
+   text-align: left; 
+   border-bottom: 1px solid black;
+}
+
+article td {
+   margin: 0px;
+}
+
+article .num {
+   text-align: right; 
+   width: 50px; 
+   padding-right: 5px;
+}   
+
+article .dem {
+   background-color: rgb(174,224,250); 
+   width: 2px;
+}
+
+article .rep {
+   background-color: red; 
+   width: 2px;
+}
+
+article .ind {
+   background-color: rgb(255,192,255); 
+   width: 2px;
+}
+
+article .green {
+   background-color: rgb(128,255,128); 
+   width: 2px;
+}
+
+article .lib {
+   background-color: cyan; 
+   width: 2px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+		<script type="text/javascript" src="functions.js"></script>
+		<script type="text/javascript">
+			function sum(num1, num2)	// a function with numeric parameters that returns a numeric value
+			{
+				return num1 + num2;
+			}
+			
+			function checkSum(num1, num2, sum)	// a function with numeric parameters that returns a boolean value
+			{
+				var correct = false;
+				if (sum == num1 + num2)
+					correct = true;
+				
+				return correct;
+			}
+			
+			function noParamsNoReturn()		// a function with no parameters and no return value
+			{
+				document.write("Here I am!");	
+			}
+		</script>
+   </head>
+
+   <body>
+		<a href="http://lanecc.edu">Lane CC</a><br />
+		<pre>
+		<script type="text/javascript">
+			var num;		// defining a variable
+			num = null;		// assigning a value (now the variable's type is null
+			if (num == 0)	// demonstraing that null and 0 are not the same thing
+				document.writeln("It's zero");
+			else
+				document.writeln("It's not zero");
+				
+			document.writeln(num == 0);	// showing that the result of a comparison is a boolean value
+		
+			document.writeln("The contents of num: " + num);	// showing how varialbe containing null is displayed
+			num = sum(3,7);										// assigning a value to a variable. Now it's type is numeric
+			document.writeln("The sum is: " + num);
+			document.writeln("<a href='http://lanecc.edu'>Lane CC</a>");	// showing how to use write with multiple quotes
+			var linkText = "Lane CC";
+			document.writeln("<a href='http://lanecc.edu'>" + linkText + "</a>");	// how to use + for concatenation
+			
+			document.writeln("Is 2 + 2 = 7? " + checkSum(2, 2, 7) );	// calling a function and writing a boolean value
+			document.writeln(showDate());					// calling a funciton and writng a string
+			
+		</script>
+		</pre>
+	</body>
+</html>

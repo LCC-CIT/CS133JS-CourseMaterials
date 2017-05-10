@@ -1,0 +1,151 @@
+/*
+   New Perspectives on HTML5, CSS, and JavaScript
+   Tutorial 13
+   Case Problem 3
+
+   Author:   
+   Date:     
+   Filename: pullmenu.css
+
+   This file contains styles used to format the menus on the 
+   22B Blog Web site
+
+*/
+
+/* Styles for the main navigation bar at the top of the page */
+nav#menuBar {
+   height: 30px;
+   padding: 5px 0px;
+   border: 1px solid rgb(171, 171, 171);
+   background-color: rgb(211, 211, 211);
+   background: -o-linear-gradient(white 5px, rgb(221, 221, 221), rgb(196, 196, 196));
+   background: -ms-linear-gradient(white 5px, rgb(221, 221, 221), rgb(196, 196, 196));
+   background: -moz-linear-gradient(white 5px, rgb(221, 221, 221), rgb(196, 196, 196));
+   background: -webkit-linear-gradient(white 5px, rgb(221, 221, 221), rgb(196, 196, 196));
+   background: linear-gradient(white 5px, rgb(221, 221, 221), rgb(196, 196, 196));
+}
+
+
+
+/* Style for each drop-down menu in the main bar */
+nav#menuBar > ul > li {
+   display: block;
+   float: left;
+   width: 16.66%;
+}
+
+/* Styles for the drop-down menu heading */
+nav#menuBar > ul > li > h1 {
+   display: block;
+   border: 1px solid transparent;
+   font-size: 12px;
+   font-family: 'Segoe UI', sans-serif;
+   font-weight: normal;
+   text-align: center;
+   height: 30px;
+}
+
+nav#menuBar > ul > li > h1:hover {
+   color: rgb(51, 51, 51);
+
+   background-color: rgb(51,153, 255);
+   background-color: rgba(51,153, 255, 0.3);
+
+   border: 1px solid rgba(151, 151, 151, 0.4);
+   -moz-border-radius: 7px;
+   -webkit-border-radius: 7px;
+   border-radius: 7px;
+}
+
+/* Styles for each submenu in the main navigation bar */
+nav#menuBar > ul > li > h1 + ul {
+   margin-top: 3px;
+   border: 1px solid rgb(101, 101, 101);
+   border: 1px solid rgba(51, 51, 51, 0.3);
+   background-color: rgb(232, 232, 232);
+   -moz-box-shadow: rgba(101, 101, 101, 0.5) 5px 5px 15px;
+   -webkit-box-shadow: rgba(101, 101, 101, 0.5) 5px 5px 15px;
+   box-shadow: rgba(101, 101, 101, 0.5) 5px 5px 15px;
+}
+
+nav#menuBar > ul > li > h1 + ul li {
+   display: block;
+   margin: 0px 3px 0px 3px;
+}
+
+nav#menuBar > ul > li > h1 + ul li a {
+   display: block;
+   border: 1px solid transparent;
+   font-size: 10px;
+   margin: 0px;
+   padding: 4px 0px;
+   width: 100%;
+}
+
+nav#menuBar > ul > li > h1 + ul li a:hover {
+
+   background-color: rgb(51,153, 255);
+   background-color: rgba(51,153, 255, 0.3);
+   border: 1px solid rgba(51, 153, 255, 0.7);
+
+}
+
+
+
+
+
+/* Styles for the submenus in the vertical navigation list */
+
+nav.vertical > ul {
+   margin-left: 10px;
+   width: 180px;
+}
+
+nav.vertical > ul > li {
+   font-size: 12px;
+   display: block;
+   margin: 5px 0px;
+   width: 100%;
+}
+
+nav.vertical li.newgroup {
+   margin-top: 25px;
+}
+
+nav.vertical a {
+   display: block;
+   width: 100%;
+}
+
+nav.vertical h1 {
+   width: 100%;
+   font-weight: normal;
+   font-size: 12px;
+}
+
+nav.vertical > ul li > ul {
+   margin-left: 15px;
+}
+
+nav.vertical > ul li > ul > li {
+   margin: 10px 0px;
+}
+
+nav.vertical > ul > li > ul > li:last-of-type {
+   padding-bottom: 10px;
+}
+
+nav.vertical h1 img {
+   float: right;
+}
+
+nav.vertical ul li a:hover {
+   background-color: rgb(235, 235, 255);
+}
+
+
+
+
+
+/* Add styles for the submenu and submenu heading */
+

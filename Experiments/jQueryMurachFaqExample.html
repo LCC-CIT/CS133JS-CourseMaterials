@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="jquery-1.8.2.min.js"></script>
+
+	<script>
+		function jqStuff()
+		{
+			jQuery("#faqs").css("color", "green");
+			
+			// Selecting anything other than an id returns an array
+			// But the array is internal to the jQuery selector
+			$("p").css("color", "red");
+			$(".plus").css("color", "purple");
+			//$("li").each(function() {
+			$("li:contains('free')").each(function() {
+				//alert($(this).text());
+				//if($(this).text() == "It's free.")
+
+					$(this).css("color", "black");
+			// Selecting an id returns a single element
+			$("#title").text("FAQs for jQuery").css("color", "blue");
+			// Selecting by multiple criteria does an OR operation
+			$("h1, .plus").css("text-decoration", "underline");
+			$("div > p").css("font-style", "italic");
+			});
+		}
+		
+		jQuery(document).ready(jqStuff);
+		
+		/*
+		$(document).ready(function() {
+			jQuery("#faqs").css("color", "green");
+			$("p").css("color", "red");
+			$(".plus").css("color", "purple");
+		});
+		*/
+	</script>
+</head>
+<body>
+	<section id="faqs">
+		<h1 id="title">jQuery FAQs</h1>
+		<h2 class="plus">What is jQuery?</h2>
+		<div>
+			<p>jQuery is a library of the JavaScript functions that you're most 
+		likely to need as you develop web sites.
+			</p>
+		</div>
+		<h2 class="plus">Why is jQuery becoming so popular?</h2>
+		<div>
+			<p>Three reasons:</p>
+			<ul>
+				<li>It's free.</li>
+				<li>It lets you get more done in less time.</li>
+				<li>All of its functions are cross-browser compatible.</li>
+			</ul>
+		</div>
+		<h2 class="plus">Which is harder to learn: jQuery or JavaScript?</h2>
+		<div>
+			<p>For most functions, jQuery is significantly easier to learn 
+			and use than JavaScript. But remember that jQuery is JavaScript.
+			</p>
+		</div>
+	</section>
+	
+	<h2>Another h2 heading</h2>
+	<p> Another paragraph</p>
+	
+</body>
+</html>

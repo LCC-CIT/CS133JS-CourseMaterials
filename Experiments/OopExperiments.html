@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+	OOP experiments
+	CS133JS
+	Brian Bird
+	3/5/2013                
+   -->
+
+      <meta charset="UTF-8" />
+      <title>OOP Experiments</title>
+	  
+	<style type="text/css">
+		.inputBox {
+			background-color:yellow;
+		}
+	</style>
+
+	<script type="text/javascript">
+		window.onload = DomDemo;
+		
+		function DomDemo()
+		{
+			/*
+			var text = document.getElementById("multilineText");
+			text.value = "test";
+			var heading = document.getElementsByTagName("h1");
+			heading[0].innerHTML = "DOM Demo";
+			document.getElementById("entryB").className = "inputBox";
+			submitButton = document.getElementById("submitbutton");
+			submitButton.onclick = SubmitValues;
+			*/
+		}
+		
+		function SubmitValues()
+		{
+			/*
+			var text = document.getElementById("multilineText");
+			var inputBoxes = document.getElementsByClassName("inputBox");
+			text.value = inputBoxes[0].value + "\n"; 
+			text.value += inputBoxes[1].value + "\n";
+			text.value += this.value;
+			*/
+		}
+		
+	</script>
+   </head>
+
+   <body>  
+   <pre>
+   <script>
+		// Array is really an object! Wow!
+		Array[0] = 5;
+		Array[1] = 10;
+		Array[2] = 15;
+		document.writeln(Array[1]);
+		
+		var num = 1;
+		var chr = "1";
+		if(num == chr) document.writeln( "1 equals '1'");
+		if(num !== chr) document.writeln( "1 does not exactly equal '1'");
+		if(num.toString(10) === chr) document.writeln( "1 toString exactly equals '1'");
+		num = "1";
+		if(num === chr) document.writeln( "Now '1' does exactly equal '1'");
+		
+		
+		var aNum = new Number(2);
+		var aString = new String("2");
+		if (aNum !== aString) document.writeln("aNum is not the same type as aString");
+		aNum = "2";
+		if (aNum !== aString) document.writeln("aNum is still not the same type as aString");
+		
+   </script>
+   </pre>
+   
+		<h1>Demo Form</h1>
+		<form id="demoForm" action="" />
+		   
+		   <div >
+			  <label id="labelEntryA" for="entryName">Entry A</label>
+			  <input id="entryA" class="inputBox" />
+			  
+			  <label id="labelEntryB" for="entry">Entry B</label>
+			  <input id="entryB" />
+
+			  <input type="button" id="submitbutton" value="Submit" />
+		   
+			  <textarea id="multilineText" > </textarea>
+		   
+		   </div>
+		</form>
+
+   </body>
+
+</html>

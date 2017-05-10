@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+	Array Practice
+	CS133JS
+	Brian Bird
+	2/12/2013                
+   -->
+
+      <meta charset="UTF-8" />
+      <title>Roman Numeral Converter and Array Practice</title>
+
+	<script type="text/javascript">
+		function romanSort(first, second)
+		{
+			// If IX is not right before X, or it's not right after VIII
+			// then it is in the wrong place so return a negative number
+			var order = 0;		// zero or positive means right order
+			if ( (first == "IX" && second != "X") || (second == "IX" && first != "VIII") )
+				order = -1;	// negative means wrong order
+			return order;
+		}
+		
+		function romanConvert(number)
+		{
+			var roman = ["I", "II", "III", "IV", "V", "VI",
+				"VII", "VIII", "IX", "X"];
+			
+			document.write("<pre>");
+			document.writeln(roman[number - 1]);
+			document.writeln("Length: " + roman.length);
+			//roman.sort();
+			roman.sort(romanSort);
+			document.writeln(roman);
+			document.write("</pre>");
+		}
+	</script>
+   </head>
+
+   <body>     
+		<h4>Tests for JavaScript functions</h4>
+		<pre>
+		<script>
+			// Test the sort order function
+			document.writeln();
+			document.writeln("Passing 'IX', 'V' to romanSort: " + romanSort("IX", "V"));
+			document.writeln("Passing 'IX', 'X' to romanSort: " + romanSort("IX", "X"));
+			document.writeln("Passing 'X', 'IX' to romanSort: " + romanSort("IX", "V"));
+			document.writeln("Passing 'V', 'IX' to romanSort: " + romanSort("IX", "X"));
+			document.writeln("Passing 9 to romanConvert:");
+			romanConvert(9);
+		</script>
+		</pre>
+		<h4>Roman Numeral Converter</h4>
+		<form id="practiceform" name="practiceform" action="" />
+		   
+		   <div >
+			  <label id="labela" for="entryA">Entry A</label>
+			  <input id="entrya" name="entrya" />
+
+			  <input type="button" id="submitbutton" value="Submit" 
+			  onclick="romanConvert(document.practiceform.entrya.value)" />
+		   </div>
+		</form>
+
+   </body>
+
+</html>

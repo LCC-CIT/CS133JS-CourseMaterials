@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+	jQuery plugin experiments
+	CS133JS
+	Brian Bird
+	3/14/2013                
+   -->
+
+      <meta charset="UTF-8" />
+      <title>jQuery Plugin Practice</title>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="bxslider/jquery.bxslider.min.js"></script>
+	<link href="bxslider/jquery.bxslider.css" rel="stylesheet" />
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("h1").css("color","red");
+			$("#slider").bxSlider({
+				//displaySlideQty: 3,  // a plugin option
+				//moveSlideQty: 3      // another plugin option
+				mode: "fade",
+				captions: true
+			});
+		});
+	</script>
+   </head>
+
+	<body>   
+		<h1>jQuery Plugin Demo Form</h1>
+		
+		<ul id="slider">
+			<li><image id="warbler" src="http://www.birds.com/wp-content/uploads/2011/09/warbler-70x70.jpg" 
+				title="Warbler"/></li>
+			<li><image src="http://www.birds.com/wp-content/uploads/2013/01/northern_harrier-70x70.jpg"
+				title="Northern harrier"/></li>
+			<li><image src="http://www.birds.com/wp-content/uploads/2011/10/BIR_kingfisher-70x70.jpg"
+				title="Kingfisher"/></li>
+		</ul>
+
+
+   </body>
+
+</html>

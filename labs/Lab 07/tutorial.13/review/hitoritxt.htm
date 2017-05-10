@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      New Perspectives on HTML, CSS, and JavaScript
+      Tutorial 13
+      Review Assignment
+
+      Hitori Puzzle
+      Author: 
+      Date:   
+
+      Filename:         hitori.htm
+      Supporting files: grids.js, grids2.js, hitori.css, hitori.js,
+                        jpf.css, jpf.jpg, jpfback.png 
+                        modernizr-1.5.js
+   -->
+
+      <meta charset="UTF-8" />
+      <title>Online Hitori Puzzle</title>
+      <script src="modernizr-1.5.js"></script>
+
+      <link href="jpf.css" rel="stylesheet" type="text/css" />
+
+   </head>
+
+   <body>
+      <section id="main">
+         <header>
+            <img src="jpf.jpg" alt="The Japanese Puzzle Factory" />
+         </header>
+
+         <nav class="horizontal">
+            <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Online Puzzles</a></li>
+               <li><a href="#">Store</a></li>
+               <li><a href="#">Tips and Hints</a></li>
+               <li><a href="#">Forum</a></li>
+               <li><a href="#">Competitions</a></li>
+               <li><a href="#">Submissions</a></li>
+               <li><a href="#">Puzzle Gallery</a></li>
+               <li><a href="#">Site Map</a></li>
+            </ul>
+         </nav>
+
+         <nav class="vertical">
+            <ul>
+               <li><a href="#">Akari</a></li>
+               <li><a href="#">Bridges</a></li>
+               <li><a href="#">Divide by Box</a></li>
+               <li><a href="#">Fillomino</a></li>
+               <li><a href="#">Futoshiki</a></li>
+               <li><a href="#">hitori</a></li>
+               <li><a href="#">Heyawake</a></li>
+               <li><a href="#">Hitori</a></li>
+               <li><a href="#">Light Up</a></li>
+               <li><a href="#">Kakuro</a></li>
+               <li><a href="#">Katagaku</a></li>
+               <li><a href="#">Masugo</a></li>
+               <li><a href="#">Masyu</a></li>
+               <li><a href="#">Nonogram</a></li>
+               <li><a href="#">Oekaki Logic</a></li>
+               <li><a href="#">Shikaku</a></li>
+               <li><a href="#">Slant</a></li>
+               <li><a href="#">Slitherlink</a></li>
+               <li><a href="#">Sudoku</a></li>
+               <li><a href="#">Suhai</a></li>
+               <li><a href="#">Super Sudoku</a></li>
+               <li><a href="#">Tenketsu</a></li>
+               <li><a href="#">Tentai Show</a></li>
+               <li><a href="#">Wordoku</a></li>
+               <li><a href="#">Yajilin</a></li>
+            </ul>
+         </nav>
+
+         <article>
+            <div id="topButtons">
+               <input type="button" class="puzzles" id="hitori1" value="Puzzle 1" />
+               <input type="button" class="puzzles" id="hitori2" value="Puzzle 2" />
+               <input type="button" class="puzzles" id="hitori3" value="Puzzle 3" />
+            </div>
+
+            <h1>Hitori</h1>
+            <h2></h2>
+
+            <figure id="puzzle">
+            </figure>
+
+            <div id="bottomButtons">
+               <input type="button" id="peek" value="Peek!" />
+               <input type="button" id="solve" value="Show Solution" />
+            </div>           
+
+         </article>
+
+         <aside>
+            <h1>To Play</h1>
+            <p>
+               Click the <span>Puzzle 1</span> through <span>Puzzle 3</span>
+               buttons to select a puzzle. Click the cells in the table, 
+               switching the cell type from unknown (gray) to 
+               circled to block. A
+               completed puzzle should have only circles and blocks.
+            </p>
+            <p>Stumped? Click the <span>Peek!</span> button to
+               highlight your errors. Incorrect numbers will
+               show up in red. Give up?
+               Click the <span>Show Solution</span> button.
+            </p>
+            <h1>About Hitori</h1>
+            <p>
+               <strong>Hitori</strong> is a Japanese logic puzzle 
+               based on a grid of numbers. Each number is either
+               circled or blocked. The rules are:
+               <ol>
+                  <li>Blocks cannot be horizontally or vertically adjacent.</li>
+                  <li>The same number cannot appear circled more than once
+                      in any row or column.
+                  <li>Circles must form a single path connected
+                      horizontally and vertically, but not diagonally.</li>
+               </ol>
+            </p>
+            <h1>Tips</h1>
+            <p>
+               <ol>
+                  <li>Once you have found a block, immediately circle the
+                      adjacent numbers in the horizontal and vertical
+                      direction.
+                  </li>
+                  <li>Once a number is circled, duplicate numbers in that row
+                      or column must be blocks.
+                  </li>
+                  <li>Any cell between duplicate numbers (horizontally or
+                      vertically) is always circled.
+                  </li>
+                  <li>No circled number or group of circled numbers 
+                      can be entirely surrounded by blocks.
+                  </li>
+               </ol>
+            </p>
+         </aside>
+
+         <footer>
+            The Japanese Puzzle Factory &copy; 2015 (US)
+            <span>
+               <a href="#">About</a>
+               <a href="#">Terms</a>
+               <a href="#">Help</a>
+            </span>
+         </footer>
+
+      </section>
+
+   </body>
+
+</html>

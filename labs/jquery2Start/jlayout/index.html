@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Vecta Corp.</title>
+    <!-- Normal style sheet used for layout and general formatting. -->
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <!-- HTML5 shim/shiv for HTML5 section element backward compatibility. -->
+	<script src="../modernizer-1.5.js"></script>
+    <!-- jQuery library reference. Latest is always referenced from jQuery's CDN. -->
+	<script src="../jquery-1.8.2.min.js"></script>    
+	<!-- References to the jLayout plugin libraries. -->
+	<script type="text/javascript" src="js/jquery.sizes.js"></script>
+    <script type="text/javascript" src="js/jlayout.grid.js"></script>
+    <script type="text/javascript" src="js/jquery.jlayout.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+			$('#layout').layout({
+				type: 'grid', 
+				hgap: 27,
+				items: [$('.column1').width(210), $('.column2').width(210)]
+			});
+    	});
+	</script>
+</head>
+
+<body>
+	<section>
+		<h1>Welcome</h1>
+		<p>With innovative approaches and advanced methodologies, 
+		Vecta Corporation provides scalable business solutions 
+		to help companies achieve success through revenue 
+		increase, cost management, and user satisfaction. 
+		Our approach stems from the three most important business 
+		growth aspects: helping companies reach prospects, 
+		assist in converting prospects to customers, and assist 
+		in retaining those customers. This is accomplished 
+		through our interactive solutions and expertise in 
+		providing a memorable and positive user experience.</p>
+		<div id="layout">
+			<div class="column1">
+				<h3>Our Solutions</h3>
+				<h4><img src="images/logo_vprospect.gif" width="63" height="36" align="left">vProspect 2.0</h4>
+				<p>Define and research your target audience, define your 
+				strategy to reach that audience and present a strong 
+				and memorable brand to that audience.</p>
+				<h4><img src="images/logo_vconvert.gif" width="63" height="36" align="left">vConvert 2.0</h4>
+				<p>Create a highly user-friendly and easy-to-navigate 
+				information architecture that will help your prospects 
+				interact with the company on a highly interactive level.</p>
+				<h4><img src="images/logo_vretain.gif" width="63" height="36" align="left">vRetain 1.0</h4>
+				<p>Build on existing customer relationships to improve 
+				productivity and maximize customer loyalty, while growing revenues.</p>
+			</div>
+            
+			<div class="column2">
+            	<h3>Client Testimonials</h3>
+				<p><em><q>Throughout the years we have worked with Vecta Corporation, we have always been amazed 
+				at the level of dedication and professionalism that they have provided us and our WGDC products. 
+				It is this commitment that has increased both our income and exposure exponentially.</q></em></p>
+				<p>Aaron D. Tires<br>
+				Founder and CEO<br>
+				ADT Tire and Rubber, Inc.</p>
+            </div>
+		</div>
+    </section>
+</body>
+</html>

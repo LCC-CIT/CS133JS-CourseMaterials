@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+	Array Practice
+	CS133JS
+	Brian Bird
+	2/12/2013                
+   -->
+
+      <meta charset="UTF-8" />
+      <title>Array Practice</title>
+
+	<script type="text/javascript">
+		var names = new Array();
+		var scores = new Array();
+		
+		function addScore(name, score)
+		{
+			var scoreCount = scores.length;
+			names[scoreCount] = name;
+			scores[scoreCount] = score;
+			
+			showScores();
+		}
+		
+		function showScores()
+		{
+			document.scoreForm.scores.value = "";
+			for (var i = 0; i < scores.length; i++)
+				document.scoreForm.scores.value += names[i] + ", " + scores[i] + "\n";
+		}
+		
+	</script>
+   </head>
+
+   <body>       
+		<form name="scoreForm" action="" />
+		   
+		   <div >
+			  <label name="labelName" for="entryName">Name</label>
+			  <input name="entryName" />
+			  
+			  <label name="labelScore" for="entryScore">Score</label>
+			  <input name="entryScore" />
+
+			  <input type="button" name="submitbutton" value="Submit" 
+			  		onclick="addScore(document.scoreForm.entryName.value, document.scoreForm.entryScore.value)" />
+		   
+			  <textarea name="scores" > </textarea>
+		   
+		   </div>
+		</form>
+
+   </body>
+
+</html>

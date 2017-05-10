@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CS133JS Midterm Practice 2</title>
+		<script type="text/javascript">
+			function setValues()
+			{
+				document.practice.testing.value = "This is it!";
+			}
+		</script>
+	</head>
+	
+	<body onload="setValues()">
+		<h1>Midterm Review</h1>
+		
+		<pre>
+		<script type="text/javascript">
+			// The Date object
+			var today = new Date();
+			document.writeln(today.getFullYear());
+			var tomorrow = new Date("February 8, 2013 00:00:00");
+			document.writeln( Math.floor((tomorrow - today) / (1000 * 60 * 60)) );
+			var msLeft = tomorrow - today;
+			document.writeln("msLeft: " + msLeft);
+			var hoursLeft = msLeft / (1000 * 60 * 60);
+			document.writeln("hoursLeft: " + hoursLeft);
+			var wholeHours = Math.round(hoursLeft);
+			document.writeln("wholeHours: " + wholeHours);
+			// Arithmetic operators
+			document.writeln("Arithmetic operators");
+			var result = 8 + 3 * 2;
+			document.writeln("Result: " + result);
+			var remainder = 7 % 3;
+			document.writeln("Remainder: " + remainder);
+			var number = 5;
+			document.writeln("number: " + number++);
+			document.writeln("next number: " + number++);
+			document.writeln("next number: " + number);
+			var number = 42;
+			number += 8;	// same as number = number + 8
+			document.writeln("number: " + number);
+			
+			// If statements
+			var temp = 40;
+			var rain = true;
+			var snow = false;
+			if (rain == true)
+				document.writeln("Put on your coat, it's raining");
+			else if (snow == true)
+				document.writeln("Put on your coat, it's snowing");			
+			else if (temp < 40)
+				document.writeln("Put on your coat, it's cold");
+			else 
+				document.writeln("Enjoy the warm weather!");
+			
+			// Using logical operators
+			if(rain || snow || temp < 40)
+				document.writeln("Put on your coat");			
+			else 
+				document.writeln("Enjoy the warm weather!");
+				
+				
+			var hungry = false;
+			var haveMoney = true;
+			
+			if (hungry)
+			{
+				if(haveMoney)
+				{
+					document.writeln("Go to the cafeteria");
+				}
+				else
+				{
+					document.writeln("Bum a sandwitch from Stefan");
+				}
+			}
+			else
+			{
+				document.writeln("Do some more JavaScript programming");
+			}
+			
+			// Using logical operators
+			if (hungry && haveMoney)
+					document.writeln("Go to the cafeteria");
+			else if (hungry)
+					document.writeln("Bum a sandwitch from Stefan");
+			else
+				document.writeln("Do some more JavaScript programming");
+			
+		</script>
+		</pre>
+		
+		<form name="practice">
+			<input name="testing" readonly="readonly" />
+			<label name="clickMe" onclick="alert('Hi')">Click me!</label>
+		</form>
+	</body>
+</html>

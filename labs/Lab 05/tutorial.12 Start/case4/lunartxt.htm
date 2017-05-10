@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      New Perspectives on HTML, CSS, and JavaScript
+      Tutorial 12
+      Case Problem 4
+
+      Lunar Calendar
+      Author: 
+      Date:   
+
+      Filename:         lunar.htm
+      Supporting files: astro.css, lunarcal.js, modernizr-1.5.js,
+                        moonfunc.js, phase0.jpg - phase15.jpg,
+                        skyweb.png
+                        
+                        
+   -->
+
+      <meta charset="UTF-8" />
+
+      <title>Lunar Calendar</title>
+      <script src="modernizr-1.5.js"></script>
+      
+      <link href="astro.css" rel="stylesheet" />
+
+
+   </head>
+
+   <body>
+
+      <section id="main">
+         <header>
+            <nav class="horizontal">
+               <ul>
+                  <li><a href="#">Home Page</a></li>
+                  <li><a href="#">The Night Sky</a></li>
+                  <li><a href="#">The Moon</a></li>
+                  <li><a href="#">The Planets</a></li>
+                  <li><a href="#">Messier Objects</a></li>
+                  <li><a href="#">Stars</a></li>
+               </ul>
+            </nav>
+            <img src="skyweb.png" alt="SkyWeb" />
+         </header>
+
+         <article>
+
+            <h1>Phases of the Moon</h1>
+
+            <table id="summary">
+               <tr>
+                  <th id="sumtitle" colspan="3">
+
+                  </th>
+               </tr>
+               <tr>
+                  <td rowspan="5" id="lunarimg">
+
+                  </td>
+                  <th>Moon's Age</th>
+                  <td>
+
+                  </td>
+               </tr>
+               <tr>
+                  <th>Right Ascension</th>
+                  <td>
+
+                  </td>
+               </tr>
+               <tr>
+                  <th>Declination</th>
+                  <td>
+
+                  </td>
+               </tr>
+               <tr>
+                  <th>In Constellation</th>
+                  <td>
+
+                  </td>
+               </tr>
+               <tr>
+                  <th>Distance (Earth Radii)</th>
+                  <td>
+
+                  </td>
+               </tr>
+            </table>
+
+            <p>As the Moon orbits the Earth, the portion we see illuminated 
+               changes from day to day. The start of each phase occurs 
+               with the <b>new Moon</b> in which the Moon does not appear 
+               illuminated from the Earth. The Moon takes 27.3 days to orbit 
+               Earth, but the lunar phase cycle (from new Moon to new Moon) 
+               is 29.5 days. This is because the Moon spends an extra 2.2 
+               days "catching up" as the Earth travels about 45 million 
+               miles around the Sun during the time the Moon completes one 
+               orbit around Earth.
+            </p>
+
+            <p>Astronomers often refer to a <b>Lunar Calendar</b> to track 
+               the phases of the Moon. Generally, astronomers do not want 
+               to observe the night sky during those times the Moon is 
+               highly illuminated because moonlight can 
+               obscure the light from fainter objects such as stars, 
+               planets, and nebulae. Below is a sample Lunar Calendar for 
+               the current month. 
+               Happy Moon-gazing!
+            </p>
+
+            <figure id="lunar_cal">
+
+            </figure>
+
+         </article>
+
+      </section>
+
+      <footer>
+          SkyWeb &copy; 2015 English (US)
+          <span>
+            <a href="#">About</a>
+            <a href="#">Developers</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Help</a>
+          </span>
+      </footer>
+
+   </body>
+
+</html>

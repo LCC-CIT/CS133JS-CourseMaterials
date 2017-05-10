@@ -1,0 +1,44 @@
+/*
+   New Perspectives on HTML, CSS, and JavaScript
+   Tutorial 13
+   Review Assignment
+
+   Hitori Puzzle Table Style Sheet
+
+
+   Filename:         hitori.css
+   Supporting Files: 
+
+*/
+
+#hitoriGrid {
+   border: 10px outset rgb(76, 188, 0);
+   xborder-collapse: collapse;
+   font-size: 24px;
+   margin: 0px auto;
+}
+
+#hitoriGrid td {
+   width: 50px;
+   height: 50px;
+   border: 1px solid black;
+   cursor: pointer;
+}
+
+
+
+/* hitori cell styles */
+
+#hitoriGrid td.circles {
+   background-image: url(circle.png);
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-color: white;
+   color: black;
+}
+
+#hitoriGrid td.blocks {
+   background-color: black;
+   background-image: none;
+   color: white;
+}

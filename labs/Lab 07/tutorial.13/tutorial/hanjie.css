@@ -1,0 +1,65 @@
+/*
+   New Perspectives on HTML, CSS, and JavaScript
+   Tutorial 13
+   Tutorial Case
+
+   Hanjie Puzzle Table Style Sheet
+
+
+   Filename:         hanjie.css
+   Supporting Files: 
+
+*/
+
+#hanjieGrid {
+   border: 10px outset rgb(76, 188, 0);
+   border-collapse: collapse;
+   font-size: 11px;
+   margin: 0px auto;
+}
+
+#hanjieGrid td {
+   width: 17px;
+   height: 17px;
+   border: 1px solid black;
+   cursor: pointer;
+}
+
+#hanjieGrid th {
+   background-color: rgb(191, 191, 191);
+   color: black;
+}
+
+#hanjieGrid th {
+   vertical-align: bottom;
+   text-align: right;
+   font-weight: normal;
+   border: 1px solid black;
+}
+
+#hanjieGrid th.cols {
+   width: 17px;
+}
+
+#hanjieGrid th.rows {
+   height: 17px;
+}
+
+#hanjieGrid tr td:nth-of-type(5n), #hanjieGrid tr:first-of-type th:nth-of-type(5n+6) {
+   border-right: 2px solid rgb(111, 255, 111);
+}
+
+#hanjieGrid tr:nth-of-type(5n +6) {
+   border-bottom: 2px solid rgb(111, 255, 111);
+}
+
+
+/* Hanjie cell colors */
+
+#hanjieGrid td.empty {
+   background-color: rgb(216, 231, 244);
+}
+
+#hanjieGrid td.marked {
+   background-color: rgb(58, 133, 202);
+}

@@ -1,0 +1,27 @@
+<!Doctype html>
+<html>
+<head>
+</head>
+<body>
+	<script>
+		var date1 = new Date("June 1, 1980");
+		var date2 = new Date("October 28, 1978");
+		// Number of days between the dates
+		// getTime returns the number of miliseconds since Jan 1, 1970
+		var date1Time = date1.getTime();
+		var date2Time = date2.getTime();
+		// Number of milliseconds between the two dates
+		var timeDifference = date1Time - date2Time;
+		var years = timeDifference / 1000 / 60 / 60 / 24 / 365;
+		alert (years);
+		
+		var now = new Date();
+		var nowTime = now.getTime();
+		// add 20 hours
+		var thenTime = nowTime + 20 * 60 * 60 * 1000;
+		var then = new Date();
+		then.setTime(thenTime);
+		alert(then);
+	</script>
+</body>
+</html>

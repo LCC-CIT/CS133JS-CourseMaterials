@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      New Perspectives on HTML, CSS, and JavaScript
+      Tutorial 11
+      Review Assignment
+
+      Coundown to Upcoming Events in Tulsa
+      Author: 
+      Date:   
+
+      Filename:         events.htm
+      Supporting files: banner2.png, dates.js,  
+                        modernizr-1.5.js, tulsa.css
+
+   -->
+
+      <meta charset="UTF-8" />
+      <title>Upcoming Events at Tulsa</title>
+      <script src="modernizr-1.5.js" type="text/javascript" ></script>
+      <link href="tulsa.css" rel="stylesheet" type="text/css" />
+
+   </head>
+
+   <body>
+      <form name="eventform" id="eventform" action="">
+
+      <header>
+         <h1>Countdown to Upcoming<br />Events</h1>
+         <img src="banner2.png" alt="" />
+      </header>
+
+      <nav class="horizontal">
+         <ul>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Entertainment Beat</a></li>
+            <li><a href="#">Tulsa Times</a></li>
+            <li><a href="#">Event Calendar</a></li>
+            <li><a href="#">City Links</a></li>
+         </ul>
+      </nav>
+
+      <nav class="vertical">
+         <h1>City Links</h1>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">City Agencies</a></li>
+            <li><a href="#">News Today</a></li>
+            <li><a href="#">Upcoming Events</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li><a href="#">Public Notices</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">E-Government</a></li>
+         </ul>
+      </nav>
+
+      <section id="main">
+         <h1>Countdown to Upcoming Events</h1>
+
+         <p>
+            Current Date and Time 
+           <input name="thisDay" id="thisDay" readonly="readonly" size="30" />
+         </p>
+         <table>
+            <thead>
+            <tr>
+               <th class="colhead">Event</th>
+               <th class="colhead">Starting Time</th>
+               <th class="colhead">Countdown to Event</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+               <td>
+                  Heritage Day
+               </td>
+               <td>
+                  Jan 14 at 10:00 a.m.
+               </td>
+               <td>
+                  <input name="count1" id="count1" size="33" />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  Spring Day Rally
+               </td>
+               <td>
+                  May 21 at 12:00 p.m.
+               </td>
+               <td>
+                  <input name="count2" id="count2" size="33" />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  July 4th Fireworks
+               </td>
+               <td>
+                  Jul 4 at 9:00 p.m.
+               </td>
+               <td>
+                  <input name="count3" id="count3" size="33" />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  Summer Bash
+               </td>
+               <td>
+                  Sep 1 at 12:00 p.m.
+               </td>
+               <td>
+                  <input name="count4" id="count4" size="33" />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  Holiday Party
+               </td>
+               <td>
+                  Dec 1 at 11:30 a.m.
+               </td>
+               <td>
+                  <input name="count5" id="count5" size="33" />
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  New Year's Bash
+               </td>
+               <td>
+                  Dec 31 at 3:30 p.m.
+               </td>
+               <td>
+                  <input name="count6" id="count6" size="33" />
+               </td>
+            </tr>
+            </tbody>
+         </table>
+
+      </section>
+
+
+      <footer>
+         <address>
+            Civic Events in Tulsa &#183; 
+            340 Main Street, Tulsa, OK 74102 &#183;
+            (918) 555-3481
+         </address>
+      </footer>
+
+      </form>
+
+   </body>
+
+</html>

@@ -1,0 +1,170 @@
+/*
+   New Perspectives on HTML, CSS, and JavaScript
+   Tutorial 13
+   Case Problem 2
+
+   French Class Style Sheet
+
+   Filename:    french.css
+
+
+*/
+
+
+
+/* Default Styles */
+
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+header, figure, hgroup, footer, article, nav, section {
+   display: block;
+}
+
+body {
+   background-color: rgb(137, 185, 255);
+}
+
+
+
+/* Main Section Styles */
+section#main {
+   background-color: white;
+   font-family: Verdana, Geneva, sans-serif;
+   margin: 40px auto 10px;
+   width: 900px;
+
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+
+   -moz-border-radius: 35px;
+   -webkit-border-radius: 35px;
+   border-radius: 35px;
+
+   -moz-box-shadow: 5px 0px 20px rgb(101, 101, 101),
+                      -5px 0px 20px rgb(101, 101, 101);
+   -webkit-box-shadow: 5px 0px 20px rgb(101, 101, 101),
+                      -5px 0px 20px rgb(101, 101, 101);
+   box-shadow: 5px 0px 20px rgb(101, 101, 101),
+              -5px 0px 20px rgb(101, 101, 101);
+}
+
+/* Header styles */
+header {
+   position: relative;
+   padding-bottom: 20px;
+   border-bottom: 1px solid black;
+   height: 80px;
+}
+
+header div#rightHead {
+   position: absolute;
+   top: 20px;
+   right: 30px;
+   color: black;
+   text-align: right;
+   font-size: 16px;
+}
+
+header div#leftHead {
+   position: absolute;
+   top: 20px;
+   left: 30px;
+   color: black;
+   text-align: left;
+   font-size: 16px;
+}
+header div input {
+   font-size: 16px;
+   text-align: left;
+}
+
+
+/* Vertical navigation list */
+
+nav.vertical {
+   width: 200px;
+   float: left;
+   font-family: 'Times New Roman', 'Times', serif;
+   border-right: 1px solid black;
+   background-color: rgb(255, 255, 231);
+}
+
+nav.vertical ul {
+   list-style-type: none;
+}
+
+nav.vertical li {
+   font-size: 16px;
+   margin-left: 10px;
+}
+
+nav.vertical li.newgroup {
+   border-top: 1px solid black;
+   margin-top: 0px;
+   padding-top: 10px;
+}
+
+nav.vertical li a {
+   text-decoration: none;
+   color: black;
+}
+
+nav.vertical li a:hover {
+   text-decoration: underline;
+}
+
+nav.vertical li:last-of-type {
+   margin-bottom: 20px;
+}
+
+/* Article styles */
+
+article {
+   float: left;
+   width: 699px;
+}
+
+article hgroup {
+   background-color: rgb(51, 85, 131);
+   color: white;
+   margin: 0px;
+}
+
+article h1 {
+   font-size: 30px;
+   font-weight: normal;
+   letter-spacing: 5px;
+   padding: 5px 0px 0px 15px;
+}
+
+article h2 {
+   font-size: 14px;
+   font-weight: normal;
+   padding: 0px 0px 10px 15px;
+}
+
+article ol {
+   margin-top: 15px;
+   list-style-type: decimal;
+}
+
+article ol li {
+   margin-left: 50px;
+   line-height: 2em;
+}
+
+/* Page footer styles */
+
+footer {
+   clear: left;
+   border-top: 1px solid black;
+   height: 30px;
+   line-height: 30px;
+   text-align: center;
+}
+
+
+

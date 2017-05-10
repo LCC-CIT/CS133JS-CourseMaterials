@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>document.write example</title>
+</head>
+
+<body>
+	<h1>Using document.write to put html on your web page</h1>
+	Here is a plain old HTML hyperlink: <br />
+	<a href="http://lanecc.edu" target="_blank">Lane Community College</a>
+	<br />
+	<br />
+	Here is the same link writen using document.write.<br />
+	We wouldn't normally use document.write to do this (because it just make something easy complicated),
+	but I'm just trying to show you how to use this function to write HTML to your web page.<br />
+	<script type="text/javascript">
+		document.write("<a href='http://lanecc.edu' target='_blank'>Lane Community College</a>");
+	</script>
+	<br />
+	Notice that we just put the whole html element inside quotes and put that inside the parethesis at the end of document.write.
+	This is because document.write requires us to dp that. Any text (as opposed to variables or numbers) we put inside the parethesis
+	has to be in quotes. And, HTML is just text. But, there are quotes inside our HTML anchor tag, so, to avoid confusing document.write
+	we have to change those quotes to single quotes- and that's what we did above.
+	<br />
+	<br />
+	Now, we'll add something the URL, and we'll do it by concatenating two strings.
+	Again we wouldn't normally do this (we'd just make it all one string), but I think it will be instructive.<br />
+	<script type="text/javascript">
+		document.write("<a href='http://lanecc.edu" + "/cit'" + "target='_blank'>Lane Community College, CIT Department</a>");
+	</script>
+	<br />
+	The only tricky parts here are that we used the plus sign to join together three strings,
+	and we had to put the single quote after <em>cit</em> in the second string. The reason for doing
+	the quotes that way is so that when document.write spits out the HTML link element, it will have a quote at
+	the end of the URL- this is what the rules of HTML require.
+		<br />
+	<br />
+	Finally, we'll put the second part of the URL in a variable.
+	Once again we wouldn't normally do it this way.<br />
+	<script type="text/javascript">
+		var dept = "cit";
+		document.write("<a href='http://lanecc.edu/" + dept + "' target='_blank'>Lane Community College, CIT Department</a>");
+	</script>
+	<br />
+	So, the variable just went where the string had been. But I didn't want the variable to have to put <em>/cit'</em> 
+	in the variable (the slash and quote just seem messy), so I put them inside the strings that are being concatenated and
+	sent into the document.write function.
+	
+	<h2>Debugging with the alert dialog box</h2>
+	If you are wondering what is really being written to your web page by document.write, you can check it by using an 
+	alert dialog box. The aleart dialog box is intended for poping up a window to give a message to your users but you 
+	can also use it for debugging (see page HTML 727 in your textbook). For example, lets say you have a document.write statement 
+	that is supposed to write an HTML link element, and the link isn't working, but you can't figure out why. 
+	It would be useful to see the actual HTML that is being written by document.write. Here's how you 
+	can do it- you pass the same string to the alert functioin and see what the resulting text looks like. (I intentionally put an error in this link element.)<br />
+	<script type="text/javascript">
+		var dept = "cit";
+		alert( "<a href='http://lanecc.edu/" + dept + " target='_blank'>Lane Community College, CIT Department</a>");
+	</script>
+	<br />
+	
+	Did you find the error? There is a missing quote. I'll put it in and pass the string to the alert funcion again. Does this look better?<br />
+		<script type="text/javascript">
+		var dept = "cit";
+		alert( "<a href='http://lanecc.edu/" + dept + "' target='_blank'>Lane Community College, CIT Department</a>");
+	</script>
+	<br />
+	<br />
+	You can also use alert to show what's stored in a varaible, as shown in our textbook. Let's try that. First we'll put the whole string above into a variable, then we'll display it.
+		<script type="text/javascript">
+		var dept = "cit";
+		var lccLink = "<a href='http://lanecc.edu/" + dept + "' target='_blank'>Lane Community College, CIT Department</a>";
+		alert( lccLink);
+		document.write("<br/>And we can also use this variable in document.write to create a link:<br />");
+		document.write(lccLink);
+	</script>
+	<br />
+	<br />
+	
+	
+	
+</body>
+</html> 

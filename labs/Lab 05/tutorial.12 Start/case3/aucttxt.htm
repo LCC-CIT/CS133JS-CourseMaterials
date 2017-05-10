@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      New Perspectives on HTML, CSS, and JavaScript
+      Tutorial 12
+      Case Problem 3
+
+      Schmitt AuctionHaus
+      Author: 
+      Date:   
+
+      Filename:          auction.htm
+      Supporting files:  back.jpg, barchart.js, logo.jpg, 
+                         modernizr-15.js, results.css, votes.js
+
+   -->
+
+      <meta charset="UTF-8" />
+      <title>Auction Log</title>
+      <script src="modernizr-1.5.js"></script>
+
+      <link href="ahstyles.css" rel="stylesheet" type="text/css" />
+
+
+   </head>
+
+   <body>
+      <form name="bidForm" id="bidForm">
+
+         <header>
+            <img src="logo.jpg" alt="Schmitt Auction Haus" />
+            <nav class="horizontal">
+               <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Auctions</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Schedule</a></li>
+                  <li><a href="#">Contacts</a></li>
+               </ul>
+            </nav>
+         </header>
+
+        <section id="intro">
+           <h1>Silent Auction</h1>
+           <h2>Tawney Farm</h2>
+
+           <table id="summarytable">
+              <tr>
+                 <th>Lot #121</th>
+                 <td>TurfTuff Lawn Tractor X24 (2015)</td>
+              </tr>
+              <tr>
+                 <th>Latest Bid</th>
+                 <td>
+                    <input id="latestBid" name="latestBid" readonly="readonly" />
+                 </td>
+              </tr>
+              <tr>
+                 <th>Bidding Ends</th>
+                 <td>15:00</td>
+              </tr>
+           </table>
+
+           <table id="newbidtable">
+              <tr>
+                 <th colspan="2" id="newtitle">Enter New Bid</th>
+              </tr>
+              <tr>
+                 <th>Bidder ID</th>
+                 <td>
+                    <input id="bidId" name="bidId" />
+                 </td>
+              </tr>
+              <tr>
+                 <th>Bid Amount</th>
+                 <td>
+                    <input id="bidAmount" name="bidAmount" />
+                 </td>
+              </tr>
+              <tr>
+                 <th id="buttons" colspan="2">
+                    <input type="button" value="Submit" />
+                    <input type="button" value="Remove Last Bid" />
+                 </th>
+              </tr>
+           </table>
+
+        </section>
+
+        <section id="bidHistory">
+           <h1>Bid History</h1>
+           <textarea id="bidList" name="bidList"></textarea>
+        </section>
+
+        <footer>
+           <address>
+              Schmitt AuctionHaus &#183;
+              3401 Rural Route 4 &#183;
+              Fenbrook, IN  38012
+           </address>
+        </footer>
+
+     </form>
+  </body>
+
+</html>

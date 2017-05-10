@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+	jQuery Demo
+	CS133JS
+	Brian Bird
+	3/5/2013                
+   -->
+
+      <meta charset="UTF-8" />
+      <title>jQure Practice</title>
+	<script src="http://code.jquery.com/jquery-latest.min.js"> </script>
+	
+	<script type="text/javascript">
+		function demo()
+		{
+			$("image").width = 35;
+		}
+	</script>
+   </head>
+
+   <body onload="demo()">
+ 
+		<h1>Demo Form</h1>
+		<form name="demoForm" action="" />
+		   
+		   <div >
+			  <label id="labelEntryA" for="entryName">Entry A</label>
+			  <input id="entryA" />
+			  
+			  <label id="labelEntryB" for="entry">Entry B</label>
+			  <input id="entryB" />
+
+			  <input type="button" id="submitbutton" value="Submit" 
+			  		onclick="" />
+		   
+			  <textarea id="multilineText" > </textarea>
+			  <br />
+			  <h2>Images</h2>
+			  <image id="warbler" src="http://www.birds.com/wp-content/uploads/2011/09/warbler-70x70.jpg"></image>
+		      <image src="http://www.birds.com/wp-content/uploads/2011/10/BIR_kingfisher-70x70.jpg"></image>
+			  <image src="http://www.birds.com/wp-content/uploads/2013/01/northern_harrier-70x70.jpg"></image>
+		   </div>
+		</form>
+
+   </body>
+
+</html>

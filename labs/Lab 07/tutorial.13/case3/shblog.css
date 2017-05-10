@@ -1,0 +1,157 @@
+/*
+   New Perspectives on HTML, CSS, and JavaScript
+   Tutorial 13
+   Tutorial Case
+
+   Author:   Kyle Harris
+   Date:     3/1/2015
+   Filename: shblog.css
+
+   This file contains styles used in the holmes.htm file.
+
+*/
+
+/* Default Styles */
+
+* {
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+}
+
+header, figure, footer, article, nav, section {
+   display: block;
+}
+
+
+html, body {
+ height: 100%;
+} 
+
+body {
+   background: url(shback.png) repeat;
+}
+
+/* Hypertext link default style */
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+
+
+/* Main Section Styles */
+
+section#main {
+   font-family: Verdana, Geneva, sans-serif;
+   background-color: white;
+   margin: 0px auto;
+   min-height: 100%;
+   position: relative;
+   width: 850px;
+   padding: 0px;
+
+   -moz-box-shadow: 5px 0px 20px rgb(101, 101, 101),
+                      -5px 0px 20px rgb(101, 101, 101);
+   -webkit-box-shadow: 5px 0px 20px rgb(101, 101, 101),
+                      -5px 0px 20px rgb(101, 101, 101);
+   box-shadow: 5px 0px 20px rgb(101, 101, 101),
+              -5px 0px 20px rgb(101, 101, 101);
+}
+
+/* Header Styles */
+
+header {
+   background-color: white;
+   text-align: right;
+   padding-top: 15px;
+   width: 820px;
+}
+
+header img {
+   float: left;
+}
+
+
+/* Top Menu Placement Style */
+
+nav#menuBar {
+   position: absolute;
+   top: 130px;
+   left: 0px;
+   clear: left;
+   width: 100%;
+   z-index: 99;
+}
+
+/* Vertical Navigation Placement Styles */
+
+nav.vertical {
+   clear: left;
+   float: left;
+   width: 180px;
+   margin-top: 70px;
+}
+
+
+
+/* Article styles */
+article {
+   background-color: white;
+   margin: 70px 0px 0px 30px;
+   width: 630px;
+   float: left;
+   border-left: 1px solid black;
+}
+
+article figure {
+   float: right;
+   margin: 0px 25px 15px 15px;
+}
+
+
+
+
+article p {
+   margin: 0px 25px 15px 15px;
+   font-size: 0.9em;
+}
+
+article > p:first-of-type:first-letter {
+   font-size: 5em;
+   line-height: 1em;
+   font-weight: bold;
+   float: left;
+   margin: 0px 5px 5px 0px;
+   font-family: 'Times New Roman', Times, serif;
+   color: rgb(121, 121, 121);
+   text-shadow: black 1px 1px 1px;
+}
+
+
+
+/* Footer Styles */
+
+/* Page footer styles */
+
+footer {
+   width: 850px;
+   background-color: white;
+   color: black;
+   line-height: 20px;
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+   clear: left;
+   font-size: 10px;
+   text-indent: 10px;
+}
+
+footer span {
+   float: right;
+   margin-right: 10px;
+}
+
+footer span a {
+   color: black;
+}

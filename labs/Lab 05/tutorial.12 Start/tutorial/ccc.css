@@ -1,0 +1,149 @@
+/*
+   New Perspectives on HTML, CSS, and JavaScript
+   Tutorial 12
+   Tutorial Case
+
+   Chamberlain Civic Center Style Sheet
+
+
+   Filename:         ccc.css
+   Supporting Files: 
+
+*/
+
+
+
+/* Default Styles */
+
+* {
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+}
+
+header, figure, footer, article, nav, section {
+   display: block;
+}
+
+body {
+   background-image: url(back.jpg);
+}
+
+html, body {
+ height: 100%;
+} 
+
+
+/* Main Section Styles */
+section#main {
+   background-color: white;
+   background-image: url(back2.png), url(back3.png);
+   background-position: top right, top left;
+   background-repeat: no-repeat;
+
+   font-family: Verdana, Geneva, sans-serif;
+   margin: 0px auto;
+   min-height: 100%;
+   position: relative;
+   width: 800px;
+   padding: 0px 20px 20px 20px;
+
+   -moz-box-shadow: 5px 0px 20px rgb(101, 101, 101),
+                      -5px 0px 20px rgb(101, 101, 101);
+   -webkit-box-shadow: 5px 0px 20px rgb(101, 101, 101),
+                      -5px 0px 20px rgb(101, 101, 101);
+   box-shadow: 5px 0px 20px rgb(101, 101, 101),
+              -5px 0px 20px rgb(101, 101, 101);
+}
+
+
+
+/* Navigation Styles */
+
+nav.horizontal {
+   margin-top: -3px;
+}
+
+nav.horizontal ul {
+   height: 20px;
+}
+
+nav.horizontal ul li {
+padding: 0px;
+   float: left; 
+   margin: 0px 3px; 
+   width: 100px; 
+   line-height: 20px;
+   height: 20px; 
+   text-align: center; 
+   background: url(tab.jpg) no-repeat top left;
+}
+
+nav.horizontal ul li a {
+   display: block; 
+   width: 100px; 
+   font-size: 10px; 
+   text-decoration: none; 
+   color: black;
+}
+
+nav.horizontal ul li:hover {
+   background: url(tabred.jpg) no-repeat top left;
+}
+
+
+
+
+/* Summary Section */
+
+#summary {
+   width: 800px;
+}
+
+#summary h1 {
+   color: red; 
+   font-size: 24px; 
+   font-weight: normal;
+   letter-spacing: 5px;
+   text-align: center;
+   margin: 10px;
+}
+
+#summary p {
+   font-size: 12px; 
+   margin: 10px 0px 10px 10px;
+   text-align: left;
+}
+
+#summary p i  {
+   font-style:italic;
+}
+
+#summary a {
+   color: red;
+   text-decoration: underline;
+}
+
+
+/* Figure Box Styles */
+
+figure {
+   float: right;
+   margin: 20px;
+   width: 500px;
+}
+
+/* Page Footer */
+
+footer {
+   margin-top: 50px;
+   width: 800px;
+}
+
+footer address {
+   border-top: 1px solid red;
+   font-size: 10px;
+   font-style: normal;
+   text-align: center;
+   padding-top: 10px;
+}

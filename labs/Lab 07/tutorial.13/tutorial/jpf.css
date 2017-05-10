@@ -1,0 +1,342 @@
+/*
+   New Perspectives on HTML, CSS, and JavaScript
+   Tutorial 13
+   Tutorial Case
+
+   JPF Style Sheet
+
+   Filename:         jpf.css
+   Supporting Files: 
+
+*/
+
+
+/* Default styles */
+
+header, footer, section, article, aside, nav, figure {
+   display: block;
+}
+
+
+* {
+   font-family: Verdana, Geneva, sans-serif;
+   margin: 0px;
+   list-style: none;
+   padding: 0px;
+   text-decoration: none;
+}
+
+html, body {
+ height: 100%;
+} 
+
+body {
+   background-color: rgb(221, 231, 221);
+   background-color: rgb(245, 234, 155);
+   background: rgb(245, 234, 155) url(jpfback.png) repeat;
+}
+
+/* Main Section styles */
+
+section#main {
+   width: 900px;
+   background-color: white;
+   min-height: 100%;
+   margin: 0px auto;
+   position: relative;
+
+   -moz-box-shadow: rgb(101, 101, 101) -20px 0px 20px,
+               rgb(101, 101, 101) 20px 0px 20px;
+   -webkit-box-shadow: rgb(101, 101, 101) -20px 0px 20px,
+               rgb(101, 101, 101) 20px 0px 20px;
+   box-shadow: rgb(101, 101, 101) -20px 0px 20px,
+               rgb(101, 101, 101) 20px 0px 20px;
+}
+
+
+/* Horizontal Navigation List */
+nav.horizontal ul {
+   height: 24px;
+   margin-top: -26px;
+   width: 95%;
+   border-bottom: 1px solid black;
+   background-color: black;
+
+   -moz-border-radius-topright: 70% 250px;
+   -webkit-border-top-right-radius: 70% 250px;
+   border-top-right-radius: 70% 250px;
+}
+
+nav.horizontal ul li {
+   background-color: black;
+   display: inline;
+   font-size: 10px;
+   margin: 0px 15px 0px 10px;
+}
+
+nav.horizontal ul li a {
+   color: rgb(254, 232, 130);
+}
+
+nav.horizontal ul li a:hover {
+   color: rgb(211, 254, 106);
+}
+
+
+
+/* Vertical Navigation List */
+
+nav.vertical {
+   margin-bottom: 20px;
+}
+
+nav.vertical ul {
+   background-color: black;
+   clear: left;
+   float: left;
+   width: 150px;
+
+   -moz-border-radius-bottomright: 100% 250px;
+   -webkit-border-bottom-right-radius: 100% 250px;
+   border-bottom-right-radius: 100% 250px;
+}
+
+nav.vertical ul li {
+   font-size: 12px;
+   line-height: 1.6em;
+   margin: 5px 0px 7px 10px;
+}
+
+nav.vertical ul li:first-of-type {
+   margin-top: 20px;
+}
+
+nav.vertical ul li:last-of-type {
+   padding-bottom: 30px;
+}
+
+nav.vertical ul li a {
+   color: rgb(254, 232, 130);
+}
+
+nav.vertical ul li a:hover {
+   color: rgb(211, 254, 106);
+   text-decoration: overline underline;
+}
+
+
+/* Article Styles */
+
+article {
+   float: left;
+   width: 500px;
+   margin-bottom: 20px;
+}
+
+article > h1 {
+   clear: left;
+   margin: 0px;
+   font-size: 1.8em;
+   font-weight: normal;
+   letter-spacing: 7px;
+   text-align: center;
+   padding: 10px 0px 0px 0px;
+}
+
+article #hint, article #rating {
+   float: left;
+   font-size: 12px;
+   width: 210px;
+   margin-bottom: 10px;
+}
+
+#hint {
+   margin-left: 30px;
+   margin-right: 10px;
+}
+
+#rating {
+   margin-left: 10px;
+   text-align: right;
+}
+
+
+#topButtons, #bottomButtons {
+   width: 420px;
+   margin: 0px auto;
+   text-align: center;
+}
+
+   
+input.puzzles {
+   display: block;
+   float: left;
+   font-size: 14px;
+   height: 30px;
+   width: 120px;
+   margin: 0px 10px;
+
+   background-color: rgb(211, 255, 163);
+   background: -o-linear-gradient(white 5px, rgb(211, 255, 163), rgb(145, 211, 40));
+   background: -ms-linear-gradient(white 5px, rgb(211, 255, 163), rgb(145, 211, 40));
+   background: -moz-linear-gradient(white 5px, rgb(211, 255, 163), rgb(145, 211, 40));
+   background: -webkit-linear-gradient(white 5px, rgb(211, 255, 163), rgb(145, 211, 40));
+   background: linear-gradient(white 5px, rgb(211, 255, 163), rgb(145, 211, 40));
+
+   border: 2px solid rgb(76, 188, 0);
+   border: 2px solid rgba(76, 188, 0, 0.7);
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+}
+
+input.puzzles:hover {
+   cursor: pointer;
+
+   background-color: rgb(145, 211, 40);
+   background: -o-linear-gradient(white 5px, rgb(145, 211, 40), rgb(39, 94, 0));
+   background: -ms-linear-gradient(white 5px, rgb(145, 211, 40), rgb(39, 94, 0));
+   background: -moz-linear-gradient(white 5px, rgb(145, 211, 40), rgb(39, 94, 0));
+   background: -webkit-linear-gradient(white 5px, rgb(145, 211, 40), rgb(39, 94, 0));
+   background: linear-gradient(white 5px, rgb(145, 211, 40), rgb(39, 94, 0));
+
+   border: 2px solid rgb(39, 94, 0);
+   border: 2px solid rgba(39, 94, 0, 0.7);
+;
+}
+
+#peek, #solve {
+
+   font-size: 14px;
+   padding: 2px 5px;
+   width: 130px;
+
+   background-color: rgb(254, 232, 130);
+   background: -o-linear-gradient(white 5px, rgb(254, 232, 130), rgb(233, 207, 29));
+   background: -ms-linear-gradient(white 5px, rgb(254, 232, 130), rgb(233, 207, 29));
+   background: -moz-linear-gradient(white 5px, rgb(254, 232, 130), rgb(233, 207, 29));
+   background: -webkit-linear-gradient(white 5px, rgb(254, 232, 130), rgb(233, 207, 29));
+   background: linear-gradient(white 5px, rgb(254, 232, 130), rgb(233, 207, 29));
+
+   border: 2px solid rgb(233, 207, 29);
+   border: 2px solid rgba(233, 207, 29, 0.7);
+
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+}
+
+#peek:hover, #solve:hover {
+   cursor: pointer;
+
+   background-color: rgb(233, 207, 29);
+   background: -o-linear-gradient(white 5px, rgbrgb(233, 207, 29), rgb(200, 170, 0));
+   background: -ms-linear-gradient(white 5px, rgb(233, 207, 29), rgb(200, 170, 0));
+   background: -moz-linear-gradient(white 5px, rgb(233, 207, 29), rgb(200, 170, 0));
+   background: -webkit-linear-gradient(white 5px, rgb(233, 207, 29), rgb(200, 170, 0));
+   background: linear-gradient(white 5px, rgb(233, 207, 29), rgb(200, 170, 0));
+
+   border: 2px solid rgb(200, 170, 0);
+   border: 2px solid rgba(200, 170, 0, 0.7);
+}
+
+#peek {
+   margin-right: 15px;
+}
+
+#solve {
+   margin-left: 15px;
+}
+
+article > figure {
+   clear: left;
+   margin: 10px auto;
+   width: 95%;
+   text-align: center;
+}
+
+
+/* Aside Styles */
+
+aside {
+   background-color: rgb(231,231,211);
+
+   border-top: 3px solid rgb(191, 191, 150);
+   border-right: 3px solid rgb(191, 191, 150);
+   border-bottom: 3px solid rgb(191, 191, 150);
+
+   -moz-border-radius-bottomright: 50px;
+   -webkit-border-bottom-right-radius: 50px;
+   border-bottom-right-radius: 50px;
+
+   -moz-border-radius-topright: 50px;
+   -webkit-border-top-right-radius: 50px;
+   border-top-right-radius: 50px;
+
+   float: left;
+   width: 225px;
+   margin-bottom: 20px;
+
+
+}
+
+aside > p {
+   font-size: 12px;
+   margin: 10px 10px 10px 10px;
+}
+
+aside > h1 {
+   font-size: 1.1em;
+   font-weight: normal;
+   letter-spacing: 5px;
+   margin: 15px 0px 0px 10px;
+}
+
+aside > h1:last-of-type {
+   border-top: 1px solid black;
+}
+
+aside strong {
+   font-weight: bold;
+}
+
+aside code {
+   background-color: rgb(191, 191, 191);
+}
+
+aside span {
+   font-weight: bold;
+}
+
+aside a {
+   color: rgb(36, 148, 0);
+   text-decoration: underline;
+}
+
+
+/* Page footer styles */
+
+footer {
+   width: 880px;
+   background-color: black;
+   clear: left;
+   color: rgb(211, 255, 163);
+   font-size: 0.8em;
+   height: 10px;
+   line-height: 10px;
+   padding: 10px;
+}
+
+footer span {
+   float: right;
+   margin-right: 10px;
+}
+
+footer span a {
+   color: rgb(211, 255, 163);
+}
+
+
+
+
+

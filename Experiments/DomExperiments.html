@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+	Collection experiments
+	CS133JS
+	Brian Bird
+	2/26/2013                
+   -->
+
+      <meta charset="UTF-8" />
+      <title>DOM Experiments</title>
+	  
+	<style type="text/css">
+		.inputBox {
+			background-color:yellow;
+		}
+	</style>
+
+	<script type="text/javascript">
+		window.onload = DomDemo;
+		
+		function DomDemo()
+		{
+			var text = document.getElementById("multilineText");
+			text.value = "test";
+			var heading = document.getElementsByTagName("h1");
+			heading[0].innerHTML = "DOM Demo";
+			document.getElementById("entryB").className = "inputBox";
+			submitButton = document.getElementById("submitbutton");
+			submitButton.onclick = SubmitValues;
+		}
+		
+		function SubmitValues()
+		{
+			var text = document.getElementById("multilineText");
+			var inputBoxes = document.getElementsByClassName("inputBox");
+			text.value = inputBoxes[0].value + "\n"; 
+			text.value += inputBoxes[1].value + "\n";
+			text.value += this.value;
+		}
+		
+	</script>
+   </head>
+
+   <body>  
+		<h1>Demo Form</h1>
+		<form id="demoForm" action="" />
+		   
+		   <div >
+			  <label id="labelEntryA" for="entryName">Entry A</label>
+			  <input id="entryA" class="inputBox" />
+			  
+			  <label id="labelEntryB" for="entry">Entry B</label>
+			  <input id="entryB" />
+
+			  <input type="button" id="submitbutton" value="Submit" />
+		   
+			  <textarea id="multilineText" > </textarea>
+		   
+		   </div>
+		</form>
+
+   </body>
+
+</html>

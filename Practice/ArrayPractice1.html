@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+	Array Practice
+	CS133JS
+	Brian Bird
+	2/12/2013                
+   -->
+
+      <meta charset="UTF-8" />
+      <title>Array Practice</title>
+
+	<script type="text/javascript">
+		function arrayDemo()
+		{	
+			document.write("<Pre>");
+		
+			/*
+			var names = new Array();
+			
+			
+			names[0] = "Jim";
+			names[1] = "Sue";
+			names[2] = "Fred";
+			names[3] = "George";
+			names[4] = 86;
+			names[5] = true;
+			names[7] = null;
+			*/
+			
+			/*
+			var names = new Array("Jim", "Sue", "Fred",
+				"George", 99, false, null);
+			*/
+			
+			var names = ["Jim", "Sue", "Fred",
+				"George", 99, false, null];
+			
+			document.writeln(names[0]);
+			document.writeln(names[4]);
+			document.writeln(names[5]);
+			document.writeln(names[6]);
+			document.write("</Pre>");
+		}
+	</script>
+   </head>
+
+   <body>       
+		<form id="practiceform" name="practiceform" action="" />
+		   
+		   <div >
+			  <label id="labelA" for="entryA">Entry A</label>
+			  <input id="entryA" name="entryA"  readonly="readonly" />
+
+			  <input type="button" id="submitbutton" value="Submit" onclick="arrayDemo()" />
+		   </div>
+		</form>
+
+   </body>
+
+</html>

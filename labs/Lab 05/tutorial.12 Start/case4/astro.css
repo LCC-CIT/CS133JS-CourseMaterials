@@ -1,0 +1,178 @@
+/*
+   New Perspectives on HTML, CSS, and JavaScript
+   Tutorial 12
+   Case Problem 4
+   Filename: astro.css
+
+   This file contains styles used in the lunar.htm file
+
+*/
+
+
+
+/* Display HTML5 structural elements as blocks */
+
+article, aside, figure, figcaption, footer, hgroup, header, 
+section, nav {
+   display: block;
+}
+
+
+/* Set the default page element styles */
+
+body {
+   margin: 0px;
+   width: 100%;
+
+}
+
+body * {
+
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 100%;
+   font-weight: inherit;
+   line-height: 1.2em;
+   margin: 0px;
+   padding: 0px;
+   text-decoration: none;
+}
+
+html {
+   background-color: rgb(31, 31, 31);
+}
+
+html, body {
+ height: 100%;
+} 
+
+
+body {
+   background-color: rgb(101, 101, 101);
+   float: none;
+   margin: 0px auto;
+   width: 90%;
+   max-width: 1000px;
+   min-width: 800px;
+}
+
+header {
+   width: 100%;
+}
+
+header nav.horizontal {
+   width: 100%;
+}
+
+
+header nav.horizontal li {
+   outline: 1px solid rgb(211, 211, 211);
+   background-color: rgb(41, 41, 41);
+   display: block;
+   font-family: Tahoma, Geneva, sans-serif;
+   font-size: 12px;
+   font-weight: bold;
+   float: left;
+   height: 30px;
+   letter-spacing:3px;
+   line-height: 30px;;
+   text-align: center;
+   width: 16.66%;
+}
+
+
+header nav.horizontal li a {
+   color: white
+}
+
+header img {
+   clear: left;
+   display: block;
+   margin: 5px auto;
+}
+
+
+article {
+   margin: 0px 20px;
+}
+
+article p {
+   font-size: 0.9em;
+   margin: 0px 0px 15px 0px;
+}
+
+article b {
+   font-weight: bold;
+}
+
+
+h1 {
+   font-family: Courier New, monospace;
+   font-size: 2em;
+   letter-spacing: 5px;
+   font-weight: bold;
+}
+
+#summary {
+    border: 1px solid black;
+    border-collapse: collapse;
+    float: right;
+    font-family: Courier New,monospace;
+    font-size: 14px;
+    margin: 0 5px 10px 25px;
+}
+
+#summary #sumtitle {
+    background-color: black;
+    color: white;
+    font-size: 1.1em;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#summary #lunarimg {
+   background-color: black;
+   text-align: center;
+   vertical-align: middle;
+   width: 75px;
+}
+
+#summary th {
+    background-color: rgb(51, 51, 51);
+    border: 1px solid black;
+    color: white;
+    font-size: 0.9em;
+    font-weight: normal;
+    height: 20px;
+    line-height: 20px;
+    text-align: left;
+    width: 200px;
+}
+#summary td {
+    background-color: rgb(81, 81, 81);
+    border: 1px solid black;
+    color: white;
+    font-size: 0.9em;
+    text-align: right;
+    width: 120px;
+}
+
+
+footer {
+   margin-top: 15px;
+   border-top: 1px solid rgb(171, 171, 171);
+   background-color: rgb(71, 71, 71);
+   color: rgb(231, 231, 231);
+   text-align: right;
+}
+
+footer, footer span  a {
+   font-size: 11px;
+   padding: 10px;
+   color: rgb(231, 231, 231);
+}
+
+footer span a:hover {
+   color: rgb(231, 231, 231);
+   text-decoration: underline;
+}

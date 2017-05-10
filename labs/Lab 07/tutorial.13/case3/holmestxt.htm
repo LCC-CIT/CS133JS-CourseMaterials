@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      New Perspectives on HTML, CSS, and JavaScript
+      Tutorial 13
+      Tutorial Case
+
+      The 221B Blog
+      Author: 
+      Date:   
+
+      Filename:         holmes.htm
+      Supporting files: logo.jpg, modernizr-15.js, pullmenu.css,
+                        pullmenu.js, rightarrow.png, sh.jpg,
+                        shback.png, shblog.css
+   -->
+
+      <meta charset="UTF-8" />
+      <title>The 221B Blog</title>
+      <script src="modernizr-1.5.js"></script>
+
+      <link href="shblog.css" rel="stylesheet" type="text/css" />
+      <link href="pullmenu.css" rel="stylesheet" type="text/css" />
+
+   </head>
+
+   <body>
+      <section id="main">
+
+         <header>
+            <img src="logo.jpg" alt="The 221B Blog" />
+            <input id="searchTxt" type="search" size="20" />
+            <label for="searchTxt">Search</label>
+         </header>
+
+         <nav id="menuBar">
+            <ul>
+               <li class="submenu">
+                  <h1 class="submenuHead">The Adventures of <br />Sherlock Holmes</h1>
+                  <ul>
+                     <li><a href="#">A Scandal in Bohemia</a></li>
+                     <li><a href="#">The Red-headed League</a></li>
+                     <li><a href="#">A Case of Identity</a></li>
+                     <li><a href="#">The Boscombe Valley Mystery</a></li> 
+                     <li><a href="#">The Five Orange Pips</a></li>
+                     <li><a href="#">The Man with the Twisted Lip</a></li>
+                     <li><a href="#">The Blue Carbuncle</a></li>
+                     <li><a href="#">The Speckled Band</a></li>
+                     <li><a href="#">The Engineer's Thumb</a></li>
+                     <li><a href="#">The Noble Bachelor</a></li>
+                     <li><a href="#">The Beryl Coronet</a></li>
+                     <li><a href="#">The Copper Beeches</a></li>
+                  </ul>               
+               </li>
+               <li class="submenu">
+                  <h1 class="submenuHead">The Memoirs of <br />Sherlock Holmes</h1>
+                  <ul>
+                     <li><a href="#">Silver Blaze</a></li> 
+                     <li><a href="#">The Yellow Face</a></li> 
+                     <li><a href="#">The Stock-broker's Clerk</a></li> 
+                     <li><a href="#">The "Gloria Scott"</a></li> 
+                     <li><a href="#">The Musgrave Ritual</a></li> 
+                     <li><a href="#">The Reigate Puzzle</a></li> 
+                     <li><a href="#">The Crooked Man</a></li> 
+                     <li><a href="#">The Resident Patient</a></li> 
+                     <li><a href="#">The Greek Interpreter</a></li>
+                     <li><a href="#">The Naval Treaty</a></li> 
+                     <li><a href="#">The Final Problem</a></li>
+                  </ul>               
+               </li>
+               <li class="submenu">
+                  <h1 class="submenuHead">The Return of <br />Sherlock Holmes</h1>
+                  <ul>
+                     <li><a href="#">The Empty House</a></li> 
+                     <li><a href="#">The Norwood Builder</a></li> 
+                     <li><a href="#">The Dancing Men</a></li> 
+                     <li><a href="#">The Solitary Cyclist</a></li> 
+                     <li><a href="#">The Priory School</a></li> 
+                     <li><a href="#">Black Peter</a></li> 
+                     <li><a href="#">Charles Augustus Milverton</a></li> 
+                     <li><a href="#">The Six Napoleons</a></li> 
+                     <li><a href="#">The Three Students</a></li> 
+                     <li><a href="#">The Golden Pince-Nez</a></li> 
+                     <li><a href="#">The Missing Three-Quarter</a></li> 
+                     <li><a href="#">The Abbey Grange</a></li> 
+                     <li><a href="#">The Second Stain</a></li>
+                  </ul>               
+               </li>
+               <li class="submenu">
+                  <h1 class="submenuHead">The Case Book of <br />Sherlock Holmes</h1>
+                  <ul>
+                     <li><a href="#">The Illustrious Client</a></li> 
+                     <li><a href="#">The Blanched Soldier</a></li> 
+                     <li><a href="#">The Mazarin Stone</a></li> 
+                     <li><a href="#">The Three Gables</a></li> 
+                     <li><a href="#">The Sussex Vampire</a></li> 
+                     <li><a href="#">The Three Garridebs</a></li> 
+                     <li><a href="#">Thor Bridge</a></li> 
+                     <li><a href="#">The Creeping Man</a></li> 
+                     <li><a href="#">The Lion's Mane</a></li> 
+                     <li><a href="#">The Veiled Lodger</a></li> 
+                     <li><a href="#">Shoscombe Old Place</a></li> 
+                     <li><a href="#">The Retired Colourman</a></li>
+                  </ul>               
+               </li>
+               <li class="submenu">
+                  <h1 class="submenuHead">His Last Bow</h1>
+                  <ul>
+                     <li><a href="#">Wisteria Lodge</a></li> 
+                     <li><a href="#">The Cardboard Box</a></li> 
+                     <li><a href="#">The Red Circle</a></li> 
+                     <li><a href="#">The Bruce-Partington Plans</a></li> 
+                     <li><a href="#">The Dying Detective</a></li> 
+                     <li><a href="#">The Disappearance of Lady Frances Carfax</a></li> 
+                     <li><a href="#">The Devil's Foot</a></li> 
+                     <li><a href="#">His Last Bow</a></li>
+                  </ul>               
+               </li>
+               <li class="submenu">
+                  <h1 class="submenuHead">The Novels</h1>
+                  <ul>
+                     <li><a href="#">A Study in Scarlet</a></li>  
+                     <li><a href="#">The Sign of the Four</a></li>  
+                     <li><a href="#">The Hound of the Baskervilles</a></li>  
+                     <li><a href="#">The Valley of Fear</a></li> 
+                  </ul>               
+               </li>
+            </ul>
+         </nav>
+
+         <nav class="vertical">
+            <ul id="linkList">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Discussion Forum</a></li>
+               <li><a href="#">About the WebMaster</a></li>
+               <li><a href="#">Issues Archive</a></li>
+
+               <li class="newgroup submenu">
+                  <h1 class="submenuHead">
+                     User Submissions
+                     <img src="rightarrow.png" alt=">" />
+                  </h1>
+                  <ul>
+                     <li><a href="#">Essays</a></li>
+                     <li><a href="#">Fan Fiction</a></li>
+                     <li><a href="#">Art</a></li>
+                  </ul>
+               </li>
+            
+               <li class="submenu">
+                  <h1 class="submenuHead">
+                     Holmes on the Web
+                     <img src="rightarrow.png" alt=">" />
+                  </h1>
+                  <ul>
+                     <li><a href="#">The 221B Museum</a></li>
+                     <li><a href="#">Jeremy Brett Page</a></li>
+                     <li><a href="#">Basil Rathbone Page</a></li>
+                     <li><a href="#">The Baker Street Irregulars</a></li>
+                     <li><a href="#">The Holmes Atlas</a></li>
+                     <li><a href="#">Holmes Radio Podcast</a></li>
+                     <li><a href="#">Holmes Audiobooks</a></li>
+                  </ul>
+               </li>
+
+               <li class="submenu">
+                  <h1 class="submenuHead">
+                     Arthur Conan Doyle
+                     <img src="rightarrow.png" alt=">" />
+                  </h1>
+                  <ul>
+                     <li><a href="#">Dr. Doyle</a></li>
+                     <li><a href="#">Victorian England</a></li>
+                     <li><a href="#">Strand Magazine</a></li>
+                  </ul>
+               </li>
+
+               <li class="submenu">
+                  <h1 class="submenuHead">
+                     Other Fictional Detectives
+                     <img src="rightarrow.png" alt=">" />
+                  </h1>
+                  <ul>
+                     <li><a href="#">Father Brown</a></li>
+                     <li><a href="#">Nick Charles</a></li>
+                     <li><a href="#">Adam Dalgliesh</a></li>
+                     <li><a href="#">Lord Darcy</a></li>
+                     <li><a href="#">Auguste Dupin</a></li>
+                     <li><a href="#">Philip Marlowe</a></li>
+                     <li><a href="#">Miss Marple</a></li>
+                     <li><a href="#">Adam Monk</a></li>
+                     <li><a href="#">Tommy and Tuppence</a></li>
+                     <li><a href="#">Lord Peter Wimsey</a></li>
+                     <li><a href="#">Hercule Poirot</a></li>
+                     <li><a href="#">Ellery Queen</a></li>
+                  </ul>
+               </li>
+
+            </ul>
+         </nav>
+
+
+         <article>
+            <figure>
+               <img src="sh.jpg" alt="" />
+            </figure>
+            <p>
+                The most famous of fictional detectives, Sherlock Holmes
+                first appeared in print in 1887, in stories written by 
+                the Scottish author and physician, Sir Arthur Conan 
+                Doyle. Holmes is famous for his use of deductive 
+                reasoning to solve difficult and complex cases. Almost
+                all Holmes stories are told in the first-person narration 
+                of Dr. John Watson, Holmes' closest friend and 
+                confidant.
+            </p>
+            <p>
+                Doyle wrote four novels and 56 short stories in the 
+                Sherlock Holmes canon. The first Holmes tale was the 
+                novel, <cite>A Study in Scarlet</cite>, 
+                which chronicled the meeting of Holmes and Watson 
+                and covered their first case together. As Doyle wrote 
+                additional tales, the Sherlock Holmes stories grew in 
+                popularity, becoming a regular feature of <cite>The 
+                Strand Magazine</cite>. Desiring to explore other 
+                literary pursuits, Doyle grew tired of the detective 
+                and killed off Holmes in the short story
+                <cite>The Final Problem</cite>. However, public 
+                acclaim and a desire for more Holmes stories eventually 
+                persuaded Doyle to resurrect the popular detective, 
+                bringing him back in <cite>The Adventure of the 
+                Empty House</cite>.
+            </p>
+            <p>
+                Doyle's final Holmes story, <cite>His Last Bow</cite>, 
+                appeared in 1914, but that did not end the public's 
+                fascination with Holmes and Watson. Basil Rathbone 
+                brought the character to the silver screen in 14 movies
+                loosely based on Doyle's original stories. In more 
+                recent years, Jeremy Brett played Holmes to great 
+                critical acclaim over four seasons of the BBC series, 
+                <cite>The Adventures of Sherlock Holmes</cite>. Holmes and
+                Watson were also given a modern twist in the BBC series
+                <cite>Sherlock</cite> starring Benedict Cumberbatch and
+                Martin Freeman as Holmes and Watson.
+             </p>
+             <p>
+                To enjoy online versions of the Sherlock Holmes short 
+                stories and novels, select entries from the pull-down 
+                menu at the top of this page.
+             </p>
+          </article>
+
+
+         <footer>
+            The 221B Blog &copy; 2015 (US)
+            <span>
+               <a href="#">About</a>
+               <a href="#">Terms</a>
+               <a href="#">Help</a>
+            </span>
+         </footer>
+
+       </section>
+
+   </body>
+
+</html>

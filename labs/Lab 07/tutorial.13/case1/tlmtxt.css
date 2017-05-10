@@ -1,0 +1,248 @@
+/*
+   New Perspectives on HTML, CSS, and JavaScript
+   Tutorial 13
+   Case Problem 1
+
+   Twin Life Magazine Style Sheet
+
+   Author:      
+   Date:        
+   Filename:    tlm.css
+
+
+*/
+
+
+
+/* Default Styles */
+
+* {
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+}
+
+header, figure, hgroup, footer, article, nav, section {
+   display: block;
+}
+
+body {
+   background-color: rgb(225, 225, 245);
+}
+
+html, body {
+ height: 100%;
+} 
+
+
+/* Main Section Styles */
+section#main {
+   background-color: rgb(191, 191, 191);
+   background-image: url(back2.png), url(back3.png);
+   background-position: top right, top left;
+   background-repeat: no-repeat;
+
+   font-family: Verdana, Geneva, sans-serif;
+   margin: 0px auto;
+   min-height: 100%;
+   position: relative;
+   width: 900px;
+
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+
+   -moz-box-shadow: 5px 0px 20px rgb(101, 101, 101),
+                      -5px 0px 20px rgb(101, 101, 101);
+   -webkit-box-shadow: 5px 0px 20px rgb(101, 101, 101),
+                      -5px 0px 20px rgb(101, 101, 101);
+   box-shadow: 5px 0px 20px rgb(101, 101, 101),
+              -5px 0px 20px rgb(101, 101, 101);
+}
+
+/* Header styles */
+header {
+   position: relative;
+   height: 150px;
+}
+
+header div {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   color: white;
+   text-align: right;
+   font-size: 12px;
+}
+
+header div input {
+   font-size: 12px;
+   text-align: left;
+}
+
+/* Navigation Styles */
+
+nav.horizontal {
+   margin-top: -3px;
+}
+
+nav.horizontal ul {
+   height: 20px;
+   background-color: rgb(9, 51, 153);
+}
+
+nav.horizontal ul li {
+   padding: 0px;
+   float: left; 
+   width: 12.5%; 
+   line-height: 20px;
+   height: 20px; 
+}
+
+nav.horizontal ul li a {
+   display: block; 
+   text-align: center;
+   width: 100%; 
+   font-size: 10px; 
+   text-decoration: none; 
+   color: white;
+}
+
+nav.horizontal ul li:hover {
+   background-color: rgb(171, 171, 231);
+   background-color: rgba(255, 255, 255, 0.4);
+
+}
+
+/* Vertical navigation list */
+
+nav.vertical {
+   width: 250px;
+   float: left;
+   font-family: 'Times New Roman', 'Times', serif;
+}
+
+
+
+nav.vertical h1 {
+   font-size: 24px;
+   margin: 10px 0px 0px 20px;
+   font-weight: normal;
+   letter-spacing: 5px;
+}
+
+nav.vertical h2 {
+   -o-transform: rotate(-90deg) translate(-100px, -70px);
+   -moz-transform: rotate(-90deg) translate(-100px, -70px);
+   -webkit-transform: rotate(-90deg) translate(-100px, -70px);
+   -ms-transform: rotate(-90deg) translate(-100px, -70px);
+   transform: rotate(-90deg) translate(-100px, -70px);
+
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 22px;
+   font-variant: small-caps;
+   text-align: right;
+   letter-spacing: 2px;
+   font-weight: bold;
+   color: rgb(226, 226, 255);
+   margin-left: 20px;
+   width: 150px;
+}
+
+nav.vertical li {
+   font-size: 16px;
+   margin-left: 50px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   letter-spacing: 0px;
+}
+
+nav.vertical li.newgroup {
+   border-top: 1px solid black;
+   margin-top: 0px;
+   padding-top: 10px;
+}
+
+nav.vertical li a {
+   text-decoration: none;
+   color: black;
+}
+
+nav.vertical li a:hover {
+   text-decoration: underline;
+}
+
+/* Article styles */
+
+article {
+   float: left;
+   width: 649px;
+   border-left: 1px solid black;
+   background-color: white;
+}
+
+article hgroup {
+   background-color: rgb(101, 101, 101);
+   color: white;
+   margin: 0px;
+}
+
+article h1 {
+   font-size: 30px;
+   font-weight: normal;
+   letter-spacing: 5px;
+   padding: 5px 0px 0px 15px;
+}
+
+article h2 {
+   font-size: 20px;
+   font-weight: normal;
+   padding: 0px 0px 10px 15px;
+}
+
+article div#fontbuttons {
+   float: right;
+   font-size: 12px;
+   margin: 10px 10px 0px 0px;
+}
+
+
+article figure {
+   float: right;
+   margin: 10px;
+}
+
+article p {
+   font-family: 'Times New Roman', Times, serif;
+   margin: 15px;
+}
+
+/* Page footer styles */
+
+footer {
+   width: 900px;
+   background-color: white;
+   clear: left;
+   color: black;
+   font-size: 10px;
+   height: 20px;
+   line-height: 20px;
+   border-top: 1px solid black;
+   text-indent: 15px;
+}
+
+footer span {
+   float: right;
+   margin-right: 10px;
+}
+
+footer span a {
+   color: black;
+   text-decoration: none;
+}
+
+
+
+/* Elastically Sized Objects in the Web Page */
+
+
+

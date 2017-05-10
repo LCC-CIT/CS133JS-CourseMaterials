@@ -1,0 +1,177 @@
+/*
+   New Perspectives on HTML and CSS and JavaScript
+   Tutorial 11
+   Case Problem 3
+
+   The Guessing Game Style Sheet
+
+   Filename:         kgstyles.css
+   Supporting Files: 
+
+*/
+
+
+/* Display HTML5 structural elements as blocks */
+
+article, aside, figure, figcaption, footer, hgroup, header, 
+section, nav {
+   display: block;
+}
+
+
+/* Set the default page element styles */
+
+body {
+   margin: 0px;
+}
+
+body * {
+
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 100%;
+   font-weight: inherit;
+   line-height: 1.2em;
+   margin: 0px;
+   padding: 0px;
+   text-decoration: none;
+   vertical-align: baseline;
+
+}
+
+
+section {
+   position: absolute;
+   margin: 0px auto;
+   
+}
+
+
+header {
+   
+}
+
+header img {
+   margin-top: 10px;
+   margin-left: 54px;
+}
+
+#links {
+   position: absolute;
+   left: 0px;
+   top: 102px;
+}
+
+article {
+   position: absolute;
+   left: 213px;
+   top: 106px;
+}
+
+article img {
+   position: absolute;
+   top: 0px;
+   left: 0px;
+}
+
+article #h1img {
+   position: absolute;
+   top: 48px;
+   left: 129px;
+}
+
+form {
+   margin-top: 150px;
+   margin-left: 50px;
+   width: 600px;
+   position: relative;
+}
+
+form p {
+   margin: 0px 0px 20px 0px;
+}
+
+form p b {
+   font-weight: bold;
+   font-family: monospace;
+   font-size: 1.4em;
+}
+
+#game {
+   position: relative;
+   margin-top: 10px;
+   width: 100%;
+}
+
+#lleft {
+   position: absolute;
+   top: 0px;
+   left: 50px;
+}
+
+#guesses {
+   position: absolute;
+   top: 20px;
+   left: 70px;
+   width: 50px;
+   height: 50px;
+   text-align: center;
+   line-height: 50px;
+   font-size: 1.5em;
+}
+
+#lguess {
+   position: absolute;
+   top: 0px;
+   left: 200px;
+}
+
+
+#guess {
+   position: absolute;
+   top: 20px;
+   left: 200px;
+   width: 90px;
+   height: 50px;
+   text-align: center;
+   line-height: 50px;
+   font-size: 1.5em;
+}
+
+#lresult {
+   position: absolute;
+   top: 0px;
+   left: 360px;
+}
+
+
+#result {
+   position: absolute;
+   top: 20px;
+   left: 360px;
+   width: 180px;
+   height: 50px;
+   text-align: center;
+   line-height: 50px;
+   font-size: 1.5em;
+}
+
+#gbutton {
+   position: absolute;
+   top: 85px;
+   left: 200px;
+   font-size: 0.9em;
+   width: 90px;
+}
+
+
+#restart {
+   position: absolute;
+   top: 120px;
+   left: 170px;
+   background-color: rgb(100, 192, 50);
+   width: 150px;
+   color: white;
+   padding: 15px 0px;
+   border: 5px outset rgb(100, 192, 50);
+}
+

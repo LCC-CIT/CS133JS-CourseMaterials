@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Written by Brian Bird, 3/30/2017 -->
+	<meta charset="UTF-8"/>
+	<title>Hello Somebody</title>
+</head>
+
+<body onload='alert("Welcome!")'>
+	<h1>First JavaScript Example</h1>
+    <p onmouseover='alert("Hi")'> This is a paragraph</p>
+	<p onmouseout="doSomething()"> This paragraph has an onmouseout event</p>
+    <script>
+		function doSomething() {
+			document.demoform.message.value = "something";
+		}
+    </script>
+	<form id="demoform" name="demoform">
+		<input id="message" name="message" />
+	</form>
+
+</body>
+</html>
+

@@ -1,0 +1,50 @@
+/*
+   New Perspectives on HTML5, CSS and JavaScript
+   Tutorial 13
+   Case Problem 4
+
+   The Word Search Table Style Sheet
+
+   Filename:         wordsearch.css
+   Supporting Files: 
+
+*/
+
+
+/* Default styles for the Word Search Table */
+
+table#wordsearchtable {
+   border: 1px solid black;
+   border-collapse;
+   width: 600px;
+}
+
+/* Styles for cells within the Word Search Table */
+
+table#wordsearchtable td {
+   width: 20px;
+   height: 20px;
+   line-height: 20px;
+   border: 1px solid transparent;
+   text-align: center;
+   vertical-align: middle;
+   font-size: 12px;
+   cursor: pointer;
+}
+
+
+
+
+/* Styles for unordered list of hidden words */
+
+ul#wordsearchlist {
+   margin-left: 20px;
+   padding-left: 0px;
+   list-style-type: none;
+}
+
+ul#wordsearchlist li {
+   font-size: 12px;
+   line-height: 1.8em;
+   cursor: pointer;
+}

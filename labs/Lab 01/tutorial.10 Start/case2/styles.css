@@ -1,0 +1,159 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 10
+   Case Problem 2
+   Filename: styles.css
+
+   This file contains styles used in the front.htm file.
+
+*/
+
+/* Display HTML5 structural elements as blocks */
+
+article, aside, figure, figcaption, footer, hgroup, header, 
+section, nav {
+   display: block;
+}
+
+
+/* Set the default page element styles */
+
+body * {
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 100%;
+   font-weight: inherit;
+   line-height: 1.2em;
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+   text-decoration: none;
+   vertical-align: baseline;
+}
+
+
+
+/* Body Styles */
+body {
+   font-family: Verdana, Geneva, sans-serif;
+   font-weight: normal;
+   margin: 20px auto;
+   width: 850px;
+}
+
+
+/* Navigation list */
+
+nav {
+   background-color: rgb(128,0,128); 
+   color: white; 
+   font-size: 10px;
+   width:120px; 
+   padding:5px; 
+   border: 1px solid teal;
+   float: left;
+}
+
+nav a {
+   color:white; 
+   text-decoration:none;
+}
+
+nav a:hover {
+   text-decoration:underline; 
+   color:yellow;
+}
+
+nav h1 {
+   font-weight:bold; 
+   text-align:center; 
+   font-size:14px; 
+   margin-bottom: 10px;
+   letter-spacing: 3px;
+}
+
+   .section {width: 100%; background-color: yellow; color: purple; padding-left: 5px;
+             margin-bottom: 0px; margin-top: 0px}
+   
+nav ul {
+   margin-top: 1px; 
+   margin-bottom: 5px;
+}
+
+nav ul a {
+   margin-left: 15px;
+}
+
+
+
+/* Section styles */
+
+section {
+   float: left; 
+   width: 550px;
+   margin-left: 15px;
+}
+
+section #ads {
+   float: left;
+}
+
+
+section #request {
+   float: right; 
+   height: 58px; 
+   width: 100px; 
+   background-color: purple; 
+   font-size: 12px;
+   border: 1px solid purple; 
+   text-align: center; 
+   font-weight: bold;
+}
+
+#request a {
+   text-decoration: none; 
+   color: white;
+}
+
+header {
+   clear: both;
+   padding-top: 10px;
+   margin-bottom: 20px;
+}
+
+section #fp {
+   float: left;
+   margin: 0px 15px 10px 0px;
+}
+
+section h2 {
+   color:rgb(128,0,128);
+   text-align:center; 
+   letter-spacing: 4px;
+   border-bottom: 1px solid teal; 
+   border-top: 1px solid teal;
+   font-size: 20px;
+}
+
+section p {
+   font-size: 16px; 
+   margin: 10px 5px 5px 0px;
+   text-align: justify;
+}
+
+
+
+footer address {
+   clear: both;
+   color:rgb(128,0,128); 
+   text-align:center; 
+   font-size: 10px; 
+   font-style: normal;
+   border-top:1px solid teal; 
+   border-bottom:1px solid teal;
+   margin-top:20px;
+}
+
+p.cont {
+   font-size: 10px; 
+   text-align: right;
+}

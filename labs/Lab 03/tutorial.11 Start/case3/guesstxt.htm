@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      New Perspectives on HTML, CSS, and JavaScript
+      Tutorial 11
+      Case Problem 3
+
+      The Guessing Game
+      Author: 
+      Date:   
+
+      Filename:         guess.htm
+      Supporting files: headmenu.jpg, kglog.jpg, kgstyles.css,
+                        links.jpg, modernizr-1.5.js, title.jpg
+                        
+   -->
+
+      <meta charset="UTF-8" />
+      <title>Number Guessing Game</title>
+      <script src="modernizr-1.5.js" type="text/javascript" ></script>
+      <link href="kgstyles.css" rel="stylesheet" type="text/css" />
+
+      <script type="text/javascript">
+
+
+         function checkEndGame() {
+            if (randNum == guess)  {
+               alert("Congratulations!");
+            } else if (document.guessform.guesses.value == 0) {
+               alert("Game over. The number was: " + randNum);
+            }
+         }
+      </script>
+
+
+   </head>
+
+   <body>
+      <section id="main">
+
+         <header>
+            <img src="kglogo.jpg" alt="Kiddergarden" />
+         </header>
+
+         <div id="links">
+            <img src="links.jpg" alt="" />
+         </div>
+
+         <article>
+            <img src="headmenu.jpg" alt="" />
+            <img src="title.jpg" id="h1img" alt="Guessing Game" />
+            
+            <form id="guessform" name="guessform" action="" />
+               <p>Our computer has choosen a number from one to 500. You have 10
+                  guesses to pick the number. Enter <b>your guess</b> in the box
+                  below and click the <b>Make Guess</b> button. The computer will
+                  tell you whether your guess is <i>too high</i>, <i>too low</i>,
+                  or <i>right!</i> Keeping guessing until you run out of 
+                  guesses or hit the correct number.
+               </p>
+               <p>To play again, click the <b>Play Again</b> button.</p>
+
+               <div id="game">
+                  <label id="lleft" for="guesses">Guesses Left</label>
+                  <input id="guesses" name="guesses" value="10" readonly="readonly" />
+
+                  <label id="lguess" for="guess">Your Guess</label>
+                  <input id="guess" name="guess" type="number" />
+
+                  <input type="button" id="gbutton" value="Guess" />
+   
+                  <label id="lresult" for="result">Result</label>
+                  <input id="result" name="result" />
+
+                  <input type="button" id="restart" value="Play Again"  />
+               </div>
+            </form>
+         </article>
+
+      </section>
+
+   </body>
+
+</html>

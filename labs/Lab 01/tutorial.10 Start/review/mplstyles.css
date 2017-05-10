@@ -1,0 +1,151 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 10
+   Review Assignment
+   Filename: mplstyles.css
+
+   This file contains styles used in the mpl2.htm file.
+
+*/
+
+/* Display HTML5 structural elements as blocks */
+
+article, aside, figure, figcaption, footer, hgroup, header, 
+section, nav {
+   display: block;
+}
+
+
+/* Set the default page element styles */
+
+body * {
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 100%;
+   font-weight: inherit;
+   line-height: 1.2em;
+   list-style: none;
+   margin: 0px;
+   padding: 0px;
+   text-decoration: none;
+   vertical-align: baseline;
+}
+
+
+
+/* Body Styles */
+body {
+   font-family: Verdana, Geneva, sans-serif;
+   font-weight: normal;
+   margin: 0px auto;
+   width: 1000px;
+}
+
+/* Header styles */
+header {
+   background-color: rgb(255,153,51); 
+   border-bottom: 1px solid blue;
+   margin-bottom: 0px; 
+}
+
+nav {
+   background-color: white;
+   border: 1px solid blue; 
+   float: left;
+   margin-bottom: 15px;
+   width: 250px;
+}
+
+nav ul {
+   margin: 10px;
+
+}
+
+nav ul li {
+   font-size: 14px; 
+}
+
+nav ul li a {
+   display: block; 
+   text-decoration: none; 
+   color: black; 
+   margin: 5px 0px;
+}
+
+nav ul li a:hover {
+   color: white;
+   background-color: blue;
+}
+
+nav h1 {
+   background-color: blue; 
+   color: white; 
+   display: block; 
+   font-weight: bold;
+   letter-spacing: 3px;
+   text-align: center; 
+   width: 100%; 
+}
+
+section {
+   float: left;
+   margin-left: 35px;
+}
+
+section h1 {
+   color: blue; 
+   font-size: 24px;
+   letter-spacing: 5px; 
+   margin-bottom: 9px; 
+   margin-top: 10px; 
+}
+
+table {
+   border: 1px solid blue; 
+   font-size: 14px; 
+   margin-top: 0px; 
+   margin-bottom: 20px;
+   width: 500px;
+}
+
+th {
+   background-color: rgb(255,153,51); 
+   color: white; 
+   font-weight: normal;
+   letter-spacing: 2px;
+   padding: 5px;
+}
+
+td {
+   vertical-align: top; 
+   background-color: white;
+   padding: 5px;
+}
+
+td a {
+   text-decoration: none; 
+}
+
+td a:hover {
+   color: blue;
+   text-decoration: underline; 
+}
+
+td.center {
+   text-align: center;
+}
+
+
+address {
+   border-top: 1px solid blue;
+   clear: left; 
+   font-size: 10px; 
+   font-style: normal;  
+   text-align: center; 
+   margin-top: 25px;
+}
+
+address b {
+   color: blue; 
+   margin-left: 15px; 
+   margin-right: 5px'
+}

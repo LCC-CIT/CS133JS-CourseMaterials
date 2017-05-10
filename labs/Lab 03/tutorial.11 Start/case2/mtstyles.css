@@ -1,0 +1,259 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 11
+   Case Problem 2
+
+   The Math Table Style Sheet
+
+   Filename:         mtstyles.css
+   Supporting Files: 
+
+*/
+
+
+/* Display HTML5 structural elements as blocks */
+
+article, aside, figure, figcaption, footer, hgroup, header, 
+section, nav {
+   display: block;
+}
+
+
+/* Set the default page element styles */
+
+body {
+   background: rgb(211, 211, 211) url(bboard.png);
+   margin: 0px;
+}
+
+body * {
+
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 100%;
+   font-weight: inherit;
+   line-height: 1.2em;
+   margin: 0px;
+   padding: 0px;
+   text-decoration: none;
+   vertical-align: baseline;
+
+}
+
+/* Main Page Styles */
+
+#main {
+   background-color: white;
+   width: 90%;
+   min-width: 700px;
+   max-width: 1000px;
+   margin: 0px auto;
+   position: relative;
+}
+
+#main div {
+   position: absolute;
+   top: 0px;
+   right: 15px;
+   color: white;
+   line-height: 55px;
+}
+
+#main div input {
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+}
+
+#main img {
+   width: 100%;
+}
+
+/* Header styles */
+   
+header {
+   position: relative;
+   width: 100%;
+}
+
+
+header img {
+   width: 100%;
+}
+
+/* Navigation lists */
+
+
+nav.horizontal {
+   width: 100%;
+   position: relative;
+   top: -3px;
+}
+
+nav.horizontal ul {
+   margin: 0px;
+}
+
+nav.horizontal ul li {
+   display: block;
+   float: left;
+   height: 50px;
+   width: 25%;
+}
+
+nav.horizontal ul li a {
+   background-color: rgb(64, 64, 64);
+   display: block;
+   font-family: 'Trebuchet MS', Helvetica, sans-serif;
+   line-height: 50px;
+   color: rgb(231, 231, 231);
+   color: rgba(255, 255, 255, 0.7);
+   text-align: center;
+   text-shadow: black 2px 1px 0px;
+   font-size: 1em;
+   outline: 1px solid black;
+}
+
+nav.horizontal ul li a:hover {
+   color: rgb(95, 145, 102);
+}
+
+
+
+
+
+/* Vertical navigation list styles */
+
+
+nav.vertical {
+   float: left;
+   width: 30%;
+   margin-top: -3px;
+   color: rgb(95, 145, 102);
+   background-color: white;
+}
+
+nav.vertical ul {
+   list-style: none;
+   border-right: 1px solid rgb(95, 145, 102);
+}
+
+nav.vertical ul li {
+   font-size: 0.7em;
+   letter-spacing: 3px;
+}
+
+
+nav.vertical ul li a {
+   display: block;
+   border-bottom: 1px solid rgb(175, 225, 182);
+   color: rgb(95, 145, 102);
+   line-height: 20px;
+   margin: 5px 25px 5px 20px;
+}
+
+nav.vertical ul li.newgroup a {
+   margin-top: 20px;
+}
+
+nav.vertical ul li a:hover {
+   color: black;
+   border-bottom: 1px solid black;
+}
+
+
+/* Article styles */
+
+article {
+   float: left;
+   margin-left: 2%;
+   width: 68%;
+}
+
+article h1 {
+   font-size: 2.4em;
+   margin: 20px 0px;
+   letter-spacing: 5px;
+
+   color: rgb(95, 145, 102);
+   text-shadow: rgb(181, 181, 181) 3px 3px 5px;
+}
+
+
+/* Table Styles */
+
+table {
+   background-color: rgb(211, 211, 211);
+
+   border: 10px outset rgb(92, 92, 92);
+   -moz-border-radius: 25px;
+   -webkit-border-radius: 25px;
+   border-radius: 25px;
+
+   padding: 15px;
+   margin: 25px auto;
+
+   -moz-box-shadow: rgb(101, 101, 101) 20px 10px 20px;
+   -webkit-box-shadow: rgb(101, 101, 101) 20px 10px 20px;
+   box-shadow: rgb(101, 101, 101) 20px 10px 20px;
+
+}
+
+
+td {
+   width: 40px;
+   height: 40px;
+   margin: 10px;
+}
+
+table input {
+
+   -moz-border-radius: 7px;
+   -webkit-border-radius: 7px;
+   border-radius: 7px;
+
+   width: 40px;
+   width: 100%;
+
+   height: 40px;
+   height: 100%;
+}
+table textarea {
+   width: 210px;
+   width: 100%;
+   height: 100px;
+   background-color: rgb(55, 105, 62);
+
+   color: white;
+   color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* Page footer styles */
+
+footer {
+   background-color: rgb(64, 64, 64);
+   clear: left;
+   color: white;
+   font-size: 0.8em;
+   height: 10px;
+   line-height: 10px;
+   padding: 10px;
+}
+
+footer span {
+   float: right;
+   margin-right: 10px;
+}
+
+footer span a {
+   color: white;
+}
+
+#main {
+   -moz-box-shadow: rgb(101, 101, 101) -20px 0px 20px,
+               rgb(101, 101, 101) 20px 0px 20px;
+   -webkit-box-shadow: rgb(101, 101, 101) -20px 0px 20px,
+               rgb(101, 101, 101) 20px 0px 20px;
+   box-shadow: rgb(101, 101, 101) -20px 0px 20px,
+               rgb(101, 101, 101) 20px 0px 20px;
+}

@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Dom Demo</title>
+</head>
+<body>
+	<h1>DOM Demo</h1>
+	<div>This is a demo about the DOM</div>
+	<table>
+		<tr> <td></td> <td></td> <td></td> </tr>
+		<tr> <td></td> <td></td> <td></td> </tr>		
+	</table>
+	
+	<h1>Images</h1>
+	<img src="Desert.jpg" id="desert">
+	<img src="Koala.jpg" id="koala">
+	
+	<script>
+		var cells = document.getElementsByTagName("td");
+		for(var i = 0; i < 6; i++)
+		{
+			cells[i].innerHTML = i + 1;
+		}
+		
+		// reference an element in a collection by it's index
+		document.images[0].src = "Jellyfish.jpg";
+		
+		// reference an element in a collection by it's id
+		document.images.koala.src = "Lighthouse.jpg";
+		
+		// Get a collection of elements by tag name, 
+		// and reference one by it's index
+		var h1s = document.getElementsByTagName("h1");
+		h1s[1].innerHTML = "Cool Images";
+		
+		// reference an element by it's id
+		var image = document.getElementById("koala");
+		image.src = "Chrysanthemum.jpg";
+	</script>
+
+</body>
+</html>

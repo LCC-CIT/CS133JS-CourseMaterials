@@ -1,0 +1,56 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Dom Demo</title>
+	<style>
+	.big {
+		font-size:50px;
+	}
+	</style>
+</head>
+<body>
+	<h1>DOM Demo</h1>
+	<div>This is a demo about the DOM</div>
+	<p id="subtitle">DOM Demo</p>
+	<p style="font-size:12px">Dog images</p>
+	<p class="big">First Dog</p>
+	<img src="dog2.png" id="dogImg">
+	<p class="big">Last Dog</p>
+	<img src="dog5.png">
+	<p class="big">The end</p>
+	<script>
+		// var number = prompt("Please enter a number from 1 to 5");
+		var dogImage = document.images[0];
+		// dogImage.src = "dog" + number + ".png";
+		document.getElementById("subtitle").innerHTML = "Hello DOM!";
+		document.getElementById("subtitle").outerHTML = "<h2>DOM Example</h2>";
+		
+		var paragraphs = document.getElementsByTagName("p");
+		paragraphs[0].style.color = "blue";
+		
+		var bigParagraphs = document.querySelectorAll("p.big");
+		bigParagraphs[0].style.backgroundColor = "purple";
+		bigParagraphs[1].style.backgroundColor = "green";
+		
+		// make the font size bigger when I click on a paragraph
+		for(var i = 0; i < paragraphs.length; i++)
+			paragraphs[i].onclick = enlargeText;
+				
+		function enlargeText() {
+			var size = parseInt(this.style.fontSize);
+			size += 10;
+			this.style.fontSize = size + "px";
+		}
+
+		//alert(paragraphs[0].style.fontSize);
+		//for(var i = 0; i < paragraphs.length; i++)
+		//	paragraphs[i].style.fontSize = "40px";
+		
+		dogImage.onclick = clickHandler;
+		function clickHandler() {
+		  // alert(this.id + " was clicked!");
+		  this.src="dog3.png";
+	   }
+</script>
+</body>
+</html>

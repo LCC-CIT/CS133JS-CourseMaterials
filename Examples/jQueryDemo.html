@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>jQuery Demo</title>
+	<style>
+		.big {
+			font-size:50px;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script src="jquery-3.2.1.min.js"></script> -->
+</head>
+
+<body>
+	<h1>jQuery Demo</h1>
+	<div class="big">Introduction to jQuery</div>
+	<p id="subtitle" style="font-size:14px">jQuery session 1</p>
+	<p style="font-size:12px">Dog images</p>
+	<p class="big">First Dog</p>
+	<img src="Images/dog2.png" id="dogImg">
+	<p class="big">Last Dog</p>
+	<img src="Images/dog5.png">
+	<p>The end</p>
+	
+	<script>
+		// jQuery's ready method can be used like the body onload event
+		$(document).ready(function() {
+        	alert("Hello jQuery!");
+		});
+
+		// select by tag name, change a dog image
+		var number = prompt("Please enter a number from 1 to 5");
+		$("img")[0].src = "Images/dog" + number + ".png";
+
+		// make the font size bigger when I click on a paragraph
+		// Note that you don't need a loop to apply an event to every element
+		$("p").on("click", function() {
+			var size = parseInt(this.style.fontSize);
+			size += 10;
+			this.style.fontSize = size + "px";});
+		
+		// select an element by tag name, qualify by last
+		$("p:last").css("color", "blue");
+		// select an element by id
+		$("#subtitle").html("Query by id works!");
+		// select elements by CSS class
+		$(".big").css("color", "purple");
+		// select by tag name + CSS class
+		$("p.big").css("color", "green");
+
+		// Apply an event handler to all selected elements
+		$("img").click(function() {
+			alert(this.src + " was clicked!");
+		});
+
+</script>
+</body>
+</html>

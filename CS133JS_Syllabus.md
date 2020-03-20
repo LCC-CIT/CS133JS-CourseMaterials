@@ -10,7 +10,13 @@
 | **Credits**       | 4        |      | **Office Phone**              | 541-463-3024                                |
 | **Day & Time**    |          |      | **Lab and**  **Office Hours** |                                             |
 
- 
+
+
+## Table of Contents
+
+ [TOC]
+
+
 
 ## Course Description
 

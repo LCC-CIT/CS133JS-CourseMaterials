@@ -8,7 +8,7 @@
 | **Course Number**       | CS 133JS                     |      | **Instructor**            | Brian Bird                                                   |
 | **CRNs**                | 43252, 43531                 |      | **E-mail**                | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
 | **Credits**             | 4                            |      | **Zoom Live Stream**      | [Meeting ID: 768-384-508](https://lanecc.zoom.us/j/768384508) |
-| **Day & Time (online)** | Tu, Th<br />9:00&ndash;11:50 |      | **Office Hours (online)** | M&ndash;Th<br />1:00&ndash;2:00                              |
+| **Day & Time (online)** | Tu, Th<br />9:00&ndash;11:50 |      | **Office Hours (online)** | M&ndash;Th<br />12:00&ndash;1:00                             |
 
 
 

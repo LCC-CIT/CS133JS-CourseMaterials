@@ -1,4 +1,4 @@
-# Getting Started
+# Getting Started Guide
 
 Course introduction and getting started materials
 
@@ -6,7 +6,15 @@ Course introduction and getting started materials
 
 [TOC]
 
-## Where to Start
+## Introduction
+
+Welcome to Beginning Programming: JavaScript!
+
+In order to succeed in this class, you will need access to a computer that can run a code editor like [Visual Studio Code](https://code.visualstudio.com/) (pretty much any computer can) and have a good internet connection. You must  devote at least 12 hours a week to learning activities. This includes 4  hours participating in Zoom live class streams or viewing recordings,  and at least 8 hours studying and working on your own.
+
+Next, read [First Steps](https://classes.lanecc.edu/mod/book/view.php?id=2334923&chapterid=146643), and then *let's have fun writing code!*
+
+## First Steps
 
 To begin this course, please complete the following steps:
 
@@ -26,7 +34,7 @@ If you have any course-specific questions, please ask them in the Course Q & A f
 
 
 
-## **Basic Technology and Computer Skills**
+## Basic Technology and Computer Skills
 
 **To be successful in this course you will need:**
 
@@ -64,11 +72,11 @@ Each week includes an overview page that must be read before  reviewing the reso
 
 ### Resources
 
-Resources will be listed under Required and Supplemental subheadings. Reviewing required resources is mandatory. Supplemental resources are  suggested if you want to get additional information about a topic.  Resources may include links to online articles, text listing offline  reading assignments, PDFs, PowerPoints, videos, interactive  presentations, or additional file types.
+Learning resources will be listed under Required and Supplemental subheadings. Reviewing required resources is mandatory. Supplemental resources are  suggested if you want to get additional information about a topic.  Resources may include links to online articles, text listing offline  reading assignments,  videos, or other types of learning materials.
 
 ### Activities
 
-Activities are required unless they are specifically marked as  optional. Activities may include written assignments, video assignments, forums, quizzes, exams, interactive simulations, wikis, presentations,  or other participatory activities.
+Learning activities are required unless they are specifically marked as  optional. Activities will include lab assignments, quizzes, or other participatory activities.
 
 ####Lab assignments
 
@@ -112,11 +120,17 @@ Questions about the course should be posted to the Course Q & A Forum. Questions
 
 All course announcements will be posted by the instructor to the News and Announcements Forum. Students are expected to check the News Forum on a daily basis. Any  questions about News Forum announcements should be asked in the Course Q & A Forum.
 
-## General Support
+## Support
+### CIT Computer Lab
 
-Please view the ***Support*** block on the right side of the Moodle course page for information on how to contact support. 
+For spring term 2020, the on-campus lab is closed, but there is a virtual tutoring lab available which is staffed full-time by CIT department tutors. Read the [procedure for accessing the virtual lab](https://lcc-cit.github.io/CS133JS-CourseMaterials/OnlineCITLabProcedures.html).
 
-Support information is also available on [help.lanecc.edu](https://help.lanecc.edu/).
+~~The CIT Main lab (Bldg 19/Rm 135) is equipped with computers which are available exclusively for students in the CIT department.  The lab hours are posted on the door. There are tutors available in the lab to help you with your lab work. There is a schedule is posted on the large white board inside the lab which lists the tutors and the times they will be available.~~
+
+### General Support
+Click on the Help link at the top-left of the Moodle course page for information on how to contact LCC technical support services. 
+
+Support information is also available at [help.lanecc.edu](https://help.lanecc.edu/).
 
 
 

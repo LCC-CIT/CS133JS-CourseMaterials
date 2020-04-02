@@ -125,7 +125,7 @@ All course announcements will be posted by the instructor to the News and Announ
 
 For spring term 2020, the on-campus lab is closed, but there is a virtual tutoring lab available which is staffed full-time by CIT department tutors. Read the [procedure for accessing the virtual lab](https://lcc-cit.github.io/CS133JS-CourseMaterials/OnlineCITLabProcedures.html).
 
-~~The CIT Main lab (Bldg 19/Rm 135) is equipped with computers which are available exclusively for students in the CIT department.  The lab hours are posted on the door. There are tutors available in the lab to help you with your lab work. There is a schedule is posted on the large white board inside the lab which lists the tutors and the times they will be available.~~
+~~The CIT Main lab (Bldg 19/Rm 135) is equipped with computers which are available exclusively for students in the CIT department.  The lab hours are posted on the door. There are tutors available in the lab to help you with your lab work. There is a schedule is posted on the large white board inside the lab which lists the tutors and the times they will be available.~~ More Information  is available on the [CIT Computer Lab Wiki](http://nlms.lanecc.edu/wiki/doku.php?id=start).
 
 ### General Support
 Click on the Help link at the top-left of the Moodle course page for information on how to contact LCC technical support services. 

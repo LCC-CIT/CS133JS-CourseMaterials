@@ -28,13 +28,13 @@
 
 ## Resources for Online Students
 
-[How to Navigate Moodle](http://bit.ly/LCC-MoodleNav) - A concise orientation to the Moodle LMS
+[How to Navigate Moodle](http://bit.ly/LCC-MoodleNav) - A concise orientation to the Moodle LMS.
 
-[Online Readiness Survey](http://bit.ly/LCC-Ready) - Assess yourself to find out how you can be more successful in any online course
+[Online Readiness Survey](http://bit.ly/LCC-Ready) - Assess yourself to find out how you can be more successful in any online course.
 
-[Online Readiness Mini-course](https://classes.lanecc.edu/course/view.php?id=93673) - Learn to succeed in any online course
+[Online Readiness Mini-course](https://classes.lanecc.edu/course/view.php?id=93673) - Learn to succeed in any online course.
 
-[How to join a Zoom meeting](https://support.zoom.us/hc/en-us/articles/201362193-How-Do-I-Join-A-Meeting-) - How to join the live stream of on-campus classes
+[How to join a Zoom meeting](https://support.zoom.us/hc/en-us/articles/201362193-How-Do-I-Join-A-Meeting-) - How to join the live stream of on-campus classes.
 
 
 

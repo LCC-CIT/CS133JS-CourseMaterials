@@ -2,6 +2,7 @@
 
 ### for CS133JS, Beginning Programming: JavaScript
 
+------
 
 
 
@@ -46,5 +47,7 @@
 [CIT Computer Lab Wiki](http://nlms.lanecc.edu/wiki/doku.php?id=start) - Information about our department's computer lab. The physical lab is closed this term (spring 2020), but you can still find information about virtual lab, tutoring and other topics here.
 
 ------
+
+
 
 Compiled by [Brian Bird](https://profbird.online), 2020

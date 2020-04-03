@@ -40,7 +40,7 @@
 
 ## Other Resources
 
-[CS133JS Course Materials](https://github.com/LCC-CIT/C133JS-CourseMaterials/) - Instructor's course materials, including code examples, on GitHub.
+[CS133JS Course Materials](https://github.com/LCC-CIT/CS133JS-CourseMaterials/) - Instructor's course materials, including code examples, on GitHub.
 
 [CIT Computer Lab Wiki](http://nlms.lanecc.edu/wiki/doku.php?id=start) - Information about our department's computer lab. The physical lab is closed this term (spring 2020), but you can still find information about virtual lab, tutoring and other topics here.
 

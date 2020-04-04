@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+<body>
+	<h1>Data Type Demo</h1>
+	
+	<pre>
+	<script>
+		var words = "this is a string"; 
+		var number1 = 1234; 
+		var truth = false;
+		var stuff; 
+
+		document.writeln(typeof words); 
+		document.writeln(typeof number1); 
+		document.writeln(typeof truth); 
+		document.writeln(typeof stuff);	
+		
+		// A statement with two numbers
+		number1 = 4;
+		var number2 = 6;
+		var sum = number1 + number2 ;
+		document.writeln(sum);
+		
+		// A statement with a number and a string
+		var result = number1 + words;
+		document.writeln(result);
+		
+		// statement with a number and a boolean
+		truth = true; // true is equal to 1, false is 0
+		result = number1 + truth;
+		document.writeln(result);
+		document.writeln(truth);
+
+		// statement with a string and a boolean
+		result = words + truth;
+		document.writeln(result);
+
+	</script>
+	</pre>
+	
+</body>
+</html>

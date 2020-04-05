@@ -65,7 +65,7 @@ Last time, we wrote this code and ran it in the browser console:
    - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
    - [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
 
-3. Using VS Code, start with a standard empty HTML page and add this code to the body:
+3. Using VS Code, start with a standard [empty HTML page](../Examples/Empty.html) and add this code to the body:
 
    ```HTML
    <h1>My First JavaScript Program</h1>

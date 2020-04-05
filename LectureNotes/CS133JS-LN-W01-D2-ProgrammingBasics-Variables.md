@@ -46,22 +46,42 @@
 # JavaScript Variables and Data Types
 
 ## Variables 
-Variables are named memory locations 
+Variables are named memory locations.
 
-- Draw a picture of memory
+- Draw a picture representing variables in computer memory.
 
-  ## Example: Hello world
+## Example: Hello world
 
-1. Last time, we wrote this code: 
+Last time, we wrote this code and ran it in the browser console: 
+
   ```javascript
   var name = prompt(“Please enter your name”);
-      		document.write("<p>Hello " + name + "!</p>");
+      		document.write("Hello " + name + "!");
   ```
-2. Let's add a second variable and prompt: 
+2. This time, we'll put it in a web page, but, first, install [Visual Studio Code](https://code.visualstudio.com/). 
+   And, optionally, add the following extensions:
+
+   - [Debugger for Firefox](https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug)
+   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+   - [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
+
+3. Using VS Code, start with a standard empty HTML page and add this code to the body:
+
+   ```HTML
+   <h1>My First JavaScript Program</h1>
+   <script>
+     var name = prompt(“Please enter your name”);
+     document.write("Hello " + name + "!");
+   </script>
+   ```
+
+   
+
+4. Let's *refactor* it to add a second variable and prompt: 
   ```javascript
-    var first = prompt("Please enter your first name");
-    var last = prompt("Please enter your last name");
-    document.write("<p>Hello " + first + " " 		+ last + "!</p>");
+    var firstName = prompt("Enter your first name");
+    var lastName = prompt("Enter your last name");
+    document.write("Hello " + firstName + " " 		+ lastName + "!");
   ```
 
 #### Discussion

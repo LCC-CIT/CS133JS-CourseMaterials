@@ -63,7 +63,7 @@
   - [Facebook](https://www.facebook.com/) (likes, comments, add friend, etc.)
   - [LTD](https://www.ltd.org/) static pages (about us) and dynamic (trip planner)
 - **Exercise**
-  - [LCC](https://www.lanecc.edu/) web site – which parts could run on the server? Which parts in 	the browser?
+  - [LCC](https://www.lanecc.edu/) web site – which parts could run on the server? Which parts in the browser?
 
 
 
@@ -74,14 +74,16 @@
   - Originally designed to just run in web browsers (client-side code) but now used everywhere including: server-side, desktop, and mobile
   
 - A completely different language from Java, but has some similarities
-  
+
   - JS is interpreted, dynamic, and multi-paradigm (procedural & Object Oriented, imperative & functional). *We’ll explain these things later.*
-  
+
   ## Guided Exercise: Hello world
-  
-  1. Open Firefox, press F12, and select console. We'll put this code in the console.
+
+  1. Set up your computer to do JavaScript development.
+     - Install [Firefox](https://www.mozilla.org/en-US/firefox/new/).
+  2. Open Firefox, press F12, and select console. We'll put this code in the console.
      (Almost any browser will have a similar feature in it's *developer* menu)
-  2. Enter the code below. (This is simple, but not very useful.) 
+  3. Enter the code below. (This is simple, but not very useful.) 
   ```javascript
   document.write("<p>Hello world!</p>");
   ```
@@ -90,7 +92,7 @@
    var name = "world"; // can change to “other names”
    		 document.write("<p>Hello " + name + "!</p>");
   ```
-  
+
 4. Finally, we'll add a way for a user to enter information. We do that by adding an input prompt.
   ```javascript
   var name = prompt(“Please enter your name”);
@@ -105,15 +107,15 @@
 - Syllabus – quick overview
 - Reading and Quizzes
   
-  - Purpose of quizzes isn’t testing, it’s focus and accountability
+  - Purpose of quizzes isn’t testing, it’s focus and accountability.
 - Lab assignments
-  - Part 1 is the tutorial exercise
-  - Part 2 requires problems solving
-  - Upload results to citstudent
+  - Part 1 will usually be a tutorial exercise.
+  - Part 2 will require problem-solving.
+  - You will upload your solutions to Moodle and usually to citstudent as well.
 - Code reviews
-  - Beta and Production versions
-  - Code reviews used by real development teams
-  - Look at the code review procedure document
+  - Each lab assignment has a beta and production version. Code reviews are done on the beta version.
+  - One reason we do code reviews: they are used by development teams in the real world.
+  - Look at the code review procedure document.
   
   
    	

@@ -32,7 +32,11 @@ This is what you need to do this week:
 
 - Due Dates: Look at the Moodle Upcoming Events to see what is due this week.
 
-- Reading: Do the required reading.
+- Reading:
+
+  - Read the first reading before the first class session of the week.
+  - Read the second one before the second class session.
+  - Only skim the lecture notes before each lecture.
 
 - Lectures: Participate in the live interactive video stream at class time, or watch the video recordings. 
 
@@ -40,7 +44,7 @@ This is what you need to do this week:
 
 - Lab assignment: Start work on it after the first lecture.
 
-- Beta version (draft) of the lab assignment: submit it by this Saturday.
+- Beta version (draft) of the lab assignment: submit this by Saturday.
 
 - Code review: do a code review for your lab partner by Tuesday of next week.
 

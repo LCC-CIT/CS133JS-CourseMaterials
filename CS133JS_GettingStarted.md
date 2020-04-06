@@ -134,6 +134,28 @@ Support information is also available at [help.lanecc.edu](https://help.lanecc.e
 
 
 
+## Bookstore&mdash;Titan Store
+
+**Address** (on the LCC main campus)
+
+4000 East 30th Avenue
+
+Center Building
+
+Eugene, OR  US  97405 
+
+[Get Directions](https://www.google.com/maps/search/4000 East 30th Avenue Center Building Eugene OR US 97405)
+
+
+
+Web site: [Titan Store](https://www.bkstr.com/laneccstore)
+
+Email: [TitanStore@bkstr.com](mailto:TitanStore@bkstr.com)
+
+Phone: [541-463-5256](tel:541-463-5256)
+
+Fax: 541-463-5740
+
 
 
 

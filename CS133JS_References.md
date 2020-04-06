@@ -20,7 +20,7 @@
 
 *[The Modern JavaScript Tutorial](https://javascript.info/)*, by Ilya Kantor, 2020.
 
-[You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md), book series by Kyle Simpson, 2019.
+*[You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md)*, 1st Edition, book series by Kyle Simpson,  O'Reilly, March 2015.
 
 [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 

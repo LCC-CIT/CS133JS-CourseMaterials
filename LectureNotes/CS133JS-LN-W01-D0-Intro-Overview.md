@@ -13,6 +13,7 @@ Understand:
   - Statements
   - Operators
   - Key words (commands)
+  - Values
   - Variables and their data types
 
 Be able to write and run a JavaScript program:
@@ -37,6 +38,10 @@ This is what you need to do this week:
 
    *Lectures contain valuable information you won't get elsewhere; don't miss a lecture!* 
 
-- Quiz: Take the quiz. The questions are based on the lecture and reading.
+- Lab assignment: Start work on it after the first lecture.
 
-- Lab assignment: Start work on it now, submit your lab work at the end of the week
+- Beta version (draft) of the lab assignment: submit it by this Saturday.
+
+- Code review: do a code review for your lab partner by Tuesday of next week.
+
+- Production version (final) of the lab assignment: submit it by Thursday of next week.

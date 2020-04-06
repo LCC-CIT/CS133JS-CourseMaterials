@@ -24,11 +24,10 @@ To begin this course, please complete the following steps:
 4. Familiarize yourself with the cycle of weekly learning activities.
 5. Post an introduction message to the Introductions forum.
 
-   **Do the steps below as soon as the resources are available on Moodle. They will be available by 4/1.**
 6. Read the overview for week one.
-7. Read/view the required resources for the first week of the course.
-8. Complete the activities/assignments/forum posts for the first week.
-9. Repeat steps 6&ndash;8 for every week according to the course schedule.
+7. Do the required reading for this week of the course, skim the lecture notes.
+8. Complete the activities/assignments/forum posts for this week.
+9. Repeat steps 6&ndash;8 every week according to the course schedule.
 
 If you have any course-specific questions, please ask them in the Course Q & A forum. For any other questions, support contact information can be found in the Support block.
 

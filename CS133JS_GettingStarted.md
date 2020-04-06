@@ -87,26 +87,31 @@ Each of you will be assigned to a lab partner in Moodle. There are two versions 
 
 ####Getting and Giving a Code Review
 
-When you have a  beta (draft) version of you lab assignment ready, you will post it in  the Lab Beta + Discussion forum in the Moodle section for the current  week. This must be done before the due date for the beta version. Your lab partner will then check your work and complete the "Beta" column of the  code review form. This must be done before the due date for the code review.
+When you have a beta (draft) version of you lab assignment ready, you will post it in  the Lab Beta forum in the Moodle section for the current  week. This must be done before the due date for the beta version. Your lab partner will then check your work and complete the "Beta" column of the  code review form. This must be done before the due date for the code review.
 
 ####What to Do with the Code Review You Get
 
-Your lab  partner gives you a code review, a you may revise your lab work and then fill out the "Production" column of the code review form to indicate  your revisions. You will then upload the release version of your lab  work to Moodle along with the completed code review form.
+After your lab partner gives you a code review, a you may revise your lab work and then fill out the "Production" column of the code review form to indicate  your revisions. You will then upload the release version of your lab  work to Moodle along with the completed code review form.
 
 ####What to Do If Something Goes Wrong
 
 - Q: What if my lab partner didn’t post a beta version for me to review?
+  
   A: Communicate with them and find out when they will have a beta version  ready. Remind them that a beta version doesn’t need to be fully  complete. Review their code for them when they send it. As long as you  review your partner’s code before the due date for the final version,  your review won’t be counted late.
 - Q: What if I have already communicated with my lab partner and they  haven’t responded or they have said they won’t be posting a beta version anytime soon?
+  
   A: You can do a code review for someone else. Or, you  can post an offer in the class Q and A forum to see if anyone wants an  additional review of their most recent lab.
 - Q: What if my lab partner didn’t send me a code review by the deadline?
-  As long as you have already posted your beta version, you can review your  own code and put a note in the comments section saying your partner  didn't give you a review by the deadline.
+  
+  A: You can ask someone else to give you a review, or as long as you have already posted your beta version, you can review your own code and put a note in the comments section saying your partner didn't give you a review by the deadline.
 
 ####Additional Questions
 
 - Q: Can I do a code review for someone else in addition to my lab partner? 
+  
   A: Sure, it is good experience for you and helpful for the other person.  They just need to have done a different assignment than the one you  did. 
 - Q: Can I get more than one code review for a particular lab? 
+  
   A:  Sure, it’s fine for someone else, in addition to your lab partner, to  review your code. As long as they didn’t do the same assignment that you did. 
 
 ## On-line Course Communication

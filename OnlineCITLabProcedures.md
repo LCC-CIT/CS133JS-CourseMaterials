@@ -17,9 +17,9 @@ Go to this Google Form: https://forms.gle/TtZ8Qm1HAi1WHPCa7 and provide the foll
 
 ## After Hours (non-emergency questions)
 
-Use the link below and fill out the Google sheet. Your questions will be answered in the order received&mdash;Google will email the sheet to the CIT lab for you.
+If it's after 5:00, or if a challenge isn’t immediate, or if a student sees the chat is full and doesn’t want to wait, use the link below and fill out the Google form. Your questions will be answered in the order received.
 
-https://docs.google.com/spreadsheets/d/1aE6UlPnxFALdjqv_uNjqraX47zNXmgp0Q7BGvP3rP3I/edit?usp=sharing
+https://docs.google.com/forms/d/e/1FAIpQLSciTAAK454fVtlttQulgruY4jjoRqkqldZ_mFSJJjWz_qqtWg/viewform
 
 ## Expectations
 

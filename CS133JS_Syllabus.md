@@ -8,7 +8,7 @@
 | **Course Number**       | CS 133JS                     |      | **Instructor**            | Brian Bird                                                   |
 | **CRNs**                | 43252, 43531                 |      | **E-mail**                | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
 | **Credits**             | 4                            |      | **Zoom Live Stream**      | [Meeting ID: 768-384-508](https://lanecc.zoom.us/j/768384508) |
-| **Day & Time (online)** | Tu, Th<br />9:00&ndash;11:50 |      | **Office Hours (online)** | M&ndash;Th<br />12:00&ndash;1:00                             |
+| **Day & Time (online)** | M&ndash;Th, 9:00&ndash;10:50 |      | **Office Hours (online)** | M&ndash;Th, 12:00&ndash;1:00                                 |
 
 
 
@@ -37,7 +37,7 @@ The intention of the course is to enable you to create and maintain interactive 
 | JavaScript                  | HTML 5                                | CSS 3 |
 | FTP client (like FileZilla) | Code editor (like Visual Studio Code) |       |
 
-#### 
+
 
 | Themes and Issues           |                              |                                  |
 | --------------------------- | ---------------------------- | -------------------------------- |
@@ -89,7 +89,7 @@ The web host where you will publish your programming lab assignments is [citstud
 
 #### Software
 
-The minimum hardware and software required for programming using JavaScript is discussed in Tutorial 10 of the textbook, Programming with JavaScript. The ideal development platform involves a web client machine running:
+All of the software required for this class is free. These are the software applications you need:
 
 - An appropriate operating system. You can use Windows 7 or 10, any recent version of the Mac OS, or Linux to do your work for this class.
 
@@ -104,7 +104,8 @@ The minimum hardware and software required for programming using JavaScript is d
 ####  Free and Discounted Software for Students
 
 - [**Azure Dev Tools for Teaching**](https://signup.azure.com/studentverification?offerType=3) (previously known as Microsoft Imagine Premium) is a subscription-based offering, paid for by the LCC CIT department, providing access to professional development and design tools, software, and services from Microsoft. 
-- **[On The Hub](https://lanecc.onthehub.com/WebStore/ProductsByMajorVersionList.aspx?cmi_mnuMain=f189368a-f0a6-e811-8109-000d3af41938)** has partnered with Microsoft, Adobe, IBM, Symantec, VmWare and other software publishers to offer discounted and free software for students and faculty.
+- [**Microsoft Office 365**](https://help.lanecc.edu/index.php?/Knowledgebase/Article/View/1143) LCC students and staff can get a free subscription to Office 365, which includes Microsoft Word, Excel, PowerPoint, Access, and more.
+- **[On The Hub](https://lanecc.onthehub.com/WebStore/ProductsByMajorVersionList.aspx?cmi_mnuMain=f189368a-f0a6-e811-8109-000d3af41938)** has partnered with Microsoft, Adobe, IBM, Symantec, VMware and other software publishers to offer discounted and free software for students and faculty.
 
 None of the software provided in these offers is required for this class, but you may want to take advantage of the free software.
 

@@ -191,7 +191,6 @@ By Tuesday
 
 - Complete a code review of last week's lab work for your lab partner (starting the 2nd week).
 -  Take the reading quiz.
-- Complete the Programming Quiz (only some weeks).
 
 By Thursday
 

@@ -95,7 +95,7 @@
 
 4. Finally, we'll add a way for a user to enter information. We do that by adding an input prompt.
   ```javascript
-  var name = prompt(“Please enter your name”);
+  var name = prompt("Please enter your name");
   	document.write("<p>Hello " + name + "!</p>");
   ```
   Now it's almost useful :-)

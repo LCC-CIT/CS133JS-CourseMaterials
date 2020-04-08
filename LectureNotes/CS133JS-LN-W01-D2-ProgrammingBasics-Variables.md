@@ -29,16 +29,16 @@
   - Repetition (loops)
 - Syntax (grammar)
   - Variables – dynamic typing
-    - Primitive types: number, boolean, string, null, undefined
+    - Primitive types: *number*, *boolean*, *string*, *null*, *undefined*
     - Best practice: declare and initialize before use
   - Operators: +, -, *, /, %, ++, --
   - Keywords (reserved words): http://www.w3schools.com/js/js_reserved.asp
   - Statements – End with a semicolon
 - Console vs. Web page
 - Input and output
-  - Normally to and from form elements in a web page
-  - Can also be done with prompt and alert windows
-  - Output can be sent to the console log
+  - Normally to and from form elements in a web page.
+  - Can also be done with prompt and alert dialogs.
+  - Output can be sent to the console log.
 
 
  	
@@ -150,19 +150,19 @@ What is happening here?
   document.writeln(result);
   ```
 
-- statement with a number and a boolean
+- Statement with a number and a boolean variable
 
   ```javascript
-  truth = true;   // true is equal to 1, false is 0
-  result = number1 + truth;
+  var truth = true;   // true is equal to 1, false is 0
+  var result = number1 + truth;
   document.writeln(result);
   ```
 
 
-- statement with a string and a boolean
+- Statement with a string and a boolean variable
 
   ```javascript
-  result = words + truth;
+  var result = words + truth;
   document.writeln(result);
   ```
 

@@ -65,14 +65,29 @@ Last time, we wrote this code and ran it in the browser console:
    - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
    - [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
 
-3. Using VS Code, start with a standard [empty HTML page](../Examples/Empty.html) and add this code to the body:
+3. Using VS Code, start with a standard [empty HTML page](../Examples/Empty.html) and add this code to the head element:
 
    ```HTML
-   <h1>My First JavaScript Program</h1>
-   <script>
-     var name = prompt("Please enter your name");
-     document.write("Hello " + name + "!");
-   </script>
+   <head>
+       <meta charset="UTF-8" />
+       <title>JS Demo</title>
+       <script>
+         var name = prompt("Please enter your name");
+         document.write("Hello " + name + "!");
+       </script>
+   </head>
+   ```
+
+   We can also put script elements in the body of a web page:
+
+   ```html
+   <body>
+       <h1>My First JavaScript Program</h1>
+       <script>
+         var name = prompt("Please enter your name");
+         document.write("Hello " + name + "!");
+       </script>
+   </body>
    ```
 
    

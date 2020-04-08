@@ -70,7 +70,7 @@ Last time, we wrote this code and ran it in the browser console:
    ```HTML
    <h1>My First JavaScript Program</h1>
    <script>
-     var name = prompt(“Please enter your name”);
+     var name = prompt("Please enter your name");
      document.write("Hello " + name + "!");
    </script>
    ```

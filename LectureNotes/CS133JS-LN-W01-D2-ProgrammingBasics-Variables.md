@@ -29,7 +29,7 @@
   - Repetition (loops)
 - Syntax (grammar)
   - Variables – dynamic typing
-    - Primitive types: *number*, *boolean*, *string*, *null*, *undefined*
+    - Primitive types: *number*, *boolean*, *string*, *undefined*
     - Best practice: declare and initialize before use
   - Operators: +, -, *, /, %, ++, --
   - Keywords (reserved words): http://www.w3schools.com/js/js_reserved.asp
@@ -55,7 +55,7 @@ Variables are named memory locations.
 Last time, we wrote this code and ran it in the browser console: 
 
   ```javascript
-  var name = prompt(“Please enter your name”);
+  var name = prompt("Please enter your name");
       		document.write("Hello " + name + "!");
   ```
 2. This time, we'll put it in a web page, but, first, install [Visual Studio Code](https://code.visualstudio.com/). 
@@ -146,7 +146,27 @@ Last time, we wrote this code and ran it in the browser console:
   document.writeln(typeof stuff); 
   ```
 
+#### Null and Undefined
+
+This is a bit tricky. If we use the typeof keyword to check the type of a variable and we haven't assigned a value to that variable, then it will show it's type as "undefined". Also, if we check it's value it will be undefined.  So undefined is both a statement about the value and about the data type. 
+
+But, null is just a value. It's the value that means "nothing", which is not the same as zero.
+
+Try this in the console:
+
+```javascript
+var thing;
+console.log(thing);
+console.log(typeof thing);
+thing = null;
+console.log(thing);
+console.log(typeof thing);
+```
+
+
+
 ### Mixing data types 
+
 What is happening here?
 
 

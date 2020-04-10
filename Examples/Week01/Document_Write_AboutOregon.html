@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Written by Brian Bird, 4/10/20 -->
+    <meta charset="UTF-8" />
+    <title>A web page generated with JavaScript document.write</title>
+</head>
+
+<body>
+    <script>
+        var myState = "Oregon";  // Storing a string in a variable
+        var video = "https://www.youtube.com/embed/5K3w7CKkeOQ";  // Storing a URL in a variable
+        document.write("<h1>My State:" + myState + "</h1>");  // Putting a heading on the page
+        document.write("<iframe width='560' height='315' src='" + video + "'></iframe>"); // Putting an embedded YouTube video on the page
+        document.write("<h2>Coming Home (" + myState + ")</h2>"); // Putting a heading under the video
+    </script>
+    <!--The tricky part of this is getting the quotation marks right.
+        I used double quotes around each string that will be
+        sent to the web page by document.write (three strings, on passed to each document.write). 
+        Inside each of those strings, I used single quotes for things that
+        the rules of HTML reqire us to put in quotes.
+    -->
+ </body>
+
+</html>

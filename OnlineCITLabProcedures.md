@@ -17,7 +17,7 @@ Go to this Google Form: https://forms.gle/TtZ8Qm1HAi1WHPCa7 and provide the foll
 
 ## After Hours (non-emergency questions)
 
-If it's after 5:00, or if a challenge isn’t immediate, or if a student sees the chat is full and doesn’t want to wait, use the link below and fill out the Google form. Your questions will be answered in the order received.
+If it's after 5:00 pm, or if a challenge isn’t immediate, or if a student sees the chat is full and doesn’t want to wait, use the link below and fill out the Google form. Your questions will be answered in the order received. If the question is received after 5:00 pm, it will be answered on the following business day.
 
 https://docs.google.com/forms/d/e/1FAIpQLSciTAAK454fVtlttQulgruY4jjoRqkqldZ_mFSJJjWz_qqtWg/viewform
 

@@ -8,11 +8,14 @@
 </head>
 
 <body>
+    <!-- The point of this example is to show how the document.write function works.
+         This is not the way you would really generate content in a real web site! -->
     <script>
         var myState = "Oregon";  // Storing a string in a variable
+        var width = 560; // This will be used to set the width and height of the video frame
         var video = "https://www.youtube.com/embed/5K3w7CKkeOQ";  // Storing a URL in a variable
         document.write("<h1>My State:" + myState + "</h1>");  // Putting a heading on the page
-        document.write("<iframe width='560' height='315' src='" + video + "'></iframe>"); // Putting an embedded YouTube video on the page
+        document.write("<iframe width='" + width + "' height='" + width / 1.77 + "' src='" + video + "'></iframe>"); // Putting an embedded YouTube video on the page
         document.write("<h2>Coming Home (" + myState + ")</h2>"); // Putting a heading under the video
     </script>
     <!--The tricky part of this is getting the quotation marks right.

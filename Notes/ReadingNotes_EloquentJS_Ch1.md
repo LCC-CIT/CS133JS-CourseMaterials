@@ -35,6 +35,17 @@ The - operator can be both a binary and unary operator.
 
 ### Boolean Values
 
+[George Boole](https://en.wikipedia.org/wiki/George_Boole)&mdash;Wikipedia
+[Boolean Algebra](https://en.wikipedia.org/wiki/Boolean_algebra)
+
+### Comparison
+
+Introduces the comparison operators without the if keyword.
+
+### Empty Values
+
+null and undefined are almost the same thing--according to the author.
+
 
 
 ------

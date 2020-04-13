@@ -2,17 +2,17 @@
 
 **CS133JS Beginning Programming: JavaScript**
 
-<h1>Basics of Programming</h1>
+<h1>Functions</h1>
 
 
 
-| Topics by Week                     |              |
-| ---------------------------------- | ------------ |
-| 1. Intro to JavaScript programming | 6. Arrays    |
-| 2. Expressions and Operators       | 7. Functions |
-| 3. Conditional Statements          | 8. Objects   |
-| 4. Loops                           | 9. DOM       |
-| 5. Midterm                         | 10. Final    |
+| Topics by Week                           |            |
+| ---------------------------------------- | ---------- |
+| 1. Intro to JavaScript programming       | 6. Arrays  |
+| 2. Expressions, Operators, and Functions | 7. Objects |
+| 3. Conditional Statements                | 8. Methods |
+| 4. Loops                                 | 9. DOM     |
+| 5. Midterm                               | 10. Final  |
 
 
 
@@ -20,153 +20,59 @@
 
 [TOC]
 
-# Intro to Programming
+# Review
 
-- Programs are sets of instructions. They implement Algorithms.
-- Three control structures
-  - Sequence – we will learn this first
-  - Selection (if statements)
-  - Repetition (loops)
-- Syntax (grammar)
-  - Variables – dynamic typing
-    - Primitive types: number, boolean, string, null, undefined
-    - Best practice: declare and initialize before use
-  - Operators: +, -, *, /, %, ++, --
-  - Keywords (reserved words): http://www.w3schools.com/js/js_reserved.asp
-  - Statements – End with a semicolon
-- Console vs. Web page
-- Input and output
-  - Normally to and from form elements in a web page
-  - Can also be done with prompt and alert windows
-  - Output can be sent to the console log
+This review is selective. These are the concepts we need for todays new topics.
 
+- What is a variable? 
+  - How is it used? 
+  - Do an example.
+- What is a Data Type? 
+  - What are the primitive data types
+  - How does JavaScript determine the type of a variable?
+  - Why does type matter?
+  - Do an example
 
- 	
+ # Writing Output into HTML Elements
 
-# JavaScript Variables and Data Types
+Last week we learned to write html into a web page. Now we will learn to put our JavaScript output into existing HTML elements.
 
-## Variables 
-Variables are named memory locations.
+```html
+<p id="anser"></p>
 
-- Draw a picture representing variables in computer memory.
-
-## Example: Hello world
-
-Last time, we wrote this code and ran it in the browser console: 
-
-  ```javascript
-  var name = prompt(“Please enter your name”);
-      		document.write("Hello " + name + "!");
-  ```
-2. This time, we'll put it in a web page, but, first, install [Visual Studio Code](https://code.visualstudio.com/). 
-   And, optionally, add the following extensions:
-
-   - [Debugger for Firefox](https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug)
-   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-   - [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
-
-3. Using VS Code, start with a standard [empty HTML page](../Examples/Empty.html) and add this code to the body:
-
-   ```HTML
-   <h1>My First JavaScript Program</h1>
-   <script>
-     var name = prompt(“Please enter your name”);
-     document.write("Hello " + name + "!");
-   </script>
-   ```
-
-   
-
-4. Let's *refactor* it to add a second variable and prompt: 
-  ```javascript
-    var firstName = prompt("Enter your first name");
-    var lastName = prompt("Enter your last name");
-    document.write("Hello " + firstName + " " 		+ lastName + "!");
-  ```
-
-#### Discussion
+<script>
+document.getElementById("answer").innerHTML = 2 * 3;
+</script>
+```
 
 
-- Two meanings for +   	
-   (it’s an *overloaded* operator)  	
-
-  - *addition* when used with numbers
-  - *concatenation* when used with strings
-  
-- Quotes: two kinds, you can only nest one kind inside the other
-
-  - Example:
-    
-     ```javascript
-     document.write("Who said, 'Brevity is the soul of wit'? <br />");
-     document.write('Tamil proverb: "Even elephants do slip"');
-     ```
-
-- write  vs. writeln
-
-  - Repeat the example above, but put the script block inside a  `<pre>` block. The write line doesn’t generate a ` <br />` but it does generate a newline, so we need to put it inside a preformatted block.
-    
 
 
-## Data Types 
 
-### Primitive Types:
-
-- string
-- number
-- boolean
-- undefined
-
-  Example:
-
-  ```javascript
-  var words = "this is a string";
-  var number1 = 1234;
-  var truth = false;
-  var stuff;
-  
-  document.writeln(typeof words);
-  document.writeln(typeof number1);
-  document.writeln(typeof truth);
-  document.writeln(typeof stuff); 
-  ```
-
-### Mixing data types 
-What is happening here?
+# JavaScript Functions
 
 
-- A statement with two numbers
-
-  ```javascript
-  var number2 = 6;
-  var sum = number1 + number2;
-  document.writeln(sum);
-  ```
-
-- A statement with a number and a string
-
-  ```javascript
-  var result = number1 + words;
-  document.writeln(result);
-  ```
-
-- statement with a number and a boolean
-
-  ```javascript
-  truth = true;   // true is equal to 1, false is 0
-  result = number1 + truth;
-  document.writeln(result);
-  ```
 
 
-- statement with a string and a boolean
 
-  ```javascript
-  result = words + truth;
-  document.writeln(result);
-  ```
+# Notes
 
-  
+## Vocabulary
+
+- Expression: A combination of variables, operators, and functions that produce a value. In other words, a chunk of code that can put a value into a variable.
+- DOM: Document Object Model. The DOM is the HTML API for JavaScript.
+- API: Application Programming Interface. This is a set of functions (aka methods) that can be called by code in an application.
+- Interface: A point of interaction between apiece of software and something or someone else. Interfaces are at boundaries.
+
+## References
+
+### W3Schools
+
+[What is the HTML DOM?](https://www.w3schools.com/whatis/whatis_htmldom.asp)
+
+[HTML DOM innerHTML Property](https://www.w3schools.com/jsref/prop_html_innerhtml.asp)
+
+
 
 ------
 

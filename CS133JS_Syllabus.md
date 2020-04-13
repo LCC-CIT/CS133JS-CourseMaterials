@@ -117,14 +117,14 @@ The table below summarizes the possible points for each assessment task as well 
 
  
 
-| **Assessment Tasks**       | **Points Each** | **Total Points** |
-| -------------------------- | --------------- | ---------------- |
-| Labs  1 - 9                | 40              | 360              |
-| Code  Reviews 1 - 9        | 10              | 90               |
-| Reading  Quizzes 1 - 9     | 10              | 90               |
-| Midterm  and Final Quizzes | 100             | 200              |
-| Term  Project              | 260             | 260              |
-| **Course Total**           |                 | **1000**         |
+| **Assessment Tasks**       | **Points Each** | **Total Points** | Percentage |
+| -------------------------- | --------------- | ---------------- | ---------- |
+| Labs  1 - 8                | 50              | 400              | 40%        |
+| Code  Reviews 1 - 8        | 10              | 80               | 8%         |
+| Reading  Quizzes 1 - 8     | 10              | 80               | 8%         |
+| Midterm  and Final Quizzes | 100             | 200              | 20%        |
+| Term  Project              | 240             | 240              | 24%        |
+| **Course Total**           |                 | **1000**         |            |
 
  
 

@@ -1,5 +1,3 @@
-
-
 **CS133JS Beginning Programming: JavaScript**
 
 <h1>Functions</h1>
@@ -9,7 +7,7 @@
 | Topics by Week                           |            |
 | ---------------------------------------- | ---------- |
 | 1. Intro to JavaScript programming       | 6. Arrays  |
-| 2. Expressions, Operators, and Functions | 7. Objects |
+| 2. Functions, Expressions, and Operators | 7. Objects |
 | 3. Conditional Statements                | 8. Methods |
 | 4. Loops                                 | 9. DOM     |
 | 5. Midterm                               | 10. Final  |
@@ -38,22 +36,140 @@ This review is selective. These are the concepts we need for todays new topics.
 Last week we learned to write html into a web page. Now we will learn to put our JavaScript output into existing HTML elements.
 
 ```html
-<p id="anser"></p>
+<p id="answer"></p>
 
 <script>
-document.getElementById("answer").innerHTML = 2 * 3;
+	var p = document.getElementById("answer");
+    p.innerHTML = 2 * 3;
 </script>
 ```
 
+Combining statements:
 
+```javascript
+document.getElementById("answer").innerHTML = 2 * 3;
+```
 
 
 
 # JavaScript Functions
 
+## Linking to an External JS File
+ We often put all our functions in a separate file 
+ In the <head> element:
+
+<script src="functionPractice.js"></script>
+
+## What a Function is
+### Definition of a function in math
+
+In math, a function has: input, operation(s), output
+ *f(x) = 2x*
+ **Example:** Coffee grinder
+
+### Functions we’ve already seen
+
+- document.write
+- prompt
+- alert
+
+## Writing  a Function
+ We can use pre-written functions, or write our own. We call this *defining* a function.
+
+### A simple function
+
+This function has on inputs and put's its output in an alert. 
+
+1. This is the function definition. We will put this into our FunctionPractice.js file.
+
+```javascript
+function helloWorld()
+{
+  alert("Hello world");
+}
+```
+
+2. This is the function call. We put this in the script element of our HTML file.
+
+   ```javascript
+   helloWorld();
+   ```
+
+   
+
+### A function with one parameter
+
+1. Define a function with a single parameter and put it in functionPractice.js.
+
+```javascript
+function hello(name)
+{
+  alert("Hello " + name);
+}
+```
+
+2. Call the function in functionPractice.js from within a script element.
+
+   ```javascript
+     hello("Brian");
+   ```
+
+   
+
+### A function with a parameter and a return value
+
+Example:
+
+1. Put the function definition into practice.js
+
+    ```javascript
+     function toPercent(decimal)
+     {
+      return decimal * 100 + "%";
+     }
+    ```
+
+2. Call it from a script element using document.write:
+    
+    ```javascript
+    document.write("<p>Hello " + toPercent(0.25) + "!</p>");
+```
+    
+3. Call it from a script element using the inner.HTML function:
+
+    ```javascript
+    document.getElementById("answer").innerHTML = toPercent(0.25);
+    ```
 
 
 
+
+### A function can have more than one parameter
+
+1. A function definition:
+    ```javascript
+    function fullName(firstName, lastName)
+    {
+        return firstName + " " + lastName;
+    }
+    ```
+
+2. The function call:
+
+   ```javascript
+   document.getElementById("name").innerHTML = fullName("Tony", "Stark");
+   ```
+
+   
+
+### Summary: Parts of a function
+
+- header
+  - name
+  - parameters (optional)
+- Body
+  - code that does operations
+  - return statement (optional)
 
 # Notes
 

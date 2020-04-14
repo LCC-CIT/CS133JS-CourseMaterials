@@ -18,6 +18,24 @@
 
 [TOC]
 
+# Introduction
+
+## Q and A
+
+- How is last week's lab assignment going?
+- How is the reading going?
+- Are you getting forum announcements?
+- Does anyone have any general questions about anything?
+
+## Announcements
+
+- This week's quiz
+  We'll review the answers on Wednesday/Thursday.
+- This week's lab assignment
+- Reminder about virtual tutoring
+
+
+
 # Review
 
 This review is selective. These are the concepts we need for todays new topics.
@@ -30,6 +48,8 @@ This review is selective. These are the concepts we need for todays new topics.
   - How does JavaScript determine the type of a variable?
   - Why does type matter?
   - Do an example
+
+
 
  # Writing Output into HTML Elements
 
@@ -55,10 +75,13 @@ document.getElementById("answer").innerHTML = 2 * 3;
 # JavaScript Functions
 
 ## Linking to an External JS File
- We often put all our functions in a separate file 
- In the <head> element:
+ We often put all our functions in a separate file. The file that holds the functions should have .js as the file extension.
 
+To use the .js file in your HTML file, add this  the `<head>` element:
+
+```html
 <script src="functionPractice.js"></script>
+```
 
 ## What a Function is
 ### Definition of a function in math
@@ -80,7 +103,7 @@ In math, a function has: input, operation(s), output
 
 This function has on inputs and put's its output in an alert. 
 
-1. This is the function definition. We will put this into our FunctionPractice.js file.
+1. This is the function definition. 
 
 ```javascript
 function helloWorld()
@@ -89,24 +112,29 @@ function helloWorld()
 }
 ```
 
-2. This is the function call. We put this in the script element of our HTML file.
+2. This is the function call. 
 
    ```javascript
    helloWorld();
    ```
 
-   
+3. Try this in the console.
+
+4. Now put the code into our files:
+
+   - Put the function definition in FunctionPractice.js.
+   - Put the function call inside a script element in the HTML file.
 
 ### A function with one parameter
 
 1. Define a function with a single parameter and put it in functionPractice.js.
 
-```javascript
-function hello(name)
-{
-  alert("Hello " + name);
-}
-```
+    ```javascript
+    function hello(name)
+    {
+      alert("Hello " + name);
+    }
+    ```
 
 2. Call the function in functionPractice.js from within a script element.
 
@@ -129,16 +157,23 @@ Example:
      }
     ```
 
-2. Call it from a script element using document.write:
-    
-    ```javascript
-    document.write("<p>Hello " + toPercent(0.25) + "!</p>");
-```
-    
-3. Call it from a script element using the inner.HTML function:
+2. Call it from the console:
+    Why don't we need to use console.log? Could we?
 
     ```javascript
-    document.getElementById("answer").innerHTML = toPercent(0.25);
+    toPercent(0.25);
+    ```
+
+3. Call it from a script element using document.write:
+
+    ```javascript
+    document.write("<p>Hello " + toPercent(0.25) + "!</p>");
+    ```
+
+4. Call it from a script element using the inner.HTML function:
+
+    ```javascript
+       document.getElementById("answer").innerHTML = toPercent(0.25);
     ```
 
 
@@ -188,7 +223,7 @@ Example:
 
 [HTML DOM innerHTML Property](https://www.w3schools.com/jsref/prop_html_innerhtml.asp)
 
-
+[Functions](https://www.w3schools.com/js/js_functions.asp)
 
 ------
 

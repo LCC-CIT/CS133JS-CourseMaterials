@@ -35,9 +35,112 @@ Go over the answers to the quiz questions
 
 - Part 2 of this week's lab assignment
 
+  
+
+------
 
 
 
+# Review
+
+- What is a function? 
+
+- What is meant by “defining a function”? 
+- What does it mean to "call" a function?
+  How do you do it?
+- Do you have to write all the functions you use? 
+- What are the name of the parts of the function below? 
+  How would you call it?
+
+```javascript
+ // This function returns the sum of three numbers
+ function total(n1, n2, n3)
+ {
+  var t = n1 + n2 + n3;
+  return t;
+ }
+```
+
+
+
+------
+
+
+
+# Variable Scope
+
+*Scope* means the part of a program in which a variable is recognized by JavaScript. 
+
+## Example
+
+1. If you haven't already, put the function definition console. Try using the variable t outside of the function. Is it defined there?
+
+   ```
+   console.log(t);
+   ```
+
+   
+
+2. Now try moving the definition of t outside the function.  Is the variable t valid both inside and outside the function now?
+
+   ```javascript
+    var t = 0;
+    
+    function total(n1, n2, n3)
+    {
+     t = n1 + n2 + n3;   // no var keyword used here!
+     return t;
+    }
+   
+   console.log(t);
+   ```
+
+## Local and Global Variables
+
+- Variables declared inside a function (or any other block of code) are called *local variables*.
+- Variables that are declared outside of any function or other block of code are called *global variables*.
+- Variables declared in a “wider” scope are valid anywhere in that scope below the point where they were defined.
+
+### Exercise
+
+```javascript
+document.writeln(t);    // is t valid here?
+var t = 0;
+
+function total(n1, n2, n3)
+{
+    t = n1 + n2 + n3;   // is t valid here?
+    return t;
+}
+document.writeln(t);      // is t valid here?
+```
+
+
+
+
+
+
+
+
+
+·     Variables defined without the var keyword are *global variables*. Let’s revise our previous example and define a the variable t as a global variable:
+
+```javascript
+ function total(n1, n2, n3) {
+  t = n1 + n2 + n3;
+  return t;
+ }
+ sum = total(2, 3, 6);
+ console.log(sum);
+ console.log(t);
+```
+
+
+
+
+
+
+The variable t is still defined inside the function, is its scope still just inside the function?
 
 # Notes
 

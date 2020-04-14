@@ -158,7 +158,7 @@ Example:
     ```
 
 2. Call it from the console:
-    Why don't we need to use console.log? Could we?
+    We see the value returned from this function in the console. If we try the same thing with the previous function, do we see a value that was returned to the console? Explain.
 
     ```javascript
     toPercent(0.25);
@@ -195,7 +195,17 @@ Example:
    document.getElementById("name").innerHTML = fullName("Tony", "Stark");
    ```
 
-   
+### Practice: a function with all the combinations
+
+Let's write a function is for a math quiz. It will do the following:
+
+- Takes two numbers as parameters and then shows them to the user in a prompt asking for the sum.
+- The user answers, the function checks the answer.
+- The function pops up an alert that says true or false.
+- The function also returns true or false.
+
+Think about how you would write this function, and then let's write it together.
+
 
 ### Summary: Parts of a function
 

@@ -122,12 +122,12 @@ function helloWorld()
 
 4. Now put the code into our files:
 
-   - Put the function definition in FunctionPractice.js.
-   - Put the function call inside a script element in the HTML file.
+   - Put the function definition in *FunctionPractice.js*.
+   - Put the function call inside a script element in an HTML file.
 
 ### A function with one parameter
 
-1. Define a function with a single parameter and put it in functionPractice.js.
+1. Define a function with a single parameter and put it in FunctionPractice.js.
 
     ```javascript
     function hello(name)
@@ -136,7 +136,7 @@ function helloWorld()
     }
     ```
 
-2. Call the function in functionPractice.js from within a script element.
+2. Call the function in FunctionPractice.js from within a script element.
 
    ```javascript
      hello("Brian");
@@ -164,13 +164,13 @@ Example:
     toPercent(0.25);
     ```
 
-3. Call it from a script element using document.write:
+3. Call it from a script element using *document.write*:
 
     ```javascript
     document.write("<p>Hello " + toPercent(0.25) + "!</p>");
     ```
 
-4. Call it from a script element using the inner.HTML function:
+4. Call it from a script element using the *inner.HTML* function:
 
     ```javascript
        document.getElementById("answer").innerHTML = toPercent(0.25);

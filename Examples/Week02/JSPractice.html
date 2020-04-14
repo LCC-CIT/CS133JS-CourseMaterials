@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Written by Brian Bird, 4/4/20 -->
+    <meta charset="UTF-8" />
+    <title>Empty Page</title>
+    <script src="FunctionPractice.js"></script>
+</head>
+
+<body>
+    <p id="answer">Answer</p>
+    <p id="percent"></p>
+    <span id="name"></span>
+    <h3 id="quiz"></h3>
+
+    <script>
+        var p = document.getElementById("answer");
+        p.innerHTML = 2 * 3;
+       // helloWorld();
+       // hello("Brian");
+       // document.write("<p>Anser: " + toPercent(0.25) + "!</p>");
+       // p.innerHTML = toPercent(0.25);
+       document.getElementById("percent").innerHTML = toPercent(0.25);
+       document.getElementById("name").innerHTML = fullName("Tony", "Stark");
+       document.getElementById("quiz").innerHTML = quizQuestion(5, 7);
+    </script>
+</body>
+
+</html>

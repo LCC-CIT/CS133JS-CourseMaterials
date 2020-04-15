@@ -154,8 +154,8 @@ function total(n1, n2, n3)  {
   
   var n1 = 2, n2 = 3, n3 = 6;
   sum = total(n1, n2, n3);
-  document.writeln(sum);
-  document.writeln(n1);
+  console.log(sum);
+  console.log(n1);
   ```
   
   

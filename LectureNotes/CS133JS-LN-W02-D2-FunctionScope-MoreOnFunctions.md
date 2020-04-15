@@ -7,7 +7,7 @@
 | Topics by Week                                       |              |
 | ---------------------------------------------------- | ------------ |
 | 1. Intro to JavaScript programming                   | 6. Arrays    |
-| 2. <mark>Functions, Expressions and Operators</mark> | 7. Functions |
+| 2. <mark>Functions</mark>, Expressions and Operators | 7. Functions |
 | 3. Conditional Statements                            | 8. Objects   |
 | 4. Loops                                             | 9. DOM       |
 | 5. Midterm                                           | 10. Final    |

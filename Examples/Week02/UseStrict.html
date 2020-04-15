@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Written by Brian Bird, 4/15/20 -->
+    <meta charset="UTF-8" />
+    <title>Strict Mode</title>
+</head>
+
+<body>
+    <h1>Demonstration of the JS Strict Mode</h1>
+    The code on this page has <code>"use strict";</code> 
+    at the beginning of the <code><script></script></code> element.
+    <br><br>
+
+    <script>
+        "use strict";
+        hobbit = "Frodo";  // This will cause an error.
+        var home = "Bag End";
+        document.write(hobbit + " lives at " + home);
+    </script>
+</body>
+
+</html>

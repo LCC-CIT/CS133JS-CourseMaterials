@@ -162,7 +162,7 @@ function total(n1, n2, n3)  {
 
 ## Bad Things
 
-###Undeclared Variables
+### Undeclared Variables
 
 Variables used without declaring them become *global variables*. But this is a bad way to do things because it is not obvious that this is a global variable.  This can lead to making mistakes in your code.
 
@@ -177,9 +177,20 @@ console.log(sum);
 console.log(t);           // t is a global variable.
 ```
 
+#### Strict mode (a good thing)
+
+You can set JavaScript to prevent you from using undeclared (not defined) variables by enabling strict mode with the statement, `"use strict"`. Here's an example:
+
+```javascript
+"use strict";
+hobbit = "Frodo";   // This variable isn't declared, it will cause an error.
+var home = "Bag End";
+console.log(hobbit + " lives at " + home);
+```
+
 ### Hoisting
 
-Hoisting is a feature (quirk?) of JavaScript that lets you use a variable before you declare it with `var`. This is true whether your code is inside or outside a function. When you declare the variable anywhere in a given scope, it will be as if you had declared it at the top of the scope, for example:
+Hoisting is a feature (quirk?) of JavaScript that lets you use a variable before you declare it with `var`. This is true whether your code is inside or outside a function. When you declare the variable anywhere in a given scope, it will be as if you had declared it at the top of the scope. Try this example:
 
 ```javascript
 hobbit = "Frodo";
@@ -188,23 +199,18 @@ console.log(hobbit + " lives at " + home);
 var hobbit;   // This variable declaration gets "hoisted" to the top of the code.
 ```
 
-### Strict Mode (a Good Thing)
+#### Declaring variables with `let` (another good thing)
 
-You can set JavaScript to prevent you from doing these bad things by enabling strict mode with the statement, `"use strict"`. When you do this, JavaScript will not let you use undeclared variables&mdash;as well as a few other things. Try the examples above again, but after executing `"use strict"`.
+You can use the keyword `let` to declare variables instead of `var`. This will prevent variable hoisting as well as do some other good thing we will discuss later. Try this example:
 
+```javascript
+hobbit = "Frodo";  // This will cause an error
+let home = "Bag End";
+console.log(hobbit + " lives at " + home);
+let hobbit;   // The variable should have been declared before using  it.
+```
 
-
-------
-
-# Future Topics
-
-There are a couple things related to functions and to scope that will make more sense after we learn a few other things. Those future topics are:
-
-- Declaring variables using `let` instead of `var`.
-
-- Passing variables to functions "by reference". Meaning that the function will be able to change the value in a variable declared outside its scope.
-
-  
+#### 
 
 ------
 

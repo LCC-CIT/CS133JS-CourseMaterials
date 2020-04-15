@@ -1,0 +1,3 @@
+Week 2, Functions
+Change the reading. EJS, Ch.2 Covers conditional operators and the ternary operator, but not functions. Ch. 3 covers functions, but in too much depth.
+

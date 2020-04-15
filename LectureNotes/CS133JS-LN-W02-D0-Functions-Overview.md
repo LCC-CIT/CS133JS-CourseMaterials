@@ -1,4 +1,4 @@
-## Overview of Week One
+## Overview of Week Two
 
 This week you will learn how to write functions and how to put them in a separate file so you can separate your JavaScript code from your HTML.
 

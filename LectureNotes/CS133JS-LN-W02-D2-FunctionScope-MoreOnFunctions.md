@@ -96,8 +96,11 @@ Go over the answers to the quiz questions
 
 ## Local and Global Variables
 
-- Variables declared inside a function (or any other block of code) are called *local variables*.
-- Variables that are declared outside of any function or other block of code are called *global variables*.
+- Variables declared with `var` inside a function are called *local variables*.
+
+- Variables that are declared outside of any function are called *global variables*.
+
+  Note: When using `var` to declare variables, local scope will only be for functions. Later, we'll use `let` to declare variables which will allow us to declare local variables in other blocks of code that we'll learn about in the coming weeks.
 
 ### Exercise
 

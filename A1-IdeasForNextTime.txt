@@ -1,3 +1,5 @@
 Week 2, Functions
-Change the reading. EJS, Ch.2 Covers conditional operators and the ternary operator, but not functions. Ch. 3 covers functions, but in too much depth.
+1) Change the reading. 
+EJS, Ch.2 Covers conditional operators and the ternary operator, but not functions. Ch. 3 covers functions, but in too much depth.
+2) Don't assign reading or lecture on conditional operators this week. Save that for next week when you cover selection.
 

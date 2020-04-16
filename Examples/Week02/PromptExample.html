@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Written by Brian Bird, 4/4/20 -->
+    <meta charset="UTF-8" />
+    <title>Demo</title>
+    <script src="Square.js"></script>
+</head>
+
+<body>
+    The square of the number is: <span id="square"></span>
+    <script>
+        let myNumber = prompt("Enter a number");
+        let result = square(myNumber);
+        document.getElementById("square").innerHTML = result;
+
+    </script>
+</body>
+
+</html>

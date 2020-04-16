@@ -1,6 +1,6 @@
 # Javascript Style and Best Practices
 
-**For CS133JS, Beginning Programming: Javascript**
+**For CS133JS, Beginning Programming: JavaScript
 
 
 
@@ -13,15 +13,6 @@
   - Should be declared with `let`.
   - Use strict mode (`"use strict";`)
 
-- Old code: any unused code should be removed.
-
-- Comments: explanatory comments should be included.
-
-- Method names
-
-  - Should be descriptive.
-  - Should use PascalCase (aka TitleCase)
-
 - Constants
 
   - Names should be descriptive.
@@ -33,6 +24,17 @@
   - Code should be DRY&mdash;Don't Repeat Yourself.
 
     (No duplicated blocks of code).
+
+- Function names
+
+  - Should be descriptive.
+  - Should use camelCase
+
+- Old code: any unused code should be removed.
+
+- Comments: explanatory comments should be included.
+
+  
 
 
 

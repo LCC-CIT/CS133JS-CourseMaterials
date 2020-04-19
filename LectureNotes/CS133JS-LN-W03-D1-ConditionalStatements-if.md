@@ -8,7 +8,7 @@
 | ---------------------------------------------------- | ------------ |
 | 1. Intro to JavaScript programming                   | 6. Arrays    |
 | 2. Functions, Operators and Expressions | 7. Objects |
-| 3. <mark>Conditional Statements</mark>   | 8. Methods  |
+| 3. <mark>Conditional Statements:</mark> <mark>if</mark> and switch | 8. Methods  |
 | 4. Loops                                             | 9. DOM       |
 | 5. Midterm                                           | 10. Final    |
 
@@ -63,6 +63,8 @@ console.log(extraVariable);
 
 ## Logical Operators
 
+
+
 ### Logical operators and expressions
 
 | Symbol | Name | Condition for truth    | Examples of true expressions where:  a = true, b = false; |
@@ -70,6 +72,8 @@ console.log(extraVariable);
 | &&     | and  | Both operands are true | `a  && a`                                                 |
 | \|\|   | or   | Either operand is true | `a  || b, b || a`                                         |
 | !      | not  | The operand is false   | `!b`                                                      |
+
+
 
 ### Truth tables
 
@@ -98,8 +102,8 @@ console.log(extraVariable);
 | **A**   | **Q** |
 | F       | T     |
 | T       | F     |
-|         |       |
-|         |       |
+
+
 
 ## Ternary Operator
 
@@ -116,7 +120,12 @@ console.log(extraVariable);
   alert(temperature < 50 ? "Wear a coat" : "Enjoy the warm day");
   ```
 
-  
+
+
+
+*End of the review. This was a long review!*
+
+
 
 ------
 
@@ -131,59 +140,82 @@ There are three types of selection statements:
 ## Types of `if` statements
 
  In the examples below, assume this line of code was executed first:
- `var degrees = prompt("Enter the temperature");`
+```javascript
+let degrees = prompt("Enter the temperature");
+```
 
 - Single branch 
-   *keyword*   *conditional expression (“condition”)*
-   |            |
-   if(degrees < 45) 
-    alert("wear a coat"); --- statement to be executed if the condition is true
+  ```javascript
+if(degrees < 45) 
+    alert("Wear a coat");
+  ```
+  Parts of this statement:
+  
+    - keyword: 	  `if`
+    - condition:     `(degrees < 45)` 
+    - conditionally executed statement:  `alert("wear a coat");`
 
 
 - Two branches
+  
+   ```javascript
    if(degrees < 45) 
-    alert("wear a coat"); --- statement to be executed if the condition is true
-   else           --- keyword
-    alert("enjoy the warm weather! "); --- executed if the condition is false
+      alert("Wear a coat");             // executed if the condition is true
+   else         
+      alert("Enjoy the warm weather! "); // executed if the condition is false
+   ```
 
 
 - Multiple branches
 
-  ​        *first condition*
-  ​            |
-   if(degrees < 32)   
-    alert("wear a warm coat"); --- executed only if the first condition is true
+  ```javascript
+  if(degrees < 32)   
+     alert("Wear a warm coat"); // executed only if the first condition is true
+  else if (degrees < 45)
+     alert("Wear a jacket");    // executed only if the second condition is true   
+  else
+    alert("Enjoy the warm weather! ");  // executed only if neither condition is true
+  ```
 
-  ​           *second condition*
-  ​                 |
-   else if (degrees < 45)
-    alert("wear a jacket");   --- executed only if the second condition is true   
-   else
-    alert("enjoy the warm weather! ");  --- executed only neither condition is true
 
 
 ## Conditional expressions using *logical operators*
 
- Assume an additional line of code has been added :
- `var wind = prompt("Enter the wind speed");`
+ For these examples, assume both of these lines of code have already been executed :
+```javascript
+let wind = prompt("Enter the wind speed");
+let degrees = prompt("Enter the temperature");
+```
 
-- AND, &&
+- AND, `&&`
 
+   ```javascript
    if(degrees < 60 && wind > 10)
-    alert("wear a jacket");
+      alert("Wear a jacket");
+   ```
+   
+   
 
 
-- OR, ||
+- OR, `||`
 
+   ```javascript
    if(degrees < 45 || wind > 20)
-    alert("wear a warm coat");
+    alert("Wear a warm coat");
+   ```
+   
+   
 
 
-- NOT, !
+- NOT, `!`
 
-   var name = prompt("Enter your name");
+   ```javascript
+   let name = prompt("Enter your name");
    if( !(name == "Han Solo"))
-    alert("This is not your spacecraft! ");
+      alert("This is not your spacecraft! ");
+   ```
+   
+   
 
 
 ## Nested if statements
@@ -193,52 +225,41 @@ There are three types of selection statements:
 - Nesting has the same effect as using the AND logical operator. Here’s an example: 
 
 - Nesting that is equivalent to ANDing two conditions:
+   
+   ```javascript
    if(degrees < 60) 
-    if(wind > 10)
-      alert("wear a jacket");
-
-
-
- 
+     if(wind > 10)
+        alert("Wear a jacket");
+   ```
+   
+   
 
 ## When to use curly braces
 
-- By default, an if statement will execute the one statement following the condition
+- By default, an if statement will execute only the one statement following the condition.
   - This is true even if the statement is another if statement (nesting)
 
 - To execute more than one statement, put them in curly braces.
 
-- Rule of thumb: if you use curly braces around one branch in an if statement, use it around both. Example:
+- Best practice: Use curly braces all the time so that you don't forget and so your code will be clearer. Example:
 
- // calculate average scores for scores greater than 0
+ This example checks an user's input and asks again if it isn't valid input
 
-var count = 0, total = 0, average = 0, score = "0";
-
-while (score != "")
-
+```javascript
+let temperature = prompt("Enter the temperature");
+if(temperature < -100 || temperature < 150)
 {
-
-  var score = prompt("Enter your score, or enter nothing to quit");
-
-  if(score > 0)
-
-  {
-
-​    count++;
-
-​    total += parseInt(score);
-
-​     average = total / count;
-
-  }
-   else
-   {
-     alert("Please enter a score greater than zero");
-   }
-
+   alert("Please enter a temperature between -100 and 150")
+   temperature = prompt("Enter the temperature");
 }
 
-alert("average: " + average);
+if(degrees < 45)
+{
+   alert("Wear a coat");
+}
+```
+
+
 
 
 

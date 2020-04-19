@@ -130,13 +130,13 @@ The table below summarizes the possible points for each assessment task as well 
 
 Letter grades for the course will be determined by the following percentages:                  
 
-|       | **+**    |           | **-**    |
-| ----- | -------- | --------- | -------- |
-| *A*   |          | 100 to 92 | 91 to 90 |
-| **B** | 89 to 88 | 87 to 82  | 81 to 80 |
-| **C** | 79 to 78 | 77 to 72  | 71 to 70 |
-| **D** | 69 to 68 | 67 to 62  | 61 to 60 |
-| **F** | Below 60 |           |          |
+|       | **+**     |          | **-**    |
+| ----- | --------- | -------- | -------- |
+| **A** | 100 to 98 | 97 to 92 | 91 to 90 |
+| **B** | 89 to 88  | 87 to 82 | 81 to 80 |
+| **C** | 79 to 78  | 77 to 72 | 71 to 70 |
+| **D** | 69 to 68  | 67 to 62 | 61 to 60 |
+| **F** | Below 60  |          |          |
 
  
 

@@ -175,11 +175,7 @@ else
 # Reference
 
 ## W3Schools
-[JavaScript Comparison and Logical Operators](https://www.w3schools.com/js/js_comparisons.asp)
-
-[JavaScript if else and else if](https://www.w3schools.com/js/js_if_else.asp)
-
-[JavaScript Switch Statement](https://www.w3schools.com/js/js_switch.asp)
+[Switch Statement](https://www.w3schools.com/js/js_switch.asp)
 
 
 

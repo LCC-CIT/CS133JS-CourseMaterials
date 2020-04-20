@@ -63,7 +63,7 @@ For each problem, type the solution code in the console and execute it. Don't cl
 9. Phone dial pad letters&mdash;switch case
    - Write code to convert the top row of a phone dial pad to numbers. Here's what a typical dial pad looks like:
      
-      <img src="PhoneDialPad.png" alt="PhoneDialPad" style="zoom:30%;" />
+      <img src="PhoneDialPad.png" alt="Phone Dial Pad"/>
      
      These are the things that are equivalent: 
      

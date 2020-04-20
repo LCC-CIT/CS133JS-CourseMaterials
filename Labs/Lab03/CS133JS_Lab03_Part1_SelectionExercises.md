@@ -1,4 +1,4 @@
-# Lab 2, Part 1: Function Exercises
+# Lab 2, Part 1: Selection Exercises
 
 For each problem, type the solution code in the console and execute it. Don't clear the console, since you will be copying everything into a document which you will submit on Moodle.
 
@@ -61,8 +61,20 @@ For each problem, type the solution code in the console and execute it. Don't cl
      - Log "out of range" for numbers that are too big.
    - Execute the code using input that will test all the possibilities.
 9. Phone dial pad letters&mdash;switch case
-   - Write code to convert the top row to numbers. This is the conversion: 1 = 1, A, B, or C = 2, D, E, or F = 3
+   - Write code to convert the top row of a phone dial pad to numbers. Here's what a typical dial pad looks like:
+     
+      <img src="PhoneDialPad.png" alt="PhoneDialPad" style="zoom:30%;" />
+     
+     These are the things that are equivalent: 
+     
+     - 1 = 1 
+     - A, B, or C = 2
+     - D, E, or F = 3
+     
+   - This is what your code will do:
+   
      - Get the letter or number.
      - For each case in the switch statement log the correct  number to the console.
      - If the input doesn't match log "Not valid" to the console.
+   
    - Execute the code using input that will test all the possibilities.

@@ -1,4 +1,4 @@
-# Lab 2, Part 1: Selection Exercises
+# Lab 3, Part 1: Selection Exercises
 
 For each problem, type the solution code in the console and execute it. Don't clear the console, since you will be copying everything into a document which you will submit on Moodle.
 

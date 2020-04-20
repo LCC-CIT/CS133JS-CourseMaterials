@@ -7,14 +7,14 @@ For each problem, type the solution code in the console and execute it. Don't cl
      - Get an exam score.
      - If the score is above 97, log "A+" to the console.
    - Execute the code using 97 and 98 as input.
-3. Check for A-, A, A+ &mdash;a multi-branching if statement
+3. Check for A+, A, A- &mdash;a multi-branching if statement
 
    - Write the code to do the following:
      - Get an exam score.
      - For each range, log the correct grade to the console:
-       - 90 to 92: "A-"
-       - 93 to 97: "A"
        - 98 to 100: "A+"
+       - 93 to 97: "A"
+       - 90 to 92: "A-"
        - Anything else: "Ungraded"
    - Execute the code using numbers that will give you each possible result.
    
@@ -25,7 +25,7 @@ For each problem, type the solution code in the console and execute it. Don't cl
      - For each letter, log the number grade to the console:
        - "A+": 4.33
        - "A": 4.0
-       - "A+": 3.67
+       - "A-": 3.67
        - Anything else: "Out of range"
    - Execute the code using numbers that will give you each possible result.
    

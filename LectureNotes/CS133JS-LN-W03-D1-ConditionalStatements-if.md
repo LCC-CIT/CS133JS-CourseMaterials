@@ -56,8 +56,8 @@ console.log(extraVariable);
 | !=     | Operands are not equal to each  other                       | `a  != b`                                         |
 | >      | Left operand is greater than  the right operand             | `b  > a`                                          |
 | <      | Left operand is less than the  right operand                | `a  < b`                                          |
-| >=     | Left operand is greater than or  equal to the right operand | `b  >= b` or `b >= a`                             |
-| <=     | Left operand is less than or  equal to the right operand    | `b  <= ` or `a <= b`                              |
+| >=     | Left operand is greater than or  equal to the right operand | `b  >= b`, or `b >= a`                            |
+| <=     | Left operand is less than or  equal to the right operand    | `b  <= ` b, or `a <= b`                           |
 
 
 
@@ -116,10 +116,9 @@ console.log(extraVariable);
 - Example:
 
   ```javascript
-  var temperature = 60;
+  let temperature = 60;
   alert(temperature < 50 ? "Wear a coat" : "Enjoy the warm day");
   ```
-
 
 
 
@@ -141,7 +140,7 @@ There are three types of selection statements:
 
  In the examples below, assume this line of code was executed first:
 ```javascript
-let degrees = prompt("Enter the temperature");
+let degrees = 0; // Temperature in Fahrenheit
 ```
 
 - Single branch 
@@ -181,15 +180,18 @@ if(degrees < 45)
 
 ## Conditional expressions using *logical operators*
 
- For these examples, assume both of these lines of code have already been executed :
+ For these examples, assume this additional line of code has been executed :
 ```javascript
-let wind = prompt("Enter the wind speed");
-let degrees = prompt("Enter the temperature");
+let wind = 0; // Wind speed in MPH
 ```
 
 - AND, `&&`
 
+   Both comparisons must evaluate to true for the entire conditional expression to be true.
+   
    ```javascript
+   degrees = prmompt("Enter the temperature.");
+   wind = prompt("Enter the wind speed.")
    if(degrees < 60 && wind > 10)
       alert("Wear a jacket");
    ```
@@ -199,7 +201,11 @@ let degrees = prompt("Enter the temperature");
 
 - OR, `||`
 
+   Either comparisons can evaluate to true for the entire conditional expression to be true.
+   
    ```javascript
+   degrees = prmompt("Enter the temperature.");
+   wind = prompt("Enter the wind speed.")
    if(degrees < 45 || wind > 20)
     alert("Wear a warm coat");
    ```
@@ -209,9 +215,12 @@ let degrees = prompt("Enter the temperature");
 
 - NOT, `!`
 
+   Not inverts the boolean value resulting from the comparison.
+   
    ```javascript
-   let name = prompt("Enter your name");
-   if( !(name == "Han Solo"))
+   let name = "";  // Person wishing to fly the Millenniim Falcon
+   name = prompt("Enter your name");
+   if( !(name == "Han Solo"))   // Only Han Solo can fly the Millennium Falcon!
       alert("This is not your spacecraft! ");
    ```
    
@@ -222,10 +231,10 @@ let degrees = prompt("Enter the temperature");
 
 - Another way to combine multiple conditional expressions is to nest the if statements. 
 
-- Nesting has the same effect as using the AND logical operator. Here’s an example: 
+- Nesting has the same effect as using the AND logical operator. 
 
 - Nesting that is equivalent to ANDing two conditions:
-   
+  
    ```javascript
    if(degrees < 60) 
      if(wind > 10)
@@ -234,7 +243,11 @@ let degrees = prompt("Enter the temperature");
    
    
 
-## When to use curly braces
+## Conditionally Executing Multiple Statements.
+
+So far, we've only executed on statement based on the condition in our if statement. We can execute multiple statements by enclosing them in curly braces, `{ }`.
+
+### When to use curly braces
 
 - By default, an if statement will execute only the one statement following the condition.
   - This is true even if the statement is another if statement (nesting)
@@ -243,20 +256,53 @@ let degrees = prompt("Enter the temperature");
 
 - Best practice: Use curly braces all the time so that you don't forget and so your code will be clearer. Example:
 
- This example checks an user's input and asks again if it isn't valid input
+ This example checks an user's input and prompts for input again if it wasn't valid input:
 
 ```javascript
-let temperature = prompt("Enter the temperature");
-if(temperature < -100 || temperature < 150)
+degrees = prompt("Enter the temperature");
+if(degrees < -100 || degrees > 150)  // invalid temperatures
 {
    alert("Please enter a temperature between -100 and 150")
-   temperature = prompt("Enter the temperature");
+   degrees = prompt("Enter the temperature");
 }
 
 if(degrees < 45)
 {
    alert("Wear a coat");
 }
+```
+
+
+
+### Scope of variables inside curly braces
+
+When we put variables inside curly braces, we potentially create a new scope.
+
+- Variables declared with `var` are in a separate scope only if they are declared inside a function.
+- Variables declared with `let` are in a separate scope any time they are declared inside of curly braces.
+
+Example using `let`:
+
+```javascript
+let calculation = 0;
+let radius = 0;
+calculation = prompt("Do you want to find 1) the circumference, or 2) the area of a circle? \n(Enter 1 or 2)");
+radius = prompt("Enter the radius of the circle.");
+if (calculation == 1)
+{
+  let circumference = 2 * 3.141 * radius;
+  console.log(circumference);
+}
+else if (calculation == 2)
+{
+  let area = 3.141 * radius * radius;
+  console.log(area);
+}
+else
+{
+  console.log("Not a valid choice.")
+}
+
 ```
 
 

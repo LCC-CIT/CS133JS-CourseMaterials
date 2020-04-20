@@ -8,7 +8,7 @@
 | ---------------------------------------------------- | ------------ |
 | 1. Intro to JavaScript programming                   | 6. Arrays    |
 | 2. Functions, Operators and Expressions | 7. Objects |
-| 3. <mark>Conditional Statements:</mark> <mark>if</mark> and switch | 8. Methods  |
+| 3. <mark>Selection Statements:</mark> <mark>if</mark> and switch | 8. Methods  |
 | 4. Loops                                             | 9. DOM       |
 | 5. Midterm                                           | 10. Final    |
 
@@ -19,6 +19,30 @@
 [TOC]
 
 ------
+
+# Introduction
+
+## Q and A
+
+- How is last week's lab assignment going?
+  - Are there any issues with code reviews?
+  - I've finished grading the lab 1 production version. A few people had some things missing and have uploaded those--I'll regrade those today.
+- How is the reading going?
+  - The reading quiz is due tomorrow.
+  - We'll review the answers on Wednesday/Thursday.
+- Does anyone have any general questions about anything?
+
+## Announcements
+
+Reminders about virtual tutoring and getting help.
+
+- Tutoring available 9:00 to 5:00 M&mdash;F.
+  - Fill out the request form as well as going to the Zoom meeting.
+- Use the Q and A forum on our Moodle page too.
+- My office hours: 11:00 to 12:00 M&mdash;Th.
+  - You can sit in on extra lectures if you like as well.
+
+
 
 # Review
 

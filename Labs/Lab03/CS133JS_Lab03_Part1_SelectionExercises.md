@@ -65,11 +65,11 @@ For each problem, type the solution code in the console and execute it. Don't cl
      
       <img src="PhoneDialPad.png" alt="Phone Dial Pad"/>
      
-     These are the things that are equivalent: 
+     These are the values that are equivalent: 
      
-     - 1 = 1 
-     - A, B, or C = 2
-     - D, E, or F = 3
+     - 1 = 1.
+     - A, B, or C = 2.
+     - D, E, or F = 3.
      
    - This is what your code will do:
    

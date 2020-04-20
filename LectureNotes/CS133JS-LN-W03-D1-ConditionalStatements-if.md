@@ -310,16 +310,16 @@ Example using `let`:
 ```javascript
 let calculation = 0;
 let radius = 0;
-calculation = prompt("Do you want to find 1) the circumference, or 2) the area of a circle? \n(Enter 1 or 2)");
+calculation = prompt("Do you want to find 1) the circumference, or 2) the area of a circle? (Enter 1 or 2)");
 radius = prompt("Enter the radius of the circle.");
 if (calculation == 1)
 {
-  let circumference = 2 * 3.141 * radius;
+  let circumference = 2 * 3.141 * radius;  // a local variable
   console.log(circumference);
 }
 else if (calculation == 2)
 {
-  let area = 3.141 * radius * radius;
+  let area = 3.141 * radius * radius;       // another local variable
   console.log(area);
 }
 else

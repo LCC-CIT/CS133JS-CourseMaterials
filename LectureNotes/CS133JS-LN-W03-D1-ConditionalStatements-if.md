@@ -55,7 +55,7 @@ Reminders about virtual tutoring and getting help.
 - Identify the scope of each of the variables below:
 
 ```javascript
-var extraVariable = 0;
+let extraVariable = 0;
 function total(n1, n2, n3)  {
     var t = n1 + n2 + n3; 
     extraVariable = t;

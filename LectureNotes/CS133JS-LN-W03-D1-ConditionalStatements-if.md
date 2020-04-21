@@ -63,8 +63,8 @@ function total(n1, n2, n3)  {
     return t;
 }
 
-var n1 = 2, n2 = 3, n3 = 6;
-sum = total(n1, n2, n3);
+let n1 = 2, n2 = 3, n3 = 6;
+let sum = total(n1, n2, n3);
 console.log(sum);
 console.log(n1);
 console.log(extraVariable);
@@ -74,20 +74,18 @@ console.log(extraVariable);
 
 ## Comparison Operators
 
-| Symbol | Condition for truth                                         | Examples of true expressions where: a = 7, b = 8; |
-| ------ | ----------------------------------------------------------- | ------------------------------------------------- |
-| ==     | Operands are equal to each other                            | `b == b`                                          |
-| !=     | Operands are not equal to each  other                       | `a  != b`                                         |
-| >      | Left operand is greater than  the right operand             | `b  > a`                                          |
-| <      | Left operand is less than the  right operand                | `a  < b`                                          |
-| >=     | Left operand is greater than or  equal to the right operand | `b  >= b`, or `b >= a`                            |
-| <=     | Left operand is less than or  equal to the right operand    | `b  <= ` b, or `a <= b`                           |
+| Symbol | Condition for truth                                         | Examples of true expressions<br />where: a = 7, b = 8; |
+| ------ | ----------------------------------------------------------- | ------------------------------------------------------ |
+| ==     | Operands are equal to each other                            | `b == b`                                               |
+| !=     | Operands are not equal to each  other                       | `a  != b`                                              |
+| >      | Left operand is greater than  the right operand             | `b  > a`                                               |
+| <      | Left operand is less than the  right operand                | `a  < b`                                               |
+| >=     | Left operand is greater than or  equal to the right operand | `b  >= b`, or `b >= a`                                 |
+| <=     | Left operand is less than or  equal to the right operand    | `b  <= ` b, or `a <= b`                                |
 
 
 
 ## Logical Operators
-
-
 
 ### Logical operators and expressions
 
@@ -143,6 +141,12 @@ console.log(extraVariable);
   let temperature = 60;
   alert(temperature < 50 ? "Wear a coat" : "Enjoy the warm day");
   ```
+
+
+
+## Control Structures
+
+What are the three control structures? These are things in the programming language that control the flow of execution in a program.
 
 
 
@@ -204,7 +208,7 @@ if(degrees < 45)
 
 ## Conditional expressions using *logical operators*
 
- For these examples, assume this additional line of code has been executed :
+For these examples, assume this additional variable has been declared and initialized :
 ```javascript
 let wind = 0; // Wind speed in MPH
 ```
@@ -214,7 +218,7 @@ let wind = 0; // Wind speed in MPH
    Both comparisons must evaluate to true for the entire conditional expression to be true.
    
    ```javascript
-   degrees = prmompt("Enter the temperature.");
+   degrees = prompt("Enter the temperature.");
    wind = prompt("Enter the wind speed.")
    if(degrees < 60 && wind > 10)
       alert("Wear a jacket");
@@ -228,7 +232,7 @@ let wind = 0; // Wind speed in MPH
    Either comparisons can evaluate to true for the entire conditional expression to be true.
    
    ```javascript
-   degrees = prmompt("Enter the temperature.");
+   degrees = prompt("Enter the temperature.");
    wind = prompt("Enter the wind speed.")
    if(degrees < 45 || wind > 20)
     alert("Wear a warm coat");
@@ -242,7 +246,7 @@ let wind = 0; // Wind speed in MPH
    Not inverts the boolean value resulting from the comparison.
    
    ```javascript
-   let name = "";  // Person wishing to fly the Millenniim Falcon
+   let name = "";  // Person wishing to fly the Millennium Falcon
    name = prompt("Enter your name");
    if( !(name == "Han Solo"))   // Only Han Solo can fly the Millennium Falcon!
       alert("This is not your spacecraft! ");
@@ -267,7 +271,7 @@ let wind = 0; // Wind speed in MPH
    
    
 
-## Conditionally Executing Multiple Statements.
+## Conditionally Executing Multiple Statements
 
 So far, we've only executed on statement based on the condition in our if statement. We can execute multiple statements by enclosing them in curly braces, `{ }`.
 
@@ -302,8 +306,8 @@ if(degrees < 45)
 
 When we put variables inside curly braces, we potentially create a new scope.
 
-- Variables declared with `var` are in a separate scope only if they are declared inside a function.
-- Variables declared with `let` are in a separate scope any time they are declared inside of curly braces.
+- Variables declared with `var` are in a separate scope only if they are declared inside a function.
+- Variables declared with `let` are in a separate scope any time they are declared inside of curly braces.
 
 Example using `let`:
 
@@ -331,7 +335,9 @@ else
 
 
 
+# Lab Assignment
 
+Take a look at Part 1 of the lab assignment now.
 
 ------
 

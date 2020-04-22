@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Written by Brian Bird, 4/22/20 -->
+    <meta charset="UTF-8" />
+    <title>Empty Page</title>
+    <script src="SpeedingTicket.js"></script>
+</head>
+
+<body>
+    This page will calculate the fine for a speeding ticket.
+    The fine is based on these criteria:
+    <ul>
+        <li>Speed: Over by more than 5 MPH $100</li>
+        <li>Speed: Over by more than 20 MPH $200</li>
+        <li>Location: In the construction area fines are doubled</li>
+    </ul>
+    The fine will be $<span id="fine"></span>
+    <script>
+        let limit = prompt("What was the speed limit");
+        let speed = prompt("How fast were you going?");
+        let construction = prompt("Were you in a construction zone? (yes/no)");
+
+        let fine = calculateFine(limit, speed, construction);
+        document.getElementById("fine").innerHTML = fine;
+    </script>
+ </body>
+
+</html>

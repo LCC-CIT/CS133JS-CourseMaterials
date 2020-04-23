@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Written by Brian Bird, 4/23/2020 -->
     <meta charset="UTF-8">
@@ -7,9 +8,27 @@
     <title>Car Seat Calculator</title>
     <script src="CarSeat.js"></script>
 </head>
+
 <body>
     <h1>Car Seat Calculator</h1>
-    This web app determines the correct car seat or booster needed by your child.
+    <p>This web app determines the reccomended car seat or booster needed by your child.</p>
+    <p><em>Please note that <strong>this is not legal advice</strong>,
+        you should consult the laws of your state regulating child safty seating in vehicles.</em></p>
+    <p>Here are the rules being used to determine the child safty seating reccomendation.<br>
+        Children who are:
+        <ul>
+            <li>At least 8 years of age,
+                or taller than 4', 9" (57 inches),  don't need a special seat.</li>
+            <li> 4',9" or less, must use a booster seat or car seat.</li>
+            <li>Less than 40 lbs., must use a car seat.
+                <ul>
+                    <li>Age 2 or more, and weigh more than 20 lbs., may use a front-facing car seat.</li>
+                    <li>Weigh less than 20 lbs., must use a rear-facing car seat.</li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+
     <p>Your child needs: <span id="seat"></span></p>
     <script>
         let age = prompt("Enter your child's age.");
@@ -19,5 +38,8 @@
         let result = determineSeat(age, height, weight);
         document.getElementById("seat").innerHTML = result;
     </script>
+    <p>These recommendations are based on infromation from 
+        <a href="https://saferide4kids.com" target="_blank">Safe Ride 4 Kids</a></p>
 </body>
+
 </html>

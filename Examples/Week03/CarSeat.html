@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Written by Brian Bird, 4/23/2020 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Seat Calculator</title>
+    <script src="CarSeat.js"></script>
+</head>
+<body>
+    <h1>Car Seat Calculator</h1>
+    This web app determines the correct car seat or booster needed by your child.
+    <p>Your child needs: <span id="seat"></span></p>
+    <script>
+        let age = prompt("Enter your child's age.");
+        let height = prompt("Enter your child's height.");
+        let weight = prompt("Enter your child's weight.");
+
+        let result = determineSeat(age, height, weight);
+        document.getElementById("seat").innerHTML = result;
+    </script>
+</body>
+</html>

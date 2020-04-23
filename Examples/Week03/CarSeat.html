@@ -28,8 +28,10 @@
             </li>
         </ul>
     </p>
-
-    <p>Your child needs: <span id="seat"></span></p>
+    <p>These recommendations are based on infromation from 
+        <a href="https://saferide4kids.com" target="_blank">Safe Ride 4 Kids</a></p>
+ 
+        <p>Your child needs: <span id="seat"></span></p>
     <script>
         let age = prompt("Enter your child's age.");
         let height = prompt("Enter your child's height.");
@@ -38,8 +40,6 @@
         let result = determineSeat(age, height, weight);
         document.getElementById("seat").innerHTML = result;
     </script>
-    <p>These recommendations are based on infromation from 
-        <a href="https://saferide4kids.com" target="_blank">Safe Ride 4 Kids</a></p>
 </body>
 
 </html>

@@ -4,19 +4,19 @@ function determineSeat(age, height, weight)
     let seatRequirement = "";
     if (age >= 8 || height > 57)
     {
-       seatRequirement = "No special seat is needed";
+       seatRequirement = "no special seat";
     }
     else if (weight  >= 40 )
     {
-        seatRequirement = "Use a booster seat";
+        seatRequirement = "a booster seat";
     }
-    else if (weight >= 20 && age >= 2)
+    else if (weight > 20 && age >= 2)
     {
-        seatRequirement = "Use a front facing car seat";
+        seatRequirement = "a front facing car seat";
     }
     else
     {
-        seatRequirement = "Use a rear facing car seat";
+        seatRequirement = "a rear facing car seat";
     }
     return seatRequirement;
 }

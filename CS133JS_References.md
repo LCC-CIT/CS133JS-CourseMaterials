@@ -8,7 +8,9 @@
 
 ## Tutorials
 
-[W3Schools JavaScript Tutorial](https://www.w3schools.com/js/DEFAULT.asp) - One of the best places to learn the basics of JavaScript.
+[W3Schools JavaScript Tutorial](https://www.w3schools.com/js/DEFAULT.asp) - One of the best places to learn the basics of JavaScript. Recently (Spring 2020), some of the advertising on this site has been objectionable.
+
+[JavaScriptTutorial.net](https://www.javascripttutorial.net/) - A well written and organized set of tutorials. The advertising on this site appears to be benign.
 
 [MDN JavaScript Tutorials](https://developer.mozilla.org/en-US/docs/Learn/JavaScript) - Another set of good tutorials for beginners.
 
@@ -44,7 +46,7 @@
 
 [CIT Computer Lab Wiki](http://nlms.lanecc.edu/wiki/doku.php?id=start) - Information about our department's computer lab. 
 
-**Alert: The physical lab is closed this term (spring 2020), but you can still get tutoring help from the [virtual CIT lab](https://lcc-cit.github.io/CS133JS-CourseMaterials/OnlineCITLabProcedures.html) which is staffed full-time by tutors from the CIT department.**
+**Alert: The physical lab is closed this term (Spring 2020), but you can still get tutoring help from the [virtual CIT lab](https://lcc-cit.github.io/CS133JS-CourseMaterials/OnlineCITLabProcedures.html) which is staffed full-time by tutors from the CIT department.**
 
 ------
 

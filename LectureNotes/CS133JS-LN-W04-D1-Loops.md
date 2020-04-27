@@ -62,24 +62,25 @@ There are three control structures in programming:
 
 # Loops
 
-Loops execute a block of code multiple times. There are several types of loops in JavaScript: 
+Loop statements execute a block of code multiple times. There are several types of loops in JavaScript: 
 
-- while
-- do while
-- for
-- for in (we'll learn about this one after we've learned about arrays).
+- `while`
+- `do while`
+- `for`
+- `for in` (we'll learn about this one after we've learned about arrays).
 
 
 
 ## `while` Loops
 
 The *while* loop iterates as long as a condition is true. 
-It tests the condition at the beginning of the loop, so it is a pretest loop.
+It tests the condition at the beginning of the loop, so it called a *pretest* loop.
 
- Example:
+**Example: input validation**
 
 ```javascript
-// Enter input until the user enters it correctly
+// Re-prompt for input until the user enters it correctly
+let degrees = 0;
 degrees = prompt("Enter the temperature");
 while(degrees < -100 || degrees > 150)  // invalid temperatures
 {
@@ -91,11 +92,50 @@ while(degrees < -100 || degrees > 150)  // invalid temperatures
 
 
 
+**Example: a loop with a counter**
+
+```javascript
+// Count to 10
+let count = 1;
+while(count <= 10) 
+{
+   console.log(count);
+   count += 1;
+}
+```
+
+If we run this in the console, is there some value we could set `count` to that would prevent the loop from ever iterating, not even once?
+
+### Scope of variables in `while` loops
+
+Any variable (or variables) used in the loop test condition must be declared outside the loop. In the example above, degrees, is declared outside the loop, so its scope is greater than the body of the loop.
+
+In next example, we add a variable which has a scope of just the loop body.
+
+**Example: a loop with a local variable**
+
+```javascript
+// Count to 10 by ones and to 100 by tens
+let count = 1;
+while(count <= 10) 
+{
+       let timesTen = count * 10;
+   console.log(count + ", " + timesTen);
+   count += 1;
+}
+```
+
+If we run this in the console, how can we show that `count` is global and `timesTen` is local to the loop body?
+
+
+
 ## `do while` Loops
 
-The same as the *while* loop, but it tests the condition at the end of the loop, so it is a post-test loop.
+The same as the *while* loop, but it tests the condition at the end of the loop, so it is a *post-test* loop.
 
- Example:
+Note the semicolon at the end of the loop condition&mdash;this is a syntactic detail that's easy to miss!
+
+**Example: input validation**
 
 ```javascript
 // Enter input until the user enters it correctly
@@ -106,6 +146,24 @@ do
 } while(degrees < -100 || degrees > 150);  // invalid temperatures
 // Do something with the user's input
 ```
+
+Is there any way this loop would not iterate at least once?
+
+
+
+**Example: a loop with a counter**
+
+```javascript
+// Count to 10
+let count = 1;
+do
+{
+   console.log(count);
+   count += 1;
+} while(count <= 10);
+```
+
+Is there any value of `count` that would prevent this loop from iterating at least once?
 
 
 
@@ -126,23 +184,22 @@ for (let i = 1;  i <= 10;  i++)
 
 
 
-### Example
+**Example: a loop that shows squares**
 
 ```javascript
-// Display powers of a number
-let base = 2;
-// how many times will the loop execute? Final value of i?
-for (i = 0; i < 5; i++)
+// Display squares of a number
+for (let i = 0; i < 5; i++)
 {
-    result = Math.Pow(2, i);
-    // the + operator is used for concatenation here
-    answer = base + “ raised to the “ + i + “ = “ result;
-    alert( answer);
+    let result = i * i;
+    console.log(i + " squared = " + result);
 }
-alert(“done”);
 ```
 
+How many times will the loop execute?
 
+What is the scope of `i`?
+
+What will the final value of `i` be?
 
 ------
 

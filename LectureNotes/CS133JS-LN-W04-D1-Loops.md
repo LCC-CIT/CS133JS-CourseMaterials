@@ -50,7 +50,11 @@ switch (color)
 
 ## Control Structures
 
-There are three control structures in programming: *sequence*, *selection*, and *repetition*. *Repetition* is also called *looping*.
+There are three control structures in programming:
+
+1. *Sequence*
+2. *Selection*
+3. *Repetition*, which is also called *looping*.
 
 ------
 
@@ -109,19 +113,24 @@ do
 
 The *for* loop is used when you know how many times you want to *iterate* (go around the loop).
 
-Structure:
- initial value       condition      increment
-           |                      |                 |
-`( for i = 1;  i <= 10;   i++)`
-` {`
-`   document.write(i);        --- Body`
-` }`
+### Structure
+​         initial value     condition      increment
+​                     &darr;                &darr;                  &darr;
 
-Examples:
+```javascript
+for (let i = 1;  i <= 10;  i++)
+{                                  // body
+   console.log(i);
+}
+```
+
+
+
+### Example
 
 ```javascript
 // Display powers of a number
-var base = 2;
+let base = 2;
 // how many times will the loop execute? Final value of i?
 for (i = 0; i < 5; i++)
 {

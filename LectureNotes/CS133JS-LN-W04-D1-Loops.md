@@ -199,10 +199,48 @@ for (let i = 0; i < 5; i++)
 - What is the scope of `i`?
 - What is the scope of `result`?
 - What will the final value of `i` be?
+- 
 
-### Omitting parts of the for loop header
+### Omitting parts of the `for` loop header
+
+**Example: declare the variable outside the loop**
+
+```javascript
+// Display squares of a number
+let i = 0;
+for (; i < 5; i++)
+{
+    let result = i * i;
+    console.log(i + " squared = " + result);
+}
+```
+
+Note: you need to leave the semicolon there as a placeholder.
+
+- What is the scope of `i`now?
+- What is the scope of `result`?
+
+While you can do this, it's not recommended unless you really need your loop counter to be visible in the scope outside your loop.
 
 
+
+**Example: increment the loop counter in the body of the loop**
+
+```javascript
+// Display squares of a number
+let i = 0;
+for (; i < 5;)
+{
+    let result = i * i;
+    console.log(i + " squared = " + result);
+    i++;
+}
+```
+
+- What would happen if you moved the code that increments `i` to the beginning of the loop body?
+- What would happen if you put changed the first `i` in the loop body to   `++i` ?
+
+Again, moving the increment expression is something you can do, but it's not recommended since it makes your code more difficult to understand. You would only do this if you really needed to.
 
 
 

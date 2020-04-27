@@ -2,21 +2,21 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>CS133JS_References</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+<title>CS133JS_References</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
 #write.first-line-indent p { text-indent: 2em; }
 #write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
 #write.first-line-indent li { margin-left: 2em; }
 .for-image #write { padding-left: 8px; padding-right: 8px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 .typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 500px) {
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
   .CodeMirror-sizer { margin-left: 0px !important; }
@@ -25,7 +25,7 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
 img { max-width: 100%; vertical-align: middle; }
-button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+button, input, select, textarea { color: inherit; font: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
 *, ::after, ::before { box-sizing: border-box; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
@@ -43,7 +43,7 @@ h6 { font-size: 1rem; }
 .hidden { display: none; }
 .md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
 a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
 sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
 figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
@@ -52,8 +52,8 @@ tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
 table.md-table td { min-width: 32px; }
-.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
-.CodeMirror-linenumber { }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
 .CodeMirror { text-align: left; }
 .CodeMirror-placeholder { opacity: 0.3; }
 .CodeMirror pre { padding: 0px 4px; }
@@ -63,7 +63,7 @@ div.hr:focus { cursor: none; }
 #write.fences-no-line-wrapping pre { white-space: pre; }
 #write pre.ty-contain-cm { white-space: normal; }
 .CodeMirror-gutters { margin-right: 4px; }
-.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
 .md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
 #write .md-fences.mock-cm { white-space: pre-wrap; }
 .md-fences.md-fences-with-lineno { padding-left: 0px; }
@@ -72,7 +72,7 @@ div.hr:focus { cursor: none; }
 .CodeMirror-line, twitterwidget { break-inside: avoid; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
 .footnotes + .footnotes { margin-top: 0px; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
 li .mathjax-block, li p { margin: 0.5rem 0px; }
@@ -81,17 +81,17 @@ blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child, li > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
 #write .footnote-line { white-space: pre-wrap; }
-@media print { 
-  body, html { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
   #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
   html.blink-to-pdf { font-size: 13px; }
-  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
   .typora-export #write::after { height: 0px; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
-pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
 p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
 p > .md-image:only-child { display: inline-block; width: 100%; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
@@ -102,7 +102,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
 .md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
 .math { font-size: 1rem; }
-.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
 .md-toc-content::after, .md-toc::after { display: none; }
 .md-toc-item { display: block; color: rgb(65, 131, 196); }
@@ -115,7 +115,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .md-toc-h4 .md-toc-inner { margin-left: 6em; }
 .md-toc-h5 .md-toc-inner { margin-left: 8em; }
 .md-toc-h6 .md-toc-inner { margin-left: 10em; }
-@media screen and (max-width: 48em) { 
+@media screen and (max-width: 48em) {
   .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
   .md-toc-h4 .md-toc-inner { margin-left: 5em; }
   .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
@@ -126,29 +126,29 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
-kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
-code { text-align: left; }
-a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
 .md-inline-math .MathJax_SVG .noError { display: none !important; }
 .html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
 .md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
 .MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
 .MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
 .MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
-.MathJax_SVG * { transition: none; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
 .MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
 [lang="mermaid"] .node text { font-size: 1rem; }
-table tr th { border-bottom-width: 0px; }
+table tr th { border-bottom: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
 iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
 svg[id^="mermaidChart"] { line-height: 1em; }
-mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
 mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 
@@ -500,10 +500,10 @@ header, .context-menu, .megamenu-content, footer{
     background: #999;
 }
 
- .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+
 </style>
 </head>
-<body class='typora-export' >
-<div  id='write'  class = 'is-mac'><h1><a name="useful-links-and-references" class="md-header-anchor"></a><span>Useful Links and References</span></h1><h3><a name="for-cs133js-beginning-programming-javascript" class="md-header-anchor"></a><span>for CS133JS, Beginning Programming: JavaScript</span></h3><hr /><p>&nbsp;</p><h2><a name="tutorials" class="md-header-anchor"></a><span>Tutorials</span></h2><p><a href='https://www.w3schools.com/js/DEFAULT.asp'><span>W3Schools JavaScript Tutorial</span></a><span> - One of the best places to learn the basics of JavaScript. Recently (Spring 2020), some of the advertising on this site has been objectionable.</span></p><p><a href='https://www.javascripttutorial.net/'><span>JavaScriptTutorial.net</span></a><span> - A well written and organized set of tutorials. The advertising on this site appears to be benign.</span></p><p><a href='https://developer.mozilla.org/en-US/docs/Learn/JavaScript'><span>MDN JavaScript Tutorials</span></a><span> - Another set of good tutorials for beginners.</span></p><p>&nbsp;</p><h2><a name="online-books-and-references" class="md-header-anchor"></a><span>Online Books and References</span></h2><p><a href='http://eloquentjavascript.net/'><em><span>Eloquent JavaScript, A Modern Introduction to Programming</span></em></a><span>, Third Edition, by Marijn Haverbeke, No Starch Press, 2018.</span></p><p><em><a href='https://javascript.info/'><span>The Modern JavaScript Tutorial</span></a></em><span>, by Ilya Kantor, 2020.</span></p><p><em><a href='https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md'><span>You Don&#39;t Know JS</span></a></em><span>, 1st Edition, book series by Kyle Simpson,  O&#39;Reilly, March 2015.</span></p><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide'><span>MDN JavaScript Guide</span></a></p><p>&nbsp;</p><h2><a name="resources-for-online-students" class="md-header-anchor"></a><span>Resources for Online Students</span></h2><p><a href='http://bit.ly/LCC-MoodleNav'><span>How to Navigate Moodle</span></a><span> - A concise orientation to the Moodle LMS.</span></p><p><a href='http://bit.ly/LCC-Ready'><span>Online Readiness Survey</span></a><span> - Assess yourself to find out how you can be more successful in any online course.</span></p><p><a href='https://classes.lanecc.edu/course/view.php?id=93673'><span>Online Readiness Mini-course</span></a><span> - Learn to succeed in any online course.</span></p><p><a href='https://support.zoom.us/hc/en-us/articles/201362193-How-Do-I-Join-A-Meeting-'><span>How to join a Zoom meeting</span></a><span> - How to join the live stream of on-campus classes.</span></p><p>&nbsp;</p><h2><a name="other-resources" class="md-header-anchor"></a><span>Other Resources</span></h2><p><a href='https://github.com/LCC-CIT/CS133JS-CourseMaterials/'><span>CS133JS Course Materials</span></a><span> - Instructor&#39;s course materials, including code examples, on GitHub.</span></p><p><a href='http://nlms.lanecc.edu/wiki/doku.php?id=start'><span>CIT Computer Lab Wiki</span></a><span> - Information about our department&#39;s computer lab. </span></p><p><strong><span>Alert: The physical lab is closed this term (Spring 2020), but you can still get tutoring help from the </span><a href='https://lcc-cit.github.io/CS133JS-CourseMaterials/OnlineCITLabProcedures.html'><span>virtual CIT lab</span></a><span> which is staffed full-time by tutors from the CIT department.</span></strong></p><hr /><p>&nbsp;</p><p><span>Compiled by </span><a href='https://profbird.online'><span>Brian Bird</span></a><span>, 2020</span></p></div>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><h1><a name="useful-links-and-references" class="md-header-anchor"></a><span>Useful Links and References</span></h1><h3><a name="for-cs133js-beginning-programming-javascript" class="md-header-anchor"></a><span>for CS133JS, Beginning Programming: JavaScript</span></h3><hr /><p>&nbsp;</p><h2><a name="tutorials" class="md-header-anchor"></a><span>Tutorials</span></h2><p><a href='https://www.w3schools.com/js/DEFAULT.asp'><span>W3Schools JavaScript Tutorial</span></a><span> - One of the best places to learn the basics of JavaScript. Recently (Spring 2020), some of the advertising on this site has been objectionable.</span></p><p><a href='https://www.javascripttutorial.net/'><span>JavaScriptTutorial.net</span></a><span> - A well written and organized set of tutorials. The advertising on this site appears to be benign.</span></p><p><a href='https://developer.mozilla.org/en-US/docs/Learn/JavaScript'><span>MDN JavaScript Tutorials</span></a><span> - Another set of good tutorials for beginners.</span></p><p>&nbsp;</p><h2><a name="online-books-and-references" class="md-header-anchor"></a><span>Online Books and References</span></h2><p><a href='http://eloquentjavascript.net/'><em><span>Eloquent JavaScript, A Modern Introduction to Programming</span></em></a><span>, Third Edition, by Marijn Haverbeke, No Starch Press, 2018.</span></p><p><em><a href='https://javascript.info/'><span>The Modern JavaScript Tutorial</span></a></em><span>, by Ilya Kantor, 2020.</span></p><p><em><a href='https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md'><span>You Don&#39;t Know JS</span></a></em><span>, 1st Edition, book series by Kyle Simpson,  O&#39;Reilly, March 2015.</span></p><p><a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide'><span>MDN JavaScript Guide</span></a></p><p>&nbsp;</p><h2><a name="resources-for-online-students" class="md-header-anchor"></a><span>Resources for Online Students</span></h2><p><a href='http://bit.ly/LCC-MoodleNav'><span>How to Navigate Moodle</span></a><span> - A concise orientation to the Moodle LMS.</span></p><p><a href='http://bit.ly/LCC-Ready'><span>Online Readiness Survey</span></a><span> - Assess yourself to find out how you can be more successful in any online course.</span></p><p><a href='https://classes.lanecc.edu/course/view.php?id=93673'><span>Online Readiness Mini-course</span></a><span> - Learn to succeed in any online course.</span></p><p><a href='https://support.zoom.us/hc/en-us/articles/201362193-How-Do-I-Join-A-Meeting-'><span>How to join a Zoom meeting</span></a><span> - How to join the live stream of on-campus classes.</span></p><p>&nbsp;</p><h2><a name="other-resources" class="md-header-anchor"></a><span>Other Resources</span></h2><p><a href='https://github.com/LCC-CIT/CS133JS-CourseMaterials/'><span>CS133JS Course Materials</span></a><span> - Instructor&#39;s course materials, including code examples, on GitHub.</span></p><p><a href='http://nlms.lanecc.edu/wiki/doku.php?id=start'><span>CIT Computer Lab Wiki</span></a><span> - Information about our department&#39;s computer lab. </span></p><p><strong><span>Alert: The physical lab is closed this term (Spring 2020), but you can still get tutoring help from the </span><a href='https://lcc-cit.github.io/CS133JS-CourseMaterials/OnlineCITLabProcedures.html'><span>virtual CIT lab</span></a><span> which is staffed full-time by tutors from the CIT department.</span></strong></p><hr /><p>&nbsp;</p><p><span>Compiled by </span><a href='https://profbird.online'><span>Brian Bird</span></a><span>, 2020</span></p></div>
 </body>
 </html>

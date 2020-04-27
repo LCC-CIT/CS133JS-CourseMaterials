@@ -171,20 +171,20 @@ Is there any value of `count` that would prevent this loop from iterating at lea
 
 The *for* loop is used when you know how many times you want to *iterate* (go around the loop).
 
-### Structure
-​         initial value     condition      increment
-​                     &darr;                &darr;                  &darr;
+**Structure**
+         initial value     condition      increment
+                     &darr;                    &darr;                &darr;
 
 ```javascript
-for (let i = 1;  i <= 10;  i++)
-{                                  // body
+for (let i = 1;  i <= 10;  i++)   // loop header
+{                                  // loop body
    console.log(i);
 }
 ```
 
 
 
-**Example: a loop that shows squares**
+**Example: a loop that shows squares of numbers**
 
 ```javascript
 // Display squares of a number
@@ -195,11 +195,16 @@ for (let i = 0; i < 5; i++)
 }
 ```
 
-How many times will the loop execute?
+- How many times will the loop execute?
+- What is the scope of `i`?
+- What is the scope of `result`?
+- What will the final value of `i` be?
 
-What is the scope of `i`?
+### Omitting parts of the for loop header
 
-What will the final value of `i` be?
+
+
+
 
 ------
 

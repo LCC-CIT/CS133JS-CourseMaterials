@@ -9,7 +9,7 @@
 | 1. Intro to JavaScript programming                   | 6. Arrays    |
 | 2. Functions, Operators and Expressions | 7. Objects |
 | 3. Conditional Statements: if and switch | 8. Methods  |
-| 4. Repetition | 9. DOM       |
+| 4. <mark>Repetition</mark> | 9. DOM       |
 | 5. Midterm                                           | 10. Final    |
 
 
@@ -17,6 +17,28 @@
 <h2>Table of Contents</h2>
 
 [TOC]
+
+------
+
+# Introduction
+
+## Announcements
+
+- I've finished grading the lab 2 production version. 
+  - Have you looked at my feedback yet?
+  - Any questions?
+
+## Q and A
+
+- How is last week's lab assignment going (lab 3)?
+  - Are there any issues with code reviews for lab 3?
+  - Code reviews are due Tuesday.
+- How is the reading going?
+  - Reading quiz 4 is due Tuesday.
+  - We'll review the answers on Wednesday/Thursday.
+- Does anyone have any general questions about anything?
+
+
 
 ------
 
@@ -56,9 +78,9 @@ There are three control structures in programming:
 2. *Selection*
 3. *Repetition*, which is also called *looping*.
 
+
+
 ------
-
-
 
 # Loops
 
@@ -172,8 +194,10 @@ Is there any value of `count` that would prevent this loop from iterating at lea
 The *for* loop is used when you know how many times you want to *iterate* (go around the loop).
 
 **Structure**
-         initial value     condition      increment
-                     &darr;                    &darr;                &darr;
+
+&emsp;&emsp;initial value &emsp;condition &emsp;increment
+
+<pre>        &darr;         &darr;       &darr;</pre>
 
 ```javascript
 for (let i = 1;  i <= 10;  i++)   // loop header
@@ -196,10 +220,14 @@ for (let i = 0; i < 5; i++)
 ```
 
 - How many times will the loop execute?
+
 - What is the scope of `i`?
+
 - What is the scope of `result`?
+
 - What will the final value of `i` be?
-- 
+
+  
 
 ### Omitting parts of the `for` loop header
 
@@ -238,7 +266,7 @@ for (; i < 5;)
 ```
 
 - What would happen if you moved the code that increments `i` to the beginning of the loop body?
-- What would happen if you put changed the first `i` in the loop body to   `++i` ?
+- What would happen if you put changed the first `i` in the loop body to   `++i` ?
 
 Again, moving the increment expression is something you can do, but it's not recommended since it makes your code more difficult to understand. You would only do this if you really needed to.
 
@@ -246,11 +274,9 @@ Again, moving the increment expression is something you can do, but it's not rec
 
 ------
 
-
-
 # Reference
 
-**Mozilla Developer Network**
+## Mozilla Developer Network
 
 [Loops and Iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
 
@@ -264,3 +290,4 @@ Again, moving the increment expression is something you can do, but it's not rec
    ```
 
    ```
+

@@ -205,17 +205,17 @@ By Saturday
 
 #### Tentative Course Schedule
 
-| Week   | Date | Topic                            | Activities                                                   |
-| ------ | :--- | -------------------------------- | ------------------------------------------------------------ |
-| **1**  | 4/5  | Intro to  JavaScript programming | Reading Quiz 1<br />Beta version of lab 1                    |
-| **2**  | 4/12 | Functions                        | Review of your partner’s lab 1 beta <br />Reading Quiz 2  <br />Production version of your lab 1  <br />Beta version of your lab 2 |
-| **3**  | 4/19 | Objects and Methods              | Review of your partner’s lab 2 beta  <br />Reading Quiz 3 <br />Production version of your lab 2 <br />Beta version of your lab 3 |
-| **4**  | 4/26 | Expressions and Operators        | Review of your partner’s lab 3 beta<br />Reading Quiz 4<br />Production version of your lab 3<br />Beta version of your lab 4 |
-| **5**  | 5/3  | Midterm                          | Review of your partner’s lab 4 beta   <br />Production version of your lab 4  <br />Midterm |
-| **6**  | 5/10 | Arrays and Loops                 | Reading Quiz 6  <br />Beta version of your lab 5             |
-| **7**  | 5/17 | Conditional Statements           | Review of your partner’s lab 5 beta<br />Reading Quiz 6<br />Production version of your lab 5<br />Beta version of your lab 6 |
-| **8**  | 5/24 | DOM                              | Review of your partner’s lab 6 beta<br />Reading Quiz 7<br />Production version of your lab 6<br />Beta version of your lab 7 |
-| **9**  | 5/31 | TBD                              | Review of your partner’s lab 7 beta<br />Reading Quiz 8<br />Production version of your lab 7<br />Beta version of your lab 8 |
-| **10** | 6/7  | Finals week                      | Exam                                                         |
+| Week   | Date           | Topic                                                        | Learning Activities Due                                      |
+| ------ | :------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **1**  | 4/5&ndash;11   | Intro to  JavaScript:<br />algorithms, variables, and data types | Reading Quiz 1<br />Beta version of lab 1                    |
+| **2**  | 4/12&ndash;18  | Functions, Expressions and Operators                         | lab 1 code review <br />Reading Quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
+| **3**  | 4/19&ndash;25  | Selection                                                    | lab 2 code review  <br />Reading Quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
+| **4**  | 4/26&ndash;5/2 | Repetition                                                   | lab 3 code review<br />Reading Quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
+| **5**  | 5/3&ndash;9    | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Midterm Quiz |
+| **6**  | 5/10&ndash;16  | Arrays                                                       | Reading Quiz 5  <br />Beta version of lab 5                  |
+| **7**  | 5/17&ndash;23  | Objects                                                      | lab 5 code review<br />Reading Quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
+| **8**  | 5/24&ndash;30  | Methods                                                      | lab 6 code review<br />Reading Quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |
+| **9**  | 5/31&ndash;6/6 | Document Object Model                                        | lab 7 code review<br />Reading Quiz 8<br />Production version of lab 7<br />Beta version of lab 8 |
+| **10** | 6/7&ndash;11   | Finals week                                                  | Final Quiz                                                   |
 
  

@@ -4,13 +4,12 @@
 <head>
     <!-- Written by Brian Bird, 4/22/20 -->
     <meta charset="UTF-8" />
-    <title>Empty Page</title>
+    <title>Calculate Fine</title>
     <script src="SpeedingTicket.js"></script>
 </head>
 
 <body>
-    This page will calculate the fine for a speeding ticket.
-    The fine is based on these criteria:
+    This page will calculate the fine for a speeding ticket. The fine is based on these criteria:
     <ul>
         <li>Speed: Over by more than 5 MPH $100</li>
         <li>Speed: Over by more than 20 MPH $200</li>
@@ -25,6 +24,6 @@
         let fine = calculateFine(limit, speed, construction);
         document.getElementById("fine").innerHTML = fine;
     </script>
- </body>
+</body>
 
 </html>

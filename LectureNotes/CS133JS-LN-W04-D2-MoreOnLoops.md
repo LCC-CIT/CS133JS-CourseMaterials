@@ -43,13 +43,14 @@
 ## Repetition Using `while` 
 
 This is a *pretest* loop
+The variables used in the loop condition must be declared outside the loop.
 
 ```javascript
 // Number guessing game
 let guess = 0;
 while(guess != 6)   // 6 is the number to guess
 {
-   degrees = prompt("Enter your guess.");
+   guess = prompt("Enter your guess.");
 }
 alert("You got it!");
 ```
@@ -57,6 +58,7 @@ alert("You got it!");
 ## Repetition Using `do while` 
 
 This is a *post-test* loop
+The variables used in the condition must be declared outside the loop in this one too.
 
 ```javascript
 // Input validation
@@ -71,6 +73,7 @@ do
 ## Repetition Using `for` 
 
 This is a loop with a built-in counter
+The loop counter's scope is local to the loop.
 
 ```javascript
 // Count from 1 to 10
@@ -142,11 +145,11 @@ do
     let guess = 0;
     while(guess != 6)   // 6 is the number to guess
     {
-       degrees = prompt("Enter your guess.");
+       guess = prompt("Enter your guess.");
     }
     alert("You got it!");
  		playAgain = prompt("Do you want to play again?");
-} (while playAgain == "yes");
+} while (playAgain == "yes");
 ```
 
 

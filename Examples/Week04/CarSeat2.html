@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Written by Brian Bird, 4/23/2020 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Seat Calculator</title>
+    <script src="CarSeat2.js" defer></script>
+</head>
+
+<!-- I'm using onload to load the doIO() function after the html page is loaded.
+     This worked in Firefox, but to get it to work in Edge, and in Chrome on 
+     MacOS, I needed to add the attribute, defer, to the script element.
+     This doesn't work in Safari. In Safari the page still isn't rendered until
+     after the JS prompts. -->
+<body onload="doIO()">
+    <h1>Car Seat Calculator</h1>
+    <p>This web app determines the reccomended car seat or booster needed by your child.</p>
+    <p><em>Please note that <strong>this is not legal advice</strong>,
+        you should consult the laws of your state regulating child safty seating in vehicles.</em></p>
+    <p>Here are the rules being used to determine the child safty seating reccomendation.<br>
+        Children who are:
+        <ul>
+            <li>At least 8 years of age,
+                or taller than 4', 9" (57 inches),  don't need a special seat.</li>
+            <li> 4',9" or less, must use a booster seat or car seat.</li>
+            <li>Less than 40 lbs., must use a car seat.
+                <ul>
+                    <li>Age 2 or more, and weigh more than 20 lbs., may use a front-facing car seat.</li>
+                    <li>Weigh less than 20 lbs., must use a rear-facing car seat.</li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+    <p>These recommendations are based on infromation from 
+        <a href="https://saferide4kids.com" target="_blank">Safe Ride 4 Kids</a></p>
+ 
+        <p><strong>Your child needs: <span id="seat"></span></strong></p>
+</body>
+
+</html>

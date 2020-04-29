@@ -1,3 +1,9 @@
+function getRain() {
+    let inches = prompt("How many inches of rain will fall each day?");
+    let forecast = rainWeek(inches);
+    document.getElementById("rain").innerHTML = forecast;
+}
+
 function rainWeek(rainRate) {
     let rainfall = "";
     let rainInches = 0;

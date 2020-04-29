@@ -5,7 +5,7 @@
     <!-- Written by Brian Bird, 4/29/20 -->
     <meta charset="UTF-8" />
     <title>Rainfall</title>
-    <script src="RainFall.js"></script>
+    <script src="RainFall.js" defer></script>
 </head>
 
 <body onload="getRain()">
@@ -13,13 +13,7 @@
     This page will show the cumulative rainfall, day-by-day, for a week.<br> Enter the daily rainfall in inches.
     <h3>Day &emsp; Inches of Rain</h3>
     <p id="rain"></p>
-    <script>
-        function getRain() {
-            let inches = prompt("How many inches of rain will fall each day?");
-            let forecast = rainWeek(inches);
-            document.getElementById("rain").innerHTML = forecast;
-        }
-    </script>
+
 </body>
 
 </html>

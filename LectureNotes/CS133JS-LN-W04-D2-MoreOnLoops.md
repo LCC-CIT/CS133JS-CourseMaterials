@@ -175,16 +175,22 @@ for (let i = 1; i < 10;  i++)    // counts down the rows
 
 ## Coding
 
-- In the .js file, write "stubs" for the function(s) you think you will need.
-
-- In the .html file, write the code that will do the I/O.
-
-  - Put a script element in the head of the page that links to the .js file.
-  - Put one or more script elements in the body of the page where you will execute the I/O code.
-  - Write the I/O code and call the stub function(s) in the .js file.
-    - The function won't do anything yet, but you can check to see if there are any bugs in the skeleton of your app.
-    - Open the console in the browser (F12) to see if there are any errors.
-  - Go back to your .js file and finish writing your functions. You can test them at each step of the way using your .html page.
+- Create a .js file.
+  - Add a stub function for doing I/O.
+- Create a .html file and put the skeleton of your web page in it.
+  - Add a `script` element to the `head` that links to your .js file. Use the `defer` keyword.
+  - Add an `onload` event to the opening `body` tag that calls your I/O function.
+  - Add a title, header and some introductory text.
+  - Add at least one HTML element with an `id` attribute that you can use to display output.
+  - ***Test your page!***
+- In the .js file, start writing your JavaScript code.
+  - Put just enough code into the stub I/O function to put something into an element on the page, then ***test it.***
+  - Write a stub (or stubs) for the function(s) that will do computation or processing.
+  - Add code to the I/O function to call your processing function(s), ***test it.***
+- Add the rest of the JavaScript and HTML you need to finish the web app.
+  Iteratively:
+  - Add a little code.
+  - ***Test it!***
 
 ## Debugging
 
@@ -212,6 +218,8 @@ for (let i = 1; i < 10;  i++)    // counts down the rows
 
 [Loops and Iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
 
+[The Firefox JavaScript Debugger](https://developer.mozilla.org/en-US/docs/Tools/Debugger)
+
 
 
 ------
@@ -219,6 +227,3 @@ for (let i = 1; i < 10;  i++)    // counts down the rows
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
-   ```
-
-   ```

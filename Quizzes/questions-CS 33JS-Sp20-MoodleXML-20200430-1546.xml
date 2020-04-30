@@ -1,0 +1,1649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/CS 133JS: Beg Programming: JavaScript</text>
+    </category>
+    <info format="html">
+      <text><![CDATA[<p>The default category for questions shared in context CS 133JS: Beg Programming: JavaScript.</p>]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 18316312  -->
+  <question type="matching">
+    <name>
+      <text>Arithmetic operators</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Match each arithmetic operator with it's correct name.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <subquestion format="html">
+      <text><![CDATA[<p>+</p>]]></text>
+      <answer>
+        <text>Add</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>- (binary)</p>]]></text>
+      <answer>
+        <text>Subtract</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>*</p>]]></text>
+      <answer>
+        <text>Multiply</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>/</p>]]></text>
+      <answer>
+        <text>Divide</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>%</p>]]></text>
+      <answer>
+        <text>Modulo</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>- (unary)</p>]]></text>
+      <answer>
+        <text>Negate</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text></text>
+      <answer>
+        <text>Percent</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text></text>
+      <answer>
+        <text>Concatenate</text>
+      </answer>
+    </subquestion>
+  </question>
+
+<!-- question: 18316332  -->
+  <question type="matching">
+    <name>
+      <text>Comparison operators</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Match each comparison operator with it's correct name.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <subquestion format="html">
+      <text><![CDATA[<p><code>==</code><code></code></p>]]></text>
+      <answer>
+        <text>Equal</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p><code>!=</code><code></code></p>]]></text>
+      <answer>
+        <text>Not equal</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p><code>===</code><code></code></p>]]></text>
+      <answer>
+        <text>Strictly equal</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p><code>!==</code><code></code></p>]]></text>
+      <answer>
+        <text>Strictly not equal</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p><code>&lt;</code><code></code></p>]]></text>
+      <answer>
+        <text>Less than</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p><code>&gt;</code><code></code></p>]]></text>
+      <answer>
+        <text>Greater than</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p><code>&lt;=</code><code></code></p>]]></text>
+      <answer>
+        <text>Less than or equal</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p><code>&gt;=</code></p>]]></text>
+      <answer>
+        <text>Greater than or equal</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text></text>
+      <answer>
+        <text>In between</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text></text>
+      <answer>
+        <text>Outside</text>
+      </answer>
+    </subquestion>
+  </question>
+
+<!-- question: 18346872  -->
+  <question type="matching">
+    <name>
+      <text>do while loop example</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>For the code shown below, match the count number logged to the console with the description of what was happening at that point in the execution of this code.</p>
+<pre class="wp-block-code code-badge-pre"><code class="hljs language-javascript"><span class="hljs-keyword">let</span> count = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">do</span> {
+    count++;
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'count is:'</span> + count);
+} <span class="hljs-keyword">while</span> (count &lt; <span class="hljs-number">10</span>); <br />console.log('count is: ' + count);</code></pre>
+<p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <subquestion format="html">
+      <text><![CDATA[<p>The loop is in it's first iteration.</p>]]></text>
+      <answer>
+        <text>1</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>This never happens.</p>]]></text>
+      <answer>
+        <text>0</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>The loop is in it's last iteration.</p>]]></text>
+      <answer>
+        <text>9</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>This never happens.</p>]]></text>
+      <answer>
+        <text>11</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>This is logged to the console both inside and outside the loop.</p>]]></text>
+      <answer>
+        <text>10</text>
+      </answer>
+    </subquestion>
+  </question>
+
+<!-- question: 18346877  -->
+  <question type="matching">
+    <name>
+      <text>for loop anatomy</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Match the correct description with the part of the loop show below.<code class="hljs language-javascript"> </code></p>
+<pre class="wp-block-code code-badge-pre"><code class="hljs language-javascript"><span class="hljs-keyword">for</span> (let j = 1; j &lt; <span class="hljs-number">10</span>; j += <span class="hljs-number">2</span>) {
+    <span class="hljs-built_in">console</span>.log(j);
+}</code></pre>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <subquestion format="html">
+      <text><![CDATA[<p>for</p>]]></text>
+      <answer>
+        <text>loop keyword</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>let j = 1;</p>]]></text>
+      <answer>
+        <text>counter initialization</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<pre class="wp-block-code code-badge-pre"><code class="hljs language-javascript">j &lt; <span class="hljs-number">10</span>;</code></pre>]]></text>
+      <answer>
+        <text>loop condition</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<pre class="wp-block-code code-badge-pre"><code class="hljs language-javascript">j += <span class="hljs-number">2</span></code></pre>]]></text>
+      <answer>
+        <text>post-expression</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<pre class="wp-block-code code-badge-pre"><code class="hljs language-javascript">{
+    <span class="hljs-built_in">console</span>.log(j);
+}</code></pre>]]></text>
+      <answer>
+        <text>loop body</text>
+      </answer>
+    </subquestion>
+  </question>
+
+<!-- question: 18346876  -->
+  <question type="matching">
+    <name>
+      <text>for loop example</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>For the code shown below, match the count number logged to the console with the description of what was happening at that point in the execution of this code.</p>
+<pre class="wp-block-code code-badge-pre"><code class="hljs language-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> counter = <span class="hljs-number">1</span>; counter &lt; <span class="hljs-number">5</span>; counter++) {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'counter: '</span> + counter);
+}
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">'counter: '</span> + counter);</code></pre>
+<p><code class="hljs language-javascript"> </code></p>
+<p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <subquestion format="html">
+      <text><![CDATA[<p>The loop is in it's first iteration.</p>]]></text>
+      <answer>
+        <text>1</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>The loop is in it's last iteration.</p>]]></text>
+      <answer>
+        <text>4</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>This never happens.</p>]]></text>
+      <answer>
+        <text>5</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>This is <span style="font-family: 'courier new', courier, monospace;">count</span> outside the loop.</p>]]></text>
+      <answer>
+        <text>Undefined</text>
+      </answer>
+    </subquestion>
+  </question>
+
+<!-- question: 18346871  -->
+  <question type="matching">
+    <name>
+      <text>Loop vocabulary</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Match each term with the best definition.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <subquestion format="html">
+      <text><![CDATA[<p>A <em>boolean</em> <em>expression</em> that determines whether a loop will <em>iterate.</em></p>]]></text>
+      <answer>
+        <text>Test expression</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>One execution of the code in the <em>body</em> of a loop.</p>]]></text>
+      <answer>
+        <text>Iteration</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>Code enclosed in curly braces.</p>]]></text>
+      <answer>
+        <text>Loop body</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>A combination of symbols that can be evaluated to a value, like: <span style="font-family: courier new, courier, monospace;">x + 2</span></p>]]></text>
+      <answer>
+        <text>Expression</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>A single instruction in a program (and that single instruction can also contain other instructions).</p>]]></text>
+      <answer>
+        <text>Statement</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>A loop in which the <em>test expression</em> is evaluated <span style="text-decoration: underline;">before</span> each <em>iteration</em>.</p>]]></text>
+      <answer>
+        <text>Pretest loop</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>A loop in which the <em>test expression</em> is evaluated <span style="text-decoration: underline;">after</span> each <em>iteration</em>.</p>]]></text>
+      <answer>
+        <text>Post-test loop</text>
+      </answer>
+    </subquestion>
+  </question>
+
+<!-- question: 18316333  -->
+  <question type="matching">
+    <name>
+      <text>Misc. operators</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Match each operator with it's correct name.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <subquestion format="html">
+      <text><![CDATA[<p><code>&amp;&amp;</code></p>]]></text>
+      <answer>
+        <text>Logical AND</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p><code>||</code></p>]]></text>
+      <answer>
+        <text>Logical OR</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p><code>!</code></p>]]></text>
+      <answer>
+        <text>Logical NOT</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p> <code>typeof</code></p>]]></text>
+      <answer>
+        <text>Type of value</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p><code>?:</code></p>]]></text>
+      <answer>
+        <text>Ternary operator</text>
+      </answer>
+    </subquestion>
+  </question>
+
+<!-- question: 18324421  -->
+  <question type="matching">
+    <name>
+      <text>switch case parts</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Match the JavaScript keyword with the best description of its purpose.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <subquestion format="html">
+      <text><![CDATA[<p>Specifies the variable to be tested against the case expressions for a match.</p>]]></text>
+      <answer>
+        <text>switch</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>Causes execution to jump out of the switch statement.</p>]]></text>
+      <answer>
+        <text>break</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>Marks the beginning of a condition for executing the code that follows this expression</p>]]></text>
+      <answer>
+        <text>case</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>Marks the code that will be executed if none of the cases were matched.</p>]]></text>
+      <answer>
+        <text>default</text>
+      </answer>
+    </subquestion>
+  </question>
+
+<!-- question: 18346698  -->
+  <question type="matching">
+    <name>
+      <text>While loop example</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>For the code shown below, match the count number logged to the console with the description of what was happening at that point in the execution of this code.</p>
+<pre class="wp-block-code code-badge-pre"><code class="hljs language-javascript"><span class="hljs-keyword">let</span> count = <span class="hljs-number">1</span>;<br /> <span class="hljs-keyword">while</span> (count &lt; <span class="hljs-number">10</span>)<br /> {<br />   <span class="hljs-built_in">console</span>.log(count); <br />   count +=<span class="hljs-number">2</span>; <br />}<br />console.log(count);<br /></code><br />of the code.</pre>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <shuffleanswers>true</shuffleanswers>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <subquestion format="html">
+      <text><![CDATA[<p>The loop is in it's first iteration.</p>]]></text>
+      <answer>
+        <text>1</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>This never happens.</p>]]></text>
+      <answer>
+        <text>2</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>The loop is in it's last iteration.</p>]]></text>
+      <answer>
+        <text>9</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>This never happens.</p>]]></text>
+      <answer>
+        <text>10</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>This is only logged to the console outside the loop.</p>]]></text>
+      <answer>
+        <text>11</text>
+      </answer>
+    </subquestion>
+  </question>
+
+<!-- question: 18324415  -->
+  <question type="multichoice">
+    <name>
+      <text>Else</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What result will be shown in the console for this code if the user enters "Secret1"?</p>
+<p><code> let password = prompt("Enter your password"); <br />if (password == "Secret1")<br />  console.log("Permission granted"); <br />else <br />  console.log("Permission denied"); <br />console.log("Done"); </code></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Done</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Permission granted</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Permission denied</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Permission granted<br />Done</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Permission denied<br />Done</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18316338  -->
+  <question type="multichoice">
+    <name>
+      <text>Equals code</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>1What will be shown in the console when you run this code?</p>
+<p><code> console.log(1 == true) </code></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>1</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>0</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>True</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>False</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>0</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18316334  -->
+  <question type="multichoice">
+    <name>
+      <text>Greater than code</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What will be shown in the console if you run this code:</p>
+<p><code> console.log(12 &lt; 2); </code></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>True</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>False</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>10</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Less-than</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18324404  -->
+  <question type="multichoice">
+    <name>
+      <text>if statement condition</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What does the condition in the if statement below do?</p>
+<p><code>let number = prompt("Enter a number"); // line 1<br />if(number &lt; 3)                         // line 2<br /></code><code>  alert("too low!");                   // line 3<br />document.write(number);                // line 4</code></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It determines whether or not to stop the code from executing and exit.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>It determines whether or not to skip the code on line 3.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It determines which which line of code to execute: either line 3, or line 4.<em><br /></em></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It assigns either true or false to the variable <em>number</em>.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>It assigns zero to the variable <em>number</em> if it is less than three.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18324420  -->
+  <question type="multichoice">
+    <name>
+      <text>if, else if, else</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What result will be shown in the console for this code:</p>
+<p><code> let number = 12; <br />if (number &lt; 12) <br />  console.log("too few"); <br />else if (number == 12) <br />  console.log("just right"); <br />else <br />  console.log("too many"); <br />console.log("all done"); </code></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>too few</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>just right</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>too many</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>just right<br />all done</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>just right<br />too many<br />all done</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>all done</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18324431  -->
+  <question type="multichoice">
+    <name>
+      <text>if-else vs. switch case</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which one of the following is true about conditional statements?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Anything you can do with an <em>if, else if, else</em> statement, you can also do with a <em>switch case </em>statement.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Anything you can do with a <em>switch case</em> statement, you can do with an <em>if, else if, else</em> statement.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>You can't do any of the same things with<em> if, else if, else</em> statements and <em>switch case</em> statements.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>You can only compare for equivalence in <em>if</em> statements.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>You can only do<em> less-than</em> or <em>greater-than</em> comparisons with <em>switch case</em> statements.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18316335  -->
+  <question type="multichoice">
+    <name>
+      <text>Logical AND code</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What will be shown in the console when this code is run?</p>
+<p><code>1 &lt; 2 &amp;&amp; 2 &lt; 3</code></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>True</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>False</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>1</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>2</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Undefined</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18316339  -->
+  <question type="multichoice">
+    <name>
+      <text>Mixed variable types code</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What will be shown in the console if you run the following code?</p>
+<p><code> var a = 1, b = "2"; <br />console.log(a + b); </code></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>3</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>undefined</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>null</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>12</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>1"2"</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18324409  -->
+  <question type="multichoice">
+    <name>
+      <text>Multiple statements</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>How do you make execution of multiple statements conditional?</p>
+<p>Example:</p>
+<p><code> if(nubmer &lt; 3)<br />  // how do we make execution of the next two lines conditional?<br />  number++;<br /></code><code>  number = number * 3; <br />document.write(number);</code></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Write a separate if statement for each one.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Indent those lines.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Put those lines inside curly braces.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Remove the semi-colons from those lines.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Put the keyword <em>else</em> at the beginning of each line.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18346873  -->
+  <question type="multichoice">
+    <name>
+      <text>Post-test do while loop always executed</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What will have been logged to the console after the loop below has finished iterating?<br />Note that <span style="font-family: courier new, courier, monospace;">count</span> is initialized to ten and is decremented inside the loop.</p>
+<pre class="wp-block-code code-badge-pre"><code class="hljs language-javascript"><span class="hljs-keyword">let</span> count = 1<span class="hljs-number">0</span>;
+<span class="hljs-keyword">do</span> {
+    count--;
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'count is:'</span> + count);
+} <span class="hljs-keyword">while</span> (count &lt; <span class="hljs-number">10</span>);</code><code class="hljs language-javascript"></code><br /><br /></pre>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>The loop will never stop iterating.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>9 8 7 6 5 4 3 2 1 0</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The loop will never be executed.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>10 9 8 7 6 5 4 3 2 1</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>9 8 7 6 5 4 3 2 1</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18346870  -->
+  <question type="multichoice">
+    <name>
+      <text>Pretest while loop never executed</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What will have been logged to the console after the loop below has finished iterating?<br />Note that <span style="font-family: courier new, courier, monospace;">count</span> is initialized to ten and is decremented inside the loop.</p>
+<pre class="wp-block-code code-badge-pre"><code class="hljs language-javascript"><span class="hljs-keyword">let</span> count = 1<span class="hljs-number">0</span>;<br /><span class="hljs-keyword">while</span> (count &lt; <span class="hljs-number">10</span>) <br />{
+   <span class="hljs-built_in">console</span>.log(count);
+   count -= <span class="hljs-number">2</span>;<br />}</code><br /><br /></pre>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The loop will never stop iterating.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>10 8 6 4 2 0</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>The loop will never be executed.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>8 6 4 2 0</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>10 8 6 4 2</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18316337  -->
+  <question type="multichoice">
+    <name>
+      <text>Strict equals code</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What will be shown in the console when you run this code?</p>
+<p><code> console.log(42 == "42") </code></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>42</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>"42"</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>True</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Undefined</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>False</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18324428  -->
+  <question type="multichoice">
+    <name>
+      <text>switch case</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What result will be shown in the console if you execute the code below?</p>
+<p><code> let animal = "cat" <br />switch (animal) <br />{<br /></code><code>  case "dog": <br />    <span>console.log(</span>"bark");<br /></code><code>    break; <br />  case "pig": <br />    <span>console.log(</span>"oink"); <br />    break; <br />  case "cat": <br />    <span>console.log(</span>"meow"); <br />    break; <br /><span>  case "cow": </span><br /><span>    <span>console.log(</span>"moo"); </span><br /><span>    break;</span><br />  default: <br />    <span>console.log(</span>"silence"); <br />} <br /></code></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>meow</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>meow<br />moo</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>meow<br />moo<br />silence</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>moew<br />silence</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>silence</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18324432  -->
+  <question type="multichoice">
+    <name>
+      <text>switch case fall-through</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What result will be shown in the console if you execute the code shown below.<br />Hint: This code has bugs in it. It doesn't do what you would expect.</p>
+<p><code> let number = 5; <br />switch (number) <br />{ <br />  case 1: <br />  case 3: <br />    console.log("prime number"); <br />  case 5: <br />    console.log("prime number"); <br />  case 7: <br />    console.log("prime number"); <br />  case 9: <br />    console.log("odd number"); <br />    break; <br />  case 2: <br />    console.log("prime number"); <br />  case 4: <br />  case 6: <br />  case 8: <br />    console.log("even number"); <br />    break; <br />  default: <br />    console.log("too big"); <br />} </code></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>prime number<br />odd number</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>prime number</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>prime number<br />prime number<br />odd number</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>too big</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>odd number</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18324430  -->
+  <question type="multichoice">
+    <name>
+      <text>switch missing breaks</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What result will be shown in the console if you execute the code below?<br />Hint: This code has bugs in it. It doesn't do what you would expect.</p>
+<p id="yui_3_17_2_1_1586998468943_110"><code>let animal = "cat" <br />switch (animal) <br />{<br /></code><code>  case "dog": <br />    console.log("bark");<br /></code><code>    break; <br />  case "pig": <br />    console.log("oink"); <br />    break; <br />  case "cat": <br />    console.log("meow"); <br />  case "cow": <br />    console.log("moo"); <br />  default: <br />    console.log("silence"); <br />}</code></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>meow</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>meow<br />moo</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>meow<br />moo<br />silence</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>moo</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>silence</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18316336  -->
+  <question type="multichoice">
+    <name>
+      <text>Ternary code</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>What will be shown in the console when you run the code below?</p>
+<p><code>console.log(1 &lt; 2 ? "Yes" : "No"); </code></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>True</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>False</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>Yes</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>No</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>1</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18324417  -->
+  <question type="truefalse">
+    <name>
+      <text>Curly braces with one statement</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>A "best practice" is to use curly braces around the statement following the condition, even if there is only one statement.</p>
+<p>For example:</p>
+<p><code> if (something == "apple") <br />{ <br />  console.log("eat it"); <br />} </code></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>1.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <answer fraction="100" format="moodle_auto_format">
+      <text>true</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="moodle_auto_format">
+      <text>false</text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text><![CDATA[$course$/top/CS 133JS: Beg Programming: JavaScript/Reading Quiz: EJS Ch. 1 & 2a]]></text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 18316304  -->
+  <question type="cloze">
+    <name>
+      <text>Primitive data types</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Name the four <em>atomic value types</em> (aka <em>primitive data types</em>) in JavaScript.</p>
+<p>Numeric values are represented by the {1:SHORTANSWER:=Number} Type.<br />Text values are represented by the {1:SHORTANSWER:=String} Type.<br />True or false values are represented by the {1:SHORTANSWER:=Boolean} Type.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+</quiz>

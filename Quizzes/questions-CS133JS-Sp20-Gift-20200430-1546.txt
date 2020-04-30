@@ -1,0 +1,274 @@
+// question: 0  name: Switch category to $course$/top/CS 133JS: Beg Programming: JavaScript
+$CATEGORY: $course$/top/CS 133JS: Beg Programming: JavaScript
+
+
+// question: 18316312  name: Arithmetic operators
+::Arithmetic operators::[html]<p>Match each arithmetic operator with it's correct name.</p>{
+	=<p>+</p> -> Add
+	=<p>- (binary)</p> -> Subtract
+	=<p>*</p> -> Multiply
+	=<p>/</p> -> Divide
+	=<p>%</p> -> Modulo
+	=<p>- (unary)</p> -> Negate
+	= -> Percent
+	= -> Concatenate
+}
+
+
+// question: 18316332  name: Comparison operators
+::Comparison operators::[html]<p>Match each comparison operator with it's correct name.</p>{
+	=<p><code>\=\=</code><code></code></p> -> Equal
+	=<p><code>!\=</code><code></code></p> -> Not equal
+	=<p><code>\=\=\=</code><code></code></p> -> Strictly equal
+	=<p><code>!\=\=</code><code></code></p> -> Strictly not equal
+	=<p><code>&lt;</code><code></code></p> -> Less than
+	=<p><code>&gt;</code><code></code></p> -> Greater than
+	=<p><code>&lt;\=</code><code></code></p> -> Less than or equal
+	=<p><code>&gt;\=</code></p> -> Greater than or equal
+	= -> In between
+	= -> Outside
+}
+
+
+// question: 18346872  name: do while loop example
+::do while loop example::[html]<p>For the code shown below, match the count number logged to the console with the description of what was happening at that point in the execution of this code.</p>\n<pre class\="wp-block-code code-badge-pre"><code class\="hljs language-javascript"><span class\="hljs-keyword">let</span> count \= <span class\="hljs-number">0</span>;\n<span class\="hljs-keyword">do</span> \{\n    count++;\n    <span class\="hljs-built_in">console</span>.log(<span class\="hljs-string">'count is\:'</span> + count);\n\} <span class\="hljs-keyword">while</span> (count &lt; <span class\="hljs-number">10</span>); <br />console.log('count is\: ' + count);</code></pre>\n<p></p>{
+	=<p>The loop is in it's first iteration.</p> -> 1
+	=<p>This never happens.</p> -> 0
+	=<p>The loop is in it's last iteration.</p> -> 9
+	=<p>This never happens.</p> -> 11
+	=<p>This is logged to the console both inside and outside the loop.</p> -> 10
+}
+
+
+// question: 18346877  name: for loop anatomy
+::for loop anatomy::[html]<p>Match the correct description with the part of the loop show below.<code class\="hljs language-javascript"> </code></p>\n<pre class\="wp-block-code code-badge-pre"><code class\="hljs language-javascript"><span class\="hljs-keyword">for</span> (let j \= 1; j &lt; <span class\="hljs-number">10</span>; j +\= <span class\="hljs-number">2</span>) \{\n    <span class\="hljs-built_in">console</span>.log(j);\n\}</code></pre>{
+	=<p>for</p> -> loop keyword
+	=<p>let j \= 1;</p> -> counter initialization
+	=<pre class\="wp-block-code code-badge-pre"><code class\="hljs language-javascript">j &lt; <span class\="hljs-number">10</span>;</code></pre> -> loop condition
+	=<pre class\="wp-block-code code-badge-pre"><code class\="hljs language-javascript">j +\= <span class\="hljs-number">2</span></code></pre> -> post-expression
+	=<pre class\="wp-block-code code-badge-pre"><code class\="hljs language-javascript">\{\n    <span class\="hljs-built_in">console</span>.log(j);\n\}</code></pre> -> loop body
+}
+
+
+// question: 18346876  name: for loop example
+::for loop example::[html]<p>For the code shown below, match the count number logged to the console with the description of what was happening at that point in the execution of this code.</p>\n<pre class\="wp-block-code code-badge-pre"><code class\="hljs language-javascript"><span class\="hljs-keyword">for</span> (<span class\="hljs-keyword">let</span> counter \= <span class\="hljs-number">1</span>; counter &lt; <span class\="hljs-number">5</span>; counter++) \{\n    <span class\="hljs-built_in">console</span>.log(<span class\="hljs-string">'counter\: '</span> + counter);\n\}\n<span class\="hljs-built_in">console</span>.log(<span class\="hljs-string">'counter\: '</span> + counter);</code></pre>\n<p><code class\="hljs language-javascript"> </code></p>\n<p></p>{
+	=<p>The loop is in it's first iteration.</p> -> 1
+	=<p>The loop is in it's last iteration.</p> -> 4
+	=<p>This never happens.</p> -> 5
+	=<p>This is <span style\="font-family\: 'courier new', courier, monospace;">count</span> outside the loop.</p> -> Undefined
+}
+
+
+// question: 18346871  name: Loop vocabulary
+::Loop vocabulary::[html]<p>Match each term with the best definition.</p>{
+	=<p>A <em>boolean</em> <em>expression</em> that determines whether a loop will <em>iterate.</em></p> -> Test expression
+	=<p>One execution of the code in the <em>body</em> of a loop.</p> -> Iteration
+	=<p>Code enclosed in curly braces.</p> -> Loop body
+	=<p>A combination of symbols that can be evaluated to a value, like\: <span style\="font-family\: courier new, courier, monospace;">x + 2</span></p> -> Expression
+	=<p>A single instruction in a program (and that single instruction can also contain other instructions).</p> -> Statement
+	=<p>A loop in which the <em>test expression</em> is evaluated <span style\="text-decoration\: underline;">before</span> each <em>iteration</em>.</p> -> Pretest loop
+	=<p>A loop in which the <em>test expression</em> is evaluated <span style\="text-decoration\: underline;">after</span> each <em>iteration</em>.</p> -> Post-test loop
+}
+
+
+// question: 18316333  name: Misc. operators
+::Misc. operators::[html]<p>Match each operator with it's correct name.</p>{
+	=<p><code>&amp;&amp;</code></p> -> Logical AND
+	=<p><code>||</code></p> -> Logical OR
+	=<p><code>!</code></p> -> Logical NOT
+	=<p> <code>typeof</code></p> -> Type of value
+	=<p><code>?\:</code></p> -> Ternary operator
+}
+
+
+// question: 18324421  name: switch case parts
+::switch case parts::[html]<p>Match the JavaScript keyword with the best description of its purpose.</p>{
+	=<p>Specifies the variable to be tested against the case expressions for a match.</p> -> switch
+	=<p>Causes execution to jump out of the switch statement.</p> -> break
+	=<p>Marks the beginning of a condition for executing the code that follows this expression</p> -> case
+	=<p>Marks the code that will be executed if none of the cases were matched.</p> -> default
+}
+
+
+// question: 18346698  name: While loop example
+::While loop example::[html]<p>For the code shown below, match the count number logged to the console with the description of what was happening at that point in the execution of this code.</p>\n<pre class\="wp-block-code code-badge-pre"><code class\="hljs language-javascript"><span class\="hljs-keyword">let</span> count \= <span class\="hljs-number">1</span>;<br /> <span class\="hljs-keyword">while</span> (count &lt; <span class\="hljs-number">10</span>)<br /> \{<br />   <span class\="hljs-built_in">console</span>.log(count); <br />   count +\=<span class\="hljs-number">2</span>; <br />\}<br />console.log(count);<br /></code><br />of the code.</pre>{
+	=<p>The loop is in it's first iteration.</p> -> 1
+	=<p>This never happens.</p> -> 2
+	=<p>The loop is in it's last iteration.</p> -> 9
+	=<p>This never happens.</p> -> 10
+	=<p>This is only logged to the console outside the loop.</p> -> 11
+}
+
+
+// question: 18324415  name: Else
+::Else::[html]<p>What result will be shown in the console for this code if the user enters "Secret1"?</p>\n<p><code> let password \= prompt("Enter your password"); <br />if (password \=\= "Secret1")<br />  console.log("Permission granted"); <br />else <br />  console.log("Permission denied"); <br />console.log("Done"); </code></p>{
+	~<p>Done</p>
+	~<p>Permission granted</p>
+	~<p>Permission denied</p>
+	=<p>Permission granted<br />Done</p>
+	~<p>Permission denied<br />Done</p>
+}
+
+
+// question: 18316338  name: Equals code
+::Equals code::[html]<p>1What will be shown in the console when you run this code?</p>\n<p><code> console.log(1 \=\= true) </code></p>{
+	~<p>1</p>
+	~<p>0</p>
+	=<p>True</p>
+	~<p>False</p>
+	~<p>0</p>
+}
+
+
+// question: 18316334  name: Greater than code
+::Greater than code::[html]<p>What will be shown in the console if you run this code\:</p>\n<p><code> console.log(12 &lt; 2); </code></p>{
+	~<p>True</p>
+	=<p>False</p>
+	~<p>10</p>
+	~<p>Less-than</p>
+	~<p>No</p>
+}
+
+
+// question: 18324404  name: if statement condition
+::if statement condition::[html]<p>What does the condition in the if statement below do?</p>\n<p><code>let number \= prompt("Enter a number"); // line 1<br />if(number &lt; 3)                         // line 2<br /></code><code>  alert("too low!");                   // line 3<br />document.write(number);                // line 4</code></p>{
+	~<p>It determines whether or not to stop the code from executing and exit.</p>
+	=<p>It determines whether or not to skip the code on line 3.</p>
+	~<p>It determines which which line of code to execute\: either line 3, or line 4.<em><br /></em></p>
+	~<p>It assigns either true or false to the variable <em>number</em>.</p>
+	~<p>It assigns zero to the variable <em>number</em> if it is less than three.</p>
+}
+
+
+// question: 18324420  name: if, else if, else
+::if, else if, else::[html]<p>What result will be shown in the console for this code\:</p>\n<p><code> let number \= 12; <br />if (number &lt; 12) <br />  console.log("too few"); <br />else if (number \=\= 12) <br />  console.log("just right"); <br />else <br />  console.log("too many"); <br />console.log("all done"); </code></p>{
+	~<p>too few</p>
+	~<p>just right</p>
+	~<p>too many</p>
+	=<p>just right<br />all done</p>
+	~<p>just right<br />too many<br />all done</p>
+	~<p>all done</p>
+}
+
+
+// question: 18324431  name: if-else vs. switch case
+::if-else vs. switch case::[html]<p>Which one of the following is true about conditional statements?</p>{
+	~<p>Anything you can do with an <em>if, else if, else</em> statement, you can also do with a <em>switch case </em>statement.</p>
+	=<p>Anything you can do with a <em>switch case</em> statement, you can do with an <em>if, else if, else</em> statement.</p>
+	~<p>You can't do any of the same things with<em> if, else if, else</em> statements and <em>switch case</em> statements.</p>
+	~<p>You can only compare for equivalence in <em>if</em> statements.</p>
+	~<p>You can only do<em> less-than</em> or <em>greater-than</em> comparisons with <em>switch case</em> statements.</p>
+}
+
+
+// question: 18316335  name: Logical AND code
+::Logical AND code::[html]<p>What will be shown in the console when this code is run?</p>\n<p><code>1 &lt; 2 &amp;&amp; 2 &lt; 3</code></p>{
+	=<p>True</p>
+	~<p>False</p>
+	~<p>1</p>
+	~<p>2</p>
+	~<p>Undefined</p>
+}
+
+
+// question: 18316339  name: Mixed variable types code
+::Mixed variable types code::[html]<p>What will be shown in the console if you run the following code?</p>\n<p><code> var a \= 1, b \= "2"; <br />console.log(a + b); </code></p>{
+	~<p>3</p>
+	~<p>undefined</p>
+	~<p>null</p>
+	=<p>12</p>
+	~<p>1"2"</p>
+}
+
+
+// question: 18324409  name: Multiple statements
+::Multiple statements::[html]<p>How do you make execution of multiple statements conditional?</p>\n<p>Example\:</p>\n<p><code> if(nubmer &lt; 3)<br />  // how do we make execution of the next two lines conditional?<br />  number++;<br /></code><code>  number \= number * 3; <br />document.write(number);</code></p>{
+	~<p>Write a separate if statement for each one.</p>
+	~<p>Indent those lines.</p>
+	=<p>Put those lines inside curly braces.</p>
+	~<p>Remove the semi-colons from those lines.</p>
+	~<p>Put the keyword <em>else</em> at the beginning of each line.</p>
+}
+
+
+// question: 18346873  name: Post-test do while loop always executed
+::Post-test do while loop always executed::[html]<p>What will have been logged to the console after the loop below has finished iterating?<br />Note that <span style\="font-family\: courier new, courier, monospace;">count</span> is initialized to ten and is decremented inside the loop.</p>\n<pre class\="wp-block-code code-badge-pre"><code class\="hljs language-javascript"><span class\="hljs-keyword">let</span> count \= 1<span class\="hljs-number">0</span>;\n<span class\="hljs-keyword">do</span> \{\n    count--;\n    <span class\="hljs-built_in">console</span>.log(<span class\="hljs-string">'count is\:'</span> + count);\n\} <span class\="hljs-keyword">while</span> (count &lt; <span class\="hljs-number">10</span>);</code><code class\="hljs language-javascript"></code><br /><br /></pre>{
+	=<p>The loop will never stop iterating.</p>
+	~<p>9 8 7 6 5 4 3 2 1 0</p>
+	~<p>The loop will never be executed.</p>
+	~<p>10 9 8 7 6 5 4 3 2 1</p>
+	~<p>9 8 7 6 5 4 3 2 1</p>
+}
+
+
+// question: 18346870  name: Pretest while loop never executed
+::Pretest while loop never executed::[html]<p>What will have been logged to the console after the loop below has finished iterating?<br />Note that <span style\="font-family\: courier new, courier, monospace;">count</span> is initialized to ten and is decremented inside the loop.</p>\n<pre class\="wp-block-code code-badge-pre"><code class\="hljs language-javascript"><span class\="hljs-keyword">let</span> count \= 1<span class\="hljs-number">0</span>;<br /><span class\="hljs-keyword">while</span> (count &lt; <span class\="hljs-number">10</span>) <br />\{\n   <span class\="hljs-built_in">console</span>.log(count);\n   count -\= <span class\="hljs-number">2</span>;<br />\}</code><br /><br /></pre>{
+	~<p>The loop will never stop iterating.</p>
+	~<p>10 8 6 4 2 0</p>
+	=<p>The loop will never be executed.</p>
+	~<p>8 6 4 2 0</p>
+	~<p>10 8 6 4 2</p>
+}
+
+
+// question: 18316337  name: Strict equals code
+::Strict equals code::[html]<p>What will be shown in the console when you run this code?</p>\n<p><code> console.log(42 \=\= "42") </code></p>{
+	~<p>42</p>
+	~<p>"42"</p>
+	=<p>True</p>
+	~<p>Undefined</p>
+	~<p>False</p>
+}
+
+
+// question: 18324428  name: switch case
+::switch case::[html]<p>What result will be shown in the console if you execute the code below?</p>\n<p><code> let animal \= "cat" <br />switch (animal) <br />\{<br /></code><code>  case "dog"\: <br />    <span>console.log(</span>"bark");<br /></code><code>    break; <br />  case "pig"\: <br />    <span>console.log(</span>"oink"); <br />    break; <br />  case "cat"\: <br />    <span>console.log(</span>"meow"); <br />    break; <br /><span>  case "cow"\: </span><br /><span>    <span>console.log(</span>"moo"); </span><br /><span>    break;</span><br />  default\: <br />    <span>console.log(</span>"silence"); <br />\} <br /></code></p>{
+	=<p>meow</p>
+	~<p>meow<br />moo</p>
+	~<p>meow<br />moo<br />silence</p>
+	~<p>moew<br />silence</p>
+	~<p>silence</p>
+}
+
+
+// question: 18324432  name: switch case fall-through
+::switch case fall-through::[html]<p>What result will be shown in the console if you execute the code shown below.<br />Hint\: This code has bugs in it. It doesn't do what you would expect.</p>\n<p><code> let number \= 5; <br />switch (number) <br />\{ <br />  case 1\: <br />  case 3\: <br />    console.log("prime number"); <br />  case 5\: <br />    console.log("prime number"); <br />  case 7\: <br />    console.log("prime number"); <br />  case 9\: <br />    console.log("odd number"); <br />    break; <br />  case 2\: <br />    console.log("prime number"); <br />  case 4\: <br />  case 6\: <br />  case 8\: <br />    console.log("even number"); <br />    break; <br />  default\: <br />    console.log("too big"); <br />\} </code></p>{
+	~<p>prime number<br />odd number</p>
+	~<p>prime number</p>
+	=<p>prime number<br />prime number<br />odd number</p>
+	~<p>too big</p>
+	~<p>odd number</p>
+}
+
+
+// question: 18324430  name: switch missing breaks
+::switch missing breaks::[html]<p>What result will be shown in the console if you execute the code below?<br />Hint\: This code has bugs in it. It doesn't do what you would expect.</p>\n<p id\="yui_3_17_2_1_1586998468943_110"><code>let animal \= "cat" <br />switch (animal) <br />\{<br /></code><code>  case "dog"\: <br />    console.log("bark");<br /></code><code>    break; <br />  case "pig"\: <br />    console.log("oink"); <br />    break; <br />  case "cat"\: <br />    console.log("meow"); <br />  case "cow"\: <br />    console.log("moo"); <br />  default\: <br />    console.log("silence"); <br />\}</code></p>{
+	~<p>meow</p>
+	~<p>meow<br />moo</p>
+	=<p>meow<br />moo<br />silence</p>
+	~<p>moo</p>
+	~<p>silence</p>
+}
+
+
+// question: 18316336  name: Ternary code
+::Ternary code::[html]<p>What will be shown in the console when you run the code below?</p>\n<p><code>console.log(1 &lt; 2 ? "Yes" \: "No"); </code></p>{
+	~<p>True</p>
+	~<p>False</p>
+	=<p>Yes</p>
+	~<p>No</p>
+	~<p>1</p>
+}
+
+
+// question: 18324417  name: Curly braces with one statement
+::Curly braces with one statement::[html]<p>A "best practice" is to use curly braces around the statement following the condition, even if there is only one statement.</p>\n<p>For example\:</p>\n<p><code> if (something \=\= "apple") <br />\{ <br />  console.log("eat it"); <br />\} </code></p>{TRUE}
+
+
+// question: 0  name: Switch category to $course$/top/CS 133JS: Beg Programming: JavaScript/Reading Quiz: EJS Ch. 1 & 2a
+$CATEGORY: $course$/top/CS 133JS: Beg Programming: JavaScript/Reading Quiz: EJS Ch. 1 & 2a
+
+
+// question: 18316304  name: Primitive data types
+
+

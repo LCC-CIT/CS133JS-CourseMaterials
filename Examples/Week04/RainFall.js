@@ -1,11 +1,13 @@
+// I/O handler
 function getRain() {
     let inches = prompt("How many inches of rain will fall each day?");
     let forecast = rainWeek(inches);
     document.getElementById("rain").innerHTML = forecast;
 }
 
+// Generate a 2 column table of cumulative rainfall by day for a week.
 function rainWeek(rainRate) {
-    let rainfall = "";
+    let rainfall = ""; // holds the table of rainfall
     let rainInches = 0;
     for (let day = 1; day <= 7; day++) {
         rainInches += parseFloat(rainRate);

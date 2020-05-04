@@ -145,7 +145,7 @@ function total(n1, n2, n3)  {
    console.log(sum);
   ```
   
-  - How can we prove that n1, n2, and n3 defined outside the function are not the same variables as n1, n2, and n3 defined inside the function?
+  - How can we prove that n1, n2, and n3, which are defined outside the function, are not the same variables as n1, n2, and n3 defined as parameters of the function?
   
   ```javascript
   function total(n1, n2, n3)  

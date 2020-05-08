@@ -1,0 +1,46 @@
+
+/* stile popup della valutazione della singola domanda, con commento alla domanda e commenti alle risposte */
+.btnShow  { display: inline-block; position:relative; }
+.btnHide  { display: none; position:absolute; }
+.cardShow  { display: block; position:absolute; }
+.cardHide  { display: none;  position:absolute; }
+.checkShow { display: block; position:relative; }
+.checkHide { display: none;  position:absolute; }
+
+/* stile nella domanda di tipo associazione di parole, per renderlo più leggibile : */
+.spaceShow { display: block; position:relative; }
+.spaceHide { display: none;  position:absolute; }
+A { text-decoration:none }
+
+/* stili del tooltip per il suggerimento alla risposta: */
+.UStyle { text-decoration :none}
+.tooltipShow { display: block; position:absolute; }
+.tooltipHide { display: none; position:absolute; }
+
+/* stili del pulsante di verifica: */
+.okButtonClass { display: block;  }
+.okButtonHidden { display: none;  }
+
+/* stile della casella di testo della risposta aperta */
+textarea  { border:1px solid #999999; width:100%%; margin:5px 0; padding:3px; }
+
+#retire_btn_div {
+	position:fixed;
+	top:0;
+	right:0;
+}
+
+#retire_btn_img:hover {
+    cursor:pointer;
+}
+
+#result_btn_div {
+	position:fixed;
+	top:0;
+	right:0;
+	visibility: hidden;
+}
+
+#result_btn_img:hover {
+    cursor:pointer;
+}

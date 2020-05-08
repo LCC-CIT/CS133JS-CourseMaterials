@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=Windows-1252">
+<META name="Author" content="Produced using QuizFaber 3.1.2">
+<META name="generator" content="QuizFaber 3.1.2">
+<META name="keywords" content="quiz">
+<META name="description" content="MidtermPractice">
+<TITLE>Quiz</TITLE>
+<LINK href="css/Midterm Practice1.css" rel="stylesheet" type="text/css">
+<link href="css/base.css" rel="stylesheet"/>
+<link href="css/modalDlg.css" rel="stylesheet"/>
+
+<script language="javascript" type="text/javascript">
+function startQuiz() {
+  var status;
+
+  parent.Constructor();
+  window.focus();
+  parent.UnmanageAllDialogs();
+  parent.init_valid();
+  parent.oldtime=parent.StartTime();
+  parent.Timer();
+  if (parent.GetNRepeat()==0) parent.initShortQuestion();
+  parent.end_test=0;
+}
+
+function ManageLoadPage()
+{
+startQuiz();
+}
+</script>
+</HEAD>
+<BODY OnLoad="ManageLoadPage()" >
+<div style="width:100%; margin:0 auto;">
+<script language="javascript" type="text/javascript">
+  parent.keyword = "d1fXu&";
+</script>
+  <form class="hidden_style"><input type="hidden" id="hidden_url" value="css/Midterm Practice1.css"></form>
+<CENTER>
+<SPAN class='quiz_title_class'>MidtermPractice</SPAN><BR>
+</CENTER>
+<HR class='horizontal-bar'>
+<FORM NAME='domanda'>
+
+<script language="javascript" type="text/javascript">
+function initValuate1()
+{
+ this.length = 2;
+ var choice,valuation,data,remark;
+ choice = parent.getTextSelected(document.domanda.gap001000);
+ valuation = new parent.init_array(1);
+ valuation.length = 1;
+ valuation[0] = unescape(parent.DecodeString("2aAgJci0F1Q="));
+ data = unescape("<b><span style=%22background-color:#FFFFFF;font-family:Times New Roman;font-size:12pt;%22>let truth = ");
+ this[0] = new parent.AnsReport(choice,valuation,data,0);
+ choice = parent.getTextSelected(document.domanda.gap001001);
+ valuation = new parent.init_array(1);
+ valuation.length = 1;
+ valuation[0] = unescape(parent.DecodeString("plBTVv/2myg="));
+ data = unescape(";</span></b></p>    <p><b><span style=%22background-color:#FFFFFF;font-family:Times New Roman;font-size:12pt;%22>let number = ");
+ this[1] = new parent.AnsReport(choice,valuation,data,0);
+ parent.pesi[0]=parent.DecodeNumber('V3+zHv28vZw=',552,0,99999);
+
+}
+
+function Domanda1()
+{
+ var status;
+ if (parent.valid[0]!=0) { parent.DoneBefore(); return; }
+ parent.allAnsReport[0] = new initValuate1();
+ parent.doValuate(0);
+ parent.PrintBooleanAnswer(0,0);
+ return 1;
+}
+
+</script>
+<IMG SRC="media/check.png" CLASS='checkHide' ID='check0' ALIGN='LEFT' HSPACE='5'>
+<A NAME='qstAnchor0'>
+</A>
+<DIV class='quiz_quest_header_class'> Question 1  </DIV>
+
+<DIV ID='hideAns0' CLASS='cardHide'>
+<TABLE class="qst_feedback_table_class"><TR class="qst_feedback_TH_class"><TD CLASS="qst_feedback_TD_class">
+<SPAN ID='hideTxt0'></SPAN>
+</TD></TR></TABLE>
+</DIV>
+<BR />
+<TABLE WIDTH="100%">
+<TR><TD class="quiz_quest_class">
+<b><span style="background-color:#FFFFFF;font-family:Times New Roman;font-size:12pt;">Choose the right code to put in the gaps so that the output of the program will be 10.</span></b></p>    <p></TD></TR></TABLE>
+<BR />
+<TABLE WIDTH='100%'>
+<TR><TD ALIGN='LEFT' class='quiz_answer_class' style='padding:5px'>
+<b><span style="background-color:#FFFFFF;font-family:Times New Roman;font-size:12pt;">let truth =  <SELECT NAME='gap001000' STYLE='background-color:#FFFFFF;font-family:Times New Roman;font-size:12pt;' class='quiz_answer_class'>  <OPTION value='' SELECTED> -------- </OPTION>
+ <OPTION value=" false"> false</OPTION>
+ <OPTION value="true">true</OPTION>
+ </SELECT>
+;</span></b></p>    <p><b><span style="background-color:#FFFFFF;font-family:Times New Roman;font-size:12pt;">let number =  <SELECT NAME='gap001001' STYLE='background-color:#FFFFFF;font-family:Times New Roman;font-size:12pt;' class='quiz_answer_class'>  <OPTION value='' SELECTED> -------- </OPTION>
+ <OPTION value=" 1"> 1</OPTION>
+ <OPTION value="9">9</OPTION>
+ <OPTION value=" 0"> 0</OPTION>
+ <OPTION value=" 5"> 5</OPTION>
+ </SELECT>
+;</span></b></p>    <p><b><span style="background-color:#FFFFFF;font-family:Times New Roman;font-size:12pt;">var result = number + truth;</span></b></p>    <p><b><span style="background-color:#FFFFFF;font-family:Times New Roman;font-size:12pt;">document.writeln(result);</span></b></p>    <p></TD></TR></TABLE>
+<P><CENTER>
+<SPAN id='okButtonId0' class='okButtonClass'><INPUT TYPE='button' VALUE='OK' onClick="Domanda1()" class="quiz_verify_box_class"></SPAN></CENTER>
+<HR class='horizontal-bar'>
+<BR /><BR />
+</FORM>
+</DIV>
+</BODY>
+</HTML>

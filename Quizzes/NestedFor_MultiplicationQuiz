@@ -1,0 +1,18 @@
+let score = 0;
+for(let a = 2; a <= 9; a++)
+{
+    for(let b = 2; b <= 9; b++)
+    {
+        answer = prompt("What is " + a + " * " + b + "?");
+        if(answer == a * b)
+        {
+            alert("Right!");
+            score++;
+        }
+        else
+        {
+            alert("Wrong!");
+        }
+    }
+}
+alert("You got " + score + " right!");

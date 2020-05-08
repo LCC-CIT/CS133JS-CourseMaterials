@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/CS 133JS: Beg Programming: JavaScript/MIdterm Practice</text>
+    </category>
+    <info format="html">
+      <text><![CDATA[<p>Practice for the midterm</p>]]></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 18363082  -->
+  <question type="ddwtos">
+    <name>
+      <text>W02, function with parameters and a return value</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Arrange the lines of code in the right order so that the program output is 8.</p>
+<p>1  [[1]]<br />2  [[2]]<br />3  [[3]]<br />4  [[4]]<br />5  [[5]]<br />6  [[6]]<br />7  [[7]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <dragbox>
+      <text>function total(n1, n2)</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>{</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>let sum = n1 + n2;</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>return sum;</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>}</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>let result = total(2, 6);</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>console.log(result); </text>
+      <group>1</group>
+    </dragbox>
+  </question>
+
+<!-- question: 18363110  -->
+  <question type="ddwtos">
+    <name>
+      <text>W03, math operators</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Arrange the lines of code so they produce output values in the following sequence: 0, 2, 3</p>
+<p>1  [[1]]<br />2  [[2]]<br />3  [[3]]<br />4  [[4]]<br /><br /></p>
+<p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <dragbox>
+      <text>let score = 0;</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>console.log(score);</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>console.log(score += 2);</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>console.log(score++);</text>
+      <group>1</group>
+    </dragbox>
+  </question>
+
+<!-- question: 18363143  -->
+  <question type="ddwtos">
+    <name>
+      <text>W04, for loop code sequence</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Arrange the lines of code in the right order so that the program output shows the numbers 9 through 0.</p>
+<p>1  [[1]]<br />2  [[2]]<br />3  [[3]]<br />4  [[4]]<br />5  [[5]]<br />6  [[6]]<br /><br /></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <shuffleanswers>1</shuffleanswers>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <dragbox>
+      <text>let i = 10;</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text><![CDATA[for (; i > 0; )]]></text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>{</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>i--;</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>console.log(i);</text>
+      <group>1</group>
+    </dragbox>
+    <dragbox>
+      <text>}</text>
+      <group>1</group>
+    </dragbox>
+  </question>
+
+<!-- question: 18363081  -->
+  <question type="matching">
+    <name>
+      <text>W02, function with parameters and return</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Put the lines of code in the right sequence so that the program output is 8.</p>
+<p>Line numbers are on the left, lines of code are on the right.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <shuffleanswers>false</shuffleanswers>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <subquestion format="html">
+      <text><![CDATA[<p>1</p>]]></text>
+      <answer>
+        <text>function total(n1, n2)</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>2</p>]]></text>
+      <answer>
+        <text>{</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>3</p>]]></text>
+      <answer>
+        <text>let sum = n1 + n2;</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>4</p>]]></text>
+      <answer>
+        <text>return sum;</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>5</p>]]></text>
+      <answer>
+        <text>}</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>6</p>]]></text>
+      <answer>
+        <text>let result = total(2, 6);</text>
+      </answer>
+    </subquestion>
+    <subquestion format="html">
+      <text><![CDATA[<p>7</p>]]></text>
+      <answer>
+        <text>console.log(result);</text>
+      </answer>
+    </subquestion>
+  </question>
+
+<!-- question: 18363075  -->
+  <question type="cloze">
+    <name>
+      <text>W01, mixed number and bool</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Choose the right code  so that the output of the program will be the number 10.</p>
+<p>let truth = {1:MULTICHOICE:=true#OK~false#Wrong};<br />let number = {1:MULTICHOICE:8#Wrong~=9#OK~1#Wrong~0#Wrong};<br />let result = number + truth;<br />document.write(result);<br /><br /></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 18363078  -->
+  <question type="cloze">
+    <name>
+      <text>W01, mixed string and bool</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Choose the right code so that the output of the program will be: <em>Boolean variables can be true or false.</em></p>
+<p>let word = {1:MULTICHOICE:=true#OK~false#Wrong~1#Wrong~0#Wrong};<br />let truth = {1:MULTICHOICE:=0#OK~1#Wrong};<br />let result = "Boolean variables can be " + word + truth;<br />document.write(result);</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 18363145  -->
+  <question type="cloze">
+    <name>
+      <text>W04, validtion with do-while</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Select the correct code to validate bus numbers. Valid numbers are 1 through 99.</p>
+<p>let bus = 0;<br />do<br />{<br />    bus = prompt("Enter the bus number");<br />} while(bus &lt; {1:MULTICHOICE:0#Wrong~=1#OK~99#Wrong~100#Wrong} || bus &gt; {1:MULTICHOICE:0#Wrong~1#Wrong~=99#OK~100#Wrong});<br />// Show the bus schedule</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 18363102  -->
+  <question type="multichoice">
+    <name>
+      <text>W02, debugging scope in a function</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>The program below should produce 4 as it's output, but it produces 3. What is wrong with the code?<br />There are two right answers.</p>
+<pre><span style="font-family: courier new, courier, monospace;">let n1 = 4, n2 = 3, n3 = 5;</span><br /><span style="font-family: courier new, courier, monospace;">function average(n1, n2, n3)  </span><br /><span style="font-family: courier new, courier, monospace;">{</span><br /><span style="font-family: courier new, courier, monospace;">     return (n1 + n2 + n3) / 3;</span><br /><span style="font-family: courier new, courier, monospace;">}</span><br /><span style="font-family: courier new, courier, monospace;">let avg = average(2, 3, 4);</span><br /><span style="font-family: courier new, courier, monospace;">console.log(avg);</span></pre>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>false</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>Multiple variables cannot be declared and initialized on the same line.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>The variables that are declared and initialized on the first line are never used.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="50" format="html">
+      <text><![CDATA[<p>The function should be called like this:<br />let avg = average(n1, n2, n3);</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The code inside the function should be: <br /><span style="font-family: courier new, courier, monospace;">return (n1 + n2 + n3) / 4;</span></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The code inside the function should be: <br /><span style="font-family: courier new, courier, monospace;">let avg = (n1 + n2 + n3) / 3;</span><br /><span style="font-family: courier new, courier, monospace;">return avg;</span></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18366711  -->
+  <question type="multichoice">
+    <name>
+      <text>W04, for loop debugging</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>This loop never produces any output. What is wrong with the code?</p>
+<p>for(let i = 0; i &gt; 10; i++)<br />{<br />    console.log(i);<br />}</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The loop counter should be initialized to 10.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The loop counter should be decremented<br /><span style="font-family: courier new, courier, monospace;">i--</span></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>The loop condition should be:<br /><span style="font-family: courier new, courier, monospace;">i &lt; 10;</span></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The counter should be incremented inside the loop, after logging the output.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The counter should be initialized outside the loop.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18363120  -->
+  <question type="multichoice">
+    <name>
+      <text>W04, if, else if, else debugging</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>The program below should produce "Buy more socks" as output if the user doesn't have enough socks, but it produces "Wash your socks". What is wrong with the code?</p>
+<pre><span style="font-family: courier new, courier, monospace;">let numPairs = prompt("How many pairs of socks do you have?");</span><br /><span style="font-family: courier new, courier, monospace;">let numClean = prompt("How many pare clean?");</span><br /><span style="font-family: courier new, courier, monospace;">let numNeeded = prompt("How many will you wear this week?");</span><br /><br /><span style="font-family: courier new, courier, monospace;"><span style="font-family: courier new, courier, monospace;">if (numClean &lt; numNeeded)</span><br /><span style="font-family: courier new, courier, monospace;">    message = "Wash your socks";</span><br />else if(numNeeded &gt; numPairs)</span><br /><span style="font-family: courier new, courier, monospace;">    message = "Buy more socks";</span><span style="font-family: courier new, courier, monospace;"></span><br /><span style="font-family: courier new, courier, monospace;">else</span><br /><span style="font-family: courier new, courier, monospace;">    message = "You have enough clean socks";</span><br /><br /><span style="font-family: courier new, courier, monospace;">console.log(message);</span></pre>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p><span style="font-family: arial, helvetica, sans-serif;">The first condition should use greater-than<br /></span><span style="font-family: courier new, courier, monospace;"><span style="font-family: courier new, courier, monospace;">(numClean &gt; numNeeded)</span></span></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>The if and else if branches should be in the opposite order:<br /><span style="font-family: courier new, courier, monospace;">if(numNeeded &gt; numPairs)</span><br /><span style="font-family: courier new, courier, monospace;">    message = "Buy more socks";</span><br /><span style="font-family: courier new, courier, monospace;">else if (numClean &lt; numNeeded)</span><br /><span style="font-family: courier new, courier, monospace;">    message = "Wash your socks";</span></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The second condition should use less-than</p>
+<pre><span style="font-family: courier new, courier, monospace;">else if(numNeeded &lt; numPairs)</span></pre>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>The else should be an else if</p>
+<pre><span style="font-family: courier new, courier, monospace;"><span style="font-family: courier new, courier, monospace;">else if (numClean == numNeeded)</span></span></pre>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>This problem requires a switch statement, not an if statement.</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 18366712  -->
+  <question type="multichoice">
+    <name>
+      <text>W04, while loop validation debugging</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Placeholder</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <correctfeedback format="html">
+      <text><![CDATA[<p>Your answer is correct.</p>]]></text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is partially correct.</p>]]></text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text><![CDATA[<p>Your answer is incorrect.</p>]]></text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p>1</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>2</p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+
+</quiz>

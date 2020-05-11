@@ -1,12 +1,12 @@
-// Example code by Brian Bird, 5/11/2020
+// Exercise solutions by Brian Bird, 5/11/2020
 
-// An array containing names of the nine planets.
-let planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"];
+// An array containing names of the five degrees.
+let degrees = ["Computer Network Operations", "Computer Programming",
+ "Cybersecurity", "Simulation and Game Development", "ASOT CS"];
 
-// This will return the name of a planet form the planets array.
-// The number start with Mercury = 1
-function getPlanetByNumber(number) {
-    return planets[number - 1];
+// This will return the name of a degree form the degrees array.
+function getDegreeByNumber(number) {
+    return degrees[number - 1];
 }
 
 // Rename a planet in the planets array

@@ -1,6 +1,6 @@
 
 
-CS133JS Beginning Programming: JavaScript**
+**CS133JS Beginning Programming: JavaScript**
 
 <h1>Arrays</h1>
 
@@ -17,6 +17,25 @@ CS133JS Beginning Programming: JavaScript**
 <h2>Table of Contents</h2>
 
 [TOC]
+
+# Introduction
+
+## Announcements
+
+- Most of you did well on the midterm!
+  - Any questions?
+- I've partially finished grading the lab 4 production version. 
+  - Have you looked at my feedback yet?
+  - Any questions?
+
+## Q and A
+
+- How is the reading going?
+  - The reading quiz is due Tuesday.
+  - We'll review the answers on Wednesday/Thursday.
+- Does anyone have any general questions about anything?
+
+
 
 # Overview
 
@@ -38,6 +57,8 @@ This week we will be learning to use arrays. Here is what we will learn
   Used to  add and remove elements at the beginning of an array.
 - splice
   Used to remove or modify elements in an array
+
+# Arrays
 
 ## What are Arrays?
 

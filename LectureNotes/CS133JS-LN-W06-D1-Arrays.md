@@ -162,7 +162,7 @@ In the loop below, what is:
 
 ```javascript
 // Output the elements of the array to the console
-for (let i = 0; i < length; i++)
+for (let i = 0; i < starWars.length; i++)
 {
    console.log(starWars[i]);
 }
@@ -186,7 +186,7 @@ The *while* loop below iterates as long as the user keeps entering names.
 // Enter values in an array until the user enters "done"
 let name = "";
 let names = [];
-while (name != done)
+while (name != "done")
 {
    name = prompt("Enter a name");
    names[names.length] = name;

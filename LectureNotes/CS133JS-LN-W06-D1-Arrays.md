@@ -18,6 +18,27 @@ CS133JS Beginning Programming: JavaScript**
 
 [TOC]
 
+# Overview
+
+This week we will be learning to use arrays. Here is what we will learn
+
+**Session 1: Basic arrays**
+
+- What is an array?
+- How to work with arrays.
+- How to work with arrays in loops.
+- Nested arrays (aka 2D arrays).
+
+**Session 2: Using array methods**
+
+- Concept of objects and methods.
+- push and pop 
+  Used to add and remove elements at the end of an array.
+- shift and unshift
+  Used to  add and remove elements at the beginning of an array.
+- splice
+  Used to remove or modify elements in an array
+
 ## What are Arrays?
 
 - Review: 
@@ -41,90 +62,160 @@ CS133JS Beginning Programming: JavaScript**
 - Without initialization
 
   ```javascript
-  var myArray = [];
+  let myArray = [];
   ```
 
 - With initialization
 
   ```javascript
-  var myArray = [“Rey”, “Finn”, “Han Solo”, “C-3PO”, “Chewbacca”];
+  let starWars = ["Rey", "Finn", "Han Solo", "C-3PO", "Chewbacca"];
   ```
 
 
 
 ## Performing Operations on an Array
 
-- Changing values in an array
+- Get the length of an array:
 
   ```javascript
-  myArray[1] = “Poe”;
+  console.log(starWars.length);
   ```
 
-- Adding new values to an array
+- Changing values in an array:
 
   ```javascript
-  myArray[5] = “Yoda”;
+  starWars[1] = "Poe";
   ```
 
-- You can also use `push`  
+- Adding new values to an array.
+
+  - When you know what the index of the last element is:
 
   ```javascript
-  myArray.push(“Leia”);
-  
+  starWars[5] = "Yoda";
   ```
 
-  - You could do this in a loop to add multiple values to an array.
-
-- Retrieving values from an array
+  - When you don't know the index of the last element:
 
   ```javascript
-  alert(myArray[0]);
+  starWars[starWars.length - 1] = "Yoda";
   ```
 
-- Arrays have a length property
+- Retrieving values from an array:
 
   ```javascript
-  var numElements = myArray.length;
+  console.log(starWars[0]);
   ```
 
+- Removing an element from an array.
 
-### Exercise
+  - Setting an element to null doesn't remove it. For example, assume our starWars array has the original 5 elements.
 
-- Write a function to put names in an array.
+  ```javascript
+  starWars[3] = null;   // Doesn't remove Han Solo
+  ```
 
-- Write another one to write the names to a page.
+  - You can only remove elements using special array methods. (A topic for next time.) 
 
 
+
+### Practice
+
+1. Create an array of planets
+
+2. Write a function that returns a planet by it's number (1 = Mercury, 9 = Pluto).
+
+3. Write a function that lets you change the name of a planet.
+
+   
 
 ## Use Arrays in Loops
 
-```javascript
-// Use a loop to display the contents of an array
-// Number of iterations? Final value of i?
-// i is for “index”
-for (i = 0; i < length; i++)
-{
-   alert(myArray[i]);
-}
-alert(“done”);
+### for loop
 
+We can use a for loop  to display the contents of an array.
+In the loop below, what is:
+
+- The number of iterations? 
+- The final value of i?
+
+```javascript
+// Output the elements of the array to the console
+for (let i = 0; i < length; i++)
+{
+   console.log(starWars[i]);
+}
+```
+
+### for-of loop
+
+```javascript
+for (let character of starWars) {
+   console.log(character);
+}
 ```
 
 
+
+### while loop
 
 The *while* loop below iterates as long as the user keeps entering names.
 
 ```javascript
-// Enter values in an array until the user enters “done”
-var name = “”;
-var names = [];
+// Enter values in an array until the user enters "done"
+let name = "";
+let names = [];
 while (name != done)
 {
-   name = prompt(“Enter a name”);
-   names.push(name);
+   name = prompt("Enter a name");
+   names[names.length] = name;
 }
-
 ```
+
+
+
+### Practice
+
+1. Write a function to copy one array into another.
+
+2. Write a function to check to see if an element is in an array.
+
+   
+
+## Nested Arrays
+
+These are also known as 2D arrays.
+
+Example:
+
+```javascript
+// Declare and initialize a 2D array
+let certificates = [
+["Mobile App Development", "Front End Web Devevlopment", "Database Specialist"],
+["Computer Network Monitoring and Mangement"]
+];
+
+// Output the third elemnet of the first array
+console.log(certificates[0][2]);
+```
+
+Example, a grid for a tic-tac-toe game:
+
+```javascript
+let grid = [ ["", "", ""], ["", "", ""], ["", "", ""]];
+
+// Put an X in the top-left, then center, then bottom-right squares
+grid[0][0] = "X";
+grid[1][1] = "X";
+grid[2][2] = "X";
+```
+
+
+
+### Practice
+
+1. Write a function to let you put an X or O into a particular location in the grid
+2.  Write a function to output the grid to the console.
 
 
 

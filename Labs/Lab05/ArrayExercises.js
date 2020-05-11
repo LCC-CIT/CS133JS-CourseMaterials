@@ -1,64 +1,58 @@
 // Exercise solutions by Brian Bird, 5/11/2020
 
-// An array containing names of the five degrees.
-let degrees = ["Computer Network Operations", "Computer Programming",
- "Cybersecurity", "Simulation and Game Development", "ASOT CS"];
+// An array that will hold degrees.
+let degrees = [];
 
-// This will return the name of a degree form the degrees array.
-function getDegreeByNumber(number) {
-    return degrees[number - 1];
+// This will add a degree to the degrees array.
+function addDegree(degree) {
+    return degrees[degrees.length] = degree;
 }
 
-// Rename a planet in the planets array
-function renamePlanet(number, newName) {
-    planets[number - 1] = newName;
+// Rename a degree in the degrees array, by index
+function renameDegree(number, newName) {
+    degrees[number] = newName;
 }
 
 // Make a copy of any array and return it
-function copyArray(arrayName) {
+function copyDegrees() {
     let newArray = []; // new, empty array
-    for (let item of arrayName) {
+    for (let item of degrees) {
         newArray[newArray.length] = item;
     }
     return newArray;
 }
 
-// Return true if the name is found in the planets array
-function findPlanetByName(name) {
-    let found = false;
-    for (planet of planets) {
-        if (planet == name) {
-            found = true;
+// Return true if the name is found in the degrees array
+function countMatches(array1, array2) {
+    let count = 0;
+    for (let i = 0; i < array1.length; i++) {
+        if (array1[i] == array2[i]) {
+            count++;
         }
     }
-    return found;
+    return count;
 }
 
-// 2D array that represents a Tic-Tac-Toe grid
-let grid = [
-    ["&emsp;", "&emsp;", "&emsp;"],
-    ["&emsp;", "&emsp;", "&emsp;"],
-    ["&emsp;", "&emsp;", "&emsp;"]
-];
+// Will be a 2D array that represents a checker board
+let checkers = [];
 
 // Put an X or O into a square in a Tic-Tac-Toe game
 // Rows are numbered 1 to 3, top to bottom
 // Columns are numbered 1 to 3, left to right.
 function makeMove(row, column, symbol) {
     let valid = false;
-    if (row > 0 && row <= 3 && column > 0 && column <= 3 && symbol != "") {
-        grid[row - 1][column - 1] = symbol;
+    if (row >= 0 && row < 8 && column >= 0 && column < 8 && symbol != "") {
+        checkers[row][column] = symbol;
         valid = true;
     }
     return valid;
 }
 
-function displayGrid()
-{
+function displayBoard() {
     let output = "";
-    for (let row = 0; row < 3; row++) {
-        for (let col = 0; col < 3; col++) {
-            output += grid[row][col];
+    for (let row = 0; row < 8; row++) {
+        for (let col = 0; col < 8; col++) {
+            output += checkers[row][col];
         }
         output += "<br>";
     }

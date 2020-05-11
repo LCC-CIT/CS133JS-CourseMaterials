@@ -11,83 +11,92 @@
 
 <body>
     <h1>Lab 5, Part 1: Array Exercises</h1>
-    <p>For eacn of the problems below, create an array, or write a function in a 
-	file named <em>ArrayExercises.js</em><br>
-        This web page contains code to test your solution code.<br>
+    <p>For each of the problems below, create an array, or write a function in a file named
+        <em>ArrayExercises.js</em><br> This web page contains code to test your solution code.<br>
     </p>
 
     <h2>Basic Array Operations</h2>
     <ol>
         <li>Declare an array named <em>degrees</em>, but don't initialize it.</li>
-        <li>Write a function that takes a degree name as a parameter and adds it 
-		to the <em>degrees</em> array.<br>
-            The third degree is: <span id="degree3"></span>
+        <li>Write a function named <em>addDegree</em> that takes a degree name as a parameter and adds it to the
+            <em>degrees</em> array.<br> Here is a listing of the array:<br>
+            <hr>
             <script>
-                document.getElementById("degree3").innerHTML = getDegreeByNumber(3);
+                addDegree("Network Operations");
+                addDegree("Cybersecurity");
+                addDegree("Computer Programming");
+                addDegree("Game Development");
+                addDegree("ASOT CS");
+                // list all degrees
+                for (let i = 0; i < 5; i++) {
+                    document.write(i + ", " + degrees[i] + "<br>");
+                }
             </script>
+            <hr>
         </li>
 
-        <li>Write a function that lets you change the name of a planet.<br>
-            We'll change the name of Mars to Red Planet<br>
-            The fourth planet is named: <span id="mars"></span>
+        <li>Write a function that lets you change the name of a degree by index.<br> We'll change the name of Computer Programming to Software Development<br> The degree with index 2 is named: <span id="degree2"></span>
             <script>
-                renamePlanet(4, "Red Planet");
-                document.getElementById("mars").innerHTML = getPlanetByNumber(4);
+                renameDegree(2, "Software Development");
+                document.getElementById("degree2").innerHTML = degrees[2];
             </script>
         </li>
     </ol>
     <h2>Using Arrays in Loops</h2>
     <ol>
-        <li>Write a function to copy one array into another.
-            We will copy <em>planets</em> into <em>solarSystem</em>
-            and then change the name of the fourth planet back to "Mars".<br>
-            In <em>planets</em>, the fourth planet is: <span id="planets4"></span><br>
-            In <em>solarSystem</em>, the fourth planet is: <span id="system4"></span>
+        <li>Write a special function named <em>copyDegrees</em> to create a copy of the global <em>degrees</em> array.
+            <br> It should take no parameters, just return a new array.<br> To demonstrate we'll create a new array named <em>programs</em> and we'll change the name of the third degree back to "Computer Programming".<br> In <em>degrees</em>, the third
+            degree is: <span id="degrees3"></span><br> In <em>programs</em>, the third degree is: <span id="programs3"></span>
             <script>
-                let solarSystem = copyArray(planets);
-                renamePlanet(4, "Mars");
-                document.getElementById("planets4").innerHTML = getPlanetByNumber(4);
-                document.getElementById("system4").innerHTML = solarSystem[3];
+                let programs = copyDegrees();
+                renameDegree(2, "Computer Programming");
+                document.getElementById("degrees3").innerHTML = degrees[2];
+                document.getElementById("programs3").innerHTML = programs[2];
             </script>
         </li>
-        <li>Write a function to check to see if a particular value is in an element in an array.<br>
-            We will search the <em>planets</em> array for Tatooine, and then for Venus.<br>
-            Tatooine: <span id="tatooine"></span><br>
-            Venus: <span id="venus"></span>
+        <li>Write a function named <em>countMatches</em>, that takes two parameters, compares two arrays, and sreturn the number of elements with matching values.<br> We will compare the two arrays above. There should be 4 elements that contain the same values.<br>            Number of matches: <span id="matches"></span>
             <script>
-                document.getElementById("tatooine").innerHTML = findPlanetByName("Tatooine");
-                document.getElementById("venus").innerHTML = findPlanetByName("Venus");
+                document.getElementById("matches").innerHTML = countMatches(degrees, programs);
             </script>
         </li>
 
     </ol>
     <h2>Working with 2D Arrays</h2>
     <ol>
-        <li>Create an array named <em>grid</em> to represent a Tic-Tac-Toe game grid.<br>
-             It's elements should contain strings that are HTML spaces.<br>
-            Total number of elements = <span id="gridSquares"></span>
+        <li>Declare an array named <em>checkers</em> to represent a checker board. Don't initialize it.<br>
             <script>
-                document.getElementById("gridSquares").innerHTML = grid.length * grid[0].length;
+                let color = "";
+                for (let row = 0; row < 8; row++) {
+                    // Add an empty row to the array
+                    checkers[row] = new Array();
+                    for (let col = 0; col < 8; col++) {
+                        // Make alternate squares Black or Red
+                        color = (row + col) % 2 == 0 ? "B" : "R";
+                        // Add an element to a row
+                        checkers[row][col] = color;
+                    }
+
+                }
+                let size = checkers.length * checkers[0].length;
+                document.write("The checkers array has been initailzed with " + size + " squares.")
+            </script>
+
+        </li>
+        <li>Write a function to display the board (it will return a string with the HTML that represents the board.)<br> The board:<br>
+            <p id="board"></p>
+            <script>
+                document.getElementById("board").innerHTML = displayBoard();
             </script>
         </li>
-        <li>Write a function to let you put an X or O into a particular location in the grid.<br>
-            We will put X's into the diagonal from top-right to bottom-left.<br>
-            Moves were a: <span id= success></span>
+        <li>Write a function named <em>makeMove</em> to place a Red or Black checker on the board. Your function will take these parameters: row, column, letter.<br> We'll use lower case letters to represent the checkers and just put 4 checkers on the board.<br>            Checker board:<br>
             <script>
-                let success = true; // innocent until proved guilty
-                success &= makeMove(3, 3, "X");
-                success &= makeMove(2, 2, "X");
-                success &= makeMove(1, 1, "X");
-                document.getElementById("success").innerHTML = success ? "success": "failure";
-           
+                makeMove(0, 0, "b");
+                makeMove(0, 2, "b");
+                makeMove(7, 0, "r");
+                makeMove(7, 2, "r");
+                document.write(displayBoard());
             </script>
-        </li>
-        <li>Write a function to display the grid.<br>
-            Game grid: 
-            <p id="grid"></p>
-            <script>
-                document.getElementById("grid").innerHTML = displayGrid();
-            </script>
+
 
         </li>
     </ol>

@@ -119,7 +119,7 @@ This week we will be learning to use arrays. Here is what we will learn
   - When you don't know the index of the last element:
 
   ```javascript
-  starWars[starWars.length - 1] = "Yoda";
+  starWars[starWars.length] = "Yoda";
   ```
 
 - Retrieving values from an array:

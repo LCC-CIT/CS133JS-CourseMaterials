@@ -141,7 +141,7 @@ let continents = ["Asia", "Africa", "North America", "South America", "Antarctic
 A property that contains the length of an array.
 
 ```javascript
-console.log(continents.length)l
+console.log(continents.length);
 ```
 
 
@@ -193,7 +193,7 @@ let hobbits = tooks.concat(bagginses);
 Copy an array. This kind of copy is called a *deep copy*. because it copies all the elements in the array instead of just copying references.
 
 ```javascript
-let starWarsCopy = [].concat(starWars);
+let hobbitsCopy = [].concat(hobbits);
 ```
 
 
@@ -243,6 +243,12 @@ let arrayLength = continents.unshift("Asia"); // adds Asia at index 0
 ```
 
 
+
+## Reference
+
+[JavaScript Array Reference](https://www.w3schools.com/jsref/jsref_obj_array.asp) on W3Schools
+
+[JavaScript Reference: Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) on MDN
 
 ------
 

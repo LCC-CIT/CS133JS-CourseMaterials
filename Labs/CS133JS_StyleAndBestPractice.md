@@ -1,6 +1,6 @@
-# Javascript Style and Best Practices
+# JavaScript Style and Best Practices
 
-**For CS133JS, Beginning Programming: JavaScript
+**For CS133JS, Beginning Programming: JavaScript**
 
 
 
@@ -21,10 +21,10 @@
 
   - Should be used in place of literals.
 
-  - Code should be DRY&mdash;Don't Repeat Yourself.
+- Code should be DRY&mdash;Don't Repeat Yourself.
 
-    (No duplicated blocks of code).
-
+  (No duplicated blocks of code).
+  
 - Function names
 
   - Should be descriptive.

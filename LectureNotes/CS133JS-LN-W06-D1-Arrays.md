@@ -240,8 +240,17 @@ grid[2][2] = "X";
 
 
 
+## Reference
+
+[Understanding Arrays in JavaScript](https://www.digitalocean.com/community/tutorials/understanding-arrays-in-javascript) by Tania Rascia
+
+[JavaScript Array Tutorial](https://www.w3schools.com/js/js_arrays.asp) on W3Schools
+
+[JavaScript Array Tutorial](https://www.javascripttutorial.net/javascript-array/) on JavaScriptTutorial.net
+
 ------
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
+

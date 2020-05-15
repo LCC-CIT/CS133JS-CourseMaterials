@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- By Brian Bird, 5/15/2020 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="AverageOfScores.js"></script>
+    <title>Average Score</title>
+</head>
+<body>
+    <h1>Caluclate the Average of Scores</h1>
+    Enter as many scores as needed. Click the <em>Calculate</em> button to see the average and highest score.
+    <form name="input">
+        <input type="text" name="scoreInput">
+        <input type="button" value="Enter" onClick="enter()"><br><br>
+        <input type="button" value="Calculate" onClick="calculate()"><br><br>
+        Average: <span id="average"></span><br>
+        High Score: <span id="highest"></span>
+    </form>
+    <h2><span id="count">0</span> Scores</h2>
+    <ol id="scoreList" type="a">
+    </ol>
+    <script>
+        function enter()
+        {
+            let score = parseFloat(document.input.scoreInput.value);
+            document.input.scoreInput.value = "";
+            let li = document.createElement("li");
+            li.innerHTML = score;
+            document.getElementById("scoreList").appendChild(li);
+            scores[scores.length] = score;
+            document.getElementById("count").innerHTML = scores.length;
+        }
+
+        function calculate()
+        {
+            document.getElementById("average").innerHTML = calcAverage();
+            document.getElementById("highest").innerHTML = findHighest();
+        }
+    </script>
+</body>
+</html>

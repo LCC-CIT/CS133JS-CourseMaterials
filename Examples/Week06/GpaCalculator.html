@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- By Brian Bird, 5/16/2020 -->
+    <meta charset="UTF-8">
+    <script src="GpaCalculator.js"></script>
+
+    <!------------------>
+    <!-- Embedded CSS -->
+    <!------------------>
+    <style>
+        thead {
+            font-size: larger;
+        }
+
+        table,
+        td,
+        th {
+            border-collapse: collapse;
+            border-style: solid;
+            padding: 10px;
+        }
+
+        #credits, #grade {
+            width: 30px;
+        }
+    </style>
+    <title>GPA Calculator</title>
+</head>
+
+<!--------------->
+<!-- HTML BODY -->
+<!--------------->
+<body onload="initialize()">
+    <h1>GPA Calculator</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Class</th>
+                <th>Credits</th>
+                <th>Grade</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody id="letterGradeListRows">
+            <tr id="hiddenRow" hidden>
+                <td>1</td>
+                <td>Course Number</td>
+                <td>0</td>
+                <td>U</td>
+                <td>0</td>
+            </tr>
+            <!-- More rows will be added programmatically -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan='2'><input id="className" placeholder="Course Number"></td>
+                <td><input id="credits"></td>
+                <td><input id="grade"></td>
+                <td><button onclick="addRowAndclass()">Add grade</button></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!---------------->
+    <!-- JavaScript -->
+    <!---------------->
+    <script>
+        function initialize() {
+            courses[0] = "CIS195";
+            letterGrades[0] = "B+";
+            courseCredits[0] = 4;
+            courses[1] = "CS133N";
+            letterGrades[1] = "A";
+            courseCredits[1] = 4;
+            courses[2] = "CIS100";
+            letterGrades[2] = "A+";
+            courseCredits[2] = 1;
+            addRows();
+        }
+        
+        function addRows() {
+            for (let i = 0; i < courses.length; i++) {
+                addRow(i);
+            }
+        }
+
+        function addRow(i) {
+            let newRow = document.getElementById("hiddenRow").cloneNode(true);
+            newRow.id = "row" + i; // tr
+            newRow.removeAttribute("hidden"); // tr
+            newRow.childNodes[1].innerHTML = i + 1; // Line number
+            newRow.childNodes[3].innerHTML = courses[i]; // class name
+            newRow.childNodes[5].innerHTML = courseCredits[i]; // credits
+            newRow.childNodes[7].innerHTML = letterGrades[i]; // letterGrade
+            newRow.childNodes[9].innerHTML = lookUpPoints(letterGrades[i]);
+            document.getElementById("letterGradeListRows").appendChild(newRow);
+        }
+
+        // Event handler to add a class
+        function addRowAndclass() {
+            let name = document.getElementById("className").value;  // get the input value
+            document.getElementById("className").value = "";        // clear the input text field
+            let credits = parseInt(document.getElementById("credits").value);
+            document.getElementById("credits").value = "";
+            let grade = document.getElementById("grade").value;
+            document.getElementById("grade").value = "";
+            addClass(name, credits, grade);
+            addRow(courses.length - 1);  // passing in the index number of the course that was added
+        }
+
+    </script>
+</body>
+
+</html>

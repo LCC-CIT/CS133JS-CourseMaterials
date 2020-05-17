@@ -1,9 +1,13 @@
+/* Written by Brian Bird, 5/16/2020 */
+
 "use strict";
 
-let courses = [];
-let courseCredits = [];
-let letterGrades = [];
+// Parallel arrays
+let courses = [];         // Course number
+let courseCredits = [];   // Course credits
+let letterGrades = [];    // Grade given for the course
 
+// Looup table for converting letter grades to grade points
 let pointLookup = [
     ["A+", 4.3],
     ["A", 4.0],
@@ -20,6 +24,7 @@ let pointLookup = [
     ["F", 0.0]
 ];
 
+// Convert a letter grade to a grade point
 function lookUpPoints(grade)
 {
     let points = -1;   // if this gets returned, then the grade wasn't found
@@ -34,9 +39,34 @@ function lookUpPoints(grade)
     return points;
 }
 
+// Add a class. This requires adding to all three global arrays
 function addClass(name, credits, grade)
 {
     courses[courses.length] = name;
     courseCredits[courseCredits.length] = credits;
     letterGrades[letterGrades.length] = grade;
+}
+
+// Add up the total of the credits using the global courseCredits array
+function totalCredits()
+{
+    let total = 0;
+    for (let credit of courseCredits)
+    {
+        total += credit;
+    }
+    return total;
+}
+
+// Calculate GPA, based on quality points, using global arrays
+function calcGpa()
+{
+    let points = 0;
+    let credits = 0;
+    for(let i = 0; i < courses.length; i++)
+    {
+        points += lookUpPoints(letterGrades[i]) * courseCredits[i];
+        credits += courseCredits[i];
+    }
+    return points / credits;
 }

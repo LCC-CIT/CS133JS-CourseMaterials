@@ -129,7 +129,7 @@ Two ways to create an object:
 - Object constructor
 
   ```javascript
-  const objectConstructor = new Object();
+  const fili = new Object();
   ```
 
 

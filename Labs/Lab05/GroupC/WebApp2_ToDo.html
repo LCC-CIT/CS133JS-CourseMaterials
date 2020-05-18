@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- By Brian Bird, 5/15/2020 -->
+    <meta charset="UTF-8">
+    <script src="ToDo.js"></script>
+
+    <!------------------>
+    <!-- Embedded CSS -->
+    <!------------------>
+    <style>
+        thead {
+            font-size: larger;
+        }
+
+        table,
+        td,
+        th {
+            border-collapse: collapse;
+            border-style: solid;
+            padding: 10px;
+        }
+
+        #newGrade {
+            width: 25px;
+        }
+    </style>
+    <title>ToDo</title>
+</head>
+
+<!--------------->
+<!-- HTML BODY -->
+<!--------------->
+<body onload="initialize()">
+    <h1>ToDo List</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Task</th>
+                <th>Priority</th>
+                <th>Done</th>
+            </tr>
+        </thead>
+        <tbody id="listRows">
+            <tr id="hiddenRow" hidden>
+                <td>1</td>
+                <td>Task</td>
+                <td><button>Delete</button></td>
+                <td>1</td>
+                <td><input type="checkbox"> </td>
+            </tr>
+            <!-- More rows will be added programmatically -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan='5'><input id="taskName" placeholder="Task name">
+                    <input id="priority" placeholder="Priority"> 
+                    <button onclick="addRowAndTask()">Add Task</button></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!---------------->
+    <!-- JavaScript -->
+    <!---------------->
+    <script>
+        function initialize() {
+            tasks[0] = "Brush the unicorns";
+            priorities[0] = 3;
+            tasks[1] = "Feed the dragons";
+            priorities[1] = 1;
+            tasks[2] = "Bathe the lions";
+            priorities[2] = 2;
+            addRows();
+        }
+        
+        function addRows() {
+            for (let i = 0; i < tasks.length; i++) {
+                addRow(i);
+            }
+        }
+
+        function addRow(i) {
+            let newRow = document.getElementById("hiddenRow").cloneNode(true);
+            newRow.id = "row" + i; // tr
+            newRow.removeAttribute("hidden"); // tr
+            newRow.childNodes[1].innerHTML = i + 1; // line number
+            newRow.childNodes[3].innerHTML = tasks[i]; // task name
+            newRow.childNodes[7].innerHTML = priorities[i]; // grade
+            // Event handler for the delete button
+            newRow.childNodes[5].firstChild.onclick = function () { 
+                removeTask(i);
+                let row = document.getElementById("row" + i);
+                row.parentElement.removeChild(row);
+            };
+
+            // Event handler for the done checkbox
+            newRow.childNodes[9].firstChild.onclick = function () { 
+                let rowElements = document.getElementById("row" + i).childNodes;
+                changeDone(i, rowElements[9].firstChild.checked);
+                rowElements[9].lastChild.textContent = completions[i] ? "Done":"";
+            };
+            document.getElementById("listRows").appendChild(newRow);
+        }
+
+        function addRowAndTask() {
+            let name = document.getElementById("taskName").value;
+            let priority = document.getElementById("priority").value;
+            addTask(name, priority);
+            addRow(tasks.length - 1);
+        }
+
+
+    </script>
+</body>
+
+</html>

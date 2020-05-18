@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- By Brian Bird, 5/14/2020 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="DecimalToRoman.js"></script>
+    <title>Decimal to Roman</title>
+</head>
+<body>
+    <h1>Decimal to Roman Numeral Conversion</h1>
+    <form name="input">
+        <input type="text" name="decimalInput">
+        <input type="button" value="Enter" onClick="doIO()">
+    </form>
+    <p>The decimal number <span id="decimal"></span> is equal to the Roman numeral <span id="roman"></span></p>
+    <script>
+        function doIO()
+        {
+            let decimal = document.input.decimalInput.value;
+            document.getElementById("decimal").innerHTML = decimal;
+            document.getElementById("roman").innerHTML = decimalToRoman(decimal);
+        }
+    </script>
+</body>
+</html>

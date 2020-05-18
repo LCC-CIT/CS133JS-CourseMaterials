@@ -160,7 +160,7 @@ console.log(continents.indexOf("Antarctica"));
 ## Modify Array Elements
 ### `splice`
 
-The splice() method can be used to <u>insert</u>, <u>remove</u>, or <u>replace</u> elements anywhere in an array.
+The splice() method can be used to <u>insert</u>, <u>remove</u>, or <u>replace</u> elements anywhere in an array. It returns the removed elements.
 
 - When a new element is inserted, all the elements at higher indices are shifted even higher and the array grows.
 - When an element is removed, the elements at higher indices are shifted to lower indices and the array shrinks.

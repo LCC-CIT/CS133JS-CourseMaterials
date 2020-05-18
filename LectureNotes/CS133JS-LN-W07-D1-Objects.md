@@ -2,7 +2,7 @@
 
 **CS133JS Beginning Programming: JavaScript**
 
-<h1>Arrays: Array Methods</h1>
+<h1>Objects</h1>
 
 
 | Topics by Week                                       |            |

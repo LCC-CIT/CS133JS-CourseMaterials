@@ -8,9 +8,11 @@
 
 ## Tutorials
 
-[W3Schools JavaScript Tutorial](https://www.w3schools.com/js/DEFAULT.asp) - One of the best places to learn the basics of JavaScript. Recently (Spring 2020), some of the advertising on this site has been objectionable.
+[W3Schools JavaScript Tutorial](https://www.w3schools.com/js/DEFAULT.asp) - One of the best places to learn the basics of JavaScript. Unfortunately, Recently (Spring 2020), some of the advertising on this site has been objectionable.
 
 [JavaScriptTutorial.net](https://www.javascripttutorial.net/) - A well written and organized set of tutorials. The advertising on this site appears to be benign.
+
+[How To Code in JavaScript](https://www.digitalocean.com/community/tutorial_series/how-to-code-in-javascript) - An excellent set of tutorials covering all the basics of JavaScript programming by Lisa Tagliaferri and Tania Rascia.
 
 [MDN JavaScript Tutorials](https://developer.mozilla.org/en-US/docs/Learn/JavaScript) - Another set of good tutorials for beginners.
 

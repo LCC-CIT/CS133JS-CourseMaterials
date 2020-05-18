@@ -185,6 +185,8 @@ You call a method just as you would call a regular function, but you do it throu
 fili.greet();
 ```
 
+### Adding Properties to an Object
+
 Add new properties to an object with the assignment operator, `=`
 
 ```javascript
@@ -192,7 +194,9 @@ fili.age = 82;
 fili.weapon = "hammer";
 ```
 
-Add a method to an object:
+### Adding Methods to an Object
+
+Adding a method to an object is similar to adding a property, but in place of the property value you provide a function definition.
 
 ```javascript
 gimli.fight = function() {
@@ -200,7 +204,7 @@ gimli.fight = function() {
 }
 ```
 
-### Removing Object Properties
+### Removing Properties from an  Object
 
 utilize the `delete` keyword. Evaluates to true if successfull.
 
@@ -211,7 +215,7 @@ delete elves[1];
 
 
 
-### Looping Through Object Properties
+### Looping Through Properties on an Object 
 
 JavaScript has a built-in loop,  `for`-`in`,  that is specifically designed for iterating over the properties of an object. This loop only iterates over property keys (aka names). Note that you need to use bracket notation.
 

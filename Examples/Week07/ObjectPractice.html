@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        const bee = {
+            hasNectar: false,
+            type: "honeyBee",
+            fly: function() {
+                return this.hasNectar ? "Flying back to the hive" : "Searching for nectar";
+            }
+        }
+
+        const flower = {
+            color: "red",
+            bloom: function() {
+                return "The " + this.color + "petals are opening";
+            }
+        }
+        }
+    </script>
+    <script src="ObjectPractice.js"></script>
+    <style>
+        span {
+            background-color: gold;
+        }
+    </style>
+    <title>Object Practice</title>
+</head>
+
+<body>
+    <h1>Object Practice</h1>
+    <h2>CS133JS Lab 6, Part 1</h2>
+    <p>Create a file named <em>ObjectPractice.js</em>. For each of the exercises below, add the code required to complete the exercise.</p>
+
+    <!-- #1 Creating Objects -->
+    <hr>
+    <h3>Creating Objects</h3>
+    <b>1. Create a global object literal with the properties listed.</b>
+    <ul>
+        <li>bicycle
+            <ul>
+                <li>frontGear<br>(the speed it is set to)</li>
+                <li>rearGear</li>
+                <li>frontBrake<br>(true or false braked or not braked)</li>
+                <li>rearBrake</li>
+            </ul>
+        </li>
+
+        <h4>Check</h4>
+        <p>If you have created the object correctly, the property keys will be listed here:<br> (Don't worry about the formatting of the list.)</p>
+        The bicycle object: <span id="bicycleProperties"></span>
+        <script>
+            document.getElementById("bicycleProperties").innerHTML = Object.keys(bicycle).toString();
+        </script>
+
+        <!-- #2 Getting properties -->
+        <hr>
+        <h3>Accessing Properties</h3>
+        <b>2. Write the functions described below:</b>
+        <ul>
+            <li>getFrontGear()
+                <ul>
+                    <li>No parameters</li>
+                    <li>Returns frontGear value</li>
+                </ul>
+            </li>
+            <li>getRearGear()
+                <ul>
+                    <li>No parameters</li>
+                    <li>Returns rearGear value</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Check</h4>
+        <p>If you have written the functions correctly, the settings of the gears will be shown here:</p>
+        The front gear: <span id="frontGear"></span><br> The rear gear: <span id="rearGear"></span>
+        <script>
+            document.getElementById("frontGear").innerHTML = getFrontGear();
+            document.getElementById("rearGear").innerHTML = getRearGear();
+        </script>
+
+        <!-- #3 Setting properties -->
+        <hr>
+        <p><b>3. Write the function described below:</b></p>
+        setFrontBrake(isOn)
+        <ul>
+            <li>One parameter: true if the brake is on.</li>
+            <li>No return value</li>
+            <li>Sets the frontBrake property of the <em>bicycle</em> object</li>
+        </ul>
+
+        <h4>Check</h4>
+        <p>If you have written the function correctly, the value will be <em>true</em></p>
+        The brake is on: <span id="frontBrake"></span>
+        <script>
+            setFrontBrake(true);
+            document.getElementById("frontBrake").innerHTML = bicycle.frontBrake;
+        </script>
+
+        <!-- #4 Calling methods -->
+        <hr>
+        <h3>Calling a Method</h3>
+        <p><b>4. For this exercise, the object below has already been created:</b>
+            <br>(It is in the header of the html file.)</p>
+        <pre>
+        const bee = {
+            hasNectar: false,
+            type: "honeyBee",
+            fly: function() {
+                return this.hasNectar ? "Coming back to the hive" : "Searching for nectar";
+            }
+        }
+    </pre>
+        <p><b>Write the function described below:</b></p>
+        flyHome()
+        <ul>
+            <li>No parameters</li>
+            <li>The function will do these things to the <em>bee</em> object:
+                <ul>
+                    <li>Set hasNectoar to true</li>
+                    <li>Call the fly method</li>
+                </ul>
+            </li>
+            <li>Returns he string from cook.</li>
+        </ul>
+        <h4>Check</h4>
+        <p>If you have written the function correctly, bee will be flying back to the hive:</p>
+        <span id="fly"></span>
+        <script>
+            document.getElementById("fly").innerHTML = flyHome();
+        </script>
+
+        <!-- #5 Adding properties -->
+        <hr>
+        <h3>Adding Properties to an Object</h3>
+        <b>5. For this exercise, the object below has already been created:</b>
+        <br>(It is in the header of the html file.)
+        <pre>
+        const flower = {
+            color: "red",
+            bloom: play() {
+                return "The " + this.color + "petals are opening";
+            }
+        }
+    </pre><b>Write code to add the two properties described below to the <em>cdPlayer</em> object. Choose your own
+        values.</b>
+        <ul>
+            <li>volume<br> (numeric data type)</li>
+            <li>album<br> (Name of the album on the CD)</li>
+        </ul>
+        <h4>Check</h4>
+        <p>If you have added the properties correctly, the values will be shown here:</p>
+        The CD player's volume: <span id="volume"></span><br> The name of the album: <span id="album"></span>
+        <script>
+            document.getElementById("volume").innerHTML = cdPlayer.volume;
+            document.getElementById("album").innerHTML = cdPlayer.album;
+        </script>
+
+        <!-- #6 Adding methods -->
+        <hr>
+        <h3>Adding Methods to an Object</h3>
+        <b>6. Write code to add the method shown below to the <em>cdPlayer</em> object</b> <br>skip()
+        <ul>
+            <li>Sets the track to the next track.</li>
+            <li>No parameters or return value</li>
+        </ul>
+        <p>If you have added the method correctly, the track number will be 10.</p>
+        The CD player's track number: <span id="track"></span>
+        <script>
+            cdPlayer.skip();
+            document.getElementById("track").innerHTML = cdPlayer.track;
+        </script>
+
+        <!-- #7 Removing Properties -->
+        <hr>
+        <h3>Removing Properties from an Object</h3>
+        <b>7. Write code to remove the <em>power</em> property from the <em>microwave</em> object.</b>
+        <h4>Check</h4>
+        The CD player's power property: <span id="power"></span>
+        <script>
+            document.getElementById("power").innerHTML = cdPlayer.hasOwnProperty("power") ? "exists" : "doesn't exist";
+        </script>
+
+        <!-- #8 Loopiong throug properties -->
+        <hr>
+        <h3>Looping through Properties on an Object</h3>
+        <p><b>8. Write the function described below that will use a loop to return an list of the <u>values</u> (not keys)
+            of the properties in the <em>cdPlayer</em> object</b></P>
+        listValues()
+        <ul>
+            <li>No parameters</li>
+            <li>Returns a string</li>
+        </ul>
+        <h4>Check</h4>
+        The values of the properties: <span id="values"></span>
+        <script>
+            document.getElementById("values").innerHTML = listValues();
+        </script>
+        <br><br>
+        <hr> Written by Brian Bird, 5/19/2020, for CS133JS at Lane Community College
+        <hr>
+
+</body>
+
+</html>

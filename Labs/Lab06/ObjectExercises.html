@@ -90,7 +90,7 @@
     </script>
     <!-- #3 Setting properties -->
     <hr>
-    <p><b>3. Write a function described below:</b></p>
+    <p><b>3. Write the function described below:</b></p>
     setBirthdate(year)
     <ul>
         <li>One parameter: the year the author was born.</li>
@@ -130,10 +130,10 @@
                 <li>Call the cook method</li>
             </ul>
         </li>
-        <li>Returns he string from cook.</li>
+        <li>Returns the string from the cook method.</li>
     </ul>
     <h4>Check</h4>
-    <p>If you have written the functions correctly, the cooking message will be shown here:</p>
+    <p>If you have written the function correctly, the cooking message will be shown here:</p>
     <span id="cooking"></span>
     <script>
         document.getElementById("cooking").innerHTML = cookForOneMinute();
@@ -147,7 +147,7 @@
     <pre>
         const cdPlayer = {
             track: 9,
-            cook: play() {
+            play: function() {
                 return "Playing track " + this.track + ".";
             }
         }

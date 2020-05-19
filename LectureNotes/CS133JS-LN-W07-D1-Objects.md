@@ -26,8 +26,7 @@
 
 ## Q and A
 
-- Lab 5, Part 1, Array Exercises
-  - Have you started it? Any questions?
+- Lab 5, Part 2, any questions?
 - Does anyone have any questions about anything?
 
 
@@ -175,6 +174,19 @@ console.log(elves[1]);
 
 What do objects with numeric properties look like?
 
+#### The `this` keyword
+
+Inside a method, the `this` keyword references the object that contains the method so you can access an object property.
+
+```javascript
+const fili = {
+    name: "Fili",
+    greet: function() { 
+        return this.name + " at your service!";
+    },
+};
+```
+
 
 
 ### Calling a Method on an Object
@@ -225,7 +237,7 @@ for (let item in fili) {
 }
 ```
 
-How does this compare to the `for`-`of` loop?
+How does this compare to the `for`-`of` loop?
 
 The `Object.keys()` method, which will return an array of the object’s keys.
 
@@ -246,12 +258,6 @@ bomber = boffer; // this will cause an error
 let balin = {name:"Balin"};
 balin = boffer;  // this works!
 ```
-
-
-
-### Comparison of Arrays and Objects
-
-An array is a special type of object. Try doing some array operations on objects and vice-versa.
 
 
 

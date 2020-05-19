@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ObjectExercises.js"></script>
+    <title>Object Exercises</title>
+</head>
+
+<body>
+    <h1>Object Exercises</h1>
+    <h2>CS133JS Lab 6, Part 1</h2>
+
+    <h3>Creating Objects</h3>
+    1. Create two global object literals with the properties listed. You can choose your own values.
+    <ul>
+        <li>book
+            <ul>
+                <li>title</li>
+                <li>author</li>
+                <li>copyright<br>(date)</li>
+            </ul>
+        </li>
+        <li>author
+            <ul>
+                <li>name</li>
+                <li>birthdate</li>
+            </ul>
+        </li>
+    </ul>
+    <h4>Check</h4>
+    <p>If you have created the objects correctly, the proprty keys will be listed here:</p>
+    The book object: <span id="bookProperties"></span><br> The author object: <span id="authorProperties"></span>
+    <script>
+        document.getElementById("bookProperties").innerHTML = Object.keys(book).toString();
+        document.getElementById("authorProperties").innerHTML = Object.keys(author).toString();
+    </script>
+    <h3>Accessing Properties</h3>
+    2. Write two functions with the following names and return values:
+    <ul>
+        <li>getTitle()<br> Returns the book title</li>
+        <li>getAuthor()<br> Returns the name of the author<br>(From the author object)</li>
+    </ul>
+    <h4>Check</h4>
+    <p>If you have written the functions correctly, the names of the title and author will be shown here:</p>
+    The book title: <span id="bookTitle"></span><br> The author name: <span id="authorName"></span>
+    <script>
+        document.getElementById("bookTitle").innerHTML = getTitle();
+        document.getElementById("authorName").innerHTML = getAuthor();
+    </script>
+    <h3>Calling a Method</h3>
+    <p>3. For this exercise, the object below has been provided:</p>
+    <pre>
+        const microwave = {
+            power: "medium",
+            time: 30,
+            cook: function() {
+                return "Cooking on " + this.power + " for " + this.time + " seconds.";
+            }
+        }
+    </pre>
+    <p>Write a function named <em>cookOneMinute</em>that sets the time to 60, calls the cook function and returns the string from cook.</p>
+    <h4>Check</h4>
+    <p>If you have written the functions correctly, the cooking message will be shown here:</p>
+    <span id="cooking"></span>
+    <script>
+        const microwave = {
+            power: "medium",
+            time: 30,
+            cook: function() {
+                return "Cooking on " + this.power + " for " + this.time + " seconds.";
+            }
+        }
+        document.getElementById("cooking").innerHTML = cookForOneMinute();
+    </script>
+    <h3>Adding Properties to an Object</h3>
+    <h3>Adding Methods to an Object</h3>
+    <h3>Removing Properties from an Object</h3>
+    <h3>Looping through Properties on an Object</h3>
+    <h3>Mutability of Objects</h3>
+
+</body>
+
+</html>

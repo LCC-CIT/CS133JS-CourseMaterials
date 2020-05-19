@@ -4,16 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        const microwave = {
+            power: "medium",
+            time: 30,
+            cook: function() {
+                return "Cooking on " + this.power + " for " + this.time + " seconds.";
+            }
+        }
+
+        const cdPlayer = {
+            power: "Medium",
+            track: 9,
+            play: function() {
+                return "Playing track " + this.track + ".";
+            }
+        }
+    </script>
     <script src="ObjectExercises.js"></script>
+    <style>
+        span {
+            background-color: gold;
+        }
+    </style>
     <title>Object Exercises</title>
 </head>
 
 <body>
     <h1>Object Exercises</h1>
     <h2>CS133JS Lab 6, Part 1</h2>
+    <p>Create a file named <em>ObjectExercises.js</em>. For each of the exercises below, add the code required to complete the exercise.</p>
 
+    <!-- #1 Creating Objects -->
+    <hr>
     <h3>Creating Objects</h3>
-    1. Create two global object literals with the properties listed. You can choose your own values.
+    <b>1. Create two global object literals with the properties listed. You can choose your own values.</b>
     <ul>
         <li>book
             <ul>
@@ -30,17 +55,31 @@
         </li>
     </ul>
     <h4>Check</h4>
-    <p>If you have created the objects correctly, the proprty keys will be listed here:</p>
+    <p>If you have created the objects correctly, the property keys will be listed here:<br> (Don't worry about the formatting of the lists.)</p>
     The book object: <span id="bookProperties"></span><br> The author object: <span id="authorProperties"></span>
     <script>
         document.getElementById("bookProperties").innerHTML = Object.keys(book).toString();
         document.getElementById("authorProperties").innerHTML = Object.keys(author).toString();
     </script>
+
+    <!-- #2 Getting properties -->
+    <hr>
     <h3>Accessing Properties</h3>
-    2. Write two functions with the following names and return values:
+    <b>2. Write two functions with the following names and return values:</b>
     <ul>
-        <li>getTitle()<br> Returns the book title</li>
-        <li>getAuthor()<br> Returns the name of the author<br>(From the author object)</li>
+        <li>getTitle()
+            <ul>
+                <li>No parameters</li>
+                <li> Returns the book title</li>
+            </ul>
+        </li>
+        <li>getAuthor()
+
+            <ul>
+                <li>No parameters</li>
+                <li> Returns the name of the author<br>(From the author object)</li>
+            </ul>
+        </li>
     </ul>
     <h4>Check</h4>
     <p>If you have written the functions correctly, the names of the title and author will be shown here:</p>
@@ -49,36 +88,126 @@
         document.getElementById("bookTitle").innerHTML = getTitle();
         document.getElementById("authorName").innerHTML = getAuthor();
     </script>
+    <!-- #3 Setting properties -->
+    <hr>
+    <p><b>3. Write a function described below:</b></p>
+    setBirthdate(year)
+    <ul>
+        <li>One parameter: the year the author was born.</li>
+        <li>No return value</li>
+        <li>Sets the birthdate property of the <em>author</em> object</li>
+    </ul>
+
+    <h4>Check</h4>
+    <p>If you have written the function correctly, the new birth date will be <em>1901</em></p>
+    The author's birth year: <span id="birthdate"></span>
+    <script>
+        setBirthdate(1901);
+        document.getElementById("birthdate").innerHTML = author.birthdate;
+    </script>
+
+    <!-- #4 Calling methods -->
+    <hr>
     <h3>Calling a Method</h3>
-    <p>3. For this exercise, the object below has been provided:</p>
+    <p><b>4. For this exercise, the object below has already been created:</b>
+        <br>(It is in the header of the html file.)</p>
     <pre>
         const microwave = {
-            power: "medium",
+            power: "Medium",
             time: 30,
             cook: function() {
                 return "Cooking on " + this.power + " for " + this.time + " seconds.";
             }
         }
     </pre>
-    <p>Write a function named <em>cookOneMinute</em>that sets the time to 60, calls the cook function and returns the string from cook.</p>
+    <p><b>Write the function described below:</b></p>
+    cookOneMinute()
+    <ul>
+        <li>No parameters</li>
+        <li>The function will do these things to the <em>microwave</em> object:
+            <ul>
+                <li>Set the time to 60 seconds</li>
+                <li>Call the cook method</li>
+            </ul>
+        </li>
+        <li>Returns he string from cook.</li>
+    </ul>
     <h4>Check</h4>
     <p>If you have written the functions correctly, the cooking message will be shown here:</p>
     <span id="cooking"></span>
     <script>
-        const microwave = {
-            power: "medium",
-            time: 30,
-            cook: function() {
-                return "Cooking on " + this.power + " for " + this.time + " seconds.";
-            }
-        }
         document.getElementById("cooking").innerHTML = cookForOneMinute();
     </script>
+
+    <!-- #5 Adding properties -->
+    <hr>
     <h3>Adding Properties to an Object</h3>
+    <b>5. For this exercise, the object below has already been created:</b>
+    <br>(It is in the header of the html file.)
+    <pre>
+        const cdPlayer = {
+            track: 9,
+            cook: play() {
+                return "Playing track " + this.track + ".";
+            }
+        }
+    </pre><b>Write code to add the two properties described below to the <em>cdPlayer</em> object. Choose your own
+        values.</b>
+    <ul>
+        <li>volume<br> (numeric data type)</li>
+        <li>album<br> (Name of the album on the CD)</li>
+    </ul>
+    <h4>Check</h4>
+    <p>If you have added the properties correctly, the values will be shown here:</p>
+    The CD player's volume: <span id="volume"></span><br> The name of the album: <span id="album"></span>
+    <script>
+        document.getElementById("volume").innerHTML = cdPlayer.volume;
+        document.getElementById("album").innerHTML = cdPlayer.album;
+    </script>
+
+    <!-- #6 Adding methods -->
+    <hr>
     <h3>Adding Methods to an Object</h3>
+    <b>6. Write code to add the method shown below to the <em>cdPlayer</em> object</b> <br>skip()
+    <ul>
+        <li>Sets the track to the next track.</li>
+        <li>No parameters or return value</li>
+    </ul>
+    <p>If you have added the method correctly, the track number will be 10.</p>
+    The CD player's track number: <span id="track"></span>
+    <script>
+        cdPlayer.skip();
+        document.getElementById("track").innerHTML = cdPlayer.track;
+    </script>
+
+    <!-- #8 Removing Properties -->
+    <hr>
     <h3>Removing Properties from an Object</h3>
+    <b>7. Write code to remove the <em>power</em> property from the <em>microwave</em> object.</b>
+    <h4>Check</h4>
+    The CD player's power property: <span id="power"></span>
+    <script>
+        document.getElementById("power").innerHTML = cdPlayer.hasOwnProperty(power) ? "exists" : "doesn't exist";
+    </script>
+
+    <!-- #8 Loopiong throug properties -->
+    <hr>
     <h3>Looping through Properties on an Object</h3>
-    <h3>Mutability of Objects</h3>
+    <p><b>8. Write the function described below that will use a loop to return an list of the <u>values</u> (not keys)
+            of the properties in the <em>cdPlayer</em> object</b></P>
+    listValues()
+    <ul>
+        <li>No parameters</li>
+        <li>Returns a string</li>
+    </ul>
+    <h4>Check</h4>
+    The values of the properties: <span id="values"></span>
+    <script>
+        document.getElementById("values").innerHTML = listValues();
+    </script>
+    <br><br>
+    <hr> Written by Brian Bird, 5/19/2020, for CS133JS at Lane Community College
+    <hr>
 
 </body>
 

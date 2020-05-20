@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- By Brian Bird, 5/14/2020 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="RomanNumeralCalc.js"></script>
+    <title>Roman Numerals</title>
+</head>
+<body>
+    <h1>Roman Numeral Calculator</h1>
+    <form name="input">
+        <input type="text" name="romanInput">
+        <input type="button" value="Enter" onClick="doIO()">
+    </form>
+    <p>Roman numeral <span id="roman"></span> is equal to decimal <span id="decimal"></span></p>
+    <script>
+        function doIO()
+        {
+            let romanNumeral = document.input.romanInput.value;
+            document.getElementById("roman").innerHTML = romanNumeral;
+            document.getElementById("decimal").innerHTML = romanToDecimal(romanNumeral);
+        }
+    </script>
+</body>
+</html>

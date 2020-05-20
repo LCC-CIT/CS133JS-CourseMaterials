@@ -190,6 +190,8 @@ We can access a pigeon in the loft like this:
 loft.pigeons[2].fly(); // Rosalind will fly
 ```
 
+What code could we write to make all the pigeons fly?
+
 
 
 # References

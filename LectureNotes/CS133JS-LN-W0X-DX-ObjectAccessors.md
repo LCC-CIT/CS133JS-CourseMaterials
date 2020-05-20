@@ -81,13 +81,53 @@ fili.greet();
 
 # Object Accessors
 
-## Get
+Accessors are special methods named `get` and `set` which are used to get or set the values of object properties.
 
-## Set
+## Encapsulation
+
+One of the principles of working with objects is *encapsulation*. The idea is that the properties inside an object should not be directly accessed by code outside the object. Instead, object properties should be accessed through the `get` and `set` methods.
+
+## Defining Accessor Methods
+
+When creating an object literal, you define an accessor method in almost the same way as any other method except:
+
+- The keywords `get` or `set` will be used
+- Instead of the `function` keyword the name of the accessor property is used.
+
+### `get`
+
+Let's work with an object named *pigeon* :
+
+```javascript
+const pigeon = {
+	name: "Agatha",
+  breed: "Egyptian Swift",
+  health: 7,    // number from 1 to 10
+}
+```
+
+If we wanted to update Agatha's health score, we could do it directly like this:
+
+```javascript
+pigeon.health = 10;  // she's 100% healthy!
+```
+
+But, there is nothing to prevent code outside the object from setting the health to some invalid value. So we can add a special function to manage this.
+
+```javascript
+const pigeon = {
+	name: "Agatha",
+  breed: "Egyptian Swift",
+  health: 7,    // number from 1 to 10
+  set: 
+}
+```
 
 
 
-# Object Constructors
+
+
+
 
 
 

@@ -4,7 +4,7 @@
 <head>
     <!-- By Brian Bird, 5/15/2020 -->
     <meta charset="UTF-8">
-    <script src="GradeBook.js"></script>
+    <script src="GradeBook-Objects.js"></script>
 
     <!------------------>
     <!-- Embedded CSS -->
@@ -13,7 +13,7 @@
         thead {
             font-size: larger;
         }
-
+        
         table,
         td,
         th {
@@ -21,7 +21,7 @@
             border-style: solid;
             padding: 10px;
         }
-
+        
         #newGrade {
             width: 25px;
         }
@@ -32,18 +32,18 @@
 <!--------------->
 <!-- HTML BODY -->
 <!--------------->
+
 <body onload="initialize()">
     <h1>Grade Book</h1>
     <table>
         <thead>
             <tr>
-                <th colspan="3">Student</th>
+                <th colspan="2">Student</th>
                 <th colspan="2">Grade</th>
             </tr>
         </thead>
         <tbody id="gradeBookRows">
             <tr id="hiddenRow" hidden>
-                <td>1</td>
                 <td>Name</td>
                 <td><button>Delete</button></td>
                 <td>U</td>
@@ -53,7 +53,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td colspan='5'><input id="studentName"> <button onclick="addRowAndStudent()">Add Student</button></td>
+                <td colspan='4'><input id="studentName"> <button onclick="addRowAndStudent()">Add Student</button></td>
             </tr>
         </tfoot>
     </table>
@@ -63,37 +63,35 @@
     <!---------------->
     <script>
         function initialize() {
-            students[0] = "Lucy Pevensie";
-            grades[0] = "A+";
-            students[1] = "Jill Pole";
-            grades[1] = "A";
-            students[2] = "Eustace Scrubb";
-            grades[2] = "A-";
+            students[0] = new Student("Lucy Pevensie", "A+");
+            students[1] = new Student("Jill Pole", "A");
+            students[2] = new Student("Eustace Scrubb", "A-");
             addRows();
         }
-        
+
+        // Add rows to the table with content from the students array
         function addRows() {
             for (let i = 0; i < students.length; i++) {
                 addRow(i);
             }
         }
 
+        // Add a row to the table
         function addRow(i) {
             let newRow = document.getElementById("hiddenRow").cloneNode(true);
             newRow.id = "row" + i; // tr
             newRow.removeAttribute("hidden"); // tr
-            newRow.childNodes[1].innerHTML = i + 1; // Line number
-            newRow.childNodes[3].innerHTML = students[i]; // Student name
-            newRow.childNodes[7].innerHTML = grades[i]; // grade
-            newRow.childNodes[5].firstChild.onclick = function () { // delete button
+            newRow.childNodes[1].innerHTML = students[i].name; // Student name
+            newRow.childNodes[5].innerHTML = students[i].grade; // grade
+            newRow.childNodes[3].firstChild.onclick = function() { // delete button
                 removeStudent(i);
                 let row = document.getElementById("row" + i);
                 row.parentElement.removeChild(row);
             };
-            newRow.childNodes[9].lastChild.onclick = function () { // enter button
-                let rowElements = document.getElementById("row" + i).childNodes;
-                changeGrade(students[i], rowElements[9].firstChild.value);
-                rowElements[7].innerHTML = grades[i];
+            newRow.childNodes[7].lastChild.onclick = function() { // enter button
+                let rowElements = document.getElementById().childNodes;
+                changeGrade(students[i].name, rowElements[7].firstChild.value);
+                rowElements[5].innerHTML = students[i].grade;
             };
             document.getElementById("gradeBookRows").appendChild(newRow);
         }
@@ -103,7 +101,6 @@
             addStudent(name);
             addRow(students.length - 1);
         }
-
     </script>
 </body>
 

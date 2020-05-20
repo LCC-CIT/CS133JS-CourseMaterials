@@ -14,7 +14,7 @@
         }
 
         const cdPlayer = {
-            power: "Medium",
+            power: true,
             track: 9,
             play: function() {
                 return "Playing track " + this.track + ".";
@@ -130,7 +130,7 @@
                 <li>Call the cook method</li>
             </ul>
         </li>
-        <li>Returns the string from the cook method.</li>
+        <li>Returns he string from cook.</li>
     </ul>
     <h4>Check</h4>
     <p>If you have written the function correctly, the cooking message will be shown here:</p>
@@ -146,6 +146,7 @@
     <br>(It is in the header of the html file.)
     <pre>
         const cdPlayer = {
+            power: true,
             track: 9,
             play: function() {
                 return "Playing track " + this.track + ".";
@@ -180,10 +181,10 @@
         document.getElementById("track").innerHTML = cdPlayer.track;
     </script>
 
-    <!-- #8 Removing Properties -->
+    <!-- #7 Removing Properties -->
     <hr>
     <h3>Removing Properties from an Object</h3>
-    <b>7. Write code to remove the <em>power</em> property from the <em>microwave</em> object.</b>
+    <b>7. Write code to remove the <em>power</em> property from the <em>cdPlayer</em> object.</b>
     <h4>Check</h4>
     The CD player's power property: <span id="power"></span>
     <script>
@@ -194,7 +195,7 @@
     <hr>
     <h3>Looping through Properties on an Object</h3>
     <p><b>8. Write the function described below that will use a loop to return an list of the <u>values</u> (not keys)
-            of the properties in the <em>cdPlayer</em> object</b></P>
+            of the properties in the <em>cdPlayer</em> object</b></p>
     listValues()
     <ul>
         <li>No parameters</li>

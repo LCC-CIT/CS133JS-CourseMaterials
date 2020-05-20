@@ -19,7 +19,6 @@
                 return "The " + this.color + "petals are opening";
             }
         }
-        }
     </script>
     <script src="ObjectPractice.js"></script>
     <style>
@@ -141,63 +140,63 @@
         <pre>
         const flower = {
             color: "red",
-            bloom: play() {
+            bloom: function() {
                 return "The " + this.color + "petals are opening";
             }
         }
-    </pre><b>Write code to add the two properties described below to the <em>cdPlayer</em> object. Choose your own
+    </pre><b>Write code to add the two properties described below to the <em>flower</em> object. Choose your own
         values.</b>
         <ul>
-            <li>volume<br> (numeric data type)</li>
-            <li>album<br> (Name of the album on the CD)</li>
+            <li>type<br> (name of flower type)</li>
+            <li>perennial<br> (true or false)</li>
         </ul>
         <h4>Check</h4>
         <p>If you have added the properties correctly, the values will be shown here:</p>
-        The CD player's volume: <span id="volume"></span><br> The name of the album: <span id="album"></span>
+        This flower is a: <span id="type"></span><br> It is : <span id="perennial"></span>
         <script>
-            document.getElementById("volume").innerHTML = cdPlayer.volume;
-            document.getElementById("album").innerHTML = cdPlayer.album;
+            document.getElementById("type").innerHTML = flower.type;
+            document.getElementById("perennial").innerHTML = flower.perennial ? "a perennial" : "an annual";
         </script>
 
         <!-- #6 Adding methods -->
         <hr>
         <h3>Adding Methods to an Object</h3>
-        <b>6. Write code to add the method shown below to the <em>cdPlayer</em> object</b> <br>skip()
+        <b>6. Write code to add the method shown below to the <em>bee</em> object</b> <br>dance()
         <ul>
-            <li>Sets the track to the next track.</li>
-            <li>No parameters or return value</li>
+            <li>No parameters</li>
+            <li>Returns a string describing the dance</li>
         </ul>
-        <p>If you have added the method correctly, the track number will be 10.</p>
-        The CD player's track number: <span id="track"></span>
+        <p>If you have added the method correctly, dance will be described.</p>
+        The bee's dance: <span id="dance"></span>
         <script>
-            cdPlayer.skip();
-            document.getElementById("track").innerHTML = cdPlayer.track;
+            bee.dance();
+            document.getElementById("dance").innerHTML = bee.dance();
         </script>
 
         <!-- #7 Removing Properties -->
         <hr>
         <h3>Removing Properties from an Object</h3>
-        <b>7. Write code to remove the <em>power</em> property from the <em>microwave</em> object.</b>
+        <b>7. Write code to remove the <em>type</em> property from the <em>bee</em> object.</b>
         <h4>Check</h4>
-        The CD player's power property: <span id="power"></span>
+        The bee's type property: <span id="beeType"></span>
         <script>
-            document.getElementById("power").innerHTML = cdPlayer.hasOwnProperty("power") ? "exists" : "doesn't exist";
+            document.getElementById("beeType").innerHTML = bee.hasOwnProperty("type") ? "exists" : "doesn't exist";
         </script>
 
         <!-- #8 Loopiong throug properties -->
         <hr>
         <h3>Looping through Properties on an Object</h3>
-        <p><b>8. Write the function described below that will use a loop to return an list of the <u>values</u> (not keys)
-            of the properties in the <em>cdPlayer</em> object</b></P>
+        <p><b>8. Write the function described below that will use a loop to return an list of the properties (aka keys)
+             in the <em>flower</em> object</b></p>
         listValues()
         <ul>
             <li>No parameters</li>
             <li>Returns a string</li>
         </ul>
         <h4>Check</h4>
-        The values of the properties: <span id="values"></span>
+        The names of the properties: <span id="keys"></span>
         <script>
-            document.getElementById("values").innerHTML = listValues();
+            document.getElementById("keys").innerHTML = listKeys();
         </script>
         <br><br>
         <hr> Written by Brian Bird, 5/19/2020, for CS133JS at Lane Community College

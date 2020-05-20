@@ -27,22 +27,22 @@ function flyHome() {
 }
 
 // #5
-cdPlayer.volume = 10;
-cdPlayer.album = "Peter, Paul and Mary";
+flower.type = "rose";
+flower.perennial = true;
 
 // #6
-cdPlayer.skip = function() {
-    this.track++;
+bee.dance = function() {
+    return "Flying in a figure eight.";
 };
 
 // #7
-delete cdPlayer.power;
+delete bee.type;
 
 // #8
-function listValues() {
-    let valueString = "";
-    for (let key in cdPlayer) {
-        valueString += cdPlayer[key] + ", ";
+function listKeys() {
+    let keyString = "";
+    for (let key in flower) {
+        keyString += key + ", ";
     }
-    return valueString;
+    return keyString;
 }

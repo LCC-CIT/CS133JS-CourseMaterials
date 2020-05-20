@@ -25,10 +25,11 @@
 
   (No duplicated blocks of code).
   
-- Function names
+- Functions
 
-  - Should be descriptive.
-  - Should use camelCase
+  - Names should be descriptive and camelCase.
+  - Should have at most one return statement.
+  - Should have a single purpose.
 
 - Old code: any unused code should be removed.
 

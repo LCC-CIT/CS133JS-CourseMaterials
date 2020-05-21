@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- Written by Brian Bird, 4/28/20 -->
+    <meta charset="UTF-8">
+    <title>Movie Actors</title>
+    <script src="MoviesAndActors.js"></script>
+</head>
+
+<body>
+    Enter the name of an actor to see some of the movies they have played roles in. Movies:
+    <p>
+        <input id="actor"><button onclick="findMovies()">Enter</button>
+    </p>
+    <p><span id="movies">I don't know about that actor.</span></p>
+    <script>
+        function findMovies(){
+            let actor = document.getElementById("actor").value;
+            let movies = actorToMovies(actor);
+        document.getElementById("movies").innerHTML = movies;
+        }
+
+    </script>
+
+
+</body></html>

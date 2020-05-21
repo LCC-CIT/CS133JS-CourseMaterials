@@ -3,13 +3,13 @@
 <h1>Object Constructors and Complex Objects</h1>
 
 
-| Topics by Week                           |                         |
-| ---------------------------------------- | ----------------------- |
-| 1. Intro to JavaScript programming       | 6. Arrays               |
-| 2. Functions, Operators and Expressions  | 7. <mark>Objects</mark> |
-| 3. Conditional Statements: if and switch | 8. Methods              |
-| 4. Repetition: while, do while, and for  | 9. DOM                  |
-| 5. Midterm Check-Point                   | 10. Final               |
+| Topics by Week                           |                                          |
+| ---------------------------------------- | ---------------------------------------- |
+| 1. Intro to JavaScript programming       | 6. Arrays                                |
+| 2. Functions, Operators and Expressions  | 7. <mark>Objects and Constructors</mark> |
+| 3. Conditional Statements: if and switch | 8. Event Methods                         |
+| 4. Repetition: while, do while, and for  | 9. DOM                                   |
+| 5. Midterm Check-Point                   | 10. Final                                |
 
 
 <h2>Table of Contents</h2>

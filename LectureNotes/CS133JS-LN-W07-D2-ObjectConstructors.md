@@ -29,7 +29,7 @@
 
 
 
-# Review of Objects
+## Review of Objects
 
 ### Creating an Object
 
@@ -79,6 +79,12 @@ fili.greet();
 
 
 
+
+
+------
+
+
+
 # Object Constructors
 
 Sometimes we will want to make multiple objects that are nearly the same. For example, we might want to model a flock of pigeons. Here is one pigeon object:
@@ -113,7 +119,7 @@ Now we can make some *pigeon* objects:
 
 ```javascript
 const agatha = new Pigeon("Agatha", "Egyptian Swift", 50);
-const elizabeth new Pigeon("Elizabeth", "Egyptian Swift", 60);
+const elizabeth = new Pigeon("Elizabeth", "Egyptian Swift", 60);
 ```
 
 We can use these objects just like we would any other object:
@@ -124,7 +130,7 @@ agatha.fly();
 elizabeth.fly();
 ```
 
-### The `this` Keyword
+## The `this` Keyword
 
 Now that we have multiple objects that use the same object definition, we can see the importance of using *this* inside of object methods. The *this* keyword represents whatever object it is in and now it can be in different objects.
 
@@ -134,49 +140,83 @@ Now that we have multiple objects that use the same object definition, we can se
 
 Object properties can be other objects. When we put objects inside of objects we say they are a *complex object*. That doesn't mean they are complicated, just that objects are composed with one or more other objects inside.
 
-For example we can make a loft objects for our pigeons to live in (a pigeon house is called a *loft*). Here is a loft for just one pigeon:
+## An Object Inside an Object
+
+An object can have a property that has an object as it's value. For example we can make a loft objects for our pigeons to live in (a pigeon house is called a *loft*). Here is a loft for just one pigeon. The pigeon property is an object literal.
 
 ```javascript
 const loft = {
-  perches: 1,  // number of perches
+  water: 100,  // percent full water
+  food: 100,    // percent full food
+  pigeon: {
+      name: "Agatha", 
+      type: "Egyptian Swift", 
+      speed: 50,
+      fly: function() {
+           return this.name + " is flying at " + this.speed + " MPH.";
+      })
+}
+```
+
+Or, we can use an object constructor:
+
+```javascript
+const loft = {
   water: 100,  // percent full water
   food: 100,    // percent full food
   pigeon: new Pigeon("Agatha", "Egyptian Swift", 50)
 }
 ```
 
-We can access the pigeon in the loft like this:
+We access the pigeon in the loft like this:
 
 ```javascript
 loft.pigeon.fly();
 ```
 
-We can also put objects in arrays. For example, we could create an array that represents a flock of pigeons:
+
+
+## An Array of Objects Inside an Object
+
+We can also put objects in arrays and put arrays of objects inside objects.
+
+Let's start with just an array of objects. Here is an array that represents a flock of pigeons. I could have written object literals in each element of the array, but it was much easier to use the Pigeon object constructor.
 
 ```javascript
-let flock = [new Pigeon("Agatha", "Egyptian Swift", 50),
+let pigeons = [new Pigeon("Agatha", "Egyptian Swift", 50),
 							new Pigeon("Elizabeth", "Egyptian Swift", 60),
 							new Pigeon("Jutta", "Utility", 45)];
 ```
 
-We would access an individual pigeon by it's index:
+We can access an individual pigeon by it's array index:
 
 ```javascript
 flock[1].fly();  // Elizabeth will fly
 ```
 
-Now let's put it all together. We'll put an array of pigeon objects in the loft object:
+Now let's create a loft object that has an array of pigeon objects:
 
 ```javascript
 const loft = {
-  perches: 1,  // number of perches
+  water: 100,  // percent full water
+  food: 100,    // percent full food
+  pigeons: [new Pigeon("Agatha", "Egyptian Swift", 50),
+			new Pigeon("Elizabeth", "Egyptian Swift", 60),
+			new Pigeon("Jutta", "Utility", 45)];
+}
+```
+
+Alternatively, we could just put a declaration for an array that can hold pigeon objects in the loft object:
+
+```javascript
+const loft = {
   water: 100,  // percent full water
   food: 100,    // percent full food
   pigeons: []
 }
 ```
 
-And, let's add some pigeons:
+And then add some pigeons:
 
 ```javascript
 loft.pigeons.push(new Pigeon("Agatha", "Egyptian Swift", 60));
@@ -195,6 +235,8 @@ What code could we write to make all the pigeons fly?
 
 
 # References
+
+## Tutorials
 
 [Working With Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects) - MDN Guide
 

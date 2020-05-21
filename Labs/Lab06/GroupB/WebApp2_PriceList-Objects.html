@@ -4,7 +4,7 @@
 <head>
     <!-- By Brian Bird, 5/15/2020 -->
     <meta charset="UTF-8">
-    <script src="PriceList.js"></script>
+    <script src="PriceList-Objects.js"></script>
 
     <!------------------>
     <!-- Embedded CSS -->
@@ -13,7 +13,7 @@
         thead {
             font-size: larger;
         }
-
+        
         table,
         td,
         th {
@@ -21,7 +21,7 @@
             border-style: solid;
             padding: 10px;
         }
-
+        
         #newPrice {
             width: 25px;
         }
@@ -32,6 +32,7 @@
 <!--------------->
 <!-- HTML BODY -->
 <!--------------->
+
 <body onload="initialize()">
     <h1>Price List</h1>
     <table>
@@ -53,7 +54,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td colspan='5'><input id="productName"> 
+                <td colspan="5"><input id="productName">
                     <button onclick="addRowAndProduct()">Add Product</button></td>
             </tr>
         </tfoot>
@@ -64,16 +65,21 @@
     <!---------------->
     <script>
         function initialize() {
-            products[0] = "Tent";
-            prices[0] = "195.00";
-            products[1] = "Backpack";
-            prices[1] = "115.00";
-            products[2] = "Camp stove";
-            prices[2] = "55.00";
+            products[0] = new Product("Tent", 195);
+            products[1] = new Product("Backpack", 115);
+            products[2] = new Product("Camp stove", 55);
             addRows();
         }
-        
+
         function addRows() {
+            // remove all the rows in the body
+            let rows = document.getElementsByTagName("tr");
+            const START_ROW = 2;
+            while (rows.length > START_ROW + 1) // we're removing rows, so the length decrements
+            {
+                rows[START_ROW].parentElement.removeChild(rows[START_ROW]);
+            }
+            // add them back in
             for (let i = 0; i < products.length; i++) {
                 addRow(i);
             }
@@ -84,20 +90,19 @@
             newRow.id = "row" + i; // tr
             newRow.removeAttribute("hidden"); // tr
             newRow.childNodes[1].innerHTML = i + 1; // Line number
-            newRow.childNodes[3].innerHTML = products[i]; // Product name
-            newRow.childNodes[7].innerHTML = prices[i]; // price
+            newRow.childNodes[3].innerHTML = products[i].name; // Product name
+            newRow.childNodes[7].innerHTML = products[i].price; // price
 
             // Event handler to remove a product
-            newRow.childNodes[5].firstChild.onclick = function () { // delete button
-                removeProduct(products[i]);
-                let row = document.getElementById("row" + i);
-                row.parentElement.removeChild(row);
+            newRow.childNodes[5].firstChild.onclick = function() { // delete button
+                removeProduct(products[i].name);
+                addRows(); // delte and re-add the rows to reflect the new state of the array
             };
             // Event handler to change a price
-            newRow.childNodes[9].lastChild.onclick = function () { // enter button
+            newRow.childNodes[9].lastChild.onclick = function() { // enter button
                 let rowElements = document.getElementById("row" + i).childNodes;
                 changePrice(i, parseFloat(rowElements[9].firstChild.value));
-                rowElements[7].innerHTML = prices[i];
+                rowElements[7].innerHTML = products[i].price;
                 rowElements[9].firstChild.value = "";
             };
             document.getElementById("priceListRows").appendChild(newRow);
@@ -110,7 +115,6 @@
             addProduct(name);
             addRow(products.length - 1);
         }
-
     </script>
 </body>
 

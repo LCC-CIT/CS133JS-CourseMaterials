@@ -130,9 +130,9 @@ agatha.fly();
 elizabeth.fly();
 ```
 
-## The `this` Keyword
+## The `this` Keyword
 
-Now that we have multiple objects that use the same object definition, we can see the importance of using *this* inside of object methods. The *this* keyword represents whatever object it is in and now it can be in different objects.
+Now that we have multiple objects that use the same object definition, we can see the importance of using *this* inside of object methods. The *this* keyword represents whatever object it is in and now it can be in different objects.
 
 
 
@@ -154,7 +154,8 @@ const loft = {
       speed: 50,
       fly: function() {
            return this.name + " is flying at " + this.speed + " MPH.";
-      })
+      }
+  }
 }
 ```
 
@@ -198,11 +199,11 @@ Now let's create a loft object that has an array of pigeon objects:
 
 ```javascript
 const loft = {
-  water: 100,  // percent full water
+  water: 100,   // percent full water
   food: 100,    // percent full food
   pigeons: [new Pigeon("Agatha", "Egyptian Swift", 50),
 			new Pigeon("Elizabeth", "Egyptian Swift", 60),
-			new Pigeon("Jutta", "Utility", 45)];
+			new Pigeon("Jutta", "Utility", 45)]
 }
 ```
 
@@ -210,7 +211,7 @@ Alternatively, we could just put a declaration for an array that can hold pigeon
 
 ```javascript
 const loft = {
-  water: 100,  // percent full water
+  water: 100,   // percent full water
   food: 100,    // percent full food
   pigeons: []
 }

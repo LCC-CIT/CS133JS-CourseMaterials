@@ -1,4 +1,4 @@
-# Beginning Programming: JavaScript
+<h1>Beginning Programming: JavaScript</h1>
 **Syllabus for Spring 2020**
 
 
@@ -12,7 +12,7 @@
 
 
 
-## Table of Contents
+<h2>Table of Contents</h2>
 
  [TOC]
 
@@ -119,12 +119,11 @@ The table below summarizes the possible points for each assessment task as well 
 
 | **Assessment Tasks**       | **Points Each** | **Total Points** | Percentage |
 | -------------------------- | --------------- | ---------------- | ---------- |
-| Labs  1 - 8                | 50              | 400              | 40%        |
-| Code  Reviews 1 - 8        | 10              | 80               | 8%         |
-| Reading  Quizzes 1 - 8     | 10              | 80               | 8%         |
-| Midterm  and Final Quizzes | 100             | 200              | 20%        |
-| Term  Project              | 240             | 240              | 24%        |
-| **Course Total**           |                 | **1000**         |            |
+| Labs  1 - 8                | 50              | 400              | 47%        |
+| Code  Reviews 1 - 8        | 10              | 80               | 9%         |
+| Reading  Quizzes 1 - 8     | 10              | 80               | 9%         |
+| Midterm  and Final Quizzes | 100 and 200     | 300              | 35%        |
+| **Course Total**           |                 | **860**          |            |
 
  
 

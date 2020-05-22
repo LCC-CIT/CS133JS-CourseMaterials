@@ -7,19 +7,37 @@
     <script src="MoviesAndActors.js"></script>
 </head>
 
-<body>
+<body onload="initialize()">
     Enter the name of an actor to see some of the movies they have played roles in. Movies:
     <p>
         <input id="actor"><button onclick="findMovies()">Enter</button>
     </p>
-    <p><span id="movies">I don't know about that actor.</span></p>
+    <p><span id="movies">Enter an actor.</span></p>
+    <p>I know about these actors:<br>
+        <ul id="actors"></ul>
+    </p>
     <script>
         function findMovies(){
             let actor = document.getElementById("actor").value;
             let movies = actorToMovies(actor);
-        document.getElementById("movies").innerHTML = movies;
+            let p = document.getElementById("movies");
+            p.innerHTML = "";  // Clear "Enter an actor"
+            for(let movie of movies) {
+                document.getElementById("movies").innerHTML += movie + "<br>";
+            }
         }
 
+        function initialize()
+        {
+            makeMovies();
+           let actors = getAllActors();
+
+           let ul = document.getElementById("actors");
+            for(let actor of actors)
+            {
+                ul.innerHTML += "<li>" + actor + "</li>";
+            }
+        }
     </script>
 
 

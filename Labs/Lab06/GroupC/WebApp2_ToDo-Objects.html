@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <!-- By Brian Bird, 5/15/2020 -->
+    <!-- By Brian Bird, 5/20/2020 -->
     <meta charset="UTF-8">
-    <script src="ToDo.js"></script>
+    <script src="ToDo-Objects.js"></script>
 
     <!------------------>
     <!-- Embedded CSS -->
@@ -13,7 +13,7 @@
         thead {
             font-size: larger;
         }
-
+        
         table,
         td,
         th {
@@ -21,7 +21,7 @@
             border-style: solid;
             padding: 10px;
         }
-
+        
         #newGrade {
             width: 25px;
         }
@@ -32,6 +32,7 @@
 <!--------------->
 <!-- HTML BODY -->
 <!--------------->
+
 <body onload="initialize()">
     <h1>ToDo List</h1>
     <table>
@@ -54,8 +55,8 @@
         </tbody>
         <tfoot>
             <tr>
-                <td colspan='5'><input id="taskName" placeholder="Task name">
-                    <input id="priority" placeholder="Priority"> 
+                <td colspan="5"><input id="taskName" placeholder="Task name">
+                    <input id="priority" placeholder="Priority">
                     <button onclick="addRowAndTask()">Add Task</button></td>
             </tr>
         </tfoot>
@@ -66,16 +67,21 @@
     <!---------------->
     <script>
         function initialize() {
-            tasks[0] = "Brush the unicorns";
-            priorities[0] = 3;
-            tasks[1] = "Feed the dragons";
-            priorities[1] = 1;
-            tasks[2] = "Bathe the lions";
-            priorities[2] = 2;
+            tasks[0] = new Task("Brush the unicorns", 3, false);
+            tasks[1] = new Task("Feed the dragons", 1, false);
+            tasks[2] = new Task("Bathe the lions", 2, false);
             addRows();
         }
-        
+
         function addRows() {
+            // remove all the rows in the body
+            let rows = document.getElementsByTagName("tr");
+            const START_ROW = 2;
+            while (rows.length > START_ROW + 1) // we're removing rows, so the length decrements
+            {
+                rows[START_ROW].parentElement.removeChild(rows[START_ROW]);
+            }
+            // add them back in
             for (let i = 0; i < tasks.length; i++) {
                 addRow(i);
             }
@@ -86,22 +92,27 @@
             newRow.id = "row" + i; // tr
             newRow.removeAttribute("hidden"); // tr
             newRow.childNodes[1].innerHTML = i + 1; // line number
-            newRow.childNodes[3].innerHTML = tasks[i]; // task name
-            newRow.childNodes[7].innerHTML = priorities[i]; // grade
+            newRow.childNodes[3].innerHTML = tasks[i].description; // task name
+            newRow.childNodes[7].innerHTML = tasks[i].priority; // task priority
             // Event handler for the delete button
-            newRow.childNodes[5].firstChild.onclick = function () { 
+            newRow.childNodes[5].firstChild.onclick = function() {
                 removeTask(i);
-                let row = document.getElementById("row" + i);
-                row.parentElement.removeChild(row);
+                addRows(); // update the table to reflect the change to the array
             };
 
             // Event handler for the done checkbox
-            newRow.childNodes[9].firstChild.onclick = function () { 
+            newRow.childNodes[9].firstChild.onclick = function() {
                 let rowElements = document.getElementById("row" + i).childNodes;
                 changeDone(i, rowElements[9].firstChild.checked);
-                rowElements[9].lastChild.textContent = completions[i] ? "Done":"";
+                rowElements[9].lastChild.textContent = tasks[i].complete ? "Done" : "";
             };
+            // Append the new row to the table
             document.getElementById("listRows").appendChild(newRow);
+            // TODO find a way to eliminate this non-dry code
+            // Update the "Done" when a row is deleted
+            let rowElements = document.getElementById("row" + i).childNodes;
+            rowElements[9].lastChild.textContent = tasks[i].complete ? "Done" : "";
+            rowElements[9].firstChild.checked = tasks[i].complete;
         }
 
         function addRowAndTask() {
@@ -110,8 +121,6 @@
             addTask(name, priority);
             addRow(tasks.length - 1);
         }
-
-
     </script>
 </body>
 

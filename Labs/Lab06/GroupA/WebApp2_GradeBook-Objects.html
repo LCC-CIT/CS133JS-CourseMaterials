@@ -89,7 +89,7 @@
                 row.parentElement.removeChild(row);
             };
             newRow.childNodes[7].lastChild.onclick = function() { // enter button
-                let rowElements = document.getElementById().childNodes;
+                let rowElements = document.getElementById("row" + i).childNodes;
                 changeGrade(students[i].name, rowElements[7].firstChild.value);
                 rowElements[5].innerHTML = students[i].grade;
             };

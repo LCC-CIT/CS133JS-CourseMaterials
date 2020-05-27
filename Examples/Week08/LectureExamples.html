@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- Written by Brian Bird, 5/27/2020 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page I/O</title>
@@ -16,13 +17,17 @@
     <p id="lcc">Hello LCC!</p>
     <p id="cit">Hello CIT!</p>
     <script>
+        // Two ways to get a reference to an element
+        // Using the innerHTML property to set the text on these elements
         document.getElementById("lcc").innerHTML = "Hello Lane Community College!";
         document.querySelector("#cit").innerHTML = "Greetings CIT!";
     </script>
 
-    <h2>Accssing Element Attributes</h2>
+    <h2>Accessing Element Attributes</h2>
     <input id="name" value="Your name"><br> Name:
     <script>
+        // Geting user input with the value attribute 
+        // This won't actually get what a user types in the input text box, why?
         let name = document.getElementById("name").value;
         document.write(name);
     </script>
@@ -31,8 +36,9 @@
     <p onmouseover="doSomething()">This paragraph has an onmouseover event</p>
     <span></span>
     <script>
+        // This appends "Something" to the text in the span every time the pointer goes over the paragraph.
         function doSomething() {
-            document.querySelector("span").innerHTML += "Something";
+            document.querySelector("span").innerHTML += " Something";
         }
     </script>
 
@@ -41,6 +47,7 @@
     <button onclick="inputName()">Enter</button>
     <p>Hello: <span></span></p>
     <script>
+        // This will actually get the name entered in the input text box and put it in the correct span.
         function inputName() {
             let name = document.querySelector("#yourName").value;
             document.querySelector("p span").innerHTML = name;
@@ -50,6 +57,8 @@
     <h3>Displaying Output</h3>
     <p id="studentName">Student's name: </p>
     <script>
+        // Getting a reference to the paragraph and assigning it to the nameParagraph variable
+        // Setting the paragraph text to "Susan"
         let nameParagraph = document.getElementById("studentName");
         nameParagraph.innerHTML += "Susan";
     </script>

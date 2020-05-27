@@ -2,15 +2,20 @@
 
 "use strict";
 
+// Object constructor for a course object
 function Course(number, credits, grade) {
     this.number = number;
     this.credits = credits;
     this.grade = grade;
 }
 
+// A global array that will hold course objects
 let courses = [];
 
 // Looup table for converting letter grades to grade points
+// Each nested array has two elements:
+// Index 0: the letter grade
+// Index 1: the points for that grade
 let pointLookup = [
     ["A+", 4.3],
     ["A", 4.0],
@@ -33,7 +38,7 @@ function lookUpPoints(grade) {
     // Loop until either the grade is found or we reach the end of the array
     for (let i = 0; i < pointLookup.length && points < 0; i++) {
         if (grade == pointLookup[i][0]) {
-            points = pointLookup[i][1];
+            points = pointLookup[i][1]; // set points equal to the value in the 2nd element of the nested array.
         }
     }
     return points;
@@ -53,7 +58,9 @@ function totalCredits() {
     return total;
 }
 
-// Calculate GPA, based on quality points, using global arrays
+// Calculate GPA, based on quality points, using the global courses array
+// For each class, quality points = grade point * credits
+// For the overall grade point average, GPA = total quality points / number of credits
 function calcGpa() {
     let points = 0;
     for (let i = 0; i < courses.length; i++) {

@@ -21,13 +21,17 @@
 ## Announcements
 
 - I'm still working on grading the lab 4 production version, will start grading lab 5 this week.
+- This week's lab, lab 7, will be the last lab.
+  - There will be no code review.
+  - The production version will be due next Friday, June 5th
+- I will make an alternative version of the array lab assignment for those who would like that.
+- FYI, I drop the lowest lab grade and lowest quiz grade
+- The final will be on June 8th and 9th.
 
 ## Q and A
 
 - Lab 6, any questions?
 - Does anyone have any questions about anything?
-
-
 
 
 

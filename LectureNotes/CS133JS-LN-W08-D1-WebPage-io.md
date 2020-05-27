@@ -182,12 +182,22 @@ Enter your name:<input>
   nameParagraph.innerHTML += "Susan";
   ```
 
-# References
+
+
+# Further Reading
+
+## Tutorials
 
 - [JavaScript HTML DOM](https://www.w3schools.com/js/js_htmldom.asp) - W3Schools
-
 - [JavaScript HTML DOM Document](https://www.w3schools.com/js/js_htmldom_document.asp) - W3Schools
 - [JavaScript HTML DOM Elements](https://www.w3schools.com/js/js_htmldom_elements.asp) - W3Schools
+- [JavaScript Events](https://www.w3schools.com/js/js_events.asp) - W3Schools
+
+## Reference
+
+[DOM (Document Object Model)](https://developer.mozilla.org/en-US/docs/Glossary/DOM) - MDN
+
+[Event Reference](https://developer.mozilla.org/en-US/docs/Web/Events) - MDN
 
 
 

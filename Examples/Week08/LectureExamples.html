@@ -37,13 +37,13 @@
     </script>
 
     <h3>Using a button to get input</h3>
-    Enter your name:<input>
+    Enter your name:<input id="yourName">
     <button onclick="inputName()">Enter</button>
     <p>Hello: <span></span></p>
     <script>
         function inputName() {
-            let name = document.querySelector("input").value;
-            document.querySelector("span").innerHTML = name;
+            let name = document.querySelector("#yourName").value;
+            document.querySelector("p span").innerHTML = name;
         }
     </script>
 

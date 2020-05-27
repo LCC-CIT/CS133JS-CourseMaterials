@@ -62,9 +62,9 @@ JavaScript can respond to various things that happen in the browser. These thing
 
 ## Common events
 
-- onchange: 	      An HTML element has been changed.
+- onchange	      An HTML element has been changed.
 
-- onclick:                The user clicks an HTML element.
+- onclick                The user clicks an HTML element.
 
 - onmouseover     The mouse pointer moves over an HTML element.
 
@@ -138,7 +138,6 @@ Event handlers are JavaScript functions that are called when events occur.
 - [JavaScript HTML DOM](https://www.w3schools.com/js/js_htmldom.asp) - W3Schools
 
   
-
 
 
 

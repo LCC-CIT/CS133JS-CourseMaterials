@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page I/O</title>
+</head>
+
+<body>
+    <h1>Web Page Input and Output</h1>
+
+    <h2>Referencing HTML Elements</h2>
+    <strong>Greetings</strong>
+    <p id="eugene">Hello Eugene!</p>
+    <p id="lcc">Hello LCC!</p>
+    <p id="cit">Hello CIT!</p>
+    <script>
+        document.getElementById("lcc").innerHTML = "Hello Lane Community College!";
+        document.querySelector("#cit").innerHTML = "Greetings CIT!";
+    </script>
+
+    <h2>Accssing Element Attributes</h2>
+    <input id="name" value="Your name"><br> Name:
+    <script>
+        let name = document.getElementById("name").value;
+        document.write(name);
+    </script>
+
+    <h3>Event Handlers</h3>
+    <p onmouseover="doSomething()">This paragraph has an onmouseover event</p>
+    <span></span>
+    <script>
+        function doSomething() {
+            document.querySelector("span").innerHTML += "Something";
+        }
+    </script>
+
+    <h3>Using a button to get input</h3>
+    Enter your name:<input>
+    <button onclick="inputName()">Enter</button>
+    <p>Hello: <span></span></p>
+    <script>
+        function inputName() {
+            let name = document.querySelector("input").value;
+            document.querySelector("span").innerHTML = name;
+        }
+    </script>
+
+    <h3>Displaying Output</h3>
+    <p id="studentName">Student's name: </p>
+    <script>
+        let nameParagraph = document.getElementById("studentName");
+        nameParagraph.innerHTML += "Susan";
+    </script>
+
+</body>
+
+</html>

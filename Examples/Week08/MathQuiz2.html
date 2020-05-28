@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Written by Brian Bird, 4/16/20.
+        Revised by Brian Bird to eliminate prompts 5/28/20.
+        This version uses simple code. -->
+    <meta charset="UTF-8" />
+    <title>Math Quiz</title>
+    <script src="MathQuiz2.js"></script>
+</head>
+
+<body>
+    <h1>Math Quiz</h1>
+
+    Below are a series of math questions.
+    After you have answered each one, 
+    whether it was right or wrong will be shown on the web page.
+    <ol>
+        <!--Question 1-->
+        <li id="q1">
+            What is <span></span>?<br> <!-- The question will be shown here -->
+            <input><button onclick="checkAnswer1();">Enter</button>
+            <p>Your answer is: <span></span></p>  <!-- Whether the answer was right or wrong will be shown here -->
+            <script>
+                const Q1_N1 = 12, Q1_N2 = 15;  // The numbers for this question
+                // Put the numbers in the question on the page
+                document.querySelector("#q1 span").innerHTML = Q1_N1 + " + " + Q1_N2;
+                function checkAnswer1() {
+                    // Get the user's input
+                    let response = document.querySelector("#q1 input").value;
+                    let isRight = addTest(Q1_N1, Q1_N2, response);
+                    // Put "right" or "wrong" on the page
+                    document.querySelector("#q1 p span").innerHTML = isRight;
+                }
+            </script>
+        </li>
+        <!--Question 2-->
+        <li id="q2">
+            What is <span></span>?<br> <!-- The question will be shown here -->
+            <input><button onclick="checkAnswer2();">Enter</button>
+            <p>Your answer is: <span></span></p>  <!-- Whether the answer was right or wrong will be shown here -->
+            <script>
+                const Q2_N1 = 111, Q2_N2 = 21;  // The numbers for this question
+                // Put the numbers in the question on the page
+                document.querySelector("#q2 span").innerHTML = Q2_N1 + " + " + Q2_N2;
+                function checkAnswer2() {
+                    // Get the user's input
+                    let response = document.querySelector("#q2 input").value;
+                    let isRight = addTest(Q2_N1, Q2_N2, response);
+                    // Put "right" or "wrong" on the page
+                    document.querySelector("#q2 p span").innerHTML = isRight;
+                }
+            </script>
+        </li>
+        <!--Question 3-->
+        <li id="q3">
+            What is <span></span>?<br> <!-- The question will be shown here -->
+            <input><button onclick="checkAnswer3();">Enter</button>
+            <p>Your answer is: <span></span></p>  <!-- Whether the answer was right or wrong will be shown here -->
+            <script>
+                const Q3_N1 = 2200, Q3_N2 = 1011;  // The numbers for this question
+                // Put the numbers in the question on the page
+                document.querySelector("#q3 span").innerHTML = Q3_N1 + " + " + Q3_N2;
+                function checkAnswer3() {
+                    // Get the user's input
+                    let response = document.querySelector("#q3 input").value;
+                    let isRight = addTest(Q3_N1, Q3_N2, response);
+                    // Put "right" or "wrong" on the page
+                    document.querySelector("#q3 p span").innerHTML = isRight;
+                }
+            </script>
+        </li>
+
+        <!--Question 4-->
+        <li id="q4">
+            What is <span></span>?<br> <!-- The question will be shown here -->
+            <input><button onclick="checkAnswer4();">Enter</button>
+            <p>Your answer is: <span></span></p>  <!-- Whether the answer was right or wrong will be shown here -->
+            <script>
+                const Q4_N1 = 10, Q4_N2 = 2;  // The numbers for this question
+                // Put the numbers in the question on the page
+                document.querySelector("#q4 span").innerHTML = Q4_N1 + " - " + Q4_N2;
+                function checkAnswer4() {
+                    // Get the user's input
+                    let response = document.querySelector("#q4 input").value;
+                    let isRight = subtractTest(Q4_N1, Q4_N2, response);
+                    // Put "right" or "wrong" on the page
+                    document.querySelector("#q4 p span").innerHTML = isRight;
+                }
+            </script>
+
+        </li>
+        <!--Question 5-->
+        <li id="q5">
+            What is <span></span>?<br> <!-- The question will be shown here -->
+            <input><button onclick="checkAnswer5();">Enter</button>
+            <p>Your answer is: <span></span></p>  <!-- Whether the answer was right or wrong will be shown here -->
+            <script>
+                const Q5_N1 = 222, Q5_N2 = 50;  // The numbers for this question
+                // Put the numbers in the question on the page
+                document.querySelector("#q5 span").innerHTML = Q5_N1 + " - " + Q5_N2;
+                function checkAnswer5() {
+                    // Get the user's input
+                    let response = document.querySelector("#q5 input").value;
+                    let isRight = subtractTest(Q5_N1, Q5_N2, response);
+                    // Put "right" or "wrong" on the page
+                    document.querySelector("#q5 p span").innerHTML = isRight;
+                }
+            </script>
+       </li>
+
+        <!--Question 6-->
+        <li id="q6">
+            What is <span></span>?<br> <!-- The question will be shown here -->
+            <input><button onclick="checkAnswer6();">Enter</button>
+            <p>Your answer is: <span></span></p>  <!-- Whether the answer was right or wrong will be shown here -->
+            <script>
+                const Q6_N1 = 1234, Q6_N2 = 123;  // The numbers for this question
+                // Put the numbers in the question on the page
+                document.querySelector("#q6 span").innerHTML = Q6_N1 + " - " + Q6_N2;
+                function checkAnswer6() {
+                    // Get the user's input
+                    let response = document.querySelector("#q6 input").value;
+                    let isRight = subtractTest(Q6_N1, Q6_N2, response);
+                    // Put "right" or "wrong" on the page
+                    document.querySelector("#q6 p span").innerHTML = isRight;
+                }
+            </script>
+        </li>
+    </ol>
+</body>
+
+</html>

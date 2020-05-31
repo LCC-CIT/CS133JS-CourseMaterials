@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- By Brian Bird, 5/30/2020 -->
+    <meta charset="UTF-8">
+    <script src="OpinionPoll1.js"></script>
+
+    <!------------------>
+    <!-- Embedded CSS -->
+    <!------------------>
+    <style>
+        thead,
+        tfoot {
+            font-size: larger;
+        }
+        
+        button {
+            font-size: medium;
+        }
+        
+        table,
+        td,
+        th {
+            border-collapse: collapse;
+            border-style: solid;
+            padding: 10px;
+        }
+        
+        tfoot td {
+            text-align: right;
+        }
+    </style>
+    <title>Grade Book</title>
+</head>
+
+<!--------------->
+<!-- HTML BODY -->
+<!--------------->
+
+<body>
+    <h1>Opinion Poll</h1>
+    This opinion poll can be run on a notebook or mobile device that can be passed from one voter to another.<br>Each person is on their honor to just vote once!<br>The table shows the total number of people who voted and the tally of yes and no votes
+    for each question.
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Questions</th>
+                <th>Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="row1">
+                <td>Do you think AI (Artificial Intelligece) is dangerous?</td>
+                <td><input type="checkbox" id="q1"><label for="q1">Yes</label></td>
+                <td>0</td>
+            </tr>
+            <tr id="row2">
+                <td>Do you think people will loose jobs because of AI?</td>
+                <td><input type="checkbox" id="q2"><label for="q2">Yes</label></td>
+                <td>0</td>
+            </tr>
+            <tr id="row3">
+                <td>Should AI be be regulated by the government?</td>
+                <td><input type="checkbox" id="q3"><label for="q3">Yes</label></td>
+                <td>0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="3"><button onclick="addVotes()">Enter Vote</button></td>
+        </tfoot>
+    </table>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- By Brian Bird, 5/30/2020 -->
+    <meta charset="UTF-8">
+    <script src="OpinionPoll2.js"></script>
+
+    <!------------------>
+    <!-- Embedded CSS -->
+    <!------------------>
+    <style>
+        thead,
+        tfoot {
+            font-size: larger;
+        }
+        
+        button {
+            font-size: medium;
+        }
+        
+        table,
+        td,
+        th {
+            border-collapse: collapse;
+            border-style: solid;
+            padding: 10px;
+        }
+        
+        tfoot td {
+            text-align: right;
+        }
+    </style>
+    <title>Grade Book</title>
+</head>
+
+<!--------------->
+<!-- HTML BODY -->
+<!--------------->
+
+<body>
+    <h1>Opinion Poll</h1>
+    This opinion poll can be run on a notebook or mobile device that can be passed from one voter to another.<br>Each person is on their honor to just vote once!<br>The table shows the total number of people who voted and the tally of yes and no votes
+    for each question.
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3" rowspan="2">Questions</th>
+                <th colspan="2">Totals</th>
+            </tr>
+            <tr>
+                <th>Yes</th>
+                <th>No</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="row1">
+                <td>1</td>
+                <td>Do you think AI (Artificial Intelligece) is dangerous?</td>
+                <td><input type="radio" id="q1yes" name="q1" value="yes"><label for="q1yes">Yes</label>
+                    <input type="radio" id="q1no" name="q1" value="no"><label for="q1no">No</label></td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr id="row2">
+                <td>2</td>
+                <td>Do you think people will loose jobs because of AI?</td>
+                <td><input type="radio" id="q2yes" name="q2" value="yes"><label for="q2yes">Yes</label>
+                    <input type="radio" id="q2no" name="q2" value="no"><label for="q2no">No</label></td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr id="row3">
+                <td>3</td>
+                <td>Should AI be be regulated by the government?</td>
+                <td><input type="radio" id="q3yes" name="q3" value="yes"><label for="q3yes">Yes</label>
+                    <input type="radio" id="q3no" name="q3" value="no"><label for="q3no">No</label></td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><button onclick="addVotes()">Enter Vote</button></td>
+                <td>Total times voted</td>
+                <td colspan="2">0</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+</body>
+
+</html>

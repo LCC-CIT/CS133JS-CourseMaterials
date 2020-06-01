@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- By Brian Bird, 5/31/2020 -->
+    <meta charset="UTF-8">
+    <script src="OpinionPoll3.js"></script>
+
+    <!------------------>
+    <!-- Embedded CSS -->
+    <!------------------>
+    <style>
+        thead {
+            font-size: larger;
+        }
+        
+        input {
+            width: 30px;
+        }
+        
+        button {
+            font-size: medium;
+        }
+        
+        table,
+        td,
+        th {
+            border-collapse: collapse;
+            border-style: solid;
+            padding: 10px;
+        }
+        
+        tfoot td:first-of-type {
+            text-align: right;
+        }
+    </style>
+    <title>AI Poll: Scale</title>
+</head>
+
+<!--------------->
+<!-- HTML BODY -->
+<!--------------->
+
+<body>
+    <h1>Opinion Poll on AI with Scaled Responses</h1>
+    <p>Enter a number from 0 to 5 for each response with 0 meaning "not at all" and 5 meaning "a lot". Check the "Don't know" checkbox if you don't have an opinion.</p>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="3">Questions</th>
+                <th>Average</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="row1">
+                <td>How dangerous do you think AI (Artificial Intelligece) is?</td>
+                <td><input type="number" min="0" max="5"></td>
+                <td><input type="checkbox" id="q1" onclick="noInput(1)"><label for="q1">Don't know</label></td>
+                <td>0</td>
+            </tr>
+            <tr id="row2">
+                <td>Do you think many people will loose jobs because of AI?</td>
+                <td><input type="number" min="0" max="5"></td>
+                <td><input type="checkbox" id="q2" onclick="noInput(2)"><label for="q2">Don't know</label></td>
+                <td>0</td>
+            </tr>
+            <tr id="row3">
+                <td>How much do you thing AI should be be regulated by the government?</td>
+                <td><input type="number" min="0" max="5"></td>
+                <td><input type="checkbox" id="q3" onclick="noInput(3)"><label for="q3">Don't know</label></td>
+                <td>0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"><button onclick="addResponses()">Submit Responses</button></td>
+            </tr>
+            <tr>
+                <td colspan="3">Number of Responses</td>
+                <td>0</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>
+        This opinion poll can be run on a notebook or mobile device that can be passed from one voter to another.
+        <br>Each person is on their honor to just vote once!<br>The table shows the total number of people who voted and the tally of yes and no votes for each question.</p>
+
+
+</body>
+
+</html>

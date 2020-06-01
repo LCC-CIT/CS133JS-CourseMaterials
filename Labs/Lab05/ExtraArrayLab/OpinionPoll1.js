@@ -9,7 +9,7 @@ let votes = [0, 0, 0];
 // It adds one to the count of votes for each question that has a checked checkbox.
 // Parameters: none
 // Returns: nothing
-/* TODO: Write the function described above. 
+/* TODO: Write this function. 
     The function should add 1 to the value in each element of the votes array
     for which the corrsponsding check box has been checked. Use the getVote
     function to get the value of each check box. Call updateTable at the

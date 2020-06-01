@@ -2,7 +2,7 @@
 // In the nested arrays (inner arrays), the element at index:
 //    0 holds the number of responses
 //    1 holds the average of the scores
-/* TODO: Declare and initialize this array with values of 0 in every element */
+/* TODO: Declare and initialize the responses array with values of 0 in every element */
 
 // totalResponses adds up the total number of responses.
 // It is called by updateTable

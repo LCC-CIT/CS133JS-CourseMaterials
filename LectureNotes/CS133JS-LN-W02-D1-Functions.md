@@ -101,7 +101,7 @@ In math, a function has: input, operation(s), output
 
 ### A simple function
 
-This function has on inputs and put's its output in an alert. 
+This function has no inputs and put's its output in an alert. 
 
 1. This is the function definition. 
 

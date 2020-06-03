@@ -1,0 +1,385 @@
+150 points: 30 questions at 5 points each. 2 extra credit.
+Mark A for TRUE and B for FALSE
+
+1. T F  Entering "17" for age, and  "US" for citizenship will result in an alert displaying "You can register to vote":
+
+let age = parseInt(prompt("How old are you?"));
+let citizenship = prompt("Of which country are you a citizen?");
+
+if (age >= 17 && citizenship == "US")
+	alert("You can register to vote");
+else 
+	alert("Sorry, you can’t vote");
+
+
+
+2. Given the code blow, entering "24" will result in an alert displaying which number?
+
+let number = parseInt(prompt("Enter a whole number:"));
+let remainder = number % 5;
+
+alert(remainder);
+
+a. 24    b. 1   c. 2    d. 4    e. 0
+
+
+
+3. Given the code below, what will be displayed by the alert?
+
+let text = "";
+for(let count = 1; count < 9; count++)
+{
+	text += count;
+}
+alert(text);
+
+a. 9       b. 123456789      c. 12345678      d. 8      e. 0123456789
+
+
+
+ 
+4. T F  All of the following are valid JavaScript math operators:
+
+-       -=       ++       --     *     *=        
+
+
+
+5. Which of the following is NOT a valid JavaScript primitive type?
+
+a. Boolean    b. number   c. string    d. let     e. integer
+
+
+
+
+6. Which of the following is NOT a valid JavaScript keyword?
+
+a. let        b. for       c. if        d. button        e. new
+
+
+
+33. T F  Typing "11" at the prompt will result in an alert displaying "You’re probably in middle school":
+
+let age = parseInt(prompt("How old are you?"));
+let school = "";
+if (age >= 5 && age <= 10)
+	school = "in elementary";
+else if (age <= 13)
+	school = "in middle";
+else if (age <= 18)
+	school = "in high"
+else 
+	alert ("not in");
+
+alert("You’re probably " + school + " school");
+
+
+
+34. T F  The alert in the code shown below will never be displayed.
+
+let sum = 0; 
+for(let i = 1; i > 0; i++)  {
+	sum += i;
+}
+alert("all done");
+
+ 
+7. T F  The function shown below would be called with this statement: mean();
+
+let mean = function(a, b, c)  {
+	return (a + b + c) / 3.0;
+}
+
+
+
+8. Given the code below, what will be displayed by the alert?
+
+function pet(animal)
+{
+	if (animal != "")
+	     return "I like " + animal + "s";
+	else
+	     return "I have no pet";
+}
+
+alert(pet("rat"));
+
+a. I like animals      b. I like rats      c. I have no pet     d. rat      e. nothing (empty string)
+
+
+
+9. T F  Given the code below, the alert will display: Hello.
+
+function speak(message)
+{
+	alert(message);
+}
+
+let greeting = "Hello";
+let message = "Goodbye";
+speak(greeting);
+
+
+
+10. T F  Assume there is a button with id="enter" in an html file. The following code will assign a function named compute to the button’s click event:
+
+let aButton = document.getElementById("enter");
+aButton.addEventListener("click", compute);
+
+
+
+ 
+11. T F  Assume there is an input element with id="numberIn". The following code will get a value from that element and store it in a variable:
+
+let inputText = document.getElementById("numberIn");
+let number = inputText.value;
+
+
+
+12. What will be displayed by the alert in the code below?
+
+let iceCream = ["chocolate", "raspberry",
+    "espresso", "ginger", "blackberry"];
+alert(iceCream[1]);
+
+a. chocolate     b. raspberry       c. espresso     d. ginger     e. None
+
+
+
+13. T F   If a user enters "blackberry" at the prompt, the alert in the following code will display "we have it!".
+
+let iceCream = ["chocolate", "raspberry",
+    "espresso", "ginger", "blackberry"];
+
+let choice = prompt("Enter your choice of ice cream");
+for(let i = 0; i < 5; i++)
+if(iceCream[i] == choice)
+     alert("we have it!");
+
+
+
+14. Object properties can be which of the following:
+
+a. methods
+b. arrays
+c. other objects
+d. primitive JavaScript types
+e. all of the above
+
+
+
+ 
+15. Given the object shown below, choose a statement that would add a chickadee to the aviary. (The statement will be executed after the object definition.)
+
+let aviary = {
+     birds: ["robin", "blue jay", "junko", "crow"],
+     addBird: function(bird) {
+          this.birds.push(bird);
+     }
+};
+
+a. aviary.push("chickadee");
+b. birds.addBird("chickadee");
+c. bird = "chickadee";
+d. aviary.addBird("chickadee");
+e. birds[4] = "chickadee";
+
+
+
+16. Given the object shown below, what statement should be used to get a list of birds in the aviary?
+
+let aviary = {
+     birds: ["robin", "blue jay", "junko", "crow"],
+     addBird: function(bird) {
+          this.birds.push(bird);
+     },
+	listBirds:function() {
+    		let list = "";
+          for(let i in this.birds)
+               list += this.birds[i] + " ";
+		return list;
+	}
+};
+
+a. listBirds("aviary");
+b. aviary.listBirds();
+c. aviary.this.listBirds();
+d. birds.listBirds();
+e. aviary.listBirds("birds");
+
+
+
+ 
+17.  T F  Assume that an html page contains this element: <div id="message"></div> . Will the code below display "hello user!" on the page (in the div)?
+
+$(".message").html("hello user!");
+
+
+
+18.  T F  Assume that an html page contains this element: <input type="text" id="side1"> . Will the code below assign the value entered in the text box to the letiable side1?
+
+let side1 = parseInt($("#side1").val());
+
+
+
+19. In jQuery, $ is an alias for which function?
+
+a. getElementById    b. ready   c. jQuery    d. get     e. getElement
+
+
+
+20. What will the following code display on the console?
+
+let romanNumerals = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
+console.log(romanNumerals[5]);
+
+a. 5        b. V       c. VI        d. nothing        e. 0
+
+
+
+21.  T F  The function below will correctly count the number of vowels in a word that is passed to it.
+
+function countVowels(word) {
+   let count = 0;
+   let vowels = "aeiou";
+   for (let i = 0; i < word.length; i++)
+	if(vowels.indexOf(word.charAt(i)) >= 0)
+	   count++;
+
+   return count;
+}
+
+
+
+ 
+22.  T F  The code below will cause the number 1 to be displayed in the console.
+
+let count = 0;
+do {
+	   count++;
+} while(count < 0);
+console.log(count);
+
+
+
+23. What will the following code display on the console?
+
+let names = ["Mary", "John", "Fred", "Sue", "Anne", "Beth"];
+let nameString = ""
+for (let i = names.length - 1; i > 0; i--)
+	nameString += names[i] + " ";
+console.log(nameString);
+
+a. Mary John Fred Sue Anne Beth
+b. John Fred Sue Anne Beth
+c. Mary John Fred Sue Anne       
+d. Beth Anne Sue Fred John
+e. Beth Anne Sue Fred John Mary
+
+
+
+24. T F  Is it possible that the code below could cause 02934927965 to be logged to the console?
+
+let digits = "";
+do {
+   let randDigit = Math.floor(Math.random() * 10);
+   digits += String(randDigit);
+}
+while(randDigit != 5);
+ console.log(digits);
+
+
+
+25. T F The following example prints 5 on the console.
+
+let s = "one seven eight niner";
+let arr = s.split(' ');
+console.log(arr[0].length);
+
+
+
+26. T F The do-while example below displays this on the console: There are 2 tasks to do.
+
+let tasksToDo = 0;
+do {
+     tasksToDo++;
+} while (tasksToDo < 1);
+console.log('There are ' + tasksToDo + ' tasks to do');
+
+
+
+27. T F The following prints 20 on the console.
+
+let numbers = [2, 4, 6, 8, 2];
+let counter = 1;
+let sum = 0;
+while (counter < numbers.length) {
+   sum = sum + numbers[counter];
+   counter++;
+}
+console.log(sum);
+
+
+
+28. What will the following code display on the console?
+
+let mascot = "Duck";
+
+function cheer(mascot) {
+   return "Go " + mascot + "s!";
+}
+
+mascot = "Titan";
+console.log(cheer("Beaver"));
+
+a. Go Titans!       b. Go Beavers!       c. Go Ducks!         d. Go s!       e. Go mascots!
+
+
+
+29. T F  The following prints true on the console.
+
+let animal = "Nigerian Dwarf Goat: Africa";
+let pattern = new RegExp("[Gg]oat");
+console.log(pattern.test(animal));
+
+
+
+
+30. After pasting the code below into the console, what would you type in order to see "Batgirl" displayed?
+
+let batman = '{"name": "Batman","real name": "Bruce Wayne","height":74,"weight": 210,"hero": true,"villain": false,"allies": ["Robin","Batgirl","Superman"]}'; 
+
+hero = let JSON.parse(batman);
+
+a. hero.allies.Batgirl      b. allies[Batgirl]      c. hero.allies[Batgirl]        
+d. batman.allies[1]         e. hero.allies[1]
+
+
+
+31. After pasting the code below into the console, hat would you type in order to see a random number displayed?
+
+dice = {
+   sides: 6,
+   roll: function(){
+   return Math.floor(6 * Math.random()) + 1;
+}
+}
+
+a. roll()              b. function()                    c. dice.roll()       d.  dice.function()      e. dice.sides
+
+
+
+32. T F  Given the code below, the alert will display 2.
+
+function average()
+{
+	let a = 0;
+	let b = 0;
+	let c = 0;
+	return (a + b + c) / 3.0;
+}
+
+let a = 1;
+let b = 2;
+let c = 3;
+average();
+

@@ -113,24 +113,26 @@ When we put code inside curly braces in a branch of an if statement or in a case
 For example:
 
 ```javascript
-let calculation = 0;
-let radius = 0;
-calculation = prompt("Do you want to find 1) the circumference, or 2) the area of a circle? (Enter 1 or 2)");
-radius = prompt("Enter the radius of the circle.");
-if (calculation == 1)
-{
-  let circumference = 2 * 3.141 * radius;  // a local variable
-  console.log(circumference);
+let age = prompt("Enter your age");
+let maxHeartRate = 220 - age; // 220 is a number for estimating max heart rate
+let activityLevel = prompt("Do you want to do moderate or vigorous exercise? (m or v)");
+let lowerHeartRate = 0,
+    upperHeartRate = 0;
+
+if (activityLevel == "m") {
+    const MODERATE_INTENSITY_MIN = 64; // percentage of maximum heart rate
+    const MODERATE_INTENSITY_MAX = 76;
+    lowerHeartRate = maxHeartRate * MODERATE_INTENSITY_MIN * 0.01;
+    upperHeartRate = maxHeartRate * MODERATE_INTENSITY_MAX * 0.01;
+} else {
+    const VIGOROUS_INTENSITY_MIN = 77; // percentage of maximum heart rate
+    const VIGOROUS_INTENSITY_MAX = 93;
+    lowerHeartRate = maxHeartRate * VIGOROUS_INTENSITY_MIN * 0.01;
+    upperHeartRate = maxHeartRate * VIGOROUS_INTENSITY_MAX * 0.01;
 }
-else if (calculation == 2)
-{
-  let area = 3.141 * radius * radius;       // another local variable
-  console.log(area);
-}
-else
-{
-  console.log("Not a valid choice.")
-}
+
+console.log("Your heart rate should be between: " + lowerHeartRate.toFixed(0) +
+    " and " + upperHeartRate.toFixed(0) + " BPM.")
 
 ```
 

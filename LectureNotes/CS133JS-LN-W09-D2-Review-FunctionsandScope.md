@@ -94,7 +94,7 @@ Another exercise:
 
 ```javascript
 console.log(t);    // is t valid here?
-var t = 0;
+let t = 0;
 
 function total(n1, n2, n3)
 {
@@ -145,12 +145,16 @@ The loop counter's scope is local to the loop.
 let result = 10;
 for (let i = 1;  i <= 10;  i++) 
 {            
-   result *= 10;       // local variable
+   result *= 10;       
    console.log(result);
 }
 ```
 
-Is i a local variable? How can you prove it?
+Questions:
+
+- Is i a local variable? How can you prove it? 
+- Does result need to be declared outside the loop? Why or why not?
+- Can we eliminate the result variable and just use i?
 
 ### Objects
 
@@ -171,7 +175,11 @@ const loft = {
 }
 ```
 
-Are any of the variables, object, or function visible outside the object?
+Questions:
+
+- Are any of the variables, object, or function visible outside the object?
+- Are the properties of the <u>inner</u> object visible to the <u>outer</u> object?
+- Are the properties of the <u>outer</u> object visible to the <u>inner</u> object?
 
 
 
@@ -199,7 +207,7 @@ for(let i = 0; i < runners.length; i++) {
 }
 ```
 
-Exercise: put the for loop into a function
+Exercise: put the for loop into a function.
 
 Another exercise: write another function to find the runner with the fastest time.
 

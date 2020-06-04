@@ -22,14 +22,14 @@ let votes = [
 /*************************************************/
 
 // addVotes adds one to the count of yes or no votes for one question
-// Parameters:
-//   quesitonNumber - the question ID number
-//   isYes - true if the yes button was clicked, false if the no button was clicked
+// Parameters: none
 //Returns: nothing
 /* TODO: Write this function.
    For each element of the outer array, this code needs to 
-   add 1 to either the element of the inner array,
-   depending on which radio button was sleected.
+   add 1 to either element of the inner array,
+   depending on which radio button was selected.
+   Call getIndexFromRadio to get a number to use as an index for the inner array.
+   Call updateTable at the end of this function.
 */
 
 

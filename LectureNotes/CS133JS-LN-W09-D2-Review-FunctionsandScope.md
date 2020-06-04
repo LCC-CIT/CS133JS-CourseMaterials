@@ -163,10 +163,10 @@ Questions:
 
 
 ```javascript
-const loft = {
-  water: 100,  // percent full water
-  food: 100,    // percent full food
-  pigeon: {
+const loft = {          // parent object
+  water: 100, 
+  food: 100,   
+  pigeon: {              // child object
       name: "Agatha", 
       type: "Egyptian Swift", 
       speed: 50,
@@ -179,11 +179,11 @@ const loft = {
 
 Questions:
 
-- Are any of the variables, object, or function visible outside the object?
-- Are the properties of the <u>inner</u> object visible to the <u>outer</u> object?
-- Are the properties of the <u>outer</u> object visible to the <u>inner</u> object?
+- Are any of the object properties directly accessible outside the *loft* object?
+- Are the properties of the <u>child</u> object directly accessible to the <u>parent</u> object?
+- Are the properties of the <u>parent</u> object directly accessible to the <u>child</u> object?
 
-
+  **Note:** We could use `super` in the child object to access the properties in the parent object, but that isn't *direct access* and is beyond the scope of this course.
 
 
 

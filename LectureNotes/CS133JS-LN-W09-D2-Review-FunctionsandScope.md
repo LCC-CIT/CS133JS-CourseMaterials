@@ -202,9 +202,9 @@ let runners = [ {name:"Emily", time:10.35}, {name:"Hannah", time:12.92}, {name:"
 
 // Find the qualifying runners and display them on the console
 // Find the qualifying runners and display them on the console
-for(let i = 0; i < runners.length; i++) {
-  if (runners[i].time <= QUALIFYING_TIME) {
-     console.log(runners[i].name);
+for(let runner of runners) {
+  if (runner.time <= QUALIFYING_TIME) {
+     console.log(runner.name);
   }
 }
 ```

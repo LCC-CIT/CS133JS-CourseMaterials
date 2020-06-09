@@ -7,8 +7,8 @@
 | ---------------------------------------- | ----------------------------------------------- |
 | 1. Intro to JavaScript programming       | 6. Arrays                                       |
 | 2. Functions, Operators and Expressions  | 7. <mark>Objects and Object Constructors</mark> |
-| 3. Conditional Statements: if and switch | 8. Event Methods                                |
-| 4. Repetition: while, do while, and for  | 9. DOM                                          |
+| 3. Conditional Statements: if and switch | 8. Web Page I/O                                 |
+| 4. Repetition: while, do while, and for  | 9. Review                                       |
 | 5. Midterm Check-Point                   | 10. Final                                       |
 
 
@@ -31,7 +31,7 @@
 
 ## Review of Objects
 
-### Creating an Object
+### Creating an Object Literal
 
 ```javascript
 const fili = {

@@ -160,7 +160,7 @@ Questions:
 
 ### Objects
 
-
+Inside an compound objects, we don't really have scope. Instead we need to think about the concept of encapsulation and how we access object via the dot operator.
 
 ```javascript
 const loft = {          // parent object
@@ -198,7 +198,7 @@ While it is usually advisable not to use global variables, they can be useful wh
 ```javascript
 const QUALIFYING_TIME = 11.15;
 // Array of runner objects with name and time properties
-let runners = [ {name:"Emily", time:10.35}, {name:"Hannah", time:12.92}, {name:"Madison", time:9.87}, {name:"Ashley", time:11.16}, {name:"Sarah", time:12.01},{name:"Alexis", time:11.15}];  
+let runners = [ {name:"Emily", time:10.35}, {name:"Hannah", time:12.92}, {name:"Madison", time:9.87}, {name:"Ashley", time:11.16}, {name:"Sarah", time:12.01}, {name:"Alexis", time:11.15}];  
 
 // Find the qualifying runners and display them on the console
 // Find the qualifying runners and display them on the console

@@ -160,13 +160,13 @@ Questions:
 
 ### Objects
 
-
+Inside an compound objects, we don't really have scope. Instead we need to think about the concept of encapsulation and how we access object via the dot operator.
 
 ```javascript
-const loft = {
-  water: 100,  // percent full water
-  food: 100,    // percent full food
-  pigeon: {
+const loft = {          // parent object
+  water: 100, 
+  food: 100,   
+  pigeon: {              // child object
       name: "Agatha", 
       type: "Egyptian Swift", 
       speed: 50,
@@ -179,11 +179,11 @@ const loft = {
 
 Questions:
 
-- Are any of the variables, object, or function visible outside the object?
-- Are the properties of the <u>inner</u> object visible to the <u>outer</u> object?
-- Are the properties of the <u>outer</u> object visible to the <u>inner</u> object?
+- Are any of the object properties directly accessible outside the *loft* object?
+- Are the properties of the <u>child</u> object directly accessible to the <u>parent</u> object?
+- Are the properties of the <u>parent</u> object directly accessible to the <u>child</u> object?
 
-
+  **Note:** We could use `super` in the child object to access the properties in the parent object, but that isn't *direct access* and is beyond the scope of this course.
 
 
 
@@ -198,13 +198,13 @@ While it is usually advisable not to use global variables, they can be useful wh
 ```javascript
 const QUALIFYING_TIME = 11.15;
 // Array of runner objects with name and time properties
-let runners = [ {name:"Emily", time:10.35}, {name:"Hannah", time:12.92}, {name:"Madison", time:9.87}, {name:"Ashley", time:11.16}, {name:"Sarah", time:12.01},{name:"Alexis", time:11.15}];  
+let runners = [ {name:"Emily", time:10.35}, {name:"Hannah", time:12.92}, {name:"Madison", time:9.87}, {name:"Ashley", time:11.16}, {name:"Sarah", time:12.01}, {name:"Alexis", time:11.15}];  
 
 // Find the qualifying runners and display them on the console
 // Find the qualifying runners and display them on the console
-for(let i = 0; i < runners.length; i++) {
-  if (runners[i].time <= QUALIFYING_TIME) {
-     console.log(runners[i].name);
+for(let runner of runners) {
+  if (runner.time <= QUALIFYING_TIME) {
+     console.log(runner.name);
   }
 }
 ```

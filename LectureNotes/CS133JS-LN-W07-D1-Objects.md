@@ -8,9 +8,9 @@
 | Topics by Week                                       |            |
 | ---------------------------------------------------- | ---------- |
 | 1. Intro to JavaScript programming                   | 6. Arrays  |
-| 2. Functions, Operators and Expressions              | 7. <mark>Objects</mark> |
-| 3. Conditional Statements: if and switch             | 8. Methods |
-| 4. Repetition: while, do while, and for | 9. DOM     |
+| 2. Functions, Operators and Expressions              | 7. <mark>Objects and Object Constructors</mark> |
+| 3. Conditional Statements: if and switch             | 8. Web Site I/O |
+| 4. Repetition: while, do while, and for | 9. Review |
 | 5. Midterm Check-Point                               | 10. Final  |
 
 
@@ -120,7 +120,7 @@ Two ways to create an object:
       brother: "Kili",
       greet: function() {
           return this.name + " at your service!";
-      },
+      }
   };
   ```
 

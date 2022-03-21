@@ -136,7 +136,7 @@ console.log(n1); // Are n1, n2 and n3 valid here?
 - Variables defined outside the function, with the same name as the function parameters, are different variables. Below we have two sets of variables with the same names, but in different scopes:
 
    ```javascript
-function total(n1, n2, n3)  {
+  function total(n1, n2, n3)  {
      var t = n1 + n2 + n3; 
      return t;
   }
@@ -229,7 +229,7 @@ let hobbit;   // The variable should have been declared before using  it.
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
    ```

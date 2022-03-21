@@ -2,20 +2,25 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<title>CS133JS_GettingStarted</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+<meta name="title" content="${title}">
+<meta name="description" content="${description}">
+<meta name="keywords" content="${keywords}">
+<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit; background-repeat: inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
 #write.first-line-indent p { text-indent: 2em; }
 #write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
 #write.first-line-indent li { margin-left: 2em; }
 .for-image #write { padding-left: 8px; padding-right: 8px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 .typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
 @media screen and (max-width: 500px) { 
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
@@ -24,14 +29,14 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
-img { max-width: 100%; vertical-align: middle; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
 button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
 *, ::after, ::before { box-sizing: border-box; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
 p { line-height: inherit; }
-h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
 p { orphans: 4; }
 h1 { font-size: 2rem; }
 h2 { font-size: 1.8rem; }
@@ -43,11 +48,11 @@ h6 { font-size: 1rem; }
 .hidden { display: none; }
 .md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
 a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
 sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
 figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
-figure > table { margin: 0px !important; }
+figure > table { margin: 0px; }
 tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
@@ -63,8 +68,8 @@ div.hr:focus { cursor: none; }
 #write.fences-no-line-wrapping pre { white-space: pre; }
 #write pre.ty-contain-cm { white-space: normal; }
 .CodeMirror-gutters { margin-right: 4px; }
-.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
-.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
 #write .md-fences.mock-cm { white-space: pre-wrap; }
 .md-fences.md-fences-with-lineno { padding-left: 0px; }
 #write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
@@ -72,31 +77,35 @@ div.hr:focus { cursor: none; }
 .CodeMirror-line, twitterwidget { break-inside: avoid; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
 .footnotes + .footnotes { margin-top: 0px; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
 li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
 li { margin: 0px; position: relative; }
 blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child, li > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
 #write .footnote-line { white-space: pre-wrap; }
 @media print { 
-  body, html { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
-  html.blink-to-pdf { font-size: 13px; }
-  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
-pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
 p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
 p > .md-image:only-child { display: inline-block; width: 100%; }
 #write .MathJax_Display { margin: 0.8em 0px 0px; }
 .md-math-block { width: 100%; }
 .md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
 [contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
@@ -126,19 +135,10 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
-kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
-.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; }
-a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
-.md-inline-math .MathJax_SVG .noError { display: none !important; }
-.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
-.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
-.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
-.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
-.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
-.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
-.MathJax_SVG * { transition: none; }
-.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
@@ -147,10 +147,60 @@ table tr th { border-bottom-width: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
 iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
-svg[id^="mermaidChart"] { line-height: 1em; }
-mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
-mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print { 
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) { 
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) { 
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ''; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ''; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ''; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: '−'; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
 
 
 :root {
@@ -160,12 +210,17 @@ mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
 
 @include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
 
-html {
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
     font-size: 16px;
+    -webkit-font-smoothing: antialiased;
 }
 
 body {
-    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
     color: rgb(51, 51, 51);
     line-height: 1.6;
 }
@@ -176,6 +231,19 @@ body {
   	padding: 30px;
     padding-bottom: 100px;
 }
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
 #write > ul:first-child,
 #write > ol:first-child{
     margin-top: 30px;
@@ -230,17 +298,33 @@ h6 code {
     font-size: inherit;
 }
 h1 {
-    padding-bottom: .3em;
     font-size: 2.25em;
     line-height: 1.2;
     border-bottom: 1px solid #eee;
 }
 h2 {
-   padding-bottom: .3em;
     font-size: 1.75em;
     line-height: 1.225;
     border-bottom: 1px solid #eee;
 }
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
 h3 {
     font-size: 1.5em;
     line-height: 1.43;
@@ -305,7 +389,7 @@ table {
     word-break: initial;
 }
 table tr {
-    border-top: 1px solid #dfe2e5;
+    border: 1px solid #dfe2e5;
     margin: 0;
     padding: 0;
 }
@@ -313,24 +397,24 @@ table tr:nth-child(2n),
 thead {
     background-color: #f8f8f8;
 }
-table tr th {
+table th {
     font-weight: bold;
     border: 1px solid #dfe2e5;
     border-bottom: 0;
     margin: 0;
     padding: 6px 13px;
 }
-table tr td {
+table td {
     border: 1px solid #dfe2e5;
     margin: 0;
     padding: 6px 13px;
 }
-table tr th:first-child,
-table tr td:first-child {
+table th:first-child,
+table td:first-child {
     margin-top: 0;
 }
-table tr th:last-child,
-table tr td:last-child {
+table th:last-child,
+table td:last-child {
     margin-bottom: 0;
 }
 
@@ -479,9 +563,9 @@ header, .context-menu, .megamenu-content, footer{
     color: #b4654d;
 }
 
-.html-for-mac .context-menu {
+/*.html-for-mac {
     --item-hover-bg-color: #E6F0FE;
-}
+}*/
 
 #md-notification .btn {
     border: 0;
@@ -489,6 +573,7 @@ header, .context-menu, .megamenu-content, footer{
 
 .dropdown-menu .divider {
     border-color: #e5e5e5;
+    opacity: 0.4;
 }
 
 .ty-preferences .window-content {
@@ -500,15 +585,16 @@ header, .context-menu, .megamenu-content, footer{
     background: #999;
 }
 
- .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
-</style>
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+
+
+ @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}} .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+</style><title>CS133JS_GettingStarted</title>
 </head>
-<body class='typora-export' >
-<div  id='write'  class = 'is-mac'><h1><a name="getting-started-guide" class="md-header-anchor"></a><span>Getting Started Guide</span></h1><p><span>Course introduction and getting started materials</span></p><h2><a name="table-of-contents" class="md-header-anchor"></a><span>Table of contents</span></h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n1018"><a class="md-toc-inner" style="" href="#getting-started-guide">Getting Started Guide</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1021"><a class="md-toc-inner" style="" href="#table-of-contents">Table of contents</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1023"><a class="md-toc-inner" style="" href="#introduction">Introduction</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1027"><a class="md-toc-inner" style="" href="#first-steps">First Steps</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1051"><a class="md-toc-inner" style="" href="#basic-technology-and-computer-skills">Basic Technology and Computer Skills</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1077"><a class="md-toc-inner" style="" href="#introduction-to-moodle">Introduction to Moodle</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1082"><a class="md-toc-inner" style="" href="#course-structure">Course Structure</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1084"><a class="md-toc-inner" style="" href="#overview">Overview</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1086"><a class="md-toc-inner" style="" href="#resources">Resources</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1088"><a class="md-toc-inner" style="" href="#activities">Activities</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n1090"><a class="md-toc-inner" style="" href="#lab-assignments">Lab assignments</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n1092"><a class="md-toc-inner" style="" href="#lab-partners">Lab Partners</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n1094"><a class="md-toc-inner" style="" href="#getting-and-giving-a-code-review">Getting and Giving a Code Review</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n1096"><a class="md-toc-inner" style="" href="#what-to-do-with-the-code-review-you-get">What to Do with the Code Review You Get</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n1098"><a class="md-toc-inner" style="" href="#what-to-do-if-something-goes-wrong">What to Do If Something Goes Wrong</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n1106"><a class="md-toc-inner" style="" href="#additional-questions">Additional Questions</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1112"><a class="md-toc-inner" style="" href="#on-line-course-communication">On-line Course Communication</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1117"><a class="md-toc-inner" style="" href="#support">Support</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1118"><a class="md-toc-inner" style="" href="#cit-computer-lab">CIT Computer Lab</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1121"><a class="md-toc-inner" style="" href="#general-support">General Support</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1125"><a class="md-toc-inner" style="" href="#bookstoremdashtitan-store">Bookstore—Titan Store</a></span></p></div><h2><a name="introduction" class="md-header-anchor"></a><span>Introduction</span></h2><p><span>Welcome to Beginning Programming: JavaScript!</span></p><p><span>In order to succeed in this class, you will need access to a computer that can run a code editor like </span><a href='https://code.visualstudio.com/'><span>Visual Studio Code</span></a><span> (pretty much any computer can) and have a good internet connection. You must  devote at least 12 hours a week to learning activities. This includes 4  hours participating in Zoom live class streams or viewing recordings,  and at least 8 hours studying and working on your own.</span></p><p><span>Next, read </span><a href='https://classes.lanecc.edu/mod/book/view.php?id=2334923&amp;chapterid=146643'><span>First Steps</span></a><span>, and then </span><em><span>let&#39;s have fun writing code!</span></em></p><h2><a name="first-steps" class="md-header-anchor"></a><span>First Steps</span></h2><p><span>To begin this course, please complete the following steps:</span></p><ol start='' ><li><p><span>Read every page of this Getting Started guid.</span></p></li><li><p><span>Read every page of the syllabus.</span></p></li><li><p><span>Read the Code Review Procedure.</span></p></li><li><p><span>Familiarize yourself with the cycle of weekly learning activities.</span></p></li><li><p><span>Post an introduction message to the Introductions forum.</span></p><p><strong><span>Do the steps below as soon as the resources are available on Moodle. They will be available by 4/1.</span></strong></p></li><li><p><span>Read the overview for week one.</span></p></li><li><p><span>Read/view the required resources for the first week of the course.</span></p></li><li><p><span>Complete the activities/assignments/forum posts for the first week.</span></p></li><li><p><span>Repeat steps 6</span>&ndash;<span>8 for every week according to the course schedule.</span></p></li></ol><p><span>If you have any course-specific questions, please ask them in the Course Q &amp; A forum. For any other questions, support contact information can be found in the Support block.</span></p><p>&nbsp;</p><h2><a name="basic-technology-and-computer-skills" class="md-header-anchor"></a><span>Basic Technology and Computer Skills</span></h2><p><strong><span>To be successful in this course you will need:</span></strong></p><ul><li><span>At least two modern Web Browsers like </span><a href='https://www.mozilla.org/en-US/firefox/new/'><span>Firefox</span></a><span> and </span><a href='https://www.google.com/chrome/'><span>Chrome</span></a><span>.</span></li><li><a href='http://get.adobe.com/reader/'><span>Adobe Reader</span></a><span> for reading PDF files</span></li><li><span>Software for Word processing and viewing PowerPoint slides such as </span><a href='http://www.microsoftstore.com/store/msusa/en_US/cat/All-Office/categoryID.69403900?icid=Office_365_subnav_22092015_All_Office&amp;s_kwcid=AL!4249!3!82552207853!e!!g!!microsoft office&amp;WT.mc_id=pointitsem+Google+Adwords+5+-+Office+15+Suites&amp;ef_id=UsDFgAAAAHy-iVuM:20160104142119:s'><span>MS Office</span></a><span>, </span><a href='http://download.openoffice.org/'><span>OpenOffice.org</span></a><span> or </span><a href='https://www.google.com/accounts/ServiceLogin?service=writely&amp;passive=1209600&amp;continue=http://docs.google.com/&amp;followup=http://docs.google.com/&amp;ltmpl=homepage'><span>GoogleDocs</span></a><span> </span></li><li><span>A code editor,  </span><a href='https://code.visualstudio.com'><span>VisualStudio Code</span></a><span> for Mac OS, Windows and Linux, alternatively, you could use </span><a href='https://notepad-plus-plus.org'><span>Notepad++</span></a><span> on Windows, or </span><a href='http://www.barebones.com/products/textwrangler/'><span>TextWrangler</span></a><span> on Mac OS.</span></li><li><span>An FTP client for uploading files to a web server,  </span><a href='https://filezilla-project.org'><span>FileZilla</span></a><span> for Mac OS, Windows and Linux, alternatively, you could use </span><a href='http://coreftp.com'><span>CoreFTP</span></a><span> for Windows, or </span><a href='https://cyberduck.io'><span>CyberDuck</span></a><span> for Mac OS, or</span></li></ul><p><strong><span>Computer Skills</span></strong></p><ul><li><span>Basic computer skills </span></li><li><span>Experience navigating the Internet and using an Internet browser</span></li><li><span>Basic knowledge of formatting using a word processing program</span></li><li><span>Comfort working with multiple browser windows</span></li><li><span>Ability to create and edit HTML web pages</span></li></ul><p>&nbsp;</p><h2><a name="introduction-to-moodle" class="md-header-anchor"></a><span>Introduction to Moodle</span></h2><p><span>Moodle is the learning management system of the Lane Community College and the location where you will be able to view the content of your on-line  courses. To learn more about Moodle and how it is used for Lane  Community College courses, please review the course below:</span></p><ul><li><a href='https://classes.lanecc.edu/course/view.php?id=2637'><span>How to Moodle</span></a></li></ul><h2><a name="course-structure" class="md-header-anchor"></a><span>Course Structure</span></h2><p><span>This course is broken into weekly modules. The modules start on Sunday and end on the following Saturday. Every week is broken into  three sections: Overview, Resources, and Activities.</span></p><h3><a name="overview" class="md-header-anchor"></a><span>Overview</span></h3><p><span>Each week includes an overview page that must be read before  reviewing the resources and completing the assigned activities. The  overview will include an introduction to the week&#39;s topics, a list of  the week&#39;s learning objectives, a list of required and supplemental  resources, and detailed instructions for any activities and assignments.</span></p><h3><a name="resources" class="md-header-anchor"></a><span>Resources</span></h3><p><span>Learning resources will be listed under Required and Supplemental subheadings. Reviewing required resources is mandatory. Supplemental resources are  suggested if you want to get additional information about a topic.  Resources may include links to online articles, text listing offline  reading assignments,  videos, or other types of learning materials.</span></p><h3><a name="activities" class="md-header-anchor"></a><span>Activities</span></h3><p><span>Learning activities are required unless they are specifically marked as  optional. Activities will include lab assignments, quizzes, or other participatory activities.</span></p><h4><a name="lab-assignments" class="md-header-anchor"></a><span>Lab assignments</span></h4><p><span>Each week you will have a lab  assignment. This is a hands-on programming assignment.</span></p><h4><a name="lab-partners" class="md-header-anchor"></a><span>Lab Partners</span></h4><p><span>Each of you will be assigned to a lab partner in Moodle. There are two versions of each lab  assignment. Each lab partner will be given a  different version. This allows each student to look at the other’s work and give them help and feedback without seeing a solution to their own assignment.</span></p><h4><a name="getting-and-giving-a-code-review" class="md-header-anchor"></a><span>Getting and Giving a Code Review</span></h4><p><span>When you have a  beta (draft) version of you lab assignment ready, you will post it in  the Lab Beta + Discussion forum in the Moodle section for the current  week. This must be done before the due date for the beta version. Your lab partner will then check your work and complete the &quot;Beta&quot; column of the  code review form. This must be done before the due date for the code review.</span></p><h4><a name="what-to-do-with-the-code-review-you-get" class="md-header-anchor"></a><span>What to Do with the Code Review You Get</span></h4><p><span>Your lab  partner gives you a code review, a you may revise your lab work and then fill out the &quot;Production&quot; column of the code review form to indicate  your revisions. You will then upload the release version of your lab  work to Moodle along with the completed code review form.</span></p><h4><a name="what-to-do-if-something-goes-wrong" class="md-header-anchor"></a><span>What to Do If Something Goes Wrong</span></h4><ul><li><span>Q: What if my lab partner didn’t post a beta version for me to review?</span>
-<span>A: Communicate with them and find out when they will have a beta version  ready. Remind them that a beta version doesn’t need to be fully  complete. Review their code for them when they send it. As long as you  review your partner’s code before the due date for the final version,  your review won’t be counted late.</span></li><li><span>Q: What if I have already communicated with my lab partner and they  haven’t responded or they have said they won’t be posting a beta version anytime soon?</span>
-<span>A: You can do a code review for someone else. Or, you  can post an offer in the class Q and A forum to see if anyone wants an  additional review of their most recent lab.</span></li><li><span>Q: What if my lab partner didn’t send me a code review by the deadline?</span>
-<span>As long as you have already posted your beta version, you can review your  own code and put a note in the comments section saying your partner  didn&#39;t give you a review by the deadline.</span></li></ul><h4><a name="additional-questions" class="md-header-anchor"></a><span>Additional Questions</span></h4><ul><li><span>Q: Can I do a code review for someone else in addition to my lab partner? </span>
-<span>A: Sure, it is good experience for you and helpful for the other person.  They just need to have done a different assignment than the one you  did. </span></li><li><span>Q: Can I get more than one code review for a particular lab? </span>
-<span>A:  Sure, it’s fine for someone else, in addition to your lab partner, to  review your code. As long as they didn’t do the same assignment that you did. </span></li></ul><h2><a name="on-line-course-communication" class="md-header-anchor"></a><span>On-line Course Communication</span></h2><p><span>All course communication (via e-mail, Moodle Messages, discussion  forums, video chat, etc.) should be clear, concise, and respectful.  Written communication should use complete sentences with standard  spelling and grammar, including proper capitalization and punctuation.</span></p><p><a href='http://www.albion.com/netiquette/corerules.html'><span>The Core Rules of Netiquette</span></a><span> is a guide to the proper protocol for participating in online classes and writing emails.</span></p><p><span>Questions about the course should be posted to the Course Q &amp; A Forum. Questions of a more personal nature, such as grades or extensions,  should be sent to your instructor via e-mail. E-mails to your instructor or e-mails to another department regarding support issues should  include your course number and section.</span></p><p><span>All course announcements will be posted by the instructor to the News and Announcements Forum. Students are expected to check the News Forum on a daily basis. Any  questions about News Forum announcements should be asked in the Course Q &amp; A Forum.</span></p><h2><a name="support" class="md-header-anchor"></a><span>Support</span></h2><h3><a name="cit-computer-lab" class="md-header-anchor"></a><span>CIT Computer Lab</span></h3><p><span>For spring term 2020, the on-campus lab is closed, but there is a virtual tutoring lab available which is staffed full-time by CIT department tutors. Read the </span><a href='https://lcc-cit.github.io/CS133JS-CourseMaterials/OnlineCITLabProcedures.html'><span>procedure for accessing the virtual lab</span></a><span>.</span></p><p><del><span>The CIT Main lab (Bldg 19/Rm 135) is equipped with computers which are available exclusively for students in the CIT department.  The lab hours are posted on the door. There are tutors available in the lab to help you with your lab work. There is a schedule is posted on the large white board inside the lab which lists the tutors and the times they will be available.</span></del><span> More Information  is available on the </span><a href='http://nlms.lanecc.edu/wiki/doku.php?id=start'><span>CIT Computer Lab Wiki</span></a><span>.</span></p><h3><a name="general-support" class="md-header-anchor"></a><span>General Support</span></h3><p><span>Click on the Help link at the top-left of the Moodle course page for information on how to contact LCC technical support services. </span></p><p><span>Support information is also available at </span><a href='https://help.lanecc.edu/'><span>help.lanecc.edu</span></a><span>.</span></p><p>&nbsp;</p><h2><a name="bookstoremdashtitan-store" class="md-header-anchor"></a><span>Bookstore</span>&mdash;<span>Titan Store</span></h2><p><strong><span>Address</span></strong><span> (on the LCC main campus)</span></p><p><span>4000 East 30th Avenue</span></p><p><span>Center Building</span></p><p><span>Eugene, OR  US  97405 </span></p><p><a href='https://www.google.com/maps/search/4000 East 30th Avenue Center Building Eugene OR US 97405'><span>Get Directions</span></a></p><p>&nbsp;</p><p><span>Web site: </span><a href='https://www.bkstr.com/laneccstore'><span>Titan Store</span></a></p><p><span>Email: </span><a href='mailto:TitanStore@bkstr.com'><span>TitanStore@bkstr.com</span></a></p><p><span>Phone: </span><a href='tel:541-463-5256'><span>541-463-5256</span></a></p><p><span>Fax: 541-463-5740</span></p><p>&nbsp;</p><p>&nbsp;</p><p><span> </span></p></div>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='getting-started-guide'><span>Getting Started Guide</span></h1><p><span>Course introduction and getting started materials</span></p><h2 id='table-of-contents'><span>Table of contents</span></h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" style="" href="#getting-started-guide">Getting Started Guide</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n3"><a class="md-toc-inner" style="" href="#table-of-contents">Table of contents</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n5"><a class="md-toc-inner" style="" href="#introduction">Introduction</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n9"><a class="md-toc-inner" style="" href="#first-steps">First Steps</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n32"><a class="md-toc-inner" style="" href="#basic-technology-and-computer-skills">Basic Technology and Computer Skills</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n58"><a class="md-toc-inner" style="" href="#introduction-to-moodle">Introduction to Moodle</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n63"><a class="md-toc-inner" style="" href="#course-structure">Course Structure</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n65"><a class="md-toc-inner" style="" href="#overview">Overview</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n67"><a class="md-toc-inner" style="" href="#resources">Resources</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n69"><a class="md-toc-inner" style="" href="#activities">Activities</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n71"><a class="md-toc-inner" style="" href="#lab-assignments">Lab assignments</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n73"><a class="md-toc-inner" style="" href="#lab-partners">Lab Partners</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n75"><a class="md-toc-inner" style="" href="#getting-and-giving-a-code-review">Getting and Giving a Code Review</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n77"><a class="md-toc-inner" style="" href="#what-to-do-with-the-code-review-you-get">What to Do with the Code Review You Get</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n79"><a class="md-toc-inner" style="" href="#what-to-do-if-something-goes-wrong">What to Do If Something Goes Wrong</a></span><span role="listitem" class="md-toc-item md-toc-h4" data-ref="n90"><a class="md-toc-inner" style="" href="#additional-questions">Additional Questions</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n98"><a class="md-toc-inner" style="" href="#on-line-course-communication">On-line Course Communication</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n103"><a class="md-toc-inner" style="" href="#support">Support</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n104"><a class="md-toc-inner" style="" href="#cit-computer-lab">CIT Computer Lab</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n106"><a class="md-toc-inner" style="" href="#lcc-academic-and-tutoring-services">LCC Academic and Tutoring Services</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n125"><a class="md-toc-inner" style="" href="#instructors-office-hours">Instructor's Office Hours</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n107"><a class="md-toc-inner" style="" href="#general-support">General Support</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n111"><a class="md-toc-inner" style="" href="#bookstoremdashtitan-store">Bookstore—Titan Store</a></span></p></div><h2 id='introduction'><span>Introduction</span></h2><p><span>Welcome to Beginning Programming: JavaScript!</span></p><p><span>In order to succeed in this class, you will need access to a computer that can run a code editor like </span><a href='https://code.visualstudio.com/'><span>Visual Studio Code</span></a><span> (pretty much any computer can) and have a good internet connection. You must  devote at least 12 hours a week to learning activities. This includes 4  hours participating in Zoom live class streams or viewing recordings,  and at least 8 hours studying and working on your own.</span></p><p><span>Next, read </span><a href='https://classes.lanecc.edu/mod/book/view.php?id=2334923&amp;chapterid=146643'><span>First Steps</span></a><span>, and then </span><em><span>let&#39;s have fun writing code!</span></em></p><h2 id='first-steps'><span>First Steps</span></h2><p><span>To begin this course, please complete the following steps:</span></p><ol start='' ><li><span>Read every page of this Getting Started guid.</span></li><li><span>Read every page of the syllabus.</span></li><li><span>Read the Code Review Procedure.</span></li><li><span>Familiarize yourself with the cycle of weekly learning activities.</span></li><li><span>Post an introduction message to the Introductions forum.</span></li><li><span>Read the overview for week one.</span></li><li><span>Do the required reading for this week of the course, skim the lecture notes.</span></li><li><span>Complete the activities/assignments/forum posts for this week.</span></li><li><span>Repeat steps 6</span>&ndash;<span>8 every week according to the course schedule.</span></li></ol><p><span>If you have any course-specific questions, please ask them in the Course Q &amp; A forum. For any other questions, support contact information can be found in the Support block.</span></p><p>&nbsp;</p><h2 id='basic-technology-and-computer-skills'><span>Basic Technology and Computer Skills</span></h2><p><strong><span>To be successful in this course you will need:</span></strong></p><ul><li><span>At least two modern Web Browsers like </span><a href='https://www.mozilla.org/en-US/firefox/new/'><span>Firefox</span></a><span> and </span><a href='https://www.google.com/chrome/'><span>Chrome</span></a><span>.</span></li><li><a href='http://get.adobe.com/reader/'><span>Adobe Reader</span></a><span> for reading PDF files</span></li><li><span>Software for Word processing and viewing PowerPoint slides such as </span><a href='http://www.microsoftstore.com/store/msusa/en_US/cat/All-Office/categoryID.69403900?icid=Office_365_subnav_22092015_All_Office&amp;s_kwcid=AL!4249!3!82552207853!e!!g!!microsoft office&amp;WT.mc_id=pointitsem+Google+Adwords+5+-+Office+15+Suites&amp;ef_id=UsDFgAAAAHy-iVuM:20160104142119:s'><span>MS Office</span></a><span>, </span><a href='http://download.openoffice.org/'><span>OpenOffice.org</span></a><span> or </span><a href='https://www.google.com/accounts/ServiceLogin?service=writely&amp;passive=1209600&amp;continue=http://docs.google.com/&amp;followup=http://docs.google.com/&amp;ltmpl=homepage'><span>GoogleDocs</span></a><span> </span></li><li><span>A code editor,  </span><a href='https://code.visualstudio.com'><span>VisualStudio Code</span></a><span> for Mac OS, Windows and Linux is reccomended, alternatively, you could use </span><a href='https://notepad-plus-plus.org'><span>Notepad++</span></a><span> on Windows, or </span><a href='https://www.barebones.com/products/bbedit/'><span>BBEdit</span></a><span> on Mac OS.</span></li><li><span>An FTP client for uploading files to a web server,  </span><a href='https://filezilla-project.org'><span>FileZilla</span></a><span> for Mac OS, Windows and Linux is reccomended, alternatively, you could use </span><a href='http://coreftp.com'><span>CoreFTP</span></a><span> for Windows, or </span><a href='https://cyberduck.io'><span>CyberDuck</span></a><span> for Mac OS, or</span></li></ul><p><strong><span>Computer Skills</span></strong></p><ul><li><span>Basic computer skills </span></li><li><span>Experience navigating the Internet and using an Internet browser</span></li><li><span>Basic knowledge of formatting using a word processing program</span></li><li><span>Comfort working with multiple browser windows</span></li><li><span>Ability to create and edit HTML web pages</span></li></ul><p>&nbsp;</p><h2 id='introduction-to-moodle'><span>Introduction to Moodle</span></h2><p><span>Moodle is the learning management system of the Lane Community College and the location where you will be able to view the content of your on-line  courses. To learn more about Moodle and how it is used for Lane  Community College courses, please review the course below:</span></p><ul><li><a href='https://classes.lanecc.edu/course/view.php?id=2637'><span>How to Moodle</span></a></li></ul><h2 id='course-structure'><span>Course Structure</span></h2><p><span>This course is broken into weekly modules. The modules start on Sunday and end on the following Saturday. Every week is broken into  three sections: Overview, Resources, and Activities.</span></p><h3 id='overview'><span>Overview</span></h3><p><span>Each week includes an overview page that must be read before  reviewing the resources and completing the assigned activities. The  overview will include an introduction to the week&#39;s topics, a list of  the week&#39;s learning objectives, a list of required and supplemental  resources, and detailed instructions for any activities and assignments.</span></p><h3 id='resources'><span>Resources</span></h3><p><span>Learning resources will be listed under Required and Supplemental subheadings. Reviewing required resources is mandatory. Supplemental resources are  suggested if you want to get additional information about a topic.  Resources may include links to online articles, text listing offline  reading assignments,  videos, or other types of learning materials.</span></p><h3 id='activities'><span>Activities</span></h3><p><span>Learning activities are required unless they are specifically marked as  optional. Activities will include lab assignments, quizzes, or other participatory activities.</span></p><h4 id='lab-assignments'><span>Lab assignments</span></h4><p><span>Each week you will have a lab  assignment. This is a hands-on programming assignment.</span></p><h4 id='lab-partners'><span>Lab Partners</span></h4><p><span>Each of you will be assigned to a lab partner in Moodle. There are two versions of each lab  assignment. Each lab partner will be given a  different version. This allows each student to look at the other’s work and give them help and feedback without seeing a solution to their own assignment.</span></p><h4 id='getting-and-giving-a-code-review'><span>Getting and Giving a Code Review</span></h4><p><span>When you have a beta (draft) version of you lab assignment ready, you will post it in  the Lab Beta forum in the Moodle section for the current  week. This must be done before the due date for the beta version. Your lab partner will then check your work and complete the &quot;Beta&quot; column of the  code review form. This must be done before the due date for the code review.</span></p><h4 id='what-to-do-with-the-code-review-you-get'><span>What to Do with the Code Review You Get</span></h4><p><span>After your lab partner gives you a code review, a you may revise your lab work and then fill out the &quot;Production&quot; column of the code review form to indicate  your revisions. You will then upload the release version of your lab  work to Moodle along with the completed code review form.</span></p><h4 id='what-to-do-if-something-goes-wrong'><span>What to Do If Something Goes Wrong</span></h4><ul><li><p><span>Q: What if my lab partner didn’t post a beta version for me to review?</span></p><p><span>A: Communicate with them and find out when they will have a beta version  ready. Remind them that a beta version doesn’t need to be fully  complete. Review their code for them when they send it. As long as you  review your partner’s code before the due date for the final version,  your review won’t be counted late.</span></p></li><li><p><span>Q: What if I have already communicated with my lab partner and they  haven’t responded or they have said they won’t be posting a beta version anytime soon?</span></p><p><span>A: You can do a code review for someone else. Or, you  can post an offer in the class Q and A forum to see if anyone wants an  additional review of their most recent lab.</span></p></li><li><p><span>Q: What if my lab partner didn’t send me a code review by the deadline?</span></p><p><span>A: You can ask someone else to give you a review, or as long as you have already posted your beta version, you can review your own code and put a note in the comments section saying your partner didn&#39;t give you a review by the deadline.</span></p></li></ul><h4 id='additional-questions'><span>Additional Questions</span></h4><ul><li><p><span>Q: Can I do a code review for someone else in addition to my lab partner? </span></p><p><span>A: Sure, it is good experience for you and helpful for the other person.  They just need to have done a different assignment than the one you  did. </span></p></li><li><p><span>Q: Can I get more than one code review for a particular lab? </span></p><p><span>A:  Sure, it’s fine for someone else, in addition to your lab partner, to  review your code. As long as they didn’t do the same assignment that you did. </span></p></li></ul><h2 id='on-line-course-communication'><span>On-line Course Communication</span></h2><p><span>All course communication (via e-mail, Moodle Messages, discussion  forums, video chat, etc.) should be clear, concise, and respectful.  Written communication should use complete sentences with standard  spelling and grammar, including proper capitalization and punctuation.</span></p><p><a href='http://www.albion.com/netiquette/corerules.html'><span>The Core Rules of Netiquette</span></a><span> is a guide to the proper protocol for participating in online classes and writing emails.</span></p><p><span>Questions about the course should be posted to the Course Q &amp; A Forum. Questions of a more personal nature, such as grades or extensions,  should be sent to your instructor via e-mail. E-mails to your instructor or e-mails to another department regarding support issues should  include your course number and section.</span></p><p><span>All course announcements will be posted by the instructor to the News and Announcements Forum. Students are expected to check the News Forum on a daily basis. Any  questions about News Forum announcements should be asked in the Course Q &amp; A Forum.</span></p><h2 id='support'><span>Support</span></h2><h3 id='cit-computer-lab'><span>CIT Computer Lab</span></h3><p><span>For spring term 2022, the on-campus lab in building 19, room 135, has re-opened. Lab and tutoring hours will be announced in class.</span></p><h3 id='lcc-academic-and-tutoring-services'><span>LCC Academic and Tutoring Services</span></h3><p><span>Zoom tutoring is also available through </span><a href='https://www.lanecc.edu/tutor'><span>LCC Tutoring Services</span></a><span>.</span></p><h3 id='instructors-office-hours'><span>Instructor&#39;s Office Hours</span></h3><p><span>See the Moodle course page and the syllabus for the instructor&#39;s in-person and Zoom office hours.</span></p><h3 id='general-support'><span>General Support</span></h3><p><span>Click on the Help link at the top-left of the Moodle course page for information on how to contact LCC technical support services. </span></p><p><span>Support information is also available at </span><a href='https://help.lanecc.edu/'><span>help.lanecc.edu</span></a><span>.</span></p><p>&nbsp;</p><h2 id='bookstoremdashtitan-store'><span>Bookstore</span>&mdash;<span>Titan Store</span></h2><p><strong><span>Address</span></strong><span> (on the LCC main campus)</span></p><p><span>4000 East 30th Avenue</span></p><p><span>Center Building</span></p><p><span>Eugene, OR  US  97405 </span></p><p><a href='https://www.google.com/maps/search/4000 East 30th Avenue Center Building Eugene OR US 97405'><span>Get Directions</span></a></p><p>&nbsp;</p><p><span>Web site: </span><a href='https://www.bkstr.com/laneccstore'><span>Titan Store</span></a></p><p><span>Email: </span><a href='mailto:TitanStore@bkstr.com'><span>TitanStore@bkstr.com</span></a></p><p><span>Phone: </span><a href='tel:541-463-5256'><span>541-463-5256</span></a></p><p><span>Fax: 541-463-5740</span></p><p>&nbsp;</p><p>&nbsp;</p><p><span> </span></p></div></div>
 </body>
 </html>

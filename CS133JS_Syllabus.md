@@ -3,13 +3,13 @@
 
 
 
-| Class                  |                            |      | Instructor              |                                             |
-| ---------------------- | -------------------------- | ---- | ----------------------- | ------------------------------------------- |
-| **Course Number**      | CS133JS                    |      | **Name**                | Brian Bird                                  |
-| **CRNs**               | 40729, 40939, 41665, 41666 |      | **E-mail**              | [birdb@lanecc.edu](mailto:birdb@lanecc.edu) |
-| **Day & Time**         | M, W, 10:00&dash;12:50     |      | **Office Hours**        | M&ndash;Th, 1:00&ndash;1:50                 |
-| **Room**               | Building 19, Room 128      |      | **Room**                | Building 19, Room 152                       |
-| **Zoom Class Meeting** |                            |      | **Zoom Office Meeting** |                                             |
+| <u>Class</u>      |                                                     |      | <u>Instructor</u> |                                                     |
+| ----------------- | --------------------------------------------------- | ---- | ----------------- | --------------------------------------------------- |
+| **Course Number** | CS133JS                                             |      | **Name**          | Brian Bird                                          |
+| **CRNs**          | 40729, 40939, 41665, 41666                          |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)         |
+| **Day & Time**    | M, W, 10:00&dash;12:50                              |      | **Office Hours**  | M&ndash;Th, 1:00&ndash;1:50                         |
+| **Room**          | Building 19, Room 128                               |      | **Room**          | Building 19, Room 152                               |
+| **Zoom**          | [98797466911](https://lanecc.zoom.us/j/98797466911) |      | **Zoom**          | [94002309439](https://lanecc.zoom.us/j/94002309439) |
 
 
 
@@ -33,25 +33,25 @@ The intention of the course is to enable you to create and maintain interactive 
 
 ## Course Content
 
-| Technologies                |                                       |       |
-| --------------------------- | ------------------------------------- | ----- |
-| JavaScript                  | HTML 5                                | CSS 3 |
-| FTP client (like FileZilla) | Code editor (like Visual Studio Code) |       |
+| Main Concepts         |                                 |                                          |
+| --------------------- | ------------------------------- | ---------------------------------------- |
+| Programming languages | Compilation and  interpretation | Loose and strong typing                  |
+| Variables and scope   | Operators and expressions       | Functions, parameters and  return values |
+| Control structures    | Event handling                  | Pre-defined objects                      |
 
 
 
-| Themes and Issues           |                              |                                  |
+| Cross-Cutting Concepts      |                              |                                  |
 | --------------------------- | ---------------------------- | -------------------------------- |
 | Internet technologies       | Dynamic and static web sites | Client-side and server-side code |
 | Syntax, semantics and style | Communication                | Giving and receiving feedback    |
 
  
 
-| Concepts              |                                 |                                          |
-| --------------------- | ------------------------------- | ---------------------------------------- |
-| Programming languages | Compilation and  interpretation | Loose and strong typing                  |
-| Variables and scope   | Operators and expressions       | Functions, parameters and  return values |
-| Control structures    | Event handling                  | Pre-defined objects                      |
+| Tools and Technologies   |             |                         |
+| ------------------------ | ----------- | ----------------------- |
+| JavaScript / ECMA Script | HTML 5      | Web browser DOM         |
+| FTP client               | Code editor | Browser developer tools |
 
  
 
@@ -70,15 +70,13 @@ The intention of the course is to enable you to create and maintain interactive 
 
 ### Textbook                                                      
 
-Optional Textbook:
-
  *Eloquent JavaScript: A Modern Introduction to Programming*, 3rd Edition, by Marijn Haverbeke. No Starch Press. 2018.
 
 Available [free online](https://eloquentjavascript.net) to read our download.
 
  
 
-### Online Services
+### Online Resources
 
 #### Learning Management System
 
@@ -88,7 +86,11 @@ Moodle is the Learning Management System (LMS) used for this course; LCC’s Moo
 
 You will publish your programming lab assignments to the same web server, [citstudent.lanecc.edu](http://citstudent.lanecc.edu), that you used in CIS195, Web Authoring: HTML. Please send your instructor an email message if you have not used this server before and need your user id and password.
 
- 
+ #### Course Materials
+
+All of the instructor's course materials including lecture notes, lab assignments, etc., are stored in a [repository on GitHub](https://github.com/LCC-CIT/CS133JS-CourseMaterials) as well as being linked on the Moodle course page.
+
+
 
 ### Software
 
@@ -123,7 +125,7 @@ The CIT Main lab (Bldg. 19, room 135) is equipped with computers and software wh
 
 #### Online Tutoring
 
-Seethe [LCC Tutoring Services](https://www.lanecc.edu/tutor) web page for information.
+See the [LCC Tutoring Services](https://www.lanecc.edu/tutor) web page for information.
 
 
 

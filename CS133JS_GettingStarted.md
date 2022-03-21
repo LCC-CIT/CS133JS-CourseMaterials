@@ -10,7 +10,7 @@ Course introduction and getting started materials
 
 Welcome to Beginning Programming: JavaScript!
 
-In order to succeed in this class, you will need access to a computer that can run a code editor like [Visual Studio Code](https://code.visualstudio.com/) (pretty much any computer can) and have a good internet connection. You must  devote at least 12 hours a week to learning activities. This includes 4  hours participating in Zoom live class streams or viewing recordings,  and at least 8 hours studying and working on your own.
+In order to succeed in this class, you will need access to a computer that can run a code editor like [Visual Studio Code](https://code.visualstudio.com/) (pretty much any computer can) and have a good internet connection. You must  devote at least 12 hours a week to learning activities. This includes 4  hours of in-person class, Zoom live class streams, and at least 8 hours of lab time plus studying and working on your own. (If you are unable to participate during class time you can watch recordings of the Zoom sessions.)
 
 Next, read [First Steps](https://classes.lanecc.edu/mod/book/view.php?id=2334923&chapterid=146643), and then *let's have fun writing code!*
 

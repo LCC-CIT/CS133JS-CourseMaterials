@@ -36,8 +36,6 @@
 
 [Online Readiness Survey](http://bit.ly/LCC-Ready) - Assess yourself to find out how you can be more successful in any online course.
 
-[Online Readiness Mini-course](https://classes.lanecc.edu/course/view.php?id=93673) - Learn to succeed in any online course.
-
 [How to join a Zoom meeting](https://support.zoom.us/hc/en-us/articles/201362193-How-Do-I-Join-A-Meeting-) - How to join the live stream of on-campus classes.
 
 
@@ -46,12 +44,11 @@
 
 [CS133JS Course Materials](https://github.com/LCC-CIT/CS133JS-CourseMaterials/) - Instructor's course materials, including code examples, on GitHub.
 
-[CIT Computer Lab Wiki](http://nlms.lanecc.edu/wiki/doku.php?id=start) - Information about our department's computer lab. 
 
-**Alert: The physical lab is closed this term (Spring 2020), but you can still get tutoring help from the [virtual CIT lab](https://lcc-cit.github.io/CS133JS-CourseMaterials/OnlineCITLabProcedures.html) which is staffed full-time by tutors from the CIT department.**
+~~[CIT Computer Lab Wiki](http://nlms.lanecc.edu/wiki/doku.php?id=start) - Information about our department's computer lab.~~ (Out of date as of spring 2022.)
 
 ------
 
 
 
-Compiled by [Brian Bird](https://profbird.online), 2020
+Compiled by [Brian Bird](https://profbird.dev), 2020, revised by Brian Bird 2022.

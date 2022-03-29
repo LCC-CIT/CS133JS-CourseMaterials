@@ -97,7 +97,7 @@ Run this code in the console to see what the limits are for numeric expressions 
 
 - Test an expression to see if it is finite: `isFinite(n)`
 
-  Try this with `1/0` in place of `n`.
+  Try this with `1/0` in place of `n`.
 
 - Test an expression to see if it is a valid number: `isNaN(n)`
 
@@ -112,7 +112,7 @@ Run this code in the console to see what the limits are for numeric expressions 
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
    ```

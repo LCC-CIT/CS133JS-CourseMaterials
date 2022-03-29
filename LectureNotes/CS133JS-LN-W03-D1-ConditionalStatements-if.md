@@ -173,7 +173,7 @@ let degrees = 0; // Temperature in Fahrenheit
 
 - Single branch 
   ```javascript
-if(degrees < 45) 
+  if(degrees < 45) 
     alert("Wear a coat");
   ```
   Parts of this statement:
@@ -356,7 +356,7 @@ Take a look at Part 1 of the lab assignment now.
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
    ```

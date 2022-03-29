@@ -31,13 +31,14 @@
 
 ## Static pages vs. dynamic (interactive) pages
 
-  - Examples:
+### Examples
 
-    - [Facebook](https://www.facebook.com/) (likes, comments, add friend, etc.)
-    - [LTD](https://www.ltd.org/) static pages (about us) and dynamic (trip planner)
+- [Facebook](https://www.facebook.com/) (likes, comments, add friend, etc.)
+- [LTD](https://www.ltd.org/) static pages (about us) and dynamic (trip planner)
 
-  - **Exercise**
-- [LCC](https://www.lanecc.edu/) web site – which parts are interactive?
+### Exercise
+
+[LCC](https://www.lanecc.edu/) web site – which parts are interactive?
 
 
 ​       			
@@ -58,12 +59,16 @@
     - Single player games
   - Check user input before storing it
   - Animations
-- Examples
-  Revisit these and discuss what might run on the server and what might run in the browser.
-  - [Facebook](https://www.facebook.com/) (likes, comments, add friend, etc.)
-  - [LTD](https://www.ltd.org/) static pages (about us) and dynamic (trip planner)
-- **Exercise**
-  - [LCC](https://www.lanecc.edu/) web site – which parts could run on the server? Which parts in the browser?
+### Examples
+
+Revisit these and discuss what might run on the server and what might run in the browser.
+
+- [Facebook](https://www.facebook.com/) (likes, comments, add friend, etc.)
+- [LTD](https://www.ltd.org/) static pages (about us) and dynamic (trip planner)
+
+### Exercise
+
+[LCC](https://www.lanecc.edu/) web site – which parts could run on the server? Which parts in the browser?
 
 
 
@@ -124,6 +129,6 @@
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------

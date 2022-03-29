@@ -10,7 +10,7 @@ Course introduction and getting started materials
 
 Welcome to Beginning Programming: JavaScript!
 
-In order to succeed in this class, you will need access to a computer that can run a code editor like [Visual Studio Code](https://code.visualstudio.com/) (pretty much any computer can) and have a good internet connection. You must  devote at least 12 hours a week to learning activities. This includes 4  hours participating in Zoom live class streams or viewing recordings,  and at least 8 hours studying and working on your own.
+In order to succeed in this class, you will need access to a computer that can run a code editor like [Visual Studio Code](https://code.visualstudio.com/) (pretty much any computer can) and have a good internet connection. You must  devote at least 12 hours a week to learning activities. This includes 4  hours of in-person class, Zoom live class streams, and at least 8 hours of lab time plus studying and working on your own. (If you are unable to participate during class time you can watch recordings of the Zoom sessions.)
 
 Next, read [First Steps](https://classes.lanecc.edu/mod/book/view.php?id=2334923&chapterid=146643), and then *let's have fun writing code!*
 
@@ -40,8 +40,8 @@ If you have any course-specific questions, please ask them in the Course Q & A f
 - At least two modern Web Browsers like [Firefox](https://www.mozilla.org/en-US/firefox/new/) and [Chrome](https://www.google.com/chrome/).
 - [Adobe Reader](http://get.adobe.com/reader/) for reading PDF files
 - Software for Word processing and viewing PowerPoint slides such as [MS Office](http://www.microsoftstore.com/store/msusa/en_US/cat/All-Office/categoryID.69403900?icid=Office_365_subnav_22092015_All_Office&s_kwcid=AL!4249!3!82552207853!e!!g!!microsoft office&WT.mc_id=pointitsem+Google+Adwords+5+-+Office+15+Suites&ef_id=UsDFgAAAAHy-iVuM:20160104142119:s), [OpenOffice.org](http://download.openoffice.org/) or [GoogleDocs](https://www.google.com/accounts/ServiceLogin?service=writely&passive=1209600&continue=http://docs.google.com/&followup=http://docs.google.com/&ltmpl=homepage) 
-- A code editor,  [VisualStudio Code](https://code.visualstudio.com) for Mac OS, Windows and Linux, alternatively, you could use [Notepad++](https://notepad-plus-plus.org) on Windows, or [TextWrangler](http://www.barebones.com/products/textwrangler/) on Mac OS.
-- An FTP client for uploading files to a web server,  [FileZilla](https://filezilla-project.org) for Mac OS, Windows and Linux, alternatively, you could use [CoreFTP](http://coreftp.com) for Windows, or [CyberDuck](https://cyberduck.io) for Mac OS, or
+- A code editor,  [VisualStudio Code](https://code.visualstudio.com) for Mac OS, Windows and Linux is reccomended, alternatively, you could use [Notepad++](https://notepad-plus-plus.org) on Windows, or [BBEdit](https://www.barebones.com/products/bbedit/) on Mac OS.
+- An FTP client for uploading files to a web server,  [FileZilla](https://filezilla-project.org) for Mac OS, Windows and Linux is reccomended, alternatively, you could use [CoreFTP](http://coreftp.com) for Windows, or [CyberDuck](https://cyberduck.io) for Mac OS, or
 
 **Computer Skills**
 
@@ -127,9 +127,15 @@ All course announcements will be posted by the instructor to the News and Announ
 ## Support
 ### CIT Computer Lab
 
-For spring term 2020, the on-campus lab is closed, but there is a virtual tutoring lab available which is staffed full-time by CIT department tutors. Read the [procedure for accessing the virtual lab](https://lcc-cit.github.io/CS133JS-CourseMaterials/OnlineCITLabProcedures.html).
+For spring term 2022, the on-campus lab in building 19, room 135, has re-opened. Lab and tutoring hours will be announced in class.
 
-~~The CIT Main lab (Bldg 19/Rm 135) is equipped with computers which are available exclusively for students in the CIT department.  The lab hours are posted on the door. There are tutors available in the lab to help you with your lab work. There is a schedule is posted on the large white board inside the lab which lists the tutors and the times they will be available.~~ More Information  is available on the [CIT Computer Lab Wiki](http://nlms.lanecc.edu/wiki/doku.php?id=start).
+### LCC Academic and Tutoring Services
+
+Zoom tutoring is also available through [LCC Tutoring Services](https://www.lanecc.edu/tutor).
+
+### Instructor's Office Hours
+
+See the Moodle course page and the syllabus for the instructor's in-person and Zoom office hours.
 
 ### General Support
 Click on the Help link at the top-left of the Moodle course page for information on how to contact LCC technical support services. 

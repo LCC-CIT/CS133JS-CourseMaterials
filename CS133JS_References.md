@@ -28,6 +28,8 @@
 
 [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 
+[Glossary of Computer Science](https://en.wikipedia.org/wiki/Glossary_of_computer_science) Wikipedia
+
 
 
 ## Resources for Online Students
@@ -48,10 +50,10 @@
 
 [CIT Computer Lab Wiki](http://nlms.lanecc.edu/wiki/doku.php?id=start) - Information about our department's computer lab. 
 
-**Alert: The physical lab is closed this term (Spring 2020), but you can still get tutoring help from the [virtual CIT lab](https://lcc-cit.github.io/CS133JS-CourseMaterials/OnlineCITLabProcedures.html) which is staffed full-time by tutors from the CIT department.**
+
 
 ------
 
 
 
-Compiled by [Brian Bird](https://profbird.online), 2020
+Compiled by [Brian Bird](https://profbird.dev), 2020, revised by Brian Bird 2022.

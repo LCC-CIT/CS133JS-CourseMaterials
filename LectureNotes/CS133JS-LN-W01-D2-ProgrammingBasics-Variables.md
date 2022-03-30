@@ -6,13 +6,13 @@
 
 
 
-| Topics by Week                     |              |
-| ---------------------------------- | ------------ |
-| 1. Intro to JavaScript programming | 6. Arrays    |
-| 2. Expressions and Operators       | 7. Functions |
-| 3. Conditional Statements          | 8. Objects   |
-| 4. Loops                           | 9. DOM       |
-| 5. Midterm                         | 10. Final    |
+| Topics by Week                         |              |
+| -------------------------------------- | ------------ |
+| **1. Intro to JavaScript programming** | 6. Arrays    |
+| 2. Expressions and Operators           | 7. Functions |
+| 3. Conditional Statements              | 8. Objects   |
+| 4. Loops                               | 9. DOM       |
+| 5. Midterm                             | 10. Final    |
 
 
 
@@ -28,17 +28,26 @@
   - Selection (if statements)
   - Repetition (loops)
 - Syntax (grammar)
-  - Variables – dynamic typing
-    - Primitive types: *number*, *boolean*, *string*, *undefined*
-    - Best practice: declare and initialize before use
+  - Variables
   - Operators: +, -, *, /, %, ++, --
   - Keywords (reserved words): http://www.w3schools.com/js/js_reserved.asp
   - Statements – End with a semicolon
 - Console vs. Web page
-- Input and output
-  - Normally to and from form elements in a web page.
-  - Can also be done with prompt and alert dialogs.
-  - Output can be sent to the console log.
+- Input and output (i/o)
+  - Normally i/o is done to and form HTML *elements* in a web page.
+  
+    - We've already used `document.write` to put text, including HTML elements, directly into a web page.
+    - Later, we'll learn how to put text into an element or get it out of an element.
+  - Can also be done with `prompt` (for input) and `alert` (for output) dialogs. This works both in the console and in a web page.
+  - 
+    Output can be sent to the console *log*.
+  
+    ```javascript
+     var name = "world";
+     console.log("Hello " + name + "!");
+    ```
+  
+    Question: Note that we didn't output an html element, like `<p></p>` to the console log. Why?
 
 
  	
@@ -49,6 +58,7 @@
 Variables are named memory locations.
 
 - Draw a picture representing variables in computer memory.
+- Variables are *declared* with `var` or `let` (we'll talk about `let` later).
 
 ## Example: Hello world
 
@@ -65,7 +75,7 @@ Last time, we wrote this code and ran it in the browser console:
    - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
    - [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
 
-3. Using VS Code, start with a standard [empty HTML page](../Examples/Empty.html) and add this code to the head element:
+3. Using VS Code, start with a standard [empty HTML page](../Examples/Empty.html) and add this code to the head element inside of a HTML `<script></script>` element:
 
    ```HTML
    <head>
@@ -102,8 +112,7 @@ Last time, we wrote this code and ran it in the browser console:
 #### Discussion
 
 
-- Two meanings for +   	
-   (it’s an *overloaded* operator)  	
+- Two meanings for `+` (it’s an *overloaded* operator)  	
 
   - *addition* when used with numbers
   - *concatenation* when used with strings
@@ -132,25 +141,27 @@ Last time, we wrote this code and ran it in the browser console:
 - boolean
 - undefined
 
-  Example:
+Variables in JavaScript are *dynamically typed*, meaning we don't need to declare the type when we declare the variable. JavaScript figures out the type based on the data we assign to it.
 
-  ```javascript
-  var words = "this is a string";
-  var number1 = 1234;
-  var truth = false;
-  var stuff;
-  
-  document.writeln(typeof words);
-  document.writeln(typeof number1);
-  document.writeln(typeof truth);
-  document.writeln(typeof stuff); 
-  ```
+Example:
+
+```javascript
+var words = "this is a string";
+var number1 = 1234;
+var truth = false;
+var stuff;
+
+document.writeln(typeof words);
+document.writeln(typeof number1);
+document.writeln(typeof truth);
+document.writeln(typeof stuff); 
+```
 
 #### Null and Undefined
 
-This is a bit tricky. If we use the typeof keyword to check the type of a variable and we haven't assigned a value to that variable, then it will show it's type as "undefined". Also, if we check it's value it will be undefined.  So undefined is both a statement about the value and about the data type. 
+This is a bit tricky. If we use the `typeof` keyword to check the type of a variable and we haven't assigned a value to that variable, then it will show its type as *undefined*. Also, if we check its value, it will be *undefined*.  So *undefine*d can be either a description of the value or of the data type. 
 
-But, null is just a value. It's the value that means "nothing", which is not the same as zero.
+But, *null* is just a value. It's the value that means "nothing", which is not the same as zero.
 
 Try this in the console:
 

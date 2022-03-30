@@ -203,7 +203,7 @@ while (name != "done")
 
    
 
-## Nested Arrays
+## Nested (2D) Arrays
 
 These are also known as 2D arrays.
 

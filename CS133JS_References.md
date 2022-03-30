@@ -28,6 +28,8 @@
 
 [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 
+[Glossary of Computer Science](https://en.wikipedia.org/wiki/Glossary_of_computer_science) Wikipedia
+
 
 
 ## Resources for Online Students

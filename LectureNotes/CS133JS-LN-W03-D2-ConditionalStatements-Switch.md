@@ -1,3 +1,12 @@
+---
+title: switch case statements
+description: Learn how to do selection with switch case statements.
+keywords: selection, conditional expression, switch case
+material: Lecture Notes
+generator: Typora
+author: Brian Bird
+---
+
 **CS133JS Beginning Programming: JavaScript**
 
 <h1>Selection Using <code>switch case</code> statements</h1>
@@ -181,7 +190,7 @@ else
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
    ```

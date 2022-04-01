@@ -1,8 +1,15 @@
-**CS133JS Beginning Programming: JavaScript**
+---
+title: Loops
+description: Learn more about how to implement the repetition control structure using while, do while and for loops.
+keywords: repetition, loop, while, do while, for
+material: Lecture Notes
+generator: Typora
+author: Brian Bird
+---
 
 <h1>Loops using <code>while, do while,</code> and <code>for</code></h1>
 
-
+**CS133JS Beginning Programming: JavaScript**
 
 | Topics by Week                                       |              |
 | ---------------------------------------------------- | ------------ |

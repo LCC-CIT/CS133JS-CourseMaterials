@@ -1,8 +1,15 @@
-**CS133JS Beginning Programming: JavaScript**
+---
+title: Loops
+description: Learn how to implement the repetition control structure using while, do while, and for loops.
+keywords: repetition, loop, while, do while, for
+material: Lecture Notes
+generator: Typora
+author: Brian Bird
+---
 
 <h1>Loops using <code>while, do while,</code> and <code>for</code></h1>
 
-
+**CS133JS Beginning Programming: JavaScript**
 
 | Topics by Week                                       |              |
 | ---------------------------------------------------- | ------------ |
@@ -284,7 +291,7 @@ Again, moving the increment expression is something you can do, but it's not rec
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
    ```

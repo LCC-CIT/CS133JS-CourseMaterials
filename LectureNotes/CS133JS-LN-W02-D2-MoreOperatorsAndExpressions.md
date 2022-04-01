@@ -1,5 +1,5 @@
 ---
-title: More about Operators and Expressions
+title: Operators and Expressions
 description: Learn about math and comparison operators, combined assignment operators and number ranges and the definition of an expression.
 keywords: increment, decrement, modulo, expression, range
 material: Lecture Notes

@@ -10,7 +10,7 @@ var cheerio = require("cheerio");
 // Change these constants to suit your needs
 const HTML_FOLDER = "../"; // folder with your HTML files
 // Valid search fields: "title", "description", "keywords", "body"
-const SEARCH_FIELDS = ["heading", "body", "time"];
+const SEARCH_FIELDS = ["heading", "description", "body", "keywords"];
 const EXCLUDE_FILES = ["Search.html", "Archive", "jquery1Start", "jquery2Start", "Experiments", "Examples", "Practice"];
 const MAX_PREVIEW_CHARS = 275; // Number of characters to show for a given search result
 const OUTPUT_INDEX = "lunr_index.js"; // Index file

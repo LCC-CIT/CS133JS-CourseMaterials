@@ -1,7 +1,10 @@
 ---
 title: Functions and Variable Scope
-description: Lecture Notes. Learn the difference between local and global variables and what scope means. Learn about the scope of function parameters and variables declared within functions.
+description: Learn the difference between local and global variables and what scope means. Learn about the scope of function parameters and variables declared within functions.
 keywords: function, parameter, let, const, scope, global variable, local variable
+material: Lecture Notes
+generator: Typora
+author: Brian Bird
 ---
 
 <h1>Functions and Variable Scope</h1>

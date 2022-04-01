@@ -1,5 +1,5 @@
 // This code is based on code from https://github.com/BLE-LTER/Lunr-Index-and-Search-for-Static-Sites
-// Adapted by Brian Bird, winter 2022
+// Adapted by Brian Bird, winter 2022, revised sprint 2022
 
 "use strict";
 
@@ -28,12 +28,15 @@ function parseLunrResults(results) {
         var id = results[i]["ref"];
         var item = PREVIEW_LOOKUP[id]
         var time = item["time"];
-        var title = item["t"];
+        var heading = item["h"];
+        var material = item["m"];
+        //  var title = item["t"]; // currently unused
         var preview = item["p"];
         var link = item["l"];
         var result = ('<p><span class="result-title"><a href="' + link + '">' +
-            title + '</a></span><br><span class="result-preview">' +
-            time + (time == "" ? "" : ". ") + preview + '</span></p>');
+            heading + '</a></span><br><span class="result-preview">' + material +
+            (material == "" ? "" : ". ") + time + (time == "" ? "" : ". ") +
+            preview + '</span></p>');
         html.push(result);
     }
     if (html.length) {

@@ -1,5 +1,5 @@
 // This code is based on code from https://github.com/BLE-LTER/Lunr-Index-and-Search-for-Static-Sites
-// Adapted by Brian Bird, spring 2022
+// Adapted by Brian Bird, winter 2022, revised spring 2022
 
 var path = require("path");
 var fs = require("fs");
@@ -10,7 +10,7 @@ var cheerio = require("cheerio");
 // Change these constants to suit your needs
 const HTML_FOLDER = "../"; // folder with your HTML files
 // Valid search fields: "title", "description", "keywords", "body"
-const SEARCH_FIELDS = ["title", "body", "time"];
+const SEARCH_FIELDS = ["heading", "body", "time"];
 const EXCLUDE_FILES = ["Search.html", "Archive", "jquery1Start", "jquery2Start", "Experiments", "Examples", "Practice"];
 const MAX_PREVIEW_CHARS = 275; // Number of characters to show for a given search result
 const OUTPUT_INDEX = "lunr_index.js"; // Index file
@@ -54,23 +54,41 @@ function readHtml(root, file, fileId) {
     var filename = path.join(root, file);
     var txt = fs.readFileSync(filename).toString();
     var $ = cheerio.load(txt);
-    // Remove the table of weekly topics
+
+    // Remove the table of weekly topics from lecture notes
     $("table:first").remove();
-    var title = $("title").text();
-    // Typora uses file names as titles by default. I want to replace these titles
-    var fileTitle = file.split("/").pop();
-    fileTitle = fileTitle.split(".")[0];
-    if (typeof title == 'undefined' || title == fileTitle) {
-        // use the content of the first heading--Typora export puts it in a span
-        title = $("h1:first").text();
-        if (typeof title == 'undefined') title = file;
-    }
+
+    // If the title or heading don't exisit I will use the filename without extension.
+    var fileName = file.split("/").pop();
+    fileName = fileName.split(".")[0];
+
+    // use the content of the first h1 for heading. Typora export puts it in a span
+    var heading = $("h1:first").text();
+    var title = $("title").text(); // get the HTML title element.
+    // Typora export to HTML uses file names as titles by default. 
+    // I want to replace those with the heading,.
+    if (title == fileName && typeof heading != 'undefined')
+        title = heading;
+    // if there is no heading, use the title, and vice versa
+    if (typeof heading == 'undefined' && typeof title != 'undefined')
+        heading = title;
+    else if (typeof heading != 'undefined' && typeof title == 'undefined')
+        title = heading;
+
     var description = $("meta[name=description]").attr("content");
+    // Typora export to HTML puts ${description} in empty title meta tags
     if (description == '${description}' || typeof description == 'undefined')
-        description = ""; // no valid YAML description was found
+        description = ""; // no valid metadata description was found
+
     var keywords = $("meta[name=keywords]").attr("content");
     if (keywords == '${keywords}' || typeof description == 'undefined')
-        keywords = ""; // no valid YAML keywords were found
+        keywords = ""; // no valid keywords metadata was found
+
+    var material = $("meta[name=material]").attr("content");
+    if (material == '${material}' || typeof material == 'undefined')
+        material = ""; // no valid doctype metadata was found    
+
+
     var body = $("body").text();
     if (typeof body == 'undefined') body = "";
     var time = $("time").text();
@@ -78,7 +96,9 @@ function readHtml(root, file, fileId) {
     var data = {
         "id": fileId,
         "link": file,
+        "m": material,
         "t": title,
+        "h": heading,
         "d": description,
         "k": keywords,
         "b": body,
@@ -114,8 +134,9 @@ function buildPreviews(docs) {
         if (preview.length > MAX_PREVIEW_CHARS)
             preview = preview.slice(0, MAX_PREVIEW_CHARS) + " ...";
         result[doc["id"]] = {
+            "m": doc["m"],
             "time": doc["time"],
-            "t": doc["t"],
+            "h": doc["h"],
             "p": preview,
             "l": doc["link"]
         };

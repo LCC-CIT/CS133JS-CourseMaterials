@@ -1,7 +1,10 @@
 ---
 title: Functions
-description: Lecture Notes. How to write and call JavaScript functions and put code into a separate .js file that is linked to an HTML web page.
+description: How to write and call JavaScript functions and put code into a separate .js file that is linked to an HTML web page.
 keywords: function, parameter, argument, return value, scope, expression, DOM, API, interface
+material: Lecture Notes
+generator: Typora
+author: Brian Bird
 ---
 
 <h1>Functions</h1>
@@ -241,6 +244,6 @@ Think about how you would write this function, and then let's write it together.
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------

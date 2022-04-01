@@ -1,6 +1,9 @@
 ---
-title: Basics of Programming
-description: Lecture Notes: Introduction to the basic programming concepts for all programming languages: control structures, syntax and data types. Intro to specifics of JavaScript and how to use Visual Studio Code.
+title: Programming Basics
+description: Introduction to the basic programming concepts for all programming languages: control structures, syntax and data types. Intro to specifics of JavaScript and how to use Visual Studio Code.
+material: Lecture Notes
+generator: Typora
+author: Brian Bird
 keywords: control structures, syntax, operators, variables, data types, overload, concatenation, dynamic type
 ---
 

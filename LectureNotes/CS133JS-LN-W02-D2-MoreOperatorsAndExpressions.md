@@ -1,7 +1,10 @@
 ---
 title: More about Operators and Expressions
-description: Lecture Notes. Learn about math and comparison operators, combined assignment operators and number ranges and the definition of an expression.
+description: Learn about math and comparison operators, combined assignment operators and number ranges and the definition of an expression.
 keywords: increment, decrement, modulo, expression, range
+material: Lecture Notes
+generator: Typora
+author: Brian Bird
 ---
 
 <h1>More About Operators and Expressions</h1>

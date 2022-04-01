@@ -1,16 +1,20 @@
-**CS133JS Beginning Programming: JavaScript**
+---
+title: More about Operators and Expressions
+description: Lecture Notes. Learn about math and comparison operators, combined assignment operators and number ranges and the definition of an expression.
+keywords: increment, decrement, modulo, expression, range
+---
 
 <h1>More About Operators and Expressions</h1>
 
+**CS133JS Beginning Programming: JavaScript**
 
-
-| Topics by Week                                       |              |
-| ---------------------------------------------------- | ------------ |
-| 1. Intro to JavaScript programming                   | 6. Arrays    |
-| 2. Functions, <mark>Operators and Expressions</mark> | 7. Functions |
-| 3. Conditional Statements                            | 8. Objects   |
-| 4. Loops                                             | 9. DOM       |
-| 5. Midterm                                           | 10. Final    |
+| Topics by Week                                               |              |
+| ------------------------------------------------------------ | ------------ |
+| 1. Intro to JavaScript programming                           | 6. Arrays    |
+| 2. Functions, Variable scope,  <mark>Operators and Expressions</mark> | 7. Functions |
+| 3. Conditional Statements                                    | 8. Objects   |
+| 4. Loops                                                     | 9. DOM       |
+| 5. Midterm                                                   | 10. Final    |
 
 
 
@@ -112,7 +116,7 @@ Run this code in the console to see what the limits are for numeric expressions 
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written 2018, revised <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
    ```

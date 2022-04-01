@@ -1,18 +1,20 @@
-
-
-**CS133JS Beginning Programming: JavaScript**
+---
+title: Basics of Programming
+description: Lecture Notes: Introduction to the basic programming concepts for all programming languages: control structures, syntax and data types. Intro to specifics of JavaScript and how to use Visual Studio Code.
+keywords: control structures, syntax, operators, variables, data types, overload, concatenation, dynamic type
+---
 
 <h1>Basics of Programming</h1>
 
+**CS133JS Beginning Programming: JavaScript**
 
-
-| Topics by Week                         |              |
-| -------------------------------------- | ------------ |
-| **1. Intro to JavaScript programming** | 6. Arrays    |
-| 2. Expressions and Operators           | 7. Functions |
-| 3. Conditional Statements              | 8. Objects   |
-| 4. Loops                               | 9. DOM       |
-| 5. Midterm                             | 10. Final    |
+| Topics by Week                                           |                                    |
+| -------------------------------------------------------- | ---------------------------------- |
+| <mark>1. Intro to JavaScript programming</mark>          | 6. Arrays                          |
+| 2.  Functions, Variable scope, Operators and Expressions | 7. Objects and Object Constructors |
+| 3. Conditional Statements                                | 8. Objects                         |
+| 4. Loops                                                 | 9. DOM                             |
+| 5. Midterm                                               | 10. Final                          |
 
 
 
@@ -22,31 +24,40 @@
 
 # Intro to Programming
 
-- Programs are sets of instructions. They implement Algorithms.
-- Three control structures
-  - Sequence – we will learn this first
-  - Selection (if statements)
-  - Repetition (loops)
-- Syntax (grammar)
-  - Variables
-  - Operators: +, -, *, /, %, ++, --
-  - Keywords (reserved words): http://www.w3schools.com/js/js_reserved.asp
-  - Statements – End with a semicolon
+Programs are sets of instructions. They implement Algorithms.
+
+## Three control structures
+
+- Sequence – we will learn this first
+- Selection (if statements)
+- Repetition (loops)
+
+## Syntax
+
+The grammar of a programming language
+
+- Variables
+- Operators: +, -, *, /, %, ++, --
+- Keywords (reserved words): http://www.w3schools.com/js/js_reserved.asp
+- Statements – End with a semicolon
+
+## JavaScript Programming
+
 - Console vs. Web page
 - Input and output (i/o)
   - Normally i/o is done to and form HTML *elements* in a web page.
-  
+
     - We've already used `document.write` to put text, including HTML elements, directly into a web page.
     - Later, we'll learn how to put text into an element or get it out of an element.
   - Can also be done with `prompt` (for input) and `alert` (for output) dialogs. This works both in the console and in a web page.
   - 
     Output can be sent to the console *log*.
-  
+
     ```javascript
      var name = "world";
      console.log("Hello " + name + "!");
     ```
-  
+
     Question: Note that we didn't output an html element, like `<p></p>` to the console log. Why?
 
 
@@ -216,6 +227,7 @@ What is happening here?
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
+

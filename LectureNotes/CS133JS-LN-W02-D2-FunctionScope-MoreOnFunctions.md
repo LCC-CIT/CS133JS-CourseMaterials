@@ -1,16 +1,20 @@
+---
+title: Functions and Variable Scope
+description: Lecture Notes. Learn the difference between local and global variables and what scope means. Learn about the scope of function parameters and variables declared within functions.
+keywords: function, parameter, let, const, scope, global variable, local variable
+---
+
+<h1>Functions and Variable Scope</h1>
+
 **CS133JS Beginning Programming: JavaScript**
 
-<h1>More About Functions</h1>
-
-
-
-| Topics by Week                                       |              |
-| ---------------------------------------------------- | ------------ |
-| 1. Intro to JavaScript programming                   | 6. Arrays    |
-| 2. <mark>Functions</mark>, Expressions and Operators | 7. Functions |
-| 3. Conditional Statements                            | 8. Objects   |
-| 4. Loops                                             | 9. DOM       |
-| 5. Midterm                                           | 10. Final    |
+| Topics by Week                                               |                    |
+| ------------------------------------------------------------ | ------------------ |
+| 1. Intro to JavaScript programming                           | 6. Arrays          |
+| 2. Functions, <mark>Variable scope</mark>, Operators and Expressions | 7. Functions again |
+| 3. Conditional Statements                                    | 8. Objects         |
+| 4. Loops                                                     | 9. DOM             |
+| 5. Midterm                                                   | 10. Final          |
 
 
 
@@ -213,7 +217,9 @@ console.log(hobbit + " lives at " + home);
 let hobbit;   // The variable should have been declared before using  it.
 ```
 
-#### 
+#### Declaring variables with `const` (yet another good thing)
+
+TODO
 
 ------
 
@@ -227,9 +233,15 @@ let hobbit;   // The variable should have been declared before using  it.
 
 [JavaScript Strict Mode](https://www.w3schools.com/js/js_strict.asp)
 
+### Free Code Camp
+
+[Var, Let, and Const – What's the Difference?](https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference)
+
+
+
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
    ```

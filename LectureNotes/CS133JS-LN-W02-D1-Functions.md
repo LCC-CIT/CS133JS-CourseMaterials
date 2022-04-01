@@ -1,16 +1,20 @@
-**CS133JS Beginning Programming: JavaScript**
+---
+title: Functions
+description: Lecture Notes. How to write and call JavaScript functions and put code into a separate .js file that is linked to an HTML web page.
+keywords: function, parameter, argument, return value, scope, expression, DOM, API, interface
+---
 
 <h1>Functions</h1>
 
+**CS133JS Beginning Programming: JavaScript**
 
-
-| Topics by Week                           |            |
-| ---------------------------------------- | ---------- |
-| 1. Intro to JavaScript programming       | 6. Arrays  |
-| 2. Functions, Expressions, and Operators | 7. Objects |
-| 3. Conditional Statements                | 8. Methods |
-| 4. Loops                                 | 9. DOM     |
-| 5. Midterm                               | 10. Final  |
+| Topics by Week                                               |            |
+| ------------------------------------------------------------ | ---------- |
+| 1. Intro to JavaScript programming                           | 6. Arrays  |
+| 2. <mark>Functions</mark>, Variable scope, Operators and Expressions | 7. Objects |
+| 3. Conditional Statements                                    | 8. Methods |
+| 4. Loops                                                     | 9. DOM     |
+| 5. Midterm                                                   | 10. Final  |
 
 
 
@@ -237,6 +241,6 @@ Think about how you would write this function, and then let's write it together.
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------

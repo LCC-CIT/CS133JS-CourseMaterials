@@ -1,18 +1,20 @@
-
-
-**CS133JS Beginning Programming: JavaScript**
+---
+title: Intro to the Course and to JavaScript
+description: Lecture Notes: Course tour, overview of web programming and an intro to JavaScript programming. 
+keywords: Static web pages, dynamic web pages, server-side code, client-side code, hello world
+---
 
 <h1>Intro to the Course and to JavaScript</h1>
 
+**CS133JS Beginning Programming: JavaScript**
 
-
-| Topics by Week                     |              |
-| ---------------------------------- | ------------ |
-| 1. Intro to JavaScript programming | 6. Arrays    |
-| 2. Expressions and Operators       | 7. Functions |
-| 3. Conditional Statements          | 8. Objects   |
-| 4. Loops                           | 9. DOM       |
-| 5. Midterm                         | 10. Final    |
+| Topics by Week                                           |                                    |
+| -------------------------------------------------------- | ---------------------------------- |
+| 1. <mark>Intro to JavaScript programming</mark>          | 6. Arrays                          |
+| 2.  Functions, Variable scope, Operators and Expressions | 7. Objects and Object Constructors |
+| 3. Conditional Statements: if and switch                 | 8. Web Page I/O                    |
+| 4. Repetition: while, do while, and for                  | 9. Review                          |
+| 5. Midterm                                               | 10. Final                          |
 
 
 

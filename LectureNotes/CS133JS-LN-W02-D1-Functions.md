@@ -49,12 +49,28 @@ This review is selective. These are the concepts we need for todays new topics.
 
 - What is a variable? 
   - How is it used? 
-  - Do an example[^1].
+  - 
+    Example:
+  
+    ```javascript
+    var count = 1;
+    count++;
+    console.log(count);
+    ```
 - What is a Data Type? 
-  - What are the primitive data types[^2]?
+  - What are the primitive data types[^1]?
   - How does JavaScript determine the type of a variable?
   - Why does type matter?
-  - Do an example[^3]
+  - Example:
+  
+      ```javascript
+      var score = 0;
+      var name = "Allison";
+      var submitted = true;
+      console.log(typeof score);
+      console.log(typeof name);
+      console.log(typeof submitted);
+      ```
 
 
 
@@ -244,28 +260,12 @@ Think about how you would write this function, and then let's write it together.
 
 
 
+
 ------
+
+
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
-------
+[^1]: Primitive data types: number, string, boolean, undefined
 
-
-
-[^1]: Example of declaring, initializing and using a variable:
-  ```javascript
-  var count = 1;
-  count++;
-  console.log(count);
-  ```
-
-[^2]: Primitive data types: number, string, boolean, undefined
-[^3]: Example showing different data types:
-  ```javascript
-  var score = 0;
-  var name = "Allison";
-  var submitted = true;
-  console.log(typeof score);
-  console.log(typeof name);
-  console.log(typeof submitted);
-  ```

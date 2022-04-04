@@ -1,7 +1,7 @@
 ---
 title: Functions
 description: How to write and call JavaScript functions and put code into a separate .js file that is linked to an HTML web page.
-keywords: function, parameter, argument, return value, scope, expression, DOM, API, interface
+keywords: function, parameter, argument, return value, expression, DOM, API, interface, function header, function body
 material: Lecture Notes
 generator: Typora
 author: Brian Bird
@@ -106,7 +106,10 @@ To use the .js file in your HTML file, add this  the `<head>` element:
 <script src="functionPractice.js"></script>
 ```
 
+We will use this for the JavaScript code in the examples below. (We won't use it to write output in an HTML element... yet).
+
 ## What a Function is
+
 ### Definition of a function in math
 
 In math, a function has: input, operation(s), output
@@ -190,7 +193,7 @@ Example:
 3. Call it from a script element using *document.write*:
 
     ```javascript
-    document.write("<p>Hello " + toPercent(0.25) + "!</p>");
+    document.write("<p>Percentage: " + toPercent(0.25) + "!</p>");
     ```
 
 4. Call it from a script element using the *inner.HTML* function:
@@ -223,11 +226,12 @@ Example:
 Let's write a function is for a math quiz. It will do the following:
 
 - Takes two numbers as parameters and then shows them to the user in a prompt asking for the sum.
-- The user answers, the function checks the answer.
-- The function pops up an alert that says true or false.
-- The function also returns true or false.
+- The user answers, the function checks the answer[^2].
+- The function returns true or false.
 
 Think about how you would write this function, and then let's write it together.
+
+We can test this function in the console, and then in a web page.
 
 
 ### Summary: Parts of a function
@@ -246,7 +250,7 @@ Think about how you would write this function, and then let's write it together.
 - Expression: A combination of variables, operators, and functions that produce a value. In other words, a chunk of code that can put a value into a variable.
 - DOM: Document Object Model. The DOM is the HTML API for JavaScript.
 - API: Application Programming Interface. This is a set of functions (aka methods) that can be called by code in an application.
-- Interface: A point of interaction between apiece of software and something or someone else. Interfaces are at boundaries.
+- Interface: A point of interaction between a piece of software and something or someone else. Interfaces are at boundaries.
 
 ## References
 
@@ -268,4 +272,5 @@ Think about how you would write this function, and then let's write it together.
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 [^1]: Primitive data types: number, string, boolean, undefined
+[^2]: We haven't learned about boolean operators yet, but we'll use one anyway: `==` is a boolean comparison operator. We can use it to compare two values, if they are equal the result will be *true*, otherwise the result will be *false*. For example: `var isCorrect = sum == answer` assuming `sum` is the actual sum of two numbers and answer is the `answer` given by the user.
 

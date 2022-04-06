@@ -33,21 +33,11 @@ author: Brian Bird
 
 - How is last week's lab assignment going?
   - Are there any issues with code reviews?
-  - I've finished grading the lab 1 production version. A few people had some things missing and have uploaded those--I'll regrade those today.
+  - I've finished grading the lab 1 production version. 
 - How is the reading going?
   - The reading quiz is due tomorrow.
-  - We'll review the answers on Wednesday/Thursday.
+  - We'll review the answers on Wednesday.
 - Does anyone have any general questions about anything?
-
-## Announcements
-
-Reminders about virtual tutoring and getting help.
-
-- Tutoring available 9:00 to 5:00 M&mdash;F.
-  - Fill out the request form as well as going to the Zoom meeting.
-- Use the Q and A forum on our Moodle page too.
-- My office hours: 11:00 to 12:00 M&mdash;Th.
-  - You can sit in on extra lectures if you like as well.
 
 
 
@@ -58,7 +48,7 @@ Reminders about virtual tutoring and getting help.
 - What is scope? 
 - What is meant by the terms: “local variable”, and “global variable”?
 - Why are global variables dangerous?
-- Why shouldn't we use a variable without declaring it (with var or let)?
+- Why shouldn't we use a variable without declaring it with `var` or `let`[^1]? Why is `let` better?
 - Identify the scope of each of the variables below:
 
 ```javascript
@@ -236,7 +226,7 @@ let wind = 0; // Wind speed in MPH
 
 - OR, `||`
 
-   Either comparisons can evaluate to true for the entire conditional expression to be true.
+   Either comparison can evaluate to true for the entire conditional expression to be true.
    
    ```javascript
    degrees = prompt("Enter the temperature.");
@@ -264,38 +254,41 @@ let wind = 0; // Wind speed in MPH
 
 ## Nested if statements
 
-- Another way to combine multiple conditional expressions is to nest the if statements. 
+Another way to combine multiple conditional expressions is to nest the if statements. 
 
-- Nesting has the same effect as using the AND logical operator. 
+```javascript
+if(degrees < 60) 
+  if(wind > 10)
+     alert("Wear a jacket");
+```
 
-- Nesting that is equivalent to ANDing two conditions:
-  
-   ```javascript
-   if(degrees < 60) 
-     if(wind > 10)
-        alert("Wear a jacket");
-   ```
-   
-   
+Nesting that is equivalent to ANDing two conditions:
+
+```javascript
+if(degrees < 60 && wind > 10)
+     alert("Wear a jacket");
+```
+
+
 
 ## Conditionally Executing Multiple Statements
 
-So far, we've only executed on statement based on the condition in our if statement. We can execute multiple statements by enclosing them in curly braces, `{ }`.
+So far, we've only executed one statement based on the condition in our if statement. We can execute multiple statements by enclosing them in curly braces, `{ }`.
 
 ### When to use curly braces
 
-- By default, an if statement will execute only the one statement following the condition.
-  - This is true even if the statement is another if statement (nesting)
+- By default, an if statement will execute only a single statement following the condition.
+  - This is true even if the statement is another if statement (nesting).
 
 - To execute more than one statement, put them in curly braces.
 
 - Best practice: Use curly braces all the time so that you don't forget and so your code will be clearer. Example:
 
- This example checks an user's input and prompts for input again if it wasn't valid input:
+ This example checks an user's input and prompts for input again if it the input wasn't valid:
 
 ```javascript
 degrees = prompt("Enter the temperature");
-if(degrees < -100 || degrees > 150)  // invalid temperatures
+if(degrees < -100 || degrees > 150)  // check for temperatures unlikely to be valid
 {
    alert("Please enter a temperature between -100 and 150")
    degrees = prompt("Enter the temperature");
@@ -311,10 +304,10 @@ if(degrees < 45)
 
 ### Scope of variables inside curly braces
 
-When we put variables inside curly braces, we potentially create a new scope.
+When we declare variables inside curly braces, they have local scope... well, `var` is an exception.
 
 - Variables declared with `var` are in a separate scope only if they are declared inside a function.
-- Variables declared with `let` are in a separate scope any time they are declared inside of curly braces.
+- Variables declared with `let` are in a separate scope any time they are declared inside of curly braces&mdash;another reason `let` is better than `var`.
 
 Example using `let`:
 
@@ -365,7 +358,5 @@ Take a look at Part 1 of the lab assignment now.
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
-------------
-   ```
+[^1]: JavaScript will treat an undeclared variable as a global variable even if you first assign a value to it in a local scope.
 
-   ```

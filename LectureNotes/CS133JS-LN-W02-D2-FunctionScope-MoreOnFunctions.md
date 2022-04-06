@@ -31,7 +31,7 @@ author: Brian Bird
 
 ## Q and A
 
-- How is part 1 of week's lab assignment going?
+- How is part 1 of this week's lab assignment going?
 - Does anyone have any general questions about anything?
 
 ## Quiz Review
@@ -54,7 +54,7 @@ Go over the answers to the quiz questions
 - What does it mean to "call" a function?
   How do you do it?
 - Do you have to write all the functions you use? 
-- What are the name of the parts of the function below? 
+- What are the names of the parts of the function below? 
   How would you call it?
 
 ```javascript
@@ -222,7 +222,64 @@ let hobbit;   // The variable should have been declared before using  it.
 
 #### Declaring variables with `const` (yet another good thing)
 
-TODO
+Variables declared with `const` cannot have a new value assigned to them and they have *block scope* (like variables declared with `let`).
+
+Here's an example:
+
+```javascript
+const inchToCentemeter = 2.54;
+let centemeters = inchToCentementer * 12; // this works
+let inchToCentemeter = 2.54;  // Error, redeclaration is not allowed!
+inchToCententemeter = 2.54;  // Error, assigning a new value is not allowed!
+
+const centemeterToInch;       // Error, a const must have a value assigned to it!
+centemeterToInch = 0.39370079;
+```
+
+##### Literal vs. named constants
+
+There are actually two kinds of constants:
+
+- *Literal constants* are just "hard coded" values like:
+
+  ```javascript
+  let length = 12 * 2.54;  // 2.54 is a literal constant
+  let slogan = "Loki" + " for president";  // "Loki" is a literal constant
+  ```
+
+- *Named constants* are declared with `const` and are like variables in that they provide named storage for a value. For example:
+
+  ```javascript
+  const inchToCentemeter = 2.54;
+  let length = 12 * inchToCentemeter; 
+  
+  const candidate = "Loki";
+  let slogan = candidate + " for president";  
+  ```
+
+##### Why use constants?
+
+- They prevent the coder from making a mistakes:
+
+  -  You can't assign a value to a variable that should not be changed.
+  - You can't forget to assign a value to a constant.
+
+- They give you an alternative to "magic numbers" (literal constants).
+
+  - If you use a literal constant in your code, someone else who looks at it may not be able to figure out what the number is for.
+
+    ```javascript
+    // Magic numbers
+    let price = 10 * 1.25
+    // Meaning made clear with variable and constant names
+    const usToCanadianDollar = 1.25;
+    let costInUsDollar = 10;
+    let price = costInUsDollar * usToCanadianDollar;
+    ```
+
+  - They give you a way to change a value in one place that is used in many places in your code.
+
+  
 
 ------
 

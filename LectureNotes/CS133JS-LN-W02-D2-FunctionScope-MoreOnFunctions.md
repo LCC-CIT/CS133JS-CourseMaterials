@@ -107,7 +107,7 @@ Go over the answers to the quiz questions
 
 - Variables that are declared outside of any function are called *global variables*.
 
-  Note: When using `var` to declare variables, local scope will only be for functions. Later, we'll use `let` to declare variables which will allow us to declare local variables in other blocks of code that we'll learn about in the coming weeks.
+  Note: When using `var` to declare variables, local scope will only be for functions. Later, (see below) we'll use `let` to declare variables which will allow us to declare local variables in other blocks of code that we'll learn about in the coming weeks.
 
 ### Exercise
 
@@ -158,14 +158,14 @@ console.log(n1); // Are n1, n2 and n3 valid here?
   function total(n1, n2, n3)  
   {
        var t = n1 + n2 + n3; 
-       n1 = 0;
+       n1 = 0;   // set this local variable to 0
        return t;
   }
   
   var n1 = 2, n2 = 3, n3 = 6;
   sum = total(n1, n2, n3);
   console.log(sum);
-  console.log(n1);
+  console.log(n1);  // will this be 0 or 2? Which n1 is this?
   ```
   
   
@@ -197,6 +197,8 @@ hobbit = "Frodo";   // This variable isn't declared, it will cause an error.
 var home = "Bag End";
 console.log(hobbit + " lives at " + home);
 ```
+
+**Note:** in the browser console, you need to enter `"use strict";` and the code that follows it without hitting enter. Use shift-enter at the end of each line.
 
 ### Hoisting
 
@@ -270,7 +272,7 @@ There are actually two kinds of constants:
 
     ```javascript
     // Magic numbers
-    let price = 10 * 1.25
+    let price = 10 * 1.25;
     // Meaning made clear with variable and constant names
     const usToCanadianDollar = 1.25;
     let costInUsDollar = 10;

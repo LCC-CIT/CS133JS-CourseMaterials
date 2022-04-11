@@ -27,23 +27,27 @@ author: Brian Bird
 
 ------
 
-# Introduction
+## Introduction
 
-## Q and A
+### Q and A
 
 - How is last week's lab assignment going?
   - Are there any issues with code reviews?
+    - Remember that the beta version is like a draft. It doesn't need to be complete or completely working. 70% done is good enough for a beta version.
   - I've finished grading the lab 1 production version. 
 - How is the reading going?
   - The reading quiz is due tomorrow.
   - We'll review the answers on Wednesday.
 - Does anyone have any general questions about anything?
+  - This afternoon, I'll answer questions posted to the forum or e-mailed to me over the weekend.
+  - I frequently answer questions over the weekend, but not always.
 
 
 
-# Review
 
-## Scope
+## Review
+
+### Scope
 
 - What is scope? 
 - What is meant by the terms: “local variable”, and “global variable”?
@@ -69,7 +73,7 @@ console.log(extraVariable);
 
 
 
-## Comparison Operators
+### Comparison Operators
 
 | Symbol | Condition for truth                                         | Examples of true expressions<br />where: a = 7, b = 8; |
 | ------ | ----------------------------------------------------------- | ------------------------------------------------------ |
@@ -82,9 +86,9 @@ console.log(extraVariable);
 
 
 
-## Logical Operators
+### Logical Operators
 
-### Logical operators and expressions
+#### Logical operators and expressions
 
 | Symbol | Name | Condition for truth    | Examples of true expressions where:  a = true, b = false; |
 | ------ | ---- | ---------------------- | --------------------------------------------------------- |
@@ -94,7 +98,7 @@ console.log(extraVariable);
 
 
 
-### Truth tables
+#### Truth tables
 
 | **AND** |       |       |
 | ------- | ----- | ----- |
@@ -124,7 +128,7 @@ console.log(extraVariable);
 
 
 
-## Ternary Operator
+### Ternary Operator
 
 - What is the *ternary conditional operator*?
 
@@ -141,19 +145,15 @@ console.log(extraVariable);
 
 
 
-## Control Structures
+### Control Structures
 
 What are the three control structures? These are things in the programming language that control the flow of execution in a program.
 
-
-
 *End of the review. This was a long review!*
-
-
 
 ------
 
-# Selection using `if` statements
+## Selection using `if` statements
 
 There are three types of selection statements:
 
@@ -161,7 +161,7 @@ There are three types of selection statements:
 2. `if` statements
 3. `switch` statements
 
-## Types of `if` statements
+### Types of `if` statements
 
  In the examples below, assume this line of code was executed first:
 ```javascript
@@ -203,7 +203,7 @@ let degrees = 0; // Temperature in Fahrenheit
 
 
 
-## Conditional expressions using *logical operators*
+### Conditional expressions using *logical operators*
 
 For these examples, assume this additional variable has been declared and initialized :
 ```javascript
@@ -240,7 +240,7 @@ let wind = 0; // Wind speed in MPH
 
 - NOT, `!`
 
-   Not inverts the boolean value resulting from the comparison.
+   Not inverts the Boolean value resulting from the comparison.
    
    ```javascript
    let name = "";  // Person wishing to fly the Millennium Falcon
@@ -252,7 +252,7 @@ let wind = 0; // Wind speed in MPH
    
 
 
-## Nested if statements
+### Nested if statements
 
 Another way to combine multiple conditional expressions is to nest the if statements. 
 
@@ -271,11 +271,11 @@ if(degrees < 60 && wind > 10)
 
 
 
-## Conditionally Executing Multiple Statements
+### Conditionally Executing Multiple Statements
 
 So far, we've only executed one statement based on the condition in our if statement. We can execute multiple statements by enclosing them in curly braces, `{ }`.
 
-### When to use curly braces
+#### When to use curly braces
 
 - By default, an if statement will execute only a single statement following the condition.
   - This is true even if the statement is another if statement (nesting).
@@ -302,7 +302,7 @@ if(degrees < 45)
 
 
 
-### Scope of variables inside curly braces
+#### Scope of variables inside curly braces
 
 When we declare variables inside curly braces, they have local scope... well, `var` is an exception.
 
@@ -333,19 +333,32 @@ else
 
 ```
 
+## Lab Assignment
+
+Take a look at Part 1 of the lab assignment now. You know enough to do the first 7 problems which use if statements. The last two problems use switch case statements which we will cover in the next class session.
+
+### Console  vs Code Editor for Part 1
+
+For part 1 of the lab assignment, the instructions say to write the code in a browser console. This is just so that you can write the code quickly and easily. If you find that it's easier for you to write the code in a code editor, like Visual Studio Code, you are welcome to do that, but then you will need to put the code in a .js file and then you will also need a way to run the code.
+
+- Copy and past code snippets into the console.
+- Write your code so everything is inside of functions, then create a web page that loads the files and call the functions from the console.
 
 
-# Lab Assignment
 
-Take a look at Part 1 of the lab assignment now.
+## Examples
+
+There are three examples posted on Moodle. The first two use `if else` statements. Lets do one of them together.
+
+
 
 ------
 
 
 
-# Reference
+## Reference
 
-## W3Schools
+### W3Schools
 [JavaScript Comparison and Logical Operators](https://www.w3schools.com/js/js_comparisons.asp)
 
 [JavaScript if else and else if](https://www.w3schools.com/js/js_if_else.asp)

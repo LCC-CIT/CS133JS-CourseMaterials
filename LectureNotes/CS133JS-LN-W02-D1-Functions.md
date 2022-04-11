@@ -1,7 +1,7 @@
 ---
 title: Functions
 description: How to write and call JavaScript functions and put code into a separate .js file that is linked to an HTML web page.
-keywords: function, parameter, argument, return value, expression, DOM, API, interface, function header, function body
+keywords: function, parameter, argument, return value, expression, DOM, API, interface, function header, function body, getElementById, innerHtml
 material: Lecture Notes
 generator: Typora
 author: Brian Bird

@@ -41,6 +41,7 @@ author: Brian Bird
 - Does anyone have any general questions about anything?
   - This afternoon, I'll answer questions posted to the forum or e-mailed to me over the weekend.
   - I frequently answer questions over the weekend, but not always.
+  - I have an office again! Room 152.
 
 
 
@@ -52,7 +53,7 @@ author: Brian Bird
 - What is scope? 
 - What is meant by the terms: “local variable”, and “global variable”?
 - Why are global variables dangerous?
-- Why shouldn't we use a variable without declaring it with `var` or `let`[^1]? Why is `let` better?
+- Why shouldn't we use a variable without declaring it with `var` or `let`[^1]? Why is `let` better?
 - Identify the scope of each of the variables below:
 
 ```javascript
@@ -304,10 +305,10 @@ if(degrees < 45)
 
 #### Scope of variables inside curly braces
 
-When we declare variables inside curly braces, they have local scope... well, `var` is an exception.
+When we declare variables inside curly braces, they have local scope... well, `var` is an exception.
 
 - Variables declared with `var` are in a separate scope only if they are declared inside a function.
-- Variables declared with `let` are in a separate scope any time they are declared inside of curly braces&mdash;another reason `let` is better than `var`.
+- Variables declared with `let` are in a separate scope any time they are declared inside of curly braces&mdash;another reason `let` is better than `var`.
 
 Example using `let`:
 

@@ -106,6 +106,8 @@ You will need to download these applications and install them on your computer. 
 
 - An ftp client to upload your web pages to citstudent.lanecc.edu. [FileZilla](https://filezilla-project.org/) is a free ftp client that can be downloaded and used on Windows, OS X, or Linux. 
 
+- Microsoft  Word (see the free Microsoft Office offer below) or a word processor that is compatible with Word, like the free, open source, [Libre Office](https://www.libreoffice.org).
+
 
 ####  Free and Discounted Software for Students
 

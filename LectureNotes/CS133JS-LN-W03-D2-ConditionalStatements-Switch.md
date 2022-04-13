@@ -1,7 +1,7 @@
 ---
 title: switch case statements
 description: Learn how to do selection with switch case statements.
-keywords: selection, conditional expression, switch case
+keywords: selection, conditional expression, switch, switch case
 material: Lecture Notes
 generator: Typora
 author: Brian Bird
@@ -28,6 +28,19 @@ author: Brian Bird
 [TOC]
 
 ------
+
+# Introduction
+
+## Q and A
+
+- How is part 1 of this week's lab assignment going?
+- Does anyone have any general questions about anything?
+
+## Quiz Review
+
+Go over the answers to the quiz questions.
+
+
 
 # Review
 
@@ -87,7 +100,15 @@ else
 }
 ```
 
- 
+###  Exercise
+
+There are three prices for a book titled *The Joy of JavaScript*:
+
+- $34.99 for the hardback.
+- $24.99 for the paperback.
+- $14.99 for the e-book, or free for students.
+
+Write the code and run it in the console so you can simply assign values to variables for input.
 
 ------
 
@@ -174,10 +195,6 @@ else
      break;
  }
 ```
-
-
-
-------
 
 
 

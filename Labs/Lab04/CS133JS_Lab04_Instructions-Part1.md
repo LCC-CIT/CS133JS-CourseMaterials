@@ -26,9 +26,9 @@ For each of the exercises, complete the function "stub" in the starter file, CS1
 
    Prime numbers are numbers that are not divisible without a remainder by any other number. You can find them by using a loop to try dividing the number in question by every number between 2 and one less than the number itself. Use the modulo, `%` operator to do the division and check for a remainder.
 
-4. Use a *do while* loop to count the number of words in a sentence, just like you did for problem 1. 
+4. Use a *do while* loop to return a whole square root of a number, if it exists.
 
-   Does testing the loop condition at the bottom of the loop have any effect on the word count?
+   Use a do while loop to increment a number and square it. stop incrementing if the square is greater than or equal to the number passed to the function. If it is not equal, then return zero otherwise return the number&mdash;which is the square root.
 
 ## Part 2: Web Apps
 

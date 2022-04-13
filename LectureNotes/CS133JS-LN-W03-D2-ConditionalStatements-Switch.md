@@ -196,7 +196,9 @@ Write the code and run it in the console so you can simply assign values to vari
  }
 ```
 
+### Exercise
 
+Write code in the console to determine the price of *The Joy of JavaScript* using a `switch` statement instead of a multi-branching `if else` statement.
 
 # Reference
 

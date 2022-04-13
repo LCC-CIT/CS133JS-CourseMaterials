@@ -83,7 +83,7 @@ Parts of an if statement:
 
    
 
-Braces (optional unless there is more than one line to execute, but recommended.)
+Braces (optional unless there is more than one statement to execute, but recommended.)
 
 ```javascript
 // convert fractions in the form 1/x to decimals
@@ -114,12 +114,12 @@ Write the code and run it in the console so you can simply assign values to vari
 
 # Selection using `switch case` statements
 
-- The third type of conditional statement we are learning in this course
-
+- The third type of selection control structure we are learning in this course
 - Can be replaced with a multi-branching *if, else if, else* statement.
+- A switch can’t do everything that an *if, else if, else* statement can.
+   - Can only be used to test for equality, not `>` or `<`
+   - Can only operate on a single variable.
 
-- Can only be used to test for equality, not `>` or `<`
-   (So a switch can’t do everything that an *if, else if, else* statement can.)
 
 ### Parts of a switch statement
 

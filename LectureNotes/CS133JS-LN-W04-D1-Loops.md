@@ -218,7 +218,7 @@ for (let i = 1;  i <= 10;  i++)   // loop header
 **Example: a loop that shows squares of numbers**
 
 ```javascript
-// Display squares of a number
+// Display squares of a series of numbers
 for (let i = 0; i < 5; i++)
 {
     let result = i * i;
@@ -262,7 +262,7 @@ While you can do this, it's not recommended unless you really need your loop cou
 **Example: increment the loop counter in the body of the loop**
 
 ```javascript
-// Display squares of a number
+// Display squares of a series of numbers
 let i = 0;
 for (; i < 5;)
 {

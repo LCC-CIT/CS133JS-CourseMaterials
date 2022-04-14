@@ -1,7 +1,7 @@
 ---
 title: switch case statements
 description: Learn how to do selection with switch case statements.
-keywords: selection, conditional expression, switch case
+keywords: selection, conditional expression, switch, switch case
 material: Lecture Notes
 generator: Typora
 author: Brian Bird
@@ -28,6 +28,19 @@ author: Brian Bird
 [TOC]
 
 ------
+
+# Introduction
+
+## Q and A
+
+- How is part 1 of this week's lab assignment going?
+- Does anyone have any general questions about anything?
+
+## Quiz Review
+
+Go over the answers to the quiz questions.
+
+
 
 # Review
 
@@ -70,7 +83,7 @@ Parts of an if statement:
 
    
 
-Braces (optional unless there is more than one line to execute, but recommended.)
+Braces (optional unless there is more than one statement to execute, but recommended.)
 
 ```javascript
 // convert fractions in the form 1/x to decimals
@@ -87,18 +100,26 @@ else
 }
 ```
 
- 
+###  Exercise
+
+There are three prices for a book titled *The Joy of JavaScript*:
+
+- $34.99 for the hardback.
+- $24.99 for the paperback.
+- $14.99 for the e-book, or free for students.
+
+Write the code and run it in the console so you can simply assign values to variables for input.
 
 ------
 
 # Selection using `switch case` statements
 
-- The third type of conditional statement we are learning in this course
-
+- The third type of selection control structure we are learning in this course
 - Can be replaced with a multi-branching *if, else if, else* statement.
+- A switch can’t do everything that an *if, else if, else* statement can.
+   - Can only be used to test for equality, not `>` or `<`
+   - Can only operate on a single variable.
 
-- Can only be used to test for equality, not `>` or `<`
-   (So a switch can’t do everything that an *if, else if, else* statement can.)
 
 ### Parts of a switch statement
 
@@ -175,11 +196,9 @@ else
  }
 ```
 
+### Exercise
 
-
-------
-
-
+Write code in the console to determine the price of *The Joy of JavaScript* using a `switch` statement instead of a multi-branching `if else` statement.
 
 # Reference
 

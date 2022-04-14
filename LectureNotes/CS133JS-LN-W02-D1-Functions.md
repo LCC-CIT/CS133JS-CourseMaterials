@@ -76,7 +76,9 @@ This review is selective. These are the concepts we need for todays new topics.
 
  # Writing Output into HTML Elements
 
-Last week we learned to write html into a web page. Now we will learn to put our JavaScript output into existing HTML elements.
+Last week we learned to write html into a web page using `document.write`. Now we will learn to put our JavaScript output into existing HTML elements.
+
+## Using getElementById and innerHTML
 
 ```html
 <p id="answer"></p>
@@ -87,11 +89,21 @@ Last week we learned to write html into a web page. Now we will learn to put our
 </script>
 ```
 
-Combining statements:
+The `getElementById` function finds the HTML elemet with the id that is passed to the function (in the paraethesis) and returns a *reference* to that element. In this example, the referenced to the paragraph element is stored in the variable `p`.  Think of the reference as an address for the element--a way to access the element later.
+
+The `innerHTML` property represents the text that goes between the tags. In this case, when we assign a value to `p.InnerHTML` it will go between the  `<p>` and `</p>` tags. 
+
+## Combining statements
+
+We can get the element and assign a value to it's innerHTML all in one statement:
 
 ```javascript
 document.getElementById("answer").innerHTML = 2 * 3;
 ```
+
+
+
+
 
 
 

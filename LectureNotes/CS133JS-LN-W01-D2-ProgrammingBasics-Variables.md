@@ -82,41 +82,61 @@ Last time, we wrote this code and ran it in the browser console:
   var name = prompt("Please enter your name");
       		document.write("Hello " + name + "!");
   ```
-2. This time, we'll put it in a web page, but, first, install [Visual Studio Code](https://code.visualstudio.com/). 
-   And, optionally, add the following extensions:
+### Using Visual Studio Code
 
-   - [Debugger for Firefox](https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug)
-   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-   - [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
+This time, we'll put it in a web page, but, first, install [Visual Studio Code](https://code.visualstudio.com/). 
+And, optionally, add the following extensions:
 
-3. Using VS Code, start with a standard [empty HTML page](../Examples/Empty.html) and add this code to the head element inside of a HTML `<script></script>` element:
+- [Debugger for Firefox](https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Beautify](https://marketplace.visualstudio.com/items?÷itemName=HookyQR.beautify)
 
-   ```HTML
-   <head>
-       <meta charset="UTF-8" />
-       <title>JS Demo</title>
-       <script>
-         var name = prompt("Please enter your name");
-         document.write("Hello " + name + "!");
-       </script>
-   </head>
-   ```
+### Putting JS Code in an HTML `<script>` Element
 
-   We can also put script elements in the body of a web page:
+Using VS Code, start with a standard [empty HTML page](../Examples/Empty.html) and add this code to the head element inside of a HTML &lt;script&gt; element:
 
-   ```html
-   <body>
-       <h1>My First JavaScript Program</h1>
-       <script>
-         var name = prompt("Please enter your name");
-         document.write("Hello " + name + "!");
-       </script>
-   </body>
-   ```
+```HTML
+<head>
+    <meta charset="UTF-8" />
+    <title>JS Demo</title>
+    <script>
+      var name = prompt("Please enter your name");
+      document.write("Hello " + name + "!");
+    </script>
+</head>
+```
 
-   
+We can also put script elements in the body of a web page:
 
-4. Let's *refactor* it to add a second variable and prompt: 
+```html
+<body>
+    <h1>My First JavaScript Program</h1>
+    <script>
+      var name = prompt("Please enter your name");
+      document.write("Hello " + name + "!");
+    </script>
+</body>
+```
+
+Variables that are declared in one &lt;script&gt; element are visible in all the &lt;scrpit&gt; elements that are below it on the page.
+
+
+```html
+<body>
+    <h1>Multiple Script Elements</h1>
+    <script>
+      var name = "June";
+    </script>
+    <!-- some more HTML -->
+  <script>
+     document.write("Hello " + name + "!");
+  </script>
+</body>
+```
+
+
+
+2. Let's *refactor* it to add a second variable and prompt: 
   ```javascript
     var firstName = prompt("Enter your first name");
     var lastName = prompt("Enter your last name");

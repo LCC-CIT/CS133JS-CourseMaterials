@@ -1,7 +1,7 @@
 ---
 title: if statements
 description: Learn how to implement the selection control structure using if statements.
-keywords: selection, if, conditional expression
+keywords: selection, if, conditional expression, ternary oeprator
 material: Lecture Notes
 generator: Typora
 author: Brian Bird
@@ -127,25 +127,6 @@ console.log(extraVariable);
 | F       | T     |
 | T       | F     |
 
-
-
-### Ternary Operator
-
-- What is the *ternary conditional operator*?
-
-- How are *conditional expressions* used in *a ternary conditional statement*?
-
-- What value does a *ternary conditional statement* evaluate to?
-
-- Example:
-
-  ```javascript
-  let temperature = 60;
-  alert(temperature < 50 ? "Wear a coat" : "Enjoy the warm day");
-  ```
-
-
-
 ### Control Structures
 
 What are the three control structures? These are things in the programming language that control the flow of execution in a program.
@@ -154,15 +135,50 @@ What are the three control structures? These are things in the programming langu
 
 ------
 
-## Selection using `if` statements
+## Selection Using `if` and the Ternary Operator
 
-There are three types of selection statements:
+There are three ways to do selection in JavaScript:
 
-1. *ternary* statements using `? : `
+1. *ternary* expressions using `? : `
 2. `if` statements
 3. `switch` statements
 
-### Types of `if` statements
+In this session we will learn to use the ternary oprator and `if` statements. Next time we will learn to use `switch` statements.
+
+### Ternary Operator
+
+- The ternary operator is the question mark, `?`
+
+- Syntax:
+
+  condition ? expression : expression
+           &uarr;       &uarr;          &uarr;         &uarr;          &uarr; 
+           1       2          3         4          5
+
+  	1. Logical condition, like: a === b
+  	1. The ternary operator.
+  	1. Expression returned if the condition is true.
+  	1. Colon separates the two expressions.
+  	1. Expression that is returned if the condition is false.
+
+- The ternary operator is used to form a conditional *expression*. An expression evaluates to a value. For example:
+  ```javascript
+  let age = prompt("How old are you?");
+  let legalStatus = age >= 18 ? "adult" : "child";
+  ```
+
+- Another example:
+
+  ```javascript
+  let temperature = prompt("What is the temperature?");
+  alert(temperature < 50 ? "Wear a coat" : "Enjoy the warm day");
+  ```
+
+### `if` Statements
+
+An if statement is used to conditionally determine whether or not one or more other statements are executed. Note that it does not form an expression&mdash;it doesn't evaluate to a value.
+
+#### Types of `if` statements
 
  In the examples below, assume this line of code was executed first:
 ```javascript

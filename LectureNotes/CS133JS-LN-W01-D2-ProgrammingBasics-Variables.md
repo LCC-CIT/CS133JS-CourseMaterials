@@ -40,7 +40,7 @@ Programs are sets of instructions. They implement Algorithms.
 The grammar of a programming language
 
 - Variables
-- Operators: +, -, *, /, %, ++, --
+- Operators: =, +, -, *, /, %, ++, --
 - Keywords (reserved words): http://www.w3schools.com/js/js_reserved.asp
 - Statements – End with a semicolon
 
@@ -114,8 +114,6 @@ Last time, we wrote this code and ran it in the browser console:
    </body>
    ```
 
-   
-
 4. Let's *refactor* it to add a second variable and prompt: 
   ```javascript
     var firstName = prompt("Enter your first name");
@@ -140,10 +138,22 @@ Last time, we wrote this code and ran it in the browser console:
      document.write('Tamil proverb: "Even elephants do slip"');
      ```
 
-- write  vs. writeln
+- Running code in the console vs. running in a browser
 
-  - Repeat the example above, but put the script block inside a  `<pre>` block. The write line doesn’t generate a ` <br />` but it does generate a newline, so we need to put it inside a preformatted block.
+
+  - The console is mainly for experimenting and debugging code. It's not where the code will ultimately get used.
+
+  - The console lets us immediately try out snippets of code and see instant results.
+
+  - To run code in the browser we have to:
+
+
+    - Write an HTML file in a code editor
+    - Open the file in a browser
+    - The code will run when we load or reload the web page.
+
     
+
 
 
 ## Data Types 

@@ -97,7 +97,7 @@ Revisit these and discuss what might run on the server and what might run in the
   ```javascript
   document.write("<p>Hello world!</p>");
   ```
-  3. Lets add a variable. A variable is a thing we can use to store information. Now you'll be able to change the name, but you;'l need to change the source code to do it  :-(
+  3. Lets add a *variable* named `name`. A variable is a thing we can use to store information. Now you'll be able to change the name, but you;'l need to change the source code to do it  :-(
   ```javascript
    var name = "world"; // can change to “other names”
    		 document.write("<p>Hello " + name + "!</p>");
@@ -110,7 +110,14 @@ Revisit these and discuss what might run on the server and what might run in the
   ```
   Now it's almost useful :-)
 
+Let's talk about how this works by looking at some key pieces of the code:
 
+- `var`
+  We use this JavaScript keyword to *declare* a variable. Declaring a variable means announcing to JavaScript that this is a new variable that we will be using.
+- `prompt`
+  A function built into JavaScript that pops up a dialog box that displays a message and lets the user enter some input.
+- `=`
+  The *assignment operator*. It takes the information (in this case a name) coming from the prompt on the right and puts it into the variable on the left. Note that in computer programming, the direction information flows with the `=` symbol is the opposite of algebra.
 
 # Course Tour
 

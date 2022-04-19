@@ -1,6 +1,6 @@
 <h1>Lab 4, Repetition, Part 2 Instructions</h1>
 
-<h2>Group B</h2>
+<h2>Group C</h2>
 
 **CS 133JS, Beginning Programming: JavaScript**
 
@@ -23,40 +23,42 @@ For each of the web apps:
   - `alert`
   - `document.write`
 
-### 1. Loan Repayment
+### 1. Cycling Plan
 
 #### Requirements
 
-Your friend made you a no-interest loan of $100 dollars. Enter the number of weeks you will take to pay them back. Show the cumulative amount paid and the balance.
+You have set a goal to increase the distance you ride your bike every week. You will ride for half an hour and start at 5 miles. Enter the distance you will add to your ride each week. Show the total distance to ride and the speed (speed = miles/hours). Show this for six weeks. 
 
-Example output if the user enters 5:
+Example output if the user enters 0.5 (half a mile):
 
 
-Paid, Balance       &leftarrow; Put this in HTML on the web page
+Miles, MPH        &leftarrow; Put this in HTML on the web page
 
-​     20,      80          &leftarrow; All five lines of output are returned by the `countdown` function.
+​     5,      10          &leftarrow; All five lines of output are returned by the `countdown` function.
 
-​     40,      60
+​     5.5,   11
 
-​     60,      40
+​     6,      12
 
-​     80,      20
+​     6.5,   13
 
-​     100,     0
+​     7,      14
+
+     7.5,   15
 
 #### Implementation
 
-**In the .js file:** In the countdown function, write a loop that counts the payments, calculates the amount paid and balance, and concatenates each line of output to a string. Put a `<br>` at the end of each line. The function will return the string.
+**In the .js file:** In the makePlan function, write a loop that counts the weeks, calculates the distance and speed, and concatenates each line of output to a string. Put a `<br>` at the end of each line. The function will return the string.
 
-**In the .html file:** Use [CS133JS_Lab04_Part2B_LoanRepayment.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2B_LoanRepayment.html). In the script element, call the loanRepayment function. The loanRepayment function will return an output string. Use document.write to put the output string on the page.
+**In the .html file:** Use [CS133JS_Lab04_Part2C_CyclingPlan.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2C_CyclingPlan.html). In the script element, call the makePlan function. The function will return an output string. Use document.write to put the output string on the page.
 
-### 2. Beverage Labeling
+### 2. Trail Difficulty Rating
 
 Write a new version of web app II from the previous lab. This web app will do the same thing as the previous one, but will have input validation.
 
 **In the .js file:** Put the code from the previous lab's function into the stub function provided.
 
-**In the .html file:** Use [CS133JS_Lab04_Part2B_BeverageLabeling.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2B_BeverageLabeling.html). In the script element, add input validation loops for % fruit juice and % sweetener, that will:
+**In the .html file:** Use [CS133JS_Lab04_Part2C_TrailRating.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2C_TrailRating.html). In the script element, add input validation loops for round trip distance and elevation gain.
 
 - Limit user input to reasonable values. 
 - Pop up an alert telling the user what the acceptable input range is.
@@ -74,7 +76,7 @@ Write a new version of web app III from the last lab that will:
 
  **In the .js file:** Put the code from the previous function into the stub function provided.
 
-**In the .html file:** Use [CS133JS_Lab04_Part2B_StateTax.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2B_StateTax.html). 
+**In the .html file:** Use [CS133JS_Lab04_Part2A_StateTax.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2A_StateTax.html). 
 
 - Add an input validation loop in the script element that will do all the same kind things as the previous validation loop.
 - Add a loop that will ask the user if they want to enter another state and determine another tax rate.

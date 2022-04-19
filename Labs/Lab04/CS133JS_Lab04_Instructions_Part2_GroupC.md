@@ -64,22 +64,22 @@ Write a new version of web app II from the previous lab. This web app will do th
 - Pop up an alert telling the user what the acceptable input range is.
 - Keep prompting the user for input until it is valid.
 
-### 3. State Tax
+### 3. Trail Types
 
 Write a new version of web app III from the last lab that will:
 
 - Do input validation.
 
-- Allow the user to enter another state without reloading the web page. 
+- Allow the user to enter another activity without reloading the web page. 
 
   (After the results have been shown, ask the user if they want to run the program again.)
 
  **In the .js file:** Put the code from the previous function into the stub function provided.
 
-**In the .html file:** Use [CS133JS_Lab04_Part2A_StateTax.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2A_StateTax.html). 
+**In the .html file:** Use [CS133JS_Lab04_Part2C_TrailTypes.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2C_TrailTypes.html). 
 
 - Add an input validation loop in the script element that will do all the same kind things as the previous validation loop.
-- Add a loop that will ask the user if they want to enter another state and determine another tax rate.
+- Add a loop that will ask the user if they want to enter another activity and find more trails.
 
 ## Submitting your lab work on Moodle
 

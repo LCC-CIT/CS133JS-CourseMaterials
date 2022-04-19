@@ -21,11 +21,11 @@ function reportRating(distance, elevationGain) {
     return rating;
 }
 
-// 3. State tax rate
-// Input: a state name
-// Output: the tax rate
-function calcStateTax(state) {
-    let taxRate = 0;
-    // TODO: Add code for determining the tax rate from last week's lab
-    return taxRate;
+// 3. Trail Types
+// Input: an activity. Choices are: hiking, Bike touring, Mountain biking, Horseback riding
+// Output: trails that are suitable for that activity
+function findTrails(activity) {
+    let trails = "";
+    // TODO: Add code for finding trails from last week's lab
+    return trails;
 }

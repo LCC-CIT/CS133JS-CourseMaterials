@@ -1,16 +1,26 @@
-<h1>Lab 4, Part 2 Instructions</h1>
+<h1>Lab 4, Repetition, Part 2 Instructions</h1>
+
+<h2>Group A</h2>
 
 **CS 133JS, Beginning Programming: JavaScript**
 
+
+
 ## Overview
 
-The objective of this lab is to give you practice using:  while loops, do-while loops, for loops and nested loops.
+The objective of this lab assignment is to give you practice writing web apps that use:  
+
+- while loops
+- do-while loops
+- for loops
+- nested loops.
 
 ## Web Apps
 
-For each of these pages:
+For each of these web apps:
 
-- Put the code that does processing or calculations in a function in a .js file.
+- Make a separate .html page for each web app.
+- Put the all the code that does processing or calculations in functions in a file named CS133JS_Lab04_Part2_GroupA.js.
 - Put I/O operations in a separate function in the .js file. I/O operations include:
   - prompt
   - document.getElementById
@@ -19,17 +29,36 @@ For each of these pages:
 
  
 
-1. New Year’s Eve Countdown 
-   Enter number of hours until midnight, count down the hours and show minutes too.
-   Example output if the user entered 4:
-   Hours, Minutes
-   4,      240
-   3,      180
-   2,      120
-   1,      60
-   0,       0
+### 1. Countdown to Midnight
 
-2. Kindergarten Admission Age
+#### Requirements
+
+The user will enter number of hours until midnight. The web app will count down the hours, showing the hours remaining along with the equivalent time remaining in minutes.
+
+Example output if the user entered 4:
+
+
+Hours, Minutes
+
+​     4,      240
+
+​     3,      180
+
+​     2,      120
+
+​     1,      60
+
+​     0,       0
+
+#### Implementation
+
+
+
+
+
+
+
+1. **Kindergarten admission age**
 
 Add an input validation loop to web app II from the previous lab. 
 

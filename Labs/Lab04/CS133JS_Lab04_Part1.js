@@ -30,7 +30,7 @@ function whilePractice() {
 function forPractice() {
     let outputString = "";
     // TODO: Set the count staring value, the loop condition, and incrment expression
-    for (count = 0; count < 0; count += 0) {
+    for (let count = 0; count < 0; count += 0) {
         outputString += count;
     }
     return outputString;

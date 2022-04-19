@@ -21,7 +21,6 @@ For each of the web apps:
 - Separate HTML starter pages have been provided for each web app. Put I/O operations in this file. I/O operations include the following functions and methods:
   - `prompt`
   - `alert`
-  - `document.getElementById`
   - `document.write`
 
 ### 1. Countdown to Midnight

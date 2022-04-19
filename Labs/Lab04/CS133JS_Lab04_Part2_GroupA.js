@@ -24,31 +24,9 @@ function startKindergarten(age, hadBirthday) {
 
 // 3. Grade level
 // Input: a student's age
-// Output: a string containing the name of their grade (k through 5th)
+// Output: a string containing the name of their grade (K through 5th)
 function calcGradeLevel(age) {
-    let gradeLevel = 0;
-    switch (parseInt(age)) {
-        case 5:
-            gradeLevel = "Kindergarten";
-            break;
-        case 6:
-            gradeLevel = "First grade";
-            break;
-        case 7:
-            gradeLevel = "Second grade";
-            break;
-        case 8:
-            gradeLevel = "Third grade";
-            break;
-        case 9:
-            gradeLevel = "Fourth grade";
-            break;
-        case 10:
-            gradeLevel = "Fifth grade";
-            break;
-        default:
-            gradeLevel = age < 5 ? "Too young" : "Too old";
-            break;
-    }
+    let gradeLevel = "";
+    // TODO: Add code for determining the grade lavel from last week's lab
     return gradeLevel;
 }

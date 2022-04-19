@@ -4,8 +4,6 @@
 
 **CS 133JS, Beginning Programming: JavaScript**
 
-
-
 ## Overview
 
 The objective of this lab assignment is to give you practice writing web apps that use:  
@@ -17,17 +15,14 @@ The objective of this lab assignment is to give you practice writing web apps th
 
 ## Web Apps
 
-For each of these web apps:
+For each of the web apps:
 
-- Make a separate .html page for each web app.
-- Put the all the code that does processing or calculations in functions in a file named CS133JS_Lab04_Part2_GroupA.js.
-- Put I/O operations in a separate function in the .js file. I/O operations include:
-  - prompt
-  - document.getElementById
-  - document.write 
-- In your .html files, use `onload="someIOFunction()"` to call your I/O function after the page has loaded.
-
- 
+- A starter file named [CS133JS_Lab04_Part2_GroupA.js](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2_GroupA.js), has been provided with the JavaScript stub functions. This file will contain all the functions that do processing or calculations.
+- Separate HTML starter pages have been provided for each web app. Put I/O operations in this file. I/O operations include the following functions and methods:
+  - `prompt`
+  - `alert`
+  - `document.getElementById`
+  - `document.write`
 
 ### 1. Countdown to Midnight
 
@@ -35,12 +30,12 @@ For each of these web apps:
 
 The user will enter number of hours until midnight. The web app will count down the hours, showing the hours remaining along with the equivalent time remaining in minutes.
 
-Example output if the user entered 4:
+Example: If the user entered 4, you would get the five lines of output shown below.
 
 
-Hours, Minutes
+Hours, Minutes    &leftarrow; Put this in HTML on the web page
 
-​     4,      240
+​     4,      240          &leftarrow; All five lines of output are returned by the `countdown` function.
 
 ​     3,      180
 
@@ -52,63 +47,61 @@ Hours, Minutes
 
 #### Implementation
 
+**In the .js file:** In the countdown function, write a loop that counts down the hours, calculates the minutes, and concatenates each line of output to a string. Put a `<br>` at the end of each line. The function will return the string.
 
+**In the .html file:** Use [CS133JS_Lab04_Part2A_Countdown.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2A_Countdown.html). In the script element, call the countdown function. The countdown function will return an output string. Use document.write to put the output string on the page.
 
+### 2. Kindergarten Admission Age
 
+Write a new version of web app II from the previous lab. This web app will do the same thing as the previous one, but will have input validation.
 
+**In the .js file:** Put the code from the previous function into the stub function provided.
 
+**In the .html file:** Use [CS133JS_Lab04_Part2A_Kindergarten.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2A_Kindergarten.html). Add an input validation loop in the script element that will:
 
-1. **Kindergarten admission age**
+- Limit user input to reasonable values. 
+- Pop up an alert telling the user what the acceptable input range is.
+- Keep prompting the user for input until it is valid.
 
-Add an input validation loop to web app II from the previous lab. 
+### 3. Elementary School Grade Level
 
-·    Limit user input to reasonable values. 
+Write a new version of web app III from the last lab that will:
 
-·    Pop up an alert telling the user what the acceptable input range is.
+- Do input validation.
 
-·    Keep prompting the user for input until it is valid.
+- Allow the user to enter another age without reloading the web page. 
 
- 
+  (After the results have been shown, ask the user if they want to run the program again.)
 
-III. Elementary School Grade Level
+ **In the .js file:** Put the code from the previous function into the stub function provided.
 
-Modify your web app III from the last lab by:
+**In the .html file:** Use [CS133JS_Lab04_Part2A_GradeLevel.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2A_GradeLevel.html). 
 
-\1.   Adding an input validation loop as you did for web app II above.
+- Add an input validation loop in the script element that will do all the same kind things as the previous validation loop.
+- Add a loop that will ask the user if they want to enter another age and determine a grade level again.
 
-\2.   Adding a loop that lets the user enter another age. After the results have been shown on the page, ask the user if they want to run the program again.
+## Submitting your lab work on Moodle
 
- 
-
-**Submitting your lab work on Moodle**
-
-Beta Version
+### Beta Version
 
 Post the following in the *Lab Beta forum*:
 
-\1.   The web pages you created for part 2.
- (Zip the files for you web pages and attach them to the post.)
+1. The web pages you created for part 2.
 
-\2.   A code review of your lab partner’s web page for part 2. 
- (Review one of your lab partners’ web pages using the Code Review Form provided.)
+2.  A code review of your lab partner’s web page for part 2. 
 
- 
+    (Review one of your lab partners’ web pages using the Code Review Form provided.)
 
-Code Review
+### Code Review
 
-\1.   Submit a copy of the code review above to the *Lab Code Review assignment*.
+Submit a copy of the code review you posted in the forum to the *Lab 4 Code Review* assignment.
 
+### Production Version
 
-Production Version
- Based on the review and helpful advice from your lab partner, you may revise your web page. On the code review from your lab partner, complete the “Production” column to show what you revised. Upload the following to the *Lab Production Version* assignment:
+ Based on the code review and helpful advice from your lab partner, you may revise your web page. On the code review from your lab partner, complete the “Prod.” column to show what you revised. Upload the following to the *Lab 4 Production Version* assignment:
 
-\1.   A Word document containing all the code you ran for part 1.
+1. The JavaScript (.js) file for part 1.
+2. The three HTML files and one JavaScript file you completed for part 2.
+3. The code review from your lab partner with the “Prod.” column filled out by you.
 
-\2.   The web pages you created for part 2.
-
-\3.   The code review from your lab partner with the “Prod” column filled in by you.
-
-[^]: 
-[^1]: Methods are pretty much the same as functions, but you call them using the name of some *object*, like a string variable, with a dot and then the name of of the method and any arguments in parenthesis. For example: `someText.charAt(0)`
-[^2]: The characters in a string are counted with the first character being at position 0. For example, the 'T', in this string is at position 0: `let someText = "The only thing constant in life is change.";` If we want to get the 6th character, 'n', we would execute the statement: `let character = someText.charAt(5);`
-
+This will be a total of 6 files.

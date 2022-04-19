@@ -8,9 +8,9 @@ The objective of this lab is to give you practice using:  while loops, do-while 
 
 ## Exercises
 
-For each of the exercises, complete the function "stub" in the starter file, [CS133JS_Lab04_Part1.js](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part1.js).
+For each of the exercises, complete the "stub" function in the file, [CS133JS_Lab04_Part1.js](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part1.js).
 
-Check the completed function by opening  [CS133JS_Lab04_Part1.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part1.html), which calls each function and checks to see if it returns the correct value based on the arguments that were passed to it.
+Check each completed function by opening  [CS133JS_Lab04_Part1.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part1.html), which calls each of the functions and checks to see if they return the correct values based on the arguments that it passes to the functions.
 
 1. Complete the code for the *do while* loop so that it counts from 2 to 10 by twos.
 

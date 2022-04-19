@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Starter file by Brian Bird, 4/19/22 -->
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lab 4 Part 2, #3</title>
+    <script src="CS133JS_Lab04_Part2_GroupA.js"></script>
+</head>
+
+<body>
+    <h1>Lab 4, Part 2, Group A</h1>
+    <h2>Grade Level</h2>
+
+    <script>
+        let age = 0;
+        // TODO: Write code to get input and do validation
+        isValid = true;
+        do {
+            age = prompt("How old is the child?");
+            if (age < 2 || age > 20) {
+                alert("Please enter an age between 2 and 20");
+                isValid = false;
+            }
+        } while (!isValid);
+        document.write(calcGradeLevel(age));
+    </script>
+</body>
+
+</html>

@@ -56,7 +56,7 @@ Write a new version of web app II from the previous lab. This web app will do th
 
 **In the .js file:** Put the code from the previous lab's function into the stub function provided.
 
-**In the .html file:** Use [CS133JS_Lab04_Part2B_BeverageLabeling.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2B_BeverageLabeling.html). In the script element, add input validation loops for % fruit juice and % sweetener, that will:
+**In the .html file:** Use [CS133JS_Lab04_Part2B_BeverageLabel.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2B_BeverageLabel.html). In the script element, add input validation loops for % fruit juice and % sweetener, that will:
 
 - Limit user input to reasonable values. 
 - Pop up an alert telling the user what the acceptable input range is.

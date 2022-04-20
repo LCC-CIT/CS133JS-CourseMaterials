@@ -292,7 +292,9 @@ Show everyone how to download the example .html and .js files from a browser.
 
 These are the examples on Moodle:
 
-- Loop Practice - like Lab 4, Part 1
+- [Loop Practice](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/CS133JS_Lab04_Part1_Example.html) - like Lab 4, Part 1
+  - [Starter .js file](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/CS133JS_Lab04_Part1_Example_Starter.js)
+
 - Rainfall table - for loop
 - Car Seat - with input validation
 - Actors and Movies - with validation and do-again

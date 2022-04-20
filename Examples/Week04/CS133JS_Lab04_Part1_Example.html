@@ -6,6 +6,7 @@
     <meta charset="UTF-8" />
     <title>Lab 4, Part 1 Example</title>
     <script src="CS133JS_Lab04_Part1_Example.js"></script>
+    <!-- <script src="CS133JS_Lab04_Part1_Example_Starter.js"></script>  -->
 </head>
 
 <body>
@@ -20,7 +21,7 @@
 
     <p><span id="2">4. A Count: </span></p>
     <script>
-        // There are 33 characters in the sentence
+        // There are 8 As in the sentence
         let sentence = "Margaret Mead: Always remember that you are absolutely unique; just like everyone else.";
         let count = countAs(sentence);
         checkAnswer("2", 8, count);
@@ -28,6 +29,7 @@
 
     <p><span id="3">3. Months to repay loan: </span><br> A $1000 loan at 7% interest rate with $100 a month payments.</p>
     <script>
+        // It will take 19 weeks to repay this loan
         let answer = calcLoanPeriod(1000, .07, 100);
         checkAnswer("3", 19, answer);
     </script>

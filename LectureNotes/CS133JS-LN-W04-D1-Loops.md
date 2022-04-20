@@ -286,6 +286,17 @@ for (; i < 5;)
 
 Again, moving the increment expression is something you can do, but it's not recommended since it makes your code more difficult to understand. You would only do this if you really needed to.
 
+## Examples
+
+Show everyone how to download the example .html and .js files from a browser.
+
+These are the examples on Moodle:
+
+- Loop Practice - like Lab 4, Part 1
+- Rainfall table - for loop
+- Car Seat - with input validation
+- Actors and Movies - with validation and do-again
+
 
 
 ------

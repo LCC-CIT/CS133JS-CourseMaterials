@@ -31,19 +31,29 @@ author: Brian Bird
 
 ## Announcements
 
-- I've finished grading the lab 2 production version. 
-  - Have you looked at my feedback yet?
-  - Any questions?
+- I got behind on grading while I was sick. 
+  - I'll get lab 2 graded on Friday.
+  - I'll start grading lab 3 on Saturday (the production version is due tomorrow (Thursday).
+  - I'll go back and grade late submissions and re-submissions as soon as I get caught up.
+
+- New alternative for code review for lab 3. Did anyone try it?
+  - I'll make one for lab 4.
+
+- Quiz questions 1 and 4 fixed, extra attempt added, extension to Thursday night.
+- We will finish covering repetition (loops) on Monday.
+  - Due dates for beta versions, code reviews, and the production version are pushed out by one week.
+
+- Midterm next Wednesday. 
+  - Review lecture notes
+  - Practice midterm.
+
 
 ## Q and A
 
-- How is last week's lab assignment going (lab 3)?
-  - Are there any issues with code reviews for lab 3?
-  - Code reviews are due Tuesday.
-- How is the reading going?
-  - Reading quiz 4 is due Tuesday.
-  - We'll review the answers on Wednesday/Thursday.
 - Does anyone have any general questions about anything?
+  - Lab 3 (selection)?
+  - Schedule and due date changes?
+
 
 
 
@@ -273,7 +283,6 @@ for (; i < 5;)
 ```
 
 - What would happen if you moved the code that increments `i` to the beginning of the loop body?
-- What would happen if you put changed the first `i` in the loop body to   `++i` ?
 
 Again, moving the increment expression is something you can do, but it's not recommended since it makes your code more difficult to understand. You would only do this if you really needed to.
 

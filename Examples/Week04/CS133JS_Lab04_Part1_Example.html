@@ -26,53 +26,10 @@
         checkAnswer("2", 8, count);
     </script>
 
-    <p><span id="5">5. Word Count: </span></p>
+    <p><span id="3">3. Months to repay loan: </span><br> A $1000 loan at 7% interest rate with $100 a month payments.</p>
     <script>
-        // There are 12 words in the sentence
-        sentence = "The fault, dear Brutus, is not in our stars, but in ourselves.";
-        count = countWords(sentence);
-        checkAnswer("5", 12, count);
-    </script>
-
-    <p><span id="6a">6a. Prime number: </span><br>
-        <span id="6b">6b. Non-prime number: </span></p>
-    <script>
-        // The number 11 is prime so the result should be true
-        let answer = isPrime(11);
-        checkAnswer("6a", true, answer);
-        // The number 14 is not prime so the result should be false
-        answer = isPrime(14);
-        checkAnswer("6b", false, answer);
-    </script>
-
-
-    <p><span id="7">7. Square Root: </span></p>
-    <script>
-        // 5 is the square root of 25
-        answer = squareRoot(25);
-        checkAnswer("7", 5, answer);
-    </script>
-
-    <p><span id="8a">8a. Power function for 2^0: </span><br>
-        <span id="8b">8b. Power function for 2^3: </span>
-    </p>
-    <script>
-        // Test 2 to raised to the 3rd power
-        output = power(2, 0);
-        checkAnswer("8a", 1, output);
-        output = power(2, 3);
-        checkAnswer("8b", 8, output);
-    </script>
-
-    <p><span id="9a">9a. Prime number: </span><br>
-        <span id="9b">9b. Non-prime number: </span></p>
-    <script>
-        // The number 17 is prime so the result should be true
-        answer = isPrime2(17);
-        checkAnswer("9a", true, answer);
-        // The number 24 is not prime so the result should be false
-        answer = isPrime2(24);
-        checkAnswer("9b", false, answer);
+        let answer = calcLoanPeriod(1000, .07, 100);
+        checkAnswer("3", 19, answer);
     </script>
 
 </body>

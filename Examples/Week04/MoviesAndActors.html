@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- Written by Brian Bird, 4/28/20, revised 4/19/20 -->
 <head>
-    <!-- Written by Brian Bird, 4/28/20 -->
     <meta charset="UTF-8" />
     <title>Movie Actors</title>
-    <script src="MoviesAndActors.js" defer></script>
+    <script src="MoviesAndActors.js"></script>
 </head>
 
-<body onload="doIO()">
+<body>
     <p>Enter the name of an actor to see some of the movies they have played roles in.</p>
-    <p>You can choose from: George Clooney, Matt Damon, Sandra Bullock, Anne Hathaway, Cate Blanchette, Will Smith, or Tommy Lee Jones.</p>
+    <p>You can choose from: George Clooney, Matt Damon, Sandra Bullock, Anne Hathaway, Cate Blanchette, Will Smith, or
+        Tommy Lee Jones.</p>
     <p><em>The list of movies will not be comprehesive.</em></p>
     <h2>Movies:</h2>
     <p><span id="movies"></span></p>
+    <script>
+        // This loop lets the user get a list of movies for another actor
+        let askAgain = "";
+        do {
+            // Get input and validate it
+            let actor = ""; // The user has to enter something, anything
+            while (actor == "" || actor == null) {
+                actor = prompt("Enter the name of an actor");
+            }
+
+            // Get movies that the actor played in
+            let movies = actorToMovies(actor);
+
+            // Put the list of movies on the web page
+            document.getElementById("movies").innerHTML = movies;
+            askAgain = prompt("Do you want to enter another actor? (yes or no)");
+        } while (askAgain == "yes" || askAgain == "Yes" || askAgain == "YES");
+    </script>
 </body>
 
 </html>

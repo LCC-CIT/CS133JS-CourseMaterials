@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Written by Brian Bird, 4/29/20, revised 4/19/22 -->
 
 <head>
-    <!-- Written by Brian Bird, 4/29/20 -->
     <meta charset="UTF-8" />
     <title>Rainfall</title>
-    <script src="RainFall.js" defer></script>
+    <script src="RainFall.js"></script>
 </head>
-
-<body onload="getRain()">
+<body>
     <h1>Cumulative Rainfall Forecast</h1>
     This page will show the cumulative rainfall, day-by-day, for a week.<br> Enter the daily rainfall in inches.
     <h3>Day &emsp; Inches of Rain</h3>
     <p id="rain"></p>
 
+    <script>
+        let inches = prompt("How many inches of rain will fall each day?");
+        let forecast = rainWeek(inches);
+        document.getElementById("rain").innerHTML = forecast;       
+    </script>
 </body>
 
 </html>

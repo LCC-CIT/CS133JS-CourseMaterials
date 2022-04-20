@@ -1,3 +1,7 @@
+/* Written by Brian Bird Spring 2020, revised 4/19/22
+   Example for CS133JS */
+   `use strict`
+   
 // Function to get the names of movies acted in by a particular actor
 function actorToMovies(actor) {
     let movies = "";
@@ -23,24 +27,4 @@ function actorToMovies(actor) {
             movies = "I don't know about that actor.";
     }
     return movies;
-}
-
-// I/O handler
-function doIO() {
-    // This loop lets the user get a list of movies for another actor
-    let askAgain = "";
-    do {
-        // Get input and validate it
-        let actor = ""; // The user has to enter something, anything
-        while (actor == "" || actor == null) {
-            actor = prompt("Enter the name of an actor");
-        }
-
-        // Get movies that the actor played in
-        let movies = actorToMovies(actor);
-
-        // Put the list of movies on the web page
-        document.getElementById("movies").innerHTML = movies;
-        askAgain = prompt("Do you want to enter another actor? (yes or no)");
-    } while (askAgain == "yes" || askAgain == "Yes" || askAgain == "YES");
 }

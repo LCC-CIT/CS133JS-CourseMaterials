@@ -1,4 +1,8 @@
-// Temporarily writing a stub
+/* Written by Brian Bird, 4/22/20 
+   Bugs added by Brian B. 4/16/22 */
+
+'use strict'
+
 function determineSeat(age, height, weight)
 {
     let seatRequirement = "";
@@ -6,7 +10,7 @@ function determineSeat(age, height, weight)
     {
        seatRequirement = "no special seat";
     }
-    else if (weight  >= 40 )
+    else if (weight = 40 )
     {
         seatRequirement = "a booster seat";
     }
@@ -16,7 +20,7 @@ function determineSeat(age, height, weight)
     }
     else
     {
-        seatRequirement = "a rear facing car seat";
+        seatRequirement == "a rear facing car seat";
     }
     return seatRequirement;
 }

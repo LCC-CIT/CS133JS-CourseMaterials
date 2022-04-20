@@ -2,10 +2,11 @@
 <html lang="en">
 
 <head>
-    <!-- Written by Brian Bird, 4/22/20 -->
+    <!-- Written by Brian Bird, 4/22/20 
+         Bugs added by Brian B. 4/16/22 -->
     <meta charset="UTF-8" />
     <title>Calculate Fine</title>
-    <script src="SpeedingTicket.js"></script>
+    <script src="1_SpeedingTicket.js"></script>
 </head>
 
 <body>
@@ -17,12 +18,12 @@
     </ul>
     The fine will be $<span id="fine"></span>
     <script>
-        let limit = prompt("What was the speed limit");
-        let speed = prompt("How fast were you going?");
-        let construction = prompt("Were you in a construction zone? (yes/no)");
+        var limit = prompt("What was the speed limit");
+        var speed = prompt("How fast were you going?");
+        var construction = prompt("Were you in a construction zone? (yes/no)");
 
-        let fine = calculateFine(limit, speed, construction);
-        document.getElementById("fine").innerHTML = fine;
+        var fine = calculateFine(limit, speed);
+        document.getElementById("fine").innerHTML = fine
     </script>
 </body>
 

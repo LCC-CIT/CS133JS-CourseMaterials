@@ -1,10 +1,7 @@
-// I/O handler
-function getRain() {
-    let inches = prompt("How many inches of rain will fall each day?");
-    let forecast = rainWeek(inches);
-    document.getElementById("rain").innerHTML = forecast;
-}
-
+/* Written by Brian Bird Spring 2020, revised 4/19/22
+   Example for CS133JS */
+   `use strict`
+   
 // Generate a 2 column table of cumulative rainfall by day for a week.
 function rainWeek(rainRate) {
     let rainfall = ""; // holds the table of rainfall

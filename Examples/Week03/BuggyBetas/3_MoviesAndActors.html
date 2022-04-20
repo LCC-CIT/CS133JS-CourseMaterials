@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- Written by Brian Bird, 4/28/20 
+         Bugs added by Brian Bird, 4/16/22 -->
 
 <head>
-    <!-- Written by Brian Bird, 4/28/20 -->
     <meta charset="UTF-8" />
     <title>Movie Actors</title>
-    <script src="MoviesAndActors.js"></script>
+    <script src="3_MoviesAndActors.js"></script>
 </head>
 
 <body>
     Enter the name of an actor to see some of the movies they have played roles in. Movies:
     <p><span id="movies"></span></p>
+    document.getElementById("movies").innerHTML = movies;
     <script>
         let actor = prompt("Enter the name of an actor");
         let movies = actorToMovies(actor);
-        document.getElementById("movies").innerHTML = movies;
+        document.write(movies);
     </script>
 </body>
 

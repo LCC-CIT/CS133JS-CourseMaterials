@@ -1,6 +1,11 @@
+/* Written by Brian Bird, 4/22/20 
+   Bugs added by Brian B. 4/16/22 */
+
+   'use strict'
+
 // Function to get the names of movies acted in by a particular actor
 function actorToMovies(actor) {
-    let movies = "";
+    var movies = ""
     switch (actor) {
         case "George Clooney":
             movies = "Oh Brother, Where Art Thou?";
@@ -18,7 +23,6 @@ function actorToMovies(actor) {
             movies = "Aladdin";
         case "Tommy Lee Jones":
             movies += "<br>Men in Black";
-            break;
         default:
             movies = "I don't know about that actor.";
     }

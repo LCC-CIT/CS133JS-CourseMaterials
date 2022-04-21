@@ -303,11 +303,23 @@ These are the examples on Moodle:
 
 ------
 
-# Reference
+## Reference
 
-## Mozilla Developer Network
+### Mozilla Developer Network
 
 [Loops and Iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
+
+### JavaScript Tutorial
+
+[JavaScript while Loop](https://www.javascripttutorial.net/javascript-while-loop/)
+
+[JavaScript do...while Loop](https://www.javascripttutorial.net/javascript-do-while/)
+
+[JavaScript for Loop](https://www.javascripttutorial.net/javascript-for-loop/)
+
+### *Eloquent JavaScript*
+
+[Ch. 2, Program Structure](https://eloquentjavascript.net/02_program_structure.html)&mdash;The sections on loops.
 
 
 

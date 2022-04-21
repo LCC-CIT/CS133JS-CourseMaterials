@@ -1,3 +1,13 @@
+---
+title: Lab 4, Part 2
+description: Group C assignment to make web apps that use while, do-while, and for loops as well as nested loops.
+keywords: repetition, loop, while, do while, for
+material: Lab Instructions
+generator: Typora
+author: Brian Bird
+---
+
+
 <h1>Lab 4, Repetition, Part 2 Instructions</h1>
 
 <h2>Group C</h2>
@@ -44,7 +54,7 @@ Miles, MPH        &leftarrow; Put this in HTML on the web page
 
 ​     7,      14
 
-     7.5,   15
+     7.5,   15
 
 #### Implementation
 

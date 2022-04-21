@@ -1,3 +1,13 @@
+---
+title: Lab 4, Part 1
+description: Exercises using while, do...while, and for loops.
+keywords: repetition, loop, while, do while, for, charAt
+material: Lab Instructions
+generator: Typora
+author: Brian Bird
+---
+
+
 <h1>Lab 4, Part 1 Instructions</h1>
 
 **CS 133JS, Beginning Programming: JavaScript**

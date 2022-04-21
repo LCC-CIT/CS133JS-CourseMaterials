@@ -1,3 +1,14 @@
+---
+title: Lab 2, Part 1
+description: JavaScript console exercises using functions.
+keywords: function
+material: Lab Instructions
+generator: Typora
+author: Brian Bird
+---
+
+
+
 # Lab 2, Part 1: Function Exercises
 
 For each problem, type the solution code in the console and execute it. Don't clear the console, since you will be copying  everything into a document which you will submit on Moodle.

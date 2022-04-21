@@ -1,3 +1,13 @@
+---
+title: Style Standards
+description: Coding style and best practices
+keywords: style, best practices
+material: Coding standards
+generator: Typora
+author: Brian Bird
+---
+
+
 # JavaScript Style and Best Practices
 
 **For CS133JS, Beginning Programming: JavaScript**

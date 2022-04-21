@@ -1,7 +1,7 @@
 ---
 title: Loops
 description: Learn more about how to implement the repetition control structure using while, do while and for loops.
-keywords: repetition, loop, while, do while, for
+keywords: repetition, loop, while, do while, for, debugging
 material: Lecture Notes
 generator: Typora
 author: Brian Bird

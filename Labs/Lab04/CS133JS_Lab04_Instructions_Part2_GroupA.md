@@ -1,3 +1,13 @@
+---
+title: Lab 4, Part 2
+description: Group A assignment to make web apps that use while, do...while, and for loops as well as nested loops.
+keywords: repetition, loop, while, do while, for
+material: Lab Instructions
+generator: Typora
+author: Brian Bird
+---
+
+
 <h1>Lab 4, Repetition, Part 2 Instructions</h1>
 
 <h2>Group A</h2>
@@ -32,9 +42,9 @@ The user will enter number of hours until midnight. The web app will count down 
 Example: If the user entered 4, you would get the five lines of output shown below.
 
 
-Hours, Minutes    &leftarrow; Put this in HTML on the web page
+Hours, Minutes    &leftarrow; Put this in HTML on the web page
 
-​     4,      240          &leftarrow; All five lines of output are returned by the `countdown` function.
+​     4,      240          &leftarrow; All five lines of output are returned by the `countdown` function.
 
 ​     3,      180
 

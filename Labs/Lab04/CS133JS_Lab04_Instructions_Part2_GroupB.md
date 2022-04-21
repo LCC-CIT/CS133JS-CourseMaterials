@@ -1,3 +1,13 @@
+---
+title: Lab 4, Part 2
+description: Group B assignment to make web apps that use while, do-while, and for loops as well as nested loops.
+keywords: repetition, loop, while, do while, for
+material: Lab Instructions
+generator: Typora
+author: Brian Bird
+---
+
+
 <h1>Lab 4, Repetition, Part 2 Instructions</h1>
 
 <h2>Group B</h2>

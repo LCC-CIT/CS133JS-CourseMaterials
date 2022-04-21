@@ -59,6 +59,10 @@ Download the instructor's examples and play with the code. Put breakpoints in it
 
 Review the code you wrote for the lab assignments. Make sure you understand how everything works. If there are things you don't understand, look for answers in the required and supplemental readings, lecture notes, or on the web and post questions in the Q and A forum.
 
+### Practice Quiz
+
+There is a practice quiz available on Moodle that has the same style questions and covers the same concepts as the real quiz but using different questions. As you take the practice quiz, focus on understanding concepts, not on memorizing answers.
+
 
 
 ------

@@ -37,6 +37,17 @@ function calcLoanPeriod(loan, interest, payment) {
     return months;
 }
 
+// 4. Find all the factors or a number. 
+// Input: a number to be factored
+// Output: all the factors of the number concatenated together in a string
+//         For example, the factors of 9 are "1, 3, 9";
+function findFactors(aNumber) {
+    let factors = "1, ";
+    // TODO: Write the loop that finds the factors.
+    factors += aNumber;
+    return factors;
+}
+
 // This function is used in the web page to check the other functions
 function checkAnswer(elementId, correctAnswer, answer) {
     const element = document.getElementById(elementId);

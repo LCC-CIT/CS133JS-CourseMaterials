@@ -40,9 +40,9 @@ Check each completed function by opening  [CS133JS_Lab04_Part1.html](https://lcc
 
    Use a while loop to increment through the string, one character at a time, counting the spaces, until the period at the end of the sentence is reached.
 
-6. Use a *while* loop to test a number passed to a function to see if it is prime.
+6. Use a *while* loop to test a number passed to a function to see if it is a [prime number](https://www.khanacademy.org/math/cc-fourth-grade-math/imp-factors-multiples-and-patterns/imp-prime-and-composite-numbers/v/prime-numbers).
 
-   Prime numbers are numbers that are not divisible without a remainder by any other number. You can check a number by using a loop to try dividing the number in question by every number between 2 and one less than the number itself. Use the modulo, `%` operator to do the division and check for a remainder.
+   Prime numbers are numbers that are not divisible by any number other than 1 or themselves without a remainder. You can check a number to see if it is prime by using a loop in which you try dividing the number in question by every number between 2 and one less than the number itself. Use the modulo, `%` operator to do the division and check for a remainder.
 
 7. Use a *do while* loop to return a whole square root of a number, if it exists.
 

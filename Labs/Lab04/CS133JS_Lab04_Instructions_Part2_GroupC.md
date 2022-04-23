@@ -44,7 +44,7 @@ Example output if the user enters 0.5 (half a mile):
 
 Miles, MPH        &leftarrow; Put this in HTML on the web page
 
-​     5,      10          &leftarrow; All five lines of output are returned by the `countdown` function.
+​     5,      10          &leftarrow; All five lines of output are returned by the `makePlan` function.
 
 ​     5.5,   11
 
@@ -54,7 +54,7 @@ Miles, MPH        &leftarrow; Put this in HTML on the web page
 
 ​     7,      14
 
-     7.5,   15
+​     7.5,   15
 
 #### Implementation
 
@@ -116,3 +116,9 @@ Submit a copy of the code review you posted in the forum to the *Lab 4 Code Revi
 3. The code review from your lab partner with the “Prod.” column filled out by you.
 
 This will be a total of 6 files.
+
+### Grading Criteria
+
+The main focus of grading will be on correct coding of loops and problem solving skills.
+
+Here is the grading rubric: [CS133JS_Lab04_Rubric](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Rubric.pdf)

@@ -1,3 +1,6 @@
+Syllabus
+Add explanation of consquences of copying code: a zero on that assignment. Cite the college's policy on cheating.
+
 Week 1, Intro
 1) Introduce algorithms. Use an example like the Martian brushing teeth. Use pseudocode.
 1b) Contrast HTML to JavaScript how are they different.

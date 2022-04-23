@@ -1,5 +1,32 @@
+Week 1, Intro
+1) Introduce algorithms. Use an example like the Martian brushing teeth. Use pseudocode.
+1b) Contrast HTML to JavaScript how are they different.
+2) Introduce all the math operators including the short-cuts.
+3) Show flowcharts.
+Lab 1
+1) Write some good variable exercises so students really get the idea of assignment and use of variables.
+2) Don't have them do a copy-paste exercise for part 1. Have them write fill-in the blank code in a web page.
+3) Modify the lab assignment so that the concatenation doesn't require nested quotes so much. More emphasis on use of variables. Use template literals or at least footnote that they are preferred.
+4) Use textContent instead of innerHTML. https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent
+
+
 Week 2, Functions
 1) Change the reading. 
 EJS, Ch.2 Covers conditional operators and the ternary operator, but not functions. Ch. 3 covers functions, but in too much depth.
 2) Don't assign reading or lecture on conditional operators this week. Save that for next week when you cover selection.
+3 Don't use getElementById, use Document.write or 
 
+Week 3, Selection
+1) Introduce problem solving concepts. Novel solutions, not recipes.
+2) Continue writing algorithms in pseudocode
+3) Talk about how you learn to program--by doing. It's like learning a sport, or art, or music composition.
+4) Show flowcharts.
+
+Week 4, Repetition
+1) Maybe reorganize the topic sequence and cover arrays first.
+2) Continue writing algorithms in pseudocode.
+3) Show flowcharts
+
+Week 5, Midterm
+
+Week 6, Arrays

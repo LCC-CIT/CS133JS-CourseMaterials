@@ -12,7 +12,7 @@ author: Brian Bird
 
 **For CS133JS, Beginning Programming: JavaScript**
 
-
+## Coding Conventions for this Course
 
 - Indentation: use standard indentation.
 
@@ -47,14 +47,14 @@ author: Brian Bird
 
   
 
+## References
 
+[JavaScript guidelines](https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Code_guidelines/JavaScript)&mdash;MDN
 
-
-
-
+[JavaScript Style Guide](https://www.w3schools.com/js/js_conventions.asp)&mdash;W3Schools' coding conventions
 
 
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Course Materials by [Brian Bird](https://profbird.dev) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Course Materials by [Brian Bird](https://profbird.dev), written 2020, revised <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

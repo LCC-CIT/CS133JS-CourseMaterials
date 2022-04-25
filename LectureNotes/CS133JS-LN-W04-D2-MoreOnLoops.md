@@ -31,10 +31,8 @@ author: Brian Bird
 
 ## Announcements
 
-- Lab 4, part 2 is ready. We'll look at that after the lecture.
-- Next week is the midterm quiz.
-  - We'll do review on Monday/Tuesday
-  - The quiz will be on Wednesday/Thursday
+- Lab 4, part 2.
+- Midterm Quiz.
 
 ## Q and A
 
@@ -176,7 +174,14 @@ for (let i = 1; i < 10;  i++)    // counts down the rows
 }
 ```
 
+Note: The console needs to be wide enough to show the rows without wrapping.
 
+Q: What would you need to change to use this code in a web page?
+
+- "\t" ?
+- console.log(row) ?
+- Add something to start a new line?
+- 
 
 # Tips for Coding and Debugging
 

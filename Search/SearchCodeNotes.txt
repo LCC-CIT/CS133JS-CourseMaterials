@@ -1,0 +1,15 @@
+
+How to search PDF files:
+There's a well-known JavaScript library called jspdf. Its getTextContent() function would be very helpful in your case. Check out these two examples:
+https://stackoverflow.com/a/20522307/2117492,
+https://groups.google.com/d/msg/mozilla.dev.pdf-js/Qzq-xA2MHjs/nmlpttSIJcsJ
+
+Getting text from a PDF file:
+https://stackoverflow.com/questions/1554280/how-to-extract-text-from-pdf-in-javasript
+ That is, it can be done locally without involving any server or external service. The new pdf.js has a function: page.getTextContent(). You can get the text content from that. I've done it successfully with the following code.
+    What you get in each step is a promise. You need to code this way: .then( function(){...}) to proceed to the next step.
+    1) PDFJS.getDocument( data ).then( function(pdf) {
+    2) pdf.getPage(i).then( function(page){
+    3) page.getTextContent().then( function(textContent){
+    What you finally get is an string array textContent.bidiTexts[]. You concatenate them to get the text of 1 page. Text blocks' coordinates are used to judge whether newline or space need to be inserted. (This may not be totally robust, but from my test it seems ok.)
+    The input parameter data needs to be either a URL or ArrayBuffer type data. I used the ReadAsArrayBuffer(file) function in FileReader API to get the data.

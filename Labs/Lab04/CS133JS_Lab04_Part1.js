@@ -47,6 +47,7 @@ function countChars(text) {
 function countWords(text) {
     let wordCount = 1; // There should always be at least one word
     // TODO: Write the code to complete the exercise.
+    // Hint: How do we know where one word stops and the next word starts?
     return wordCount;
 }
 
@@ -63,6 +64,7 @@ function isPrime(maybePrime) {
 function squareRoot(number) {
     let root = 1; // This is just a starting point
     // TODO: Write the code to complete the exercise.
+    // Hint: Repeatedly multiply root times itself and check to see if the result equals number.
     return root;
 }
 
@@ -70,7 +72,7 @@ function squareRoot(number) {
 function power(base, exponent) {
     let result = 1;
     // TODO: Write the code to complete the exercise.
-    // Hint: Repeat multipling the base times itself the number of times stored in exponent
+    // Hint: Repeatedly multiply the base times itself as many times as specified by the exponent.
     return result;
 }
 

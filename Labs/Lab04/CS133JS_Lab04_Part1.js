@@ -52,8 +52,10 @@ function countWords(text) {
 
 // 6. Use a while loop to check a number to see if it is prime.
 function isPrime(maybePrime) {
-    let isPrimeNumber = false;
+    let isPrimeNumber = true;
     // TODO: Write the code to complete the exercise.
+    // Hint: In a loop divide maybePrime by every number from 2 to one less than maybePrime
+    //       if the remainder is every zero, then maybePrime is not a prime number.
     return isPrimeNumber;
 }
 
@@ -68,6 +70,7 @@ function squareRoot(number) {
 function power(base, exponent) {
     let result = 1;
     // TODO: Write the code to complete the exercise.
+    // Hint: Repeat multipling the base times itself the number of times stored in exponent
     return result;
 }
 

@@ -28,7 +28,7 @@ The objective of this lab assignment is to give you practice writing web apps th
 For each of the web apps:
 
 - A starter file named [CS133JS_Lab04_Part2_GroupB.js](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2_GroupB.js), has been provided with the JavaScript stub functions. This file will contain all the functions that do processing or calculations.
-- Separate HTML starter pages have been provided for each web app. Put I/O operations in this file. I/O operations include the following functions and methods:
+- Separate HTML starter pages have been provided for each web app. If they haven't already been provided, put I/O operations in this file. I/O operations include the following functions and method:
   - `prompt`
   - `alert`
   - `document.write`
@@ -114,3 +114,10 @@ Submit a copy of the code review you posted in the forum to the *Lab 4 Code Revi
 3. The code review from your lab partner with the “Prod.” column filled out by you.
 
 This will be a total of 6 files.
+
+### Grading Criteria
+
+The main focus of grading will be on correct coding of loops and problem solving skills.
+
+Here is the grading rubric: [CS133JS_Lab04_Rubric](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Rubric.pdf)
+

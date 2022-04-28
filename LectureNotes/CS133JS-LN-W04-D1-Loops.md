@@ -158,7 +158,7 @@ In next example, we add a variable which has a scope of just the loop body.
 let count = 1;
 while(count <= 10) 
 {
-       let timesTen = count * 10;
+   let timesTen = count * 10;
    console.log(count + ", " + timesTen);
    count += 1;
 }

@@ -13,10 +13,10 @@ author: Brian Bird
 
 | Topics by Week                                           |                                    |
 | -------------------------------------------------------- | ---------------------------------- |
-| 1. <mark>Intro to JavaScript programming</mark>          | 6. Arrays                          |
+| 1. Intro to JavaScript programming                       | 6. Arrays                          |
 | 2.  Functions, Variable scope, Operators and Expressions | 7. Objects and Object Constructors |
 | 3. Conditional Statements: if and switch                 | 8. Web Page I/O                    |
-| 4. Repetition: while, do while, and for                  | 9. Review                          |
+| <mark>4. Repetition: while, do while, and for</mark>     | 9. Review                          |
 | 5. Midterm                                               | 10. Final                          |
 
 

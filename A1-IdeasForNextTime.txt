@@ -1,8 +1,5 @@
-Syllabus
-Add explanation of consquences of copying code: a zero on that assignment. Cite the college's policy on cheating.
-
 Week 1, Intro
-1) Introduce algorithms. Use an example like the Martian brushing teeth. Use pseudocode.
+1) Introduce algorithms. Use an example like the Martian brushing teeth. Use loose pseudocode.
 1b) Contrast HTML to JavaScript how are they different.
 2) Introduce all the math operators including the short-cuts.
 3) Show flowcharts.
@@ -11,19 +8,26 @@ Lab 1
 2) Don't have them do a copy-paste exercise for part 1. Have them write fill-in the blank code in a web page.
 3) Modify the lab assignment so that the concatenation doesn't require nested quotes so much. More emphasis on use of variables. Use template literals or at least footnote that they are preferred.
 4) Use textContent instead of innerHTML. https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent
+5) Show them how to use the console to check for syntax errors.
 
 
 Week 2, Functions
 1) Change the reading. 
 EJS, Ch.2 Covers conditional operators and the ternary operator, but not functions. Ch. 3 covers functions, but in too much depth.
 2) Don't assign reading or lecture on conditional operators this week. Save that for next week when you cover selection.
-3 Don't use getElementById, use Document.write or 
+3 Don't use getElementById, use Document.write or textContent
+https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Code_guidelines/JavaScript#use_textcontent_not_innerhtml
+4) Show them how to use the debugger in the browser.
 
 Week 3, Selection
 1) Introduce problem solving concepts. Novel solutions, not recipes.
 2) Continue writing algorithms in pseudocode
+2.5) Show them how to make an IPO table especially for more complex decision making like the kindergarten start age example.
+2.6) Show them how to add to make a data table for testing: inputs vs. outputs, cover edge conditions.
 3) Talk about how you learn to program--by doing. It's like learning a sport, or art, or music composition.
 4) Show flowcharts.
+5) Talk about types of errors: syntax, logic, and run time (crashes).
+
 
 Week 4, Repetition
 1) Maybe reorganize the topic sequence and cover arrays first.

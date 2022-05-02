@@ -1,7 +1,7 @@
 ---
 title: if statements
 description: Learn how to implement the selection control structure using if statements.
-keywords: selection, if, conditional expression, ternary oeprator
+keywords: selection, if, else...if, else if, conditional expression, ternary operator
 material: Lecture Notes
 generator: Typora
 author: Brian Bird
@@ -152,7 +152,7 @@ In this session we will learn to use the ternary oprator and `if` statements. Ne
 - Syntax:
 
   condition ? expression : expression
-           &uarr;       &uarr;          &uarr;         &uarr;          &uarr; 
+           &uarr;       &uarr;          &uarr;         &uarr;          &uarr; 
            1       2          3         4          5
 
   	1. Logical condition, like: a === b

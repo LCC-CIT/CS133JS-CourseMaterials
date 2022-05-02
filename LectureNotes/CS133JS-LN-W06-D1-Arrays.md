@@ -1,7 +1,7 @@
 ---
 title: Arrays
 description: Learn what arrays are and how to use them in loops.
-keywords: array, while, for, for...of, index, element
+keywords: array, while, for, for...of, for of, for-of, index, element
 material: Lecture Notes
 generator: Typora
 author: Brian Bird

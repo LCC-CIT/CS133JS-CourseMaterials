@@ -1,7 +1,7 @@
 ---
 title: switch case statements
 description: Learn how to do selection with switch case statements.
-keywords: selection, conditional expression, switch, switch case
+keywords: selection, conditional expression, switch, switch case, switch...case, switch-case
 material: Lecture Notes
 generator: Typora
 author: Brian Bird

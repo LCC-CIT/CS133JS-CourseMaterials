@@ -271,12 +271,11 @@ grid[2][2] = "X";
 
 [JavaScript Array Tutorial](https://www.javascripttutorial.net/javascript-array/) on JavaScriptTutorial.net
 
+
+
 [^1]: `let planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"]`
 [^2]: The JavaScript `for...of` loop is similar to the `for...each` loop in other languages like C++, C# or Python. JavaScript has a `ForEach()` array method, but it has a different purpose.
 
 ------
 
-
-
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) 2018, revised <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
-

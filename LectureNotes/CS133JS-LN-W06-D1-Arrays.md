@@ -192,7 +192,7 @@ for (const character of starWars) {
 }
 ```
 
-It's best to get the values from the elements into a variable declared with `const` rather than `let`. What do you think is the reason?
+In a `for...of` loop, it's best to get the values from the elements into a variable declared with `const` rather than `let`. What do you think is the reason?
 
 ### while loop
 

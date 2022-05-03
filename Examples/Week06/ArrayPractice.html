@@ -2,39 +2,38 @@
 <html lang="en">
 
 <head>
-    <!-- Example code by Brian Bird, 5/11/2020 -->
+    <!-- Example code by Brian Bird, 5/11/2020, revised 5/2/22 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="ArrayPractice.js"></script>
+    <style>
+        mark {
+            background-color: lightblue;
+            color: black;
+        }
+    </style>
     <title>Array Practice</title>
 </head>
 
 <body>
     <h1>Array Practice</h1>
-    <p>These are the practice problems we did in class together.<br>
-        For each problem, there is test code in a script element.<br>
-        The code solutions are in functions in ArrayPractice.js.
+    <p>These are the practice problems we did in class together.<br> For each problem, there is test code in a script element.<br> The code solutions are in functions in ArrayPractice.js.
     </p>
 
     <h2>Basic Array Operations</h2>
     <ol>
-        <li>Create an array named <em>planets</em> containing the names of nine planets.<br>
-            Array length = <span id="numPlanets"></span>
+        <li>Create an array named <em>planets</em> containing the names of nine planets.<br> <mark>Array length = <span id="numPlanets"></span></mark>
             <script>
                 document.getElementById("numPlanets").innerHTML = planets.length;
             </script>
         </li>
-        <li>Write a function that returns a planet by it's number
-            (1 = Mercury, 9 = Pluto).<br>
-            The third planet is: <span id="earth"></span>
+        <li>Write a function named <em>getPlanetByNumber</em> that returns a planet based on the number passed to it (1 = Mercury, 9 = Pluto).<br> <mark>The third planet is: <span id="earth"></span></mark>
             <script>
                 document.getElementById("earth").innerHTML = getPlanetByNumber(3);
             </script>
         </li>
 
-        <li>Write a function that lets you change the name of a planet.<br>
-            We'll change the name of Mars to Red Planet<br>
-            The fourth planet is named: <span id="mars"></span>
+        <li>Write a function named <em>renamePlanet</em> that lets you change the name of a planet to the name passed to it.<br> We'll change the name of Mars to Red Planet<br> <mark>The fourth planet is named: <span id="mars"></span></mark>
             <script>
                 renamePlanet(4, "Red Planet");
                 document.getElementById("mars").innerHTML = getPlanetByNumber(4);
@@ -43,11 +42,8 @@
     </ol>
     <h2>Using Arrays in Loops</h2>
     <ol>
-        <li>Write a function to copy one array into another.
-            We will copy <em>planets</em> into <em>solarSystem</em>
-            and then change the name of the fourth planet back to "Mars".<br>
-            In <em>planets</em>, the fourth planet is: <span id="planets4"></span><br>
-            In <em>solarSystem</em>, the fourth planet is: <span id="system4"></span>
+        <li>Write a function named <em>copyArray</em> that will copy the array passed to it into an array that it returns. We will pass the array <em>planets</em> into <em>copyArray</em> and it will return a copy which we will put into <em>solarSystem</em>,
+            then we will change the name of the fourth planet back to "Mars".<br> <mark>In <em>planets</em>, the fourth planet is: <span id="planets4"></span><br> In <em>solarSystem</em>, the fourth planet is: <span id="system4"></span></mark>
             <script>
                 let solarSystem = copyArray(planets);
                 renamePlanet(4, "Mars");
@@ -55,10 +51,7 @@
                 document.getElementById("system4").innerHTML = solarSystem[3];
             </script>
         </li>
-        <li>Write a function to check to see if a particular value is in an element in an array.<br>
-            We will search the <em>planets</em> array for Tatooine, and then for Venus.<br>
-            Tatooine: <span id="tatooine"></span><br>
-            Venus: <span id="venus"></span>
+        <li>Write a function named <em>findPlanetByName</em> that will return true if the planet name passed to it is in the array.<br> We will search the <em>planets</em> array for Tatooine, and then for Venus.<br> <mark>Tatooine: <span id="tatooine"></span><br>            Venus: <span id="venus"></span></mark>
             <script>
                 document.getElementById("tatooine").innerHTML = findPlanetByName("Tatooine");
                 document.getElementById("venus").innerHTML = findPlanetByName("Venus");
@@ -68,32 +61,26 @@
     </ol>
     <h2>Working with 2D Arrays</h2>
     <ol>
-        <li>Create an array named <em>grid</em> to represent a Tic-Tac-Toe game grid.<br>
-             It's elements should contain strings that are HTML spaces.<br>
-            Total number of elements = <span id="gridSquares"></span>
+        <li>Create an array named <em>grid</em> to represent a 3 X 3 Tic-Tac-Toe game grid.<br> It's elements should contain strings that are HTML spaces.<br> <mark>Total number of elements = <span id="gridSquares"></span></mark>
             <script>
                 document.getElementById("gridSquares").innerHTML = grid.length * grid[0].length;
             </script>
         </li>
-        <li>Write a function to let you put an X or O into a particular location in the grid.<br>
-            We will put X's into the diagonal from top-right to bottom-left.<br>
-            Moves were a: <span id= success></span>
+        <li>Write a function named <em>makeMove</em> that let you pass in a row number, column number and letter (X or O) that will be put into the specified location in the grid.<br> We will put X's into the diagonal from top-right to bottom-left.<br> <mark>Moves
+            were a: <span id="success"></span></mark>
             <script>
                 let success = true; // innocent until proved guilty
                 success &= makeMove(3, 3, "X");
                 success &= makeMove(2, 2, "X");
                 success &= makeMove(1, 1, "X");
-                document.getElementById("success").innerHTML = success ? "success": "failure";
-           
+                document.getElementById("success").innerHTML = success ? "success" : "failure";
             </script>
         </li>
-        <li>Write a function to display the grid.<br>
-            Game grid: 
-            <p id="grid"></p>
+        <li>Write a function named <em>displayGrid</em> to display the grid.<br> <mark>Game grid:
+            <p id="grid"></p></mark>
             <script>
                 document.getElementById("grid").innerHTML = displayGrid();
             </script>
-
         </li>
     </ol>
 </body>

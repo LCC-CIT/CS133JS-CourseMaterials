@@ -1,7 +1,7 @@
 ---
 title: Strings and Arrays
 description: Compare strings and arrays to look at the similarities.
-keywords: array, string
+keywords: array, string, charAt, indexOf, index, element, character, length
 material: Lecture Notes
 generator: Typora
 author: Brian Bird
@@ -25,87 +25,6 @@ author: Brian Bird
 
 [TOC]
 
-# Introduction
-
-## Announcements
-
-- I'm still working on grading the lab 3 production version&mdash;just a few left.
-
-## Q and A
-
-- Lab 5, Part 1, Array Exercises
-  - Have you started it? Any questions?
-- Does anyone have any questions about anything?
-
-## Reading Quiz
-
-Review the quiz together
-
-
-
-## Review
-
-### Array Declaration and Initialization
-
-```javascript
-let myArray = [];  // Declaration
-```
-
-```javascript
-let starWars = ["Rey", "Finn", "Han Solo"];  // Declaration and Initialization
-```
-
-Arrays can contain mixed data types.
-
-### Array Operations
-
-```javascript
-console.log(starWars[0]);  // Getting a value
-```
-
-```javascript
-starWars[1] = "Poe";    // Setting a value
-```
-
-```javascript
-console.log(starWars.length);   // Getting the array length
-```
-
-```javascript
-starWars[starWars.length] = "Yoda";   // Adding a new element and value
-```
-
-Arrays are not copied by the assignment operator.  Only a *reference* is copied.
-
-```javascript
-starWarsAgain = starWars;  // starWarsAgain is like an alias for starWars
-```
-
-
-
-### Arrays and Loops
-
-The for loop is especially suited to working with arrays and the for...of loop is only used with arrays.
-
-#### `for` loop
-
-```javascript
-for (let i = 0; i < starWars.length; i++)
-{
-   console.log(starWars[i]);    // The loop counter is used to index the array
-}
-```
-
-#### `for`...`of` loop
-
-```javascript
-for (let character of starWars) {
-   console.log(character);             // No array index is needed
-}
-```
-
-
-
 ------
 
 ## Ways in Which Strings are Like Arrays
@@ -122,24 +41,38 @@ let starWars = ["Rey", "Finn", "Han Solo"];  // Declaration and Initialization
 let prolog = "A long time ago in a galaxy far, far away..."
 ```
 
-### Array and String Operations
+### Array and String Index Operations
+
+#### Get a value or element at an index location
 
 ```javascript
-console.log(starWars[0]);  // Getting the value at an array index location
-console.log(prolog[0]);  // Getting the value at a string at index location
-console.log(prolog.charAt(0));  // Getting the value at a string at index location
+console.log(starWars[0]);  // Getting the value stored at an array index location
+console.log(prolog[0]);  // Getting a character from a string at an index location
+console.log(prolog.charAt(0));  // Another way to do the same thing as above
 ```
 
+#### Get the length
 ```javascript
 console.log(starWars.length);   // Getting the array length
 console.log(prolog.length);   // Getting the string length
 ```
 
+#### Add a value or element to the end
 ```javascript
 starWars[starWars.length] = "Yoda";   // Adding a new element and value
+prolog[prolog.length] = "A New Hope"; // Adding another string (more characters)
 ```
 
 
+
+####Get the index location of a value
+
+```javascript
+console.log(continents.indexOf("Finn"));  // Gets the index of the elmeent containing "Finn"
+console.log(prolog.indexOf("g"));  // Gets the index of the character "g"
+```
+
+#### 
 
 ## Reference
 

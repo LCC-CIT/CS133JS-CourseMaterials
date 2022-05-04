@@ -16,14 +16,18 @@
         <input type="text" name="numberInput">
         <input type="button" value="Enter" onclick="doIO()">
     </form>
-    <p id="answer">The number <span id="number"></span> is <span id="spanish">_____</span> in Spanish</p>
+    <p>The number <span id="number">__</span> is <span id="spanish">_____</span> in Spanish</p>
+    <p id="comment"></p>
     <script>
         function doIO() {
             let number = parseInt(document.input.numberInput.value);
-            document.getElementById("number").innerHTML = number;
             if (isNaN(number) || number > 10) {
-                document.getElementById("answer").innerHTML = "No sé";
+                document.getElementById("comment").innerHTML = "No sé";
+                document.getElementById("number").innerHTML = "__";
+                document.getElementById("spanish").innerHTML = "_____";
             } else {
+                document.getElementById("comment").innerHTML = "";
+                document.getElementById("number").innerHTML = number;
                 document.getElementById("spanish").innerHTML = toSpanish(number);
             }
         }

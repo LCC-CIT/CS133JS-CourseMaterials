@@ -21,13 +21,18 @@ https://developer.mozilla.org/en-US/docs/MDN/Guidelines/Code_guidelines/JavaScri
 
 Week 3, Selection
 1) Introduce problem solving concepts. Novel solutions, not recipes.
-2) Continue writing algorithms in pseudocode
+2) Continue writing algorithms in loose pseudocode.
 2.5) Show them how to make an IPO table especially for more complex decision making like the kindergarten start age example.
-2.6) Show them how to add to make a data table for testing: inputs vs. outputs, cover edge conditions.
+2.6) Show them how to extend the IPO chart to make a data table for testing: inputs vs. outputs, cover edge conditions.
 3) Talk about how you learn to program--by doing. It's like learning a sport, or art, or music composition.
 4) Show flowcharts.
 5) Talk about types of errors: syntax, logic, and run time (crashes).
-
+6) For lab 3, web app II, talk about arranging else if branches for "process of eliminiation" so you don't need to check both edges of a range in each if branch.
+6b) For the beverage labeling problem clarify how there can be 100% fruit juice and no more than 4% sweetener when this adds up to as much as 104%
+7) Fix the numbering of questions for lab 3, part 1. Make part 1 easier to grade.
+8) Modify the notes on switch statements to say that the argument to switch is an expression, not just a variable. 
+The case labels can also be expressions. See this article on switch(true):
+https://seanbarry.dev/posts/switch-true-pattern
 
 Week 4, Repetition
 1) Maybe reorganize the topic sequence and cover arrays first.

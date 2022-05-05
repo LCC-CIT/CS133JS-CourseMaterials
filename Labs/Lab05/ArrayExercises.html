@@ -19,7 +19,7 @@
     <ol>
         <li>Declare an array named <em>degrees</em>, but don't initialize it.</li>
         <li>Write a function named <em>addDegree</em> that takes a degree name as a parameter and adds it to the
-            <em>degrees</em> array.<br> Here is a listing of the array:<br>
+            <em>degrees</em> array.<br> <mark>Here is a listing of the array:<br>
             <hr>
             <script>
                 addDegree("Network Operations");
@@ -32,10 +32,11 @@
                     document.write(i + ", " + degrees[i] + "<br>");
                 }
             </script>
+            </mark>
             <hr>
         </li>
 
-        <li>Write a function that lets you change the name of a degree by index.<br> We'll change the name of Computer Programming to Software Development<br> The degree with index 2 is named: <span id="degree2"></span>
+        <li>Write a function that lets you change the name of a degree by index.<br> We'll change the name of Computer Programming to Software Development<br> <mark>The degree with index 2 is named: <span id="degree2"></span></mark>
             <script>
                 renameDegree(2, "Software Development");
                 document.getElementById("degree2").innerHTML = degrees[2];
@@ -45,8 +46,8 @@
     <h2>Using Arrays in Loops</h2>
     <ol>
         <li>Write a special function named <em>copyDegrees</em> to create a copy of the global <em>degrees</em> array.
-            <br> It should take no parameters, just return a new array.<br> To demonstrate we'll create a new array named <em>programs</em> and we'll change the name of the third degree back to "Computer Programming".<br> In <em>degrees</em>, the third
-            degree is: <span id="degrees3"></span><br> In <em>programs</em>, the third degree is: <span id="programs3"></span>
+            <br> It should take no parameters, just return a new array.<br> To demonstrate we'll create a new array named <em>programs</em> and we'll change the name of the third degree back to "Computer Programming".<br> <mark>In <em>degrees</em>, the third
+            degree is: <span id="degrees3"></span><br> In <em>programs</em>, the third degree is: <span id="programs3"></span></mark>
             <script>
                 let programs = copyDegrees();
                 renameDegree(2, "Computer Programming");
@@ -54,7 +55,7 @@
                 document.getElementById("programs3").innerHTML = programs[2];
             </script>
         </li>
-        <li>Write a function named <em>countMatches</em>, that takes two parameters, compares two arrays, and sreturn the number of elements with matching values.<br> We will compare the two arrays above. There should be 4 elements that contain the same values.<br>            Number of matches: <span id="matches"></span>
+        <li>Write a function named <em>countMatches</em>, that takes two parameters, compares two arrays, and returns the number of elements with matching values.<br> We will compare the two arrays above. There should be 4 elements that contain the same values.<br>            <mark>Number of matches: <span id="matches"></span></mark>
             <script>
                 document.getElementById("matches").innerHTML = countMatches(degrees, programs);
             </script>
@@ -78,17 +79,19 @@
 
                 }
                 let size = checkers.length * checkers[0].length;
-                document.write("The checkers array has been initailzed with " + size + " squares.")
+                document.write("<mark>The checkers array has been initailzed with " + size + " squares.</mark>")
             </script>
 
         </li>
-        <li>Write a function named <em>displayBoard</em> to display the board (it have no parameters and will return a string with the HTML that represents the board.)<br> The board:<br>
+        <li>Write a function named <em>displayBoard</em> to display the board (it will have no parameters and will return a string with the HTML that represents the board.)<br> <mark>The board:<br>
             <p id="board"></p>
             <script>
                 document.getElementById("board").innerHTML = displayBoard();
             </script>
+            </mark>
         </li>
-        <li>Write a function named <em>makeMove</em> to place a Red or Black checker on the board. Your function will take these parameters: row, column, letter.<br> We'll use lower case letters to represent the checkers and just put 4 checkers on the board.<br>            Checker board:<br>
+        <li>Write a function named <em>makeMove</em> to place a Red or Black checker on the board. Your function will take these parameters: row, column, letter.<br> We'll use lower case letters to represent the checkers and just put 4 checkers on the board.
+            <br> <mark>Checker board:<br>
             <script>
                 makeMove(0, 0, "b");
                 makeMove(0, 2, "b");
@@ -96,7 +99,7 @@
                 makeMove(7, 2, "r");
                 document.write(displayBoard());
             </script>
-
+            </mark>
 
         </li>
     </ol>

@@ -13,7 +13,7 @@
         thead {
             font-size: larger;
         }
-
+        
         table,
         td,
         th {
@@ -21,7 +21,7 @@
             border-style: solid;
             padding: 10px;
         }
-
+        
         #newGrade {
             width: 25px;
         }
@@ -32,6 +32,7 @@
 <!--------------->
 <!-- HTML BODY -->
 <!--------------->
+
 <body onload="initialize()">
     <h1>Grade Book</h1>
     <table>
@@ -71,10 +72,19 @@
             grades[2] = "A-";
             addRows();
         }
-        
+
+        // Add rows for all students to the table
         function addRows() {
             for (let i = 0; i < students.length; i++) {
                 addRow(i);
+            }
+        }
+
+        // Remove all rows from the table
+        function removeRows() {
+            for (let i = 0; i < students.length; i++) {
+                let row = document.getElementById("row" + i);
+                row.parentElement.removeChild(row);
             }
         }
 
@@ -85,12 +95,12 @@
             newRow.childNodes[1].innerHTML = i + 1; // Line number
             newRow.childNodes[3].innerHTML = students[i]; // Student name
             newRow.childNodes[7].innerHTML = grades[i]; // grade
-            newRow.childNodes[5].firstChild.onclick = function () { // delete button
-                removeStudent(i);
-                let row = document.getElementById("row" + i);
-                row.parentElement.removeChild(row);
+            newRow.childNodes[5].firstChild.onclick = function() { // delete button
+                removeRows(); // remove all rows from the table
+                removeStudent(i); // remove student and grade from the global arrays
+                addRows(); // add rows to the table for all the students
             };
-            newRow.childNodes[9].lastChild.onclick = function () { // enter button
+            newRow.childNodes[9].lastChild.onclick = function() { // enter button
                 let rowElements = document.getElementById("row" + i).childNodes;
                 changeGrade(students[i], rowElements[9].firstChild.value);
                 rowElements[7].innerHTML = grades[i];
@@ -98,12 +108,13 @@
             document.getElementById("gradeBookRows").appendChild(newRow);
         }
 
+        // Add a student to the global array and to the table
         function addRowAndStudent() {
+            // Get the student name from the HTML input element.
             let name = document.getElementById("studentName").value;
             addStudent(name);
             addRow(students.length - 1);
         }
-
     </script>
 </body>
 

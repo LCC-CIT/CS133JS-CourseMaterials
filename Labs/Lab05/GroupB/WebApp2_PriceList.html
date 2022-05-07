@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- By Brian Bird, 5/15/2020 -->
+    <!-- By Brian Bird, 5/15/20, revised 5/6/22 -->
     <meta charset="UTF-8">
     <script src="PriceList.js"></script>
 
@@ -13,7 +13,7 @@
         thead {
             font-size: larger;
         }
-
+        
         table,
         td,
         th {
@@ -21,7 +21,7 @@
             border-style: solid;
             padding: 10px;
         }
-
+        
         #newPrice {
             width: 25px;
         }
@@ -32,6 +32,7 @@
 <!--------------->
 <!-- HTML BODY -->
 <!--------------->
+
 <body onload="initialize()">
     <h1>Price List</h1>
     <table>
@@ -53,7 +54,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <td colspan='5'><input id="productName"> 
+                <td colspan='5'><input id="productName">
                     <button onclick="addRowAndProduct()">Add Product</button></td>
             </tr>
         </tfoot>
@@ -72,10 +73,18 @@
             prices[2] = "55.00";
             addRows();
         }
-        
+
         function addRows() {
             for (let i = 0; i < products.length; i++) {
                 addRow(i);
+            }
+        }
+
+        // Remove all rows from the table
+        function removeRows() {
+            for (let i = 0; i < products.length; i++) {
+                let row = document.getElementById("row" + i);
+                row.parentElement.removeChild(row);
             }
         }
 
@@ -88,13 +97,14 @@
             newRow.childNodes[7].innerHTML = prices[i]; // price
 
             // Event handler to remove a product
-            newRow.childNodes[5].firstChild.onclick = function () { // delete button
+            newRow.childNodes[5].firstChild.onclick = function() { // delete button
+
+                removeRows(); // remove all rows
                 removeProduct(products[i]);
-                let row = document.getElementById("row" + i);
-                row.parentElement.removeChild(row);
+                addRows(); // add rows to the table for all the products
             };
             // Event handler to change a price
-            newRow.childNodes[9].lastChild.onclick = function () { // enter button
+            newRow.childNodes[9].lastChild.onclick = function() { // enter button
                 let rowElements = document.getElementById("row" + i).childNodes;
                 changePrice(i, parseFloat(rowElements[9].firstChild.value));
                 rowElements[7].innerHTML = prices[i];
@@ -110,7 +120,6 @@
             addProduct(name);
             addRow(products.length - 1);
         }
-
     </script>
 </body>
 

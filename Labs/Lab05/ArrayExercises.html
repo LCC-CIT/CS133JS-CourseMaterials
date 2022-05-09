@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-    <!-- Solution code by Brian Bird, 5/11/2020 -->
+    <!-- Written by Brian Bird, 5/11/2020, revised 5/9/2022 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="ArrayExercises.js"></script>
-    <title>Array ArrayExercises</title>
+    <title>Array Exercises</title>
 </head>
 
 <body>
     <h1>Lab 5, Part 1: Array Exercises</h1>
     <p>For each of the problems below, create an array, or write a function in a file named
-        <em>ArrayExercises.js</em><br> This web page contains code to test your solution code.<br>
+        <em>ArrayExercises.js</em><br> This HTML page contains code to test your solution code.<br>
     </p>
 
     <h2>Basic Array Operations</h2>
@@ -28,7 +28,7 @@
                 addDegree("Game Development");
                 addDegree("ASOT CS");
                 // list all degrees
-                for (let i = 0; i < 5; i++) {
+                for (let i = 0; i < degrees.length; i++) {
                     document.write(i + ", " + degrees[i] + "<br>");
                 }
             </script>
@@ -36,7 +36,8 @@
             <hr>
         </li>
 
-        <li>Write a function that lets you change the name of a degree by index.<br> We'll change the name of Computer Programming to Software Development<br> <mark>The degree with index 2 is named: <span id="degree2"></span></mark>
+        <li>Write a function named <em>renameDegree</em> that takes an index number and degree name as parameters. It will let you change the name of a degree in the global <em>degrees</em> array by index.<br> We'll change the name of Computer Programming
+            to Software Development<br> <mark>The degree with index 2 is named: <span id="degree2"></span></mark>
             <script>
                 renameDegree(2, "Software Development");
                 document.getElementById("degree2").innerHTML = degrees[2];
@@ -45,12 +46,12 @@
     </ol>
     <h2>Using Arrays in Loops</h2>
     <ol>
-        <li>Write a special function named <em>copyDegrees</em> to create a copy of the global <em>degrees</em> array.
-            <br> It should take no parameters, just return a new array.<br> To demonstrate we'll create a new array named <em>programs</em> and we'll change the name of the third degree back to "Computer Programming".<br> <mark>In <em>degrees</em>, the third
+        <li>Write a function named <em>copyDegrees</em> to create a copy of the global <em>degrees</em> array.
+            <br> It should take no parameters, just return a new array.<br> We'll create a new array named <em>programs</em> and we'll change the name of the third degree back to "Computer Programming".<br> <mark>In <em>degrees</em>, the third
             degree is: <span id="degrees3"></span><br> In <em>programs</em>, the third degree is: <span id="programs3"></span></mark>
             <script>
                 let programs = copyDegrees();
-                renameDegree(2, "Computer Programming");
+                programs[2] = "Computer Programming";
                 document.getElementById("degrees3").innerHTML = degrees[2];
                 document.getElementById("programs3").innerHTML = programs[2];
             </script>
@@ -83,15 +84,14 @@
             </script>
 
         </li>
-        <li>Write a function named <em>displayBoard</em> to display the board (it will have no parameters and will return a string with the HTML that represents the board.)<br> <mark>The board:<br>
+        <li>Write a function named <em>displayBoard</em> to display the board (it will have no parameters and will return a string with the HTML that represents the board.)<br> <mark>The board:</mark><br>
             <p id="board"></p>
             <script>
                 document.getElementById("board").innerHTML = displayBoard();
             </script>
-            </mark>
         </li>
         <li>Write a function named <em>makeMove</em> to place a Red or Black checker on the board. Your function will take these parameters: row, column, letter.<br> We'll use lower case letters to represent the checkers and just put 4 checkers on the board.
-            <br> <mark>Checker board:<br>
+            <br> <mark>Checker board:</mark><br>
             <script>
                 makeMove(0, 0, "b");
                 makeMove(0, 2, "b");
@@ -99,7 +99,7 @@
                 makeMove(7, 2, "r");
                 document.write(displayBoard());
             </script>
-            </mark>
+
 
         </li>
     </ol>

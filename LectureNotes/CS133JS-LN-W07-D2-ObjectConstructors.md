@@ -20,7 +20,7 @@
 
 ## Announcements
 
-- I'm still working on grading the lab 4 production version. 
+
 
 ## Q and A
 

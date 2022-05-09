@@ -1,14 +1,21 @@
-
+---
+title: Objects
+description: An introduction to JavaScript objects.
+keywords: Object, object literal, object constructor, object property, object method, this keyword, for...in, Object.keys, delete property
+material: Lecture Notes
+generator: Typora
+author: Brian Bird
+---
 
 **CS133JS Beginning Programming: JavaScript**
 
-<h1>Objects</h1>
+<h1>Intro to Objects</h1>
 
 
 | Topics by Week                                       |            |
 | ---------------------------------------------------- | ---------- |
 | 1. Intro to JavaScript programming                   | 6. Arrays  |
-| 2. Functions, Operators and Expressions              | 7. <mark>Objects and Object Constructors</mark> |
+| 2. Functions, Operators and Expressions              | 7. <mark>Objects</mark> and Object Constructors |
 | 3. Conditional Statements: if and switch             | 8. Web Site I/O |
 | 4. Repetition: while, do while, and for | 9. Review |
 | 5. Midterm Check-Point                               | 10. Final  |
@@ -18,20 +25,28 @@
 
 [TOC]
 
-# Introduction
+## Introduction
 
-## Announcements
+### Announcements
 
 - I'm still working on grading the lab 4 production version. 
 
-## Q and A
+### Q and A
 
 - Lab 5, Part 2, any questions?
 - Does anyone have any questions about anything?
 
 
 
-## Review of Array Methods
+### Review of Array Methods
+
+These examples use the array declared and initialized below:
+
+```javascript
+let continents = ["Asia", "Africa", "North America", "South America", "Antarctica", "Europe", "Australia"];
+```
+
+
 
 #### `length`
 
@@ -81,13 +96,13 @@ let continent = continents.shift(); // removes the first element, Asia
 
 #### `push`
 
-```
+```javascript
 let arrayLength = continents.push("Austrailia"); // adds Austrailia at index = length
 ```
 
 #### `unshift`
 
-```
+```javascript
 let arrayLength = continents.unshift("Asia"); // adds Asia at index 0
 ```
 
@@ -95,18 +110,35 @@ let arrayLength = continents.unshift("Asia"); // adds Asia at index 0
 
 ------
 
-# Objects
+## Overview of objects
 
-Objects in JS are like objects in the real world. They have properties--for example a book has: title, author, publication date, genre, etc. They can also have methods--for example a book could have a countWords method that counts all the words in the book.
+Objects in JS are like objects in the real world. They have properties--for example a book has: title, author, publication date, genre, etc. They can also have methods--for example a book could have a `countWords` method that counts all the words in the book.
 
-Two ways to create an object:
+Objects can contain:
 
+- Properties
+- Methods
+
+### Creating Objects
+
+There are two ways to create an object:
+
+- Object constructor 
+
+  ```javascript
+  const fili = new Object();
+  ```
+
+  We'll cover this in the next class.
+  
 - Object literal
 
-  We will focus on this approach today.
+  We'll focus on this approach today.
 
-  Create an object without adding any properties or methods:
+  
 
+  Create an object literal without adding any properties or methods:
+  
   ```javascript
   const thorin = {};
   ```
@@ -114,7 +146,8 @@ Two ways to create an object:
   Create an object with properties and methods:
   
   ```javascript
-  const fili = {
+  const fili = 
+  {
       name: "Fili",
       race: "dwarf",
       brother: "Kili",
@@ -125,21 +158,20 @@ Two ways to create an object:
   ```
 
 
-- Object constructor
-
-  ```javascript
-  const fili = new Object();
-  ```
-
-
 
 ## Properties and Methods
 
-Each property consists of a *key:value* pair.
+Think of a properties as a nouns, and a methods as a verbs.
 
-A method is a function that is the value of an object property, and therefore a task that an object can perform.
+### Properties
 
-think of a property as a noun, and a method as a verb.
+Each property consists of a *key : value* pair. In the example above, `name` is a *key* and `"Fili"` is a *value*.
+
+### Methods
+
+A method is essentially a function. It is also the value of an object property. It is a task that an object can perform. In the example above, `greet` is a *key*, and is the name of the *method*. The function is a *value*.
+
+## Accessing Properties and Methods
 
 ### Accessing an Object Property
 
@@ -162,7 +194,8 @@ Bracket notation must be used if an object’s property name is a number.
 
   ```javascript
 // Create a new object containing numeric properties
-const elves = { 
+const elves = 
+{ 
   home:"Rivendell",
 	0:"Elrond",
 	1:"Arwen",
@@ -179,7 +212,8 @@ What do objects with numeric properties look like?
 Inside a method, the `this` keyword references the object that contains the method so you can access an object property.
 
 ```javascript
-const fili = {
+const fili = 
+{
     name: "Fili",
     greet: function() { 
         return this.name + " at your service!";
@@ -197,6 +231,8 @@ You call a method just as you would call a regular function, but you do it throu
 fili.greet();
 ```
 
+## Adding and Removing Properties and Methods
+
 ### Adding Properties to an Object
 
 Add new properties to an object with the assignment operator, `=`
@@ -211,7 +247,8 @@ fili.weapon = "hammer";
 Adding a method to an object is similar to adding a property, but in place of the property value you provide a function definition.
 
 ```javascript
-gimli.fight = function() {
+gimli.fight = function() 
+{
     return "Fili attacks with a " + this.weapon;
 }
 ```
@@ -225,27 +262,70 @@ delete fili.weapon;
 delete elves[1];
 ```
 
+## Using Loops with Object Properties
 
+### `for...in` Loop&dash;Just for Objects
 
-### Looping Through Properties on an Object 
-
-JavaScript has a built-in loop,  `for`-`in`,  that is specifically designed for iterating over the properties of an object. This loop only iterates over property keys (aka names). Note that you need to use bracket notation.
+The JavaScript language has a special, predefined loop,  `for`...`in`,  that is specifically designed for iterating over the properties of an object. This loop only iterates over property keys (aka names). Note that you need to use bracket notation.
 
 ```javascript
-for (let item in fili) {
+for (let item in fili) 
+{
   console.log(fili[item]);
 }
 ```
 
-How does this compare to the `for`-`of` loop?
+### All the Other Loops
 
-The `Object.keys()` method, which will return an array of the object’s keys.
+#### Get an Array with `Object.keys()`
+
+JavaScript objects have a pre-defined method for getting an array of property keys, the `Object.keys()` method. This makes it easy to use all the other loops with object properties.
 
 ```javascript
-Object.keys(fili);
+let filiArray = Object.keys(fili);
 ```
 
+####`for...of` Loop
 
+The  `for`...`of` loop is specifically designed to operate on arrays.
+
+```javascript
+let filiArray = Object.keys(fili);
+for (const key of filiArray)
+{
+   console.log(key, fili[key]);
+}
+```
+
+#### `for` Loop
+
+The `for` loop has a built-in loop counter that works great for indexing an array.
+
+```javascript
+let filiArray = Object.keys(fili);
+for (let i = 0; i < filiArray.length; i++)
+{
+  let key = filiArray[i];
+   console.log(key, fili[key]);
+}
+```
+
+#### `while` and `do...while`  Loops
+
+We can use these loops on arrays of object properties too, but they aren't as convenient to use as the three types of `for` loops. 
+
+```javascript
+let filiArray = Object.keys(fili);
+let i = 0;
+while (i < filiArray.length)
+{
+  let key = filiArray[i];
+  console.log(key, fili[key]);
+  i++;
+}
+```
+
+#### 
 
 ## Mutability of Objects
 
@@ -271,6 +351,6 @@ balin = boffer;  // this works!
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) written in 2020 and revised in <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------

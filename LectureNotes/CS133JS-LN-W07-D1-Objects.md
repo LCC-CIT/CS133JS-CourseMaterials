@@ -247,7 +247,7 @@ fili.weapon = "hammer";
 Adding a method to an object is similar to adding a property, but in place of the property value you provide a function definition.
 
 ```javascript
-gimli.fight = function() 
+fili.fight = function() 
 {
     return "Fili attacks with a " + this.weapon;
 }
@@ -264,7 +264,7 @@ delete elves[1];
 
 ## Using Loops with Object Properties
 
-### `for...in` Loop&dash;Just for Objects
+### `for...in` Loop&mdash;Just for Objects
 
 The JavaScript language has a special, predefined loop,  `for`...`in`,  that is specifically designed for iterating over the properties of an object. This loop only iterates over property keys (aka names). Note that you need to use bracket notation.
 
@@ -285,7 +285,7 @@ JavaScript objects have a pre-defined method for getting an array of property ke
 let filiArray = Object.keys(fili);
 ```
 
-####`for...of` Loop
+####`for...of` Loop&mdash;Just for Arrays
 
 The  `for`...`of` loop is specifically designed to operate on arrays.
 

@@ -28,10 +28,8 @@ The objective of this lab assignment is to give you practice writing web apps th
 For each of the web apps:
 
 - A starter file named [CS133JS_Lab04_Part2_GroupB.js](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2_GroupB.js), has been provided with the JavaScript stub functions. This file will contain all the functions that do processing or calculations.
-- Separate HTML starter pages have been provided for each web app. If they haven't already been provided, put I/O operations in this file. I/O operations include the following functions and method:
-  - `prompt`
-  - `alert`
-  - `document.write`
+- Separate HTML starter pages have been provided for each web app.
+- Please do not change the names of files or functions, or change the function parameters. I use automated testing to check your code and these kinds of changes will cause tests to fail.
 
 ### 1. Loan Repayment
 
@@ -82,7 +80,7 @@ Write a new version of web app III from the last lab that will:
 
   (After the results have been shown, ask the user if they want to run the program again.)
 
- **In the .js file:** Put the code from the previous function into the stub function provided.
+ **In the .js file:** Put the code from the previous lab's function into the stub function provided.
 
 **In the .html file:** Use [CS133JS_Lab04_Part2B_StateTax.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2B_StateTax.html). 
 

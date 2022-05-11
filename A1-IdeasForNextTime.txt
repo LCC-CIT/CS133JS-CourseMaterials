@@ -38,7 +38,12 @@ Week 4, Repetition
 1) Maybe reorganize the topic sequence and cover arrays first.
 2) Continue writing algorithms in pseudocode.
 3) Show flowcharts
+Lab: 
+1) For Web app 2, they should all get two inputs (like Kindergarten Admission) and require validation of both.
+2) Revise the grading criteria to be more relevant (look at the code review). Less points for Web app 2 and 3 .js code.
 
 Week 5, Midterm
 
 Week 6, Arrays
+1) Explain and give an example of parallel arrays.
+2) Explain and give an example of a look-up array.

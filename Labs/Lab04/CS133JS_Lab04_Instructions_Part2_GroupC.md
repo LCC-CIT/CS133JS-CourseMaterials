@@ -28,10 +28,8 @@ The objective of this lab assignment is to give you practice writing web apps th
 For each of the web apps:
 
 - A starter file named [CS133JS_Lab04_Part2_GroupC.js](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2_GroupC.js), has been provided with the JavaScript stub functions. This file will contain all the functions that do processing or calculations.
-- Separate HTML starter pages have been provided for each web app. If they haven't already been provided, put I/O operations in this file. I/O operations include the following functions and method:
-  - `prompt`
-  - `alert`
-  - `document.write`
+- Separate HTML starter pages have been provided for each web app.
+- Please do not change the names of files or functions, or change the function parameters. I use automated testing to check your code and these kinds of changes will cause tests to fail.
 
 ### 1. Cycling Plan
 
@@ -70,7 +68,7 @@ Write a new version of web app II from the previous lab. This web app will do th
 
 **In the .html file:** Use [CS133JS_Lab04_Part2C_TrailRating.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2C_TrailRating.html). In the script element, add input validation loops for round trip distance and elevation gain.
 
-- Limit user input to reasonable values. 
+- Limit user input to ranges of reasonable distance and elevation values. 
 - Pop up an alert telling the user what the acceptable input range is.
 - Keep prompting the user for input until it is valid.
 
@@ -84,7 +82,7 @@ Write a new version of web app III from the last lab that will:
 
   (After the results have been shown, ask the user if they want to run the program again.)
 
- **In the .js file:** Put the code from the previous function into the stub function provided.
+ **In the .js file:** Put the code from the previous lab's function into the stub function provided.
 
 **In the .html file:** Use [CS133JS_Lab04_Part2C_TrailTypes.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2C_TrailTypes.html). 
 

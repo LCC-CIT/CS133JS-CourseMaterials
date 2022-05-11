@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- By Brian Bird, 5/4/2022
+         Array Example for CS133JS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="NumberInSpanish.js"></script>
+    <title>Numbers in Spanish</title>
+</head>
+
+<body>
+    <h1>Look up the Spanish names for numbers</h1>
+    <form name="input">
+        <input type="text" name="numberInput">
+        <input type="button" value="Enter" onclick="doIO()">
+    </form>
+    <p>The number <span id="number">__</span> is <span id="spanish">_____</span> in Spanish</p>
+    <p id="comment"></p>
+    <script>
+        function doIO() {
+            let number = parseInt(document.input.numberInput.value);
+            if (isNaN(number) || number > 10) {
+                document.getElementById("comment").innerHTML = "No sé";
+                document.getElementById("number").innerHTML = "__";
+                document.getElementById("spanish").innerHTML = "_____";
+            } else {
+                document.getElementById("comment").innerHTML = "";
+                document.getElementById("number").innerHTML = number;
+                document.getElementById("spanish").innerHTML = toSpanish(number);
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -7,20 +7,42 @@ generator: Typora
 author: Brian Bird
 ---
 
-
 <h1>Lab 4, Part 1 Instructions</h1>
 
 **CS 133JS, Beginning Programming: JavaScript**
 
+[TOC]
+
+## Objective
+
+The objective of this lab is to give you practice using the following types of loops:  
+
+- while
+- do...while
+- for
+
 ## Overview
-
-The objective of this lab is to give you practice using:  while loops, do-while loops, for loops 
-
-## Exercises
 
 For each of the exercises, complete the "stub" function in the file, [CS133JS_Lab04_Part1.js](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part1.js).
 
-Check each completed function by opening  [CS133JS_Lab04_Part1.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part1.html), which calls each of the functions and checks to see if they return the correct values based on the arguments that it passes to the functions.
+- Please do not change the names of files or functions, or change the function parameters. I use automated testing to check your code and these kinds of changes will cause tests to fail.
+- For many of the functions I've provided correct variable initialization and a return variable. For best results, do not change these.
+
+Check each completed function by opening  [CS133JS_Lab04_Part1.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part1.html), which calls each of the functions and checks to see if it returns the correct value based on the arguments that it passes to the function.
+
+- Do not change any code in this .html file.
+
+## Troubleshooting Tips
+
+- If the colors (red or green) disappear, it means you have a syntax error in your .js code.
+
+- If the file takes a long time to load, it means there is probably an "infinite loop" in your .js file. To fix this:
+  - Check your loop condition to make sure that it can become false.
+  - If there is a loop counter, make sure it is being incremented, decremented, or it's count changed in a way that will eventually cause the loop to stop.
+  - Copy and paste the loop code into the console to test it there where you don't have to wait for the web page to load.
+  - Check to browser console for error messages.
+
+## Exercises
 
 1. Complete the code for the *do while* loop so that it counts from 2 to 10 by twos.
 
@@ -54,6 +76,8 @@ Check each completed function by opening  [CS133JS_Lab04_Part1.html](https://lcc
    - Any number with an exponent of 0 is 1.
 
 9. Use a *for* loop to test a number to see if it is prime. (This is the same problem as exercise 6, but you will solve it with a for loop this time.)
+
+## Footnotes
 
 
 [^1]: Methods are pretty much the same as functions, but you call them using the name of some *object*, like a string variable, with a dot and then the name of of the method and any arguments in parenthesis. For example: `someText.charAt(0)`

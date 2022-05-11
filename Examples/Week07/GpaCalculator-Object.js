@@ -3,13 +3,17 @@
 "use strict";
 
 // Object constructor for a course object
-function Course(number, credits, grade) {
-    this.number = number;
-    this.credits = credits;
-    this.grade = grade;
+function Course(courseNumber, credits, grade) {
+    this.number = courseNumber; // A string
+    this.credits = credits; // Creidts for this course
+    this.grade = grade; // Grade earned
 }
 
-// A global array that will hold course objects
+const gpaCalculator = {
+        courses: [], // array to hold course objects
+
+    }
+    // A global array that will hold course objects
 let courses = [];
 
 // Looup table for converting letter grades to grade points

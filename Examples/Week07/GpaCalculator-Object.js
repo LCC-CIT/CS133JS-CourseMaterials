@@ -1,10 +1,11 @@
-/* Written by Brian Bird, 5/16/2020 */
+/* Written by Brian Bird, 5/16/2020 *
+ * Revised by Brian Bird, 5/11/2022 */
 
 "use strict";
 
 // Object constructor for a course object
-function Course(number, credits, grade) {
-    this.number = number;
+function Course(courseNumber, credits, grade) {
+    this.number = courseNumber; // A string
     this.credits = credits;
     this.grade = grade;
 }
@@ -44,12 +45,12 @@ function lookUpPoints(grade) {
     return points;
 }
 
-// Add a class. This requires adding to all three global arrays
+// Add a class to the global array of courses
 function addClass(name, credits, grade) {
     courses.push(new Course(name, credits, grade));
 }
 
-// Add up the total of the credits using the global courseCredits array
+// Add up the total of the credits for all courses
 function totalCredits() {
     let total = 0;
     for (let course of courses) {

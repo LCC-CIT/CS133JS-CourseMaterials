@@ -177,7 +177,7 @@ const loft = {
 Or, we can use an object constructor:
 
 ```javascript
-// Object constructor
+// Object literal with object from object constructor
 const loft = {
   water: 100,  // percent full water
   food: 100,    // percent full food
@@ -250,6 +250,20 @@ loft.pigeons[2].fly(); // Rosalind will fly
 ```
 
 What code could we write to make all the pigeons fly?
+
+
+
+## Examples
+
+These are the same examples that are posted on Moodle.
+
+[GPA Calculator with Objects](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week07/GpaCalculator-Object.html)
+
+This is a new version of the GPA calculator.
+
+[Movies and Actors with Objects]()
+
+This is a new version of the Movie and Actors web app.
 
 
 

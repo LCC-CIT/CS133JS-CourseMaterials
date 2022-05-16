@@ -1,12 +1,3 @@
----
-title: Web page i/o
-description: Accessing web page DOM elements and using events.
-keywords: DOM, innerHTML, getEelmentById, textContent, event, event handler
-material: Lecture Notes
-generator: Typora
-author: Brian Bird
----
-
 **CS133JS Beginning Programming: JavaScript**
 
 <h1>The Document Object Model</h1>
@@ -17,8 +8,8 @@ author: Brian Bird
 | 1. Intro to JavaScript programming       | 6. Arrays                          |
 | 2. Functions, Operators and Expressions  | 7. Objects and Object Constructors |
 | 3. Conditional Statements: if and switch | 8. <mark>Web Page I/O</mark>       |
-| 4. Repetition: while, do while, and for  | 9. Dynamic Web Pages               |
-| 5. Midterm Check-Point                   | 10. Review for final quiz          |
+| 4. Repetition: while, do while, and for  | 9. Review                          |
+| 5. Midterm Check-Point                   | 10. Assessment                     |
 
 
 <h2>Table of Contents</h2>
@@ -29,15 +20,18 @@ author: Brian Bird
 
 ## Announcements
 
-- I've finished grading lab 4 and will start grading lab 5 tomorrow.
-- Don't forget the reading quiz that closes tomorrow.
-  - The tutorial you are reading has examples that use *arrow functions*. You will learn about those next term. I've translated those example to use "normal" functions.
-
-- Lab 6 (objects) code reviews are due tomorrow.
+- I'm still working on grading the lab 4 production version, will start grading lab 5 this week.
+- This week's lab, lab 7, will be the last lab.
+  - There will be no code review.
+  - The production version will be due next Friday, June 5th
+- I will make an alternative version of the array lab assignment for those who would like that.
+- FYI, I drop the lowest lab grade and lowest quiz grade
+- The final will be on June 8th and 9th.
 
 ## Q and A
 
-- Any questions?
+- Lab 6, any questions?
+- Does anyone have any questions about anything?
 
 
 
@@ -52,24 +46,6 @@ The browser has a set of built-in JavaScript objects that represent the web page
 ![DOM-model](../Images/DOM-model.svg)
 
 By <a href="//commons.wikimedia.org/w/index.php?title=User:Eib&amp;action=edit&amp;redlink=1" class="new" title="User:Eib (page does not exist)">Birger Eriksson</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=18034500">Link</a>
-
-
-
-**HTML for the web page in the DOM diagram above**
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>My title</title>
-  </head>
-  <body>
-    <h1>A heading</h1>
-    <a href="https://example.com">Link text</a>
-  </body>  
-</html>
-```
 
 
 
@@ -92,23 +68,13 @@ document.getElementById("lcc").innerHTML = "Hello Lane Community College!";
 
 ### By CSS selector
 
-Review: in a CSS rule, the first part is the selector. For example, in the rule below, `#cit` is the selector:
-
-```css
-#cit {
-	background-color: green;
-}
-```
-
-In JavaScript, we can use `document.querySelector` to get a reference to an HTML element.
-
 - The selector can be any valid CSS selector such as:
 
   - id
   - class
   - element name (tag name)
   
-- The `querySelector` method will return a single reference to the first matching element it finds on the page. 
+- This will return a reference to the first matching element it finds on the page. It will return a single element:
 
   ```javascript
   document.querySelector("#cit").innerHTML = "Greetings CIT!";
@@ -116,33 +82,12 @@ In JavaScript, we can use `document.querySelector` to get a reference to an HTML
 
 
 
-## Accessing HTML Element Attributes
 
-Review: An attribute defines some characteristic of an HTML element and is coded as a key value pair. In the example below, `href` is an attribute.
-
-```html
-    <a href="https://profbird.dev">Your instructor's web site</a>
-```
+## Accessing Element Attributes
 
 ### `innerHTML`
 
 This object property represents the text content of html elements that have content between the tags. The section above has examples.
-
-### `textContent`
-
-This is another way to access the content between tags. The difference is that it just returns the text, not any HTML formatting that is in the text. For example:
-
-```html
-<p id="voles"><em>Voles</em> are burrowing rodents that are <strong>descrictive</strong> gardens.</p>
-<script>
-  alert(document.getElementById("voles").innerHTML);
-  // The alert will display:
-  // <em>Voles</em> are burrowing rodents that are <strong>descrictive</strong> to gardens.
-  alert(document.getElementById("voles").textContent);
-  // The alert will display:
-  // Voles are burrowing rodents that are descrictive to gardens.
-</script>
-```
 
 ### `value`
 
@@ -152,15 +97,12 @@ This object property is useful for getting or setting the value in an HTML input
 <input id="name" placeholder="Your name">
 <script>
   alert(document.getElementById("name").value);
-  // The alert will display "Your name"
 </script>
 ```
 
+## Events
 
-
-## JavaScript Events
-
-JavaScript can respond to various things that happen in a browser. These things are called *events*.
+JavaScript can respond to various things that happen in the browser. These things are called *events*.
 
 ### Common events
 
@@ -261,4 +203,4 @@ Enter your name:<input>
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), 2020, revised <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

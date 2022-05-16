@@ -5,7 +5,6 @@ keywords: encapsulation, getter, setter
 material: Lecture Notes
 generator: Typora
 author: Brian Bird
-
 ---
 
 **CS133JS Beginning Programming: JavaScript**

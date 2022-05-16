@@ -1,3 +1,18 @@
+Re-order the topics like this:
+1) HTML review / JavaScript intro
+   - How JavaScript is different execution of statements
+   - Don't use the console yet. Use script elements
+2) the rest of the old week 1 content. Cover all math operators
+3) Functions
+4) Objects
+5) Midterm
+6) Selection
+7) Strings / Arrays
+8) Repetition (two weeks?)
+9) Events / Dynamic web pages
+
+
+
 Week 1, Intro
 1) Introduce algorithms. Use an example like the Martian brushing teeth. Use loose pseudocode.
 1b) Contrast HTML to JavaScript how are they different.

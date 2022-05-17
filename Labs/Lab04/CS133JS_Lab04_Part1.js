@@ -53,10 +53,12 @@ function countWords(text) {
 
 // 6. Use a while loop to check a number to see if it is prime.
 function isPrime(maybePrime) {
-    let isPrimeNumber = true;
-    // TODO: Write the code to complete the exercise.
-    // Hint: In a loop divide maybePrime by every number from 2 to one less than maybePrime
-    //       if the remainder is every zero, then maybePrime is not a prime number.
+    let isPrimeNumber = true; // assume true, try to prove false
+    // TODO: Write code to initialize a loop counter, then write the loop.
+    // Hint 1: In a loop divide maybePrime by every number from 2 to one less than maybePrime
+    // if the remainder is ever zero, then maybePrime is not a prime number.
+    // Hint 2: inside the loop use this statement: 
+    // if(maybeRrime % counter === 0) { isPrimeNumber = false; }
     return isPrimeNumber;
 }
 
@@ -65,7 +67,7 @@ function isPrime(maybePrime) {
 function squareRoot(number) {
     let root = 1; // This is just a starting point
     // TODO: Write a loop that will increment root until either:
-    // a) root * root equals the number, or b) the root is greater then the number.
+    // a) root * root equals number, or b) the root is greater then number.
     // Hint: Use this statement inside the loop: root++;
     return root < number ? root : 0;
 }
@@ -80,11 +82,9 @@ function power(base, exponent) {
 
 // 9. Use a for loop to check a number to see if it is prime.
 function isPrime2(maybePrime) {
-    let isPrimeNumber = true; // assume true, try to prove false
+    let isPrimeNumber = true;
     // TODO: In a loop, divide maybePrime by the loop counter. If there is ever a remainder from
     // the division, this isn't a prime number.
-    // Hint: inside the loop use this statement: 
-    // if(maybeRrime % counter === 0) { isPrimeNumber = false; }
     return isPrimeNumber;
 }
 

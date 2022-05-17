@@ -61,25 +61,30 @@ function isPrime(maybePrime) {
 }
 
 // 7. Use a do while loop to find the whole square root of a number
+//    Return 0 if there is no whole square root.
 function squareRoot(number) {
     let root = 1; // This is just a starting point
-    // TODO: Write the code to complete the exercise.
-    // Hint: Repeatedly multiply root times itself and check to see if the result equals number.
-    return root;
+    // TODO: Write a loop that will increment root until either:
+    // a) root * root equals the number, or b) the root is greater then the number.
+    // Hint: Use this statement inside the loop: root++;
+    return root < number ? root : 0;
 }
 
 // 8. Use a for loop to raise a number to a power
 function power(base, exponent) {
-    let result = 1;
-    // TODO: Write the code to complete the exercise.
-    // Hint: Repeatedly multiply the base times itself as many times as specified by the exponent.
+    let result = 1; // any number raised to the power of 0 will be 1
+    // TODO: Write a loop that will multiply the base by iteslf the number of times specified by exponent.
+    // Hint: Use this statement inside the loop: result = result * base 
     return result;
 }
 
 // 9. Use a for loop to check a number to see if it is prime.
 function isPrime2(maybePrime) {
-    let isPrimeNumber = true;
-    // TODO: Write the code to complete the exercise.
+    let isPrimeNumber = true; // assume true, try to prove false
+    // TODO: In a loop, divide maybePrime by the loop counter. If there is ever a remainder from
+    // the division, this isn't a prime number.
+    // Hint: inside the loop use this statement: 
+    // if(maybeRrime % counter === 0) { isPrimeNumber = false; }
     return isPrimeNumber;
 }
 

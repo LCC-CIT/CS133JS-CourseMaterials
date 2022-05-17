@@ -1,3 +1,13 @@
+---
+title: Object Constructors
+description: Creating JavaScript objects with object constructors.
+keywords: object constructor, complex object, this keyword, method
+material: Lecture Notes
+generator: Typora
+author: Brian Bird
+
+---
+
 **CS133JS Beginning Programming: JavaScript**
 
 <h1>Object Constructors and Complex Objects</h1>
@@ -6,7 +16,7 @@
 | Topics by Week                           |                                                 |
 | ---------------------------------------- | ----------------------------------------------- |
 | 1. Intro to JavaScript programming       | 6. Arrays                                       |
-| 2. Functions, Operators and Expressions  | 7. <mark>Objects and Object Constructors</mark> |
+| 2. Functions, Operators and Expressions  | 7. Objects and <mark>Object Constructors</mark> |
 | 3. Conditional Statements: if and switch | 8. Web Page I/O                                 |
 | 4. Repetition: while, do while, and for  | 9. Review                                       |
 | 5. Midterm Check-Point                   | 10. Final                                       |
@@ -18,13 +28,13 @@
 
 # Introduction
 
-## Announcements
+## Announcements 
 
-
+- I'm still working on grading lab 4.
 
 ## Q and A
 
-- Lab 5, Part 2, any questions?
+- Lab 5 any questions?
 - Does anyone have any questions about anything?
 
 
@@ -79,17 +89,16 @@ fili.greet();
 
 
 
-
-
 ------
 
 
 
 # Object Constructors
 
-Sometimes we will want to make multiple objects that are nearly the same. For example, we might want to model a flock of pigeons. Here is one pigeon object:
+Sometimes we will want to make multiple objects that are nearly the same. For example, we might want to make a "template" for creating a flock of pigeons. Here is one pigeon object:
 
 ```javascript
+// Object literal
 const pigeon = {
 	name: "Agatha",
   breed: "Egyptian Swift",
@@ -100,11 +109,14 @@ const pigeon = {
 }
 ```
 
-Now we want more pigeon objects. Is there a way we can make a template that we can use to make others? Yes! We can make an object constructor.
+Now we want more pigeon objects, but with different property values. Is there a way we can make a template that we can use to make others? Yes! We can make an *object constructor*.
 
-Here's an *object constructor*. Notice that the first letter is capitalized.
+Here's a special function that's an *object constructor*. 
+
+Notice that the first letter is capitalized (style, not syntax).
 
 ```javascript
+// Object constructor
 function Pigeon(name, breed, speed){
 	this.name = name;
   this.breed = breed;
@@ -115,7 +127,7 @@ function Pigeon(name, breed, speed){
 }
 ```
 
-Now we can make some *pigeon* objects:
+Now we can make some *pigeon* objects and pass in property values:
 
 ```javascript
 const agatha = new Pigeon("Agatha", "Egyptian Swift", 50);
@@ -134,6 +146,8 @@ elizabeth.fly();
 
 Now that we have multiple objects that use the same object definition, we can see the importance of using *this* inside of object methods. The *this* keyword represents whatever object it is in and now it can be in different objects.
 
+What would have happened if we used the object name inside the method instead of `this`?
+
 
 
 # Complex Objects
@@ -145,6 +159,7 @@ Object properties can be other objects. When we put objects inside of objects we
 An object can have a property that has an object as it's value. For example we can make a loft objects for our pigeons to live in (a pigeon house is called a *loft*). Here is a loft for just one pigeon. The pigeon property is an object literal.
 
 ```javascript
+// Object literal
 const loft = {
   water: 100,  // percent full water
   food: 100,    // percent full food
@@ -162,6 +177,7 @@ const loft = {
 Or, we can use an object constructor:
 
 ```javascript
+// Object literal with object from object constructor
 const loft = {
   water: 100,  // percent full water
   food: 100,    // percent full food
@@ -184,6 +200,7 @@ We can also put objects in arrays and put arrays of objects inside objects.
 Let's start with just an array of objects. Here is an array that represents a flock of pigeons. I could have written object literals in each element of the array, but it was much easier to use the Pigeon object constructor.
 
 ```javascript
+// Array of Pigeon objects
 let pigeons = [new Pigeon("Agatha", "Egyptian Swift", 50),
 							new Pigeon("Elizabeth", "Egyptian Swift", 60),
 							new Pigeon("Jutta", "Utility", 45)];
@@ -198,6 +215,7 @@ flock[1].fly();  // Elizabeth will fly
 Now let's create a loft object that has an array of pigeon objects:
 
 ```javascript
+// Object literal
 const loft = {
   water: 100,   // percent full water
   food: 100,    // percent full food
@@ -235,6 +253,20 @@ What code could we write to make all the pigeons fly?
 
 
 
+## Examples
+
+These are the same examples that are posted on Moodle.
+
+[GPA Calculator with Objects](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week07/GpaCalculator-Object.html)
+
+This is a new version of the GPA calculator.
+
+[Movies and Actors with Objects]()
+
+This is a new version of the Movie and Actors web app.
+
+
+
 # References
 
 ## Tutorials
@@ -247,4 +279,4 @@ What code could we write to make all the pigeons fly?
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), 2020, revised <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

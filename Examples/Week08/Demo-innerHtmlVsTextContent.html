@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Written by Brian Bird, 5/18/2022  -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Form I/O</title>
+</head>
+
+<body>
+    <h1>Demo: innerHTML vs. textContent</h1>
+    <h2>With text "hard-coded" in the web page</h2>
+    <p>This isn't something you would normally do. It's just to illustrate the difference between these two ways of putting text between HTML tags.</p>
+    <p>Some sample text with HTML mark-up:<br>
+        <code id="textWithTags"><u>This</u> is some text that contains <strong>HTML tags</strong> and symbols&mdash;like <em>mdash</em>.</code>
+    </p>
+
+    <ul>
+        <li>Sample text echoed with <em>innerHTML</em>:<br><span id="echo1"></span></li>
+        <li>Sample text echoed with <em>textContent</em>:<br><span id="echo2"></span></li>
+    </ul>
+
+    <script>
+        // innerHTML required here, textContent won't include the mark-up
+        sample = document.getElementById("textWithTags").innerHTML;
+        // this will include the mark-up
+        document.getElementById("echo1").innerHTML = sample;
+        // this will just be plain text
+        document.getElementById("echo2").textContent = sample;
+    </script>
+
+    <h2>With user input</h2>
+
+    <form>
+        Type something in the <code>Textarea</code> below, click the <em>Copy Text</em> button, and it will be echoed back to the web page.<br>
+        <textarea id="inputText" cols="30" rows="3" placeholder="Enter text with HTML tags."></textarea><br>
+        <button type="button" onclick="echoText()">Copy Text</button>
+    </form>
+
+    <ul>
+        <li>Your text echoed using a span's <em>innerHTML</em>:<br>
+            <span style="color:gray" id="p1">No text yet...</span></li>
+        <li>Your text echoed using a span's <em>textContent</em>:<br>
+            <span style="color:gray" id="p2">No text yet...</span></li>
+    </ul>
+
+    <script>
+        function echoText() {
+            textArea = document.getElementById("inputText");
+            p1 = document.getElementById("p1");
+            p1.innerHTML = textArea.value;
+            p2.textContent = textArea.value;
+        }
+    </script>
+
+</body>
+
+</html>

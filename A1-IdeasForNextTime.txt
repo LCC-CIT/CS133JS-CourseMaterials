@@ -14,15 +14,16 @@ Re-order the topics like this:
 
 
 Week 1, Intro
-1) Introduce algorithms. Use an example like the Martian brushing teeth. Use loose pseudocode.
+1) Introduce the concept of algorithms. Use an example like the Martian brushing teeth. Use loose pseudocode.
 1b) Contrast HTML to JavaScript how are they different.
 2) Introduce all the math operators including the short-cuts.
 3) Show flowcharts.
 Lab 1
 1) Write some good variable exercises so students really get the idea of assignment and use of variables.
+1.5) Update the datatypes to show 7 types: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#data_structures_and_types
 2) Don't have them do a copy-paste exercise for part 1. Have them write fill-in the blank code in a web page.
 3) Modify the lab assignment so that the concatenation doesn't require nested quotes so much. More emphasis on use of variables. Use template literals or at least footnote that they are preferred.
-4) Use textContent instead of innerHTML. https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent
+4) Use textContent instead of innerHTML. https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent. Better yet, just use document.write for now.
 5) Show them how to use the console to check for syntax errors.
 
 

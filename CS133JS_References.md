@@ -16,13 +16,15 @@
 
 [MDN JavaScript Tutorials](https://developer.mozilla.org/en-US/docs/Learn/JavaScript) - Another set of good tutorials for beginners.
 
+[Learn JavaScript](https://learnjavascript.online/) - An interactive course. The first 7 chapters (77 lessons) are free.
+
 
 
 ## Online Books and References
 
 [*Eloquent JavaScript, A Modern Introduction to Programming*](http://eloquentjavascript.net/), Third Edition, by Marijn Haverbeke, No Starch Press, 2018.
 
-*[The Modern JavaScript Tutorial](https://javascript.info/)*, by Ilya Kantor, 2020.
+*[The Modern JavaScript Tutorial](https://javascript.info/)*, (aka JavaScript.info) by Ilya Kantor, 2020.
 
 *[You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md)*, 1st Edition, book series by Kyle Simpson,  O'Reilly, March 2015.
 

@@ -116,37 +116,31 @@ In JavaScript, we can use `document.querySelector` to get a reference to an HTML
 
 
 
-## Accessing HTML Element Attributes
+## I/O Using HTML Elements
 
-Review: An attribute defines some characteristic of an HTML element and is coded as a key value pair. In the example below, `href` is an attribute.
+In previous examples and lab assignments you've used the `prompt` function to get input `document.write`, or `getElementById` with `innerHTML` to put output on a web page.
 
-```html
-    <a href="https://profbird.dev">Your instructor's web site</a>
-```
-
-### `innerHTML`
-
-This object property represents the text content of html elements that have content between the tags. The section above has examples.
+Now we'll look at a couple new ways to do input and output (I/O).
 
 ### `textContent`
 
-This is another way to access the content between tags. The difference is that it just returns the text, not any HTML formatting that is in the text. For example:
+This is another way to access the content between tags. The difference between this property and `innerHTML` is that it just returns the text, not any HTML formatting that is in the text. For example:
 
 ```html
-<p id="voles"><em>Voles</em> are burrowing rodents that are <strong>descrictive</strong> gardens.</p>
+<p id="voles"><em>Voles</em> are burrowing rodents that are <strong>descrictive</strong> to gardens.</p>
 <script>
-  alert(document.getElementById("voles").innerHTML);
-  // The alert will display:
+  document.getElementById("voles").innerHTML;
+  // This will be put on the web page:
   // <em>Voles</em> are burrowing rodents that are <strong>descrictive</strong> to gardens.
-  alert(document.getElementById("voles").textContent);
-  // The alert will display:
+  document.getElementById("voles").textContent;
+  // This will be put on the web page:
   // Voles are burrowing rodents that are descrictive to gardens.
 </script>
 ```
 
 ### `value`
 
-This object property is useful for getting or setting the value in an HTML input element. 
+This object property is useful for getting or setting the value in an HTML input element. The input element would normally be in an HTML form.
 
 ```html
 <input id="name" placeholder="Your name">
@@ -209,6 +203,7 @@ We can use a button with an onclick event handler to get user input. Here's an e
 ```html
 Enter your name:<input>
 <button onclick="inputName()">Enter</button>
+
 <p>Hello: <span id="name"></span></p>
 <script>
   function inputName() {

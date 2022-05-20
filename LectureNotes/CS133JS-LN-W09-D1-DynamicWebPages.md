@@ -20,187 +20,61 @@
 
 ## Announcements
 
-- I'm still working on grading the lab 4 production version, will start grading lab 5 this week.
-- This week's lab, lab 7, will be the last lab.
-  - There will be no code review.
-  - The production version will be due next Friday, June 5th
-- I will make an alternative version of the array lab assignment for those who would like that.
-- FYI, I drop the lowest lab grade and lowest quiz grade
-- The final will be on June 8th and 9th.
+
 
 ## Q and A
 
-- Lab 6, any questions?
 - Does anyone have any questions about anything?
 
 
 
-# Web Page Input and Output
+## Odds and Ends
 
-**A brief introduction**
+Topics we haven't covered yet.
 
-## What is the DOM?
+- Primitive data types vs. objects
 
-The browser has a set of built-in JavaScript objects that represent the web page and all its HTML elements. The objects are arranged in a hierarchy:
+  > In JavaScript, a primitive (primitive value, primitive data type) is data that is not an object and has no methods or properties. There are 7 primitive data types: string, number, bigint, boolean, undefined, symbol, and null.
+  > &mdash;MDN JavaScript Guide
 
-![DOM-model](../Images/DOM-model.svg)
+  - Primitive types have object wrappers that are automatically invoked when you access a method or property that appears to be on a primitive.
+  - Primitive types are immutable. Object methods return a new value, they don't change the primitive itself.
 
-By <a href="//commons.wikimedia.org/w/index.php?title=User:Eib&amp;action=edit&amp;redlink=1" class="new" title="User:Eib (page does not exist)">Birger Eriksson</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=18034500">Link</a>
+- Strings: methods, properties, and things you can do with them.
 
+  - The String object
+  - Interesting things you can do with strings:
+    - Search within a string.
+    - Replace sections of a string.
+    - Split a string into two or more parts.
 
+  - Example and lab ideas:
+    - 
 
-## Referencing HTML Elements
+- Date object
 
-For the examples below, assume we have this in our web page:
+- Math object
 
-```HTML
-<h1>Greetings</h1>
-<p id="eugene">Hello Eugene!</p>
-<p id="lcc">Hello LCC!</p>
-<p id="cit">Hello CIT!</p>
-```
+  - Random method
 
-### By id attribute
-
-```javascript
-document.getElementById("lcc").innerHTML = "Hello Lane Community College!";
-```
-
-### By CSS selector
-
-- The selector can be any valid CSS selector such as:
-
-  - id
-  - class
-  - element name (tag name)
-  
-- This will return a reference to the first matching element it finds on the page. It will return a single element:
-
-  ```javascript
-  document.querySelector("#cit").innerHTML = "Greetings CIT!";
-  ```
+- Regular Expressions
 
 
-
-
-## Accessing Element Attributes
-
-### `innerHTML`
-
-This object property represents the text content of html elements that have content between the tags. The section above has examples.
-
-### `value`
-
-This object property is useful for getting or setting the value in an HTML input element. 
-
-```html
-<input id="name" placeholder="Your name">
-<script>
-  alert(document.getElementById("name").value);
-</script>
-```
-
-## Events
-
-JavaScript can respond to various things that happen in the browser. These things are called *events*.
-
-### Common events
-
-- onclick                 The user clicks an HTML element.
-- onmouseover     The mouse pointer moves over an HTML element.
-- onkeydown         The user presses a keyboard key.
-- onload                 The browser has finished loading the page.
-
-### Event Handlers
-
-Event handlers are JavaScript functions that are called when events occur. 
-
-- The event handler must be specified for a particular HTML element.
-
-  One way to do this is with an HTML attribute:
-
-  ```html
-  <p onmouseover="doSomething()">This paragraph has an onmouseover event</p>
-  ```
-
-
-- An event handler is just an ordinary function:
-
-  ```javascript
-  function doSomething() {
-     document.write("something");
-  }
-  ```
-
-- Event handlers that write something to the document (web page) need to have a target element. 
-
-  ```javascript
-  function doSomething() {
-     document.querySelector("p").innerHTML = "Something";
-  }
-  ```
-
-## User Input and Output
-
-This is how to get input and display output on a web page without using `prompt` and `alert`.
-
-### Using a Button to Get Input
-
-We can use a button with an onclick event handler to get user input. Here's an example:
-
-```html
-Enter your name:<input>
-<button onclick="inputName()">Enter</button>
-<p>Hello: <span id="name"></span></p>
-<script>
-  function inputName() {
-    let name = document.querySelector("input").value;
-    document.querySelector("#name").innerHTML = name;
-  }
-</script>
-```
-
-- The onclick event can be used with any element, but we frequently use it with a button. 
-
-### Displaying output
-
-- Assume we have a paragraph in our web page:
-
-  ```html
-   <p id="studentName">Student's name: </p>
-  ```
-
-- Access HTML elements in JavaScript using *getElementById*: 
-
-  ```javascript
-  let nameParagraph = document.getElementById("studentName");
-  ```
-
-- Set the value of an element:
-
-  ```javascript
-  nameParagraph.innerHTML += "Susan";
-  ```
-
-
-
-# Further Reading
-
-## Tutorials
-
-- [JavaScript HTML DOM](https://www.w3schools.com/js/js_htmldom.asp) - W3Schools
-- [JavaScript HTML DOM Document](https://www.w3schools.com/js/js_htmldom_document.asp) - W3Schools
-- [JavaScript HTML DOM Elements](https://www.w3schools.com/js/js_htmldom_elements.asp) - W3Schools
-- [JavaScript Events](https://www.w3schools.com/js/js_events.asp) - W3Schools
 
 ## Reference
 
-[DOM (Document Object Model)](https://developer.mozilla.org/en-US/docs/Glossary/DOM) - MDN
+[Primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive), MDN Web Docs Glossary
 
-[Event Reference](https://developer.mozilla.org/en-US/docs/Web/Events) - MDN
+### MDN JavaScript Reference
+
+- [String Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#static_methods)
+
+- [Math Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
+
+- [RegExp Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
 
 
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

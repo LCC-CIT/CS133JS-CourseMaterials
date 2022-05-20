@@ -74,7 +74,7 @@ Write a new version of web app II from the previous lab. This web app will do th
 
 Write a new version of web app III from the last lab that will:
 
-- Do input validation.
+- Do input validation (just check for an empty string.)
 
 - Allow the user to enter another state without reloading the web page. 
 

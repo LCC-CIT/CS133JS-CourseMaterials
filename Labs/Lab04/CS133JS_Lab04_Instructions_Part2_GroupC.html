@@ -2,21 +2,16 @@
 <html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<meta name="title" content="Lab 4, Part 2">
-<meta name="description" content="Group C assignment to make web apps that use while, do-while, and for loops as well as nested loops.">
-<meta name="keywords" content="repetition, loop, while, do while, for">
-<meta name="material" content="Lab Instructions">
-<meta name="author" content="Brian Bird">
-<meta name="generator" content="Typora">
-<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
-.mac-os-11 { --title-bar-height: 28px; }
+
+<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
-body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit; background-repeat: inherit; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
 #write.first-line-indent p { text-indent: 2em; }
 #write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
 #write.first-line-indent li { margin-left: 2em; }
@@ -24,7 +19,7 @@ a:active, a:hover { outline: 0px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 .typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
 .typora-export .task-list-item input { pointer-events: none; }
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 500px) {
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
   .CodeMirror-sizer { margin-left: 0px !important; }
@@ -33,7 +28,7 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
 img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
-button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+button, input, select, textarea { color: inherit; font: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
 *, ::after, ::before { box-sizing: border-box; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
@@ -51,7 +46,7 @@ h6 { font-size: 1rem; }
 .hidden { display: none; }
 .md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
 a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
 sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
 figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
@@ -60,8 +55,8 @@ tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
 table.md-table td { min-width: 32px; }
-.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
-.CodeMirror-linenumber { }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
 .CodeMirror { text-align: left; }
 .CodeMirror-placeholder { opacity: 0.3; }
 .CodeMirror pre { padding: 0px 4px; }
@@ -71,7 +66,7 @@ div.hr:focus { cursor: none; }
 #write.fences-no-line-wrapping pre { white-space: pre; }
 #write pre.ty-contain-cm { white-space: normal; }
 .CodeMirror-gutters { margin-right: 4px; }
-.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
 .md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
 #write .md-fences.mock-cm { white-space: pre-wrap; }
 .md-fences.md-fences-with-lineno { padding-left: 0px; }
@@ -80,7 +75,7 @@ div.hr:focus { cursor: none; }
 .CodeMirror-line, twitterwidget { break-inside: avoid; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
 .footnotes + .footnotes { margin-top: 0px; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
 li .mathjax-block, li p { margin: 0.5rem 0px; }
@@ -90,7 +85,7 @@ blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child, li > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
 #write .footnote-line { white-space: pre-wrap; }
-@media print { 
+@media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
@@ -101,7 +96,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
-pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
 p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
 #write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
 p > .md-image:only-child { display: inline-block; width: 100%; }
@@ -114,7 +109,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
 .md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
 .math { font-size: 1rem; }
-.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
 .md-toc-content::after, .md-toc::after { display: none; }
 .md-toc-item { display: block; color: rgb(65, 131, 196); }
@@ -127,7 +122,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .md-toc-h4 .md-toc-inner { margin-left: 6em; }
 .md-toc-h5 .md-toc-inner { margin-left: 8em; }
 .md-toc-h6 .md-toc-inner { margin-left: 10em; }
-@media screen and (max-width: 48em) { 
+@media screen and (max-width: 48em) {
   .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
   .md-toc-h4 .md-toc-inner { margin-left: 5em; }
   .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
@@ -138,23 +133,23 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
-kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
-code { text-align: left; }
-a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
 [lang="mermaid"] .node text { font-size: 1rem; }
-table tr th { border-bottom-width: 0px; }
+table tr th { border-bottom: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
 iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
-mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
 .md-expand mark .md-meta { opacity: 0.3 !important; }
 mark .md-meta { color: rgb(0, 0, 0); }
-@media print { 
+@media print {
   .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
 }
 .md-diagram-panel .messageText { stroke: none !important; }
@@ -162,24 +157,24 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
 .md-fences.md-fences-math { font-size: 1em; }
 .md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
-.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
 .typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
 .typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
-.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
 .typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1024px) {
   .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
 }
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 800px) {
   .typora-export-sidebar { display: none; }
 }
 .outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
 .outline-content ul { margin-top: 0px; margin-bottom: 0px; }
 .outline-content strong { font-weight: 400; }
-.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
-.outline-expander::before { content: ''; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
 .outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
-.outline-expander:hover::before { content: ''; }
+.outline-expander:hover::before { content: ""; }
 .outline-h1 > .outline-item { padding-left: 0px; }
 .outline-h2 > .outline-item { padding-left: 1em; }
 .outline-h3 > .outline-item { padding-left: 2em; }
@@ -189,16 +184,16 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
 .outline-label:hover { text-decoration: underline; }
 .outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
-.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
 .outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
-.outline-item-open > .outline-item > .outline-expander::before { content: ''; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
 .outline-children { display: none; }
 .info-panel-tab-wrapper { display: none; }
 .outline-item-open > .outline-children { display: block; }
 .typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
-.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
 .typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
-.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: '−'; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
 .typora-export-collapse-outline .outline-children { display: none; }
 .typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
 .typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
@@ -594,10 +589,10 @@ header, .context-menu, .megamenu-content, footer{
 }
 
 
- @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}} .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} 
+
 </style><title>Lab 4, Part 2</title>
 </head>
-<body class='typora-export'><div class='typora-export-content'>
-<div id='write'  class=''><h1>Lab 4, Repetition, Part 2 Instructions</h1><h2>Group C</h2><p><strong><span>CS 133JS, Beginning Programming: JavaScript</span></strong></p><h2 id='overview'><span>Overview</span></h2><p><span>The objective of this lab assignment is to give you practice writing web apps that use:  </span></p><ul><li><span>while loops</span></li><li><span>do-while loops</span></li><li><span>for loops</span></li><li><span>nested loops.</span></li></ul><h2 id='web-apps'><span>Web Apps</span></h2><p><span>For each of the web apps:</span></p><ul><li><p><span>A starter file named </span><a href='https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2_GroupC.js'><span>CS133JS_Lab04_Part2_GroupC.js</span></a><span>, has been provided with the JavaScript stub functions. This file will contain all the functions that do processing or calculations.</span></p></li><li><p><span>Separate HTML starter pages have been provided for each web app. If they haven&#39;t already been provided, put I/O operations in this file. I/O operations include the following functions and method:</span></p><ul><li><code>prompt</code></li><li><code>alert</code></li><li><code>document.write</code></li></ul></li></ul><h3 id='1-cycling-plan'><span>1. Cycling Plan</span></h3><h4 id='requirements'><span>Requirements</span></h4><p><span>You have set a goal to increase the distance you ride your bike every week. You will ride for half an hour and start at 5 miles. Enter the distance you will add to your ride each week. Show the total distance to ride and the speed (speed = miles/hours). Show this for six weeks. </span></p><p><span>Example output if the user enters 0.5 (half a mile):</span></p><p><span>Miles, MPH        </span>&leftarrow;<span> Put this in HTML on the web page</span></p><p><span>     5,      10          </span>&leftarrow;<span> All five lines of output are returned by the </span><code>makePlan</code><span> function.</span></p><p><span>     5.5,   11</span></p><p><span>     6,      12</span></p><p><span>     6.5,   13</span></p><p><span>     7,      14</span></p><p><span>     7.5,   15</span></p><h4 id='implementation'><span>Implementation</span></h4><p><strong><span>In the .js file:</span></strong><span> In the makePlan function, write a loop that counts the weeks, calculates the distance and speed, and concatenates each line of output to a string. Put a </span><code>&lt;br&gt;</code><span> at the end of each line. The function will return the string.</span></p><p><strong><span>In the .html file:</span></strong><span> Use </span><a href='https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2C_CyclingPlan.html'><span>CS133JS_Lab04_Part2C_CyclingPlan.html</span></a><span>. In the script element, call the makePlan function. The function will return an output string. Use document.write to put the output string on the page.</span></p><h3 id='2-trail-difficulty-rating'><span>2. Trail Difficulty Rating</span></h3><p><span>Write a new version of web app II from the previous lab. This web app will do the same thing as the previous one, but will have input validation.</span></p><p><strong><span>In the .js file:</span></strong><span> Put the code from the previous lab&#39;s function into the stub function provided.</span></p><p><strong><span>In the .html file:</span></strong><span> Use </span><a href='https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2C_TrailRating.html'><span>CS133JS_Lab04_Part2C_TrailRating.html</span></a><span>. In the script element, add input validation loops for round trip distance and elevation gain.</span></p><ul><li><span>Limit user input to reasonable values. </span></li><li><span>Pop up an alert telling the user what the acceptable input range is.</span></li><li><span>Keep prompting the user for input until it is valid.</span></li></ul><h3 id='3-trail-types'><span>3. Trail Types</span></h3><p><span>Write a new version of web app III from the last lab that will:</span></p><ul><li><p><span>Do input validation.</span></p></li><li><p><span>Allow the user to enter another activity without reloading the web page. </span></p><p><span>(After the results have been shown, ask the user if they want to run the program again.)</span></p></li></ul><p><span> </span><strong><span>In the .js file:</span></strong><span> Put the code from the previous function into the stub function provided.</span></p><p><strong><span>In the .html file:</span></strong><span> Use </span><a href='https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2C_TrailTypes.html'><span>CS133JS_Lab04_Part2C_TrailTypes.html</span></a><span>. </span></p><ul><li><span>Add an input validation loop in the script element that will do all the same kind things as the previous validation loop.</span></li><li><span>Add a loop that will ask the user if they want to enter another activity and find more trails.</span></li></ul><h2 id='submitting-your-lab-work-on-moodle'><span>Submitting your lab work on Moodle</span></h2><h3 id='beta-version'><span>Beta Version</span></h3><p><span>Post the following in the </span><em><span>Lab Beta forum</span></em><span>:</span></p><ol start='' ><li><p><span>The web pages you created for part 2.</span></p></li><li><p><span>A code review of your lab partner’s web page for part 2. </span></p><p><span>(Review one of your lab partners’ web pages using the Code Review Form provided.)</span></p></li></ol><h3 id='code-review'><span>Code Review</span></h3><p><span>Submit a copy of the code review you posted in the forum to the </span><em><span>Lab 4 Code Review</span></em><span> assignment.</span></p><h3 id='production-version'><span>Production Version</span></h3><p><span> Based on the code review and helpful advice from your lab partner, you may revise your web page. On the code review from your lab partner, complete the “Prod.” column to show what you revised. Upload the following to the </span><em><span>Lab 4 Production Version</span></em><span> assignment:</span></p><ol start='' ><li><span>The JavaScript (.js) file for part 1.</span></li><li><span>The three HTML files and one JavaScript file you completed for part 2.</span></li><li><span>The code review from your lab partner with the “Prod.” column filled out by you.</span></li></ol><p><span>This will be a total of 6 files.</span></p><h3 id='grading-criteria'><span>Grading Criteria</span></h3><p><span>The main focus of grading will be on correct coding of loops and problem solving skills.</span></p><p><span>Here is the grading rubric: </span><a href='https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Rubric.pdf'><span>CS133JS_Lab04_Rubric</span></a></p><p>&nbsp;</p></div></div>
-<base target="_blank"></body>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1>Lab 4, Repetition, Part 2 Instructions</h1><h2>Group C</h2><p><strong><span>CS 133JS, Beginning Programming: JavaScript</span></strong></p><h2 id='overview'><span>Overview</span></h2><p><span>The objective of this lab assignment is to give you practice writing web apps that use:  </span></p><ul><li><span>while loops</span></li><li><span>do-while loops</span></li><li><span>for loops</span></li><li><span>nested loops.</span></li></ul><h2 id='web-apps'><span>Web Apps</span></h2><p><span>For each of the web apps:</span></p><ul><li><span>A starter file named </span><a href='https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2_GroupC.js'><span>CS133JS_Lab04_Part2_GroupC.js</span></a><span>, has been provided with the JavaScript stub functions. This file will contain all the functions that do processing or calculations.</span></li><li><span>Separate HTML starter pages have been provided for each web app.</span></li><li><span>Please do not change the names of files or functions, or change the function parameters. I use automated testing to check your code and these kinds of changes will cause tests to fail.</span></li></ul><h3 id='1-cycling-plan'><span>1. Cycling Plan</span></h3><h4 id='requirements'><span>Requirements</span></h4><p><span>You have set a goal to increase the distance you ride your bike every week. You will ride for half an hour and start at 5 miles. Enter the distance you will add to your ride each week. Show the total distance to ride and the speed (speed = miles/hours). Show this for six weeks. </span></p><p><span>Example output if the user enters 0.5 (half a mile):</span></p><p><span>Miles, MPH        </span>&leftarrow;<span> Put this in HTML on the web page</span></p><p><span>     5,      10          </span>&leftarrow;<span> All five lines of output are returned by the </span><code>makePlan</code><span> function.</span></p><p><span>     5.5,   11</span></p><p><span>     6,      12</span></p><p><span>     6.5,   13</span></p><p><span>     7,      14</span></p><p><span>     7.5,   15</span></p><h4 id='implementation'><span>Implementation</span></h4><p><strong><span>In the .js file:</span></strong><span> In the makePlan function, write a loop that counts the weeks, calculates the distance and speed, and concatenates each line of output to a string. Put a </span><code>&lt;br&gt;</code><span> at the end of each line. The function will return the string.</span></p><p><strong><span>In the .html file:</span></strong><span> Use </span><a href='https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2C_CyclingPlan.html'><span>CS133JS_Lab04_Part2C_CyclingPlan.html</span></a><span>. In the script element, call the makePlan function. The function will return an output string. Use document.write to put the output string on the page.</span></p><h3 id='2-trail-difficulty-rating'><span>2. Trail Difficulty Rating</span></h3><p><span>Write a new version of web app II from the previous lab. This web app will do the same thing as the previous one, but will have input validation.</span></p><p><strong><span>In the .js file:</span></strong><span> Put the code from the previous lab&#39;s function into the stub function provided.</span></p><p><strong><span>In the .html file:</span></strong><span> Use </span><a href='https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2C_TrailRating.html'><span>CS133JS_Lab04_Part2C_TrailRating.html</span></a><span>. In the script element, add input validation loops for round trip distance and elevation gain.</span></p><ul><li><span>Limit user input to ranges of reasonable distance and elevation values. </span></li><li><span>Pop up an alert telling the user what the acceptable input range is.</span></li><li><span>Keep prompting the user for input until it is valid.</span></li></ul><h3 id='3-trail-types'><span>3. Trail Types</span></h3><p><span>Write a new version of web app III from the last lab that will:</span></p><ul><li><p><span>Do input validation (just check for an empty string.)</span></p></li><li><p><span>Allow the user to enter another activity without reloading the web page. </span></p><p><span>(After the results have been shown, ask the user if they want to run the program again.)</span></p></li></ul><p><span> </span><strong><span>In the .js file:</span></strong><span> Put the code from the previous lab&#39;s function into the stub function provided.</span></p><p><strong><span>In the .html file:</span></strong><span> Use </span><a href='https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2C_TrailTypes.html'><span>CS133JS_Lab04_Part2C_TrailTypes.html</span></a><span>. </span></p><ul><li><span>Add an input validation loop in the script element that will do all the same kind things as the previous validation loop.</span></li><li><span>Add a loop that will ask the user if they want to enter another activity and find more trails.</span></li></ul><h2 id='submitting-your-lab-work-on-moodle'><span>Submitting your lab work on Moodle</span></h2><h3 id='beta-version'><span>Beta Version</span></h3><p><span>Post the following in the </span><em><span>Lab Beta forum</span></em><span>:</span></p><ol start='' ><li><p><span>The web pages you created for part 2.</span></p></li><li><p><span>A code review of your lab partner’s web page for part 2. </span></p><p><span>(Review one of your lab partners’ web pages using the Code Review Form provided.)</span></p></li></ol><h3 id='code-review'><span>Code Review</span></h3><p><span>Submit a copy of the code review you posted in the forum to the </span><em><span>Lab 4 Code Review</span></em><span> assignment.</span></p><h3 id='production-version'><span>Production Version</span></h3><p><span> Based on the code review and helpful advice from your lab partner, you may revise your web page. On the code review from your lab partner, complete the “Prod.” column to show what you revised. Upload the following to the </span><em><span>Lab 4 Production Version</span></em><span> assignment:</span></p><ol start='' ><li><span>The JavaScript (.js) file for part 1.</span></li><li><span>The three HTML files and one JavaScript file you completed for part 2.</span></li><li><span>The code review from your lab partner with the “Prod.” column filled out by you.</span></li></ol><p><span>This will be a total of 6 files.</span></p><h3 id='grading-criteria'><span>Grading Criteria</span></h3><p><span>The main focus of grading will be on correct coding of loops and problem solving skills.</span></p><p><span>Here is the grading rubric: </span><a href='https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Rubric.pdf'><span>CS133JS_Lab04_Rubric</span></a></p><p>&nbsp;</p></div></div>
+</body>
 </html>

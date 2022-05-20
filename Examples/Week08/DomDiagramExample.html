@@ -10,9 +10,27 @@
 <body>
     <h1>A heading</h1>
     <a href="https://example.com">Link text</a>
+
+    <h1>Students and Their Degree Programs</h1>
+    <ul>
+        <li id="s1">
+            Student: <span></span>
+            <p>Degree: <span></span></p>
+        </li>
+        <li id="s2">
+            Student: <span></span>
+            <p>Degree: <span></span></p>
+        </li>
+    </ul>
+
     <script>
         // Directly access the h1 element
         document.children[0].children[1].children[0].textContent = "New Heading";
+        document.querySelector("#s1 span").innerHTML = "Susan Lee";
+        document.querySelector("#s1 p span").innerHTML = "Computer Programming";
+
+        document.querySelector("#s2 span").innerHTML = "David Johnson";
+        document.querySelector("#s2 p span").innerHTML = "Computer Network Operations";
     </script>
 </body>
 

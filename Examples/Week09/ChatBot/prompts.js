@@ -20,18 +20,3 @@ const prompts = [
     [""],
     ["haha", "ha", "lol", "hehe", "funny", "joke"]
 ]
-
-// Random for any other user input
-
-const alternative = [
-    "Same",
-    "Go on...",
-    "Bro...",
-    "Try again",
-    "I'm listening...",
-    "I don't understand :/"
-]
-
-// Whatever else you want :)
-
-const coronavirus = ["Please stay home", "Wear a mask", "Fortunately, I don't have COVID", "These are uncertain times"]

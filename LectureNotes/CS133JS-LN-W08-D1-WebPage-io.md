@@ -215,10 +215,6 @@ Event handlers are JavaScript functions that are called when events occur.
   }
   ```
 
-## User Input and Output
-
-This is how to get input and display output on a web page without using `prompt` and `alert`.
-
 ### Using a Button to Get Input
 
 We can use a button with an onclick event handler to get user input. Here's an example:
@@ -237,26 +233,6 @@ Enter your name:<input>
 ```
 
 - The onclick event can be used with any element, but we frequently use it with a button. 
-
-### Displaying output
-
-- Assume we have a paragraph in our web page:
-
-  ```html
-   <p id="studentName">Student's name: </p>
-  ```
-
-- Access HTML elements in JavaScript using *getElementById*: 
-
-  ```javascript
-  let nameParagraph = document.getElementById("studentName");
-  ```
-
-- Set the value of an element:
-
-  ```javascript
-  nameParagraph.innerHTML += "Susan";
-  ```
 
 
 

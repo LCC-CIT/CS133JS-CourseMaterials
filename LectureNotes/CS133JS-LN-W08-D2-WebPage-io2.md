@@ -27,50 +27,25 @@ author: Brian Bird
 
 ## Introduction
 
-### Announcements
-
-- I've finished grading lab 4 (including late submissions) and will start grading lab 5 tomorrow.
-- Lab 6 production version is due tomorrow.
-
 ### Q and A
 
 - Any questions?
 
 
 
-## Review with Additions 
-
-In class yesterday, there were a number of questions about the DOM and events which I will answer along with some review.
+## Review (with some Additions)
 
 ### The DOM
 
-The browser has a set of built-in JavaScript objects that represent the web page and all its HTML elements. The objects are arranged in a hierarchy:
+The DOM is a set of JavaScript objects that represent the web page and all its HTML elements. 
 
 ![DOM-model](../Images/DOM-model.svg)
 
 By <a href="//commons.wikimedia.org/w/index.php?title=User:Eib&amp;action=edit&amp;redlink=1" class="new" title="User:Eib (page does not exist)">Birger Eriksson</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=18034500">Link</a>
 
-
-
-**HTML for the web page in the DOM diagram above**
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>My title</title>
-  </head>
-  <body>
-    <h1>A heading</h1>
-    <a href="https://example.com">Link text</a>
-  </body>  
-</html>
-```
-
 #### Accessing DOM Objects
 
-##### Directly accessing the objects
+##### Directly accessing elements
 
 Each object in the diagram above has an array of children. We don't normally access these directly, but we can. For example, the code below will change the text in the `<h1>` element: 
 
@@ -80,36 +55,202 @@ document.children[0].children[1].children[0].textContent = "New Heading";
 
 If you want to explore the hierarchy of DOM objects, you can do it fairly easily in the console.
 
-## More on Web Page I/O
+##### Accessing elements using `getElementById`
+
+Returns a reference to an HTML element.
+
+```javascript
+let lccElement = document.getElementById("lcc");
+```
+
+#####  Accessing elements using `querySelector` 
+
+Returns a reference to the first matching element it finds on the page. 
+
+```javascript
+let lccElement = document.querySelector("#cit");
+let degreeElement = document.querySelector("#s1 p span");
+```
 
 
 
-### `textContent`
+### I/O Using HTML Elements
 
-This is another way to access the content between tags. The difference between this property and `innerHTML` is that it just returns the text, not any HTML formatting that is in the text. For example:
+#### `innerHTML`
 
-There was an error in Monday's notes. I've fixed it now. (I put code to set the innerHTML of an element inside an alert&mdash;which makes no sense. I was a bit brain fogged on Monday.) Here's the corrected example:
+A property used to get or set the text and any HTML tags between the tags of an element.
+
+```javascript
+document.getElementById("ex").innerHTML = "<u>This</u> text contains <em>tags</em>."
+```
+
+#### `textContent`
+
+A property used to get or set just the text between the tags of an element.
+
+```javascript
+document.getElementById("ex").innerHTML = "This is just plain text."
+```
+
+#### `value`
+
+This property used to get or set the value of an HTML input element. 
+
+```javascript
+let person = document.getElementById("name").value;
+```
+
+#### Get User Input with a `<button>` and `onclick`Event Handler
+
+Use a button with an `onclick` *event handler* to get user input.
 
 ```html
-<p id="voles"><em>Voles</em> are burrowing rodents that are <strong>descrictive</strong> to gardens.</p>
+Enter your name:<input>
+<button onclick="inputName()">Enter</button>
+
+<p>Hello: <span id="name"></span></p>
 <script>
-  document.getElementById("voles").innerHTML;
-  // This will be put on the web page:
-  // <em>Voles</em> are burrowing rodents that are <strong>descrictive</strong> to gardens.
-  document.getElementById("voles").textContent;
-  // This will be put on the web page:
-  // Voles are burrowing rodents that are descrictive to gardens.
+  function inputName() {
+    let name = document.querySelector("input").value;
+    document.querySelector("#name").innerHTML = name;
+  }
 </script>
 ```
 
-### 
+
+
+
+
+## More on Web Page I/O
+
+Here are some additional tips and techniques for accessing HTML elements using the DOM.
 
 ### Accessing HTML Element Attributes
 
 Review: An *attribute* defines some characteristic of an HTML element and is coded as a key value pair. In the example below, `href` is an attribute.
 
 ```html
-    <a href="https://profbird.dev">Your instructor's web site</a>
+<a href="https://profbird.dev">Your instructor's web site</a>
+```
+
+Here is the JavaScript code to change the attribute:
+
+```javascript
+document.querySelector("a").href = "https://birdsbits.wordpress.com/";
+```
+
+### Getting Collections of Elements
+
+There are four DOM methods you can use to get an array containing multiple element objects. Each of these are listed below along with an example based on this HTML:
+
+```html
+<ul>
+	<li name="fruit" class="highlight">Apple</li>
+	<li name="fruit">Peach</li>
+	<li name="vegetable">Pepper</li>   
+</ul>
+<ol>
+	<li name="fruit" class="highlight">Pear</li>
+  <li name="vegetable" class="highlight">Onion</li>
+	<li name="vegetable">Pepper</li>
+</ol>
+```
+
+#### `getElementsByName`
+
+```javascript
+let vegetables = document.getElementsByName("vegetable");  // an array of vegies
+```
+
+#### `getElementsByClassName`
+
+```javascript
+let topProduce = document.getElementsByClassName("highlight");  // array of highlighted items
+```
+
+#### `getElementsByTagName`
+
+```javascript
+let produce = document.getElementsByTagName("li");  // array of all items
+```
+
+#### `querySelectorAll`
+
+```javascript
+let selectProduce = document.querySelectorAll("ol .highlight");  // array of highlighted items from the ol
+```
+
+
+
+## More on Event Handlers
+
+### Event Handlers with Parameters
+
+Use single quotes to pass an argument to an event handler that has a parameter. In this example, one button's event handler is passed an `'A'`, the other a `'B'` :
+
+```html
+<button onclick="buttonPressed('A')">Button A</button>
+<button onclick="buttonPressed('B')">Button B</button>
+<p>Button <span></span> was pressed.</p>
+<script>
+  function buttonPressed(letter) {
+    document.querySelector("span").textContent = letter;
+  }
+</script>
+```
+
+### Adding an Event Handler to an Element Using JavaScript
+
+You can add an event hander to an HTML element in JavaScript rather than adding it as an attribute of the element.
+
+```html
+<button>Click me</button>
+<p><span></span></p>
+
+<script>
+  document.querySelector("button").addEventListener("onclick", buttonPressed);
+	function buttonPressed() {
+			document.querySelector("span").textContent = "Button pressed!";
+  }
+</script>
+```
+
+You can also define an *anonymous function* when adding the event listener:
+
+
+
+```html
+<button>Click me</button>
+<p><span></span></p>
+
+<script>
+  document.querySelector("button").addEventListener("onclick", function () {
+			document.querySelector("span").textContent = "Button pressed!";
+  }
+</script>
+```
+
+
+
+### Running Code after the Page Loads with the `onload` Event
+
+Sometimes need to execute some code as soon as the page loads. The example below reads the contents of an array and puts it into a list on the web page. Note that the `listTrees()` function could also be in a separate .js file.
+
+```html
+<body onload="listTrees()"> 
+  <script>
+    let trees = ["Oak", "Pine", "Cedar", "Fir", "Birch"];
+    function listTrees() {
+      for (tree of trees) {
+        document.querySelector("ol").innerHTML += "<li>" + tree + "</li>";
+      }
+    }
+  </script>
+  <ol>
+  </ol>
+</body>
+
+
 ```
 
 

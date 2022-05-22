@@ -9,7 +9,7 @@ author: Brian Bird
 
 **CS133JS Beginning Programming: JavaScript**
 
-<h1>Arrays: Array Methods</h1>
+<h1>Arrays: Comparison of Arrays and Strings</h1>
 
 
 | Topics by Week                                       |            |

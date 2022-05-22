@@ -2,6 +2,7 @@
 const prompts = [
     ["hi", "hey", "hello", "good morning", "good afternoon"],
     ["how are you", "how is life", "how are things"],
+    ["im fine", "im good", "doing well", "great", "excellent"],
     ["what are you doing", "what is going on", "what is up"],
     ["how old are you"],
     ["who are you", "are you human", "are you bot", "are you human or bot"],
@@ -18,5 +19,10 @@ const prompts = [
     ["what", "why", "how", "where", "when"],
     ["no", "not sure", "maybe", "no thanks"],
     [""],
-    ["haha", "ha", "lol", "hehe", "funny", "joke"]
+    ["haha", "ha", "lol", "hehe", "funny", "joke"],
+    ["do you like hike", "do you hike", "can you hike", "talk about hike"],
+    ["where do you hike", "where have you hike", "where is the best hike"],
+    ["what trail you hike", "what trail you", "what is the best trail", "what trail do you best"],
+    ["what is the longest hike you been", "what is the longest trail you been", "which trail is the longest", "how long is that trail"],
+    ["more"]
 ]

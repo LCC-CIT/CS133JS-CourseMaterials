@@ -1,7 +1,7 @@
 ---
 title: Regular Expressions
 description: How to use regular expressions for pattern matching in strings.
-keywords: RegExp, pattern, match, string
+keywords: Regular Expression, Regex, RegExp, pattern, match, string
 material: Lecture Notes
 generator: Typora
 author: Brian Bird
@@ -11,7 +11,7 @@ author: Brian Bird
 
 **CS133JS Beginning Programming: JavaScript**
 
-<h1>The Document Object Model</h1>
+<h1>Regular Expressions</h1>
 
 
 | Topics by Week                           |                                     |

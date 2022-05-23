@@ -36,11 +36,12 @@ author: Brian Bird
 ## Q and A
 
 - Does anyone have any questions about anything?
-- 
+
+  
 
 ## Regular Expressions
 
-One way to compare strings to see if they match is to use a  Regular Expression object, this is a built in object in JavaScript and is called `RegExp`.
+One way to compare strings to see if they match is to use a  Regular Expression object, this is a object part of the JavaScript language.
 
 `RegExp` – Regular expression object. Used for pattern matching in strings
 
@@ -48,9 +49,24 @@ One way to compare strings to see if they match is to use a  Regular Expression 
 
 - Or by using the `new` operator: `let pattern2 = new RegExp(“/matchThisToo/”);`
 
-Use the test method to check for a match: `let foundMatch = pattern1.test(“matchThis”);`
+### RegExp Methods
 
-The `test` method will return true when you pass it a string that matches the string in the RegExp object.
+- 
+  `test`  
+  This method will return true when you pass it a string that matches the string in the RegExp object.
+
+  ```javascript
+  let pattern1 = /matchThis/;
+  let foundMatch = pattern1.test(“matchThis”); // foundMatch will be true
+  ```
+
+  
+
+- `match`
+
+- `replace`
+
+- `search`
 
 ### Partial Matches
 
@@ -74,7 +90,7 @@ The real power is in finding partial matches.
 
 Use this code in the console with the above patterns: `pattern.test(“trythis”);`
 
-- RegExp Properties: g – global, i – ignoreCase, m – multiline.
+- RegExp properties (aka flags): g – global, i – ignoreCase, m – multiline.
 
   - Put the property after the slash that ends the regular expression: 
 
@@ -109,11 +125,20 @@ Use this code in the console with the above patterns: `pattern.test(“trythis�
 
   `let pattern = /^[A-Z0-9._%+-]@uoregon.edu/i`
 
+- Pipe character, `|` to allow choice between patterns 
 
+  ````javascript
+  let pattern = /JavaScript|C#|python/;
+  console.log(pattern.test("We teach C# at LCC"));
+  ````
+
+  
 
 ## Reference
 
 [JavaScript RegExp Reference](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)&mdash;W3Schools
+
+[Regular Expressions](https://eloquentjavascript.net/09_regexp.html)&mdash;Ch. 9 in *Eloquent JavaScript*, 3rd Edition, by Marijn Haverbeke, No Starch Press, 2018.
 
 ------
 

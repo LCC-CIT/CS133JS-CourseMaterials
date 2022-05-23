@@ -20,17 +20,17 @@
         checkAnswer("1b", false, result);
     </script>
 
-    <p><span id="2a">2a. Match a string that ends with "fun": </span></p>
-    <span id="2b">2b. Don't match a string that doesn't end with "fun":</span></p>
+    <p><span id="2a">2a. Match a string that ends with "fun": </span><br>
+        <span id="2b">2b. Don't match a string that doesn't end with "fun":</span></p>
     <script>
-        result = pattern2.test("Programming is fun!");
+        result = pattern2.test("Programming is fun");
         checkAnswer("2a", true, result);
         result = pattern2.test("Java is popular!");
         checkAnswer("2b", false, result);
     </script>
 
-    <p><span id="3a">3a. Validate a number in the range of 1 through 5: </span></p>
-    <span id="3b">3b. Don't match a number ouside the range:</span></p>
+    <p><span id="3a">3a. Validate a number in the range of 1 through 5: </span><br>
+        <span id="3b">3b. Don't match a number ouside the range:</span></p>
     <script>
         result = pattern3.test("5");
         checkAnswer("3a", true, result);
@@ -38,8 +38,8 @@
         checkAnswer("3b", false, result);
     </script>
 
-    <p><span id="4a">4a. Validate a name as just letters: </span></p>
-    <span id="4b">4b. Don't match a name including numbers:</span></p>
+    <p><span id="4a">4a. Validate a name as just letters: </span><br>
+        <span id="4b">4b. Don't match a name including numbers:</span></p>
     <script>
         result = pattern4.test("Emma");
         checkAnswer("4a", true, result);
@@ -47,13 +47,12 @@
         checkAnswer("4b", false, result);
     </script>
 
-    <p><span id="5a">5a. Validate a password. Must be at least 8 characters long,
-        have upper and lower case, one of -_!$%&*, and a number: </span></p>
-    <span id="5b">5b. Don't match an invalid password:</span></p>
+    <p><span id="5a">5a. Validate a user name as containing between 8 and 15 upper or lower case letters or numbers.: </span><br>
+        <span id="5b">5b. Don't match an invalid password:</span></p>
     <script>
-        result = pattern5.test("Secret!123");
+        result = pattern5.test("SRogers99");
         checkAnswer("5a", true, result);
-        result = pattern5.test("Password1");
+        result = pattern5.test("CaptainAmerica2000");
         checkAnswer("5b", false, result);
     </script>
 
@@ -79,11 +78,11 @@
         checkAnswer("7c", false, result);
     </script>
 
-    <p><span id="8a">8a. Replace "can't" with "can not": </span>
+    <p><span id="8">8. Replace "can't" with "can not": </span>
     </p>
     <script>
-        let output = pattern8.replace("I can't believe it's week 9!");
-        checkAnswer("8a", "I can not believe it's week 9!", output)
+        let output = uncontract("I can't believe it's week 9!");
+        checkAnswer("8", "I can not believe it's week 9!", output)
     </script>
 
 </body>

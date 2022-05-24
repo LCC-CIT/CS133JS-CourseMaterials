@@ -209,6 +209,7 @@ You can add an event hander to an HTML element in JavaScript rather than adding 
 
 <script>
   document.querySelector("button").addEventListener("onclick", buttonPressed);
+  
 	function buttonPressed() {
 			document.querySelector("span").textContent = "Button pressed!";
   }
@@ -226,6 +227,23 @@ You can also define an *anonymous function* when adding the event listener:
 <script>
   document.querySelector("button").addEventListener("onclick", function () {
 			document.querySelector("span").textContent = "Button pressed!";
+  });
+</script>
+```
+
+If you want to add a function that has parameters to an HTML element, you need to wrap that function in an anonymous function, like this:
+
+```html
+<button>Button A</button>
+<p><span></span></p>
+
+<script>
+  document.querySelector("button").addEventListener("onclick", function () {
+			buttonPressed("A");
+  });
+                                                    
+  function buttonPressed(letter) {
+    document.querySelector("span").textContent = letter;
   }
 </script>
 ```
@@ -257,11 +275,11 @@ Sometimes need to execute some code as soon as the page loads. The example below
 
 ## Reference
 
-[DOM (Document Object Model)](https://developer.mozilla.org/en-US/docs/Glossary/DOM) - MDN
+[DOM (Document Object Model)](https://developer.mozilla.org/en-US/docs/Glossary/DOM)&mdash;MDN
 
-[Event Reference](https://developer.mozilla.org/en-US/docs/Web/Events) - MDN
+[Event Reference](https://developer.mozilla.org/en-US/docs/Web/Events)&mdash;MDN
 
-
+[JavaScript HTML DOM Event Listener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)&mdash;W3Schools
 
 ------
 

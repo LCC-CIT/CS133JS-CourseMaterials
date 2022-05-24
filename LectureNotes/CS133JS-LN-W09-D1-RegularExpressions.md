@@ -41,13 +41,15 @@ author: Brian Bird
 
 ## Regular Expressions
 
-One way to compare strings to see if they match is to use a  Regular Expression object, this is a object part of the JavaScript language.
+One way to compare strings to see if they match is to use a  Regular Expression object, this object is a part of the JavaScript language, and also of almost every other programming language.
 
 `RegExp` – Regular expression object. Used for pattern matching in strings
 
 - Defined with forward slashes: `let pattern1 = /matchThis/;`
 
 - Or by using the `new` operator: `let pattern2 = new RegExp(“/matchThisToo/”);`
+
+The real power is in finding partial matches. Regular expressions are a powerful way to find matches for complex patterns in a string.
 
 ### RegExp Methods
 
@@ -60,39 +62,50 @@ One way to compare strings to see if they match is to use a  Regular Expression 
   let foundMatch = pattern1.test(“matchThis”); // foundMatch will be true
   ```
 
-  
-
 - `match`
 
 - `search`
 
-### Partial Matches
+### Matching at the Beginning, Middle, or End of a String
 
-The real power is in finding partial matches. 
- You might have used `*` and `?` as wildcards in a search before. 
+You might have used `*` and `?` as wildcards in a search before. 
  With `RegExp`, the syntax is different; you use `.` to match any single character. 
  Adding a `*` means to match zero to many occurrences of any character. 
  Adding a `+` will match one to many occurrences.
 
-- This pattern will match a string that contains “this”:
+- The pattern below will match a string that <u>contains</u> “this”:
 
-   `let pattern = /this/`
+   ````javascript
+   let pattern = /this/
+   let text = "Is this going to match?";
+   let foundMatch = pattern.test(text);  // foundMatch will be true
+   ````
 
-- This pattern will match any string that starts with “this”:
+- This pattern will match any string that <u>starts</u> with “This”:
 
-   `let pattern = /^(this).+/`
+   ````javascript
+  pattern = /^This/
+  text = "This should match.";
+  foundMatch = pattern.test(text);  // foundMatch will be true
+   ````
 
-- This pattern will match any string ending with “this” : 
+- This pattern will match any string that <u>ends</u> with “this” : 
 
-  `let pattern = /.+(this)$/`
+  ````javascript
+  pattern = /this.$/
+  text = "The pattern will match this.";
+  foundMatch = pattern.test(text);  // foundMatch will be true
+  ````
 
-Use this code in the console with the above patterns: `pattern.test(“trythis”);`
+### Flags
 
-- RegExp properties (aka flags): g – global, i – ignoreCase, m – multiline.
+- RegExp flags (aka properties): g – global, i – ignoreCase, m – multiline.
 
   - Put the property after the slash that ends the regular expression: 
 
     `let pattern = /this/i;`
+
+### Groups
 
 - Character groups – a group of characters that can match one in a string:
 
@@ -110,25 +123,33 @@ Use this code in the console with the above patterns: `pattern.test(“trythis�
 
   `let pattern = /^[A-Z][a-z]*$/`
 
-- Example – rules for naming variables:  Names can contain letters, digits, underscores, and dollar signs, but names cannot begin with a digit: 
+###  Escape Characters
 
-  `let pattern = /^[A-Z_$][A-Z0-9_$]*$/i`
+Escape character – backslash is an escape character that lets you use a special character, like the dot as a dot, not for pattern matching. 
 
-- Escape character – backslash is an escape character that lets you use a special character, like the dot as a dot, not for pattern matching. Example – test for a valid e-mail address: 
+### Choice (Logical OR)
+
+Pipe character, `|` to allow choice between patterns 
+
+````javascript
+let pattern = /JavaScript|C#|python/;
+console.log(pattern.test("We teach C# at LCC"));
+````
+
+### Examples
+
+- Example – test for a valid e-mail address: 
    (also uses {2,} to indicate a minimum of 2 characters)
 
   `let pattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i`
 
+- Example – rules for naming variables:  Names can contain letters, digits, underscores, and dollar signs, but names cannot begin with a digit: 
+
+  `let pattern = /^[A-Z_$][A-Z0-9_$]*$/i`
+
 - Another example – check for a valid uoregon.edu address:
 
   `let pattern = /^[A-Z0-9._%+-]@uoregon.edu/i`
-
-- Pipe character, `|` to allow choice between patterns 
-
-  ````javascript
-  let pattern = /JavaScript|C#|python/;
-  console.log(pattern.test("We teach C# at LCC"));
-  ````
 
   
 

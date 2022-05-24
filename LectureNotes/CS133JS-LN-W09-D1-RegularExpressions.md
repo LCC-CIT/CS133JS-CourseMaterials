@@ -53,18 +53,28 @@ The real power is in finding partial matches. Regular expressions are a powerful
 
 ### RegExp Methods
 
-- 
-  `test`  
-  This method will return true when you pass it a string that matches the string in the RegExp object.
+These are the most commonly used methods. For a comprehensive list, see the d[escription of RegExp on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp).
 
-  ```javascript
-  let pattern1 = /matchThis/;
-  let foundMatch = pattern1.test(“matchThis”); // foundMatch will be true
-  ```
+#### `test`  
 
-- `match`
+This method will return true when you pass it a string that matches the string in the RegExp object.
 
-- `search`
+```javascript
+let pattern = /matchThis/;
+let foundMatch = pattern.test(“matchThis”); // foundMatch will be true
+```
+
+#### `exec`
+
+This method will return an array of matched sub-strings which has a number of properties, including the index of the first match in the string&mdash;if it finds one or more matches, otherwise it returns null.
+
+```javascript
+pattern = /th/;
+let matches = pattern.exec("Two words in this sentence start with 'th'.");
+// matches: ["th"], matches.index: 13
+```
+
+
 
 ### Matching at the Beginning, Middle, or End of a String
 
@@ -151,7 +161,21 @@ console.log(pattern.test("We teach C# at LCC"));
 
   `let pattern = /^[A-Z0-9._%+-]@uoregon.edu/i`
 
-  
+
+
+## String Methods that use Regular Expressions
+
+### `match` and `matchAll`
+
+This method will return the sub-matches performs regular expression matching on a string, returning the sub-matches found as a result.
+
+### `replace` and `replaceAll`
+
+### `search` 
+
+### `split`
+
+### 
 
 ## Reference
 

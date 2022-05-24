@@ -64,8 +64,6 @@ One way to compare strings to see if they match is to use a  Regular Expression 
 
 - `match`
 
-- `replace`
-
 - `search`
 
 ### Partial Matches
@@ -139,6 +137,8 @@ Use this code in the console with the above patterns: `pattern.test(â€œtrythisâ€
 [JavaScript RegExp Reference](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)&mdash;W3Schools
 
 [Regular Expressions](https://eloquentjavascript.net/09_regexp.html)&mdash;Ch. 9 in *Eloquent JavaScript*, 3rd Edition, by Marijn Haverbeke, No Starch Press, 2018.
+
+[String replace method](https://www.w3schools.com/jsref/jsref_replace.asp)&mdash;W3Schools
 
 ------
 

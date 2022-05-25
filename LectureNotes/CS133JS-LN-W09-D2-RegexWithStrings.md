@@ -123,7 +123,7 @@ let result = regExpObj.test("It depends on what the meaning of is is");
 // result: true
 ```
 
-To insert a variable into an existing regex string. This will check to see if a string starts with the word in the variable.
+To insert a variable into a literal regex string (not RegExp object), just concatenate the variable into the appropriate part of the regex string. This will check to see if a string starts with the word in the variable.
 
 ```javascript
 let word = "cat";

@@ -135,7 +135,24 @@ You might have used `*` and `?` as wildcards in a search before.
 
 ### Escape Characters
 
-Escape character – backslash is an escape character that lets you use a special character, like the dot as a dot, not for pattern matching. 
+Escape character – backslash is an escape character that lets you use a special character, like the dot as a dot, not for pattern matching. For example, check for a period at the end of a string:
+
+`let pattern = /\.$/`
+
+### Metacharacters
+
+Metacharacters are characters with a special meaning. Notice that the upper-case versions do the inverse of the lower-case versions. For example:
+
+| Metacharacter | Description                                 |
+| ------------- | ------------------------------------------- |
+| \w            | Find a word character (a-z, A-Z, 0-9 and _) |
+| \W            | Find a non-word character                   |
+| \d            | Find a digit                                |
+| \D            | Find a non-digit character                  |
+| \s            | Find a whitespace character                 |
+| \S            | Find a non-whitespace character             |
+
+For a complete list, see the W3Schools *JavaScript RegExp Reference* in the [References](#References) below.
 
 ### Choice (Logical OR)
 
@@ -172,7 +189,7 @@ console.log(pattern.test("Python is an interesting language."));
 
 
 
-## Reference
+## References
 
 [JavaScript RegExp Reference](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)&mdash;W3Schools
 

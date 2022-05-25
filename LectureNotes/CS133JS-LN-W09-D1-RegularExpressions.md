@@ -47,7 +47,7 @@ One way to compare strings to see if they match is to use a  Regular Expression 
 
 - Defined with forward slashes: `let pattern1 = /matchThis/;`
 
-- Or by using the `new` operator: `let pattern2 = new RegExp(“/matchThisToo/”);`
+- Or by using the `new` operator: `let pattern2 = new RegExp("matchThisToo");`
 
 The real power is in finding partial matches. Regular expressions are a powerful way to find matches for complex patterns in a string.
 
@@ -61,7 +61,7 @@ This method will return true when you pass it a string that matches the string i
 
 ```javascript
 let pattern = /matchThis/;
-let foundMatch = pattern.test(“matchThis”); // foundMatch will be true
+let foundMatch = pattern.test("matchThis"); // foundMatch will be true
 ```
 
 #### `exec`
@@ -97,7 +97,7 @@ You might have used `*` and `?` as wildcards in a search before.
   pattern = /^This/
   text = "This should match.";
   foundMatch = pattern.test(text);  // foundMatch will be true
-   ````
+  ````
 
 - This pattern will match any string that <u>ends</u> with “this” : 
 
@@ -142,9 +142,18 @@ Escape character – backslash is an escape character that lets you use a specia
 Pipe character, `|` to allow choice between patterns 
 
 ````javascript
-let pattern = /JavaScript|C#|python/;
+let pattern = /JavaScript|C#|Python/;
 console.log(pattern.test("We teach C# at LCC"));
 ````
+
+If you want to add a modifer before or after the choice, put the choice inside parenthesis:
+
+````javascript
+let pattern = /^(JavaScript|C#|Python)/;
+console.log(pattern.test("Python is an interesting language."));
+````
+
+### 
 
 ### Examples
 

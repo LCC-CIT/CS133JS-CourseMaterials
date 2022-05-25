@@ -53,7 +53,6 @@ These methods match a string against a string or a regular expression and return
   // resultArray: ["pi"], resultArray.index: 12
   ```
   
-
 - `match` using regex. Note that this is more flexible, for example, we can ignore case and match globally.
 
   ```javascript
@@ -118,11 +117,10 @@ Regular expression literals are constant, and can not be used with variables.
 You can use variables with a RegExp constructor. For example:
 
 ```javascript
-let pattern = "is";
-myRegex = new RegExp("pattern, "g");
-let text = "It depends on what the meaning of is is";
-let results = text.match(myRegex);
-// results: ["is", "is"]
+let patternString = "( is){2}";
+regExpObj = new RegExp(patternString, "g");
+let result = regExpObj.test("It depends on what the meaning of is is");
+// result: true
 ```
 
 

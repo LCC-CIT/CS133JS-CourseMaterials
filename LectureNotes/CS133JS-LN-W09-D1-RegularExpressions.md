@@ -66,11 +66,11 @@ let foundMatch = pattern.test(“matchThis”); // foundMatch will be true
 
 #### `exec`
 
-This method will return an array of matched sub-strings which has a number of properties, including the index of the first match in the string&mdash;if it finds one or more matches, otherwise it returns null.
+This method will return an array of matched sub-strings which has a number of properties; including the index of the first match in the string&mdash;if it finds one or more matches, otherwise it returns null.
 
 ```javascript
 pattern = /th/;
-let matches = pattern.exec("Two words in this sentence start with 'th'.");
+let matches = pattern.exec("There are two matches in this sentence for 'th'.");
 // matches: ["th"], matches.index: 13
 ```
 
@@ -133,7 +133,7 @@ You might have used `*` and `?` as wildcards in a search before.
 
   `let pattern = /^[A-Z][a-z]*$/`
 
-###  Escape Characters
+### Escape Characters
 
 Escape character – backslash is an escape character that lets you use a special character, like the dot as a dot, not for pattern matching. 
 
@@ -148,42 +148,26 @@ console.log(pattern.test("We teach C# at LCC"));
 
 ### Examples
 
-- Example – test for a valid e-mail address: 
+- Test for a valid e-mail address: 
    (also uses {2,} to indicate a minimum of 2 characters)
 
   `let pattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i`
 
-- Example – rules for naming variables:  Names can contain letters, digits, underscores, and dollar signs, but names cannot begin with a digit: 
+- Rules for naming variables:  Names can contain letters, digits, underscores, and dollar signs, but names cannot begin with a digit: 
 
   `let pattern = /^[A-Z_$][A-Z0-9_$]*$/i`
 
-- Another example – check for a valid uoregon.edu address:
+- Check for a valid uoregon.edu address:
 
   `let pattern = /^[A-Z0-9._%+-]@uoregon.edu/i`
 
 
-
-## String Methods that use Regular Expressions
-
-### `match` and `matchAll`
-
-This method will return the sub-matches performs regular expression matching on a string, returning the sub-matches found as a result.
-
-### `replace` and `replaceAll`
-
-### `search` 
-
-### `split`
-
-### 
 
 ## Reference
 
 [JavaScript RegExp Reference](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)&mdash;W3Schools
 
 [Regular Expressions](https://eloquentjavascript.net/09_regexp.html)&mdash;Ch. 9 in *Eloquent JavaScript*, 3rd Edition, by Marijn Haverbeke, No Starch Press, 2018.
-
-[String replace method](https://www.w3schools.com/jsref/jsref_replace.asp)&mdash;W3Schools
 
 ------
 

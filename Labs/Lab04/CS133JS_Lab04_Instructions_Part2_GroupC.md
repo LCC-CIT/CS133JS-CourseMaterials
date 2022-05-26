@@ -1,5 +1,5 @@
 ---
-title: Lab 4, Part 2
+title: Lab 4, Part 2, Group C
 description: Group C assignment to make web apps that use while, do-while, and for loops as well as nested loops.
 keywords: repetition, loop, while, do while, for
 material: Lab Instructions

@@ -92,6 +92,7 @@ This method matches a string against a regular expression. It returns the index 
 ```javascript
 let text = "Spring is springing";
 let position = text.search(/spring/ig);
+// position: 0
 ```
 
 

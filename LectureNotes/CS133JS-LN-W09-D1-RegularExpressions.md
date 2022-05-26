@@ -141,18 +141,30 @@ Escape character – backslash is an escape character that lets you use a specia
 
 ### Metacharacters
 
-Metacharacters are characters with a special meaning. Notice that the upper-case versions do the inverse of the lower-case versions. For example:
+Metacharacters are characters with a special meaning. A parial listing is shown below. Notice that the upper-case versions do the inverse of the lower-case versions. 
 
-| Metacharacter | Description                                 |
-| ------------- | ------------------------------------------- |
-| \w            | Find a word character (a-z, A-Z, 0-9 and _) |
-| \W            | Find a non-word character                   |
-| \d            | Find a digit                                |
-| \D            | Find a non-digit character                  |
-| \s            | Find a whitespace character                 |
-| \S            | Find a non-whitespace character             |
+| Metacharacter | Description                                                  |
+| ------------- | ------------------------------------------------------------ |
+| \w            | Find a word character (a-z, A-Z, 0-9 and _)                  |
+| \W            | Find a non-word character                                    |
+| \d            | Find a digit                                                 |
+| \D            | Find a non-digit character                                   |
+| \s            | Find a whitespace character                                  |
+| \S            | Find a non-whitespace character                              |
+| \b            | Find a match at either the beginning or end of a word.       |
+| \B            | Finc a match that is not at the  beginning or end of a word. |
 
 For a complete list, see the W3Schools *JavaScript RegExp Reference* in the [References](#References) below.
+
+Here is an example that will only match whole words:
+
+```javascript
+let pattern = /\bpick\b/;
+let results = pattern.exec("How many pecks of pickled peppers did Peter Piper pick?"); 
+// results: ["pick"], result.index: 50 meaning it matched "pick" but not "pickled"
+```
+
+#### 
 
 ### Choice (Logical OR)
 

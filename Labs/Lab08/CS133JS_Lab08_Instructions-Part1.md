@@ -19,7 +19,7 @@ The purpose of this assignment is to get practice using regular expression synta
 
 ## Instructions
 
-There are two files for this exercise. Right click on each link and select "Save As" to download the files.
+There are two files for this exercise. Right click on each link and select "Save link as" to download the files.
 
 - [RegExpExercises.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab08/RegExpExercises.html)
 - [RegExpExercises.js](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab08/RegExpExercises.js)

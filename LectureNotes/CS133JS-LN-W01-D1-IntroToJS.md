@@ -137,6 +137,10 @@ Let's talk about how this works by looking at some key pieces of the code:
   
    	
 
+## Reference
+
+[JavaScript Reserved Words](https://www.w3schools.com/js/js_reserved.asp)&mdash;W3Schools
+
 
 
 ------

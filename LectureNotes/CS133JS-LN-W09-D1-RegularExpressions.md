@@ -1,7 +1,7 @@
 ---
 title: Regular Expressions
 description: How to use regular expressions for pattern matching in strings.
-keywords: Regular Expression, Regex, RegExp, pattern, match, string
+keywords: Regular Expression, Regex, RegExp, pattern, match, string, anchor, meta-character, escape character
 material: Lecture Notes
 generator: Typora
 author: Brian Bird
@@ -53,7 +53,7 @@ The real power is in finding partial matches. Regular expressions are a powerful
 
 ### RegExp Methods
 
-These are the most commonly used methods. For a comprehensive list, see the d[escription of RegExp on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp).
+These are the most commonly used methods. For a comprehensive list, see the [description of RegExp on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp).
 
 #### `test`  
 
@@ -76,34 +76,52 @@ let matches = pattern.exec("There are two matches in this sentence for 'th'.");
 
 
 
-### Matching at the Beginning, Middle, or End of a String
+### Matching "wild card" Characters
 
 You might have used `*` and `?` as wildcards in a search before. 
- With `RegExp`, the syntax is different; you use `.` to match any single character. 
- Adding a `*` means to match zero to many occurrences of any character. 
- Adding a `+` will match one to many occurrences.
+ With `RegExp`, the syntax is a little different; you use `.` to match any single character. 
+ Adding a`*` will match <u>zero</u>-to-many characters. 
+Adding the `+` will match <u>one</u>-to-many characters.
 
-- The pattern below will match a string that <u>contains</u> “this”:
+- 
+  First of all, note that these patterns are the same! 
+
+
+  `/she jump/` is the same as: `/she jump.*/`, `/.*she jump/`, or `/.*she jump.*/`.
+
+  If the regex pattern doesn't specify that something come before or after the pattern, then anything can.
+
+- The star, `*` will match any or no additional characters. For example, the pattern,`/she jump.* high/`, will match: "she jump high", "she jumped high", "she jumps high", "she jumps high all the time.", and "Yes, she jumps high!".
+
+- The plus, `+` will match one or more additional characters. For example, the pattern,`/she jump.+ high/`, will match: all the same strings as above <u>except</u>  "she jump high".
+
+  
+
+### Matching at the Beginning, Middle, or End of a String
+
+*Anchors* are used to indicate that a pattern must be applied at the beginning of a string, the end, or must match the entire string.
+
+- The pattern below, without anchors, will match a string that <u>contains</u> “this” anywhere:
 
    ````javascript
-   let pattern = /this/
+   let pattern = /this/;
    let text = "Is this going to match?";
    let foundMatch = pattern.test(text);  // foundMatch will be true
    ````
 
-- This pattern will match any string that <u>starts</u> with “This”:
+- The `^` anchor indicates the match must be at the beginning of the string. This pattern will match any string that <u>starts</u> with “This”:
 
    ````javascript
-  pattern = /^This/
-  text = "This should match.";
+  pattern = /^This/;
+  text = "This should match";
   foundMatch = pattern.test(text);  // foundMatch will be true
   ````
 
-- This pattern will match any string that <u>ends</u> with “this” : 
+- The `$` anchor indicates that match must be at the end of the string. This pattern will match any string that <u>ends</u> with “this” : 
 
   ````javascript
-  pattern = /this.$/
-  text = "The pattern will match this.";
+  pattern = /this$/;
+  text = "The pattern will match this";
   foundMatch = pattern.test(text);  // foundMatch will be true
   ````
 
@@ -117,7 +135,7 @@ You might have used `*` and `?` as wildcards in a search before.
 
 ### Groups
 
-- Character groups – a group of characters that can match one in a string:
+- Character groups – a group of characters that can match one character in a string:
 
   `let pattern = /[Tt]his/; // matches capital or lower case T`
 
@@ -132,6 +150,22 @@ You might have used `*` and `?` as wildcards in a search before.
 - The $ specifies that a char or group must be at the end of the string. For example, now only the first char can be capitalized:  
 
   `let pattern = /^[A-Z][a-z]*$/`
+  
+  
+
+### Quantifiers
+
+Curly braces, `{ }`, specify the number of times a pattern must match:
+
+- Match the pattern exactly n times: `{ n }`
+  
+- Match the pattern at least n times: `{ n, }`
+  
+- Match the pattern from a minimum of n times to a maximum of x times: `{ n, x }`
+
+For example, the pattern `/[0-9]{5}/` will match only strings containing 5 digit numbers like: "97405".
+
+
 
 ### Escape Characters
 
@@ -154,7 +188,7 @@ Metacharacters are characters with a special meaning. A parial listing is shown 
 | \b            | Find a match at either the beginning or end of a word.       |
 | \B            | Finc a match that is not at the  beginning or end of a word. |
 
-For a complete list, see the W3Schools *JavaScript RegExp Reference* in the [References](#References) below.
+For a complete list, see the W3Schools *JavaScript RegExp Reference* in the [References](#References) below.
 
 Here is an example that will only match whole words:
 
@@ -164,7 +198,7 @@ let results = pattern.exec("How many pecks of pickled peppers did Peter Piper pi
 // results: ["pick"], result.index: 50 meaning it matched "pick" but not "pickled"
 ```
 
-#### 
+
 
 ### Choice (Logical OR)
 
@@ -182,7 +216,7 @@ let pattern = /^(JavaScript|C#|Python)/;
 console.log(pattern.test("Python is an interesting language."));
 ````
 
-### 
+
 
 ### Examples
 
@@ -198,6 +232,14 @@ console.log(pattern.test("Python is an interesting language."));
 - Check for a valid uoregon.edu address:
 
   `let pattern = /^[A-Z0-9._%+-]@uoregon.edu/i`
+
+
+
+## Resource
+
+[Regular Expression Test Page](https://regexkit.com/javascript-regex/)
+
+Try out regular expressions to see how they work with different test strings.
 
 
 

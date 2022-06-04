@@ -53,6 +53,8 @@ author: Brian Bird
 
 [JavaScript Style Guide](https://www.w3schools.com/js/js_conventions.asp)&mdash;W3Schools' coding conventions
 
+[JavaScript Best Practices](https://www.w3schools.com/js/js_best_practices.asp)&mdash;W3Schools
+
 
 
 ------

@@ -18,7 +18,7 @@
 
 # Functions
 
-A function is a module of code that performs some function. It has inputs and an outputs. 
+A function is a module of code that performs some function. It has inputs and an output. 
 
 A function has to first be *defined*, then to use it, you *call* it.
 
@@ -86,7 +86,7 @@ Example:
  }
 ```
 
-function parameters are local variables
+function parameters are also local variables.
 
 Exercise: how can we demonstrate that function parameters are local to the function?
 
@@ -104,11 +104,11 @@ function total(n1, n2, n3)
 console.log(t);      // is t valid here?
 ```
 
-
+Where would be the best place to declare the variable `t`?
 
 ### Conditional Statements
 
-When we put code inside curly braces in a branch of an if statement or in a case of a switch statement, that is a new scope.
+When we put code inside curly braces, in a branch of an if statement, or in a case of a switch statement, that is a new scope.
 
 For example:
 
@@ -154,13 +154,13 @@ for (let i = 1;  i <= 10;  i++)
 
 Questions:
 
-- Is i a local variable? How can you prove it? 
-- Does result need to be declared outside the loop? Why or why not?
-- Can we eliminate the result variable and just use i?
+- Is `i` a local variable? How can you prove it? 
+- Does `result` need to be declared outside the loop? Why or why not?
+- Can we eliminate the `result` variable and just use `i`?
 
 ### Objects
 
-Inside an compound objects, we don't really have scope. Instead we need to think about the concept of encapsulation and how we access object via the dot operator.
+Inside a compound object, we don't really have scope. Instead we need to think about the concept of encapsulation and how we access things inside the object via the dot operator.
 
 ```javascript
 const loft = {          // parent object
@@ -187,13 +187,7 @@ Questions:
 
 
 
-# Using Global Objects and Constants
-
-A function can operate on global constants or objects.
-
-While it is usually advisable not to use global variables, they can be useful when all or most of your functions use the same constants, objects or arrays.
-
-
+# Exercises
 
 ```javascript
 const QUALIFYING_TIME = 11.15;
@@ -209,9 +203,16 @@ for(let runner of runners) {
 }
 ```
 
-Exercise: put the for loop into a function.
+Exercises: 
 
-Another exercise: write another function to find the runner with the fastest time.
+- Put the for loop into a function.
+
+- 
+  Put the array and function into an object.
+
+  Does it make sense for the const to be global?
+
+- Write another function to find the runner with the fastest time.
 
 
 

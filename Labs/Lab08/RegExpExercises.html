@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Written by Brian Bird, 5/23/22 -->
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Lab 8, Part 1</title>
+    <script src="RegExpExercises.js"></script>
+</head>
+
+<body>
+    <h1>Lab 8, Part 1, Solution Check</h1>
+
+    <p><span id="1a">1a. Match a string that contains "JavaScript": </span><br>
+        <span id="1b">1b. Don't match a string a string not containing "JavaScript":</span></p>
+    <script>
+        let result = pattern1.test("JavaScript is popular!");
+        checkAnswer("1a", true, result);
+        result = pattern1.test("Java is popular!");
+        checkAnswer("1b", false, result);
+    </script>
+
+    <p><span id="2a">2a. Match a string that ends with "fun": </span><br>
+        <span id="2b">2b. Don't match a string that doesn't end with "fun":</span></p>
+    <script>
+        result = pattern2.test("Programming is fun");
+        checkAnswer("2a", true, result);
+        result = pattern2.test("Java is popular!");
+        checkAnswer("2b", false, result);
+    </script>
+
+    <p><span id="3a">3a. Validate a number in the range of 1 through 5: </span><br>
+        <span id="3b">3b. Don't match a number ouside the range:</span></p>
+    <script>
+        result = pattern3.test("5");
+        checkAnswer("3a", true, result);
+        result = pattern3.test("6");
+        checkAnswer("3b", false, result);
+    </script>
+
+    <p><span id="4a">4a. Validate a name as just letters: </span><br>
+        <span id="4b">4b. Don't match a name including numbers:</span></p>
+    <script>
+        result = pattern4.test("Emma");
+        checkAnswer("4a", true, result);
+        result = pattern4.test("Emma23");
+        checkAnswer("4b", false, result);
+    </script>
+
+    <p><span id="5a">5a. Validate a user name as containing between 8 and 15 upper or lower case letters or numbers.: </span><br>
+        <span id="5b">5b. Don't match an invalid password:</span></p>
+    <script>
+        result = pattern5.test("SRogers99");
+        checkAnswer("5a", true, result);
+        result = pattern5.test("CaptainAmerica2000");
+        checkAnswer("5b", false, result);
+    </script>
+
+    <p><span id="6a">6a. Validate an e-mail address as alpha-numeric, then @, then leters, then ., then letters.: </span><br>
+        <span id="6b">6b. Non-prime number: </span></p>
+    <script>
+        result = pattern6.test("AnnSmith@airpost.net");
+        checkAnswer("6a", true, result);
+        result = pattern6.test("AnnSmith-gmail-com");
+        checkAnswer("6b", false, result);
+    </script>
+
+
+    <p><span id="7a">7a. String contains bunny: </span><br>
+        <span id="7b">7b. String contains rabbit: </span>
+        <br><span id="7c">7c. String contains neither: </span></p>
+    <script>
+        result = pattern7.test("Peter was a bunny.");
+        checkAnswer("7a", true, result);
+        result = pattern7.test("Flopsy was a rabbit.");
+        checkAnswer("7b", true, result);
+        result = pattern7.test("Deer eat flowers.");
+        checkAnswer("7c", false, result);
+    </script>
+
+    <p><span id="8">8. Replace "can't" with "can not": </span>
+    </p>
+    <script>
+        let output = uncontract("I can't believe it's week 9!");
+        checkAnswer("8", "I can not believe it's week 9!", output)
+    </script>
+
+</body>
+
+</html>

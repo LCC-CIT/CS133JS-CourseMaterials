@@ -92,6 +92,8 @@ document.getElementById("lcc").innerHTML = "Hello Lane Community College!";
 
 ### By CSS selector
 
+#### Using `querySelector` with a single selector
+
 Review: in a CSS rule, the first part is the selector. For example, in the rule below, `#cit` is the selector:
 
 ```css
@@ -107,12 +109,41 @@ In JavaScript, we can use `document.querySelector` to get a reference to an HTML
   - id
   - class
   - element name (tag name)
+  - or a combination of the selectors above
   
 - The `querySelector` method will return a single reference to the first matching element it finds on the page. 
 
   ```javascript
   document.querySelector("#cit").innerHTML = "Greetings CIT!";
   ```
+
+#### Using `querySelector` with multiple selectors
+
+For the html below,
+
+```html
+<h1>Students and Their Degree Programs</h1>
+<ul>
+        <li id="s1">
+            Student: <span></span>
+            <p>Degree: <span></span></p>  
+        </li>
+        <li id="s2">
+            Student: <span></span>
+            <p>Degree: <span></span></p>  
+       </li>
+</ul>
+```
+
+In the JavaScript example below, we are using the selectors being passed to the `querySelector` method to put text into the spans.
+
+```javascript
+document.querySelector("#s1 span").innerHTML = "Susan Lee";
+document.querySelector("#s1 p span").innerHTML = "Computer Programming";
+
+document.querySelector("#s2 span").innerHTML = "David Johnson";
+document.querySelector("#s2 p span").innerHTML = "Computer Network Operations";
+```
 
 
 
@@ -124,19 +155,11 @@ Now we'll look at a couple new ways to do input and output (I/O).
 
 ### `textContent`
 
-This is another way to access the content between tags. The difference between this property and `innerHTML` is that it just returns the text, not any HTML formatting that is in the text. For example:
+This is another way to access the content between tags. The difference between this property and `innerHTML` is that `textContent` just gets or set text, no HTML tags will be processed and no formatting done on the web page.  Here's an example showing the differences: 
 
-```html
-<p id="voles"><em>Voles</em> are burrowing rodents that are <strong>descrictive</strong> to gardens.</p>
-<script>
-  document.getElementById("voles").innerHTML;
-  // This will be put on the web page:
-  // <em>Voles</em> are burrowing rodents that are <strong>descrictive</strong> to gardens.
-  document.getElementById("voles").textContent;
-  // This will be put on the web page:
-  // Voles are burrowing rodents that are descrictive to gardens.
-</script>
-```
+[Demo of innerHTML vs. textConent](../Examples/Week08/Demo-innerHtmlVsTextContent.html)
+
+The `textContent` property is the best one to use when you just need to output text (without HTML tags) to a web page.
 
 ### `value`
 
@@ -192,10 +215,6 @@ Event handlers are JavaScript functions that are called when events occur.
   }
   ```
 
-## User Input and Output
-
-This is how to get input and display output on a web page without using `prompt` and `alert`.
-
 ### Using a Button to Get Input
 
 We can use a button with an onclick event handler to get user input. Here's an example:
@@ -215,26 +234,6 @@ Enter your name:<input>
 
 - The onclick event can be used with any element, but we frequently use it with a button. 
 
-### Displaying output
-
-- Assume we have a paragraph in our web page:
-
-  ```html
-   <p id="studentName">Student's name: </p>
-  ```
-
-- Access HTML elements in JavaScript using *getElementById*: 
-
-  ```javascript
-  let nameParagraph = document.getElementById("studentName");
-  ```
-
-- Set the value of an element:
-
-  ```javascript
-  nameParagraph.innerHTML += "Susan";
-  ```
-
 
 
 # Further Reading
@@ -251,6 +250,8 @@ Enter your name:<input>
 [DOM (Document Object Model)](https://developer.mozilla.org/en-US/docs/Glossary/DOM) - MDN
 
 [Event Reference](https://developer.mozilla.org/en-US/docs/Web/Events) - MDN
+
+[CSS Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) - MDN
 
 
 

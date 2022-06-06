@@ -7,8 +7,8 @@ generator: Typora
 author: Brian Bird
 ---
 
-**CS133JS Beginning Programming: JavaScript**
 
+**CS133JS Beginning Programming: JavaScript**
 
 
 <h1>Arrays</h1>
@@ -80,7 +80,9 @@ This week we will be learning to use arrays. Here is what we will learn:
    We can think of a *variable* as a storage place in memory. It has a name and can hold one value and that value has a data type.
 - An *array* is like a variable (we call it an *object*), but it can store more than one value.
 - An array has an *index* that lets us access a particular *element* (storage spot) in the array.
-- One way to think of an array is as a table where each row is an element of the array:
+- One way to think of an array is as a table where each row is an element of the array
+
+**An array represented as a table. Each row represents an *element*.**
 
 | *index* | *value*   |
 | ------- | --------- |
@@ -108,6 +110,20 @@ This week we will be learning to use arrays. Here is what we will learn:
 
 
 
+## Accessing Array Elements
+
+The code shown below will access the array element with an index of 2  and assign the value stored there, "Han Solo", to the variable `character`.
+
+`let character = starWars[2];`  
+                                    &uarr;               &uarr;  
+                          array name    index
+
+This next line of code will change the value stored at index 2 to "Leia".
+
+`starwars[2] = "leia";`
+
+
+
 ## Performing Operations on an Array
 
 - Get the length of an array:
@@ -122,9 +138,9 @@ This week we will be learning to use arrays. Here is what we will learn:
   starWars[1] = "Poe";
   ```
 
-- Adding new values to an array.
+- Adding a new element to an array.
 
-  - When you know what the index of the last element is:
+  - When you know what the index of the last element is (4 in this case):
 
   ```javascript
   starWars[5] = "Yoda";
@@ -142,12 +158,12 @@ This week we will be learning to use arrays. Here is what we will learn:
   console.log(starWars[0]);
   ```
 
-- Removing an element from an array.
+- Removing (or not) an element from an array.
 
   - Setting an element to null doesn't remove the element. For example, assume our starWars array has the original 5 elements, after setting one to null, there will still be 5 elements.
 
   ```javascript
-  starWars[3] = null;   // Doesn't remove Han Solo
+  starWars[2] = null;   // Doesn't remove Han Solo
   ```
 
   - You can only remove elements using special array methods. (A topic for next time.) 
@@ -192,7 +208,7 @@ for (const character of starWars) {
 }
 ```
 
-In a `for...of` loop, it's best to get the values from the elements into a variable declared with `const` rather than `let`. What do you think is the reason?
+In a `for...of` loop, it's best to get the values from the elements into a variable declared with `const` rather than `let`. What do you think is the reason?
 
 ### while loop
 

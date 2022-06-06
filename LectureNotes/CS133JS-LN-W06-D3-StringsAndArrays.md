@@ -9,7 +9,7 @@ author: Brian Bird
 
 **CS133JS Beginning Programming: JavaScript**
 
-<h1>Arrays: Array Methods</h1>
+<h1>Arrays: Comparison of Arrays and Strings</h1>
 
 
 | Topics by Week                                       |            |
@@ -17,8 +17,8 @@ author: Brian Bird
 | 1. Intro to JavaScript programming                   | 6. <mark> Arrays</mark>  |
 | 2. Functions, Operators and Expressions              | 7.Objects and Object Constructors |
 | 3. Conditional Statements: if and switch             | 8. Web Page I/O |
-| 4. Repetition: while, do while, and for | 9. Review |
-| 5. Midterm Check-Point                               | 10. Final  |
+| 4. Repetition: while, do while, and for | 9. Regular Expressions |
+| 5. Midterm Check-Point                               | 10. Review |
 
 
 <h2>Table of Contents</h2>

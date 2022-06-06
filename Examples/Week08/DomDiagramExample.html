@@ -14,6 +14,17 @@
         // Directly access the h1 element
         document.children[0].children[1].children[0].textContent = "New Heading";
     </script>
+
+    <button onclick="buttonPressed('A')">Button A</button>
+    <button onclick="buttonPressed('B')">Button B</button>
+
+    <p>Button <span></span> was pressed.</p>
+    <script>
+        function buttonPressed(letter) {
+            document.querySelector("span").textContent = letter;
+        }
+    </script>
+
 </body>
 
 </html>

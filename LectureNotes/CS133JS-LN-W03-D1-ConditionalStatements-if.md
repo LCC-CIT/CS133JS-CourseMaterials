@@ -365,6 +365,22 @@ For part 1 of the lab assignment, the instructions say to write the code in a br
 
 ## Examples
 
+An `if` statement can be used to check the validity of an argument passed to a function and return a status value:
+
+```javascript
+function inchesToCentemeters(inches) {
+	centemeters = -1; // This value indicates inches was invalid
+	if(inches >= 0) {
+		centemeters = inches * 2.54;
+	}
+	return centemeters;
+}
+```
+
+Note that it is best practice to <u>not</u> put a `return` statement inside an `if...else` statement.
+
+### More Examples/Exercises
+
 There are three examples posted on Moodle. The first two use `if else` statements. Lets do one of them together.
 
 

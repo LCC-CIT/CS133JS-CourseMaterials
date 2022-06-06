@@ -1,7 +1,7 @@
-// Example code by Brian Bird, 5/11/2020
+// Example code by Brian Bird, 5/11/2020, revised 6/6/2022
 
 // An array containing names of the nine planets.
-let planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"];
+const planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"];
 
 // This will return the name of a planet form the planets array.
 // The number start with Mercury = 1
@@ -53,8 +53,7 @@ function makeMove(row, column, symbol) {
     return valid;
 }
 
-function displayGrid()
-{
+function displayGrid() {
     let output = "";
     for (let row = 0; row < 3; row++) {
         for (let col = 0; col < 3; col++) {

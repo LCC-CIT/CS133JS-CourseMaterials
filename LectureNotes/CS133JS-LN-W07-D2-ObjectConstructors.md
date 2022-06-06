@@ -50,7 +50,7 @@ const fili = {
     brother: "Kili",
     greet: function() {
         return this.name + " at your service!";
-    },
+    }
 };
 ```
 

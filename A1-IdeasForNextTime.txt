@@ -1,4 +1,7 @@
+Syllabus: align the grade book on Moodle with the syllabus.
+
 Re-order the topics like this:
+
 1) HTML review / JavaScript intro
    - How JavaScript is different execution of statements
    - Don't use the console yet. Use script elements

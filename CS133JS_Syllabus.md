@@ -137,11 +137,11 @@ The table below summarizes the possible points for each assessment task as well 
 
 | **Assessment Tasks**       | **Points Each** | **Total Points** | Percentage |
 | -------------------------- | --------------- | ---------------- | ---------- |
-| Labs  1 - 8                | 50              | 400              | 47%        |
-| Code  Reviews 1 - 8        | 10              | 80               | 9%         |
-| Reading  Quizzes 1 - 8     | 10              | 80               | 9%         |
-| Midterm  and Final Quizzes | 100 and 200     | 300              | 35%        |
-| **Course Total**           |                 | **860**          |            |
+| Labs  1 - 8                | 50              | 400              | 52%        |
+| Code  Reviews 1 - 8        | 10              | 80               | 11%        |
+| Reading  Quizzes 1 - 8     | 10              | 80               | 11%        |
+| Midterm  and Final Quizzes | 100 each        | 200              | 26%        |
+| **Course Total**           |                 | **760**          |            |
 
 Letter grades for the course will be determined by the following percentages:                  
 
@@ -174,7 +174,8 @@ The college’s “no show, drop” policy requires that: during the first week 
 ### Late Work
 
 - Grades for code reviews will be reduced by 20% if either the beta version or the code review is submitted late.
-- Grades for lab production versions submitted after the due date will be reduced by 10%
+- Grades for lab production versions submitted after the due date will be reduced by 10%.
+- No late assignments may be submitted after the final exam day.
 - Quizzes and exams cannot be taken after the due date. Plan ahead! Exceptions will only be made for illness or emergency situations.
 
  

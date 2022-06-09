@@ -264,7 +264,7 @@ delete elves[1];
 
 ## Using Loops with Object Properties
 
-### `for...in` Loop&mdash;Just for Objects
+### `for...in` Loop&mdash;Just for Objects
 
 The JavaScript language has a special, predefined loop,  `for`...`in`,  that is specifically designed for iterating over the properties of an object. This loop only iterates over property keys (aka names). Note that you need to use bracket notation.
 
@@ -310,7 +310,7 @@ for (let i = 0; i < filiArray.length; i++)
 }
 ```
 
-#### `while` and `do...while`  Loops
+#### `while` and `do...while`  Loops
 
 We can use these loops on arrays of object properties too, but they aren't as convenient to use as the three types of `for` loops. 
 
@@ -345,7 +345,9 @@ balin = boffer;  // this works!
 
 [JavaScript Object Basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics) - MDN Guide
 
-[Understanding Objects in JavaScript](https://www.digitalocean.com/community/tutorials/understanding-objects-in-javascript) - Tania Rascia
+[Understanding Objects in JavaScript](https://www.digitalocean.com/community/tutorials/understanding-objects-in-javascript) - Tania Rascia, 2021, Digital Ocean
+
+"[Data Structures: Objects and Arrays](https://eloquentjavascript.net/04_data.html)", Ch. 4 in Eloquent JavaScript, 3rd Ed., Marijn Haverbeke, 2018, No Starch Press.
 
 
 

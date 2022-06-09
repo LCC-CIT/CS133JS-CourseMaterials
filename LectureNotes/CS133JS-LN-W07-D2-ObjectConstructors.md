@@ -267,6 +267,55 @@ This is a new version of the Movie and Actors web app.
 
 
 
+## Alternate Syntaxes for Object Constructors
+
+You will also see object constructor functions that create and return an object rather than setting properties on `this`. Here's an example:
+
+```javascript
+function Pigeon(name, breed, speed) {
+  const obj = {};
+	obj.name = name;
+  obj.breed = breed;
+  obj.speed = speed;
+  obj.fly = function(){
+    return this.name + " is flying at " + this.speed + " MPH.";
+  };
+  return obj;
+}
+```
+
+Or you might see an object constructor written like this, where the creation of an object is combined with assignment of properties:
+
+```javascript
+function Pigeon(name, breed, speed) {
+  return {
+    name: name,
+    breed: breed,
+    speed: speed,
+    fly: function(){
+      return this.name + " is flying at " + this.speed + " MPH.";
+    };
+  }
+}
+```
+
+And this can be simplified to:
+
+```javascript
+function Pigeon(name, breed, speed) {
+  return {
+    name,
+    breed,
+    speed,
+    fly: function(){
+      return this.name + " is flying at " + this.speed + " MPH.";
+    };
+  }
+}
+```
+
+
+
 # References
 
 ## Tutorials

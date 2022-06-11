@@ -66,3 +66,6 @@ Week 5, Midterm
 Week 6, Arrays
 1) Explain and give an example of parallel arrays.
 2) Explain and give an example of a look-up array.
+
+Week 8, Events
+Modify lab 7, web app 2 so that the quiz app problem's solution isn't just a matter of using the example quiz as a template.

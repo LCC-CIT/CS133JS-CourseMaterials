@@ -117,7 +117,7 @@ In JavaScript, we can use `document.querySelector` to get a reference to an HTML
   document.querySelector("#cit").innerHTML = "Greetings CIT!";
   ```
 
-#### Using `querySelector` with multiple selectors
+#### Using `querySelector` with multiple selectors
 
 For the html below,
 
@@ -135,7 +135,7 @@ For the html below,
 </ul>
 ```
 
-In the JavaScript example below, we are using the selectors being passed to the `querySelector` method to put text into the spans.
+In the JavaScript example below, we are using the selectors being passed to the `querySelector` method to put text into the spans.
 
 ```javascript
 document.querySelector("#s1 span").innerHTML = "Susan Lee";
@@ -233,6 +233,14 @@ Enter your name:<input>
 ```
 
 - The onclick event can be used with any element, but we frequently use it with a button. 
+
+
+
+## When to Use an HTML Form
+
+The purpose of a form is to send the information entered in the form to a program running on a server. Only use a form if that is what you want to do. If you are just using input elements with JavaScript running in the browser, don't put the input elements in a form.
+
+When you click a button on a form, the information entered on the form will be sent in an HTTP request either to a program at a URL specified in the form's *action* attribute or back to the URL of the web page the form is in&mdash;this is called a *postback*. A postback will reset the web page to its original state and any information entered on the form will be lost.
 
 
 

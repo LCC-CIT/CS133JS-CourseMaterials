@@ -41,20 +41,21 @@ The strategy we'll use to improve matches is to add code that can do partial mat
 
 #### Rating (scoring) the closeness of matches
 
-In order to facilitate partial matches, our code will give a score of 0.0 to 1.0 based on how closely each prompt matches the user input. The scores will be calculated in the `compare` function, inside the nested loops that check for prompts that match the user input. Here is the original code:
+In order to facilitate partial matches, our code will give a score of 0.0 to 1.0 based on how closely each prompt matches the user input. The scores will be calculated in the `compare` function, inside the nested loops that check for prompts that match the user input. Here is the original code with the inner loop slightly modified to get each prompt into its own variable named `onePrompt`.
 
 ```javascript
 function compare(promptsArray, repliesArray, string) {
     let reply;
     let replyFound = false;
-    for (let x = 0; x < promptsArray.length; x++) {
-        for (let y = 0; y < promptsArray[x].length; y++) {
-          	// Check for a match between user input and each prompt
-            if (promptsArray[x][y] === string) {
+		for (let x = 0; x < promptsArray.length; x++) {
+      	for (let y = 0; y < promptsArray[x].length; y++) {
+            let onePrompt = promptsArray[x][y];
+            // If there is an exact match, stop searching the prompts
+            if (onePrompt === string) {
                 let replies = repliesArray[x];
                 reply = replies[Math.floor(Math.random() * replies.length)];
                 replyFound = true;
-                // Stop the inner loop when input value matches prompts
+                // Stop inner loop when input value matches prompt
                 break;
             }
         }

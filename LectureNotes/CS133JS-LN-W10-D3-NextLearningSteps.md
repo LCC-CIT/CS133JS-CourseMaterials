@@ -20,30 +20,34 @@
 
 | Fall 2022                             | Winter 2023                            | Spring 2023                                                  |
 | ------------------------------------- | -------------------------------------- | ------------------------------------------------------------ |
-| Elective: CS140U, Linux,  recommended | Elective: CS 295R, React,  recommended | Elective: CS 240U, Adv. Linux, or <br />CS 260, Data Structures,  recommended |
+| Elective: CS140U, Linux,  recommended | Elective: CS 295R, React,  recommended | Elective reccomendations: <br />CS 240U, Adv. Linux, or <br />CS 260, Data Structures |
 | CS 233JS, Intermediate  JavaScript    | CS 296N Web Development 2: ASP.NET     | CS 297 Programming Capstone                                  |
 | CS 234N  Advanced C#                  | CS 246 System Design                   | CS 280PR Co-op Ed: Computer Programming                      |
 | CS 295N Web Development 1:  ASP.NET   | CS 276 Database Systems and  Modeling  |                                                              |
 
 
 
-## Continuing to Learn and Not Forget over the Summer
+## Continue to Learn and Don't Forget JavaScript over the Summer
 
 ### Projects
 
-- Dream up your own project 
+- Find project tutorials on the internet&mdash;like these: [40 JavaScript Projects for Beginners – Easy Ideas to Get Started Coding JS](https://www.freecodecamp.org/news/javascript-projects-for-beginners/#how-to-create-a-color-flipper). Some of these project tutorials will walk you through coding the project and show you all the code. It's better to try to figure out how to do the project yourself and then only watch the "walk through", or look at the code if you get stuck. The more you can do your own problem solving and use your own creativity the better.
 
-  Ideas:
+- Dream up your own projects. Here are some ideas:
 
-  - Games
-  - Puzzles
-  - 
+  - Games: dice or card games, tic-tac-toe, checkers or chess, memory, etc.
+  - Puzzles: Sudoku, picture puzzle (sliding picture tiles), cross-word, etc.
+  - Interactive photo gallery, video, or music site, etc.
+  
+- Do the projects in *Eloquent JavaScript*. Each successive project is more challenging and will require you to read more of the book and learn more JavaScript. 
 
-- Do the projects in *Eloquent JavaScript*
+  You already know almost everything you need to know for the first project, the Robot.
 
-### Online Courses
-
-- LinkedIn
+  - [Robot project](https://eloquentjavascript.net/07_robot.html)
+  - [A Programming Language](https://eloquentjavascript.net/12_language.html)
+  - [A Platform Game](https://eloquentjavascript.net/16_game.html)
+  - [A Pixel Art Editor](https://eloquentjavascript.net/19_paint.html)
+  - [A Skill Sharing Web Site](https://eloquentjavascript.net/21_skillsharing.html)
 
 
 

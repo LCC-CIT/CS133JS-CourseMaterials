@@ -18,12 +18,12 @@
 
 ## Second Year of the Computer Programming Degree
 
-| Fall 2022                             | Winter 2023                            | Spring 2023                                                  |
-| ------------------------------------- | -------------------------------------- | ------------------------------------------------------------ |
-| Elective: CS140U, Linux,  recommended | Elective: CS 295R, React,  recommended | Elective reccomendations: <br />CS 240U, Adv. Linux, or <br />CS 260, Data Structures |
-| CS 233JS, Intermediate  JavaScript    | CS 296N Web Development 2: ASP.NET     | CS 297 Programming Capstone                                  |
-| CS 234N  Advanced C#                  | CS 246 System Design                   | CS 280PR Co-op Ed: Computer Programming                      |
-| CS 295N Web Development 1:  ASP.NET   | CS 276 Database Systems and  Modeling  |                                                              |
+| Fall 2022                             | Winter 2023                           | Spring 2023                                                  |
+| ------------------------------------- | ------------------------------------- | ------------------------------------------------------------ |
+| Elective: CS140U, Linux,  recommended | Elective: CS295R, React,  recommended | Elective reccomendations: <br />CS240U, Adv. Linux, or <br />CS260, Data Structures |
+| CS233JS, Intermediate  JavaScript     | CS246 System Design                   | CS297 Programming Capstone                                   |
+| CS234N  Advanced C#                   | CS276 Database Systems and  Modeling  | CS280PR Co-op Ed: Computer Programming                       |
+| CS295N Web Dev. 1:  ASP.NET           | CS296N Web Dev. 2: ASP.NET            |                                                              |
 
 
 

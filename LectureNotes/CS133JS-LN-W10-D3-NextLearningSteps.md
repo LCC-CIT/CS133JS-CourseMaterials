@@ -38,6 +38,7 @@
   - Games: dice or card games, tic-tac-toe, checkers or chess, memory, etc.
   - Puzzles: Sudoku, picture puzzle (sliding picture tiles), cross-word, etc.
   - Interactive photo gallery, video, or music site, etc.
+  - Your own ideas&mdash;these are the best!
   
 - Do the projects in *Eloquent JavaScript*. Each successive project is more challenging and will require you to read more of the book and learn more JavaScript. 
 
@@ -51,13 +52,15 @@
 
 ### LinkedIn Learning
 
-The college has a subscription to [LinkedIn Learning](https://www.linkedin.com/learning-login/continue?account=88355058&forceAccount=false&authModeName=LaneSAML&authUUID=ZG0W38TeRvKNJgtIUiNCMA%3D%3D&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2F) (formerly known as Linda.com) which provides many great programming courses, including [JavaScript](https://www.linkedin.com/learning/topics/javascript?u=88355058). Faculty, staff, and students can take the courses free of charge.
+The college has a subscription to [LinkedIn Learning](https://www.linkedin.com/learning-login/continue?account=88355058&forceAccount=false&authModeName=LaneSAML&authUUID=ZG0W38TeRvKNJgtIUiNCMA%3D%3D&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2F) (formerly known as Linda.com) which provides many great self-study programming courses, including [JavaScript](https://www.linkedin.com/learning/topics/javascript?u=88355058). LCC faculty, staff, and students can take the courses free of charge.
+
+
 
 ## Reference
 
 [Your instructor's lecture notes](https://github.com/LCC-CIT/CS133JS-CourseMaterials/tree/master/LectureNotes)
 
-[A curated list of online resources for learning JavaScript](https://lcc-cit.github.io/CS133JS-CourseMaterials/CS133JS_References.html)
+[Your instructor's curated list of online resources for learning JavaScript](https://lcc-cit.github.io/CS133JS-CourseMaterials/CS133JS_References.html)
 
 
 

@@ -7,7 +7,6 @@ generator: Typora
 author: Brian Bird
 ---
 
-
 **CS133JS Beginning Programming: JavaScript**
 
 

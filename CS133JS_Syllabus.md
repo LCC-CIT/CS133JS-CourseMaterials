@@ -1,15 +1,14 @@
 <h1>Beginning Programming: JavaScript</h1>
-**Syllabus for Spring 2022**
+**Syllabus for winter 2023**
 
 
 
-| <u>Class</u>      |                                                     |      | <u>Instructor</u> |                                                     |
-| ----------------- | --------------------------------------------------- | ---- | ----------------- | --------------------------------------------------- |
-| **Course Number** | CS133JS                                             |      | **Name**          | Brian Bird                                          |
-| **CRNs**          | 40729, 40939, 41665, 41666                          |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)         |
-| **Day & Time**    | M, W, 10:00&dash;12:50                              |      | **Office Hours**  | M&ndash;Th, 1:00&ndash;1:50                         |
-| **Room**          | Building 19, Room 128                               |      | **Room**          | Building 19, Room 152                               |
-| **Zoom**          | [98797466911](https://lanecc.zoom.us/j/98797466911) |      | **Zoom**          | [94002309439](https://lanecc.zoom.us/j/94002309439) |
+| <u>Class</u>      |                       |      | <u>Instructor</u> |                                             |
+| ----------------- | --------------------- | ---- | ----------------- | ------------------------------------------- |
+| **Course Number** | CS133JS               |      | **Name**          | Brian Bird                                  |
+| **CRNs**          | 31314                 |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu) |
+| **Day & Time**    | M, W, 12:00&dash;1:50 |      | **Office Hours**  | M&ndash;Th, 4:00&ndash;4:50                 |
+| **Room**          | Building 19, Room 128 |      | **Room**          | Building 19, Room 152                       |
 
 
 
@@ -192,16 +191,17 @@ Please be aware that any accessible tables and chairs in this room should remain
 
 ### Academic Calendar
 
-| Spring Term 2022                  |               |
-| --------------------------------- | ------------- |
-| Term begins                       | 3/28          |
-| Last day to receive refund        | 4/3, 11:59 pm |
-| Spring Conference, College closed | 5/6           |
-| Last day for schedule changes     | 5/20          |
-| Memorial Day holiday              | 5/30          |
-| Final Exam                        | 6/6           |
+| Winter Term 2023              |                |
+| ----------------------------- | -------------- |
+| Term begins                   | 1/9            |
+| Last day to receive refund    | 1/16           |
+| MLK Holiday                   | 1/16           |
+| President's Day Holiday       | 2/20           |
+| Last day for schedule changes | 3/3            |
+| Final Project Presentation    | 3/21           |
+| Spring Break                  | 3/26&ndash;4/2 |
 
- 
+
 
 ### Weekly Learning Activities
 
@@ -223,17 +223,17 @@ By Saturday
 
 ### Tentative Course Schedule
 
-| Week   | Topic                                                        | Learning Activities                                          |
-| ------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **1**  | Intro to  JavaScript:<br />algorithms, variables, and data types | Reading Quiz 1<br />Beta version of lab 1                    |
-| **2**  | Functions, Expressions and Operators                         | lab 1 code review <br />Reading Quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
-| **3**  | Selection                                                    | lab 2 code review  <br />Reading Quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
-| **4**  | Repetition                                                   | lab 3 code review<br />Reading Quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
-| **5**  | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Midterm Quiz |
-| **6**  | Arrays                                                       | Reading Quiz 5  <br />Beta version of lab 5                  |
-| **7**  | Objects                                                      | lab 5 code review<br />Reading Quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
-| **8**  | Methods                                                      | lab 6 code review<br />Reading Quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |
-| **9**  | Document Object Model                                        | lab 7 code review<br />Reading Quiz 8<br />Production version of lab 7<br />Beta version of lab 8 |
-| **10** | Finals week                                                  | Final Quiz                                                   |
+| Week            | Topic                                                        | Learning Activities                                          |
+| --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 1<br/>Jan. 9    | Intro to  JavaScript:<br />algorithms, variables, and data types | Reading Quiz 1<br />Beta version of lab 1                    |
+| 2<br />Jan. 16  | Functions, Expressions and Operators                         | lab 1 code review <br />Reading Quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
+| 3<br />Jan. 23  | Selection                                                    | lab 2 code review  <br />Reading Quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
+| 4<br />Jan. 30  | Repetition                                                   | lab 3 code review<br />Reading Quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
+| 5<br />Feb. 6   | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Midterm Quiz |
+| 6<br />Feb. 13  | Arrays                                                       | Reading Quiz 5  <br />Beta version of lab 5                  |
+| 7<br />Feb. 20  | Objects                                                      | lab 5 code review<br />Reading Quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
+| 8<br />Feb. 27  | Methods                                                      | lab 6 code review<br />Reading Quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |
+| 9<br />Mar. 6   | Document Object Model                                        | lab 7 code review<br />Reading Quiz 8<br />Production version of lab 7<br />Beta version of lab 8 |
+| 10<br />Mar. 13 | Finals week                                                  | Final Quiz                                                   |
 
  

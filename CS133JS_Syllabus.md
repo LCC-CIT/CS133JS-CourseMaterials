@@ -3,12 +3,13 @@
 
 
 
-| <u>Class</u>      |                       |      | <u>Instructor</u> |                                             |
-| ----------------- | --------------------- | ---- | ----------------- | ------------------------------------------- |
-| **Course Number** | CS133JS               |      | **Name**          | Brian Bird                                  |
-| **CRNs**          | 31314                 |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu) |
-| **Day & Time**    | M, W, 12:00&dash;1:50 |      | **Office Hours**  | M&ndash;Th, 4:00&ndash;4:50                 |
-| **Room**          | Building 19, Room 128 |      | **Room**          | Building 19, Room 152                       |
+| <u>Class</u>             |                                                              |      | <u>Instructor</u> |                                                              |
+| ------------------------ | ------------------------------------------------------------ | ---- | ----------------- | ------------------------------------------------------------ |
+| **Course Number**        | CS133JS                                                      |      | **Name**          | Brian Bird                                                   |
+| **CRNs**                 | 31314                                                        |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
+| **Day & Time**           | M, W, 12:00&dash;1:50                                        |      | **Office Hours**  | M&ndash;Th, 4:00&ndash;4:50                                  |
+| **Room**                 | Building 19, Room 128<br />[Zoom meeting](https://lanecc.zoom.us/j/94442711657) |      | **Room**          | Building 19, Room 152<br />[Zoom meeting](https://lanecc.zoom.us/j/97027167891) |
+| **Instructional Method** | HyFlex                                                       |      |                   |                                                              |
 
 
 

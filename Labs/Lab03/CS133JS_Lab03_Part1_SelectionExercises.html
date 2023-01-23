@@ -27,8 +27,6 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 @media screen and (max-width: 500px) { 
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
-  .CodeMirror-sizer { margin-left: 0px !important; }
-  .CodeMirror-gutters { display: none !important; }
 }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
@@ -56,7 +54,7 @@ sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inh
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
 figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
 figure > table { margin: 0px; }
-tr { break-inside: avoid; break-after: auto; }
+thead, tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
 table.md-table td { min-width: 32px; }
@@ -78,6 +76,7 @@ div.hr:focus { cursor: none; }
 #write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
 .md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
 .CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
 .footnotes + .footnotes { margin-top: 0px; }
 .md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
@@ -92,7 +91,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 #write .footnote-line { white-space: pre-wrap; }
 @media print { 
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
-  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; padding-bottom: 0px !important; }
   .typora-export * { -webkit-print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
@@ -135,6 +134,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 }
 a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
 .footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
@@ -204,6 +204,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
 .typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
 .md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
 
 
 :root {
@@ -462,11 +463,8 @@ code {
     html {
         font-size: 13px;
     }
-    table,
     pre {
         page-break-inside: avoid;
-    }
-    pre {
         word-wrap: break-word;
     }
 }
@@ -598,8 +596,8 @@ header, .context-menu, .megamenu-content, footer{
 </style><title>lab 3, Part 1: Selection</title>
 </head>
 <body class='typora-export'><div class='typora-export-content'>
-<div id='write'  class=''><h1 id='lab-3-part-1-selection-exercises'><span>Lab 3, Part 1: Selection Exercises</span></h1><p><span>For each problem, type the solution code in the console and execute it. Don&#39;t clear the console, since you will be copying everything into a document which you will submit on Moodle.</span></p><ol start='' ><li><p><span>Check for A+ </span>&mdash;<span>a simple if statement</span></p><ul><li><p><span>Write the code to do the following:</span></p><ul><li><span>Declare and initialize a variable to hold an exam score.</span></li><li><span>If the score is above 97, log &quot;A+&quot; to the console.</span></li></ul></li><li><p><span>Execute the code using 97 and then 98 as the scores.</span></p></li></ul></li><li><p><span>Check for A+, A, A- </span>&mdash;<span>a multi-branching if statement</span></p><ul><li><p><span>Write the code to do the following:</span></p><ul><li><p><span>Declare and initialize a variable to hold an exam score.</span></p></li><li><p><span>For each range, log the correct grade to the console:</span></p><ul><li><span>98 to 100: &quot;A+&quot;</span></li><li><span>93 to 97: &quot;A&quot;</span></li><li><span>90 to 92: &quot;A-&quot;</span></li><li><span>Anything else: &quot;Ungraded&quot;</span></li></ul></li></ul></li><li><p><span>Execute the code using numbers that will give you each possible result.</span></p></li></ul></li><li><p><span>Letter to GPA conversion</span>&mdash;<span>a multi-branching if statement.</span></p><ul><li><p><span>Write the code to do the following:</span></p><ul><li><p><span>Declare and initialize a variable to hold a letter grade.</span></p></li><li><p><span>For each letter, log the number grade to the console:</span></p><ul><li><span>&quot;A+&quot;: 4.33</span></li><li><span>&quot;A&quot;: 4.0</span></li><li><span>&quot;A-&quot;: 3.67</span></li><li><span>Anything else: &quot;Out of range&quot;</span></li></ul></li></ul></li><li><p><span>Execute the code using numbers that will give you each possible result.</span></p></li></ul></li><li><p><span>Check file upload</span>&mdash;<span>a logical operation using OR</span>
+<div id='write'  class=''><h1 id='lab-3-part-1-selection-exercises'><span>Lab 3, Part 1: Selection Exercises</span></h1><p><span>For each problem, type the solution code in the console and execute it. Don&#39;t clear the console, since you will be copying everything into a document which you will submit on Moodle.</span></p><ol start='' ><li><p><span>Check for A+ </span>&mdash;<span>a simple if statement</span></p><ul><li><p><span>Write the code to do the following:</span></p><ul><li><span>Declare and initialize a variable to hold an exam score.</span></li><li><span>If the score is above 97, log &quot;A+&quot; to the console.</span></li></ul></li><li><p><span>Execute the code using 97 and then 98 as the scores.</span></p></li></ul></li><li><p><span>Check for A+, A, A- </span>&mdash;<span>a multi-branching if statement</span></p><ul><li><p><span>Write the code to do the following:</span></p><ul><li><p><span>Declare and initialize a variable to hold an exam score.</span></p></li><li><p><span>For each range, log the correct grade to the console:</span></p><ul><li><span>98 to 100: &quot;A+&quot;</span></li><li><span>93 to 97: &quot;A&quot;</span></li><li><span>90 to 92: &quot;A-&quot;</span></li><li><span>Anything else: &quot;Ungraded&quot;</span></li></ul></li></ul></li><li><p><span>Execute the code using numbers that will give you each possible result.</span></p></li></ul></li><li><p><span>Letter to GPA conversion</span>&mdash;<span>a multi-branching if statement.</span></p><ul><li><p><span>Write the code to do the following:</span></p><ul><li><p><span>Declare and initialize a variable to hold a letter grade.</span></p></li><li><p><span>For each letter, log the number grade to the console:</span></p><ul><li><span>&quot;A+&quot;: 4.33</span></li><li><span>&quot;A&quot;: 4.0</span></li><li><span>&quot;A-&quot;: 3.67</span></li><li><span>Anything else: &quot;Out of range&quot;</span></li></ul></li></ul></li><li><p><span>Execute the code using letter grades that will give you each possible result.</span></p></li></ul></li><li><p><span>Check file upload</span>&mdash;<span>a logical operation using OR</span>
 <span>(You won&#39;t really upload files, this is just code that would check the file type.)</span></p><ul><li><p><span>Write code to check file types to see if they are the type allowed for an upload.</span></p><ul><li><span>Declare and initialize a variable to hold a file extension (that&#39;s the part of the file name after the dot.)</span></li><li><span>If the extension is either .doc, .docx, or .pdf, log &quot;Accepted&quot; to the console</span></li><li><span>Otherwise log &quot;Wrong type&quot;.</span></li></ul></li><li><p><span>Execute the code multiple times, each time testing a different file type so that you test all the possibilities.</span></p></li></ul></li><li><p><span>Two-factor authentication</span>&mdash;<span>a logical operation using AND</span>
 <span>(You won&#39;t really do authentication, you&#39;ll just write code to check hypothetical login credentials.)</span></p><ul><li><p><span>Write code to check credentials for logging into a computer</span></p><ul><li><span>Declare and initialize variables to hold a password (as string) and a PIN (a number)</span></li><li><span>Declare and initialize constants to hold a password and a PIN.</span></li><li><span>If both credentials match the values stored in the constants, log &quot;authenticated&quot; to the console.</span></li><li><span>Otherwise log &quot;access denied&quot;.</span></li></ul></li><li><p><span>Execute the code using input (password and PIN values) that will test all the possibilities.</span></p></li></ul></li><li><p><span>Determine kindergarten admission</span>&mdash;<span>a logical operation using AND</span></p><ul><li><p><span>Write code to see if a child can start kindergarten.</span></p><ul><li><p><span>Declare and initialize variables to hold a child&#39;s age and whether their birthday was before August 1st (true or false).</span></p></li><li><p><span>If they are five, and their birthday was before August 1st, log &quot;Start kindergarten&quot; to the console.</span></p></li><li><p><span>Otherwise log either &quot;Too young&quot;, or &quot;Too old&quot;.</span></p><p><span>(Take the birthday into account as well as the age.)</span></p></li></ul></li><li><p><span>Execute the code using values that will test all the possibilities.</span></p></li></ul></li><li><p><span>Convert Roman numerals to decimal numbers</span>&mdash;<span>switch case</span></p><ul><li><p><span>Write code to convert Roman numerals I through V to decimal numbers.</span></p><ul><li><span>Declare and initialize a variable to hold a Roman numeral.</span></li><li><span>For each case in the switch statement log the correct decimal number to the console.</span></li><li><span>Log &quot;out of range&quot; for numbers that are too big.</span></li></ul></li><li><p><span>Execute the code using values that will test all the possibilities.</span></p></li></ul></li><li><p><span>Phone dial pad letters</span>&mdash;<span>switch case</span></p><ul><li><p><span>Write code to convert the top row of a phone dial pad to numbers. Here&#39;s what a typical dial pad looks like:</span></p><p><img src="PhoneDialPad.png" alt="Phone Dial Pad"/></p><p><span>These are the values that are equivalent: </span></p><ul><li><span>1 = 1.</span></li><li><span>A, B, or C = 2.</span></li><li><span>D, E, or F = 3.</span></li></ul></li><li><p><span>This is what your code will do:</span></p><ul><li><span>Get the letter or number.</span></li><li><span>For each case in the switch statement log the correct  number to the console.</span></li><li><span>If the input doesn&#39;t match log &quot;Not valid&quot; to the console.</span></li></ul></li><li><p><span>Execute the code using values that will test all the possibilities.</span></p></li></ul></li></ol></div></div>
-</body>
+<base target="_blank"></body>
 </html>

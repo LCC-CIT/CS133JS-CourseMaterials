@@ -149,11 +149,13 @@ In this session we will learn to use the ternary oprator and `if` statements. Ne
 
 - The ternary operator is the question mark, `?`
 
-- Syntax:
+- Syntax: 
 
   condition ? expression : expression
-           &uarr;       &uarr;          &uarr;         &uarr;          &uarr; 
-           1       2          3         4          5
+
+  ​         &uarr;       &uarr;          &uarr;         &uarr;          &uarr; 
+
+  ​         1       2          3         4          5
 
   	1. Logical condition, like: a === b
   	1. The ternary operator.

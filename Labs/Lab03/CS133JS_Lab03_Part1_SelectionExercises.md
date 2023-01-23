@@ -36,7 +36,7 @@ For each problem, type the solution code in the console and execute it. Don't cl
        - "A": 4.0
        - "A-": 3.67
        - Anything else: "Out of range"
-   - Execute the code using numbers that will give you each possible result.
+   - Execute the code using letter grades that will give you each possible result.
    
 3. Check file upload&mdash;a logical operation using OR
 (You won't really upload files, this is just code that would check the file type.)

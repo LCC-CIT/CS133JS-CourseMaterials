@@ -149,21 +149,16 @@ In this session we will learn to use the ternary oprator and `if` statements. Ne
 
 - The ternary operator is the question mark, `?`
 
-- Syntax: 
+- Syntax
 
-  condition ? expression : expression
+  Example: `let result = a === b ? "Strictly equal" : "Not equal";`
 
-  ​         &uarr;       &uarr;          &uarr;         &uarr;          &uarr; 
+  | a === b           | ?                    | "Strictly equal"                             | :                                   | "Not equal"                                           |
+  | ----------------- | -------------------- | -------------------------------------------- | ----------------------------------- | ----------------------------------------------------- |
+  | Logical condition | The ternary operator | Expression returned if the condition is true | Colon separates the two expressions | Expression that is returned if the condition is false |
 
-  ​         1       2          3         4          5
+  The ternary operator is used to form a conditional *expression*. An expression evaluates to a value. For example:
 
-  	1. Logical condition, like: a === b
-  	1. The ternary operator.
-  	1. Expression returned if the condition is true.
-  	1. Colon separates the two expressions.
-  	1. Expression that is returned if the condition is false.
-
-- The ternary operator is used to form a conditional *expression*. An expression evaluates to a value. For example:
   ```javascript
   let age = prompt("How old are you?");
   let legalStatus = age >= 18 ? "adult" : "child";

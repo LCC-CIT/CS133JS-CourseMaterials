@@ -1,4 +1,4 @@
-// Written by Brian Bird, 4/22/2020
+// Written by Brian Bird, 4/22/2020, comments added, changed 1/25/2023
 
 function calculateFine(speedLimit, actualSpeed, zone)
 {
@@ -6,12 +6,14 @@ function calculateFine(speedLimit, actualSpeed, zone)
     let overLimit = actualSpeed - speedLimit;
     // calculate the fine based on speed
     let fine = 0;
-    // more than 5 mph over the limit is a $100 fine
+    /* Note: We need to check for overLimit > 20 first, because if we check for 
+       overLimit > 5 first it would also be true for overLimit > 20. */
+    // more than 20 mph over the limit is a $200 fine
    if (overLimit > 20)
     {
         fine = 200;
     }
-    // more than 20 mph over the limit is a $200 fine
+    // more than 5 mph over the limit is a $100 fine
     else if (overLimit > 5)
     {
         fine = 100;

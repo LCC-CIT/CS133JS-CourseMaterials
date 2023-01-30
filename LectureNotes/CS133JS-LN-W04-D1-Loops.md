@@ -33,9 +33,14 @@ author: Brian Bird
 
 - New alternative for code review for lab 3. If your lab partner didn't post a beta version for you to review, you can review this instead.
   - I'll make one for lab 4.
+- Due dates on Moodle corrected.
+  - Reading quiz closing later this week It's a mistake, but I won't change it.
+  - Lab betas, code reviews and production versions were set for a week later than normal. I've corrected those.
 - Midterm next Wednesday. 
   - Review lecture notes
   - Practice midterm.
+  - You can look at the textbook, lecture notes, and your lab assignments during the exam.
+  - Help from others, internet searches, ChatGPT, and any other outside sources are not allowed.
 
 
 ## Q and A

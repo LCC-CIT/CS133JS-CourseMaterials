@@ -31,18 +31,8 @@ author: Brian Bird
 
 ## Announcements
 
-- I got behind on grading while I was sick. 
-  - I'll get lab 2 graded on Friday.
-  - I'll start grading lab 3 on Saturday (the production version is due tomorrow (Thursday).
-  - I'll go back and grade late submissions and re-submissions as soon as I get caught up.
-
-- New alternative for code review for lab 3. Did anyone try it?
+- New alternative for code review for lab 3. If your lab partner didn't post a beta version for you to review, you can review this instead.
   - I'll make one for lab 4.
-
-- Quiz questions 1 and 4 fixed, extra attempt added, extension to Thursday night.
-- We will finish covering repetition (loops) on Monday.
-  - Due dates for beta versions, code reviews, and the production version are pushed out by one week.
-
 - Midterm next Wednesday. 
   - Review lecture notes
   - Practice midterm.
@@ -52,7 +42,6 @@ author: Brian Bird
 
 - Does anyone have any general questions about anything?
   - Lab 3 (selection)?
-  - Schedule and due date changes?
 
 
 

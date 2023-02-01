@@ -23,14 +23,12 @@ The objective of this lab is to give you practice using the following types of l
 
 ## Overview
 
-For each of the exercises, complete the "stub" function in the file, [CS133JS_Lab04_Part1.js](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part1.js).
+First, download the starting files. For each of the exercises, complete the partially finished function in the file, CS133JS_Lab04_Part1.js.
 
-- Please do not change the names of files or functions, or change the function parameters. I use automated testing to check your code and these kinds of changes will cause tests to fail.
-- For many of the functions I've provided correct variable initialization and a return variable. For best results, do not change these.
+- Please **do not** change the names of files or functions, or change the function parameters. I use automated testing to check your code and these kinds of changes will cause tests to fail.
+- For many of the functions I've provided correct variable initialization and a return variable. For best results, do not change these, but **do** make the changes described in the TODO comments.
 
-Check each completed function by opening  [CS133JS_Lab04_Part1.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part1.html), which calls each of the functions and checks to see if it returns the correct value based on the arguments that it passes to the function.
-
-- Do not change any code in this .html file.
+Check each completed function by opening  CS133JS_Lab04_Part1.html, which calls each of the functions and checks to see if it returns the correct value based on the arguments that it passes to the function. **Do not** change any code in this .html file.
 
 ## Troubleshooting Tips
 

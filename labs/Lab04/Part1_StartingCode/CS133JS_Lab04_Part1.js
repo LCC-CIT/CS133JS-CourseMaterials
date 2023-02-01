@@ -1,6 +1,7 @@
-/* CS133JS, Beginning JavaScipt Programming, Lane Community College *
- * Lab 4, Part 1: Exercise starter file by Brian Bird, spring 2022  *
- * For each of the problems, complete the function.                 */
+/* CS133JS, Beginning JavaScipt Programming, Lane Community College             *
+ * Lab 4, Part 1: Exercise starter file by Brian Bird, spring 2022              *
+ * Check the answers using the accompanying HTML file: CS133JS_Lab04_Part1.html *
+ * For each of the problems, complete the function.                             */
 'use strict'
 
 // 1. Complete the do while loop below so that it counts from 2 to 10 by twos (2, 4, 6, 8, 10)

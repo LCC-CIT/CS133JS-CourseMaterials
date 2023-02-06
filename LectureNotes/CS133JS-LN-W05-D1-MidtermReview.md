@@ -63,11 +63,49 @@ Review the code you wrote for the lab assignments. Make sure you understand how 
 
 There is a practice quiz available on Moodle that has the same style questions and covers the same concepts as the real quiz but using different questions. As you take the practice quiz, focus on understanding concepts, not on memorizing answers.
 
+### Programming Practice
 
+In order to do well on the midterm quiz and on the homework for the second half of the term, you need to understand the underlying concepts behind the questions and programming problems--not just "the answers". In order to better understand those concepts here are some more practice problems:
+
+#### Selection Problems
+
+For each of these problems write a block of code (not a function) using a selection statement, or statements. Before writing the code, make a table showing the inputs and outputs.
+
+1) A student is trying to decide which used car to buy. They want a car that meets this criteria:
+
+   - Gets 35 MPG or better.
+
+   - Costs less than $5,000.
+
+   - Has a reputation for high reliability.
+
+   The selection code should use the criteria above to give output of either "Buy the car", or "Don't buy the car."
+
+2. You are writing code for the dice game "Pig". On their turn, a player rolls a die. If the die shows any number other than 1, it is added to their score and they can roll again, otherwise their score is set to zero and their turn ends.
+   - The input to this block of code is the number rolled on the die and their previous score.
+   - The output of this block of code is their score and whether or not they can roll again.
+3. Write code that will determine whether each of a small set of foods are primarily a: starch, protein, fruit, or vegetable. Some possible foods are: potato, beef, beet, pinto bean, apple, asparagus, onion, tomato, tofu.
+
+#### Functions
+
+Put each of the blocks of code above into a function.
+
+#### Repetition
+
+Use an appropriate loop with each of the problems above:
+
+1. Add a loop outside the function that asks the user to enter information about another car
+
+2. a) Add a loop that will run again only if the player gets another turn.  
+   b) Modify the loop so that it counts the number of rolls the player has made.
+
+3. Add a loop that lets the user enter another food.
+
+   
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written <time>2022</time>, revised 2023, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
 

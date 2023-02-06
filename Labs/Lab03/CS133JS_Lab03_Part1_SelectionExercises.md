@@ -16,6 +16,7 @@ For each problem, type the solution code in the console and execute it. Don't cl
      - Declare and initialize a variable to hold an exam score.
      - If the score is above 97, log "A+" to the console.
    - Execute the code using 97 and then 98 as the scores.
+  
 3. Check for A+, A, A- &mdash;a multi-branching if statement
 
    - Write the code to do the following:
@@ -58,18 +59,20 @@ For each problem, type the solution code in the console and execute it. Don't cl
 5. Determine kindergarten admission&mdash;a logical operation using AND
   - Write code to see if a child can start kindergarten.
     - Declare and initialize variables to hold a child's age and whether their birthday was before August 1st (true or false).
-    - If they are five, and their birthday was before August 1st, log "Start kindergarten" to the console.
-    - Otherwise log either "Too young", or "Too old".
-    
-       (Take the birthday into account as well as the age.)
+    - log "Start kindergarten" to the console if they are either:
+       - Five years old, and their birthday was before August 1st, 
+       - Or six years old and their birthda was after August 1st,
+    - Otherwise log either "Too young", or "Too old", depending on their age.
     
   - Execute the code using values that will test all the possibilities.
+  
 8. Convert Roman numerals to decimal numbers&mdash;switch case
    - Write code to convert Roman numerals I through V to decimal numbers.
      - Declare and initialize a variable to hold a Roman numeral.
      - For each case in the switch statement log the correct decimal number to the console.
      - Log "out of range" for numbers that are too big.
    - Execute the code using values that will test all the possibilities.
+   
 9. Phone dial pad letters&mdash;switch case
    - Write code to convert the top row of a phone dial pad to numbers. Here's what a typical dial pad looks like:
      

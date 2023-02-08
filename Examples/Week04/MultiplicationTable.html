@@ -8,12 +8,22 @@
     <script src="MultiplicationTable.js"></script>
     <title>Multiplication Table</title>
 </head>
-
+<!--
 <body onload="doIO()">
     <h1>Multiplication Table</h1>
     This is a multiplication table for numbers 1 through 9.
     <p id="table">Empty</p>
 
+</body>
+-->
+
+<body>
+    <h1>Multiplication Table</h1>
+    This is a multiplication table for numbers 1 through 9.
+    <p id="table">Empty</p>
+    <srcipt>
+        document.getElementById("table").innerHTML = createTable();
+    </srcipt>
 </body>
 
 </html>

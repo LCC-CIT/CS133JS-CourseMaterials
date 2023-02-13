@@ -16,11 +16,13 @@ You can also use the solutions to these problems as examples to help you underst
 
 ### Initializing Arrays and Accessing Elements
 
-1. Write a program that initializes an array of integers, then prints the value at the third index of the array.
+1. Write a program that initializes an array with four string values, then gets the value in the second element of the array and logs it to the console.
 
-2. Write a program that initializes an array of strings, then prints the value at the last index of the array.
+2. Write a program that initializes an array of integers, then prints the value at the third index of the array.
 
-3. Write a program that initializes an array of booleans, then prints the value at the second index of the array.
+3. Write a program that initializes an array of strings, then prints the value at the last index of the array.
+
+4. Write a program that initializes an array of booleans, then prints the value at the second index of the array.
 
    
 
@@ -63,19 +65,24 @@ These are solutions to the problems above. Note that for each problem, there may
 
 ### Initializing Arrays and Accessing Elements
 
-1. ```JavaScript
-  const arr = [1, 2, 3, 4, 5]; // initialize an array of integers
+1. ```javascript
+   const myArray = ['apple', 'banana', 'cherry', 'date'];
+   console.log(myArray[1]); // logs 'banana' to the console
+   ```
+
+2. ```JavaScript
+   const arr = [1, 2, 3, 4, 5]; // initialize an array of integers
    const value = arr[2]; // get the value at the third index (index 2)
    console.log(value); // print the value
    ```
-   
-2. ```JavaScript
+
+3. ```JavaScript
    const arr = ['apple', 'banana', 'cherry', 'date', 'elderberry']; // initialize an array of strings
    const value = arr[arr.length - 1]; // get the value at the last index
    console.log(value); // print the value
    ```
-   
-3. ```JavaScript
+
+4. ```JavaScript
    const arr = [true, false, true, true, false]; // initialize an array of booleans
    const value = arr[1]; // get the value at the second index
    console.log(value); // print the value

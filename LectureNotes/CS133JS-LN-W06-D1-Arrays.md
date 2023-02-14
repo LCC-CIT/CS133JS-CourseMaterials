@@ -30,19 +30,19 @@ author: Brian Bird
 
 ## Announcements
 
-- Most of you did well on the midterm!
-  - Problem with matching question that had two possibilities for "this never happens" manually overridden.
-  - Average 85%
-- I've mostly finished grading the lab 3 production version. 
-  - If I've graded your lab, you should have gotten a notification e-mail from Moodle.
+- Most of you did pretty well on the midterm!
+  - Average 80% 
+- I graded lab 4 production version (I still need to grade the code reviews).
+  - Quite a few of you haven't submitted lab 4 yet. 
+    Come to my office hours (M&mdash;Th at 4:00 or by appointment) if you need help finishing this lab. 
+    Look at the [Loop Practice Problems with Solutions](../Labs/Lab04/PracticeProblems-Loops.html) that I posted on Moodle.
   - Look at my feedback. I put a lot of work into trying to give helpful feedback!
 - New lecture notes on [Problem Solving](CS133JS-LN-W04-D3-ProblemSolving.html).
 
 ## Q and A
 
 - How is the reading on arrays going?
-  - The reading quiz is due Tuesday.
-  - We'll review the answers on Wednesday.
+  - The reading quiz is due tomorrow (Tuesday).
 - Does anyone have any questions about anything?
 
 
@@ -76,12 +76,16 @@ This week we will be learning to use arrays. Here is what we will learn:
 ## What are Arrays?
 
 - Review: 
-   We can think of a *variable* as a storage place in memory. It has a name and can hold one value and that value has a data type.
-- An *array* is like a variable (we call it an *object*), but it can store more than one value.
+   We can think of a *variable* as a storage place in memory. It has a name and can hold <u>only one value</u> and that value has a data type.
+- An *array* is like a variable (it's one of the things we call an *object*), but it can hold <u>more than one value</u>.
 - An array has an *index* that lets us access a particular *element* (storage spot) in the array.
-- One way to think of an array is as a table where each row is an element of the array
+   - Question: do you remember doing a loop exercise that involved checking sequential locations in a string? 
 
-**An array represented as a table. Each row represents an *element*.**
+- One way to think of an array is as a table with two columns where each row is an element of the array.
+
+**An array represented as a table. **  
+Each row represents an *element*.  
+This array contains string values.
 
 | *index* | *value*   |
 | ------- | --------- |
@@ -95,13 +99,13 @@ This week we will be learning to use arrays. Here is what we will learn:
 
 ## Creating an Array
 
-- Without initialization
+- Without initialization:
 
   ```javascript
   let starWars = [];
   ```
 
-- With initialization
+- With initialization:
 
   ```javascript
   let starWars = ["Rey", "Finn", "Han Solo", "C-3PO", "Chewbacca"];

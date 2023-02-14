@@ -116,6 +116,8 @@ This array contains string values.
   ```javascript
   const starTrek = ["Kirk", "Hulu", "McCoy", "Spok", "Scott"];
   ```
+  
+  - This doesn't mean you can't change the 
 
 ## Accessing Array Elements
 

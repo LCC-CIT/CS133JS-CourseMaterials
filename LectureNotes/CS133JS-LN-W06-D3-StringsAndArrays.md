@@ -32,12 +32,12 @@ author: Brian Bird
 ### Declaration and Initialization
 
 ```javascript
-let myArray = [];  // Declaration of an empty array
+const myArray = [];  // Declaration of an empty array
 let myString = "";  // Declaration of an empty string
 ```
 
 ```javascript
-let starWars = ["Rey", "Finn", "Han Solo"];  // Declaration and Initialization
+const starWars = ["Rey", "Finn", "Han Solo"];  // Declaration and Initialization
 let prolog = "A long time ago in a galaxy far, far away..."
 ```
 

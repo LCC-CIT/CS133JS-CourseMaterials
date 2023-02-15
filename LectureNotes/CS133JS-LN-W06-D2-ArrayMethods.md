@@ -29,17 +29,18 @@ author: Brian Bird
 
 ## Announcements
 
-- I'm still working on grading the lab 4 production version. 
+Spring term classes for Computer Programming majors
+
+- CS 233JS Intermediate JavaScript
+- WR 227 Technical Writing 
+- CS 162N Computer Science 2: C# (.NET)
+- Program elective: Art 288, Introduction to Web Design and Social Media or another programming language.
 
 ## Q and A
 
 - Lab 5, Part 1, Array Exercises
   - Have you started it? Any questions?
 - Does anyone have any questions about anything?
-
-## Reading Quiz
-
-Review the quiz together
 
 
 

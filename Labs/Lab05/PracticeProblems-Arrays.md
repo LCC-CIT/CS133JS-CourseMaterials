@@ -1,6 +1,6 @@
 <h1>Practice Problems Using Arrays in JavaScript</h1>
 
-These problems are designed to give you practice using the ternary operator, if statements, and switch statements.
+These problems are designed to give you practice using arrays, array methods and properties, as well as using arrays in loops.
 
 <h2> Table of Contents</h2>
 
@@ -27,7 +27,7 @@ You can also use the solutions to these problems as examples to help you underst
 
 ### Using Arrays in Loops
 
-For these problems, solve them using loops, not by using any of the built-in array methods like `indexOf(...)`,  `splice(..)`, etc.
+For these problems, solve them using loops, not by using any of the built-in array methods like `indexOf(...)`,  `splice(..)`, etc.
 
 1. Write a program that initializes an array with integer values, then  finds the index of the first occurrence of a specified value in the  array and prints it.
 2. Write a program that takes an array of numbers as input and returns the sum of all the numbers.
@@ -43,7 +43,7 @@ For these problems, solve them using built-in array methods like `indexOf(...)`,
 3. Write a program that initializes an array with string values, that are in alphabetical order, then adds three more strings to the array in the right alphabetical order.
    - Use a loop to find the right alphabetical location to insert a new string.
    - Put the code that inserts the new strings in a function so that it can be reused for each string you insert.
-4. Write a program that initializes an array with integer values, then removes all the odd numbers from the array. Hint: use a loop and the `%` operator to find the even numbers.
+4. Write a program that initializes an array with integer values, then removes all the odd numbers from the array. Hint: use a loop and the `%` operator to find the even numbers.
 
 
 
@@ -105,8 +105,8 @@ These are solutions to the problems above. Note that for each problem, there may
    } else {
      console.log("Index of the first occurrence of value is: " + i);
    }
-   ```
-   
+  ```
+  
 2. ```JavaScript
   const numbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29];
    let sum = 0;
@@ -115,8 +115,8 @@ These are solutions to the problems above. Note that for each problem, there may
      sum += number;
    }
    console.log ("The sum of the numbers in the array is: " + sum);
-   ```
-   
+  ```
+  
 3. ```JavaScript
   const fruits = ["apple", "bannanna", "lemon", "orange", "pear", "persimmon"]; 
    let longestName = ""; // start with no name.
@@ -128,8 +128,8 @@ These are solutions to the problems above. Note that for each problem, there may
      }
    }
    console.log(longestName); // print the longest fruit name
-   ```
-   
+  ```
+  
 4. ```JavaScript
   const fruits = ["apple", "bannanna", "lemon", "orange", "pear", "persimmon"]; 
    const reverseFruits = [];
@@ -143,8 +143,8 @@ These are solutions to the problems above. Note that for each problem, there may
    {
      console.log(fruit);
    }
-   ```
-   
+  ```
+  
    
 
 ### Using Array Methods
@@ -164,8 +164,8 @@ These are solutions to the problems above. Note that for each problem, there may
    } else {
      console.log("Index of the first occurrence of value is: " + indexOfNumber);
    }
-   ```
-   
+  ```
+  
 3. ```javascript
   let fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry', 'pear'];
   
@@ -185,8 +185,8 @@ These are solutions to the problems above. Note that for each problem, there may
    
    // log the resulting array to the console
    console.log(fruits);
-   ```
-   
+  ```
+  
 4. ```javascript
   let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
    
@@ -200,7 +200,7 @@ These are solutions to the problems above. Note that for each problem, there may
    // log the resulting array to the console
    console.log(numbers);
     
-   ```
+  ```
 
 
 
@@ -222,8 +222,8 @@ These are solutions to the problems above. Note that for each problem, there may
    }
    
    console.log("Sum of all elements in the array: " + sum);
-   ```
-   
+  ```
+  
 2. ```JavaScript
    let arr = [
      [1, 2, 3],

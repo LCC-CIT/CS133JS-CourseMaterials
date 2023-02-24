@@ -29,17 +29,18 @@ author: Brian Bird
 
 ## Announcements
 
-- I'm still working on grading the lab 4 production version. 
+Spring term classes for Computer Programming majors
+
+- CS 233JS Intermediate JavaScript
+- WR 227 Technical Writing 
+- CS 162N Computer Science 2: C# (.NET)
+- Program elective: Art 288, Introduction to Web Design and Social Media or another programming language.
 
 ## Q and A
 
 - Lab 5, Part 1, Array Exercises
   - Have you started it? Any questions?
 - Does anyone have any questions about anything?
-
-## Reading Quiz
-
-Review the quiz together
 
 
 
@@ -48,11 +49,11 @@ Review the quiz together
 ### Array Declaration and Initialization
 
 ```javascript
-let myArray = [];  // Declaration
+const myArray = [];  // Declaration
 ```
 
 ```javascript
-let starWars = ["Rey", "Finn", "Han Solo"];  // Declaration and Initialization
+const starWars = ["Rey", "Finn", "Han Solo"];  // Declaration and Initialization
 ```
 
 Arrays can contain mixed data types.
@@ -112,14 +113,14 @@ Arrays can contain other arrays (nested arrays).
 
 ```javascript
 // Declare a 2D array with three nested arrays
-let myArray = [
+const myArray = [
   [], [], []
 ];
 ```
 
 ```javascript
 // Initialize a 3 X 3 array
-let grid = [ [" ", " ", " "], [" ", " ", " "], [" ", " ", " "]];
+const grid = [ [" ", " ", " "], [" ", " ", " "], [" ", " ", " "]];
 
 // Put an X in the top-left, then center, then bottom-right squares
 grid[0][0] = "X";
@@ -138,7 +139,7 @@ grid[2][2] = "X";
 In the examples below, assume we have defined the array `continents` as shown below.
 
 ```javascript
-let continents = ["Asia", "Africa", "North America", "South America", "Antarctica", "Europe", "Australia"];
+const continents = ["Asia", "Africa", "North America", "South America", "Antarctica", "Europe", "Australia"];
 ```
 
 
@@ -212,15 +213,15 @@ continents.splice(2, 2, "Americas"); // Remove N. and S. America, replace with A
 Join two arrays.
 
 ```javascript
-let tooks = ["Merry", "Pippin"];
-let bagginses = ["Bilbo", "Frodo"];
-let hobbits = tooks.concat(bagginses);
+const tooks = ["Merry", "Pippin"];
+const bagginses = ["Bilbo", "Frodo"];
+const hobbits = tooks.concat(bagginses);
 ```
 
 Copy an array. This kind of copy is called a *deep copy*. because it copies all the elements in the array instead of just copying references.
 
 ```javascript
-let hobbitsCopy = [].concat(hobbits);
+const hobbitsCopy = [].concat(hobbits);
 ```
 
 
@@ -234,7 +235,7 @@ let hobbitsCopy = [].concat(hobbits);
 Removes the last element from an array and returns it.
 
 ```javascript
-let continent = continents.pop(); // removes Austrailia
+const continent = continents.pop(); // removes Austrailia
 ```
 
 
@@ -244,7 +245,7 @@ let continent = continents.pop(); // removes Austrailia
 Removes the first element from an array and returns it.
 
 ```javascript
-let continent = continents.shift(); // removes the first element, Asia
+const continent = continents.shift(); // removes the first element, Asia
 ```
 
 
@@ -255,8 +256,8 @@ let continent = continents.shift(); // removes the first element, Asia
 
 Adds an element to the end of an array and returns the length of the new array.
 
-```
-let arrayLength = continents.push("Austrailia"); // adds Austrailia at index = length
+```javascript
+const arrayLength = continents.push("Austrailia"); // adds Austrailia at index = length
 ```
 
 
@@ -265,8 +266,8 @@ let arrayLength = continents.push("Austrailia"); // adds Austrailia at index = l
 
 Adds an element to the beginning of an array and returns the length of the new array.
 
-```
-let arrayLength = continents.unshift("Asia"); // adds Asia at index 0
+```javascript
+const arrayLength = continents.unshift("Asia"); // adds Asia at index 0
 ```
 
 
@@ -279,6 +280,6 @@ let arrayLength = continents.unshift("Asia"); // adds Asia at index 0
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) 2018, revised <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) 2018, revised <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------

@@ -27,11 +27,11 @@ author: Brian Bird
 
 ## Introduction
 
-### Announcements
-
-- I'm still working on grading the lab 4 production version. 
-
 ### Q and A
+
+- Did anyone look at the [additional loop practice problems](../Labs/Lab04/PracticeProblems-Loops.html) I posted? 
+  - Were they helpful? 
+  - If you want more, I can post some for other topics; like arrays.
 
 - Lab 5, Part 2, any questions?
 - Does anyone have any questions about anything?
@@ -353,6 +353,6 @@ balin = boffer;  // this works!
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) written in 2020 and revised in <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) written in 2020 and revised in <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------

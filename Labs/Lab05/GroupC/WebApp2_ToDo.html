@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- By Brian Bird, 5/15/2020 -->
+    <!-- By Brian Bird, 5/6/2022, Corrected version  -->
     <meta charset="UTF-8">
     <script src="ToDo.js"></script>
 
@@ -13,7 +13,7 @@
         thead {
             font-size: larger;
         }
-
+        
         table,
         td,
         th {
@@ -21,7 +21,7 @@
             border-style: solid;
             padding: 10px;
         }
-
+        
         #newGrade {
             width: 25px;
         }
@@ -32,6 +32,7 @@
 <!--------------->
 <!-- HTML BODY -->
 <!--------------->
+
 <body onload="initialize()">
     <h1>ToDo List</h1>
     <table>
@@ -55,7 +56,7 @@
         <tfoot>
             <tr>
                 <td colspan='5'><input id="taskName" placeholder="Task name">
-                    <input id="priority" placeholder="Priority"> 
+                    <input id="priority" placeholder="Priority">
                     <button onclick="addRowAndTask()">Add Task</button></td>
             </tr>
         </tfoot>
@@ -77,10 +78,18 @@
             completions[2] = false;
             addRows();
         }
-        
+
         function addRows() {
             for (let i = 0; i < tasks.length; i++) {
                 addRow(i);
+            }
+        }
+
+        // Remove all rows from the table
+        function removeRows() {
+            for (let i = 0; i < tasks.length; i++) {
+                let row = document.getElementById("row" + i);
+                row.parentElement.removeChild(row);
             }
         }
 
@@ -92,17 +101,18 @@
             newRow.childNodes[3].innerHTML = tasks[i]; // task name
             newRow.childNodes[7].innerHTML = priorities[i]; // grade
             // Event handler for the delete button
-            newRow.childNodes[5].firstChild.onclick = function () { 
-                removeTask(i);
-                let row = document.getElementById("row" + i);
-                row.parentElement.removeChild(row);
+            newRow.childNodes[5].firstChild.onclick = function() {
+
+                removeRows(); // remove all rows from the table
+                removeTask(i); // remove task the global array
+                addRows(); // add rows to the table for all the tasks
             };
 
             // Event handler for the done checkbox
-            newRow.childNodes[9].firstChild.onclick = function () { 
+            newRow.childNodes[9].firstChild.onclick = function() {
                 let rowElements = document.getElementById("row" + i).childNodes;
                 changeDone(i, rowElements[9].firstChild.checked);
-                rowElements[9].lastChild.textContent = completions[i] ? "Done":"";
+                rowElements[9].lastChild.textContent = completions[i] ? "Done" : "";
             };
             document.getElementById("listRows").appendChild(newRow);
         }
@@ -113,8 +123,6 @@
             addTask(name, priority);
             addRow(tasks.length - 1);
         }
-
-
     </script>
 </body>
 

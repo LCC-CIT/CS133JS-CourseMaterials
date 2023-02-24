@@ -32,12 +32,12 @@ author: Brian Bird
 ### Declaration and Initialization
 
 ```javascript
-let myArray = [];  // Declaration of an empty array
+const myArray = [];  // Declaration of an empty array
 let myString = "";  // Declaration of an empty string
 ```
 
 ```javascript
-let starWars = ["Rey", "Finn", "Han Solo"];  // Declaration and Initialization
+const starWars = ["Rey", "Finn", "Han Solo"];  // Declaration and Initialization
 let prolog = "A long time ago in a galaxy far, far away..."
 ```
 
@@ -60,7 +60,7 @@ console.log(prolog.length);   // Getting the string length
 #### Add a value or element to the end
 ```javascript
 starWars[starWars.length] = "Yoda";   // Adding a new element and value
-prolog[prolog.length] = "A New Hope"; // Adding another string (more characters)
+prolog += "A New Hope"; // Adding another string (more characters)
 ```
 
 
@@ -68,7 +68,7 @@ prolog[prolog.length] = "A New Hope"; // Adding another string (more characters)
 ####Get the index location of a value
 
 ```javascript
-console.log(continents.indexOf("Finn"));  // Gets the index of the elmeent containing "Finn"
+console.log(starWars.indexOf("Finn"));  // Gets the index of the elmeent containing "Finn"
 console.log(prolog.indexOf("g"));  // Gets the index of the character "g"
 ```
 
@@ -82,6 +82,6 @@ console.log(prolog.indexOf("g"));  // Gets the index of the character "g"
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) 2018, revised <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) 2018, revised <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------

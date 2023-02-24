@@ -111,13 +111,19 @@ This array contains string values.
   let starWars = ["Rey", "Finn", "Han Solo", "C-3PO", "Chewbacca"];
   ```
 
+- Best practice, is to declare an array as a constant:
 
+  ```javascript
+  const starTrek = ["Kirk", "Hulu", "McCoy", "Spok", "Scott"];
+  ```
+  
+  - This doesn't mean you can't change the 
 
 ## Accessing Array Elements
 
 The code shown below will access the array element with an index of 2  and assign the value stored there, "Han Solo", to the variable `character`.
 
-`let character = starWars[2];`  
+`const character = starWars[2];`  
                                     &uarr;               &uarr;  
                           array name    index
 
@@ -220,7 +226,7 @@ The *while* loop below iterates as long as the user keeps entering names.
 ```javascript
 // Enter values in an array until the user enters "done"
 let name = "";
-let names = [];
+const names = [];
 while (name != "done")
 {
    name = prompt("Enter a name");
@@ -253,7 +259,7 @@ Example:
 
 ```javascript
 // Declare and initialize an array of two arrays (a 2D array)
-let certificates = [
+const certificates = [
 ["Mobile App Development", "Front End Web Devevlopment", "Database Specialist"],
 ["Computer Network Monitoring and Mangement"]
 ];
@@ -265,7 +271,7 @@ console.log(certificates[0][2]);
 Example, a grid for a tic-tac-toe game:
 
 ```javascript
-let grid = [ ["", "", ""], ["", "", ""], ["", "", ""]];
+const grid = [ ["", "", ""], ["", "", ""], ["", "", ""]];
 
 // Put an X in the top-left, then center, then bottom-right squares
 grid[0][0] = "X";
@@ -292,9 +298,9 @@ grid[2][2] = "X";
 
 
 
-[^1]: `let planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"]`
-[^2]: The JavaScript `for...of` loop is similar to the `for...each` loop in other languages like C++, C# or Python. JavaScript has a `ForEach()` array method, but it has a different purpose.
+[^1]: `const planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto"]`
+[^2]: The JavaScript `for...of` loop is similar to the `for...each` loop in other languages like C++, C# or Python. JavaScript also has a `ForEach()` array method, but it has a different purpose.
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) 2018, revised <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) 2018, revised <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

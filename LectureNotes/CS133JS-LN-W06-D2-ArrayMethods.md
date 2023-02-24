@@ -151,21 +151,41 @@ A property that contains the length of an array.
 console.log(continents.length);
 ```
 
+Use this property when you don't know how many elements are in an array, but need to do some operation that requires knowing that. For example:
+
+```javascript
+// Exchange the value stored at the end of the array with the one stored at the beginning. (Move Asia to the end of the array and Austrailia to the beginning).
+let firstValue = continents[0];
+let lastIndex = continents.length -1;
+let lastValue = continents[lastIndex];
+continents[0] = lastValue;
+continents[lastIndex] = firstValue;
+```
 
 
-### `indexOf()`
+
+### `indexOf(...)`
 
 A method that returns the index of the element containing a specified value.
 If the value isn't found, indexOf will return -1.
 
 ```javascript
+// This will print 4 to the console
 console.log(continents.indexOf("Antarctica"));
+```
+
+Use this method when you need to do an operation on a specific element of the array, but only know the value stored in that element and not its index. For example:
+
+```javascript
+// Change the name of South America to américa del Sur
+let index = continents.indexOf("South America");
+continents[index] = "américa del Sur";
 ```
 
 
 
 ## Modify Array Elements
-### `splice`
+### `splice(...)`
 
 The splice() method can be used to <u>insert</u>, <u>remove</u>, or <u>replace</u> elements anywhere in an array. It returns the removed elements.
 
@@ -187,7 +207,7 @@ continents.splice(2, 2, "Americas"); // Remove N. and S. America, replace with A
 
 
 
-### `concat`
+### `concat(...)`
 
 Join two arrays.
 
@@ -209,7 +229,7 @@ let hobbitsCopy = [].concat(hobbits);
 
 ## Remove Array Elements
 
-### `pop`
+### `pop()`
 
 Removes the last element from an array and returns it.
 
@@ -219,7 +239,7 @@ let continent = continents.pop(); // removes Austrailia
 
 
 
-### `shift`
+### `shift()`
 
 Removes the first element from an array and returns it.
 
@@ -231,7 +251,7 @@ let continent = continents.shift(); // removes the first element, Asia
 
 ## Add Array Elements
 
-### `push`
+### `push(...)`
 
 Adds an element to the end of an array and returns the length of the new array.
 
@@ -241,7 +261,7 @@ let arrayLength = continents.push("Austrailia"); // adds Austrailia at index = l
 
 
 
-### `unshift`
+### `unshift(...)`
 
 Adds an element to the beginning of an array and returns the length of the new array.
 

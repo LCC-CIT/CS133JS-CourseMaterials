@@ -277,13 +277,21 @@ for (let item in fili)
 
 ### All the Other Loops
 
-#### Get an Array with `Object.keys()`
+#### Get an Array with `Object.keys()` or `Object.values()`
 
 JavaScript objects have a pre-defined method for getting an array of property keys, the `Object.keys()` method. This makes it easy to use all the other loops with object properties.
 
 ```javascript
-let filiArray = Object.keys(fili);
+let filiKeyArray = Object.keys(fili);
 ```
+
+You can also get an array of all the values in an object like this:
+
+```javascript
+let filiValueArray = Object.values(fili);
+```
+
+
 
 ####`for...of` Loop&mdash;Just for Arrays
 

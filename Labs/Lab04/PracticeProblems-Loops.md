@@ -8,14 +8,14 @@
 
 ## Programming Problems
 
-The solutions to all of these problems are at the bottom of the page. The best way to learn from thesis is  to solve these problems without looking at the solutions. When you are done you can compare your solutions to the solutions at the bottom of the page.
+The solutions to all of these problems are at the bottom of the page. The best way to learn from these is  to solve these problems without looking at the solutions. When you are done you can compare your solutions to the solutions at the bottom of the page.
 
 You can also use the solutions to these problems as examples to help you understand loop concepts so you can solve other problems.
 
 ### While Loops
 
 1. Write a while loop that asks the user to enter a number greater than 10, and keeps asking until the user enters a valid number. Then, print the  number to the console.
-2. Write a while loop that prompts the user to enter a string, and then prints the string backwards to the console using the `.charAt()` method. Hint: you can get the number of characters in a string using the `length` property; like this: `int numberChars = someString.length;`
+2. Write a while loop that prompts the user to enter a string, and then prints the string backwards to the console using the `.charAt()` method. Hint: you can get the number of characters in a string using the `length` property; like this: `int numberChars = someString.length;`
 3. Write a while loop that prompts the user to enter a sentence, and then  capitalizes the first letter of every word in the sentence. Print the  capitalized sentence to the console.
 
 

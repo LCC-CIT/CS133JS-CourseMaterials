@@ -8,9 +8,9 @@ These problems are designed to give you practice using arrays, array methods and
 
 ## Programming Problems
 
-The solutions to all of these problems are at the bottom of the page. The best way to learn from thesis is  to solve these problems without looking at the solutions. When you are done you can compare your solutions to the solutions at the bottom of the page.
+The solutions to all of these problems are at the bottom of the page. The best way to learn from these is  to solve these problems without looking at the solutions. When you are done you can compare your solutions to the solutions at the bottom of the page.
 
-You can also use the solutions to these problems as examples to help you understand loop concepts so you can solve other problems.
+You can also use the solutions to these problems as examples to help you understand the coding concepts so you can solve other problems.
 
 
 

@@ -318,8 +318,7 @@ These are solutions to the problems above. Note that for each problem, there may
    
    function booksPublishedAfter2000(books) {
      const newBooks = [];
-     for (let i = 0; i < books.length; i++) {
-       const book = books[i];
+     for (const book of books) {
        if (book.year > 2000) {
          newBooks.push(book);
        }
@@ -327,10 +326,9 @@ These are solutions to the problems above. Note that for each problem, there may
      return newBooks;
    }
    
-   console.log(booksPublishedAfter2000(books)); // Output: [{ title: "The Da Vinci Code", author: "Dan Brown", year: 2003 }, { title: "The Hunger Games", author: "Suzanne Collins", year: 2008 }]
-   
+   console.log(booksPublishedAfter2000(books));
    ```
-
+   
 3. ```javascript
       const cars = [
         { make: "Tesla", model: "Model S", year: 2020, color: "white" },

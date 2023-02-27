@@ -29,7 +29,6 @@ author: Brian Bird
 
 ## Announcements
 
-- I've finished grading lab 4 and will start grading lab 5 tomorrow.
 - Don't forget the reading quiz that closes tomorrow.
   - The tutorial you are reading has examples that use *arrow functions*. You will learn about those next term. I've translated those example to use "normal" functions.
 
@@ -74,6 +73,14 @@ By <a href="//commons.wikimedia.org/w/index.php?title=User:Eib&amp;action=edit&a
 
 
 ## Referencing HTML Elements
+
+We can reference elements directly through the DOM tree, like this:
+
+```javascript
+document.body.children[0].innerHTML = "Dom Demo"; // Change the h1 element
+```
+
+But usually, we use some method to search for an element by id, selector or some other identifying feature.
 
 For the examples below, assume we have this in our web page:
 

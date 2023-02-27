@@ -170,7 +170,7 @@ The `textContent` property is the best one to use when you just need to output t
 
 ### `value`
 
-This object property is useful for getting or setting the value in an HTML input element. The input element would normally be in an HTML form.
+This object property is useful for getting or setting the value in an HTML `<input>` element. The input element would normally be in an HTML form.
 
 ```html
 <input id="name" placeholder="Your name">
@@ -184,7 +184,7 @@ This object property is useful for getting or setting the value in an HTML input
 
 ## JavaScript Events
 
-JavaScript can respond to various things that happen in a browser. These things are called *events*.
+JavaScript can respond to various actions a user preforms when interacting with a web page in a browser. These user actions are called *events*.
 
 ### Common events
 
@@ -228,24 +228,22 @@ We can use a button with an onclick event handler to get user input. Here's an e
 
 ```html
 Enter your name:<input>
-<button onclick="inputName()">Enter</button>
+<button onclick="getName()">Enter</button>
 
 <p>Hello: <span id="name"></span></p>
 <script>
-  function inputName() {
+  function getName() {
     let name = document.querySelector("input").value;
     document.querySelector("#name").innerHTML = name;
   }
 </script>
 ```
 
-- The onclick event can be used with any element, but we frequently use it with a button. 
+Note: The `onclick` event can be used with any element, but we frequently use it with a button. 
 
+## When to Use an HTML `<form>`
 
-
-## When to Use an HTML Form
-
-The purpose of a form is to send the information entered in the form to a program running on a server. Only use a form if that is what you want to do. If you are just using input elements with JavaScript running in the browser, don't put the input elements in a form.
+The purpose of a `<form>` is to send the information entered in the form to a program running on a server. Only use a form if that is what you want to do. If you are just using input elements with JavaScript running in the browser, don't put the input elements in a form.
 
 When you click a button on a form, the information entered on the form will be sent in an HTTP request either to a program at a URL specified in the form's *action* attribute or back to the URL of the web page the form is in&mdash;this is called a *postback*. A postback will reset the web page to its original state and any information entered on the form will be lost.
 

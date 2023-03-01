@@ -89,7 +89,7 @@ document.getElementById("ex").innerHTML = "<u>This</u> text contains <em>tags</e
 A property used to get or set just the text between the tags of an element.
 
 ```javascript
-document.getElementById("ex").innerHTML = "This is just plain text."
+document.getElementById("ex").textContent = "This is just plain text."
 ```
 
 #### `value`
@@ -208,15 +208,17 @@ Try changing the parameter passed to the event handler to:
 
 ### Adding an Event Handler to an Element Using JavaScript
 
-You can add an event hander to an HTML element using JavaScript code rather than adding it as an attribute of the element.
+You can add an event hander to an HTML element using JavaScript code rather than adding it as an attribute of the element using the `addEventListener` method.
+
+Note that the first parameter is the name of the event. Events are named without the "on" prefix. For example, use the event name "<u>click</u>", not "onclick".
 
 ```html
 <button>Click me</button>  <!-- The handler gets added to this button -->
 <p><span></span></p>       <!-- The handler puts text into this span -->
 
 <script>
-  // Use addEventListener to add the handler, buttonPressed, to the button
-  document.querySelector("button").addEventListener("onclick", buttonPressed);
+  // Use addEventListener to add the handler named buttonPressed to the button
+  document.querySelector("button").addEventListener("click", buttonPressed);
   
   // Event handler
 	function buttonPressed() {
@@ -235,7 +237,7 @@ You can also define an *anonymous function* when adding the event listener:
 
 <script>
   // Use addEventListener to add a handler without a name
-  document.querySelector("button").addEventListener("onclick", 
+  document.querySelector("button").addEventListener("click", 
       function ()  // Anonymous event handler function definition
  			{
 				document.querySelector("span").textContent = "Button pressed!";
@@ -253,15 +255,15 @@ If you want to add a function that has parameters to an HTML element, you need t
 <p><span></span></p>
 
 <script>
-  document.querySelector("button").addEventListener("onclick", 
+  document.querySelector("button").addEventListener("click", 
   function ()  // Anonymous function that calls the event handler
  {
-			buttonPressed("A");
+			buttonPressed("I was clicked!");
   });
                                                     
   // Actual event handler
-  function buttonPressed(letter) {
-    document.querySelector("span").textContent = letter;
+  function buttonPressed(message) {
+    document.querySelector("span").textContent = message;
   }
 </script>
 ```

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Written by Brian Bird, 3/1/2023 -->
+    <meta charset="UTF-8">
+    <title>Event Handlers</title>
+</head>
+
+<!-- The onload event will cause ListTrees() to be called 
+    AFTER this page is fully loaded into the browser. -->
+
+<body onload="listTrees()">
+    <h1>Events and Event Handler Functions</h1>
+
+    <h2>Adding an Event Handler to an HTML Element Programmatically</h2>
+
+    <h3>Adding an Event Handler Using an Named Function Defintion</h3>
+
+    <button>Click me</button>
+    <!-- The handler gets added to this button -->
+    <p>Button status: <span></span></p>
+    <!-- The handler puts text into this span -->
+
+    <script>
+        // Use addEventListener to add the handler named buttonPressed to the button
+        document.querySelector("button").addEventListener("click", buttonPressed);
+
+        // Event handler
+        function buttonPressed() {
+            document.querySelector("span").textContent = "Button clicked!";
+        }
+    </script>
+
+    <h3>Adding an Event Handler to an Element using an Anonymous Function</h3>
+
+    <button id="button2">Click me too</button>
+    <p>Button status: <span id="output"></span></p>
+
+    <script>
+        // Use addEventListener to add a handler without a name
+        document.querySelector("#button2").addEventListener("click",
+            function() // Anonymous event handler function definition
+            {
+                document.querySelector("#output").textContent = "Button clicked!";
+            }
+        );
+    </script>
+
+    <h3>Wrapping an Event Handler Function in an Anonymous Function</h3>
+    <p>We do this so we can pass a parameter to the event handler function.</p>
+
+    <button id="button3">Button Three</button>
+    <p>From button event handler: <span id="span3"></span></p>
+
+    <script>
+        document.querySelector("#button3").addEventListener("click",
+            function() // Anonymous function that calls the event handler
+            {
+                buttonPressed("I was clicked!");
+            });
+
+        // Actual event handler
+        function buttonPressed(message) {
+            document.querySelector("#span3").textContent = message;
+        }
+    </script>
+
+    <h3>Running an Event Handler After the Page has Loaded</h3>
+
+    <!-- This script won't execute until the page is fully loaded -->
+    <script>
+        let trees = ["Oak", "Pine", "Cedar", "Fir", "Birch"];
+
+        function listTrees() {
+            for (tree of trees) {
+                document.querySelector("ol").innerHTML += "<li>" + tree + "</li>";
+            }
+        }
+    </script>
+    <!-- The list of trees will be put here -->
+    <ol>
+    </ol>
+</body>
+
+</html>

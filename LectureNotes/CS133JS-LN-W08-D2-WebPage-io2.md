@@ -186,62 +186,80 @@ let selectProduce = document.querySelectorAll("ol .highlight");  // array of hig
 
 ### Event Handlers with Parameters
 
-Use single quotes to pass an argument to an event handler that has a parameter. In this example, one button's event handler is passed an `'A'`, the other a `'B'` :
+Remember that an *event handler* is a function and functions can have parameters. Use single quotes to pass an argument to an event handler that has a parameter. In this example, one button's event handler is passed an `'A'`, the other a `'B'` :
 
 ```html
 <button onclick="buttonPressed('A')">Button A</button>
 <button onclick="buttonPressed('B')">Button B</button>
 <p>Button <span></span> was pressed.</p>
 <script>
-  function buttonPressed(letter) {
-    document.querySelector("span").textContent = letter;
+  function buttonPressed(buttonParam) {
+    document.querySelector("span").textContent = buttonParam;
   }
 </script>
 ```
 
+#### Exercise
+
+Try changing the parameter passed to the event handler to:
+
+- A word instead of a single letter
+- A number, then do something with the number, like add it to a total.
+
 ### Adding an Event Handler to an Element Using JavaScript
 
-You can add an event hander to an HTML element in JavaScript rather than adding it as an attribute of the element.
+You can add an event hander to an HTML element using JavaScript code rather than adding it as an attribute of the element.
 
 ```html
-<button>Click me</button>
-<p><span></span></p>
+<button>Click me</button>  <!-- The handler gets added to this button -->
+<p><span></span></p>       <!-- The handler puts text into this span -->
 
 <script>
+  // Use addEventListener to add the handler, buttonPressed, to the button
   document.querySelector("button").addEventListener("onclick", buttonPressed);
   
+  // Event handler
 	function buttonPressed() {
 			document.querySelector("span").textContent = "Button pressed!";
   }
 </script>
 ```
 
+
+
 You can also define an *anonymous function* when adding the event listener:
-
-
 
 ```html
 <button>Click me</button>
 <p><span></span></p>
 
 <script>
-  document.querySelector("button").addEventListener("onclick", function () {
-			document.querySelector("span").textContent = "Button pressed!";
-  });
+  // Use addEventListener to add a handler without a name
+  document.querySelector("button").addEventListener("onclick", 
+      function ()  // Anonymous event handler function definition
+ 			{
+				document.querySelector("span").textContent = "Button pressed!";
+  		}
+		);
 </script>
 ```
 
-If you want to add a function that has parameters to an HTML element, you need to wrap that function in an anonymous function, like this:
+
+
+If you want to add a function that has parameters to an HTML element, you need to "wrap" that function in an anonymous function ("wrap", means call it from inside another function), like this:
 
 ```html
 <button>Button A</button>
 <p><span></span></p>
 
 <script>
-  document.querySelector("button").addEventListener("onclick", function () {
+  document.querySelector("button").addEventListener("onclick", 
+  function ()  // Anonymous function that calls the event handler
+ {
 			buttonPressed("A");
   });
                                                     
+  // Actual event handler
   function buttonPressed(letter) {
     document.querySelector("span").textContent = letter;
   }
@@ -256,6 +274,7 @@ Sometimes need to execute some code as soon as the page loads. The example below
 
 ```html
 <body onload="listTrees()"> 
+  <!-- This script won't execute until the page is fully loaded -->
   <script>
     let trees = ["Oak", "Pine", "Cedar", "Fir", "Birch"];
     function listTrees() {
@@ -264,6 +283,7 @@ Sometimes need to execute some code as soon as the page loads. The example below
       }
     }
   </script>
+  <!-- The list of trees will be put here -->
   <ol>
   </ol>
 </body>
@@ -283,4 +303,4 @@ Sometimes need to execute some code as soon as the page loads. The example below
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), written 2022, revised winter of <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

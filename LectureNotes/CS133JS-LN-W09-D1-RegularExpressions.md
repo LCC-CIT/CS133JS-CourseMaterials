@@ -91,18 +91,18 @@ You might have used `*` and `?` as wildcards in a search before.
   Example: `/Bo*t/` will match:
 
   - "Bt"
-  - "Boat"
+  - "Bot"
   - "Boot"
 
 - Adding the `+` will match <u>one</u>-to-many of the character preceding the `+`.
 
-  Example: `/Bo*t/` will match:
+  Example: `/Bo*+t/` will match:
 
-  - "Boat"
+  - "Bot"
   - "Boot"
   - But not "Bt"
 
-- The star, `.*` combination will match zero or more occurances of any character(s). 
+- The dot-star, `.*` combination will match zero or more occurances of any character(s). 
 
   - For example, the pattern,`/she jump.* high/`, will match: 
 
@@ -123,7 +123,7 @@ You might have used `*` and `?` as wildcards in a search before.
 
     This is because, if the regexp pattern doesn't specify that something must come before or after the pattern, then anything can.
 
-- The plus, `.+` combination will match one or more occurances of any character(s). 
+- The dot-plus, `.+` combination will match one or more occurances of any character(s). 
   For example, the pattern, `/she jump.+ high/`, will match all the same strings as `/she jump.* high/` <u>except</u>  "she jump high".
 
   

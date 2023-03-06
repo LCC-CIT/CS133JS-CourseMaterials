@@ -41,9 +41,9 @@ author: Brian Bird
 
 ## Regular Expressions
 
-One way to compare strings to see if they match is to use a  Regular Expression object, this object is a part of the JavaScript language, and also of almost every other programming language.
+One way to compare strings to see if they match is to use a  *Regular Expression* object, this object is a part of the JavaScript language, and something similar exists in almost every other programming language. 
 
-`RegExp` – Regular expression object. Used for pattern matching in strings
+`RegExp` – Regular expression object. Used for pattern matching in strings. A JavaScript RegExp object can be created two ways:
 
 - Defined with forward slashes: `let pattern1 = /matchThis/;`
 
@@ -57,16 +57,16 @@ These are the most commonly used methods. For a comprehensive list, see the [des
 
 #### `test`  
 
-This method will return true when you pass it a string that matches the string in the RegExp object.
+This method will return true when you pass it a string that contains a match for the pattern defined in the RegExp object.
 
 ```javascript
 let pattern = /matchThis/;
-let foundMatch = pattern.test("matchThis"); // foundMatch will be true
+let foundMatch = pattern.test("Does matchThis match?"); // foundMatch will be true
 ```
 
 #### `exec`
 
-This method will return an array of matched sub-strings which has a number of properties; including the index of the first match in the string&mdash;if it finds one or more matches, otherwise it returns null.
+This method will return an array of matched sub-strings, the array also has a number of properties; including the index of the first match in the string&mdash;if it finds one or more matches, otherwise it returns null.
 
 ```javascript
 pattern = /th/;
@@ -79,21 +79,52 @@ let matches = pattern.exec("There are two matches in this sentence for 'th'.");
 ### Matching "wild card" Characters
 
 You might have used `*` and `?` as wildcards in a search before. 
- With `RegExp`, the syntax is a little different; you use `.` to match any single character. 
- Adding a`*` will match <u>zero</u>-to-many characters. 
-Adding the `+` will match <u>one</u>-to-many characters.
+ With `RegExp`, the syntax is a little different:
 
-- 
-  First of all, note that these patterns are the same! 
+-  Use `.` to match any single character. 
+  Example: `/They l.ve/` will match:
+
+  - "They live"
+  - "They love"
+
+-  Adding a `*` will match <u>zero</u>-to-many of the character preceding the `*`. 
+  Example: `/Bo*t/` will match:
+
+  - "Bt"
+  - "Boat"
+  - "Boot"
+
+- Adding the `+` will match <u>one</u>-to-many of the character preceding the `+`.
+
+  Example: `/Bo*t/` will match:
+
+  - "Boat"
+  - "Boot"
+  - But not "Bt"
+
+- The star, `.*` combination will match zero or more occurances of any character(s). 
+
+  - For example, the pattern,`/she jump.* high/`, will match: 
+
+    - "she jump high"
+
+    - "she jumped high"
+
+    - "she jumps high",
+
+    - "she jumps high all the time."
+
+    - "Yes, she jumps high!"
+
+  - Interestingly, all these regexp patterns are the same:
 
 
-  `/she jump/` is the same as: `/she jump.*/`, `/.*she jump/`, or `/.*she jump.*/`.
+      `/she jump/` is the same as: `/she jump.*/`, `/.*she jump/`, or `/.*she jump.*/`.
 
-  If the regex pattern doesn't specify that something come before or after the pattern, then anything can.
+    This is because, if the regexp pattern doesn't specify that something must come before or after the pattern, then anything can.
 
-- The star, `*` will match any or no additional characters. For example, the pattern,`/she jump.* high/`, will match: "she jump high", "she jumped high", "she jumps high", "she jumps high all the time.", and "Yes, she jumps high!".
-
-- The plus, `+` will match one or more additional characters. For example, the pattern,`/she jump.+ high/`, will match: all the same strings as above <u>except</u>  "she jump high".
+- The plus, `.+` combination will match one or more occurances of any character(s). 
+  For example, the pattern, `/she jump.+ high/`, will match all the same strings as `/she jump.* high/` <u>except</u>  "she jump high".
 
   
 
@@ -127,7 +158,7 @@ Adding the `+` will match <u>one</u>-to-many characters.
 
 ### Flags
 
-- RegExp flags (aka properties): g – global, i – ignoreCase, m – multiline.
+- RegExp flags (aka properties): `g` – global, `i` – ignoreCase, `m` – multiline.
 
   - Put the property after the slash that ends the regular expression: 
 
@@ -147,9 +178,13 @@ Adding the `+` will match <u>one</u>-to-many characters.
 
   `let pattern = /^[A-Z][a-z]*/`
 
+  (There can be zero or more lower case letters following the capital letter at the beginning. They may be followed by anything, including upper case letters.)
+
 - The $ specifies that a char or group must be at the end of the string. For example, now only the first char can be capitalized:  
 
   `let pattern = /^[A-Z][a-z]*$/`
+  
+  (All the characters following the first character must be lower case all the way to the end.)
   
   
 
@@ -175,7 +210,7 @@ Escape character – backslash is an escape character that lets you use a specia
 
 ### Metacharacters
 
-Metacharacters are characters with a special meaning. A parial listing is shown below. Notice that the upper-case versions do the inverse of the lower-case versions. 
+Metacharacters are characters with a special meaning. A partial listing is shown below. Notice that the upper-case versions do the inverse of the lower-case versions. 
 
 | Metacharacter | Description                                                  |
 | ------------- | ------------------------------------------------------------ |
@@ -221,7 +256,7 @@ console.log(pattern.test("Python is an interesting language."));
 ### Examples
 
 - Test for a valid e-mail address: 
-   (also uses {2,} to indicate a minimum of 2 characters)
+   (This pattern uses `{2,}` to indicate a minimum of 2 characters.)
 
   `let pattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i`
 
@@ -251,4 +286,4 @@ Try out regular expressions to see how they work with different test strings.
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), written 2018, updated <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

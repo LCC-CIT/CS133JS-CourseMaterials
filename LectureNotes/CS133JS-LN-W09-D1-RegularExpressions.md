@@ -71,7 +71,7 @@ This method will return an array of matched sub-strings, the array also has a nu
 ```javascript
 pattern = /th/;
 let matches = pattern.exec("There are two matches in this sentence for 'th'.");
-// matches: ["th"], matches.index: 13
+// matches: ["th"], matches.index: 25
 ```
 
 
@@ -96,7 +96,7 @@ You might have used `*` and `?` as wildcards in a search before.
 
 - Adding the `+` will match <u>one</u>-to-many of the character preceding the `+`.
 
-  Example: `/Bo*+t/` will match:
+  Example: `/Bo+t/` will match:
 
   - "Bot"
   - "Boot"
@@ -120,7 +120,7 @@ You might have used `*` and `?` as wildcards in a search before.
 
 
       `/she jump/` is the same as: `/she jump.*/`, `/.*she jump/`, or `/.*she jump.*/`.
-
+    
     This is because, if the regexp pattern doesn't specify that something must come before or after the pattern, then anything can.
 
 - The dot-plus, `.+` combination will match one or more occurances of any character(s). 

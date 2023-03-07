@@ -116,14 +116,11 @@ You might have used `*` and `?` as wildcards in a search before.
 
     - "Yes, she jumps high!"
 
-  - Interestingly, all these regexp patterns are the same:
+  - Interestingly, all these regexp patterns are the same:  
+    `/she jump/` is the same as: `/she jump.*/`, `/.*she jump/`, or `/.*she jump.*/`.  
+    This is because, unless a regexp pattern doesn't specify that something must come before or after the pattern, then anything can.
 
-
-      `/she jump/` is the same as: `/she jump.*/`, `/.*she jump/`, or `/.*she jump.*/`.
-    
-    This is because, if the regexp pattern doesn't specify that something must come before or after the pattern, then anything can.
-
-- The dot-plus, `.+` combination will match one or more occurances of any character(s). 
+- The dot-plus, `.+` combination will match one or more occurrences of any character(s). 
   For example, the pattern, `/she jump.+ high/`, will match all the same strings as `/she jump.* high/` <u>except</u>  "she jump high".
 
   

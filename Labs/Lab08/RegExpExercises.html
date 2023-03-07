@@ -48,11 +48,12 @@
     </script>
 
     <p><span id="5a">5a. Validate a user name as containing between 8 and 15 upper or lower case letters or numbers.: </span><br>
-        <span id="5b">5b. Don't match an invalid password:</span></p>
+        <span id="5b">5b. Don't match an invalid user name: </span></p>
     <script>
         result = pattern5.test("SRogers99");
         checkAnswer("5a", true, result);
-        result = pattern5.test("CaptainAmerica2000");
+        result = pattern5.test("CaptainAmerica2000") || 
+            pattern5.test("SRogers") || pattern5.test("SRogers_99");
         checkAnswer("5b", false, result);
     </script>
 

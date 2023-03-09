@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- By Brian Bird, 5/6/2022, Corrected version  -->
+    <!-- By Brian Bird, 5/15/20, revised 4/8/20 by B. Bird -->
     <meta charset="UTF-8">
     <script src="ToDo.js"></script>
 
@@ -44,6 +44,7 @@
             </tr>
         </thead>
         <tbody id="listRows">
+            <!-- This row will be cloned to add new ones -->
             <tr id="hiddenRow" hidden>
                 <td>1</td>
                 <td>Task</td>
@@ -99,7 +100,10 @@
             newRow.removeAttribute("hidden"); // tr
             newRow.childNodes[1].innerHTML = i + 1; // line number
             newRow.childNodes[3].innerHTML = tasks[i]; // task name
-            newRow.childNodes[7].innerHTML = priorities[i]; // grade
+            newRow.childNodes[7].innerHTML = priorities[i]; // priority
+            newRow.childNodes[9].lastChild.textContent = completions[i] ? "Done" : "";
+            newRow.childNodes[9].firstChild.checked = completions[i];  // done
+
             // Event handler for the delete button
             newRow.childNodes[5].firstChild.onclick = function() {
 

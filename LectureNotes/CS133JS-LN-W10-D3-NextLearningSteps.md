@@ -16,14 +16,27 @@
 
 [TOC]
 
-## Second Year of the Computer Programming Degree
+## Courses Required for the Computer Programming Degree
 
-| Fall 2022                             | Winter 2023                           | Spring 2023                                                  |
-| ------------------------------------- | ------------------------------------- | ------------------------------------------------------------ |
-| Elective: CS140U, Linux,  recommended | Elective: CS295R, React,  recommended | Elective reccomendations: <br />CS240U, Adv. Linux, or <br />CS260, Data Structures |
-| CS233JS, Intermediate  JavaScript     | CS246 System Design                   | CS297 Programming Capstone                                   |
-| CS234N  Advanced C#                   | CS276 Database Systems and  Modeling  | CS280PR Co-op Ed: Computer Programming                       |
-| CS295N Web Dev. 1:  ASP.NET           | CS296N Web Dev. 2: ASP.NET            |                                                              |
+### First Year
+
+| Fall 2022                      | Winter 2023                               | Spring 2023                                                  |
+| ------------------------------ | ----------------------------------------- | ------------------------------------------------------------ |
+|                                | Elective: CS235AM, Mobile App Development | Elective reccomendations: <br />Elective: CS235AM, Mobile App Development |
+| CIS 195, Web Authoring 1: HTML | CS246 System Design                       | CS297 Programming Capstone                                   |
+| CS234N  Advanced C#            | CS276 Database Systems and  Modeling      | CS280PR Co-op Ed: Computer Programming                       |
+| CS295N Web Dev. 1:  ASP.NET    | CS296N Web Dev. 2: ASP.NET                |                                                              |
+
+
+
+### Second Year
+
+| Fall 2023                             | Winter 2024                               | Spring 2024                                                  |
+| ------------------------------------- | ----------------------------------------- | ------------------------------------------------------------ |
+| Elective: CS295R, React,  recommended | Elective: CS235AM, Mobile App Development | Elective reccomendations: <br />Elective: CS235AM, Mobile App Development |
+| CS233JS, Intermediate  JavaScript     | CS246 System Design                       | CS297 Programming Capstone                                   |
+| CS234N  Advanced C#                   | CS276 Database Systems and  Modeling      | CS280PR Co-op Ed: Computer Programming                       |
+| CS295N Web Dev. 1:  ASP.NET           | CS296N Web Dev. 2: ASP.NET                |                                                              |
 
 
 

@@ -16,31 +16,31 @@
 
 [TOC]
 
-## Courses Required for the Computer Programming Degree
+## Core Courses Required for the AAS in Computer Programming
+
+General ed courses that are required for the degree aren't shown here. These are only the required courses that are offered through the Computer Information Technology department.
 
 ### First Year
 
-| Fall 2022                      | Winter 2023                               | Spring 2023                                                  |
-| ------------------------------ | ----------------------------------------- | ------------------------------------------------------------ |
-|                                | Elective: CS235AM, Mobile App Development | Elective reccomendations: <br />Elective: CS235AM, Mobile App Development |
-| CIS 195, Web Authoring 1: HTML | CS246 System Design                       | CS297 Programming Capstone                                   |
-| CS234N  Advanced C#            | CS276 Database Systems and  Modeling      | CS280PR Co-op Ed: Computer Programming                       |
-| CS295N Web Dev. 1:  ASP.NET    | CS296N Web Dev. 2: ASP.NET                |                                                              |
-
-
+| Fall 2022                      | Winter 2023                                                  | Spring 2023                                                  |
+| ------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| CIS 100, Computing Careers     | Elective recommendation: <br />CIS 140U, Linux Administration | Elective recommendation: <br />CIS 240U, Linux Administration |
+| CIS 195, Web Authoring 1: HTML | CS 133JS, Beginning JavaScript                               | CS 133JS, Intermediate JavaScript                            |
+| CIS 125A or CS 160             | CS 161N, Beginning C#                                        | CS 162N, Intermediate C#                                     |
+|                                |                                                              |                                                              |
 
 ### Second Year
 
-| Fall 2023                             | Winter 2024                               | Spring 2024                                                  |
-| ------------------------------------- | ----------------------------------------- | ------------------------------------------------------------ |
-| Elective: CS295R, React,  recommended | Elective: CS235AM, Mobile App Development | Elective reccomendations: <br />Elective: CS235AM, Mobile App Development |
-| CS233JS, Intermediate  JavaScript     | CS246 System Design                       | CS297 Programming Capstone                                   |
-| CS234N  Advanced C#                   | CS276 Database Systems and  Modeling      | CS280PR Co-op Ed: Computer Programming                       |
-| CS295N Web Dev. 1:  ASP.NET           | CS296N Web Dev. 2: ASP.NET                |                                                              |
+| Fall 2023                             | Winter 2024                                                 | Spring 2024                                                 |
+| ------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- |
+| Elective: CS295R, React,  recommended | Elective recommendation: CS 235AM, Mobile App Development 1 | Elective recommendation: CS 235IM, Mobile App Development 2 |
+| CS 234N  Advanced C#                  | CS 246 System Design                                        | CS297 Programming Capstone                                  |
+| CS 295N Web Dev. 1:  ASP.NET          | CS 275 Data Modeling and SQL                                | CS 276, Advanced SQL                                        |
+| CS 206 Co-op CIT Seminar              | CS 296N Web Dev. 2: ASP.NET                                 | CS280PR Co-op Ed: Computer Programming                      |
 
 
 
-## Continue to Learn and Don't Forget JavaScript over the Summer
+## Continue to Learn and Don't Forget JavaScript over the Break
 
 ### Projects
 
@@ -79,4 +79,4 @@ The college has a subscription to [LinkedIn Learning](https://www.linkedin.com/l
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

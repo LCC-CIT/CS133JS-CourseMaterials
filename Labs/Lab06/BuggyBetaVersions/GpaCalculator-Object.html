@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- By Brian Bird, 5/16/2020, revised 5/11/2022 -->
+
+<head>
+    <meta charset="UTF-8">
+    <script src="GpaCalculator-Object.js"></script>
+
+    <!------------------>
+    <!-- Embedded CSS -->
+    <!------------------>
+    <style>
+        thead {
+            font-size: larger;
+        }
+        
+        table,
+        td,
+        th {
+            border-collapse: collapse;
+            border-style: solid;
+            padding: 10px;
+        }
+        
+        #credits,
+        #grade {
+            width: 30px;
+        }
+    </style>
+    <title>GPA Calculator</title>
+</head>
+
+<!--------------->
+<!-- HTML BODY -->
+<!--------------->
+
+<body onload="initialize()">
+    <h1>GPA Calculator</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Course Number</th>
+                <th>Credits</th>
+                <th>Grade</th>
+                <th>Points</th>
+            </tr>
+        </thead>
+        <tbody id="letterGradeListRows">
+            <tr id="hiddenRow" hidden>
+                <td>1</td>
+                <td>Course Number</td>
+                <td>0</td>
+                <td>U</td>
+                <td>0</td>
+            </tr>
+            <!-- More rows will be added programmatically -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"><input id="className" placeholder="Course Number"></td>
+                <td><input id="credits"></td>
+                <td><input id="grade"></td>
+                <td><button onclick="addRowAndCourse()">Add Class</button></td>
+            </tr>
+        </tfoot>
+    </table>
+    <h3>Totals</h3>
+    Credits: <span id="totalCredits"></span><br> GPA: <span id="gpa"></span><br><br> GPA is calculated based on quality points. <br> For more information on GPA calculation, read <a href="https://www.lanecc.edu/esfs/interpret-your-transcript" target="_blank">
+    Inerpreting Your Lane Transcript</a>.
+
+    <!---------------->
+    <!-- JavaScript -->
+    <!---------------->
+    <script>
+        function initialize() {
+            gpaCalculator.addCourse("CIS195", 4, "A-");
+            gpaCalculator.addCourse("CS160", 4, "A+");
+            gpaCalculator.addCourse("CIS100", 4, "B+");
+            addRows();
+        }
+
+        function addRows() {
+            for (let i = 0; i < gpaCalculator.courses.length; i++) {
+                addRow(i);
+            }
+        }
+
+        function addRow(i) {
+            let course = gpaCalculator.courses[i];
+            let newRow = document.getElementById("hiddenRow").cloneNode(true);
+            newRow.id = "row" + i; // tr
+            newRow.removeAttribute("hidden"); // tr
+            newRow.childNodes[1].innerHTML = i + 1; // Line number
+            newRow.childNodes[3].innerHTML = course.number; // class name
+            newRow.childNodes[5].innerHTML = course.credits; // credits
+            newRow.childNodes[7].innerHTML = course.grade; // letterGrade
+            newRow.childNodes[9].innerHTML = course.credits * course.getPoints(); // quality points
+            // Add the new row to the table
+            document.getElementById("letterGradeListRows").appendChild(newRow);
+            // Calculate totals that are shown below the table
+            document.getElementById("totalCredits").innerHTML = gpaCalculator.totalCredits();
+            document.getElementById("gpa").innerHTML = gpaCalculator.calcGpa().toFixed(2);
+
+        }
+
+        // Event handler to add a class
+        function addRowAndCourse() {
+            let name = document.getElementById("className").value; // get the input value
+            document.getElementById("className").value = ""; // clear the input text field
+            let credits = parseInt(document.getElementById("credits").value);
+            document.getElementById("credits").value = "";
+            let grade = document.getElementById("grade").value.toUpperCase();
+            document.getElementById("grade").value = "";
+            gpaCalculator.addCourse(name, credits, grade);
+            addRow(gpaCalculator.courses.length - 1); // passing in the index number of the course that was added
+        }
+    </script>
+</body>
+
+</html>

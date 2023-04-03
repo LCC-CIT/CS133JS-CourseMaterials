@@ -1,7 +1,7 @@
-/* Example code for workign with arrays of objects *
- * Written by Brian Bird, 5/16/2020                *
- * Revised by Brian Bird, 5/11/2022                *
- * Revised again by Brian Bird, 4/8/2023           */
+/* Written by Brian Bird, 5/16/2020 *
+ * Revised by Brian Bird, 5/11/2022 *
+ * Bugs added by B. Bird, 4/9/2023  *
+ * This is now the buggy beta version for alternate code reviews */
 
 "use strict";
 
@@ -29,11 +29,11 @@ function Course(courseNumber, credits, grade) {
         ["F", 0.0]
     ];
 
-    // Looks up a letter grade and returns the grade points for this course object
+    // Convert a letter grade to a grade points for this course object
     this.getPoints = function() {
         let points = -1; // return -1 if the grade isn't found
         // Find the grade and get the points
-        for (let i = 0; i < this.pointLookup.length && points < 0; i++) {
+        for (let i = 1; i < this.pointLookup.length && points < 0; i++) {
             if (this.grade == this.pointLookup[i][0]) {
                 points = this.pointLookup[i][1]; // set points equal to the value in the 2nd element of the nested array.
             }
@@ -56,16 +56,15 @@ const gpaCalculator = {
     totalCredits: function() {
         let total = 0;
         for (let course of this.courses) {
-            total += course.credits;
+            total = course.credits;
         }
         return total;
     },
 
     // Calculate GPA, based on quality points
     calcGpa: function() {
-        let points = 0;
         for (let i = 0; i < this.courses.length; i++) {
-            points += this.courses[i].getPoints() * this.courses[i].credits;
+            points += this.courses[i].getPoints() * this.courses[i];
         }
         return points / this.totalCredits();
     }

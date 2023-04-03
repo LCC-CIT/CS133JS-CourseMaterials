@@ -1,17 +1,15 @@
 <h1>Beginning Programming: JavaScript</h1>
 **Syllabus for winter 2023**
 
-
-
 | <u>Class</u>             |                                                              |      | <u>Instructor</u> |                                                              |
 | ------------------------ | ------------------------------------------------------------ | ---- | ----------------- | ------------------------------------------------------------ |
-| **Course Number**        | CS133JS                                                      |      | **Name**          | Brian Bird                                                   |
-| **CRNs**                 | 31314                                                        |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
+| **Course Number**        | CS 133JS                                                     |      | **Name**          | Brian Bird                                                   |
+| **CRN**                  | 41334                                                        |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
 | **Day & Time**           | M, W, 12:00&dash;1:50                                        |      | **Office Hours**  | M&ndash;Th, 4:00&ndash;4:50                                  |
-| **Room**                 | Building 19, Room 128<br />[Zoom meeting](https://lanecc.zoom.us/j/94442711657) |      | **Room**          | Building 19, Room 152<br />[Zoom meeting](https://lanecc.zoom.us/j/97027167891) |
-| **Instructional Method** | HyFlex                                                       |      |                   |                                                              |
+| **Room**                 | Building 19, Room 126<br />[Zoom meeting](https://lanecc.zoom.us/j/95957731932) |      | **Room**          | Building 19, Room 152<br />[Zoom meeting](https://lanecc.zoom.us/j/92539626829) |
+| **Instructional Method** | Hybrid<sup>1</sup>                                           |      |                   |                                                              |
 
-
+<sup>1</sup>	[**Hybrid Courses**](https://www.lanecc.edu/programs-academics/online-distance-learning/distance-education-course-modalities) are partially online. Some work is done in Moodle and the rest during regular meeting times. For this course, you can attend either in-Person or on Zoom at the time listed above. Attendance is required.
 
 <h2>Table of Contents</h2>
 
@@ -123,7 +121,7 @@ None of the software provided in these offers is required for this class, but yo
 
 #### CIT Computer Lab and In-Person Tutoring
 
-The CIT Main lab (Bldg. 19, room 135) is equipped with computers and software which are available exclusively for students in the CIT department. There are tutors available in the lab to help you with your lab work. The schedule for when the lab will be open and when in-person tutors are available is TBD.
+The CIT Main lab (Building 19, room 135) is equipped with computers and software which are available exclusively for students in the CIT department. There are tutors available in the lab to help you with your lab work. The schedule for when the lab will be open and when in-person tutors are available is TBD.
 
 #### Online Tutoring
 
@@ -135,13 +133,17 @@ See the [LCC Tutoring Services](https://www.lanecc.edu/tutor) web page for infor
 
 The table below summarizes the possible points for each assessment task as well as the course as a whole:
 
-| **Assessment Tasks**       | **Points Each** | **Total Points** | Percentage |
-| -------------------------- | --------------- | ---------------- | ---------- |
-| Labs  1 - 8                | 50              | 400              | 52%        |
-| Code  Reviews 1 - 8        | 10              | 80               | 11%        |
-| Reading  Quizzes 1 - 8     | 10              | 80               | 11%        |
-| Midterm  and Final Quizzes | 100 each        | 200              | 26%        |
-| **Course Total**           |                 | **760**          |            |
+| **Assessment Tasks**               | **Points Each**          | **Total Points** |
+| ---------------------------------- | ------------------------ | ---------------- |
+| Labs  1 - 8                        | 40                       | 320              |
+| Code  Reviews<sup>2</sup> 1 - 8    | 8                        | 64               |
+| Reading  Quizzes<sup>2</sup> 1 - 8 | 8                        | 64               |
+| Term Project                       | 200                      | 200              |
+| Midterm and Final Quizzes          | Midterm: 100, Final: 150 | 250              |
+| Participation                      | 10 per week              | 102              |
+| **Course Total**                   |                          | **1000**         |
+
+<sup>2</sup> The lowest grades for code reviews, and reading quizzes will be dropped from the grade calculation.
 
 Letter grades for the course will be determined by the following percentages:                  
 
@@ -163,9 +165,13 @@ Students will work in groups of two or three, to review the *beta* versions of e
 
 While students are encouraged to discuss labs and to use each other as resources, each student is responsible for his/her own work. In other words you can help each other, but you can’t copy any part of someone else’s work. The end product must be each student’s own individual work.
 
-### Attendance
+### Participation and Attendance
 
-Class attendance is not graded but will be essential for successful completion of the class. Students who miss a class are responsible for obtaining the course content provided in class and mastering it. 
+Participation in class discussions and exercises as well as collaboration with your lab partner will be assessed by the instructor. 
+
+Class attendance is part of your participation score and is essential for successful completion of the class. Students who participate via Zoom need to have their cameras on and join the discussion by typing in the chat or turning on their microphones.
+
+Students who miss a class are responsible for obtaining the content provided in class and learning it. Recordings of the Zoom meetings will be provided.
 
 ### No Show Drop
 
@@ -173,10 +179,10 @@ The college’s “no show, drop” policy requires that: during the first week 
 
 ### Late Work
 
-- Grades for code reviews will be reduced by 20% if either the beta version or the code review is submitted late.
 - Grades for lab production versions submitted after the due date will be reduced by 10%.
-- No late assignments may be submitted after the final exam day.
-- Quizzes and exams cannot be taken after the due date. Plan ahead! Exceptions will only be made for illness or emergency situations.
+- No late assignments may be submitted after week 10.
+- Code reviews, quizzes and exams cannot be taken after the due date. 
+  Plan ahead! Exceptions will only be made for illness or emergency situations.
 
  
 
@@ -192,30 +198,33 @@ Please be aware that any accessible tables and chairs in this room should remain
 
 ### Academic Calendar
 
-| Winter Term 2023              |                |
-| ----------------------------- | -------------- |
-| Term begins                   | 1/9            |
-| Last day to receive refund    | 1/16           |
-| MLK Holiday                   | 1/16           |
-| President's Day Holiday       | 2/20           |
-| Last day for schedule changes | 3/3            |
-| Final Project Presentation    | 3/21           |
-| Spring Break                  | 3/26&ndash;4/2 |
+| Spring Term 2023                           |                 |
+| ------------------------------------------ | --------------- |
+| Term begins                                | 4/3, Monday     |
+| Last day to receive refund                 | 4/10, Monday    |
+| Spring conference for faculty (no classes) | 5/5, Friday     |
+| Last day for schedule changes              | 5/26, Friday    |
+| Memorial Day Holiday                       | 5/29, Monday    |
+| Final Quiz                                 | 6/12            |
+| Finals Week                                | 6/12&ndash;6/16 |
 
 
 
 ### Weekly Learning Activities
 
-By Tuesday
+By class time on Monday (except the first week)
+
+- Take the reading quiz.
+
+By Tuesday night
 
 - Complete a code review of last week's lab work for your lab partner (starting the 2nd week).
--  Take the reading quiz.
 
-By Thursday
+By Thursday night
 
 - Submit the production version of your lab work from last week.
 
-By Saturday
+By Friday night
 
 - Post the beta version of your lab work for this week.
 - Start the reading for next week.
@@ -224,17 +233,18 @@ By Saturday
 
 ### Tentative Course Schedule
 
-| Week            | Topic                                                        | Learning Activities                                          |
-| --------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 1<br/>Jan. 9    | Intro to  JavaScript:<br />algorithms, variables, and data types | Reading Quiz 1<br />Beta version of lab 1                    |
-| 2<br />Jan. 16  | Functions, Expressions and Operators                         | lab 1 code review <br />Reading Quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
-| 3<br />Jan. 23  | Selection                                                    | lab 2 code review  <br />Reading Quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
-| 4<br />Jan. 30  | Repetition                                                   | lab 3 code review<br />Reading Quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
-| 5<br />Feb. 6   | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Midterm Quiz |
-| 6<br />Feb. 13  | Arrays                                                       | Reading Quiz 5  <br />Beta version of lab 5                  |
-| 7<br />Feb. 20  | Objects                                                      | lab 5 code review<br />Reading Quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
-| 8<br />Feb. 27  | Methods                                                      | lab 6 code review<br />Reading Quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |
-| 9<br />Mar. 6   | Document Object Model                                        | lab 7 code review<br />Reading Quiz 8<br />Production version of lab 7<br />Beta version of lab 8 |
-| 10<br />Mar. 13 | Finals week                                                  | Final Quiz                                                   |
+| Week             | Topic                                                        | Learning Activities                                          |
+| ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **1**<br/>4/3    | Intro to  JavaScript:<br />algorithms, variables, and data types | Reading Quiz 1<br />Beta version of lab 1                    |
+| **2**<br />4/10  | Functions, Expressions and Operators                         | lab 1 code review <br />Reading Quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
+| **3**<br />4/17  | Selection                                                    | lab 2 code review  <br />Reading Quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
+| **4**<br />4/24  | Repetition                                                   | lab 3 code review<br />Reading Quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
+| **5**<br />5/1   | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Midterm Quiz |
+| **6**<br />5/8   | Arrays                                                       | Reading Quiz 5  <br />Beta version of lab 5                  |
+| **7**<br />5/15  | Objects                                                      | lab 5 code review<br />Reading Quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
+| **8**<br />5/22  | Document Object Model and Events                             | lab 6 code review<br />Reading Quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |
+| **9**<br />5/29  | Monday: Memorial Day Holiday<br />Regular Expressions        | lab 7 code review<br />Reading Quiz 8<br />Production version of lab 7<br />Beta version of lab 8 |
+| **10**<br />6/5  | Review                                                       | Term project and extra credit lab                            |
+| **11**<br />6/12 | Finals week                                                  | Final Quiz                                                   |
 
  

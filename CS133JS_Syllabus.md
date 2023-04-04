@@ -15,8 +15,6 @@
 
  [TOC]
 
-
-
 ## Course Description
 
 This course provides students who have working knowledge of HTML with the concepts and skills required to create dynamic, interactive web pages using client side JavaScript. Through lectures, demonstrations and independent hands-on activities students will learn fundamental programming concepts and will learn about variables, operators, functions, control structures, arrays, pre-defined objects, and event handling in JavaScript. 
@@ -68,9 +66,7 @@ The intention of the course is to enable you to create and maintain interactive 
 
 ### Textbook                                                      
 
- *Eloquent JavaScript: A Modern Introduction to Programming*, 3rd Edition, by Marijn Haverbeke. No Starch Press. 2018.
-
-Available [free online](https://eloquentjavascript.net) to read our download.
+ *Eloquent JavaScript: A Modern Introduction to Programming*, 3rd Edition, by Marijn Haverbeke. No Starch Press. 2018. Available [free online](https://eloquentjavascript.net) to read our download.
 
  
 
@@ -198,11 +194,20 @@ The college’s “no show, drop” policy requires that: during the first week 
 
  
 
-## Accessibility and Accommodations
+## Accessibility
 
-To request assistance or accommodations related to disability, contact Disability Resources at [(541) 463-5150](tel:541-463-5150) (voice), 711 (TTY), disabilityresources@lanecc.edu (e-mail), or stop by Building 1, Room 218.
+Lane Community College (LCC) is dedicated to providing inclusive learning environments. The Center for Accessible Resources (CAR) coordinates all academic accommodations for students at LCC. If you anticipate or experience academic barriers due to a disability, to request assistance or accommodations, contact the Center for Accessible Resources.
 
-Please be aware that any accessible tables and chairs in this room should remain available for authorized students who find that standard classroom seating is not usable.
+**In-Person Services:** Monday and Thursday, 9:00am - 12:30 and 1:30pm - 3:00pm.
+**Location:** Main Campus, Building 19, Room 263A
+
+**Remote Support through Support Hub:** Monday - Thursday 9:00am&ndash;12:30 and 1:30pm&ndash;3:00pm. 
+Enter the Support Hub by going to [lanecc.edu/hub](https://www.lanecc.edu/hub). Wait for a Lane staff to let you into the Zoom.
+
+**Phone:** Voice, (541) 463-5150 TTY: 711, Monday&mdash;Friday 9:00am&ndash;12:30pm and 1:30pm&ndash;3:00pm.
+**Email:** AccessibleResources@lanecc.edu
+
+For upcoming closures, please visit the [Center for Accessible Resources webpage ](https://www.lanecc.edu/disability)
 
  
 

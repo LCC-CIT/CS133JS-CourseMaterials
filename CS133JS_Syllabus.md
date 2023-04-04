@@ -157,6 +157,18 @@ Letter grades for the course will be determined by the following percentages:
 
  
 
+### Quizzes
+
+<u>Reading Quizzes</u>
+Weekly quizzes are given that cover the required reading for that week. These quizzes must be taken before the first class meeting of the week. They are "open book" (or whatever reading material was assigned.)
+
+<u>Midterm and Final Quizzes</u>
+
+The midterm and final quizzes are given in weeks 5 and 11. See the course schedule for exact dates and times. These quizzes may be taken either:
+
+- In the classroom during the normal class time. For quizzes taken in the classroom, students are allowed to use the textbook, tutorials, and notes.
+-  In the testing center in the Center Building, room 311. See the [Instructional Testing Services](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services) web site for testing times and procedures. For quizzes taken in the testing center, only a 4 X 6 card is allowed.
+
 ### Code Reviews
 
 Students will work in groups of two or three, to review the *beta* versions of each other’s lab assignment solutions. The code review does not affect the grade of the student whose work is being reviewed. Students will use the feedback provided on the code review form to revise their code prior to submitting the *production* version of their software solution.
@@ -198,36 +210,38 @@ Please be aware that any accessible tables and chairs in this room should remain
 
 ### Academic Calendar
 
-| Spring Term 2023                           |                 |
-| ------------------------------------------ | --------------- |
-| Term begins                                | 4/3, Monday     |
-| Last day to receive refund                 | 4/10, Monday    |
-| Spring conference for faculty (no classes) | 5/5, Friday     |
-| Last day for schedule changes              | 5/26, Friday    |
-| Memorial Day Holiday                       | 5/29, Monday    |
-| Final Quiz                                 | 6/12            |
-| Finals Week                                | 6/12&ndash;6/16 |
+| Spring Term 2023                           |                            |
+| ------------------------------------------ | -------------------------- |
+| Term begins                                | 4/3, Monday                |
+| Last day to receive refund                 | 4/10, Monday at 11:59pm    |
+| Spring conference for faculty (no classes) | 5/5, Friday                |
+| Last day for schedule changes              | 5/26, Friday at 11:59pm    |
+| Memorial Day Holiday                       | 5/29, Monday               |
+| Final Quiz                                 | 6/12, Monday at class time |
+| Finals Week                                | 6/12&ndash;6/16            |
 
 
 
 ### Weekly Learning Activities
 
-By class time on Monday (except the first week)
+- By class time on Monday (except the first week)
+  - Take the reading quiz.
 
-- Take the reading quiz.
 
-By Tuesday night
+- By Tuesday night
+  - Complete a code review of last week's lab work for your lab partner (starting the 2nd week).
 
-- Complete a code review of last week's lab work for your lab partner (starting the 2nd week).
 
-By Thursday night
+- By Thursday night
+  - Submit the production version of your lab work from last week.
 
-- Submit the production version of your lab work from last week.
 
-By Friday night
+- By Friday night
 
-- Post the beta version of your lab work for this week.
-- Start the reading for next week.
+  - Post the beta version of your lab work for this week.
+
+  - Start the reading for next week.
+
 
 
 
@@ -235,16 +249,16 @@ By Friday night
 
 | Week             | Topic                                                        | Learning Activities                                          |
 | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **1**<br/>4/3    | Intro to  JavaScript:<br />algorithms, variables, and data types | Reading Quiz 1<br />Beta version of lab 1                    |
-| **2**<br />4/10  | Functions, Expressions and Operators                         | lab 1 code review <br />Reading Quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
-| **3**<br />4/17  | Selection                                                    | lab 2 code review  <br />Reading Quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
-| **4**<br />4/24  | Repetition                                                   | lab 3 code review<br />Reading Quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
-| **5**<br />5/1   | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Midterm Quiz |
-| **6**<br />5/8   | Arrays                                                       | Reading Quiz 5  <br />Beta version of lab 5                  |
-| **7**<br />5/15  | Objects                                                      | lab 5 code review<br />Reading Quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
-| **8**<br />5/22  | Document Object Model and Events                             | lab 6 code review<br />Reading Quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |
-| **9**<br />5/29  | Monday: Memorial Day Holiday<br />Regular Expressions        | lab 7 code review<br />Reading Quiz 8<br />Production version of lab 7<br />Beta version of lab 8 |
-| **10**<br />6/5  | Review                                                       | Term project and extra credit lab                            |
-| **11**<br />6/12 | Finals week                                                  | Final Quiz                                                   |
+| **1**<br/>4/3    | Intro to  JavaScript:<br />algorithms, variables, and data types | Reading quiz 1<br />Beta version of lab 1                    |
+| **2**<br />4/10  | Functions, Expressions and Operators                         | lab 1 code review <br />Reading quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
+| **3**<br />4/17  | Selection                                                    | lab 2 code review  <br />Reading quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
+| **4**<br />4/24  | Repetition                                                   | lab 3 code review<br />Reading quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
+| **5**<br />5/1   | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Term project proposal<br />Midterm quiz:<br />- In the classroom at 12:00 on 5/3<br />- In the testing center 5/3&mdash;5/5 |
+| **6**<br />5/8   | Arrays                                                       | Reading quiz 5  <br />Beta version of lab 5                  |
+| **7**<br />5/15  | Objects                                                      | lab 5 code review<br />Reading quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
+| **8**<br />5/22  | Document Object Model and Events                             | lab 6 code review<br />Reading quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |
+| **9**<br />5/29  | Monday: Memorial Day Holiday<br />Regular Expressions        | lab 7 code review<br />Reading quiz 8<br />Production version of lab 7<br />Beta version of lab 8 |
+| **10**<br />6/5  | Review                                                       | Term project<br />Extra credit lab                           |
+| **11**<br />6/12 | Finals week                                                  | Final quiz<br />- In the classroom at 12:00 6/12<br />- In the testing center 6/12&mdash;6/14 |
 
  

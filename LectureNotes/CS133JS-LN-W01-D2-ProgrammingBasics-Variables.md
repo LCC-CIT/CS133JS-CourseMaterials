@@ -29,6 +29,29 @@ keywords: control structures, syntax, operators, variables, data types, overload
 
 Programs are sets of instructions. They implement Algorithms.
 
+An algorithm is a step-by-step set of instructions for doing something. 
+
+**Example:** Imagine you had to tell a robot how to make a ham and cheese sandwich. You would need to give it very specific instructions like this:
+
+> 1. Collect the following items before cooking:
+>    - 2 slices of bread
+>    - 2 teaspoons of butter
+>    - 2 slices of cheese
+>    - 2 thin slices of deli ham
+>    - 1 teaspoon of mayonnaise
+>    - 1 teaspoon of whole grain mustard
+> 2. Spread one side of each slice of bread with butter.
+> 3. Spread a thin layer of mustard on one slice of bread.
+> 4. Spread a thin layer of mayonnaise on the other slice of bread.
+> 5. Place a slice of cheese on top of the mustard.
+> 6. Place a slice of ham on top of the cheese.
+> 7. Place another slice of cheese on top of the ham.
+> 8. Place the other slice of bread (mayonnaise side down) on top.
+> 9. Heat a non-stick pan over medium heat.
+> 10. Place the sandwich in the pan and cook until both sides are golden brown and cheese is melted.
+
+
+
 ## Three control structures
 
 - Sequence – we will learn this first
@@ -174,13 +197,12 @@ Variables that are declared in one &lt;script&gt; element are visible in all th
     - Open the file in a browser
     - The code will run when we load or reload the web page.
 
-    
 
-
+​    
 
 ## Data Types 
 
-### Primitive Types:
+### Primitive Types
 
 - string
 - number
@@ -262,7 +284,7 @@ What is happening here?
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
 

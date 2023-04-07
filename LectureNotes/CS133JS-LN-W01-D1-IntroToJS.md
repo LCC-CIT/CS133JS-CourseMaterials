@@ -38,7 +38,7 @@ author: Brian Bird
 
 ### Examples
 
-- [Facebook](https://www.facebook.com/) (likes, comments, add friend, etc.)
+- [Facebook](https://www.facebook.com/) all dynamic (likes, comments, add friend, etc.)
 - [LTD](https://www.ltd.org/) static pages (about us) and dynamic (trip planner)
 
 ### Exercise
@@ -81,11 +81,11 @@ Revisit these and discuss what might run on the server and what might run in the
 
 - Provides interactivity using client-side code.
   
-  - Originally designed to just run in web browsers (client-side code) but now used everywhere including: server-side, desktop, and mobile
+  - Originally designed to just run in web browsers (client-side code) but now used everywhere including: server-side, desktop, and mobile.
   
 - A completely different language from Java, but has some similarities
 
-  - JS is interpreted, dynamic, and multi-paradigm (procedural & Object Oriented, imperative & functional). *We’ll explain these things later.*
+  - JS is interpreted, dynamiclly typed, and multi-paradigm (procedural & Object Oriented, imperative & functional). *We’ll explain these things later.*
 
   ## Guided Exercise: Hello world
 
@@ -97,7 +97,7 @@ Revisit these and discuss what might run on the server and what might run in the
   ```javascript
   document.write("<p>Hello world!</p>");
   ```
-  3. Lets add a *variable* named `name`. A variable is a thing we can use to store information. Now you'll be able to change the name, but you;'l need to change the source code to do it  :-(
+  3. Lets add a *variable* named `name`. A variable is a thing we can use to store information. Now you'll be able to change the name, but you'll need to change the source code to do it  :-(
   ```javascript
    var name = "world"; // can change to “other names”
    		 document.write("<p>Hello " + name + "!</p>");
@@ -113,7 +113,8 @@ Revisit these and discuss what might run on the server and what might run in the
 Let's talk about how this works by looking at some key pieces of the code:
 
 - `var`
-  We use this JavaScript keyword to *declare* a variable. Declaring a variable means announcing to JavaScript that this is a new variable that we will be using.
+  We use this JavaScript keyword to *declare* a variable. Declaring a variable means announcing to JavaScript that this is a new variable that we will be using. 
+  (Later we'll learn to use `let` to declare variables).
 - `prompt`
   A function built into JavaScript that pops up a dialog box that displays a message and lets the user enter some input.
 - `=`
@@ -141,10 +142,12 @@ Let's talk about how this works by looking at some key pieces of the code:
 
 [JavaScript Reserved Words](https://www.w3schools.com/js/js_reserved.asp)&mdash;W3Schools
 
+The *reserverd words* are the "vocabulary" of JavaScript.
+
 
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------

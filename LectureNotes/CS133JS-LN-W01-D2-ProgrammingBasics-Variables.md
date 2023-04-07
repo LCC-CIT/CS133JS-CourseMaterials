@@ -29,6 +29,23 @@ keywords: control structures, syntax, operators, variables, data types, overload
 
 Programs are sets of instructions. They implement Algorithms.
 
+An algorithm is a step-by-step set of instructions for doing something. 
+
+**Example:** Imagine you had to tell a robot how to make a grilled cheese sandwich. You would need to give it very specific instructions like this:
+
+> 1. Collect the following items before cooking:
+>    - 2 slices of bread
+>    - 2 teaspoons of butter
+>    - 2 slices of cheese
+>    - 1 teaspoon of whole grain mustard
+> 2. Spread one side of each slice of bread with butter.
+> 3. Spread a thin layer of mustard on one slice of bread.
+> 5. Place both slices of cheese on top of the mustard.
+> 9. Heat a frying pan over medium heat.
+> 10. Place the sandwich in the pan and cook until both sides are golden brown and cheese is melted.
+
+
+
 ## Three control structures
 
 - Sequence – we will learn this first
@@ -177,11 +194,9 @@ Variables that are declared in one &lt;script&gt; element are visible in all the
 
 ​    
 
-
-
 ## Data Types 
 
-### Primitive Types:
+### Primitive Types
 
 - string
 - number
@@ -261,11 +276,20 @@ Note: these examples assume the variable declarations at the beginning of this s
   console.log(result);
   ```
 
-  
+
+
+
+### Variable Naming Rules and Conventions
+
+- Variable names must start with a letter, _ (underscore), or &dollar; (dollar sign). You can’t use a number as the first character. The rest of the variable name can include any letter, number, &dollar;, or _,  but no other characters including spaces, symbols, and punctuation marks.
+- Normally, variables are named using *camelCase*, meaning that if a variable name is a compound word, the first word is all lower case and the first letter of any additional words are upper case.
+- Variable names should be descriptive of what they are used for.
+
+
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 ------------
 

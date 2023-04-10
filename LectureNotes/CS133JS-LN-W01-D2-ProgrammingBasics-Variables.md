@@ -31,23 +31,17 @@ Programs are sets of instructions. They implement Algorithms.
 
 An algorithm is a step-by-step set of instructions for doing something. 
 
-**Example:** Imagine you had to tell a robot how to make a ham and cheese sandwich. You would need to give it very specific instructions like this:
+**Example:** Imagine you had to tell a robot how to make a grilled cheese sandwich. You would need to give it very specific instructions like this:
 
 > 1. Collect the following items before cooking:
 >    - 2 slices of bread
 >    - 2 teaspoons of butter
 >    - 2 slices of cheese
->    - 2 thin slices of deli ham
->    - 1 teaspoon of mayonnaise
 >    - 1 teaspoon of whole grain mustard
 > 2. Spread one side of each slice of bread with butter.
 > 3. Spread a thin layer of mustard on one slice of bread.
-> 4. Spread a thin layer of mayonnaise on the other slice of bread.
-> 5. Place a slice of cheese on top of the mustard.
-> 6. Place a slice of ham on top of the cheese.
-> 7. Place another slice of cheese on top of the ham.
-> 8. Place the other slice of bread (mayonnaise side down) on top.
-> 9. Heat a non-stick pan over medium heat.
+> 5. Place both slices of cheese on top of the mustard.
+> 9. Heat a frying pan over medium heat.
 > 10. Place the sandwich in the pan and cook until both sides are golden brown and cheese is melted.
 
 
@@ -84,7 +78,7 @@ The grammar of a programming language
      console.log("Hello " + name + "!");
     ```
 
-    Question: Note that we didn't output an html element, like `<p></p>` to the console log. Why?
+    Question: Note that we didn't output an html element, like `<p></p>` to the console log. Why?
 
 
  	
@@ -95,7 +89,7 @@ The grammar of a programming language
 Variables are named memory locations.
 
 - Draw a picture representing variables in computer memory.
-- Variables are *declared* with `var` or `let` (we'll talk about `let` later).
+- Variables are *declared* with `var` or `let` (we'll talk about `let` later).
 
 ## Example: Hello world
 
@@ -116,7 +110,7 @@ And, optionally, add the following extensions:
 
 ### Putting JS Code in an HTML `<script>` Element
 
-Using VS Code, start with a standard [empty HTML page](../Examples/Empty.html) and add this code to the head element inside of a HTML &lt;script&gt; element:
+Using VS Code, start with a standard [empty HTML page](../Examples/Empty.html) and add this code to the head element inside of a HTML &lt;script&gt; element:
 
 ```HTML
 <head>
@@ -141,7 +135,7 @@ We can also put script elements in the body of a web page:
 </body>
 ```
 
-Variables that are declared in one &lt;script&gt; element are visible in all the &lt;scrpit&gt; elements that are below it on the page.
+Variables that are declared in one &lt;script&gt; element are visible in all the &lt;scrpit&gt; elements that are below it on the page.
 
 
 ```html
@@ -209,7 +203,7 @@ Variables that are declared in one &lt;script&gt; element are visible in all th
 - boolean
 - undefined
 
-Variables in JavaScript are *dynamically typed*, meaning we don't need to declare the type when we declare the variable. JavaScript figures out the type based on the data we assign to it.
+Variables in JavaScript are *dynamically typed*, meaning we don't need to declare the type when we declare the variable. JavaScript figures out the type based on the data we assign to it.
 
 Example:
 
@@ -219,17 +213,17 @@ var number1 = 1234;
 var truth = false;
 var stuff;
 
-document.writeln(typeof words);
-document.writeln(typeof number1);
-document.writeln(typeof truth);
-document.writeln(typeof stuff); 
+console.log(typeof words);
+console.log(typeof number1);
+console.log(typeof truth);
+console.log(typeof stuff); 
 ```
 
 #### Null and Undefined
 
 This is a bit tricky. If we use the `typeof` keyword to check the type of a variable and we haven't assigned a value to that variable, then it will show its type as *undefined*. Also, if we check its value, it will be *undefined*.  So *undefine*d can be either a description of the value or of the data type. 
 
-But, *null* is just a value. It's the value that means "nothing", which is not the same as zero.
+But, *null* is just a value[^1]. It's the value that means "nothing", which is not the same as zero.
 
 Try this in the console:
 
@@ -248,20 +242,22 @@ console.log(typeof thing);
 
 What is happening here?
 
+Note: these examples assume the variable declarations at the beginning of this section.
+
 
 - A statement with two numbers
 
   ```javascript
   var number2 = 6;
   var sum = number1 + number2;
-  document.writeln(sum);
+  console.log(sum);
   ```
 
 - A statement with a number and a string
 
   ```javascript
   var result = number1 + words;
-  document.writeln(result);
+  console.log(result);
   ```
 
 - Statement with a number and a boolean variable
@@ -269,7 +265,7 @@ What is happening here?
   ```javascript
   var truth = true;   // true is equal to 1, false is 0
   var result = number1 + truth;
-  document.writeln(result);
+  console.log(result);
   ```
 
 
@@ -277,14 +273,24 @@ What is happening here?
 
   ```javascript
   var result = words + truth;
-  document.writeln(result);
+  console.log(result);
   ```
 
-  
+
+
+
+### Variable Naming Rules and Conventions
+
+- Variable names must start with a letter, _ (underscore), or &dollar; (dollar sign). You can’t use a number as the first character. The rest of the variable name can include any letter, number, &dollar;, or _,  but no other characters including spaces, symbols, and punctuation marks.
+- Normally, variables are named using *camelCase*, meaning that if a variable name is a compound word, the first word is all lower case and the first letter of any additional words are upper case.
+- Variable names should be descriptive of what they are used for.
+
+
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 ------------
 
+[^1]: I disagree with the textbook, *Eloquaint JavaScript*, on this point. In [chapter 1](https://eloquentjavascript.net/01_values.html), the author asserts that both `null` and `undefined` are types, but I maintain that `undefined` is a type and `null` is a value.

@@ -30,18 +30,15 @@ author: Brian Bird
 ## Q and A
 
 - How is last week's lab assignment going?
-- How is the reading going?
-- Are you getting forum announcements?
+  - You should have posted a beta version of part 2 for your lab partner to review.
+  - Code reveiws are due tomrrow.
+  - Production version is due Thursday.
+
+- This week's reading quiz
+  - 4 people didn't take the quiz, so I'm reopening it.
+  - I won't normally do this :-)
+
 - Does anyone have any general questions about anything?
-
-## Announcements
-
-- This week's quiz
-  We'll review the answers on Wednesday/Thursday.
-- This week's lab assignment
-- Reminder about virtual tutoring
-
-
 
 # Review
 
@@ -100,10 +97,6 @@ We can get the element and assign a value to it's innerHTML all in one statement
 ```javascript
 document.getElementById("answer").innerHTML = 2 * 3;
 ```
-
-
-
-
 
 
 
@@ -255,6 +248,15 @@ We can test this function in the console, and then in a web page.
   - code that does operations
   - return statement (optional)
 
+## Coming up...
+
+- Lab 2
+  - Take a look at part 1.
+  - Do the first problem together.
+  - Beta due Friday.
+
+
+
 # Notes
 
 ## Vocabulary
@@ -281,7 +283,7 @@ We can test this function in the console, and then in a web page.
 
 
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 [^1]: Primitive data types: number, string, boolean, undefined
 [^2]: We haven't learned about boolean operators yet, but we'll use one anyway: `==` is a boolean comparison operator. We can use it to compare two values, if they are equal the result will be *true*, otherwise the result will be *false*. For example: `var isCorrect = sum == answer` assuming `sum` is the actual sum of two numbers and answer is the `answer` given by the user.

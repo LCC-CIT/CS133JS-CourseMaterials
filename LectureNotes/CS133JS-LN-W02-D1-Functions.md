@@ -56,7 +56,7 @@ This review is selective. These are the concepts we need for todays new topics.
     ```
 - What is a Data Type? 
   - What are the primitive data types[^1]?
-  - How does JavaScript determine the type of a variable?
+  - How does JavaScript determine the type of a variable[^2]?
   - Why does type matter?
   - Example:
   
@@ -68,35 +68,6 @@ This review is selective. These are the concepts we need for todays new topics.
       console.log(typeof name);
       console.log(typeof submitted);
       ```
-
-
-
- # Writing Output into HTML Elements
-
-Last week we learned to write html into a web page using `document.write`. Now we will learn to put our JavaScript output into existing HTML elements.
-
-## Using getElementById and innerHTML
-
-```html
-<p id="answer"></p>
-
-<script>
-	var p = document.getElementById("answer");
-    p.innerHTML = 2 * 3;
-</script>
-```
-
-The `getElementById` function finds the HTML elemet with the id that is passed to the function (in the paraethesis) and returns a *reference* to that element. In this example, the referenced to the paragraph element is stored in the variable `p`.  Think of the reference as an address for the element--a way to access the element later.
-
-The `innerHTML` property represents the text that goes between the tags. In this case, when we assign a value to `p.InnerHTML` it will go between the  `<p>` and `</p>` tags. 
-
-## Combining statements
-
-We can get the element and assign a value to it's innerHTML all in one statement:
-
-```javascript
-document.getElementById("answer").innerHTML = 2 * 3;
-```
 
 
 
@@ -231,7 +202,7 @@ Example:
 Let's write a function is for a math quiz. It will do the following:
 
 - Takes two numbers as parameters and then shows them to the user in a prompt asking for the sum.
-- The user answers, the function checks the answer[^2].
+- The user answers, the function checks the answer[^3].
 - The function returns true or false.
 
 Think about how you would write this function, and then let's write it together.
@@ -248,7 +219,38 @@ We can test this function in the console, and then in a web page.
   - code that does operations
   - return statement (optional)
 
-## Coming up...
+
+
+ # Writing Output into HTML Elements
+
+Last week we learned to write html into a web page using `document.write`. Now we will learn to put our JavaScript output into existing HTML elements.
+
+## Using getElementById and innerHTML
+
+```html
+<p id="answer"></p>
+
+<script>
+	var p = document.getElementById("answer");
+    p.innerHTML = 2 * 3;
+</script>
+```
+
+The `getElementById` function finds the HTML elemet with the id that is passed to the function (in the paraethesis) and returns a *reference* to that element. In this example, the referenced to the paragraph element is stored in the variable `p`.  Think of the reference as an address for the element--a way to access the element later.
+
+The `innerHTML` property represents the text that goes between the tags. In this case, when we assign a value to `p.InnerHTML` it will go between the  `<p>` and `</p>` tags. 
+
+## Combining statements
+
+We can get the element and assign a value to it's innerHTML all in one statement:
+
+```javascript
+document.getElementById("answer").innerHTML = 2 * 3;
+```
+
+
+
+# Coming up...
 
 - Lab 2
   - Take a look at part 1.
@@ -286,5 +288,6 @@ We can test this function in the console, and then in a web page.
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 [^1]: Primitive data types: number, string, boolean, undefined
-[^2]: We haven't learned about boolean operators yet, but we'll use one anyway: `==` is a boolean comparison operator. We can use it to compare two values, if they are equal the result will be *true*, otherwise the result will be *false*. For example: `var isCorrect = sum == answer` assuming `sum` is the actual sum of two numbers and answer is the `answer` given by the user.
+[^2]: It is more accurate to say "the data type of the value contained by the variable" since varaibles themselves don't have data types.
+[^3]: We haven't learned about boolean operators yet, but we'll use one anyway: `==` is a boolean comparison operator. We can use it to compare two values, if they are equal the result will be *true*, otherwise the result will be *false*. For example: `var isCorrect = sum == answer` assuming `sum` is the actual sum of two numbers and answer is the `answer` given by the user.
 

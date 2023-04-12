@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Written by Brian Bird, 4/11/23 -->
+    <meta charset="UTF-8" />
+    <script src="Lab02_Part1.js"></script>
+    <title>Lab 2 Part 1</title>
+</head>
+
+<body>
+    <header>
+        <h1>CS 133JS, Lab 2, Part 1</h1>
+        <p>This part of your lab assignment is to solve the problems described in
+            <a href="https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab02/CS133JS_Lab02_Part1_FunctionExercises.html" target="_blank">
+                the instructions for lab 2, part 1</a>. Only add code to this file where there are comments that start with TODO.
+        </p>
+    </header>
+    <h2>Solutions</h2>
+
+    <h3>1. JavaScript is awesome!</h3>
+    <script>
+        // TODO: Write a function call to jsIsAwesome */
+        jsIsAwesome();
+    </script>
+
+    <h3>2. Your favorite animal</h3>
+    <script>
+        /* TODO: Write a function call to favAnimal. 
+                                                                                                                                                                                 Write code to put the string returned by the funcion on this page. */
+        let text = favAnimal("Eagle");
+        document.write(text);
+    </script>
+
+    <h3>3. Average price calculator</h3>
+    <script>
+        /* TODO: Write a function call to calcAvgPrice.
+                                                                                                                                                                        Write code to put the result on this page. */
+        let average = calcAvgPrice(15, 25, 30);
+        document.write("$" + average);
+    </script>
+
+    <h3>4. Oregon quiz</h3>
+    What is the capital of Oregon? &nbsp;
+    <input id="oregonInput"><button onclick="doOregonQuiz()">Enter Answer</button>
+    <br> Your answer is <span id="oregonOutput"></span><br>
+    <script>
+        function doOregonQuiz() {
+            let answer = document.getElementById("oregonInput").value;
+            /* TODO: 
+                    Write a function call to quizQuestion.
+                    Write code to show whether the answer was right or wrong. */
+            document.getElementById("oregonOutput").innerHTML = quizQuestion(answer);
+        }
+    </script>
+
+    <h3>5. Math quiz</h3>
+    What is 7 X 8? &nbsp;
+    <input id="mathInput"><button onclick="doMathQuiz()">Enter Answer</button>
+    <br> Your answer is <span id="mathOutput"></span><br>
+    <script>
+        function doMathQuiz() {
+            let answer = document.getElementById("mathInput").value;
+            /* TODO: 
+                    Write a function call to mathQuestion.
+                    Write code to show whether the answer was right or wrong. */
+            document.getElementById("mathOutput").innerHTML = mathQuestion(7, 8, answer);
+        }
+    </script>
+
+    <footer>
+        <p>Creative Commons License for Beginning JavaScript Lab Exercises by Brian Bird, written in 2023, are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</p>
+    </footer>
+</body>
+
+</html>

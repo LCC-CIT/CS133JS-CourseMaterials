@@ -11,40 +11,43 @@ author: Brian Bird
 
 # Lab 2, Part 1: Function Exercises
 
-For each problem, type the solution code in the console and execute it. Don't clear the console, since you will be copying  everything into a document which you will submit on Moodle.
+For this part of the lab you will use the [*CS133JS_Lab02_Part1.html*](CS133JS_Lab02_Part1.html) file provided. You will write a second file named *Lab02_Part1.js*. 
 
-1. JavaScript is awesome&mdash;a function with no parameters and no return value:
+For each problem, write a function in your .js file. Write code in the .html file to call that function. Write the function below the TODO comment in the .html file.
 
+1. `jsIsAwesome`&mdash;a function with no parameters and no return value:
    - Write a definition for a function that pops up an alert that says "JavaScript is awesome!".
-   - Write the code to call the function. Execute that code.
-2. Your favorite animal&mdash;a function with a parameter and a return value:
+   - Write the code in the .html file to call the function.
+2. favAnimal&mdash;a function with a parameter and a return value
 
    - Write a definition for a function that:
      - Has a parameter for the name of an animal.
-     - Generates the phrase "The ___________ is my favorite animal.", and fill in the blank with the name.
+     - Generates the phrase "The ___________ is my favorite animal.", where the code fills in the blank with the animal name.
      - Returns the resulting phrase using a return statement.
-   - Write the code to call the function. Execute that code.
-3. Calculate the average price&mdash;a function with three parameters and a return value:
+   - Write the code in the .html file to call the function and display the returned phrase on the web page.
+3. calcAvgPrice&mdash;a function with three parameters and a return value:
 
-   - Write a definition for a function that:
-     - Has three parameters. Each one for the price of an item from a different seller.
+   - Write a definition for a function that calculates an average price and:
+     - Has three parameters. Each one for the price of an item.
      - Calculates the average of the three prices.
      - Returns the average.
-   - Write the code to call the function. Execute that code.
-4. Oregon quiz question&mdash;a function with no parameters, but has a return value:
+   - In the .html file, write the code to call the function and display the result.
+     Note: You can round the result to two decimal points using the [toFixed() method](https://www.w3schools.com/jsref/jsref_tofixed.asp) on the variable holding the average price.
+4. Oregon quiz question&mdash;a function with one parameter, and a return value:
 
    - Write a definition for a function that:
-     - Uses a prompt to ask the name of the capital of Oregon.
-     - Checks to see if the user entered the right answer (Salem).
+     - Has a parameter for the name of the capital of Oregon.
+     - Checks to see if the user entered the right name (Salem).
      - Returns true or false.
-   - Write the code to call the function. Execute that code.
-5. Math quiz question&mdash;a function with no parameters, but has a return value:
+   - Write the code to call the function and display the result.
+5. mathQuestion&mdash;a function with three parameters and a return value:
 
     - Write a definition for a function that:
-      - Uses a prompt to ask the result of 12 times 13.
-      - Checks to see if the user entered the right answer (156).
+      - Has two parameters for numbers to be multiplied by each other.
+      - Has one parameter for the answer enterd by the user.
+      - Checks to see if the user entered the right answer .
       - Returns true or false.
-    - Write the code to call the function. Execute that code.
+    - Write the code to call the function and display the result.
 6. MPG calculator&mdash;a function with two parameters and a return value:
     - Write a definition for a function that:
       - Has two parameters, one for miles driven, and one for gallons of gas used

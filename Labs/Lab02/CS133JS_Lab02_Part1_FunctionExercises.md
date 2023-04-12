@@ -11,9 +11,9 @@ author: Brian Bird
 
 # Lab 2, Part 1: Function Exercises
 
-For this part of the lab you will use the [*CS133JS_Lab02_Part1.html*](CS133JS_Lab02_Part1.html) file provided. You will write a second file named *Lab02_Part1.js*. 
+For this part of the lab you will use the [*CS133JS_Lab02_Part1.html*](CS133JS_Lab02_Part1.html) file provided (right-click on the link, then click on "save-as" to save the file to your computer). You will write a second file named *Lab02_Part1.js*. 
 
-For each problem, write a function in your .js file. Write code in the .html file to call that function. Write the function below the TODO comment in the .html file.
+For each problem, write a function in your .js file. In the .html file, below the comment that starts with "TODO:", write code to call that function. In the .js file, write the function below the "TODO:" comment.
 
 1. `jsIsAwesome`&mdash;a function with no parameters and no return value:
    - Write a definition for a function that pops up an alert that says "JavaScript is awesome!".

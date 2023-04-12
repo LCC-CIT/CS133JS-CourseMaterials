@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Written by Brian Bird, 4/11/23 -->
+    <!-- Written by Brian Bird, 4/12/23 -->
     <meta charset="UTF-8" />
     <script src="Lab02_Part1.js"></script>
     <title>Lab 2 Part 1</title>
@@ -21,53 +21,84 @@
     <h3>1. JavaScript is awesome!</h3>
     <script>
         // TODO: Write a function call to jsIsAwesome */
-        jsIsAwesome();
     </script>
 
     <h3>2. Your favorite animal</h3>
     <script>
         /* TODO: Write a function call to favAnimal. 
-                                                                                                                                                                                 Write code to put the string returned by the funcion on this page. */
-        let text = favAnimal("Eagle");
-        document.write(text);
+        Write code to display the string returned by the function on this page.  */
     </script>
 
     <h3>3. Average price calculator</h3>
     <script>
         /* TODO: Write a function call to calcAvgPrice.
-                                                                                                                                                                        Write code to put the result on this page. */
-        let average = calcAvgPrice(15, 25, 30);
-        document.write("$" + average);
+           Pass in three prices as literal numbers, 
+           display the return value on the page with a $ to the left of it. */
     </script>
 
-    <h3>4. Oregon quiz</h3>
+    <h3>4. Letter counter</h3>
+    Enter a sentance&nbsp;<input id="sentence"><button onclick="doCountLetters()">Enter</button><br> 
+    The number of letters, including spaces and punctuation, is: <span id="letterCount"></span><br>
+    <script>
+        function doCountLetters() {
+            let sentence = document.getElementById("sentence").value;
+            let count = 0; // Variable initialization
+            /* TODO: Write a function call to countLetters using the correct variables as arguments
+            and that puts the returned value into the correct variable.  */
+            document.getElementById("letterCount").innerHTML = count;
+        }
+    </script>
+
+    <h3>5. Oregon quiz</h3>
     What is the capital of Oregon? &nbsp;
     <input id="oregonInput"><button onclick="doOregonQuiz()">Enter Answer</button>
     <br> Your answer is <span id="oregonOutput"></span><br>
     <script>
         function doOregonQuiz() {
             let answer = document.getElementById("oregonInput").value;
-            /* TODO: 
-                    Write a function call to quizQuestion.
-                    Write code to show whether the answer was right or wrong. */
-            document.getElementById("oregonOutput").innerHTML = quizQuestion(answer);
+            let result = null; // Initialize variable
+            /* TODO: Write a function call to quizQuestion.
+               Get the return value put it in the right variable. */
+            document.getElementById("oregonOutput").innerHTML = result;
         }
     </script>
 
-    <h3>5. Math quiz</h3>
+    <h3>6. Math quiz</h3>
     What is 7 X 8? &nbsp;
     <input id="mathInput"><button onclick="doMathQuiz()">Enter Answer</button>
     <br> Your answer is <span id="mathOutput"></span><br>
     <script>
         function doMathQuiz() {
             let answer = document.getElementById("mathInput").value;
-            /* TODO: 
-                    Write a function call to mathQuestion.
-                    Write code to show whether the answer was right or wrong. */
-            document.getElementById("mathOutput").innerHTML = mathQuestion(7, 8, answer);
+            let result = null; // Initialize variable
+            /* TODO: Write a function call to mathQuestion using the correct variable as an argument.
+               Write code to get the return value and display it in the span. */
         }
     </script>
 
+    <h3>7. MPG Calculator</h3>
+    How many miles were driven? &nbsp;<input id="miles"><br> How many gallons of gas were used?<input id="gallons">&nbsp;
+    <button onclick="doCalcMpg()">Enter</button><br> Your answer is <span id="mpg"></span><br> MPG.
+    <script>
+        function doCalcMpg() {
+            let milesDriven = document.getElementById("miles").value;
+            let gallonsUsed = document.getElementById("gallons").value;
+            /* TODO: Write a function call using the correct variables as arguments
+            and that returns a value puts it in the span. */
+        }
+    </script>
+
+    <h3>8. Temperature Conversion</h3>
+    Enter the temperature in degrees Fahrenheit &nbsp;
+    <input id="fahrenheit"><button onclick="doConvertTemp()">Enter</button>
+    <br> Your answer is <span id="tempCelsius"></span><br>
+    <script>
+        function doConvertTemp() {
+            let degreesFahrenheit = document.getElementById("fahrenheit").value;
+            /* TODO: Write a function call to convertTemp that uses the correct variable as
+              an argument and puts the return value in the span. */
+        }
+    </script>
     <footer>
         <p>Creative Commons License for Beginning JavaScript Lab Exercises by Brian Bird, written in 2023, are licensed under a Creative Commons Attribution-ShareAlike 4.0 International License.</p>
     </footer>

@@ -9,7 +9,9 @@ author: Brian Bird
 
 # Lab 3, Part 1: Selection Exercises
 
-For each problem, type the solution code in the console and execute it. Don't clear the console, since you will be copying everything into a document which you will submit on Moodle.
+Create a file named `Lab03_Part1.js` For each problem, put the solution in a function in that file. You have been provided with an HTML file, [CS133JS_Lab03_Part1.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab03/CS133JS_Lab03_Part1.html), you will replace the `TODO:` comments with code to call the function you wrote and display the results on the web page.
+
+## Problems:
 
 1. Check for A+ &mdash;using a simple if statement
   - Write a function named `checkForAPlus` that does the following:

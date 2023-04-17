@@ -23,13 +23,13 @@ For each problem, write a function in your .js file. In the .html file, below th
      - Has a parameter for the name of an animal.
      - Generates the phrase "The ___________ is my favorite animal.", where the code fills in the blank with the animal name.
      - Returns the resulting phrase using a return statement.
-   - Write the code in the .html file to call the function and display the returned phrase on the web page.
+   - Write the code in the .html file to call the function with a "hard coded" animal name and display the returned phrase on the web page.
 3. `calcAvgPrice`&mdash;a function with three parameters and a return value:
    - Write a definition for a function that calculates an average price and:
      - Has three parameters. Each one for the price of an item.
      - Calculates the average of the three prices.
      - Returns the average.
-   - In the .html file, write the code to call the function and display the result.
+   - In the .html file, write the code to call the function with three "hard coded" numbers and display the result.
      Note: You can round the result to two decimal points using the [toFixed() method](https://www.w3schools.com/jsref/jsref_tofixed.asp) on the variable holding the average price.
 4. `countLetters`&mdash;a function with one parameter and one return value:
    - Write a definition for a function that:
@@ -37,6 +37,7 @@ For each problem, write a function in your .js file. In the .html file, below th
      - Counts the number of letters, spaces, and punctuation in the sentence. 
        (Use the [length property](https://www.w3schools.com/jsref/jsref_length_string.asp) to get this number)
      - Returns the length of the sentence.
+     - Write the code to call the function and display the result.
 5. `quizQuestion`&mdash;a function with one parameter, and a return value:
    - Write a definition for a function that:
      - Has a parameter for the name of the capital of Oregon.

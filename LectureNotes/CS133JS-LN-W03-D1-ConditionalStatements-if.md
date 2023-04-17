@@ -31,17 +31,16 @@ author: Brian Bird
 
 ### Q and A
 
-- How is last week's lab assignment going?
-  - Are there any issues with code reviews?
+- Lab 1, a few people still need to complete that. Check the feedback I left to see if there is something you need to revise or update.
+- How is last week's lab assignment, lab 2, going?
+  - Beta versions of part 2 were due Saturday, but I only see two posts in the forum.
     - Remember that the beta version is like a draft. It doesn't need to be complete or completely working. 70% done is good enough for a beta version.
-  - I've finished grading the lab 1 production version. 
+    - Are there questions on how to do it?
+    - Drop by my office hours, or make an apointment to meet me at another time if you'd like some help.
 - How is the reading going?
-  - The reading quiz is due tomorrow.
-  - We'll review the answers on Wednesday.
+  - A few people didn't take the quiz that was due today at class time.
+  
 - Does anyone have any general questions about anything?
-  - This afternoon, I'll answer questions posted to the forum or e-mailed to me over the weekend.
-  - I frequently answer questions over the weekend, but not always.
-  - I have an office again! Room 152.
 
 
 
@@ -50,10 +49,10 @@ author: Brian Bird
 
 ### Scope
 
-- What is scope? 
-- What is meant by the terms: “local variable”, and “global variable”?
-- Why are global variables dangerous?
-- Why shouldn't we use a variable without declaring it with `var` or `let`[^1]? Why is `let` better?
+- What is *scope*? 
+- What is meant by the terms: *local variable*, and *global variable*?
+- Why are global variables dangerous[^1]?
+- Why shouldn't we use a variable without declaring it with `var` or `let`[^2]? Why is `let` better?
 - Identify the scope of each of the variables below:
 
 ```javascript
@@ -131,15 +130,15 @@ console.log(extraVariable);
 
 What are the three control structures? These are things in the programming language that control the flow of execution in a program.
 
-*End of the review. This was a long review!*
+*This is the end of the review. This was a long review!*
 
 ------
 
-## Selection Using `if` and the Ternary Operator
+## Selection Expressions
 
 There are three ways to do selection in JavaScript:
 
-1. *ternary* expressions using `? : `
+1. *ternary* expressions using `?` and `: `
 2. `if` statements
 3. `switch` statements
 
@@ -349,7 +348,7 @@ else
 
 ## Lab Assignment
 
-Take a look at Part 1 of the lab assignment now. You know enough to do the first 7 problems which use if statements. The last two problems use switch case statements which we will cover in the next class session.
+Take a look at Part 1 of the lab assignment now. You know enough to do the first 7 problems which use `if` statements. The last two problems use `switch` statements which we will cover in the next class session.
 
 ### Console  vs Code Editor for Part 1
 
@@ -399,7 +398,8 @@ There are three examples posted on Moodle. The first two use `if else` statement
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
-[^1]: JavaScript will treat an undeclared variable as a global variable even if you first assign a value to it in a local scope.
+[^1]: Their values can be re-assigned from anywhere in the program, in any function, and it's easy for the dev to loose track of what should be stored in it.
+[^2]: JavaScript will treat an undeclared variable as a global variable even if you first assign a value to it in a local scope.
 

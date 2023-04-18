@@ -146,7 +146,7 @@ In this session we will learn to use the ternary oprator and `if` statements. Ne
 
 ### Ternary Operator
 
-- The ternary operator is the question mark, `?`
+The ternary operator is the question mark, `?`
 
 - Syntax
 
@@ -169,6 +169,12 @@ In this session we will learn to use the ternary oprator and `if` statements. Ne
   let temperature = prompt("What is the temperature?");
   alert(temperature < 50 ? "Wear a coat" : "Enjoy the warm day");
   ```
+
+#### Try this:
+
+> Write an expression using a ternary operator that determines whether a person is old enough to get a driver's license in Oregon[^3].
+
+
 
 ### `if` Statements
 
@@ -402,4 +408,5 @@ There are three examples posted on Moodle. The first two use `if else` statement
 
 [^1]: Their values can be re-assigned from anywhere in the program, in any function, and it's easy for the dev to loose track of what should be stored in it.
 [^2]: JavaScript will treat an undeclared variable as a global variable even if you first assign a value to it in a local scope.
+[^3]: To get a driver's license in Oregon you must be at least 16 year's of age, have had a permit for 6 months, have had driver training.
 

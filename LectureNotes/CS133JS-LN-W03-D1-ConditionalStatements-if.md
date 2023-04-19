@@ -408,5 +408,5 @@ There are three examples posted on Moodle. The first two use `if else` statement
 
 [^1]: Their values can be re-assigned from anywhere in the program, in any function, and it's easy for the dev to loose track of what should be stored in it.
 [^2]: JavaScript will treat an undeclared variable as a global variable even if you first assign a value to it in a local scope.
-[^3]: To get a driver's license in Oregon you must be at least 16 year's of age, have had a permit for 6 months, have had driver training.
+[^3]: To get a driver's license in Oregon you must be: 18 years of age or older. Or at least 16 year's of age, have had a permit for 6 months, have had a driver's ed class and 50 hours of supervised driving time, or no driver driver's ed and 100 hours of supervised driving time.
 

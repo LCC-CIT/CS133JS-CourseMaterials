@@ -33,12 +33,9 @@ author: Brian Bird
 
 ## Q and A
 
-- How is part 1 of this week's lab assignment going?
+- How is last week's lab assignment (lab 2) going?
+  It's due tomorrow (Thursday).
 - Does anyone have any general questions about anything?
-
-## Quiz Review
-
-Go over the answers to the quiz questions.
 
 
 
@@ -83,7 +80,7 @@ Parts of an if statement:
 
    
 
-Braces (optional unless there is more than one statement to execute, but recommended.)
+Braces (optional, but recommended, unless there is more than one statement to execute, then they are required.)
 
 ```javascript
 // convert fractions in the form 1/x to decimals
@@ -209,7 +206,7 @@ Write code in the console to determine the price of *The Joy of JavaScript* usin
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
    ```

@@ -71,7 +71,7 @@ Create a file named `Lab03_Part1.js` For each problem, put the solution in a fun
   - In the .html file, call the function just enough times, using "hard coded" values, so that you get each possible result once. Show the results on the web page.
   
 8. Convert Roman numerals to decimal numbers&mdash;using switch case
-   - Write a function named `decimalToRoman` to convert Roman numerals I through V to decimal numbers.
+   - Write a function named `romanToDecimal` to convert Roman numerals I through V to decimal numbers.
      - Use a parameter to hold a Roman numeral.
      - For each case in the switch statement select the correct decimal number.
      - The default case should be "out of range" for numbers that are too big, or too small (zero or negative).

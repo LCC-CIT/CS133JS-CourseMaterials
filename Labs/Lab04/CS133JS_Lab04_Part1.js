@@ -3,7 +3,7 @@
  * For each of the problems, complete the function.                 */
 'use strict'
 
-// 1. Complete the do while loop below so that it counts from 2 to 10 by twos (2, 4, 6, 8)
+// 1. Complete the do while loop below so that it counts from 2 to 10 by twos (2, 4, 6, 8, 10)
 function doWhilePractice() {
     let outputString = "";
     let count = 0; // TODO: Set count to the right starting value
@@ -14,7 +14,7 @@ function doWhilePractice() {
     return outputString;
 }
 
-// 2. Complete the while loop below so that it counts from 2 to 10 by twos (2, 4, 6, 8)
+// 2. Complete the while loop below so that it counts from 2 to 10 by twos (2, 4, 6, 8, 10)
 function whilePractice() {
     let outputString = "";
     let count = 0; // TODO: Set count to the right starting value
@@ -26,7 +26,7 @@ function whilePractice() {
     return outputString;
 }
 
-// 3. Complete the for loop below so that it counts from 2 to 10 by twos (2, 4, 6, 8)
+// 3. Complete the for loop below so that it counts from 2 to 10 by twos (2, 4, 6, 8, 10)
 function forPractice() {
     let outputString = "";
     // TODO: Set the count staring value, the loop condition, and incrment expression

@@ -318,6 +318,8 @@ These are the examples on Moodle:
 
   - Actors and Movies - with validation and do-again
 
+- [Additional loop practice problems, with solutions](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/PracticeProblems-Loops.html).
+
 
 
 

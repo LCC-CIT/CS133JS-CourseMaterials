@@ -41,7 +41,7 @@ Spring 2023
   - You can take the quiz in the classroom at class time, or you can take it in the testing center. 
     - **Classroom** from 12:00 to 1:50 on Wednesday, 5/3/2023. 
       You will be allowed to refer to your textbook, lecture notes, and your lab assignments during the quiz in the classroom.
-    - **[Testing center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services)** on Wednesday, 5/3 or Thursday 5/4 from 9:00am to 7:00pm or Friday 5/5, from 10:00am to 2:00pm.
+    - **[Testing center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services)** on Wednesday, 5/3 or Thursday 5/4 from 9:00am to 7:00pm.
       The testing center is located in the Center Building, Room 311 (upstairs and across from the library). You will be allowed to refer to a 4 x 6 card with notes on it
     - In both locations: help from others, internet searches, ChatGPT, and any other outside sources are not allowed.
 

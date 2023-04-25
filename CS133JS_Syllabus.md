@@ -258,7 +258,7 @@ For upcoming closures, please visit the [Center for Accessible Resources webpage
 | **2**<br />4/10  | Functions, Expressions and Operators                         | lab 1 code review <br />Reading quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
 | **3**<br />4/17  | Selection                                                    | lab 2 code review  <br />Reading quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
 | **4**<br />4/24  | Repetition                                                   | lab 3 code review<br />Reading quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
-| **5**<br />5/1   | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Term project proposal<br />Midterm quiz:<br />- In the classroom at 12:00 on 5/3<br />- In the testing center 5/3&mdash;5/5 |
+| **5**<br />5/1   | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Term project proposal<br />Midterm quiz:<br />- In the classroom at 12:00 on 5/3<br />- In the testing center 5/3 or 5/4 |
 | **6**<br />5/8   | Arrays                                                       | Reading quiz 5  <br />Beta version of lab 5                  |
 | **7**<br />5/15  | Objects                                                      | lab 5 code review<br />Reading quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
 | **8**<br />5/22  | Document Object Model and Events                             | lab 6 code review<br />Reading quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |

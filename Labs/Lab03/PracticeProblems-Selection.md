@@ -14,7 +14,9 @@ You can also use the solutions to these problems as examples to help you underst
 
 ### Ternary Statements
 
-
+1. Write a program that checks if a number is between two values using the ternary operator.
+2. Write a program that checks if a string is empty or not using the ternary operator.
+3. Write a program that checks if a string contains a specific character using the ternary operator.
 
 ### If Statements
 
@@ -28,6 +30,7 @@ You can also use the solutions to these problems as examples to help you underst
 
 ### Switch Statements
 
+1. 
 1. 
 
 
@@ -45,18 +48,29 @@ These are solutions to the problems above. Note that for each problem, there may
 
 ### Ternary Statements
 
+These solutions use constants as input (rather than prompting a user for input) and use the ternary operator in the solution to the problem. Output is logged to the console.
+
 1. ```JavaScript
-   
+  const num = 5;
+   const min = 1;
+   const max = 10;
+   const result = num >= min && num <= max ? 'between' : 'not between';
+   console.log(result); // Output: between
    ```
    
    
    
 2. ```JavaScript
-   
+  const str = '';
+   const result = str.length === 0 ? 'empty' : 'not empty';
+   console.log(result); // Output: empty
    ```
    
 3. ```JavaScript
-   
+  const str = 'hello';
+   const char = 'e';
+   const result = str.includes(char) ? 'contains' : 'does not contain';
+   console.log(result); // Output: contains
    ```
 
 
@@ -99,12 +113,6 @@ These programs prompt the user to enter input using the `prompt` function, which
      console.log("The number is odd");
    }
    ```
-
-4. ```JavaScript
-   
-   ```
-   
-   
 
 ### Switch Statements
 

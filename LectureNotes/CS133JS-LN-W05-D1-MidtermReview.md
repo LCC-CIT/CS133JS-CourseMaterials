@@ -112,6 +112,7 @@ Bonus: Add a loop for input validation to any of these problems.
 
 There are links to additional programming practice problems on Moodle:
 
+- [PracticeProblems-Selection.html](../Labs/Lab03/PracticeProblems-Selection.html)
 - [Loop Practice Problems with Solutions](../Labs/Lab04/PracticeProblems-Loops.html)
 
 ------

@@ -14,28 +14,39 @@ You can also use the solutions to these problems as examples to help you underst
 
 ### Ternary Statements
 
-
+1. Write a program that checks to see if a number is between two values using the ternary operator.
+2. Write a program that checks to see if a string is empty or not using the ternary operator.
+3. Write a program that checks to see if a string contains a specific character using the ternary operator.
 
 ### If Statements
 
-1. Write a program that checks if a given number is positive, negative, or zero. If the number is positive, print "The number is positive". If it is negative, print "The number is negative". If it is zero, print "The number is zero".
+1. Write a program that checks to see if a given number is positive, negative, or zero. If the number is positive, print "The number is positive". If it is negative, print "The number is negative". If it is zero, print "The number is zero".
 
 2. Write a program that takes two numbers as input and prints the larger number. If the two numbers are equal, print "The numbers are equal".
 
-3. Write a program that takes a number as input and checks if it is even or odd. If it is even, print "The number is even". If it is odd, print "The number is odd".
+3. Write a program that takes a user's age and for the following ages prints a messge letting them know what activities they are old enough to do:
 
-    
+   - Under 18: not old enough to vote
+   - 18 and over, but under 21: old enough to vote, but not to drink.
+   - 21 and over, but under 25: old enough to drink, but not old enough to rent a car.
+   - 25 and over: can vote, drink, and rent a car.
+
+     
+
 
 ### Switch Statements
 
-1. 
+1. Write a program that checks to see if a character is a vowel or consonant using switch statements.
+1. Write a program that takes a number as an input and outputs the corrsponding name of a day of the week as output.
 
 
 
 
 ### Nested If Statements
 
-1. 
+1. Write a program that checks to see if a number is divisible by both 3 and 5 using nested if statements.
+1. Write a program that checks to see if a number is positive and even using nested if statements.
+1. Write a program to suggest that a person wear a wool coat if the temperature is below 45 F. or use an umbrella if it is raining, or wear a rain coat if it is below 45 and raining.
 
 
 
@@ -45,19 +56,40 @@ These are solutions to the problems above. Note that for each problem, there may
 
 ### Ternary Statements
 
+These solutions use constants as input (rather than prompting a user for input) and use the ternary operator in the solution to the problem. Output is logged to the console.
+
 1. ```JavaScript
+  /* Write a program that checks to see if a number is between two values using the ternary operator. */
+  
+  // Input is simulated with constants
+  const num = 5;   // number to check
+  const min = 1;
+  const max = 10;
+  
+  const result = num >= min && num <= max ? 'between' : 'not between';
+  console.log(result); // Output: between
+  ```
+  
    
-   ```
-   
-   
-   
+  
 2. ```JavaScript
-   
-   ```
-   
+  /* Write a program that checks to see if a string is empty or not using the ternary operator. */
+  
+  const str = '';
+  const result = str.length === 0 ? 'empty' : 'not empty';
+  console.log(result); // Output: empty
+  ```
+  
+  
+  
 3. ```JavaScript
-   
-   ```
+  /* Write a program that checks to see if a string contains a specific character using the ternary operator. */
+  
+  const str = 'hello';
+  const char = 'e';
+  const result = str.includes(char) ? 'contains' : 'does not contain';
+  console.log(result); // Output: contains
+  ```
 
 
 
@@ -66,6 +98,8 @@ These are solutions to the problems above. Note that for each problem, there may
 These programs prompt the user to enter input using the `prompt` function, which returns a string. We then use the `parseInt` function to convert the string to a number. Finally, we use if statements to determine the appropriate output and print it to the  console using the `console.log` function.
 
 1. ```JavaScript
+   /* Write a program that checks to see if a given number is positive, negative, or zero. If the number is positive, print "The number is positive". If it is negative, print "The number is negative". If it is zero, print "The number is zero". */
+   
    let num = parseInt(prompt("Enter a number:"));
    
    if (num > 0) {
@@ -77,7 +111,11 @@ These programs prompt the user to enter input using the `prompt` function, which
    }
    ```
    
+   
+   
 2. ```JavaScript
+   /* Write a program that takes two numbers as input and prints the larger number. If the two numbers are equal, print "The numbers are equal". */
+   
    let num1 = parseInt(prompt("Enter the first number:"));
    let num2 = parseInt(prompt("Enter the second number:"));
    
@@ -90,100 +128,145 @@ These programs prompt the user to enter input using the `prompt` function, which
    }
    ```
    
-3. ```JavaScript
-   let num = parseInt(prompt("Enter a number:"));
    
-   if (num % 2 === 0) {
-     console.log("The number is even");
+   
+3. ```JavaScript
+   /* Write a program that takes a user's age and for the following ages prints a messge letting them know what activities they are old enough to do:
+   
+   - Under 18: not old enough to vote
+   - 18 and over, but under 21: old enough to vote, but not to drink.
+   - 21 and over, but under 25: old enough to drink, but not old enough to rent a car.
+   - 25 and over: can vote, drink, and rent a car. */
+   
+   let age = 25;
+   
+   if (age < 18) {
+     console.log("You are not old enough to vote.");
+   } else if (age >= 18 && age < 21) {
+     console.log("You are old enough to vote but not old enough to drink.");
+   } else if (age >= 21 && age < 25) {
+     console.log("You are old enough to vote and drink but not old enough to rent a car.");
    } else {
-     console.log("The number is odd");
+     console.log("You are old enough to vote, drink, and rent a car.");
    }
    ```
-
-4. ```JavaScript
-   
-   ```
-   
-   
 
 ### Switch Statements
 
 1. ```javascript
+   /* Write a program that checks to see if a character is a vowel or consonant using switch statements. */
    
+   let char = "a";
+   
+   switch (char.toLowerCase()) {
+      case "a":
+      case "e":
+      case "i":
+      case "o":
+      case "u":
+         console.log("Vowel");
+         break;
+      default:
+         console.log("Consonant");
+   }
    ```
    
+   
+
+
 2. ```javascript
+   /* Write a program that takes a number as an input and outputs the corrsponding name of a day of the week as output. */
    
+   let day = 3;
+   
+   switch (day) {
+     case 0:
+       console.log("Sunday");
+       break;
+     case 1:
+       console.log("Monday");
+       break;
+     case 2:
+       console.log("Tuesday");
+       break;
+     case 3:
+       console.log("Wednesday");
+       break;
+     case 4:
+       console.log("Thursday");
+       break;
+     case 5:
+       console.log("Friday");
+       break;
+     case 6:
+       console.log("Saturday");
+       break;
+     default:
+       console.log("Invalid day number");
+   }
    ```
+
    
-3. ```Javascropt
-   
-   
-   ```
-   
-4. ```javascript
-   
-   ```
 
 
 
 ### Nested If Statements
 
 1. ```javascript
-   for (let i = 1; i <= 5; i++) {
-     let row = "";
-     for (let j = 1; j <= i; j++) {
-       row += "*";
+   /* Write a program that checks to see if a number is divisible by both 3 and 5 using nested if statements. */
+   
+   let num = 15;
+   
+   if (num % 3 == 0) {
+     if (num % 5 == 0) {
+       console.log("Divisible by both");
+     } else {
+       console.log("Divisible by only 3");
      }
-     console.log(row);
-   }
-   ```
-
-2. ```JavaScript
-   let input = prompt("Enter a string:");
-   let isPalindrome = true;
-   for (let i = 0; i < input.length / 2; i++) {
-     if (input.charAt(i) !== input.charAt(input.length - i - 1)) {
-       isPalindrome = false;
-       break;
-     }
-   }
-   if (isPalindrome) {
-     console.log(input + " is a palindrome.");
    } else {
-     console.log(input + " is not a palindrome.");
+     console.log("Not divisible by either");
    }
    ```
-
-3. ```JavaScript
-   let number = parseInt(prompt("Enter a positive integer:"));
-   let factor = 1;
-   while (factor <= number) {
-     if (number % factor === 0) {
-       console.log(factor);
+   
+   
+   
+2. ```JavaScript
+   /* Write a program that checks to see if a number is positive and even using nested if statements. */
+   
+   let num = -2;
+   
+   if (num > 0) {
+     if (num % 2 == 0) {
+       console.log("Number is positive and even");
+     } else {
+       console.log("Number is positive but odd");
      }
-     factor++;
+   } else {
+     console.log("Number is not positive");
    }
    ```
-
-4. ```javascript
-   let num;
-   do {
-     num = parseInt(prompt("Enter a number between 1 and 10: "));
-   } while (num < 1 || num > 10);
-   let i = 1;
-   do {
-     let j = 1;
-     do {
-       console.log("*");
-       j++;
-     } while (j <= i);
-     i++;
-   } while (i <= num);
+   
+3. ```JavaScript
+   /* Write a program to suggest that a person wear a wool coat if the temperature is below 45 F. or use an umbrella if it is raining, or wear a rain coat if it is below 45 and raining. */
+   
+   let temperature = 40;
+   let isRaining = true;
+   
+   if (temperature < 45) {
+     if (isRaining) {
+       console.log("Wear a rain coat");
+     } else {
+       console.log("Wear a wool coat");
+     }
+   } else if (isRaining) {
+     console.log("Use an umbrella");
+   }
    ```
-
+   
+   
+   
    
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Course Materials by [Brian Bird](https://profbird.dev), written winter 2023, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Course Materials by [Brian Bird](https://profbird.dev), written sprint <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

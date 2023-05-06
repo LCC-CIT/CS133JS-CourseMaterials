@@ -117,5 +117,5 @@ This will be a total of 6 files.
 
 The main focus of grading will be on correct coding of loops and problem solving skills.
 
-Here is the grading rubric: [CS133JS_Lab04_Rubric](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Rubric.pdf)
+Here is the grading rubric: [CS133JS_Lab04_Rubric](CS133JS_Lab04_Rubric.htm)
 

@@ -31,22 +31,25 @@ author: Brian Bird
 
 ## Announcements
 
-- New alternative for code review for lab 3. If your lab partner didn't post a beta version for you to review, you can review this instead.
-  - I'll make one for lab 4.
-- Due dates on Moodle corrected.
-  - Reading quiz closing later this week It's a mistake, but I won't change it.
-  - Lab betas, code reviews and production versions were set for a week later than normal. I've corrected those.
+Spring 2023
+
+- Alternative for code review for lab 3. 
+  If your lab partner didn't post a beta version for you to review, you can review this instead. Code reviews are due tomorrow, 3/24.
 - Midterm next Wednesday. 
   - Review lecture notes
   - Practice midterm.
-  - You can look at the textbook, lecture notes, and your lab assignments during the exam.
-  - Help from others, internet searches, ChatGPT, and any other outside sources are not allowed.
+  - You can take the quiz in the classroom at class time, or you can take it in the testing center. 
+    - **Classroom** from 12:00 to 1:50 on Wednesday, 5/3/2023. 
+      You will be allowed to refer to your textbook, lecture notes, and your lab assignments during the quiz in the classroom.
+    - **[Testing center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services)** on Wednesday, 5/3 or Thursday 5/4 from 9:00am to 7:00pm.
+      The testing center is located in the Center Building, Room 311 (upstairs and across from the library). You will be allowed to refer to a 4 x 6 card with notes on it
+    - In both locations: help from others, internet searches, ChatGPT, and any other outside sources are not allowed.
 
 
 ## Q and A
 
 - Does anyone have any general questions about anything?
-  - Lab 3 (selection)?
+  - Lab 3 (on selection)?
 
 
 
@@ -93,37 +96,55 @@ There are three control structures in programming:
 
 ------
 
-# Loops
+# This week's topic: Loops (Repetition)
 
-Loop statements execute a block of code multiple times. There are several types of loops in JavaScript: 
+Loop statements execute a block of code multiple times. There are several types of loops in JavaScript. This week we'll learn how to use:
 
 - `while`
 - `do while`
 - `for`
+
+And some more we'll learn aobut about later:
+
 - `for in` (we'll learn about this one after we've learned about arrays).
+- `for of` (we'll learn about this one after we've learned about objects.)
 
 
 
 ## `while` Loops
 
-The *while* loop iterates as long as a condition is true. 
-It tests the condition at the beginning of the loop, so it called a *pretest* loop.
+The *while* loop *iterates* (repeats the code inside it) as long as a condition is true. 
+It checks the loop condition expression at the beginning of the loop, so it called a *pretest* loop.
+
+**Parts of a `while` loop**
+
+Assume we have initialized a variable: 
+`let age = 0;`
+
+key word     &emsp;conditional expression
+
+<pre>   &darr;               &darr;</pre>
+
+```javascript
+while (age <= 0 || age > 125)   // loop header
+{                                                 // loop body
+   age = parseInt(prompt("Enter a valid age."));
+}
+```
 
 **Example: input validation**
 
 ```javascript
 // Re-prompt for input until the user enters it correctly
 let degrees = 0;
-degrees = prompt("Enter the temperature");
+degrees = parseFloat(prompt("Enter the temperature"));
 while(degrees < -100 || degrees > 150)  // invalid temperatures
 {
-   alert("Please enter a temperature between -100 and 150")
-   degrees = prompt("Enter the temperature");
+   alert("Please enter a temperature between -100 and 150");
+   degrees = ParseFloat(prompt("Enter the temperature"));
 }
 // Do something with the user's input
 ```
-
-
 
 **Example: a loop with a counter**
 
@@ -164,7 +185,7 @@ If we run this in the console, how can we show that `count` is global and `times
 
 ## `do while` Loops
 
-The same as the *while* loop, but it tests the condition at the end of the loop, so it is a *post-test* loop.
+The same as the *while* loop, but it checks the condition at the end of the loop, so it is a *post-test* loop.
 
 Note the semicolon at the end of the loop condition&mdash;this is a syntactic detail that's easy to miss!
 
@@ -181,8 +202,6 @@ do
 ```
 
 Is there any way this loop would not iterate at least once?
-
-
 
 **Example: a loop with a counter**
 
@@ -286,12 +305,21 @@ Show everyone how to download the example .html and .js files from a browser.
 
 These are the examples on Moodle:
 
-- [Loop Practice](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/CS133JS_Lab04_Part1_Example.html) - like Lab 4, Part 1
-  - [Starter .js file](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/CS133JS_Lab04_Part1_Example_Starter.js)
+- This is similar to part 1 of the lab assignment:
 
-- Rainfall table - for loop
-- Car Seat - with input validation
-- Actors and Movies - with validation and do-again
+  - [Loop Practice](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/CS133JS_Lab04_Part1_Example.html)
+    - [Starter .js file](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/CS133JS_Lab04_Part1_Example_Starter.js)
+
+- These are similar to part 2 of the lab assignment.
+
+  - Rainfall table - for loop 
+
+  - Car Seat - with input validation
+
+  - Actors and Movies - with validation and do-again
+
+- [Additional loop practice problems, with solutions](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/PracticeProblems-Loops.html).
+
 
 
 
@@ -319,7 +347,7 @@ These are the examples on Moodle:
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
    ```

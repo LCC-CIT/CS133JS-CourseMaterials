@@ -129,17 +129,17 @@ See the [LCC Tutoring Services](https://www.lanecc.edu/tutor) web page for infor
 
 The table below summarizes the possible points for each assessment task as well as the course as a whole:
 
-| **Assessment Tasks**               | **Points Each**          | **Total Points** |
-| ---------------------------------- | ------------------------ | ---------------- |
-| Labs  1 - 8                        | 40                       | 320              |
-| Code  Reviews<sup>2</sup> 1 - 8    | 8                        | 64               |
-| Reading  Quizzes<sup>2</sup> 1 - 8 | 8                        | 64               |
-| Term Project                       | 200                      | 200              |
-| Midterm and Final Quizzes          | Midterm: 100, Final: 150 | 250              |
-| Participation                      | 10 per week              | 102              |
-| **Course Total**                   |                          | **1000**         |
+| **Assessment Tasks**               | **Points Each**          | **Total Points** | Percentage |
+| ---------------------------------- | ------------------------ | ---------------- | ---------- |
+| Labs  1 - 8                        | 40                       | 320              | 32%        |
+| Code  Reviews<sup>2</sup> 1 - 8    | 8                        | 64               | 6.5%       |
+| Reading  Quizzes<sup>2</sup> 1 - 8 | 8                        | 64               | 6.5%       |
+| Term Project                       | 200                      | 200              | 20%        |
+| Midterm and Final Quizzes          | Midterm: 100, Final: 150 | 250              | 25%        |
+| Participation                      | 10 per week              | 102              | 10%        |
+| **Course Total**                   |                          | **1000**         |            |
 
-<sup>2</sup> The lowest grades for code reviews, and reading quizzes will be dropped from the grade calculation.
+<sup>2</sup> The lowest grades for code reviews and reading quizzes will be dropped from the grade calculation.
 
 Letter grades for the course will be determined by the following percentages:                  
 

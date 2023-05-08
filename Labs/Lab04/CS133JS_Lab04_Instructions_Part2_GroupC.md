@@ -84,10 +84,10 @@ Write a new version of web app III from the last lab that will:
 
  **In the .js file:** Put the code from the previous lab's function into the stub function provided.
 
-**In the .html file:** Use [CS133JS_Lab04_Part2C_TrailTypes.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2C_TrailTypes.html). 
+**In the .html file:** Use [CS133JS_Lab04_Part2C_TrailTypes.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/CS133JS_Lab04_Part2C_TrailTypes.html), in the `<script>` element:
 
-- Add an input validation loop in the script element that will do all the same kind things as the previous validation loop.
-- Add a loop that will ask the user if they want to enter another activity and find more trails.
+- Add a loop containing code that gets input from the user asking if they want to enter another activity to find more trails.
+- Add an inner loop containing code to get input (the type of activity) and validate it.
 
 ## Submitting your lab work on Moodle
 
@@ -125,4 +125,4 @@ Here is the grading rubric: [CS133JS_Lab04_Rubric](CS133JS_Lab04_Rubric.htm)
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Course Materials by [Brian Bird](https://profbird.dev), written 2020, revised <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Course Materials by [Brian Bird](https://profbird.dev), written 2020, revised <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

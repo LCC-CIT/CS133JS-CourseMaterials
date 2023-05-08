@@ -28,22 +28,26 @@ author: Brian Bird
 
 # Introduction
 
-## Announcements
+## Announcements for Spring 2023
 
 - Most of you did pretty well on the midterm!
-  - Average 80% 
-- I graded lab 4 production version (I still need to grade the code reviews).
-  - Quite a few of you haven't submitted lab 4 yet. 
-    Come to my office hours (M&mdash;Th at 4:00 or by appointment) if you need help finishing this lab. 
-    Look at the [Loop Practice Problems with Solutions](../Labs/Lab04/PracticeProblems-Loops.html) that I posted on Moodle.
-  - Look at my feedback. I put a lot of work into trying to give helpful feedback!
-- New lecture notes on [Problem Solving](CS133JS-LN-W04-D3-ProblemSolving.html).
+  - Average 80.4% 
+- I've graded everything you've turned in so far. Check your grades on Moodle.
+  - I entered participation grades for each of you.
+    - These are based on:
+      - Attendance, 2% of your overall grade.
+      - Participation in class discussion and exercises, 4%
+      - Colloaboration with your lab partner, 4%
+    - I will update the grades again at the end of the term to reflect your participation in the last five weeks of the class.
+  - The course total grade on Moodle is up to date and reflects your work so far this term.
 
 ## Q and A
 
-- How is the reading on arrays going?
-  - The reading quiz is due tomorrow (Tuesday).
-- Does anyone have any questions about anything?
+- Do you have any questions about:
+  - The midterm?
+  - The reading and/or quiz on arrays?
+  - Anything else?
+
 
 
 
@@ -77,23 +81,25 @@ This week we will be learning to use arrays. Here is what we will learn:
 
 - Review: 
    We can think of a *variable* as a storage place in memory. It has a name and can hold <u>only one value</u> and that value has a data type.
-- An *array* is like a variable (it's one of the things we call an *object*), but it can hold <u>more than one value</u>.
+- An *array* is like a variable (it's also one of the things we call an *object*), but it can hold <u>more than one value</u>.
 - An array has an *index* that lets us access a particular *element* (storage spot) in the array.
-   - Question: do you remember doing a loop exercise that involved checking sequential locations in a string? 
-
-- One way to think of an array is as a table with two columns where each row is an element of the array.
-
-**An array represented as a table. **  
-Each row represents an *element*.  
-This array contains string values.
-
-| *index* | *value*   |
-| ------- | --------- |
-| 0       | Rey       |
-| 1       | Finn      |
-| 2       | Han Solo  |
-| 3       | C-3PO     |
-| 4       | Chewbacca |
+   - Question: do you remember doing a loop exercise that involved checking sequential characters in a string? 
+   - A string is very similar to an array. It's sort of a special array that contains characters.
+   
+- One way to think of an array is as a table with two columns where each row is an element of the array.  
+  
+  
+   **An array represented as a table. **  
+   Each row represents an *element*.  
+   This array contains string values.  
+   
+   | *index* | *value*   |
+   | ------- | --------- |
+   | 0       | Rey       |
+   | 1       | Finn      |
+   | 2       | Han Solo  |
+   | 3       | C-3PO     |
+   | 4       | Chewbacca |
 
 
 
@@ -117,21 +123,23 @@ This array contains string values.
   const starTrek = ["Kirk", "Hulu", "McCoy", "Spok", "Scott"];
   ```
   
-  - This doesn't mean you can't change the 
+  - This doesn't mean you can't change the value stored in it. You just can't replace the array as a whole. (More about this later.)
 
 ## Accessing Array Elements
 
 The code shown below will access the array element with an index of 2  and assign the value stored there, "Han Solo", to the variable `character`.
 
-`const character = starWars[2];`  
-                                    &uarr;               &uarr;  
-                          array name    index
+<pre>const character = starWars[2];
+          &uarr;                &uarr;  
+       array name        index 
+</pre>
+
 
 This next line of code will change the value stored at index 2 to "Leia".
 
 `starwars[2] = "leia";`
 
-
+Question: Which name got replaced?
 
 ## Performing Operations on an Array
 
@@ -194,10 +202,10 @@ This next line of code will change the value stored at index 2 to "Leia".
 ### for loop
 
 We can use a for loop  to display the contents of an array.
-In the loop below, what is:
+Look at the loop below, assuming we have defined the original starWars array above.
 
-- The how many times will it iterate? 
-- The final value of i?
+- How many times will it iterate? 
+- What is the final value of i?
 
 ```javascript
 // Output the elements of the array to the console
@@ -217,7 +225,9 @@ for (const character of starWars) {
 }
 ```
 
-In a `for...of` loop, it's best to get the values from the elements into a variable declared with `const` rather than `let`. What do you think is the reason?
+In a `for...of` loop, it's best to get the values from the elements into a variable declared with `const` rather than `let`. 
+
+What do you think is the reason?
 
 ### while loop
 
@@ -303,4 +313,4 @@ grid[2][2] = "X";
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) 2018, revised <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) 2018, revised spring <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

@@ -1,3 +1,11 @@
+
+These are sprint 2023 notes:
+
+- Cover math operators. There is a short set of lecture notes that aren't linked on Moodle. They need to be expanded and covered early in the course.
+
+
+These were the notes made in 2022:
+
 Syllabus: align the grade book on Moodle with the syllabus.
 
 Re-order the topics like this:

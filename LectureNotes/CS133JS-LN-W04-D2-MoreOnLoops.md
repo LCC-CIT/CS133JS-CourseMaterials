@@ -176,33 +176,13 @@ for (let i = 1; i < 10;  i++)    // counts down the rows
 
 Note: The console needs to be wide enough to show the rows without wrapping.
 
-Q: What would you need to change to use this code in a web page?
+Q: What would you need to change to use this code in a web page[^1]?
 
 - "\t" ?
 - console.log(row) ?
 - Add something to start a new line?
-- 
 
-# Tips for Coding and Debugging
 
-## Coding
-
-- Create a .js file.
-  - Add a stub function for doing I/O.
-- Create a .html file and put the skeleton of your web page in it.
-  - Add a `script` element to the `head` that links to your .js file. Use the `defer` keyword.
-  - Add an `onload` event to the opening `body` tag that calls your I/O function.
-  - Add a title, header and some introductory text.
-  - Add at least one HTML element with an `id` attribute that you can use to display output.
-  - ***Test your page!***
-- In the .js file, start writing your JavaScript code.
-  - Put just enough code into the stub I/O function to put something into an element on the page, then ***test it.***
-  - Write a stub (or stubs) for the function(s) that will do computation or processing.
-  - Add code to the I/O function to call your processing function(s), ***test it.***
-- Add the rest of the JavaScript and HTML you need to finish the web app.
-  Iteratively:
-  - Add a little code.
-  - ***Test it!***
 
 ## Debugging
 
@@ -234,9 +214,7 @@ Q: What would you need to change to use this code in a web page?
 
 
 
-------
+[^1]:You can't use a tab character in an HTML page (unless it's inside a `<pre>` element. But you can use a series of `&nbsp`. At the end of each row you need to use `<br>` In place of `console.log(), you will use document.write().
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
-
-------------
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 

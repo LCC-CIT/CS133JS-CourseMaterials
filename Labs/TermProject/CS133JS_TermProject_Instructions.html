@@ -1,5 +1,5 @@
 <!doctype html>
-<html style='font-size:20px !important'>
+<html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
 <meta name="title" content="Term Project">
@@ -25,7 +25,7 @@ a:active, a:hover { outline: 0px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 .typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
 .typora-export .task-list-item input { pointer-events: none; }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) { 
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
 }
@@ -50,7 +50,7 @@ h6 { font-size: 1rem; }
 .hidden { display: none; }
 .md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
 a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
 sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
 figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
@@ -90,10 +90,10 @@ blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child, li > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
 #write .footnote-line { white-space: pre-wrap; }
-@media print {
+@media print { 
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
-  .typora-export * { print-color-adjust: exact; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
@@ -116,7 +116,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
 .md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
 .math { font-size: 1rem; }
-.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
 .md-toc-content::after, .md-toc::after { display: none; }
 .md-toc-item { display: block; color: rgb(65, 131, 196); }
@@ -129,7 +129,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .md-toc-h4 .md-toc-inner { margin-left: 6em; }
 .md-toc-h5 .md-toc-inner { margin-left: 8em; }
 .md-toc-h6 .md-toc-inner { margin-left: 10em; }
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 48em) { 
   .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
   .md-toc-h4 .md-toc-inner { margin-left: 5em; }
   .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
@@ -141,7 +141,7 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
-kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; }
 a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
@@ -157,7 +157,7 @@ mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
 .md-expand mark .md-meta { opacity: 0.3 !important; }
 mark .md-meta { color: rgb(0, 0, 0); }
-@media print {
+@media print { 
   .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
 }
 .md-diagram-panel .messageText { stroke: none !important; }
@@ -170,19 +170,19 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
 .typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
 .typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) { 
   .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) { 
   .typora-export-sidebar { display: none; }
 }
-.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
 .outline-content ul { margin-top: 0px; margin-bottom: 0px; }
 .outline-content strong { font-weight: 400; }
 .outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
-.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-expander::before { content: ''; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
 .outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
-.outline-expander:hover::before { content: ""; }
+.outline-expander:hover::before { content: ''; }
 .outline-h1 > .outline-item { padding-left: 0px; }
 .outline-h2 > .outline-item { padding-left: 1em; }
 .outline-h3 > .outline-item { padding-left: 2em; }
@@ -194,14 +194,14 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
 .outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
 .outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
-.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ''; }
 .outline-children { display: none; }
 .info-panel-tab-wrapper { display: none; }
 .outline-item-open > .outline-children { display: block; }
 .typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
 .typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
 .typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
-.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: '−'; }
 .typora-export-collapse-outline .outline-children { display: none; }
 .typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
 .typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
@@ -599,6 +599,7 @@ header, .context-menu, .megamenu-content, footer{
 </style><title>Term Project</title>
 </head>
 <body class='typora-export'><div class='typora-export-content'>
-<div id='write'  class=''><p>&nbsp;</p><h1>Term Project</h1<p>&nbsp;</p><p><strong><span>CS 133JS, Beginning Programming: JavaScript</span></strong></p><h2 id='objectives'><span>Objectives</span></h2><p><span>This is your oportunity to practice and demostrate all the programming and problem solving concepts you&#39;ve learned this term.</span></p><h2 id='project-requirements'><span>Project Requirements</span></h2><p><span>You can choose a project from the list of suggestions below or propose one based on an idea of your own. </span></p><ul><li><p><span>The project should:</span></p><ul><li><p><span>Use all the main programming concepts you&#39;ve learned in the class:</span></p><ul><li><p><span>Selection</span></p></li><li><p><span>Repetition</span></p></li><li><p><span>Functions</span></p></li><li><p><span>Arrays</span></p></li><li><p><span>Objects</span></p></li><li><p><span>Events</span></p></li></ul></li><li><p><span>Use best coding practices like avoiding global variables, writing DRY code, proper indentation, descriptive variable names, explanatory comments, separating I/O from processing, etc.</span></p></li><li><p><span>Provide good user experience by using input validation, do-again loops or resets, clear instructions and/or prompts, etc.</span></p></li><li><p><span>Require at least as much effort as an average lab assignment, but not as much as two lab assignments.</span></p></li></ul><ul><li><p><span>Not be the same as any of the class or textbook examples.</span></p></li><li><p><span>Not be the same as a project being done by another student in the class.</span></p></li><li><p><span>Not use code you got from someone else, the internet, or AI.</span></p></li></ul></li></ul><h2 id='project-suggestions'><span>Project Suggestions</span></h2><ul><li><p><span>Dice games like &quot;pig&quot; (but somthing more complicated than &quot;craps&quot;).</span></p></li><li><p><span>Grid based games like &quot;tic-tac-toe&quot;, including turn-taking and score keeping (nothing as complicated as chess though).</span></p></li><li><p><span>A text based game like &quot;Hunt the Wumpus&quot;.</span></p></li><li><p><span>A score keeping app for a more complex game like D&amp;D.</span></p></li><li><p><span>A flash card app like &quot;quizlet&quot;.</span></p></li><li><p><span>An exercise and fitness tracker with features for setting goals, calculating calories burned, heart points, BMI, etc.</span></p></li><li><p><span>A diet and nutrition tracker with multiple features.</span></p></li><li><p><span>Your own idea.</span></p></li></ul><h2 id='submission'><span>Submission</span></h2><p><span>Each student will post a beta (draft) version in a forum so that you can get and give a code review before submitting the production (final) version.</span></p><p><span>You will submit:</span></p><ul><li><p><span>A beta version.</span></p></li><li><p><span>The code review you did for another student.</span></p></li><li><p><span>The production version of your project along with an updated copy of the code review you recieved.</span></p></li></ul><p>&nbsp;</p><hr /><p><a href='http://creativecommons.org/licenses/by-sa/4.0/'><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" referrerpolicy="no-referrer" alt="Creative Commons License"></a><span> Beginning JavaScript Course Lab Instructions by </span><a href='https://profbird.dev'><span>Brian Bird</span></a><span>, written spring </span><time><span>2023</span></time><span>, are licensed under a </span><a href='http://creativecommons.org/licenses/by-sa/4.0/'><span>Creative Commons Attribution-ShareAlike 4.0 International License</span></a><span>. </span></p></div></div>
-<base target="_blank"></body>
+<div id='write'  class=''><p>&nbsp;</p><h1>Term Project</h1<p>&nbsp;</p><p><strong><span>CS 133JS, Beginning Programming: JavaScript</span></strong></p><h2 id='objectives'><span>Objectives</span></h2><p><span>This is your oportunity to practice and demostrate all the programming and problem solving concepts you&#39;ve learned this term.</span></p><h2 id='project-requirements'><span>Project Requirements</span></h2><p><span>You can choose a project from the list of suggestions below or propose one based on an idea of your own. </span></p><ul><li><p><span>The project should:</span></p><ul><li><p><span>Use all the main programming concepts you&#39;ve learned in the class:</span></p><ul><li><p><span>Selection</span></p></li><li><p><span>Repetition</span></p></li><li><p><span>Functions</span></p></li><li><p><span>Arrays</span></p></li><li><p><span>Objects</span></p></li><li><p><span>Events</span></p></li></ul></li><li><p><span>Use best coding practices like avoiding global variables, writing DRY code, proper indentation, descriptive variable names, explanatory comments, separating I/O from processing, etc.</span></p></li><li><p><span>Provide good user experience by using input validation, do-again loops or resets, clear instructions and/or prompts, etc.</span></p></li><li><p><span>Require at least as much effort as an average lab assignment, but not as much as two lab assignments.</span></p></li><li><p><span>Not be the same as any of the class or textbook examples.</span></p></li><li><p><span>Not be the same as a project being done by another student in the class.</span></p></li><li><p><span>Not use code you got from someone else, the internet, or AI.</span></p></li></ul></li></ul><h2 id='project-suggestions'><span>Project Suggestions</span></h2><ul><li><p><span>Dice games like &quot;pig&quot;.</span></p></li><li><p><span>Grid based games like &quot;Obstruction</span><sup class='md-footnote'><a href='#dfref-footnote-1' name='ref-footnote-1'>1</a></sup><span>&quot;.</span></p></li><li><p><span>A text based game like &quot;Hunt the Wumpus&quot;.</span></p></li><li><p><span>A score keeping app for a more complex game like D&amp;D.</span></p></li><li><p><span>A flash card app like &quot;Quizlet&quot;.</span></p></li><li><p><span>An exercise and fitness tracker with features for setting goals, calculating calories burned, heart points, BMI, etc.</span></p></li><li><p><span>A diet and nutrition tracker with multiple features.</span></p></li><li><p><span>Your own idea.</span></p></li></ul><h2 id='submission'><span>Submission</span></h2><p><span>Each student will post a beta (draft) version in a forum so that you can get and give a code review before submitting the production (final) version.</span></p><p><span>You will submit:</span></p><ul><li><p><span>A beta version.</span></p></li><li><p><span>The code review you did for another student.</span></p></li><li><p><span>The production version of your project along with an updated copy of the code review you recieved.</span></p></li></ul><p>&nbsp;</p><hr /><p><a href='http://creativecommons.org/licenses/by-sa/4.0/'><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" referrerpolicy="no-referrer" alt="Creative Commons License"></a><span> Beginning JavaScript Course Lab Instructions by </span><a href='https://profbird.dev'><span>Brian Bird</span></a><span>, written spring </span><time><span>2023</span></time><span>, are licensed under a </span><a href='http://creativecommons.org/licenses/by-sa/4.0/'><span>Creative Commons Attribution-ShareAlike 4.0 International License</span></a><span>. </span></p><div class='footnotes-area'  ><hr/>
+<div class='footnote-line'><span class='md-fn-count'>1</span> <span>Obstruction game: This is a two-player game in which one player is “O”; the other player is “X.” Use  at least a 6×6 grid. Each player takes turns putting their mark in one of the squares. Players can only mark a square if all of its neighbors, including those on diagonals, are empty. Play ends when one player can no longer move.</span> <a name='dfref-footnote-1' href='#ref-footnote-1' title='back to document' class='reversefootnote' >↩</a></div></div></div></div>
+</body>
 </html>

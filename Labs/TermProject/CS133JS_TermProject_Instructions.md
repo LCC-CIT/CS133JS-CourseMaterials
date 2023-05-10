@@ -40,12 +40,12 @@ You can choose a project from the list of suggestions below or propose one based
 
 ## Project Suggestions
 
-- Dice games like "pig" (but somthing more complicated than "craps").
-- Grid based games like "tic-tac-toe", including turn-taking and score keeping (nothing as complicated as chess though).
+- Dice games like "pig".
+- Grid based games like "Obstruction[^1]".
 - A text based game like "Hunt the Wumpus".
 
 - A score keeping app for a more complex game like D&D.
-- A flash card app like "quizlet".
+- A flash card app like "Quizlet".
 - An exercise and fitness tracker with features for setting goals, calculating calories burned, heart points, BMI, etc.
 - A diet and nutrition tracker with multiple features.
 - Your own idea.
@@ -65,3 +65,5 @@ You will submit:
 ------
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Course Lab Instructions by [Brian Bird](https://profbird.dev), written spring <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+
+[^1]: Obstruction game: This is a two-player game in which one player is “O”; the other player is “X.” Use  at least a 6×6 grid. Each player takes turns putting their mark in one of the squares. Players can only mark a square if all of its neighbors, including those on diagonals, are empty. Play ends when one player can no longer move.

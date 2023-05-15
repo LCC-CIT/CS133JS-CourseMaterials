@@ -29,12 +29,13 @@ author: Brian Bird
 
 ### Q and A
 
-- Did anyone look at the [additional loop practice problems](../Labs/Lab04/PracticeProblems-Loops.html) I posted? 
-  - Were they helpful? 
-  - If you want more, I can post some for other topics; like arrays.
+- [Upcoming classes](CS133JS-LN-W06-DX-NextSoftwareDevClasses.html) for the Software Development AAS degree program (previously Computer Programming AAS).
+  
+- Lab 5
+  - Part 1, any questions?
+  - Part 2, any questions?
 
-- Lab 5, Part 2, any questions?
-- Does anyone have any questions about anything?
+- Does anyone have any other questions about anything?
 
 
 
@@ -129,21 +130,19 @@ There are two ways to create an object:
   const fili = new Object();
   ```
 
-  We'll cover this in the next class.
+  We'll cover object constructors in the next class.
   
 - Object literal
 
   We'll focus on this approach today.
 
-  
+  This code will create an object literal without adding any properties or methods:
 
-  Create an object literal without adding any properties or methods:
-  
   ```javascript
   const thorin = {};
   ```
   
-  Create an object with properties and methods:
+  This is how you create an object with properties and methods:
   
   ```javascript
   const fili = 
@@ -161,17 +160,21 @@ There are two ways to create an object:
 
 ## Properties and Methods
 
-Think of a properties as a nouns, and a methods as a verbs.
+Think of a properties as nouns, and methods as verbs.
 
 ### Properties
 
-Each property consists of a *key : value* pair. In the example above, `name` is a *key* and `"Fili"` is a *value*.
+Each property consists of a *key : value pair*. In the example above, `name` is a *key* and `"Fili"` is a *value*.
 
 ### Methods
 
 A method is essentially a function. It is also the value of an object property. It is a task that an object can perform. In the example above, `greet` is a *key*, and is the name of the *method*. The function is a *value*.
 
 ## Accessing Properties and Methods
+
+### Encapsulation
+
+The scope of properties and methods declared inside an object is limited to that object. The rule about local scope being delineated by the curly braces applies here. There is a special word for the scope of properties and methods inside an object. We say they are *encapsulated* in the object.
 
 ### Accessing an Object Property
 

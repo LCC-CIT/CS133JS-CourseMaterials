@@ -37,7 +37,7 @@ Classes to take next if you are pursuing the AAS in Software Development (former
 
 - CS 295N Web Development 1:  ASP.NET
 
-- CS 295R,  React (recommended program elective)
+- CS 295R,  React (recommended *program elective*)
 
 - Human Relations, one of:
 
@@ -47,20 +47,20 @@ Classes to take next if you are pursuing the AAS in Software Development (former
 
 ## Term-By-Term Core Course Offerings
 
-| First  Year                                      |      |                                                              |      |                                                              |
-| ------------------------------------------------ | ---- | ------------------------------------------------------------ | ---- | ------------------------------------------------------------ |
-| **Fall**                                         |      | **Winter**                                                   |      | **Spring**                                                   |
-| CIS100 Computing Careers  Exploration            |      | Program Elective: <br />CS235AM, Beg. Mobile App Dev, recommended |      | Program Elective: <br />CS235IM, Intermediate Mobile App Dev, recommended |
-| CIS125A, CIS125G or CS160                        |      | CS233JS Intermediate JavaScript                              |      | CS162N Intermediate C#                                       |
-| CIS195 Web Authoring 1                           |      | CS161N Beginning C#                                          |      |                                                              |
-| CS133JS Beg.  JavaScript                         |      | (CIS195, CS133JS offered)                                    |      | (CS161N & 233JS possibly offered)                            |
-|                                                  |      |                                                              |      |                                                              |
-| **Second Year**                                  |      |                                                              |      |                                                              |
-| **Fall**                                         |      | **Winter**                                                   |      | **Spring**                                                   |
-| Program Elective: <br />CS295R React recommended |      | CS275 Data Modeling and SQL intro                            |      | CS276 Advanced SQL                                           |
-| CS234N Advanced C#                               |      | CS296N Web Development 2: ASP.NET                            |      | CS297 Programming Capstone                                   |
-| CS295N Web Development 1:  ASP.NET               |      | CS246 System Design                                          |      | CS280PR Co-op Ed: Computer Programming                       |
-|                                                  |      | CS206 Co-op CIT Seminar                                      |      |                                                              |
+| First  Year                                                  |      |                                                              |      |                                                              |
+| ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | ---- | ------------------------------------------------------------ |
+| **Fall**                                                     |      | **Winter**                                                   |      | **Spring**                                                   |
+| CIS100 Computing Careers  Exploration                        |      | Program Elective: <br />CS235AM, Beg. Mobile App Dev, recommended |      | Program Elective: <br />CS235IM, Intermediate Mobile App Dev, recommended |
+| CIS125A, CIS125G or CS160                                    |      | CS233JS Intermediate JavaScript                              |      | CS162N Intermediate C#                                       |
+| CIS195 Web Authoring 1                                       |      | CS161N Beginning C#                                          |      |                                                              |
+| CS133JS Beg.  JavaScript                                     |      | (CIS195, CS133JS offered)                                    |      | (CS161N & 233JS possibly offered)                            |
+|                                                              |      |                                                              |      |                                                              |
+| **<mark>Second Year</mark>**                                 |      |                                                              |      |                                                              |
+| **<mark>Fall</mark>**                                        |      | **Winter**                                                   |      | **Spring**                                                   |
+| <mark>Program Elective: <br />CS295R React recommended</mark> |      | CS275 Data Modeling and SQL intro                            |      | CS276 Advanced SQL                                           |
+| <mark>CS234N Advanced C#</mark>                              |      | CS296N Web Development 2: ASP.NET                            |      | CS297 Programming Capstone                                   |
+| <mark>CS295N Web Development 1:  ASP.NET</mark>              |      | CS246 System Design                                          |      | CS280PR Co-op Ed: Computer Programming                       |
+|                                                              |      | CS206 Co-op CIT Seminar                                      |      |                                                              |
 
 
 

@@ -30,11 +30,12 @@ author: Brian Bird
 
 ## Announcements 
 
-- I'm still working on grading lab 4.
+- [Job Fair](https://www.lanecc.edu/community/events/job-fair-may-18): tomorrow (Thursday, 5/18), 1:00pm - 5:00pm, Building 19, Room 100 (Lobby)
+- [Making Wise Choices Workshop](https://www.lanecc.edu/get-support/academic-support/counseling-center): today and tomorrow (5/17 & 18) at 3:00pm and 4:00pm
 
 ## Q and A
 
-- Lab 5 any questions?
+- Lab 5, any questions?
 - Does anyone have any questions about anything?
 
 
@@ -89,10 +90,6 @@ fili.greet();
 
 
 
-------
-
-
-
 # Object Constructors
 
 Sometimes we will want to make multiple objects that are nearly the same. For example, we might want to make a "template" for creating a flock of pigeons. Here is one pigeon object:
@@ -109,7 +106,7 @@ const pigeon = {
 }
 ```
 
-Now we want more pigeon objects, but with different property values. Is there a way we can make a template that we can use to make others? Yes! We can make an *object constructor*.
+What if we want more pigeon objects, but with different property values? Is there a way we can make a template that we can use to make others? Yes! We can make an *object constructor*.
 
 Here's a special function that's an *object constructor*. 
 
@@ -127,14 +124,14 @@ function Pigeon(name, breed, speed){
 }
 ```
 
-Now we can make some *pigeon* objects and pass in property values:
+Now we can use the constructor function to make some `Pigeon` objects. We set the property values by passing them into the constructor function:
 
 ```javascript
 const agatha = new Pigeon("Agatha", "Egyptian Swift", 50);
 const elizabeth = new Pigeon("Elizabeth", "Egyptian Swift", 60);
 ```
 
-We can use these objects just like we would any other object:
+We can use these objects just like we would a literal object:
 
 ```javascript
 agatha.speed = 55;
@@ -144,7 +141,7 @@ elizabeth.fly();
 
 ## The `this` Keyword
 
-Now that we have multiple objects that use the same object definition, we can see the importance of using *this* inside of object methods. The *this* keyword represents whatever object it is in and now it can be in different objects.
+Now that we have multiple objects that use the same object definition, we can see the importance of using `this` inside of object methods. The *this* keyword represents whatever object it is in and now it can be in different objects.
 
 What would have happened if we used the object name inside the method instead of `this`?
 
@@ -269,7 +266,7 @@ This is a new version of the Movie and Actors web app.
 
 ## Alternate Syntaxes for Object Constructors
 
-You will also see object constructor functions that create and return an object rather than setting properties on `this`. Here's an example:
+You will also see object constructor functions that internally create an object, set it's values and return it; rather than setting properties on `this`. Here's an example:
 
 ```javascript
 function Pigeon(name, breed, speed) {
@@ -328,4 +325,4 @@ function Pigeon(name, breed, speed) {
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), 2020, revised <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), 2020, revised <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

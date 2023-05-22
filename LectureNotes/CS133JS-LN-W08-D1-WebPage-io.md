@@ -90,7 +90,7 @@ For the examples below, assume we have this in our web page:
 <h1>Greetings</h1>
 <p id="eugene">Hello Eugene!</p>
 <p id="lcc">Hello LCC!</p>
-<p id="cit">Hello CIT!</p>
+<p id="cit" class="cit">Hello CIT!</p>
 ```
 
 ### By id attribute
@@ -103,10 +103,10 @@ document.getElementById("lcc").innerHTML = "Hello Lane Community College!";
 
 #### Using `querySelector` with a single selector
 
-Review: in a CSS rule, the first part is the selector. For example, in the rule below, `#cit` is the selector:
+Review: in a CSS rule, the first part is the selector. For example, in the rule below, `.cit` is the class selector:
 
 ```css
-#cit {
+.cit {
 	background-color: green;
 }
 ```
@@ -120,10 +120,10 @@ In JavaScript, we can use `document.querySelector` to get a reference to an HTML
   - element name (tag name)
   - or a combination of the selectors above
   
-- The `querySelector` method will return a single reference to the first matching element it finds on the page. 
+- The `querySelector` method will return a single reference to the first matching element it finds on the page. In this case, it will find an element with the attribute `class="cit"`.
 
   ```javascript
-  document.querySelector("#cit").innerHTML = "Greetings CIT!";
+  document.querySelector(".cit").innerHTML = "Greetings CIT!";
   ```
 
 #### Using `querySelector` with multiple selectors
@@ -272,4 +272,4 @@ When you click a button on a form, the information entered on the form will be s
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), 2020, revised <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), 2020, revised <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

@@ -29,13 +29,15 @@ author: Brian Bird
 
 ## Announcements
 
-- Don't forget the reading quiz that closes tomorrow.
-  - The tutorial you are reading has examples that use *arrow functions*. You will learn about those next term. I've translated those example to use "normal" functions.
+- Note: the tutorial you are reading has examples that use *arrow functions*. You will learn about those next term. I've translated those example to use "normal" functions.
+  
+- Reminder: Lab 6 (objects) code reviews are due tomorrow.
 
-- Lab 6 (objects) code reviews are due tomorrow.
+- No class next Monday, it's Memorial day.
 
 ## Q and A
 
+- [Feedback on Lab 5 (arrays)](https://drive.google.com/file/d/15P6scrpXuBpsL6PQy1Aj-75HH04jfY2D/view?usp=sharing)
 - Any questions?
 
 

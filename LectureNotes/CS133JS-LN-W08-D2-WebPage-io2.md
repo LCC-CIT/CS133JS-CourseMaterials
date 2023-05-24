@@ -27,9 +27,17 @@ author: Brian Bird
 
 ## Introduction
 
+### Anouncements
+
+- Lab 5 (objects) is due tomorrow night.
+- Friday of this week is the last day to: drop, withdraw, or change to pass/no pass.
+- Don't forget to do the reading and take the quiz before class time on Monday.
+
 ### Q and A
 
-- Any questions?
+- How is lab 5 going?
+- How is the term project going?
+- Any other questions?
 
 
 

@@ -50,26 +50,51 @@ By <a href="//commons.wikimedia.org/w/index.php?title=User:Eib&amp;action=edit&a
 Each object in the diagram above has an array of children. We don't normally access these directly, but we can. For example, the code below will change the text in the `<h1>` element: 
 
 ```javascript
-document.children[0].children[1].children[0].textContent = "New Heading";
+document.children[0].children[1].children[0].innerHTML = "New Heading";
 ```
 
 If you want to explore the hierarchy of DOM objects, you can do it fairly easily in the console.
 
 ##### Accessing elements using `getElementById`
 
-Returns a reference to an HTML element.
+Given this HTML code:
+
+```html
+<h1>Students and Their Degree Programs</h1>
+<ul>
+        <li id="s1">
+            Student: <span></span>
+            <p>Degree: <span></span></p>  
+        </li>
+        <li id="s2">
+            Student: <span></span>
+            <p>Degree: <span></span></p>  
+       </li>
+</ul>
+```
+
+
+
+This JavaScript code returns a reference to th HTML `li` element with `id="s1"`.
 
 ```javascript
-let lccElement = document.getElementById("lcc");
+let lccElement = document.getElementById("s1");
 ```
 
 #####  Accessing elements using `querySelector` 
 
-Returns a reference to the first matching element it finds on the page. 
+The `querySelector` method can select an HTML element by:
+
+- Element name
+- id attribute
+- class attribute
+- Any combination of selectors that is legal in a CSS rule selector.
+
+Given the HTML code in the preceding example, these lines of JavaScript will each return a reference to the first matching HTML element. 
 
 ```javascript
-let lccElement = document.querySelector("#cit");
-let degreeElement = document.querySelector("#s1 p span");
+let lccElement = document.querySelector("#s2");  // second li
+let degreeElement = document.querySelector("#s2 p span");  // fourth span
 ```
 
 
@@ -119,13 +144,13 @@ Enter your name:<input>
 
 
 
-
-
 ## More on Web Page I/O
 
 Here are some additional tips and techniques for accessing HTML elements using the DOM.
 
 ### Accessing HTML Element Attributes
+
+Once we have gotten a reference to an HTML element, we can not only change the `innerHTML`, `textContent` or `value`, we can also change the value of its attributes (if it has any).
 
 Review: An *attribute* defines some characteristic of an HTML element and is coded as a key value pair. In the example below, `href` is an attribute.
 
@@ -158,11 +183,15 @@ There are four DOM methods you can use to get an array containing multiple eleme
 
 #### `getElementsByName`
 
+This method selects all elements with the matching value for the `name` attribute.
+
 ```javascript
 let vegetables = document.getElementsByName("vegetable");  // an array of vegies
 ```
 
 #### `getElementsByClassName`
+
+This method selects all elements with the matching value for the `class` attribute.
 
 ```javascript
 let topProduce = document.getElementsByClassName("highlight");  // array of highlighted items
@@ -170,11 +199,15 @@ let topProduce = document.getElementsByClassName("highlight");  // array of high
 
 #### `getElementsByTagName`
 
+This method selects all elements with the matching element name.
+
 ```javascript
 let produce = document.getElementsByTagName("li");  // array of all items
 ```
 
 #### `querySelectorAll`
+
+This method works like `querySelector`, but returns all the matching elements.
 
 ```javascript
 let selectProduce = document.querySelectorAll("ol .highlight");  // array of highlighted items from the ol
@@ -186,7 +219,7 @@ let selectProduce = document.querySelectorAll("ol .highlight");  // array of hig
 
 ### Event Handlers with Parameters
 
-Remember that an *event handler* is a function and functions can have parameters. Use single quotes to pass an argument to an event handler that has a parameter. In this example, one button's event handler is passed an `'A'`, the other a `'B'` :
+Remember that an *event handler* is a function and functions can have parameters. Use single quotes to pass an argument to an event handler function that has a parameter. In this example, one button's event handler is passed an `'A'`, the other a `'B'` :
 
 ```html
 <button onclick="buttonPressed('A')">Button A</button>
@@ -208,9 +241,9 @@ Try changing the parameter passed to the event handler to:
 
 ### Adding an Event Handler to an Element Using JavaScript
 
-You can add an event hander to an HTML element using JavaScript code rather than adding it as an attribute of the element using the `addEventListener` method.
+You can add an event hander to an HTML element *dynamically* using JavaScript code rather than adding it as an attribute of the element using the `addEventListener` method.
 
-Note that the first parameter is the name of the event. Events are named without the "on" prefix. For example, use the event name "<u>click</u>", not "onclick".
+In the first line of the script element below, note that the first parameter passed to `addEventListener`  is the name of the event, `"click"`. In this context, events are named <u>without</u> the "on" prefix. For example, use the event name "<u>click</u>", not "onclick".
 
 ```html
 <button>Click me</button>  <!-- The handler gets added to this button -->
@@ -272,7 +305,7 @@ If you want to add a function that has parameters to an HTML element, you need t
 
 ### Running Code after the Page Loads with the `onload` Event
 
-Sometimes need to execute some code as soon as the page loads. The example below reads the contents of an array and puts it into a list on the web page. Note that the `listTrees()` function could also be in a separate .js file.
+Sometimes we need to execute some code as soon as the page loads. The example below reads the contents of an array and puts it into a list on the web page. Note that the `listTrees()` function could also be in a separate .js file.
 
 ```html
 <body onload="listTrees()"> 
@@ -305,4 +338,4 @@ Sometimes need to execute some code as soon as the page loads. The example below
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), written 2022, revised winter of <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), written 2022, revised spring of <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

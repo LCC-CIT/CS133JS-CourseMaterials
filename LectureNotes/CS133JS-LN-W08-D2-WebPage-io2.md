@@ -29,13 +29,13 @@ author: Brian Bird
 
 ### Anouncements
 
-- Lab 5 (objects) is due tomorrow night.
+- Lab 6 (objects) is due tomorrow night.
 - Friday of this week is the last day to: drop, withdraw, or change to pass/no pass.
 - Don't forget to do the reading and take the quiz before class time on Monday.
 
 ### Q and A
 
-- How is lab 5 going?
+- How is lab 6 going?
 - How is the term project going?
 - Any other questions?
 
@@ -227,7 +227,7 @@ let selectProduce = document.querySelectorAll("ol .highlight");  // array of hig
 
 ### Event Handlers with Parameters
 
-Remember that an *event handler* is a function and functions can have parameters. Use single quotes to pass an argument to an event handler function that has a parameter. In this example, one button's event handler is passed an `'A'`, the other a `'B'` :
+Remember that an *event handler* is a function and functions can have parameters. Use single quotes to pass an argument to an event handler function that has a parameter. In this example, one button's event handler is passed an `'A'`, the other a `'B'` :
 
 ```html
 <button onclick="buttonPressed('A')">Button A</button>
@@ -311,7 +311,7 @@ If you want to add a function that has parameters to an HTML element, you need t
 
 
 
-### Running Code after the Page Loads with the `onload` Event
+### Running Code after the Page Loads with the `onload` Event
 
 Sometimes we need to execute some code as soon as the page loads. The example below reads the contents of an array and puts it into a list on the web page. Note that the `listTrees()` function could also be in a separate .js file.
 

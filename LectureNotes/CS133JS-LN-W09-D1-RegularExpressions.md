@@ -36,8 +36,18 @@ author: Brian Bird
 - Anouncements
 
   - Lab 7, objects, is due tomorrow night.
+  
   - No reading quiz next week, the last week of class.
+  
   - This week's lab, lab 8 on regular expressions, doesn't require a code review, only part 1 is required. Part 2 is fun and optional.
+  
+  - [Study Jam on Tuesday, June 6 from 2&mdash;4pm!](https://library.lanecc.edu/about/library-spotlight)
+  
+    All LCC students are welcome!
+  
+    - Free Track Town pizza and other snacks will be provided. 
+    - Special visitors: tutors, advisors, therapy dogs, and a yoga instructor.  
+  
   
   ### Q and A
   

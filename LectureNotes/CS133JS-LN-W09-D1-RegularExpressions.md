@@ -33,10 +33,18 @@ author: Brian Bird
 
 
 
-## Q and A
+- Anouncements
 
-- Does anyone have any questions about anything?
-
+  - Lab 7, objects, is due tomorrow night.
+  - No reading quiz next week, the last week of class.
+  - This week's lab, lab 8 on regular expressions, doesn't require a code review, only part 1 is required. Part 2 is fun and optional.
+  
+  ### Q and A
+  
+  - How is lab 7 going?
+  - How is the term project going?
+  - Any other questions?
+  
   
 
 ## Regular Expressions

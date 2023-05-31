@@ -35,7 +35,7 @@ author: Brian Bird
 
 - Anouncements
 
-  - Lab 7, objects, is due tomorrow night.
+  - Lab 7, events, is due tomorrow night.
   
   - No reading quiz next week, the last week of class.
   
@@ -233,7 +233,7 @@ Metacharacters are characters with a special meaning. A partial listing is shown
 | \W            | Find a non-word character                                    |
 | \d            | Find a digit                                                 |
 | \D            | Find a non-digit character                                   |
-| \s            | Find a whitespace character                                  |
+| \s            | Find a whitespace[^1] character                              |
 | \S            | Find a non-whitespace character                              |
 | \b            | Find a match at either the beginning or end of a word.       |
 | \B            | Finc a match that is not at the  beginning or end of a word. |
@@ -281,7 +281,7 @@ console.log(pattern.test("Python is an interesting language."));
 
 - Check for a valid uoregon.edu address:
 
-  `let pattern = /^[A-Z0-9._%+-]@uoregon.edu/i`
+  `let pattern = /^[A-Z0-9._%+-]+@uoregon.edu$/i`
 
 
 
@@ -302,3 +302,5 @@ Try out regular expressions to see how they work with different test strings.
 ------
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), written 2018, updated <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+
+[^1]: Apace (␣), tab (\t), new line (\n) and the carriage return (\r) are all considered *white space*.

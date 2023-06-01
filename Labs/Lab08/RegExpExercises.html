@@ -12,7 +12,7 @@
     <h1>Lab 8, Part 1, Solution Check</h1>
 
     <p><span id="1a">1a. Match a string that contains "JavaScript": </span><br>
-        <span id="1b">1b. Don't match a string a string not containing "JavaScript":</span></p>
+        <span id="1b">1b. Don't match a string a string not containing "JavaScript":</span>
     <script>
         let result = pattern1.test("JavaScript is popular!");
         checkAnswer("1a", true, result);
@@ -25,26 +25,32 @@
     <script>
         result = pattern2.test("Programming is fun");
         checkAnswer("2a", true, result);
-        result = pattern2.test("Java is popular!");
+        result = pattern2.test("Programming is fun!");
         checkAnswer("2b", false, result);
     </script>
 
     <p><span id="3a">3a. Validate a number in the range of 1 through 5: </span><br>
-        <span id="3b">3b. Don't match a number ouside the range:</span></p>
+        <span id="3b">3b. Don't match a number above the range:</span><br>
+        <span id="3c">3c. Don't match a number below the range:</span></p>
     <script>
         result = pattern3.test("5");
         checkAnswer("3a", true, result);
         result = pattern3.test("6");
         checkAnswer("3b", false, result);
+        result = pattern3.test("0");
+        checkAnswer("3c", false, result);
     </script>
 
     <p><span id="4a">4a. Validate a name as just letters: </span><br>
-        <span id="4b">4b. Don't match a name including numbers:</span></p>
+        <span id="4b">4b. Don't match a name including numbers:</span><br>
+        <span id="4c">4c. Don't match a name including special characters:</span></p>
     <script>
         result = pattern4.test("Emma");
         checkAnswer("4a", true, result);
         result = pattern4.test("Emma23");
         checkAnswer("4b", false, result);
+        result = pattern4.test("Emma_jones");
+        checkAnswer("4c", false, result);
     </script>
 
     <p><span id="5a">5a. Validate a user name as containing between 8 and 15 upper or lower case letters or numbers.: </span><br>

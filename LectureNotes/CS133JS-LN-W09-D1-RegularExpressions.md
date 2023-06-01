@@ -84,15 +84,15 @@ let foundMatch = pattern.test("Does matchThis match?"); // foundMatch will be tr
 
 #### `exec`
 
-This method will return an array of matched sub-strings, the array also has a number of properties; including the index of the first match in the string&mdash;if it finds one or more matches, otherwise it returns null.
+This method will return an array containing just the first matched sub-string. The array also has a number of properties; including the index of the first match in the string&mdash;if it finds a match, otherwise it returns null.
 
 ```javascript
-pattern = /th/;
+let pattern = /th/;
 let matches = pattern.exec("There are two matches in this sentence for 'th'.");
 // matches: ["th"], matches.index: 25
 ```
 
-
+This method has a number of other more complex features that you can read about in the [MDN documentation for `exec`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec).
 
 ### Matching "wild card" Characters
 
@@ -173,11 +173,20 @@ You might have used `*` and `?` as wildcards in a search before.
 
 ### Flags
 
-- RegExp flags (aka properties): `g` – global, `i` – ignoreCase, `m` – multiline.
+- RegExp flags (aka properties) include: 
+  - `g` – global
+    All matches in the string will be found.
+  - `i` – ignoreCase
+    Matches either upper or lower case letters.
+  - `m` – multiline.
+    Works with a string that has multiple lines separated by a `\n` (new line) character.
+  
 
-  - Put the property after the slash that ends the regular expression: 
-
-    `let pattern = /this/i;`
+- Flags can be applied when crating regular expression object.
+  - Literal RegExp object: Put the flag(s) after the slash that ends the regular expression: 
+    `let let pattern1 = /this/i;`
+  - RegExp constructor: Add a second argument to the constructor for the flag(s). 
+    `let pattern2 = new RegExp("that", go);`
 
 ### Groups
 

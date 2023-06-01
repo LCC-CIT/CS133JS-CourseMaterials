@@ -181,7 +181,6 @@ You might have used `*` and `?` as wildcards in a search before.
   - `m` – multiline.
     Works with a string that has multiple lines separated by a `\n` (new line) character.
   
-
 - Flags can be applied when crating regular expression object.
   - Literal RegExp object: Put the flag(s) after the slash that ends the regular expression: 
     `let let pattern1 = /this/i;`
@@ -305,6 +304,8 @@ Try out regular expressions to see how they work with different test strings.
 ## References
 
 [JavaScript RegExp Reference](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)&mdash;W3Schools
+
+[JavaScript Guide: Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions)&mdash;MDN
 
 [Regular Expressions](https://eloquentjavascript.net/09_regexp.html)&mdash;Ch. 9 in *Eloquent JavaScript*, 3rd Edition, by Marijn Haverbeke, No Starch Press, 2018.
 

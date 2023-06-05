@@ -16,6 +16,51 @@
 
 [TOC]
 
+## Announcements
+
+- [Study Jam on Tuesday, June 6 from 2&mdash;4pm!](https://library.lanecc.edu/about/library-spotlight)
+
+  All LCC students are welcome!
+
+  - Free Track Town pizza and other snacks will be provided. 
+  - Special visitors: tutors, advisors, therapy dogs, and a yoga instructor.  
+
+- Summer and Fall 2023 Advising & Financial Aid Reg Fest! 
+
+  - June 13th
+    through September, Student Affairs will be offering drop-in assistance in advising, registration and financial aid for summer and fall 2023 students in Building 1, Room 102-103 from 9 am-2 pm. 
+  - For more information contact the [Office of Admissions](https://www.lanecc.edu/costs-admission/admissions-office) at admissions@lanecc.edu or by phone at 541-463-5678.
+
+
+### Q and A
+
+- How is lab 8 going?
+
+  - Only part 1 is required. Is anyone doing part 2?
+  - No code review required, production version due Thursday.
+
+- How is the term project going?
+
+  - Beta due tomorrow (Forum submission for your lab partner).
+  - Code review for your lab partner due Thursday.
+  - Production version due Monday.
+
+- Final quiz
+
+  - There is a, short, ungraded practice quiz open now.
+
+  - Look at the review suggestions in [this week's overview](CS133JS-LN-W10-D0-Review.html).
+
+  - The final quiz is at the regular class time next Monday, June 12. 
+
+    Or, take it in the testing center, open 9:00am to 7:00pm, Monday 6/12 through Wednesday 6/14.
+
+  - Any questions?
+
+
+
+
+
 # Combined Statements
 
 In JavaScript, as in most programming languages you can combine multiple operations into one statement&mdash;meaning you can do multiple things in one line of code. For example, here are a series of JavaScript statements to square a number entered by a user:

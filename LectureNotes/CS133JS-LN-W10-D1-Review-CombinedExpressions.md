@@ -30,7 +30,10 @@
   - June 13th
     through September, Student Affairs will be offering drop-in assistance in advising, registration and financial aid for summer and fall 2023 students in Building 1, Room 102-103 from 9 am-2 pm. 
   - For more information contact the [Office of Admissions](https://www.lanecc.edu/costs-admission/admissions-office) at admissions@lanecc.edu or by phone at 541-463-5678.
-  - No office hours today, but I will have normal office hours the rest of the week (4:00 to 4:50, Tuesday through Thursday). I will also be available by appointment Tuesday and Thursday from 9:30 to 12:00.
+
+- No office hours today, but I will have normal office hours the rest of the week (4:00 to 4:50, Tuesday through Thursday). I will also be available by appointment Tuesday and Thursday from 9:30 to 12:00.
+
+- Any late or extra credit assignments are due by the end of the day on Monday.
 
 
 ### Q and A

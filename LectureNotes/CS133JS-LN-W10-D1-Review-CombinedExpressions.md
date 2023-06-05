@@ -30,6 +30,7 @@
   - June 13th
     through September, Student Affairs will be offering drop-in assistance in advising, registration and financial aid for summer and fall 2023 students in Building 1, Room 102-103 from 9 am-2 pm. 
   - For more information contact the [Office of Admissions](https://www.lanecc.edu/costs-admission/admissions-office) at admissions@lanecc.edu or by phone at 541-463-5678.
+  - No office hours today, but I will have normal office hours the rest of the week (4:00 to 4:50, Tuesday through Thursday). I will also be available by appointment Tuesday and Thursday from 9:30 to 12:00.
 
 
 ### Q and A
@@ -87,8 +88,8 @@ The possibility for combining operations gets more "interesting" (complicated?) 
 
 ```javascript
 let farmAnimals = [];       // declare an array
-let animal1 = "cow";        // declare and initialze a variable
-farmAnimals.push(animal1);  // add an element with the variable's value
+let animal1 = "cow";        // declare and initialze a variable with a value
+farmAnimals.push(animal1);  // add an element to the array with the variable's value
 let animal2 = "chicken";    
 farmAnimals.push(animal2);
 let animal3 = "horse";
@@ -211,4 +212,4 @@ We can combine this all into one statement:
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

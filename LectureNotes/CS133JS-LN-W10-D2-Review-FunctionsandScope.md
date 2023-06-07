@@ -179,13 +179,11 @@ const loft = {          // parent object
 
 Questions:
 
-- Are any of the object properties directly accessible outside the *loft* object?
-- Are the properties of the <u>child</u> object directly accessible to the <u>parent</u> object?
-- Are the properties of the <u>parent</u> object directly accessible to the <u>child</u> object?
+- Are any of the object properties directly accessible (without using dots) outside the *loft* object?[^1]
+- Are the properties of the <u>child</u> object directly accessible to the <u>parent</u> object?[^2]
+- Are the properties of the <u>parent</u> object directly accessible to the <u>child</u> object?[^3]
 
-  **Note:** We could use `super` in the child object to access the properties in the parent object, but that isn't *direct access* and is beyond the scope of this course.
-
-
+  
 
 # Exercises
 
@@ -218,4 +216,8 @@ Exercises:
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+
+[^1]: No, but they can be accessed using dot notation: `console.log(loft.pigeon.name)`
+[^2]: Yes, the loft could have this method: `function getPigeonName() { return pigeon.name};
+[^3]: No, not directly, but the Pigeon object could have this method: `function eat() {loft.food -= 10;}` Or, the `super` 

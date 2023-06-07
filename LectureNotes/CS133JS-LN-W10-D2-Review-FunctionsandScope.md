@@ -219,5 +219,5 @@ Exercises:
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 [^1]: No, but they can be accessed using dot notation: `console.log(loft.pigeon.name)`
-[^2]: Yes, the loft could have this method: `function getPigeonName() { return pigeon.name};
+[^2]: Yes, the loft could have this method: `function getPigeonName() { return pigeon.name};`
 [^3]: No, not directly, but the Pigeon object could have this method: `function eat() {loft.food -= 10;}` Or, the `super` 

@@ -70,7 +70,7 @@ Classes to take next if you are pursuing the AAS in Software Development (former
 
 [AAS in Software Development Program Info Page](https://www.lanecc.edu/programs-academics/areas-study/computer-science-and-information-technology/software-development)
 
-[AAS in Software Development Catalog Page](https://catalog.lanecc.edu/preview_program.php?catoid=13&poid=1545)
+[AAS in Software Development Catalog Page](https://lanecc.smartcatalogiq.com/2023-2024/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas/)
 
 ------
 

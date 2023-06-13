@@ -1,5 +1,5 @@
 <!doctype html>
-<html style='font-size:20px !important'>
+<html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
 <meta name="title" content="Next Software Development classes to take">
@@ -8,7 +8,7 @@
 <meta name="material" content="Lecture Notes">
 <meta name="author" content="Brian Bird">
 <meta name="generator" content="Typora">
-<link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
 .mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 h1, h2, h3, h4, h5 { white-space: pre-wrap; }
@@ -25,7 +25,7 @@ a:active, a:hover { outline: 0px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 .typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
 .typora-export .task-list-item input { pointer-events: none; }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) { 
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
 }
@@ -50,7 +50,7 @@ h6 { font-size: 1rem; }
 .hidden { display: none; }
 .md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
 a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
 sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
 figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
@@ -90,10 +90,10 @@ blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child, li > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
 #write .footnote-line { white-space: pre-wrap; }
-@media print {
+@media print { 
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
-  .typora-export * { print-color-adjust: exact; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
@@ -116,7 +116,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
 .md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
 .math { font-size: 1rem; }
-.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
 .md-toc-content::after, .md-toc::after { display: none; }
 .md-toc-item { display: block; color: rgb(65, 131, 196); }
@@ -129,7 +129,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .md-toc-h4 .md-toc-inner { margin-left: 6em; }
 .md-toc-h5 .md-toc-inner { margin-left: 8em; }
 .md-toc-h6 .md-toc-inner { margin-left: 10em; }
-@media screen and (max-width: 48em) {
+@media screen and (max-width: 48em) { 
   .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
   .md-toc-h4 .md-toc-inner { margin-left: 5em; }
   .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
@@ -141,7 +141,7 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
-kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; }
 a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
@@ -157,7 +157,7 @@ mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
 .md-expand mark .md-meta { opacity: 0.3 !important; }
 mark .md-meta { color: rgb(0, 0, 0); }
-@media print {
+@media print { 
   .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
 }
 .md-diagram-panel .messageText { stroke: none !important; }
@@ -170,19 +170,19 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
 .typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
 .typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) { 
   .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) { 
   .typora-export-sidebar { display: none; }
 }
-.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
 .outline-content ul { margin-top: 0px; margin-bottom: 0px; }
 .outline-content strong { font-weight: 400; }
 .outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
-.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-expander::before { content: ''; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
 .outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
-.outline-expander:hover::before { content: ""; }
+.outline-expander:hover::before { content: ''; }
 .outline-h1 > .outline-item { padding-left: 0px; }
 .outline-h2 > .outline-item { padding-left: 1em; }
 .outline-h3 > .outline-item { padding-left: 2em; }
@@ -194,14 +194,14 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
 .outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
 .outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
-.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ''; }
 .outline-children { display: none; }
 .info-panel-tab-wrapper { display: none; }
 .outline-item-open > .outline-children { display: block; }
 .typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
 .typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
 .typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
-.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: '−'; }
 .typora-export-collapse-outline .outline-children { display: none; }
 .typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
 .typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
@@ -215,7 +215,7 @@ mjx-container { break-inside: avoid; }
     --control-text-color: #777;
 }
 
-@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
 
 /* open-sans-regular - latin-ext_latin */
   /* open-sans-italic - latin-ext_latin */
@@ -599,6 +599,6 @@ header, .context-menu, .megamenu-content, footer{
 </style><title>Next Software Development classes to take</title>
 </head>
 <body class='typora-export'><div class='typora-export-content'>
-<div id='write'  class=''><p><strong><span>AAS in Software Development</span></strong></p><h1>What Classes to Take Next</h1><p>&nbsp;</p><h2>Table of Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n182"><a class="md-toc-inner" href="#upcoming-software-development-course-offerings">Upcoming Software Development Course Offerings </a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n184"><a class="md-toc-inner" href="#summer-term">Summer Term</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n198"><a class="md-toc-inner" href="#fall-term">Fall Term</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n210"><a class="md-toc-inner" href="#term-by-term-core-course-offerings">Term-By-Term Core Course Offerings</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n291"><a class="md-toc-inner" href="#reference">Reference</a></span></p></div><h2 id='upcoming-software-development-course-offerings'><span>Upcoming Software Development Course Offerings </span></h2><p><span>Classes to take next if you are pursuing the AAS in Software Development (formerly AAS in Computer Programming) </span></p><h3 id='summer-term'><span>Summer Term</span></h3><ul><li><p><span>CS 233JS, Intermediate JavaScript</span></p></li><li><p><span>CS280PR, Co-op Ed: Computer Programming (Software Development)</span></p></li><li><p><span>WR 121, Composition I</span></p></li><li><p><span>WR 227, Technical Writing </span></p></li><li><p><span>MTH 095, Intermediate Algebra</span></p></li><li><p><span>BA 278, Leadership &amp; Team Dynamics</span></p></li></ul><h3 id='fall-term'><span>Fall Term</span></h3><ul><li><p><span>CS 234N Advanced C#</span></p></li><li><p><span>CS 295N Web Development 1:  ASP.NET</span></p></li><li><p><span>CS 295R,  React (recommended </span><em><span>program elective</span></em><span>)</span></p></li><li><p><span>Human Relations, one of:</span></p><p><span>BA 278, CG 100, CG 203, COMM 130, COMM 218, COMM 219, COMM 260, or COMM 296</span></p></li></ul><p>&nbsp;</p><h2 id='term-by-term-core-course-offerings'><span>Term-By-Term Core Course Offerings</span></h2><figure class='table-figure'><table><thead><tr><th><span>First  Year</span></th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr></thead><tbody><tr><td><strong><span>Fall</span></strong></td><td>&nbsp;</td><td><strong><span>Winter</span></strong></td><td>&nbsp;</td><td><strong><span>Spring</span></strong></td></tr><tr><td><span>CIS100 Computing Careers  Exploration</span></td><td>&nbsp;</td><td><span>Program Elective: </span><br /><span>CS235AM, Beg. Mobile App Dev, recommended</span></td><td>&nbsp;</td><td><span>Program Elective: </span><br /><span>CS235IM, Intermediate Mobile App Dev, recommended</span></td></tr><tr><td><span>CIS125A, CIS125G or CS160</span></td><td>&nbsp;</td><td><span>CS233JS Intermediate JavaScript</span></td><td>&nbsp;</td><td><span>CS162N Intermediate C#</span></td></tr><tr><td><span>CIS195 Web Authoring 1</span></td><td>&nbsp;</td><td><span>CS161N Beginning C#</span></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span>CS133JS Beg.  JavaScript</span></td><td>&nbsp;</td><td><span>(CIS195, CS133JS offered)</span></td><td>&nbsp;</td><td><span>(CS161N &amp; 233JS possibly offered)</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong><mark><span>Second Year</span></mark></strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong><mark><span>Fall</span></mark></strong></td><td>&nbsp;</td><td><strong><span>Winter</span></strong></td><td>&nbsp;</td><td><strong><span>Spring</span></strong></td></tr><tr><td><mark><span>Program Elective: </span><br /><span>CS295R React recommended</span></mark></td><td>&nbsp;</td><td><span>CS275 Data Modeling and SQL intro</span></td><td>&nbsp;</td><td><span>CS276 Advanced SQL</span></td></tr><tr><td><mark><span>CS234N Advanced C#</span></mark></td><td>&nbsp;</td><td><span>CS296N Web Development 2: ASP.NET</span></td><td>&nbsp;</td><td><span>CS297 Programming Capstone</span></td></tr><tr><td><mark><span>CS295N Web Development 1:  ASP.NET</span></mark></td><td>&nbsp;</td><td><span>CS246 System Design</span></td><td>&nbsp;</td><td><span>CS280PR Co-op Ed: Computer Programming</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>CS206 Co-op CIT Seminar</span></td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></figure><p>&nbsp;</p><h2 id='reference'><span>Reference</span></h2><p><a href='https://crater.lanecc.edu/banp/zwsktsc2.P_DispGroupSchd?chunk_in=C2550&amp;term_in=202410'><span>LCC Summer 2023 Class Schedule</span></a></p><p><a href='https://www.lanecc.edu/programs-academics/areas-study/computer-science-and-information-technology/software-development'><span>AAS in Software Development Program Info Page</span></a></p><p><a href='https://catalog.lanecc.edu/preview_program.php?catoid=13&amp;poid=1545'><span>AAS in Software Development Catalog Page</span></a></p><hr /><p><a href='http://creativecommons.org/licenses/by-sa/4.0/'><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" referrerpolicy="no-referrer" alt="Creative Commons License"></a><span> Beginning JavaScript Lecture Notes by </span><a href='https://profbird.online'><span>Brian Bird</span></a><span> </span><time><span>2023</span></time><span> are licensed under a </span><a href='http://creativecommons.org/licenses/by-sa/4.0/'><span>Creative Commons Attribution-ShareAlike 4.0 International License</span></a><span>. </span></p><hr /></div></div>
-<base target="_blank"></body>
+<div id='write'  class=''><p><strong><span>AAS in Software Development</span></strong></p><h1>What Classes to Take Next</h1><p>&nbsp;</p><h2>Table of Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n8"><a class="md-toc-inner" style="" href="#upcoming-software-development-course-offerings">Upcoming Software Development Course Offerings </a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n10"><a class="md-toc-inner" style="" href="#summer-term">Summer Term</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n24"><a class="md-toc-inner" style="" href="#fall-term">Fall Term</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n36"><a class="md-toc-inner" style="" href="#term-by-term-core-course-offerings">Term-By-Term Core Course Offerings</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n117"><a class="md-toc-inner" style="" href="#reference">Reference</a></span></p></div><h2 id='upcoming-software-development-course-offerings'><span>Upcoming Software Development Course Offerings </span></h2><p><span>Classes to take next if you are pursuing the AAS in Software Development (formerly AAS in Computer Programming) </span></p><h3 id='summer-term'><span>Summer Term</span></h3><ul><li><p><span>CS 233JS, Intermediate JavaScript</span></p></li><li><p><span>CS280PR, Co-op Ed: Computer Programming (Software Development)</span></p></li><li><p><span>WR 121, Composition I</span></p></li><li><p><span>WR 227, Technical Writing </span></p></li><li><p><span>MTH 095, Intermediate Algebra</span></p></li><li><p><span>BA 278, Leadership &amp; Team Dynamics</span></p></li></ul><h3 id='fall-term'><span>Fall Term</span></h3><ul><li><p><span>CS 234N Advanced C#</span></p></li><li><p><span>CS 295N Web Development 1:  ASP.NET</span></p></li><li><p><span>CS 295R,  React (recommended </span><em><span>program elective</span></em><span>)</span></p></li><li><p><span>Human Relations, one of:</span></p><p><span>BA 278, CG 100, CG 203, COMM 130, COMM 218, COMM 219, COMM 260, or COMM 296</span></p></li></ul><p>&nbsp;</p><h2 id='term-by-term-core-course-offerings'><span>Term-By-Term Core Course Offerings</span></h2><figure class='table-figure'><table><thead><tr><th><span>First  Year</span></th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr></thead><tbody><tr><td><strong><span>Fall</span></strong></td><td>&nbsp;</td><td><strong><span>Winter</span></strong></td><td>&nbsp;</td><td><strong><span>Spring</span></strong></td></tr><tr><td><span>CIS100 Computing Careers  Exploration</span></td><td>&nbsp;</td><td><span>Program Elective: </span><br /><span>CS235AM, Beg. Mobile App Dev, recommended</span></td><td>&nbsp;</td><td><span>Program Elective: </span><br /><span>CS235IM, Intermediate Mobile App Dev, recommended</span></td></tr><tr><td><span>CIS125A, CIS125G or CS160</span></td><td>&nbsp;</td><td><span>CS233JS Intermediate JavaScript</span></td><td>&nbsp;</td><td><span>CS162N Intermediate C#</span></td></tr><tr><td><span>CIS195 Web Authoring 1</span></td><td>&nbsp;</td><td><span>CS161N Beginning C#</span></td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><span>CS133JS Beg.  JavaScript</span></td><td>&nbsp;</td><td><span>(CIS195, CS133JS offered)</span></td><td>&nbsp;</td><td><span>(CS161N &amp; 233JS possibly offered)</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong><mark><span>Second Year</span></mark></strong></td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td><strong><mark><span>Fall</span></mark></strong></td><td>&nbsp;</td><td><strong><span>Winter</span></strong></td><td>&nbsp;</td><td><strong><span>Spring</span></strong></td></tr><tr><td><mark><span>Program Elective: </span><br /><span>CS295R React recommended</span></mark></td><td>&nbsp;</td><td><span>CS275 Data Modeling and SQL intro</span></td><td>&nbsp;</td><td><span>CS276 Advanced SQL</span></td></tr><tr><td><mark><span>CS234N Advanced C#</span></mark></td><td>&nbsp;</td><td><span>CS296N Web Development 2: ASP.NET</span></td><td>&nbsp;</td><td><span>CS297 Programming Capstone</span></td></tr><tr><td><mark><span>CS295N Web Development 1:  ASP.NET</span></mark></td><td>&nbsp;</td><td><span>CS246 System Design</span></td><td>&nbsp;</td><td><span>CS280PR Co-op Ed: Computer Programming</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td><span>CS206 Co-op CIT Seminar</span></td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table></figure><p>&nbsp;</p><h2 id='reference'><span>Reference</span></h2><p><a href='https://crater.lanecc.edu/banp/zwsktsc2.P_DispGroupSchd?chunk_in=C2550&amp;term_in=202410'><span>LCC Summer 2023 Class Schedule</span></a></p><p><a href='https://www.lanecc.edu/programs-academics/areas-study/computer-science-and-information-technology/software-development'><span>AAS in Software Development Program Info Page</span></a></p><p><a href='https://lanecc.smartcatalogiq.com/2023-2024/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas/'><span>AAS in Software Development Catalog Page</span></a></p><hr /><p><a href='http://creativecommons.org/licenses/by-sa/4.0/'><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" referrerpolicy="no-referrer" alt="Creative Commons License"></a><span> Beginning JavaScript Lecture Notes by </span><a href='https://profbird.online'><span>Brian Bird</span></a><span> </span><time><span>2023</span></time><span> are licensed under a </span><a href='http://creativecommons.org/licenses/by-sa/4.0/'><span>Creative Commons Attribution-ShareAlike 4.0 International License</span></a><span>. </span></p><hr /></div></div>
+</body>
 </html>

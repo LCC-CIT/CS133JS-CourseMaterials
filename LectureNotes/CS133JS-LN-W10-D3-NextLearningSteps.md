@@ -16,27 +16,9 @@
 
 [TOC]
 
-## Core Courses Required for the AAS in Computer Programming
+## Next Classes to Take
 
-General ed courses that are required for the degree aren't shown here. These are only the required courses that are offered through the Computer Information Technology department.
-
-### First Year
-
-| Fall 2022                      | Winter 2023                                                  | Spring 2023                                                  |
-| ------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| CIS 100, Computing Careers     | Elective recommendation: <br />CIS 140U, Linux Administration | Elective recommendation: <br />CIS 240U, Linux Administration |
-| CIS 195, Web Authoring 1: HTML | CS 133JS, Beginning JavaScript                               | CS 133JS, Intermediate JavaScript                            |
-| CIS 125A or CS 160             | CS 161N, Beginning C#                                        | CS 162N, Intermediate C#                                     |
-|                                |                                                              |                                                              |
-
-### Second Year
-
-| Fall 2023                             | Winter 2024                                                 | Spring 2024                                                 |
-| ------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------- |
-| Elective: CS295R, React,  recommended | Elective recommendation: CS 235AM, Mobile App Development 1 | Elective recommendation: CS 235IM, Mobile App Development 2 |
-| CS 234N  Advanced C#                  | CS 246 System Design                                        | CS297 Programming Capstone                                  |
-| CS 295N Web Dev. 1:  ASP.NET          | CS 275 Data Modeling and SQL                                | CS 276, Advanced SQL                                        |
-| CS 206 Co-op CIT Seminar              | CS 296N Web Dev. 2: ASP.NET                                 | CS280PR Co-op Ed: Computer Programming                      |
+[Next Classes for Software Development degree](CS133JS-LN-W06-DX-NextSoftwareDevClasses.html)
 
 
 

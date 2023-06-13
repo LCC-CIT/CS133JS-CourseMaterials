@@ -16,6 +16,55 @@
 
 [TOC]
 
+## Announcements
+
+- [Study Jam on Tuesday, June 6 from 2&mdash;4pm!](https://library.lanecc.edu/about/library-spotlight)
+
+  All LCC students are welcome!
+
+  - Free Track Town pizza and other snacks will be provided. 
+  - Special visitors: tutors, advisors, therapy dogs, and a yoga instructor.  
+
+- Summer and Fall 2023 Advising & Financial Aid Reg Fest! 
+
+  - June 13th
+    through September, Student Affairs will be offering drop-in assistance in advising, registration and financial aid for summer and fall 2023 students in Building 1, Room 102-103 from 9 am-2 pm. 
+  - For more information contact the [Office of Admissions](https://www.lanecc.edu/costs-admission/admissions-office) at admissions@lanecc.edu or by phone at 541-463-5678.
+
+- No office hours today, but I will have normal office hours the rest of the week (4:00 to 4:50, Tuesday through Thursday). I will also be available by appointment Tuesday and Thursday from 9:30 to 12:00.
+
+- Any late or extra credit assignments are due by the end of the day on Monday.
+
+
+### Q and A
+
+- How is lab 8 going?
+
+  - Only part 1 is required. Is anyone doing part 2?
+  - No code review required, production version due Thursday.
+
+- How is the term project going?
+
+  - Beta due tomorrow (Forum submission for your lab partner).
+  - Code review for your lab partner due Thursday.
+  - Production version due Monday.
+
+- Final quiz
+
+  - There is a, short, ungraded practice quiz open now.
+
+  - Look at the review suggestions in [this week's overview](CS133JS-LN-W10-D0-Review.html).
+
+  - The final quiz is at the regular class time next Monday, June 12. 
+
+    Or, take it in the testing center, open 9:00am to 7:00pm, Monday 6/12 through Wednesday 6/14.
+
+  - Any questions?
+
+
+
+
+
 # Combined Statements
 
 In JavaScript, as in most programming languages you can combine multiple operations into one statement&mdash;meaning you can do multiple things in one line of code. For example, here are a series of JavaScript statements to square a number entered by a user:
@@ -42,8 +91,8 @@ The possibility for combining operations gets more "interesting" (complicated?) 
 
 ```javascript
 let farmAnimals = [];       // declare an array
-let animal1 = "cow";        // declare and initialze a variable
-farmAnimals.push(animal1);  // add an element with the variable's value
+let animal1 = "cow";        // declare and initialze a variable with a value
+farmAnimals.push(animal1);  // add an element to the array with the variable's value
 let animal2 = "chicken";    
 farmAnimals.push(animal2);
 let animal3 = "horse";
@@ -166,4 +215,4 @@ We can combine this all into one statement:
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

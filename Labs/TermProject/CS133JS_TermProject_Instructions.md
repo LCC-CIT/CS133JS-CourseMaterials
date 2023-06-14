@@ -52,13 +52,19 @@ You can choose a project from the list of suggestions below or propose one based
 
 ## Submission
 
+There are three places on Moodle to submit your work:
+
+**Beta Forum**
+
 Each student will post a beta (draft) version in a forum so that you can get and give a code review before submitting the production (final) version.
 
-You will submit:
+**Code Review Assignment**
 
-- A beta version.
-- The code review you did for another student.
-- The production version of your project along with an updated copy of the code review you recieved.
+Submit a copy of the code review you did for another student.
+
+**Production Version Assignment**
+
+Submit the production (final) version of your project along with an updated copy of the code review you received.
 
 
 

@@ -1,15 +1,12 @@
 <h1>Beginning Programming: JavaScript</h1>
-**Syllabus for spring 2023**
+**Syllabus for fall 2023**
 
-| <u>Class</u>             |                                                              |      | <u>Instructor</u> |                                                              |
-| ------------------------ | ------------------------------------------------------------ | ---- | ----------------- | ------------------------------------------------------------ |
-| **Course Number**        | CS 133JS                                                     |      | **Name**          | Brian Bird                                                   |
-| **CRN**                  | 41334                                                        |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
-| **Day & Time**           | M, W, 12:00&dash;1:50                                        |      | **Office Hours**  | M&ndash;Th, 4:00&ndash;4:50                                  |
-| **Room**                 | Building 19, Room 126<br />[Zoom meeting](https://lanecc.zoom.us/j/95957731932) |      | **Room**          | Building 19, Room 152<br />[Zoom meeting](https://lanecc.zoom.us/j/92539626829) |
-| **Instructional Method** | Hybrid<sup>1</sup>                                           |      |                   |                                                              |
-
-<sup>1</sup>	[**Hybrid Courses**](https://www.lanecc.edu/programs-academics/online-distance-learning/distance-education-course-modalities) are partially online. Some work is done in Moodle and the rest during regular meeting times. For this course, you can attend either in-Person or on Zoom at the time listed above. Attendance is required.
+| <u>Class</u>      |                                                              |      | <u>Instructor</u> |                                                              |
+| ----------------- | ------------------------------------------------------------ | ---- | ----------------- | ------------------------------------------------------------ |
+| **Course Number** | CS 133JS                                                     |      | **Name**          | Brian Bird                                                   |
+| **CRN**           | Hybrid (on campus) 22118<br />Online 22119                   |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
+| **Day & Time**    | T, Th 10:00&dash;11:50                                       |      | **Office Hours**  | M, W 12:00&ndash;12:50 <br />T, Th  2:00&ndash;2:50          |
+| **Room**          | Building 19, Room 128<br />[Zoom meeting](https://lanecc.zoom.us/j/97192324579) |      | **Room**          | Building 19, Room 152<br />[Zoom meeting](https://lanecc.zoom.us/j/93774726097) |
 
 <h2>Table of Contents</h2>
 
@@ -134,9 +131,8 @@ The table below summarizes the possible points for each assessment task as well 
 | Labs  1 - 8                        | 40                       | 320              | 32%        |
 | Code  Reviews<sup>2</sup> 1 - 8    | 8                        | 64               | 6.5%       |
 | Reading  Quizzes<sup>2</sup> 1 - 8 | 8                        | 64               | 6.5%       |
-| Term Project                       | 200                      | 200              | 20%        |
-| Midterm and Final Quizzes          | Midterm: 100, Final: 150 | 250              | 25%        |
-| Participation                      | 10 per week              | 102              | 10%        |
+| Term Project                       | 252                      | 252              | 25%        |
+| Midterm and Final Quizzes          | Midterm: 100, Final: 200 | 300              | 30%        |
 | **Course Total**                   |                          | **1000**         |            |
 
 <sup>2</sup> The lowest grades for code reviews and reading quizzes will be dropped from the grade calculation.

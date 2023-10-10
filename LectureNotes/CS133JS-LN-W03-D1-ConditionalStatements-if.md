@@ -33,12 +33,12 @@ author: Brian Bird
 
 - Lab 1, I still need to grade this. I'm teaching an extra section of CIS 195 this term and there is just a lot of grading to do!
 - Lab 2, last week's lab assignment&mdash; how is it going?
-  - Beta versions of part 2 were due Friday, but I see twenty posts in the forum--which is good, but there should be a few more.
+  - Beta versions of part 2 were due at the end of last week. I see quite a few posts in the forum&mdash;which is good, but there should be a few more.
     - Remember that the beta version is like a draft. It doesn't need to be complete or completely working. 70% done is good enough for a beta version.
     - Are there questions on how to do it?
     - See me or a tutor if you'd like some help.
     - The production (final) version is due Thursday
-- Get started on the reading. It's due at class time on Wednesday.
+- Get started on the reading. The quiz is due before the next class.
   
 - Does anyone have any general questions about anything?
 
@@ -374,13 +374,6 @@ else
 Take a look at Part 1 of the lab assignment now. You know enough to do the first 7 problems which use `if` statements. The last two problems use `switch` statements which we will cover in the next class session.
 
 We'll do a few of these in class and we'll start by writing algorithms and/or making IPO tables.
-
-### Console vs Code Editor for Part 1
-
-For part 1 of the lab assignment, the instructions say to write the code in a browser console. This is just so that you can write the code quickly and easily. If you find that it's easier for you to write the code in a code editor, like Visual Studio Code, you are welcome to do that, but then you will need to put the code in a .js file and then you will also need a way to run the code.
-
-- Copy and past code snippets into the console.
-- Write your code so everything is inside of functions, then create a web page that loads the files and call the functions from the console.
 
 
 

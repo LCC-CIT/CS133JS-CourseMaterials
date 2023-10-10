@@ -1,5 +1,5 @@
 ---
-title: lab 3, Part 1: Selection
+title: Lab3 Part 1 Selection
 description: Selection exercises for the JavaScript console.
 keywords: Selection, if, else if, switch
 material: Lab Instructions
@@ -17,7 +17,7 @@ Create a file named `Lab03_Part1.js` For each problem, put the solution in a fun
   - Write a function named `checkForAPlus` that does the following:
      - Has a parameter for an exam score.
      - If the score is above 97, return "A+".
-   - In the .html file, call the function twice, once with a "hard coded" argument of 97 and then 98. Show results of both on the web page.
+   - In the .html file, call the function twice, first with a "hard coded" argument of 97 and then 98. Show results of both on the web page. The easiest way to show the results is to use `document.write`.
   
 3. Check for A+, A, A- &mdash;a multi-branching if statement
 

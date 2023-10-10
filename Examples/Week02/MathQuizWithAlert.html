@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Written by Brian Bird, 4/16/20 -->
+    <meta charset="UTF-8" />
+    <title>Math Quiz</title>
+    <script src="MathQuiz.js"></script>
+    <script>
+        function additionIO()
+        {
+            document.write(numberOne + " + " + numberTwo + "<br>");
+            let response = prompt("what is " + numberOne + " + " + numberTwo + "?");
+            let isRight = addTest(numberOne, numberTwo, response);
+            document.write("Your answer: " + response + ", " + isRight);
+            alert(isRight + " the correct answer is " + (numberOne + numberTwo));
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Math Quiz</h1>
+    <!-- I'm using an alert here because the text on the web page
+         doesn't show up until the user has closed the first dialog
+         that is popped up by the JavaScript prompt for question 1. -->
+    <script>
+        alert(
+            "You will be given math questions " +
+            "in a series of pop-up dialog boxes. " +
+            "After you have answered each one, " +
+            "your answer, and whether it was right " +
+            "or wrong will be shown on the web page."
+        );
+    </script>
+
+    <ol>
+        <!--Question 1, addition -->
+        <li>
+            <script>
+                let numberOne = 12, numberTwo = 15;
+                
+            </script>
+        </li>
+        <!--Question 2, addition -->
+        <li>
+            <script>
+                numberOne = 111, numberTwo = 21;
+                response = prompt("what is " + numberOne + " + " + numberTwo + "?");
+                isRight = addTest(numberOne, numberTwo, response);
+                document.write(numberOne + " + " + numberTwo + "<br>");
+                document.write("Your answer: " + response + ", " + isRight);
+                alert(isRight + " the correct answer is " + (numberOne + numberTwo));
+            </script>
+        </li>
+        <!--Question 3, addition -->
+        <li>
+            2200 + 1011
+            <p>Your answer: <span id="answer3"></span></p>
+            <script>
+                response = prompt("What is 2200 + 1011?");
+                isRight = addTest(2200, 1011, response);
+                document.getElementById("answer3").innerHTML =
+                    response + ", " + isRight;
+            </script>
+        </li>
+        <!-- In the next three questions I used variables
+        for the numbers so I wouldn't have to "hard code"
+        them and run the risk of typing something wrong as
+        I repeatedly typed the same numbers. -->
+
+        <!--Question 4, subtraction -->
+        <li>
+            <span id="question4"></span>
+            <p>Your answer: <span id="answer4"></span></p>
+            <script>
+                let a = 10,
+                    b = 2;
+                document.getElementById("question4").innerHTML =
+                    a + " - " + b;
+                response = prompt("What is " + a + " - " + b);
+                isRight = subtractTest(a, b, response);
+                document.getElementById("answer4").innerHTML =
+                    response + ", " + isRight;
+            </script>
+        </li>
+        <!--Question 5, subtraction -->
+        <li>
+            <span id="question5"></span>
+            <p>Your answer: <span id="answer5"></span></p>
+            <script>
+                a = 222, b = 50;
+                document.getElementById("question5").innerHTML =
+                    a + " - " + b;
+                response = prompt("What is " + a + " - " + b);
+                isRight = subtractTest(a, b, response);
+                document.getElementById("answer5").innerHTML =
+                    response + ", " + isRight;
+            </script>
+        </li>
+        <!--Question 6, subtraction -->
+        <li>
+            <span id="question6"></span>
+            <p>Your answer: <span id="answer6"></span></p>
+            <script>
+                a = 1234, b = 123;
+                document.getElementById("question6").innerHTML =
+                    a + " - " + b;
+                response = prompt("What is " + a + " - " + b);
+                isRight = subtractTest(a, b, response);
+                document.getElementById("answer6").innerHTML =
+                    response + ", " + isRight;
+            </script>
+        </li>
+    </ol>
+</body>
+
+</html>

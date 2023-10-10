@@ -44,13 +44,16 @@ An algorithm is a step-by-step set of instructions for doing something.
 > 9. Heat a frying pan over medium heat.
 > 10. Place the sandwich in the pan and cook until both sides are golden brown and cheese is melted.
 
-
+**Exercise:** How would we write the algorithm for the hello world program we ran yesterday? 
+(It's listed a few paragraphs down on this page.)
 
 ## Three control structures
 
 - Sequence – we will learn this first
 - Selection (if statements)
 - Repetition (loops)
+
+**Question:** Which control structure was used in the grilled cheese algorithm? What about the hello world program?
 
 ## Syntax
 
@@ -78,7 +81,7 @@ The grammar of a programming language
      console.log("Hello " + name + "!");
     ```
 
-    Question: Note that we didn't output an html element, like `<p></p>` to the console log. Why?
+    **Question:** Note that we didn't output an html element, like `<p></p>` to the console log. Why?
 
 
  	
@@ -88,7 +91,7 @@ The grammar of a programming language
 ## Variables 
 Variables are named memory locations.
 
-- Draw a picture representing variables in computer memory.
+- Instructor: draw a picture representing variables in computer memory.
 - Variables are *declared* with `var` or `let` (we'll talk about `let` later).
 
 ## Example: Hello world
@@ -293,4 +296,4 @@ Note: these examples assume the variable declarations at the beginning of this s
 
 ------------
 
-[^1]: I disagree with the textbook, *Eloquaint JavaScript*, on this point. In [chapter 1](https://eloquentjavascript.net/01_values.html), the author asserts that both `null` and `undefined` are types, but I maintain that `undefined` is a type and `null` is a value.
+[^1]: I disagree with the textbook, *Eloquaint JavaScript*, on this point. In [chapter 1](https://eloquentjavascript.net/01_values.html), the author asserts that both `null` and `undefined` are types, but I would say that `undefined` is a type and `null` is a value.

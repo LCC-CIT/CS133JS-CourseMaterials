@@ -135,7 +135,7 @@ function total(n1, n2, n3)
     var t = n1 + n2 + n3; 
     return t;
 }
-sum = total(2, 3, 6);
+var sum = total(2, 3, 6);
 console.log(sum);
 console.log(n1); // Are n1, n2 and n3 valid here?
    ```
@@ -148,7 +148,7 @@ console.log(n1); // Are n1, n2 and n3 valid here?
      return t;
   }
    var n1 = 2, n2 = 3, n3 = 6;  // These are new variables!
-   sum = total(n1, n2, n3);
+   var sum = total(n1, n2, n3);
    console.log(sum);
   ```
   
@@ -163,7 +163,7 @@ console.log(n1); // Are n1, n2 and n3 valid here?
   }
   
   var n1 = 2, n2 = 3, n3 = 6;
-  sum = total(n1, n2, n3);
+  var sum = total(n1, n2, n3);
   console.log(sum);
   console.log(n1);  // will this be 0 or 2? Which n1 is this?
   ```
@@ -182,7 +182,7 @@ function total(n1, n2, n3)
    t = n1 + n2 + n3;         // t is not declared. This is bad practice.
    return t;
 }
-sum = total(2, 3, 6);
+var sum = total(2, 3, 6);
 console.log(sum);
 console.log(t);           // t is a global variable.
 ```
@@ -222,7 +222,7 @@ console.log(hobbit + " lives at " + home);
 let hobbit;   // The variable should have been declared before using  it.
 ```
 
-#### Declaring variables with `const` (yet another good thing)
+#### Declaring variables with `const` (yet another good thing)
 
 Variables declared with `const` cannot have a new value assigned to them and they have *block scope* (like variables declared with `let`).
 

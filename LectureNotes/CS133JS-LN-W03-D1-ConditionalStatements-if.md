@@ -220,7 +220,24 @@ let degrees = 0; // Temperature in Fahrenheit
     alert("Enjoy the warm weather! ");  // executed only if neither condition is true
   ```
 
+### Designing a Selection Algorithm
 
+Let's take a break from talking about coding and talk about designing an algorithm so that we know what it is we need to code.
+
+- Algorithms: Earlier this term we talked about algorithms and we wrote some algorithms in English.
+
+- IPO: We also talked about how every function has Input, Processing, and Output. We even put that into a table.
+
+- Selection IPO table: We can make a table that shows each combination of inputs that will produce a particular output. For the Multiple branches code above, we could make a table like this:  
+
+  | Input | Processing                | Output                 |
+  | ----- | ------------------------- | ---------------------- |
+  | 31    | temp less than 32 degrees | Wear a warm coat       |
+  | 32    |                           | Wear a jacket          |
+  | 44    |                           | Wear a jacket          |
+  | 45    | temp 45 degrees or higher | Enjoy the nice weather |
+
+  In the next section we'll go back to coding.
 
 ### Conditional expressions using *logical operators*
 
@@ -356,7 +373,9 @@ else
 
 Take a look at Part 1 of the lab assignment now. You know enough to do the first 7 problems which use `if` statements. The last two problems use `switch` statements which we will cover in the next class session.
 
-### Console  vs Code Editor for Part 1
+We'll do a few of these in class and we'll start by writing algorithms and/or making IPO tables.
+
+### Console vs Code Editor for Part 1
 
 For part 1 of the lab assignment, the instructions say to write the code in a browser console. This is just so that you can write the code quickly and easily. If you find that it's easier for you to write the code in a code editor, like Visual Studio Code, you are welcome to do that, but then you will need to put the code in a .js file and then you will also need a way to run the code.
 

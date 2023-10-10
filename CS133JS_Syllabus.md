@@ -255,7 +255,7 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 | **3**<br />10/10  | Selection                                                    | lab 2 code review  <br />Reading quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
 | **4**<br />10/17  | Repetition                                                   | lab 3 code review<br />Reading quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
 | **5**<br />10/24  | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Term project proposal<br />Midterm quiz:<br />- In the classroom at 12:00 on 5/3<br />- In the testing center 5/3 or 5/4 |
-| **6**<br />10/32  | Arrays                                                       | Reading quiz 5  <br />Beta version of lab 5                  |
+| **6**<br />10/31  | Arrays                                                       | Reading quiz 5  <br />Beta version of lab 5                  |
 | **7**<br />11/7   | Objects                                                      | lab 5 code review<br />Reading quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
 | **8**<br />11/14  | Document Object Model and Events                             | lab 6 code review<br />Reading quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |
 | **9**<br />11/21  | Monday: Memorial Day Holiday<br />Regular Expressions        | lab 7 code review<br />Reading quiz 8<br />Production version of lab 7<br />Beta version of lab 8 |

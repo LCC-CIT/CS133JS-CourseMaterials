@@ -29,16 +29,16 @@ author: Brian Bird
 
 ## Introduction
 
-### Q and A
+### Q and A (Fall 2023)
 
-- Lab 1, a few people still need to complete that. Check the feedback I left to see if there is something you need to revise or update.
-- How is last week's lab assignment, lab 2, going?
-  - Beta versions of part 2 were due Saturday, but I only see two posts in the forum.
+- Lab 1, I still need to grade this. I'm teaching an extra section of CIS 195 this term and there is just a lot of grading to do!
+- Lab 2, last week's lab assignment&mdash; how is it going?
+  - Beta versions of part 2 were due Friday, but I see twenty posts in the forum--which is good, but there should be a few more.
     - Remember that the beta version is like a draft. It doesn't need to be complete or completely working. 70% done is good enough for a beta version.
     - Are there questions on how to do it?
-    - Drop by my office hours, or make an apointment to meet me at another time if you'd like some help.
-- How is the reading going?
-  - A few people didn't take the quiz that was due today at class time.
+    - See me or a tutor if you'd like some help.
+    - The production (final) version is due Thursday
+- Get started on the reading. It's due at class time on Wednesday.
   
 - Does anyone have any general questions about anything?
 
@@ -384,10 +384,6 @@ Note that it is best practice to <u>not</u> put a `return` statement inside an `
 ### More Examples/Exercises
 
 There are three examples posted on Moodle. The first two use `if else` statements. Lets do one of them together.
-
-
-
-------
 
 
 

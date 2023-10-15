@@ -1,5 +1,5 @@
 ---
-title: switch case statements
+title: Switch statements
 description: Learn how to do selection with switch case statements.
 keywords: selection, conditional expression, switch, switch case, switch...case, switch-case
 material: Lecture Notes
@@ -183,8 +183,8 @@ Write the code and run it in the console so you can simply assign values to vari
      break;
    case "brown": 
    case "white": 
-     score = 5;
      response = "OK, sometimes";
+     score = 5;
      break;
    default: 
      score = 0;
@@ -209,6 +209,3 @@ Write code in the console to determine the price of *The Joy of JavaScript* usin
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
-   ```
-
-   ```

@@ -39,7 +39,7 @@ Fall 2023
   - Review lecture notes
   - Practice midterm.
   - You can take the quiz in the classroom at class time, or you can take it in the testing center. 
-    - **Classroom** from 10:00 to 11:50 on Wednesday, 10/26/2023. 
+    - **Classroom** from 10:00 to 11:50 on Thursday, 10/26/2023. 
       You will be allowed to refer to your textbook, lecture notes, and your lab assignments during the quiz in the classroom.
     - **[Testing center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services)** 
       - Thursday, 10/26 10:30am&ndash;1:30pm, 4:30pm&ndash;7 pm

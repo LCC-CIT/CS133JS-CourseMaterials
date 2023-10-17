@@ -173,7 +173,7 @@ async function checkSubmission(
             // Render the html page and check for required output
             // TODO: Load required output from csv file
             const requiredOutput = [];
-            report += renderAndCheck(fileContents, path.basename(filePath), requiredOutput);
+            report += await renderAndCheck(fileContents, path.basename(filePath), requiredOutput);
         }
         else // File is a css file
         {
@@ -471,37 +471,32 @@ function checkAdditionalRequirements(report, countHTMLFiles, additionalRequireme
 /************************************/
 /* Check rendered web page          */
 /************************************/
-function renderAndCheck(fileContents, fileName, requiredOutput)
+async function renderAndCheck(fileContents, fileName, requiredOutput)
 {
     let report = "";
 
-    puppeteer.launch().then(async (browser) =>
+    puppeteer.launch({headless: "new"}).then(async (browser) =>
     {
         const page = await browser.newPage();
         await page.setContent(fileContents);
-        const text = await page.evaluate(() =>
+       const text = await page.evaluate(() =>
         {
             // Execute the script on the page
             const scripts = document.querySelectorAll("script");
-            scripts.forEach((script) =>
-            {
-                if (script.src)
-                {
-                    const newScript = document.createElement("script");
-                    newScript.src = script.src;
-                    document.head.appendChild(newScript);
-                } else
-                {
-                    eval(script.textContent);
+            scripts.forEach((script) => {
+                if (script.textContent) {
+                  eval(script.textContent);
                 }
-            });
+              });
 
             // Get the rendered text
             return document.body.textContent;
         });
+        // log the page contents for debugging
         console.log(text);
         await browser.close();
     });
+    report = text;
     return report;
 }
 

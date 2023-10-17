@@ -31,18 +31,20 @@ author: Brian Bird
 
 ## Announcements
 
-Spring 2023
+Fall 2023
 
 - Alternative for code review for lab 3. 
-  If your lab partner didn't post a beta version for you to review, you can review this instead. Code reviews are due tomorrow, 3/24.
-- Midterm next Wednesday. 
+  If your lab partner didn't post a beta version for you to review, you can review this instead.
+- Midterm next Thursday. 
   - Review lecture notes
   - Practice midterm.
   - You can take the quiz in the classroom at class time, or you can take it in the testing center. 
-    - **Classroom** from 12:00 to 1:50 on Wednesday, 5/3/2023. 
+    - **Classroom** from 10:00 to 11:50 on Wednesday, 10/26/2023. 
       You will be allowed to refer to your textbook, lecture notes, and your lab assignments during the quiz in the classroom.
-    - **[Testing center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services)** on Wednesday, 5/3 or Thursday 5/4 from 9:00am to 7:00pm.
-      The testing center is located in the Center Building, Room 311 (upstairs and across from the library). You will be allowed to refer to a 4 x 6 card with notes on it
+    - **[Testing center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services)** 
+      - Thursday, 10/26 10:30am&ndash;1:30pm, 4:30pm&ndash;7 pm
+      - Friday and Saturday 10/27 and 28 10:00am to 2:00pm.
+      - The testing center is located in the Center Building, Room 311 (upstairs and across from the library). You will be allowed to refer to a 3 x 5 card with notes on it
     - In both locations: help from others, internet searches, ChatGPT, and any other outside sources are not allowed.
 
 

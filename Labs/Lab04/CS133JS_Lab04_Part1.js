@@ -39,6 +39,7 @@ function forPractice() {
 // 4. Use a do while loop to count the number of characters in a sentence.
 function countChars(text) {
     let index = 0; // Beginning position of the string
+    let char = ""; // The character at the current position
     // TODO: Write the code to complete the exercise.
     return index;
 }

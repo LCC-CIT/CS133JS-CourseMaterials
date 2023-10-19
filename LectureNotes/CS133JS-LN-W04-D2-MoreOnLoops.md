@@ -32,7 +32,20 @@ author: Brian Bird
 ## Announcements
 
 - Lab 4, part 2.
+
 - Midterm Quiz.
+
+
+  You can take the quiz in the classroom at class time, or you can take it in the testing center. 
+
+  - **Classroom** from 10:00 to 11:50 on Thursday, 10/26/2023. 
+  - **[Testing center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services)** 
+    - Thursday, 10/26 10:30am&ndash;1:30pm, 4:30pm&ndash;7 pm
+    - Friday and Saturday 10/27 and 28 10:00am to 2:00pm.
+    - The testing center is located in the Center Building, Room 311 (upstairs and across from the library).  Bring ID.
+  - In both locations: 
+    - Help from others, internet searches, AI chatbots, and any other outside sources is not allowed.
+    - You will be allowed to refer to a 4 x 6 card with notes on it.
 
 ## Q and A
 
@@ -199,6 +212,8 @@ Q: What would you need to change to use this code in a web page[^1]?
 - Remove suspect code by "commenting it out".
 
 - Test snippets of code in the console.
+
+- Watch out for infinite loops!
 
 
 

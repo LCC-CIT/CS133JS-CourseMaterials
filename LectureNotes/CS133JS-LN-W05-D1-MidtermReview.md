@@ -26,6 +26,13 @@ author: Brian Bird
 
 [TOC]
 
+## Announcements and Discussion
+
+- Are there any questions about lab 4?
+- The next class meeting will be just for the midterm quiz.
+- This week is a good time to start your term project. The term project requirements are posted on Moodle&mdash; let's take a look at those.
+  - A proposal for your term project is due next week.
+
 ## Introduction
 
 This week is your opportunity to review all that we've covered in the first four weeks of class&mdash;both as preparation for the midterm quiz as well as a way to firm up what you've learned about JavaScript so far.

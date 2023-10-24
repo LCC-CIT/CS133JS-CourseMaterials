@@ -98,7 +98,17 @@ In math, a function has: input, operation(s), output
 - prompt
 - alert
 
+## Why Use Functions?
+
+- They let us reuse code without copying and pasting it.  
+  They make our code DRY (Don't Repeat Yourself).
+- We can break code into smaller, more manageable parts.
+- Functions have names that help us remember what they do.
+- Functions can be tested independently.
+- Variables can be isolated into local scopes inside functions.
+
 ## Writing  a Function
+
  We can use pre-written functions, or write our own. We call this *defining* a function.
 
 ### A simple function

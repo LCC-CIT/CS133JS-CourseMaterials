@@ -39,14 +39,12 @@ Focus on understanding concepts&mdash;not on memorizing answers. The only thing 
 - The quiz will cover material in the lecture notes from the first four weeks of the term.
 - When and where to take the quiz:
   - In the classroom at the normal class time.
-    - You will have 1 hour and 50 minutes.
-    - You can refer to the textbook, assigned online reading, lecture notes and use a browser console during the quiz.
-
   - In the Instructional Testing Center between 9:00 am and 7:00 pm on Wednesday or Thursday.
-    - You will have 2 hours.
-    - You can bring a 4 X 6 note card and blank scratch paper.
-
-- You are not allowed to search the internet for answers, use AI (like chatGPT) or get help from another person.
+    - Bring ID.
+- For both locations:
+  - You will have 1 hour and 50 minutes to finish the quiz.
+  - You can bring a 4 X 6 note card.
+  - You are not allowed to search the internet for answers, use AI (like chatGPT) or get help from another person.
 
 
 

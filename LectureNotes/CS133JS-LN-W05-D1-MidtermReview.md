@@ -50,8 +50,12 @@ Focus on understanding concepts&mdash;not on memorizing answers. The only thing 
     - Bring ID.
 - For both locations:
   - You will have 1 hour and 50 minutes to finish the quiz.
+  - There are 30 questions.
+  - The quiz is restricted for the CRN of the section you registered for and the IP address of the location where you take the quiz. Make sure you are connected to "LCC WiFi", not "LCC Guest".
   - You can bring a 4 X 6 note card.
   - You are not allowed to search the internet for answers, use AI (like chatGPT) or get help from another person.
+  - Seeing your results:  
+    You will be able to see your score and review your answers immediately after you finish the quiz. After you exit the quiz you won't be able to review your answers again, but you will be able to see your score.
 
 
 

@@ -28,71 +28,38 @@ author: Brian Bird
 
 # Introduction
 
-## Announcements for Spring 2023
 
-- Most of you did pretty well on the midterm!
-  - Average 80.4% 
-- I've graded everything you've turned in so far. Check your grades on Moodle.
-  - I entered participation grades for each of you.
-    - These are based on:
-      - Attendance, 2% of your overall grade.
-      - Participation in class discussion and exercises, 4%
-      - Colloaboration with your lab partner, 4%
-    - I will update the grades again at the end of the term to reflect your participation in the last five weeks of the class.
-  - The course total grade on Moodle is up to date and reflects your work so far this term.
 
 ## Q and A
 
 - Do you have any questions about:
   - The midterm?
-  - The reading and/or quiz on arrays?
+  - The reading on arrays?  
+    The quiz closes before class on Thursday
   - Anything else?
 
 
-
-
-# Overview
-
-This week we will be learning to use arrays. Here is what we will learn:
-
-**Today: Basic arrays**
-
-- What is an array?
-- How to work with arrays.
-- How to work with arrays in loops.
-- Nested arrays (aka 2D arrays).
-
-**Next class: Using array methods**
-
-- Concept of objects and methods.
-- `push and pop`
-  
-  Used to add and remove elements at the end of an array.
-- `shift` and `unshift`
-  
-  Used to add and remove elements at the beginning of an array.
-- `splice`
-  
-  Used to remove or modify elements in an array
 
 # Arrays
 
 ## What are Arrays?
 
-- Review: 
-   We can think of a *variable* as a storage place in memory. It has a name and can hold <u>only one value</u> and that value has a data type.
+- Review of variables:  We can think of a *variable* as a storage place in memory. It has a name and can hold <u>only one value</u> and that value has a data type.
 - An *array* is like a variable (it's also one of the things we call an *object*), but it can hold <u>more than one value</u>.
-- An array has an *index* that lets us access a particular *element* (storage spot) in the array.
+- An analogy for an array is a set of post office boxes. Each one has an address and something can be stored in it.  
+   <img src="/Users/birdb/Projects/CS133JS-CourseMaterials/LectureNotes/Images/PersonOpeningPOBox.jpeg" alt="PersonOpeningPOBox" style="zoom:75%;" />
+
+- An array has an *index*, it's like an address that lets us access a particular *element* (storage spot) in the array.
    - Question: do you remember doing a loop exercise that involved checking sequential characters in a string? 
-   - A string is very similar to an array. It's sort of a special array that contains characters.
-   
+   - A string is very similar to an array. It's sort of a special array that contains characters (letters, numbers, symbols).
+
 - One way to think of an array is as a table with two columns where each row is an element of the array.  
-  
-  
+
+
    **An array represented as a table. **  
    Each row represents an *element*.  
    This array contains string values.  
-   
+
    | *index* | *value*   |
    | ------- | --------- |
    | 0       | Rey       |
@@ -189,7 +156,8 @@ Question: Which name got replaced?
 
 ### Practice
 
-1. Create an array of planets[^1].
+1. Create an array of planets[^1].  
+   (Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto.)
 
 2. Write a function that returns a planet by its number (1 for Mercury, 9 for Pluto).
 
@@ -251,7 +219,7 @@ while (name != "done")
 For each of the practice problems below:
 
 - First write a description of the input and output.
-- Write pseudo-code.
+- Write an algorithm in pseudo-code.
 
 Practice problems:
 
@@ -294,7 +262,25 @@ grid[2][2] = "X";
 ### Practice
 
 1. Write a function to let you put an X or O into a particular location in the grid
-2.  Write a function to output the grid to the console.
+2. Write a function to output the grid to the console.
+
+
+
+## Next class: Using array methods
+
+- Concept of objects and methods.
+
+- `push and pop`
+
+  Used to add and remove elements at the end of an array.
+
+- `shift` and `unshift`
+
+  Used to add and remove elements at the beginning of an array.
+
+- `splice`
+
+  Used to remove or modify elements in an array
 
 
 

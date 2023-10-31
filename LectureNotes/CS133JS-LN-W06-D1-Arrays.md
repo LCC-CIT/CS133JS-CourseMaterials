@@ -34,6 +34,9 @@ author: Brian Bird
 
 - Do you have any questions about:
   - The midterm?
+  - The term project?  
+    Don't forget to post your project proposal in forum in the week 5 section on Moodle.  
+    This is a good time to start the skeleton of your project.
   - The reading on arrays?  
     The quiz closes before class on Thursday
   - Anything else?

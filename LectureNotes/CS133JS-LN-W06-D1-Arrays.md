@@ -233,7 +233,7 @@ Practice problems:
 
     
 
-## Nested (2D) Arrays
+## Nested Arrays aka 2D Arrays
 
 *Nested arrays* are arrays of arrays. These are also known as *2D arrays*.
 

@@ -50,7 +50,7 @@ author: Brian Bird
 - Review of variables:  We can think of a *variable* as a storage place in memory. It has a name and can hold <u>only one value</u> and that value has a data type.
 - An *array* is like a variable (it's also one of the things we call an *object*), but it can hold <u>more than one value</u>.
 - An analogy for an array is a set of post office boxes. Each one has an address and something can be stored in it.  
-   <img src="/Users/birdb/Projects/CS133JS-CourseMaterials/LectureNotes/Images/PersonOpeningPOBox.jpeg" alt="PersonOpeningPOBox" style="zoom:75%;" />
+   <img src="Images/PersonOpeningPOBox.jpeg" alt="PersonOpeningPOBox" style="zoom:75%;" />
 
 - An array has an *index*, it's like an address that lets us access a particular *element* (storage spot) in the array.
    - Question: do you remember doing a loop exercise that involved checking sequential characters in a string? 
@@ -97,17 +97,18 @@ author: Brian Bird
 
 ## Accessing Array Elements
 
-The code shown below will access the array element with an index of 2  and assign the value stored there, "Han Solo", to the variable `character`.
+The code shown below will access the array element with an index of 2  and assign the value stored there, "Han Solo", to the constant `character`.
 
 <pre>const character = starWars[2];
-          &uarr;                &uarr;  
-       array name        index 
+                    &uarr;      &uarr;  
+             array name   index 
 </pre>
 
 
-This next line of code will change the value stored at index 2 to "Leia".
 
-`starwars[2] = "leia";`
+This next line of code will change the value stored at index 3 to "Leia".
+
+`starwars[3] = "Leia";`
 
 Question: Which name got replaced?
 

@@ -132,7 +132,7 @@ grid[2][2] = "X";
 
 ------
 
-# Array Methods
+# Array Methods (and a Property)
 
 ## Get Array Information
 

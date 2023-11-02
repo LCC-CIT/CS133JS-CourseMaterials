@@ -29,17 +29,17 @@ author: Brian Bird
 
 ## Announcements
 
-Spring term classes for Computer Programming majors
+Winter term classes for Software Dev majors
 
 - CS 233JS Intermediate JavaScript
 - WR 227 Technical Writing 
-- CS 162N Computer Science 2: C# (.NET)
-- Program elective: Art 288, Introduction to Web Design and Social Media or another programming language.
+- CS 161N Computer Science 1: C# (.NET)
+- CS 235AM Mobile App Development with JavaScript
 
 ## Q and A
 
-- Lab 5, Part 1, Array Exercises
-  - Have you started it? Any questions?
+- Lab 5: Have you started it? Any questions?
+- Term project proposal. Be sure to post yours!
 - Does anyone have any questions about anything?
 
 

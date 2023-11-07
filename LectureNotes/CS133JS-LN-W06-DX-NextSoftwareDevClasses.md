@@ -24,10 +24,16 @@ Classes to take next if you are pursuing the AAS in Software Development
 
 ### Winter Term 2024
 
-- CS 233JS, Intermediate JavaScript Programming
+- JavaScript:
+  - CS 133JS, Beginning JavaScript Programming  
+       or  
+  - CS 233JS, Intermediate JavaScript Programming  
+      and  
+  - Program Elective: CS 135AM, Beginning Mobile App Development with JavaScript
+
 - CS 161N, Beginning C# Programming
 - WR 121, Composition I
-- Program Elective: CS 135AM, Beginning Mobile App Development with JavaScript
+- 
 
 ### Spring Term 2024
 
@@ -35,7 +41,12 @@ Classes to take next if you are pursuing the AAS in Software Development
 
 - WR 227 Technical Writing
 
-- Program Elective: CS 135IM, Intermediate Mobile App Development with JavaScript
+- JavaScript:
+
+  - Program Elective: CS 135IM, Intermediate Mobile App Development with JavaScript  
+    or  
+
+  - CS 233JS, Intermediate JavaScript Programming 
 
 - Elective: CS 199: Introduction to Artificial Intelligence
 

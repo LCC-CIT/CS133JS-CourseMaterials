@@ -22,7 +22,7 @@ author: Brian Bird
 
 Classes to take next if you are pursuing the AAS in Software Development (formerly AAS in Computer Programming) 
 
-### Summer Term
+### Summer Term 2023
 
 - CS 233JS, Intermediate JavaScript
 - CS280PR, Co-op Ed: Computer Programming (Software Development)
@@ -31,7 +31,7 @@ Classes to take next if you are pursuing the AAS in Software Development (former
 - MTH 095, Intermediate Algebra
 - BA 278, Leadership & Team Dynamics
 
-### Fall Term
+### Fall Term 2023
 
 - CS 234N Advanced C#
 
@@ -47,7 +47,7 @@ Classes to take next if you are pursuing the AAS in Software Development (former
 
 ## Term-By-Term Core Course Offerings
 
-| First  Year                                                  |      |                                                              |      |                                                              |
+| First  Year                                                  |      | 2022-23                                                      |      |                                                              |
 | ------------------------------------------------------------ | ---- | ------------------------------------------------------------ | ---- | ------------------------------------------------------------ |
 | **Fall**                                                     |      | **Winter**                                                   |      | **Spring**                                                   |
 | CIS100 Computing Careers  Exploration                        |      | Program Elective: <br />CS235AM, Beg. Mobile App Dev, recommended |      | Program Elective: <br />CS235IM, Intermediate Mobile App Dev, recommended |
@@ -55,7 +55,7 @@ Classes to take next if you are pursuing the AAS in Software Development (former
 | CIS195 Web Authoring 1                                       |      | CS161N Beginning C#                                          |      |                                                              |
 | CS133JS Beg.  JavaScript                                     |      | (CIS195, CS133JS offered)                                    |      | (CS161N & 233JS possibly offered)                            |
 |                                                              |      |                                                              |      |                                                              |
-| **<mark>Second Year</mark>**                                 |      |                                                              |      |                                                              |
+| **<mark>Second Year</mark>**                                 |      | **2023-24**                                                  |      |                                                              |
 | **<mark>Fall</mark>**                                        |      | **Winter**                                                   |      | **Spring**                                                   |
 | <mark>Program Elective: <br />CS295R React recommended</mark> |      | CS275 Data Modeling and SQL intro                            |      | CS276 Advanced SQL                                           |
 | <mark>CS234N Advanced C#</mark>                              |      | CS296N Web Development 2: ASP.NET                            |      | CS297 Programming Capstone                                   |

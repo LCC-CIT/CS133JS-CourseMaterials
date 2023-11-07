@@ -29,11 +29,12 @@ author: Brian Bird
 
 ### Q and A
 
-- [Upcoming classes](CS133JS-LN-W06-DX-NextSoftwareDevClasses.html) for the Software Development AAS degree program (previously Computer Programming AAS).
+- Winter registration is open!  
+  [Upcoming classes](CS133JS-LN-W06-DX-NextSoftwareDevClasses.html) for the Software Development AAS degree program 
   
-- Lab 5
-  - Part 1, any questions?
-  - Part 2, any questions?
+- Lab 5 on Arrays&mdash; any questions?
+  - Code review due today.
+  - Production version due Thursday.
 
 - Does anyone have any other questions about anything?
 

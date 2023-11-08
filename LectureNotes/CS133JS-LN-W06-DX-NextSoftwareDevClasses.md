@@ -29,8 +29,9 @@ Classes to take next if you are pursuing the AAS in Software Development
        or  
   - CS 233JS, Intermediate JavaScript Programming  
       and  
-  - Program Elective: CS 135AM, Beginning Mobile App Development with JavaScript
-
+  - Program Elective: CS 135AM, Beginning Mobile App Development with JavaScript  
+      (Currently named "Intermediate Mobile Application Development: Android")
+  
 - CS 161N, Beginning C# Programming
 - WR 121, Composition I
 - 

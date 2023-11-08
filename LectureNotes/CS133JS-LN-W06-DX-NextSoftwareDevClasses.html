@@ -1,23 +1,18 @@
 <!doctype html>
-<html style='font-size:20px !important'>
+<html>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<meta name="title" content="Next Software Development classes to take">
-<meta name="description" content="See what classes are offered next term">
-<meta name="keywords" content="AAS in Software Development">
-<meta name="material" content="Lecture Notes">
-<meta name="author" content="Brian Bird">
-<meta name="generator" content="Typora">
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
-.mac-os-11 { --title-bar-height: 28px; }
+
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 h1, h2, h3, h4, h5 { white-space: pre-wrap; }
-body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
 .in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
-#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
 #write.first-line-indent p { text-indent: 2em; }
 #write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
 #write.first-line-indent li { margin-left: 2em; }
@@ -32,7 +27,7 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
 img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
-button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+button, input, select, textarea { color: inherit; font: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
 *, ::after, ::before { box-sizing: border-box; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
@@ -59,8 +54,8 @@ thead, tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
 table.md-table td { min-width: 32px; }
-.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
-.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
 .CodeMirror { text-align: left; }
 .CodeMirror-placeholder { opacity: 0.3; }
 .CodeMirror pre { padding: 0px 4px; }
@@ -70,7 +65,7 @@ div.hr:focus { cursor: none; }
 #write.fences-no-line-wrapping pre { white-space: pre; }
 #write pre.ty-contain-cm { white-space: normal; }
 .CodeMirror-gutters { margin-right: 4px; }
-.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit; background-repeat: inherit; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
 .md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
 #write .md-fences.mock-cm { white-space: pre-wrap; }
 .md-fences.md-fences-with-lineno { padding-left: 0px; }
@@ -80,7 +75,7 @@ div.hr:focus { cursor: none; }
 svg { break-inside: avoid; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
 .footnotes + .footnotes { margin-top: 0px; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
 li .mathjax-block, li p { margin: 0.5rem 0px; }
@@ -93,7 +88,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 @media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
-  .typora-export * { print-color-adjust: exact; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
@@ -103,7 +98,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 }
 .footnote-line { margin-top: 0.714em; font-size: 0.7em; }
 a img, img a { cursor: pointer; }
-pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
 p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
 #write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
 p > .md-image:only-child { display: inline-block; width: 100%; }
@@ -141,19 +136,19 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
-kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
-code { text-align: left; }
-a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
 [lang="mermaid"] .node text { font-size: 1rem; }
-table tr th { border-bottom-width: 0px; }
+table tr th { border-bottom: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
 iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
-mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
 .md-expand mark .md-meta { opacity: 0.3 !important; }
 mark .md-meta { color: rgb(0, 0, 0); }
@@ -165,10 +160,10 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
 .md-fences.md-fences-math { font-size: 1em; }
 .md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
-.md-fences-advanced:not(.md-focus) { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit; background-repeat: inherit; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
 .typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
 .typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
-.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
 .typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
 @media screen and (max-width: 1024px) {
   .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
@@ -179,7 +174,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
 .outline-content ul { margin-top: 0px; margin-bottom: 0px; }
 .outline-content strong { font-weight: 400; }
-.outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
 .outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
 .outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
 .outline-expander:hover::before { content: ""; }
@@ -192,14 +187,14 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
 .outline-label:hover { text-decoration: underline; }
 .outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
-.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
 .outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
 .outline-item-open > .outline-item > .outline-expander::before { content: ""; }
 .outline-children { display: none; }
 .info-panel-tab-wrapper { display: none; }
 .outline-item-open > .outline-children { display: block; }
 .typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
-.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
 .typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
 .typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
 .typora-export-collapse-outline .outline-children { display: none; }
@@ -595,10 +590,10 @@ header, .context-menu, .megamenu-content, footer{
 }
 
 
- @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}} .typora-export li, .typora-export p, .typora-export,  .footnote-line {white-space: normal;} h1,h2,h3,h4,h5 {white-space:pre-line}
+
 </style><title>Next Software Development classes to take</title>
 </head>
-<body class='typora-export'><div class='typora-export-content'>
-<div id='write'  class=''><p><strong><span>AAS in Software Development</span></strong></p><h1>What Classes to Take Next</h1><p>&nbsp;</p><h2>Table of Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n220"><a class="md-toc-inner" style="" href="#upcoming-software-development-courses">Upcoming Software Development Courses</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n222"><a class="md-toc-inner" style="" href="#winter-term-2024">Winter Term 2024</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n232"><a class="md-toc-inner" style="" href="#spring-term-2024">Spring Term 2024</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n243"><a class="md-toc-inner" style="" href="#reference">Reference</a></span></p></div><h2 id='upcoming-software-development-courses'><span>Upcoming Software Development Courses</span></h2><p><span>Classes to take next if you are pursuing the AAS in Software Development </span></p><h3 id='winter-term-2024'><span>Winter Term 2024</span></h3><ul><li><p><span>JavaScript:</span></p><ul><li><p><span>CS 133JS, Beginning JavaScript Programming</span><br/><span>   or  </span></p></li><li><p><span>CS 233JS, Intermediate JavaScript Programming</span><br/><span>  and  </span></p></li><li><p><span>Program Elective: CS 135AM, Beginning Mobile App Development with JavaScript</span></p></li></ul></li><li><p><span>CS 161N, Beginning C# Programming</span></p></li><li><p><span>WR 121, Composition I</span></p></li><li><p>&nbsp;</p></li></ul><h3 id='spring-term-2024'><span>Spring Term 2024</span></h3><ul><li><p><span>CS 162N Intermediate C# Programming</span></p></li><li><p><span>WR 227 Technical Writing</span></p></li><li><p><span>JavaScript:</span></p><ul><li><p><span>Program Elective: CS 135IM, Intermediate Mobile App Development with JavaScript</span><br/><span>or  </span></p></li><li><p><span>CS 233JS, Intermediate JavaScript Programming </span></p></li></ul></li><li><p><span>Elective: CS 199: Introduction to Artificial Intelligence</span></p><p>&nbsp;</p></li></ul><h2 id='reference'><span>Reference</span></h2><p><a href='https://crater.lanecc.edu/banp/zwsktsc2.P_DispGroupSchd?chunk_in=C2550&amp;term_in=202430&amp;'><span>LCC Winter 2024 Class Schedule</span></a></p><p><a href='https://www.lanecc.edu/programs-academics/areas-study/computer-science-and-information-technology/software-development'><span>AAS in Software Development Program Info Page</span></a></p><p><a href='https://lanecc.smartcatalogiq.com/2023-2024/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas/'><span>AAS in Software Development Catalog Page</span></a></p><p><a href='https://lanecc.smartcatalogiq.com/-/media/institution/lane-community-college/2023-24-term-planners/Software%20Development%20Term%20Plan%2023-24.pdf'><span>AAS in Software Development Term-by-Termp Planner</span></a></p><hr /><p><a href='http://creativecommons.org/licenses/by-sa/4.0/'><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" referrerpolicy="no-referrer" alt="Creative Commons License"></a><span> Beginning JavaScript Lecture Notes by </span><a href='https://profbird.online'><span>Brian Bird</span></a><span> </span><time><span>2023</span></time><span> are licensed under a </span><a href='http://creativecommons.org/licenses/by-sa/4.0/'><span>Creative Commons Attribution-ShareAlike 4.0 International License</span></a><span>. </span></p><hr /></div></div>
-<base target="_blank"></body>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><p><strong><span>AAS in Software Development</span></strong></p><h1>What Classes to Take Next</h1><p>&nbsp;</p><h2>Table of Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n8"><a class="md-toc-inner" href="#upcoming-software-development-courses">Upcoming Software Development Courses</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n10"><a class="md-toc-inner" href="#winter-term-2024">Winter Term 2024</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n27"><a class="md-toc-inner" href="#spring-term-2024">Spring Term 2024</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n43"><a class="md-toc-inner" href="#reference">Reference</a></span></p></div><h2 id='upcoming-software-development-courses'><span>Upcoming Software Development Courses</span></h2><p><span>Classes to take next if you are pursuing the AAS in Software Development </span></p><h3 id='winter-term-2024'><span>Winter Term 2024</span></h3><ul><li><p><span>JavaScript:</span></p><ul><li><p><span>CS 133JS, Beginning JavaScript Programming</span><br/><span>or  </span></p></li><li><p><span>CS 233JS, Intermediate JavaScript Programming</span><br/><span>and  </span></p></li><li><p><span>Program Elective: CS 135AM, Beginning Mobile App Development with JavaScript</span><br/><span>(Currently named &quot;Intermediate Mobile Application Development: Android&quot;)</span></p></li></ul></li><li><p><span>CS 161N, Beginning C# Programming</span></p></li><li><p><span>WR 121, Composition I</span></p></li><li><p>&nbsp;</p></li></ul><h3 id='spring-term-2024'><span>Spring Term 2024</span></h3><ul><li><p><span>CS 162N Intermediate C# Programming</span></p></li><li><p><span>WR 227 Technical Writing</span></p></li><li><p><span>JavaScript:</span></p><ul><li><p><span>Program Elective: CS 135IM, Intermediate Mobile App Development with JavaScript</span><br/><span>or  </span></p></li><li><p><span>CS 233JS, Intermediate JavaScript Programming </span></p></li></ul></li><li><p><span>Elective: CS 199: Introduction to Artificial Intelligence</span></p><p>&nbsp;</p></li></ul><h2 id='reference'><span>Reference</span></h2><p><a href='https://crater.lanecc.edu/banp/zwsktsc2.P_DispGroupSchd?chunk_in=C2550&amp;term_in=202430&amp;'><span>LCC Winter 2024 Class Schedule</span></a></p><p><a href='https://www.lanecc.edu/programs-academics/areas-study/computer-science-and-information-technology/software-development'><span>AAS in Software Development Program Info Page</span></a></p><p><a href='https://lanecc.smartcatalogiq.com/2023-2024/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas/'><span>AAS in Software Development Catalog Page</span></a></p><p><a href='https://lanecc.smartcatalogiq.com/-/media/institution/lane-community-college/2023-24-term-planners/Software%20Development%20Term%20Plan%2023-24.pdf'><span>AAS in Software Development Term-by-Termp Planner</span></a></p><hr /><p><a href='http://creativecommons.org/licenses/by-sa/4.0/'><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" referrerpolicy="no-referrer" alt="Creative Commons License"></a><span> Beginning JavaScript Lecture Notes by </span><a href='https://profbird.online'><span>Brian Bird</span></a><span> </span><time><span>2023</span></time><span> are licensed under a </span><a href='http://creativecommons.org/licenses/by-sa/4.0/'><span>Creative Commons Attribution-ShareAlike 4.0 International License</span></a><span>. </span></p><hr /></div></div>
+</body>
 </html>

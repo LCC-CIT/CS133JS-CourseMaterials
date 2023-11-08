@@ -32,10 +32,9 @@ author: Brian Bird
 - Winter registration is open!  
   [Upcoming classes](CS133JS-LN-W06-DX-NextSoftwareDevClasses.html) for the Software Development AAS degree program 
   
-- Lab 5 on Arrays&mdash; any questions?
-  - Code review due today.
-  - Production version due Thursday.
-
+- Lab 5 on Arrays&mdash; any questions?
+  - Due Thursday.
+  
 - Does anyone have any other questions about anything?
 
 
@@ -281,7 +280,7 @@ for (let item in fili)
 
 ### All the Other Loops
 
-#### Get an Array with `Object.keys()` or `Object.values()`
+#### Get an Array with `Object.keys()` or `Object.values()`
 
 JavaScript objects have a pre-defined method for getting an array of property keys, the `Object.keys()` method. This makes it easy to use all the other loops with object properties.
 

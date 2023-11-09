@@ -198,7 +198,7 @@ Let's start with just an array of objects. Here is an array that represents a fl
 
 ```javascript
 // Array of Pigeon objects
-let pigeons = [new Pigeon("Agatha", "Egyptian Swift", 50),
+const pigeons = [new Pigeon("Agatha", "Egyptian Swift", 50),
 							new Pigeon("Elizabeth", "Egyptian Swift", 60),
 							new Pigeon("Jutta", "Utility", 45)];
 ```
@@ -206,7 +206,7 @@ let pigeons = [new Pigeon("Agatha", "Egyptian Swift", 50),
 We can access an individual pigeon by it's array index:
 
 ```javascript
-flock[1].fly();  // Elizabeth will fly
+pigeons[1].fly();  // Elizabeth will fly
 ```
 
 Now let's create a loft object that has an array of pigeon objects:

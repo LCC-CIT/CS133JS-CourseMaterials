@@ -30,8 +30,13 @@ author: Brian Bird
 
 ## Q and A
 
+- Term proejct
+  - I finished reading proposals. For those of you who didn't post one, do it now.
+  - If you want to do a harder project, you can do it with a partner.
+
+- Hackathon--see the announcements forum.
 - Lab 5, any questions?
-- Does anyone have any questions about anything?
+- Does anyone have any questions about anything else?
 
 
 

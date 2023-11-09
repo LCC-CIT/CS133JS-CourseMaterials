@@ -28,11 +28,6 @@ author: Brian Bird
 
 # Introduction
 
-## Announcements 
-
-- [Job Fair](https://www.lanecc.edu/community/events/job-fair-may-18): tomorrow (Thursday, 5/18), 1:00pm - 5:00pm, Building 19, Room 100 (Lobby)
-- [Making Wise Choices Workshop](https://www.lanecc.edu/get-support/academic-support/counseling-center): today and tomorrow (5/17 & 18) at 3:00pm and 4:00pm
-
 ## Q and A
 
 - Lab 5, any questions?

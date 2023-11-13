@@ -28,15 +28,15 @@ author: Brian Bird
 
 # Introduction
 
-## Announcements 
-
-- [Job Fair](https://www.lanecc.edu/community/events/job-fair-may-18): tomorrow (Thursday, 5/18), 1:00pm - 5:00pm, Building 19, Room 100 (Lobby)
-- [Making Wise Choices Workshop](https://www.lanecc.edu/get-support/academic-support/counseling-center): today and tomorrow (5/17 & 18) at 3:00pm and 4:00pm
-
 ## Q and A
 
+- Term proejct
+  - I finished reading proposals. For those of you who didn't post one, do it now.
+  - If you want to do a harder project, you can do it with a partner.
+
+- Hackathon--see the announcements forum.
 - Lab 5, any questions?
-- Does anyone have any questions about anything?
+- Does anyone have any questions about anything else?
 
 
 
@@ -198,7 +198,7 @@ Let's start with just an array of objects. Here is an array that represents a fl
 
 ```javascript
 // Array of Pigeon objects
-let pigeons = [new Pigeon("Agatha", "Egyptian Swift", 50),
+const pigeons = [new Pigeon("Agatha", "Egyptian Swift", 50),
 							new Pigeon("Elizabeth", "Egyptian Swift", 60),
 							new Pigeon("Jutta", "Utility", 45)];
 ```
@@ -206,7 +206,7 @@ let pigeons = [new Pigeon("Agatha", "Egyptian Swift", 50),
 We can access an individual pigeon by it's array index:
 
 ```javascript
-flock[1].fly();  // Elizabeth will fly
+pigeons[1].fly();  // Elizabeth will fly
 ```
 
 Now let's create a loft object that has an array of pigeon objects:

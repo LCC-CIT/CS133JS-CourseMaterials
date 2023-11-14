@@ -29,15 +29,21 @@ author: Brian Bird
 
 ## Announcements
 
-- Note: the tutorial you are reading has examples that use *arrow functions*. You will learn about those next term. I've translated those example to use "normal" functions.
-  
-- Reminder: Lab 6 (objects) code reviews are due tomorrow.
+**For November 14, 2023**
 
-- No class next Monday, it's Memorial day.
+- Note: the tutorial you are reading this week has examples that use *arrow functions*. You will learn about those next term. I've translated those examples to use "normal" functions.
+  
+- Reminders: 
+  - Lab 6 (objects) code reviews are due today (Tuesday).
+
+  - The reading quiz closes before class on Thursday.
+
+  - Lab 6 is due Thursday.
+
+- No class next Thursday (11/27), it's Thanksgiving day.
 
 ## Q and A
 
-- [Feedback on Lab 5 (arrays)](https://drive.google.com/file/d/15P6scrpXuBpsL6PQy1Aj-75HH04jfY2D/view?usp=sharing)
 - Any questions?
 
 

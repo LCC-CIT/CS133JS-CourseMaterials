@@ -31,7 +31,7 @@ author: Brian Bird
 
 **For 11/16/23**
 
-- Lab 6 (arrays) is due tonight (Thursday.
+- Lab 6 (arrays) is due tonight (Thursday).
 - Friday of this week is the last day to: drop, withdraw, or change to pass/no pass.
 
 ### Q and A

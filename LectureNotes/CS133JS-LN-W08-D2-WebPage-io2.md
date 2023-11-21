@@ -27,11 +27,12 @@ author: Brian Bird
 
 ## Introduction
 
-### Anouncements
+### Announcements
 
-- Lab 6 (arrays) is due tomorrow night.
+**For 11/16/23**
+
+- Lab 6 (arrays) is due tonight (Thursday).
 - Friday of this week is the last day to: drop, withdraw, or change to pass/no pass.
-- Don't forget to do the reading and take the quiz before class time on Monday.
 
 ### Q and A
 

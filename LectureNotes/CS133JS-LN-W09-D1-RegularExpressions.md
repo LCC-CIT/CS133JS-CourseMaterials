@@ -33,14 +33,22 @@ author: Brian Bird
 
 **For November 21, 2023**
 
-- No class Thursday. It's the Thanksgiving holiday!
-- Lab 7, events: 
-  - Code review due tonight.
+- **No class Thursday**. It's the Thanksgiving holiday!
 
-  - Production version due date is extended to Friday night.
+- **Due dates:** 
+  
+  - Lab 7, on JavaScript events, code review due tonight, 11/21.
+  
+  - Lab 7 production version due date is extended to Friday night, 11/24.
+  
+  - This week's quiz closing date extended to Friday night, 11/24.
+  
+  - Lab 8 on regular expressions, this week's lab, doesn't require a code review, only part 1 is required. Part 2 is fun and optional. It's due Monday night, 12/1.
+  
+- **Study Jam for Students November 28th!**
+  Tuesday, November 28 from 2-4 pm will be Study Jam. The library will provide free pizza and snacks for students as you study for finals. In addition to food and drink, there will be research help, tutoring, relaxation and yoga tips, and therapy dogs. 
 
-- No reading quiz next week, the last week of class.
-- This week's lab, lab 8 on regular expressions, doesn't require a code review, only part 1 is required. Part 2 is fun and optional.
+  <img src="Images/StudyJam.png" alt="StudyJam" style="zoom:40%;" />
 
 
 ### Q and A
@@ -49,9 +57,11 @@ author: Brian Bird
 - How is the term project going?
 - Any other questions?
 
+----
 
 
-## Regular Expressions
+
+# Regular Expressions
 
 One way to compare strings to see if they match is to use a  *Regular Expression* object, this object is a part of the JavaScript language, and something similar exists in almost every other programming language. 
 
@@ -63,11 +73,11 @@ One way to compare strings to see if they match is to use a  *Regular Expression
 
 The real power is in finding partial matches. Regular expressions are a powerful way to find matches for complex patterns in a string.
 
-### RegExp Methods
+## RegExp Methods
 
 These are the most commonly used methods. For a comprehensive list, see the [description of RegExp on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp).
 
-#### `test`  
+### `test`  
 
 This method will return true when you pass it a string that contains a match for the pattern defined in the RegExp object.
 
@@ -76,7 +86,7 @@ let pattern = /matchThis/;
 let foundMatch = pattern.test("Does matchThis match?"); // foundMatch will be true
 ```
 
-#### `exec`
+### `exec`
 
 This method will return an array containing just the first matched sub-string. The array also has a number of properties; including the index of the first match in the string&mdash;if it finds a match, otherwise it returns null.
 
@@ -88,7 +98,7 @@ let matches = pattern.exec("There are two matches in this sentence for 'th'.");
 
 This method has a number of other more complex features that you can read about in the [MDN documentation for `exec`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec).
 
-### Matching "wild card" Characters
+## Matching "wild card" Characters
 
 You might have used `*` and `?` as wildcards in a search before. 
  With `RegExp`, the syntax is a little different:
@@ -137,7 +147,7 @@ You might have used `*` and `?` as wildcards in a search before.
 
   
 
-### Matching at the Beginning, Middle, or End of a String
+## Matching at the Beginning, Middle, or End of a String
 
 *Anchors* are used to indicate that a pattern must be applied at the beginning of a string, the end, or must match the entire string.
 
@@ -165,7 +175,7 @@ You might have used `*` and `?` as wildcards in a search before.
   foundMatch = pattern.test(text);  // foundMatch will be true
   ````
 
-### Flags
+## Flags
 
 - RegExp flags (aka properties) include: 
   - `g` – global
@@ -181,7 +191,7 @@ You might have used `*` and `?` as wildcards in a search before.
   - RegExp constructor: Add a second argument to the constructor for the flag(s). 
     `let pattern2 = new RegExp("that", go);`
 
-### Groups
+## Groups
 
 - Character groups – a group of characters that can match one character in a string:
 
@@ -205,7 +215,7 @@ You might have used `*` and `?` as wildcards in a search before.
   
   
 
-### Quantifiers
+## Quantifiers
 
 Curly braces, `{ }`, specify the number of times a pattern must match:
 
@@ -219,13 +229,13 @@ For example, the pattern `/[0-9]{5}/` will match only strings containing 5 digit
 
 
 
-### Escape Characters
+## Escape Characters
 
 Escape character – backslash is an escape character that lets you use a special character, like the dot as a dot, not for pattern matching. For example, check for a period at the end of a string:
 
 `let pattern = /\.$/`
 
-### Metacharacters
+## Metacharacters
 
 Metacharacters are characters with a special meaning. A partial listing is shown below. Notice that the upper-case versions do the inverse of the lower-case versions. 
 
@@ -252,7 +262,7 @@ let results = pattern.exec("How many pecks of pickled peppers did Peter Piper pi
 
 
 
-### Choice (Logical OR)
+## Choice (Logical OR)
 
 Pipe character, `|` to allow choice between patterns 
 
@@ -270,7 +280,7 @@ console.log(pattern.test("Python is an interesting language."));
 
 
 
-### Examples
+## Examples
 
 - Test for a valid e-mail address: 
    (This pattern uses `{2,}` to indicate a minimum of 2 characters.)
@@ -287,7 +297,7 @@ console.log(pattern.test("Python is an interesting language."));
 
 
 
-## Resource
+# Resource
 
 [Regular Expression Test Page](https://regexkit.com/javascript-regex/)
 
@@ -295,7 +305,7 @@ Try out regular expressions to see how they work with different test strings.
 
 
 
-## References
+# References
 
 [JavaScript RegExp Reference](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)&mdash;W3Schools
 

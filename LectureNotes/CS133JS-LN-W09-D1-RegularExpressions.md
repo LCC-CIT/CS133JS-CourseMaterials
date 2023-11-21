@@ -43,7 +43,7 @@ author: Brian Bird
   
   - This week's quiz closing date extended to Friday night, 11/24.
   
-  - Lab 8 on regular expressions, this week's lab, doesn't require a code review, only part 1 is required. Part 2 is fun and optional. It's due Monday night, 12/1.
+  - Lab 8 on regular expressions, this week's lab, doesn't require a code review, only part 1 is required. Part 2 is fun and optional. It's due Friday night, 12/1.
   
 - **Study Jam for Students November 28th!**
   Tuesday, November 28 from 2-4 pm will be Study Jam. The library will provide free pizza and snacks for students as you study for finals. In addition to food and drink, there will be research help, tutoring, relaxation and yoga tips, and therapy dogs. 
@@ -189,7 +189,7 @@ You might have used `*` and `?` as wildcards in a search before.
   - Literal RegExp object: Put the flag(s) after the slash that ends the regular expression: 
     `let let pattern1 = /this/i;`
   - RegExp constructor: Add a second argument to the constructor for the flag(s). 
-    `let pattern2 = new RegExp("that", go);`
+    `let pattern2 = new RegExp("that", gi);`
 
 ## Groups
 
@@ -293,7 +293,7 @@ console.log(pattern.test("Python is an interesting language."));
 
 - Check for a valid uoregon.edu address:
 
-  `let pattern = /^[A-Z0-9._%+-]+@uoregon.edu$/i`
+  `let pattern = /^[A-Z0-9._%+-]+@uoregon\.edu$/i`
 
 
 

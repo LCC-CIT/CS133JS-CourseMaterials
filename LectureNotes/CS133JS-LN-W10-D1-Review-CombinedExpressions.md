@@ -17,51 +17,27 @@
 [TOC]
 
 ## Announcements
-
-- [Study Jam on Tuesday, June 6 from 2&mdash;4pm!](https://library.lanecc.edu/about/library-spotlight)
-
-  All LCC students are welcome!
-
-  - Free Track Town pizza and other snacks will be provided. 
-  - Special visitors: tutors, advisors, therapy dogs, and a yoga instructor.  
-
-- Summer and Fall 2023 Advising & Financial Aid Reg Fest! 
-
-  - June 13th
-    through September, Student Affairs will be offering drop-in assistance in advising, registration and financial aid for summer and fall 2023 students in Building 1, Room 102-103 from 9 am-2 pm. 
-  - For more information contact the [Office of Admissions](https://www.lanecc.edu/costs-admission/admissions-office) at admissions@lanecc.edu or by phone at 541-463-5678.
-
-- No office hours today, but I will have normal office hours the rest of the week (4:00 to 4:50, Tuesday through Thursday). I will also be available by appointment Tuesday and Thursday from 9:30 to 12:00.
-
-- Any late or extra credit assignments are due by the end of the day on Monday.
-
-
+- Today, Tuesday, November 28 from 2-4 pm there will be a [Study Jam in the library](https://library.lanecc.edu/). 
+  The library will provide free pizza and snacks for students as you study for finals. In addition to food and drink, there will be research help, tutoring, relaxation and yoga tips, and therapy dogs.
+- [Advising & Financial Aid Reg Fest](https://www.lanecc.edu/community/events/drop-winter-reg-fest-0)  
+  Questions about financial aid, winter term registration and what courses to enroll in? Join us for a drop-in event with academic advising, financial aid and student services representatives. Can't make it? Student Services departments are available on drop-in Monday-Friday. 
+- Any late or extra credit assignments are due by the end of the day on Monday, 12/4/23.
+- CS 235AM, Mobile App Development is being offered next term (Winter 2024). You'll learn to make apps for iOS and Android using JavaScript.
+- 
 ### Q and A
-
 - How is lab 8 going?
-
   - Only part 1 is required. Is anyone doing part 2?
   - No code review required, production version due Thursday.
-
 - How is the term project going?
-
-  - Beta due tomorrow (Forum submission for your lab partner).
+  - Beta due today (Forum submission for your lab partner).
   - Code review for your lab partner due Thursday.
   - Production version due Monday.
-
 - Final quiz
-
   - There is a, short, ungraded practice quiz open now.
-
   - Look at the review suggestions in [this week's overview](CS133JS-LN-W10-D0-Review.html).
-
-  - The final quiz is at the regular class time next Monday, June 12. 
-
-    Or, take it in the testing center, open 9:00am to 7:00pm, Monday 6/12 through Wednesday 6/14.
-
+  - The final quiz is at the regular class time next Tuesday, December 5.
+    Or, take it in the [Instructional Testing Center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services?_gl=1*62xqx7*_ga*NDEyOTA4MDEzLjE1NzY2NDQ5NTc.*_ga_MMT5BK11VR*MTY4Mjk3ODA0OC4zMjguMS4xNjgyOTgwMTkxLjAuMC4w), Monday 12/4 through Wednesday 12/6.
   - Any questions?
-
-
 
 
 

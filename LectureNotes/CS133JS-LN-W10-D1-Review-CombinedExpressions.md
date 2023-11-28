@@ -23,7 +23,7 @@
   Questions about financial aid, winter term registration and what courses to enroll in? Join us for a drop-in event with academic advising, financial aid and student services representatives. Can't make it? Student Services departments are available on drop-in Monday-Friday. 
 - Any late or extra credit assignments are due by the end of the day on Monday, 12/4/23.
 - CS 235AM, Mobile App Development is being offered next term (Winter 2024). You'll learn to make apps for iOS and Android using JavaScript.
-- 
+
 ### Q and A
 - How is lab 8 going?
   - Only part 1 is required. Is anyone doing part 2?

@@ -1,4 +1,4 @@
-# Overview of Week 9 - Review of JavaScript
+# Overview of Week 10 - Review of JavaScript
 
 This week is your opportunity to review all that we've covered in this class&mdash;both as preparation for the final quiz as well as a way to firm up your knowledge of JavaScript so you will be ready to write great JavaScript code in the future!
 

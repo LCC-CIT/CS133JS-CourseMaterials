@@ -32,9 +32,9 @@ You can choose a project from the list of suggestions below or propose one based
     - Events
   - Use best coding practices like avoiding global variables, writing DRY code, proper indentation, descriptive variable names, explanatory comments, separating I/O from processing, etc.
   - Provide good user experience by using input validation, do-again loops or resets, clear instructions and/or prompts, etc.
-  - Require at least as much effort as an average lab assignment, but not as much as two lab assignments.
+  - Require more JavaScript code than in all of an average lab assignment, but not more than two lab assignments.
   
-  - Not be the same as any of the class or textbook examples.
+  - Not be the same as any of the class or textbook examples or lab assignments.
   - Not be the same as a project being done by another student in the class.
   - Not use code you got from someone else, the internet, or AI.
 

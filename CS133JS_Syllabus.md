@@ -226,16 +226,17 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 ## Weekly Learning Activities
 
 - Monday
-  - Start the assigned reading
-  - Participate in class (in person, via Zoom, or watch the Zoom recording)
+  - Start the assigned reading  
+    (Take the reading quiz when you finish the reading)
+  - Participate in class in person, via Zoom, or watch the Zoom recording
 
 
 - By Tuesday night
-  - Complete a code review of last week's lab work for your lab partner (starting the 2nd week).
+  - Complete a code review of last week's lab for your lab partner (starting the 2nd week).
 
 
 - Wednesday
-  - Before class starts: take the reading quiz.
+  - Before class starts, take the reading quiz.
   - Participate in class
 - Thursday
   - By midnight: submit the production version of your lab work from last week.
@@ -243,7 +244,7 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 
 - By Friday night
 
-  - Post the beta version of your lab work for this week.
+  - Post the beta version of your lab for this week.
 
     
 
@@ -258,7 +259,7 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 | **2**<br />1/15  | Functions, Expressions and Operators                         | lab 1 code review <br />Reading quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
 | **3**<br />1/22  | Selection                                                    | lab 2 code review  <br />Reading quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
 | **4**<br />1/29  | Repetition                                                   | lab 3 code review<br />Reading quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
-| **5**<br />2/5   | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Term project proposal<br />Midterm quiz:<br />- In the classroom at 12:00 on 5/3<br />- In the testing center 5/3 or 5/4 |
+| **5**<br />2/5   | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Term project proposal<br />Midterm quiz:<br />- In the classroom at 12:00 on 2/7<br />- In the testing center 2/7 through 2/9 |
 | **6**<br />2/12  | Arrays                                                       | Reading quiz 5  <br />Beta version of lab 5                  |
 | **7**<br />2/19  | Objects                                                      | lab 5 code review<br />Reading quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
 | **8**<br />2/26  | Document Object Model and Events                             | lab 6 code review<br />Reading quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |

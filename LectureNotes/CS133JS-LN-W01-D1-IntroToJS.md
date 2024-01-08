@@ -143,7 +143,7 @@ Let's talk about how this works by looking at some key pieces of the code:
     - Let me know if you have a preference for a lab partner
     - Lab partners will each be doing a different version of each lab assignment.
   
-  - Look at the code review procedure document.
+  - Look at the code review guide (there's a link in the Moodle page fly-out).
   
   
    	

@@ -85,7 +85,7 @@ Revisit these and discuss what might run on the server and what might run in the
   
 - A completely different language from Java, but has some similarities
 
-  - JS is interpreted, dynamiclly typed, and multi-paradigm (procedural & Object Oriented, imperative & functional). *We’ll explain these things later.*
+  - JS is interpreted, dynamically typed, and multi-paradigm (procedural & Object Oriented, imperative & functional). *We’ll explain these things later.*
 
   ## Guided Exercise: Hello world
 
@@ -103,7 +103,7 @@ Revisit these and discuss what might run on the server and what might run in the
    		 document.write("<p>Hello " + name + "!</p>");
   ```
 
-4. Finally, we'll add a way for a user to enter information. We do that by adding an input prompt.
+4. Finally, we'll add a way for a user to enter information. We do that by adding code that prompts the user for input.
   ```javascript
   var name = prompt("Please enter your name");
   	document.write("<p>Hello " + name + "!</p>");
@@ -116,9 +116,10 @@ Let's talk about how this works by looking at some key pieces of the code:
   We use this JavaScript keyword to *declare* a variable. Declaring a variable means announcing to JavaScript that this is a new variable that we will be using. 
   (Later we'll learn to use `let` to declare variables).
 - `prompt`
-  A function built into JavaScript that pops up a dialog box that displays a message and lets the user enter some input.
+  A function built into JavaScript that pops up a dialog box that displays a message on the web page and lets the user enter some input.
 - `=`
-  The *assignment operator*. It takes the information (in this case a name) coming from the prompt on the right and puts it into the variable on the left. Note that in computer programming, the direction information flows with the `=` symbol is the opposite of algebra.
+  The *assignment operator*. It takes the information (in this case a name) coming from the prompt on the right and puts it into the variable on the left.  
+  **Note**: in computer programming, the direction information flows with the `=` symbol is the opposite of algebra.
 
 # Course Tour
 
@@ -142,7 +143,7 @@ Let's talk about how this works by looking at some key pieces of the code:
 
 [JavaScript Reserved Words](https://www.w3schools.com/js/js_reserved.asp)&mdash;W3Schools
 
-The *reserverd words* are the "vocabulary" of JavaScript.
+The *reserved words* are the "vocabulary" of JavaScript.
 
 
 

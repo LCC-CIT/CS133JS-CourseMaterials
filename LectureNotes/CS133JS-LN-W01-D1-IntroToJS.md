@@ -124,16 +124,25 @@ Let's talk about how this works by looking at some key pieces of the code:
 # Course Tour
 
 - Syllabus – quick overview
+
 - Reading and Quizzes
   
   - Purpose of quizzes isn’t testing, it’s focus and accountability.
+  
 - Lab assignments
-  - Part 1 will usually be a tutorial exercise.
+  - Part 1 will usually be a set of practice exercises.
   - Part 2 will require problem-solving.
+    - What is problem solving? 
+    - Why is it important?
   - You will upload your solutions to Moodle and usually to citstudent as well.
+  
 - Code reviews
   - Each lab assignment has a beta and production version. Code reviews are done on the beta version.
   - One reason we do code reviews: they are used by development teams in the real world.
+  - You will be assigned two lab partners
+    - Let me know if you have a preference for a lab partner
+    - Lab partners will each be doing a different version of each lab assignment.
+  
   - Look at the code review procedure document.
   
   
@@ -149,6 +158,6 @@ The *reserved words* are the "vocabulary" of JavaScript.
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------

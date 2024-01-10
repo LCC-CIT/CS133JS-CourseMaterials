@@ -34,6 +34,22 @@ author: Brian Bird
 - What I teach
 - LCC's Programming Degree
 
+## Course Prerequisites
+
+You need to know a little bit of HTML which is taught in CIS 195, Wed Authoring, and which can be taken at the same time as this class. These are the specific parts of HTML you will need to know:
+
+- HTML elements and tags
+- Attributes (key-value pairs inside the opening tag of a element)
+- Headings
+- Paragraphs
+- Block quotes
+- Links (`<a>` elements)
+- Images
+- Iframes
+- Forms and input elements  
+
+A good way to review these topics or to get a head-start on them if you are currently taking CIS 195 is by doing the tutorials at [W3Schools](https://www.w3schools.com/html/default.asp).
+
 ## Static pages vs. dynamic (interactive) pages
 
 ### Examples

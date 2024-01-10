@@ -25,6 +25,21 @@ keywords: control structures, syntax, operators, variables, data types, overload
 
 [TOC]
 
+# Announcements
+
+- I have put everyone into groups
+  - Groups A, B, and C are the lab assignment groups. Each group gets a different version of the lab assignment.
+  - Numbered groups, 1, 2, 3, etc. are lab partner groups. There are three lab partners in each group and each of you are doing a different version of the lab assignment.
+- In the notes for the [into to the course](https://lcc-cit.github.io/CS133JS-CourseMaterials/LectureNotes/CS133JS-LN-W01-D1-IntroToJS.html), I added a list of the parts of HTML you should know for this class. These are the things you will need to know for this week's lab assignment:
+  - HTML Elements
+  - Attributes
+  - Headings
+  - Paragraphs
+  - Quotations (block quotes)
+  - Links (`<a>`)
+  - Images
+  - Iframes (only used in the example)
+
 # Intro to Programming
 
 Programs are sets of instructions. They implement Algorithms.
@@ -292,7 +307,7 @@ Note: these examples assume the variable declarations at the beginning of this s
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 ------------
 

@@ -35,10 +35,10 @@ keywords: control structures, syntax, operators, variables, data types, overload
   - Attributes
   - Headings
   - Paragraphs
-  - Quotations (block quotes)
-  - Links (`<a>`)
-  - Images
-  - Iframes (only used in the example)
+  - Quotations `<blockquote>`&mdash;for the group C assignment
+  - Links `<a>`&mdash;for the group B assignment
+  - Images `<img>`&mdash;for the group A assignment
+  - Inline frames `<iframe>` (only used in the example)
 
 # Intro to Programming
 

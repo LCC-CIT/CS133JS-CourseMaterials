@@ -256,15 +256,15 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 | Week             | Topic                                                        | Learning Activities                                          |
 | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **1**<br/>1/8    | Intro to  JavaScript:<br />algorithms, variables, and data types | Reading quiz 1<br />Beta version of lab 1                    |
-| **2**<br />1/15  | Functions, Expressions and Operators                         | lab 1 code review <br />Reading quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
-| **3**<br />1/22  | Selection                                                    | lab 2 code review  <br />Reading quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
-| **4**<br />1/29  | Repetition                                                   | lab 3 code review<br />Reading quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
-| **5**<br />2/5   | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Term project proposal<br />Midterm quiz:<br />- In the classroom at 12:00 on 2/7<br />- In the testing center 2/7 through 2/9 |
-| **6**<br />2/12  | Arrays                                                       | Reading quiz 5  <br />Beta version of lab 5                  |
-| **7**<br />2/19  | Objects                                                      | lab 5 code review<br />Reading quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
-| **8**<br />2/26  | Document Object Model and Events                             | lab 6 code review<br />Reading quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |
-| **9**<br />3/4   | Monday: Memorial Day Holiday<br />Regular Expressions        | lab 7 code review<br />Reading quiz 8<br />Production version of lab 7<br />Beta version of lab 8 |
-| **10**<br />3/11 | Review                                                       | Term project<br />Extra credit lab                           |
-| **11**<br />3/18 | Finals week                                                  | Final quiz<br />- In the classroom at 10:00 3/18<br />- In the testing center 3/18&mdash;3/21 |
+| **2**<br />1/15  | No classes due to the ice storm                              | Nothing due this week                                        |
+| **3**<br />1/22  | Functions, Expressions and Operators                         | lab 1 code review <br />Reading quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
+| **4**<br />1/29  | Selection                                                    | lab 2 code review  <br />Reading quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
+| **5**<br />2/5   | Repetition                                                   | lab 3 code review<br />Reading quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
+| **6**<br />2/12  | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Term project proposal<br />Midterm quiz:<br />- In the classroom at 12:00 on 2/7<br />- In the testing center 2/7 through 2/9 |
+| **7**<br />2/19  | Arrays                                                       | Reading quiz 5  <br />Beta version of lab 5                  |
+| **8**<br />2/26  | Objects                                                      | lab 5 code review<br />Reading quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
+| **9**<br />3/4   | Monday: Memorial Day Holiday<br />Document Object Model and Events | lab 6 code review<br />Reading quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |
+| **10**<br />3/11 | Regular Expressions<br />Term project completion<br />Review | lab 7 code review<br />Reading quiz 8<br />Production version of lab 7<br />Beta version of lab 8 |
+| **11**<br />3/18 | Finals week                                                  | Term project<br />Extra credit lab<br />Final quiz:<br />- In the classroom at 10:00 3/18<br />- In the testing center 3/18&mdash;3/21 |
 
  

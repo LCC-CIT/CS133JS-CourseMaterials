@@ -1,5 +1,5 @@
 ---
-title: Intro to the Course and to JavaScript
+title: Intro
 description: Course tour, overview of web programming and an intro to JavaScript programming. 
 keywords: Static web pages, dynamic web pages, server-side code, client-side code, hello world
 material: Lecture Notes

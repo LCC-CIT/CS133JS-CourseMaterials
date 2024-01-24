@@ -34,15 +34,18 @@ author: Brian Bird
 - How is part 1 of this week's lab assignment going?
 - Does anyone have any general questions about anything?
 
-## Quiz Review
+## Anouncements
 
-Go over the answers to the quiz questions
+- Lab 1 "production" version is due Thursday.
+- Lab 2 "beta" version is due Friday.
+  - Post your draft version for part 2 even if it isn't complete.
+- Lab 2 code review is due Tuesday.
+  - Do code reviews in "round-robin" fashion:
+    - Person A reviews person B's code.
+    - Person B reviews person C's code.
+    - Person C reviews person A's code.
 
-## Announcements
 
-- Part 2 of this week's lab assignment
-
-  
 
 ------
 
@@ -51,11 +54,16 @@ Go over the answers to the quiz questions
 - What is a function? 
 
 - What is meant by “defining a function”? 
+  - What are the names of the different parts of a function definition?
+
 - What does it mean to "call" a function?
-  How do you do it?
+  - How do you do it?
+  - What do you call the thing between the parenthesis in a function call?
+
 - Do you have to write all the functions you use? 
 - What are the names of the parts of the function below? 
-  How would you call it?
+  - How would you call it?
+
 
 ```javascript
  // This function returns the sum of three numbers
@@ -303,7 +311,7 @@ There are actually two kinds of constants:
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
    ```

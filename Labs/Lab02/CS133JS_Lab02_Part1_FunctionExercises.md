@@ -11,9 +11,9 @@ author: Brian Bird
 
 # Lab 2, Part 1: Function Exercises
 
-For this part of the lab you will use the [*CS133JS_Lab02_Part1.html*](CS133JS_Lab02_Part1.html) file provided (right-click on the link, then click on "save-as" to save the file to your computer). You will write a second file named *Lab02_Part1.js*. 
+For this part of the lab you will use the [*CS133JS_Lab02_Part1.html*](CS133JS_Lab02_Part1.html) file provided (right-click on the link, then click on "save-as" to save the file to your computer). You will create a second file named *Lab02_Part1.js*. 
 
-For each problem, write a function in your .js file. In the .html file, below the comment that starts with "TODO:", write code to call that function. In the .js file, write the function below the "TODO:" comment.
+For each problem, write a function in your .js file. In the .html file, below the comment that starts with *TODO*, write code to call that function. 
 
 1. `jsIsAwesome`&mdash;a function with no parameters and no return value:
    - Write a definition for a function that pops up an alert that says "JavaScript is awesome!".
@@ -23,7 +23,7 @@ For each problem, write a function in your .js file. In the .html file, below th
      - Has a parameter for the name of an animal.
      - Generates the phrase "The ___________ is my favorite animal.", where the code fills in the blank with the animal name.
      - Returns the resulting phrase using a return statement.
-   - Write the code in the .html file to call the function with a "hard coded" animal name and display the returned phrase on the web page.
+   - Write the code in the .html file to call the function with a "hard coded" (no user input from a prompt) animal name and display the returned phrase on the web page.
 3. `calcAvgPrice`&mdash;a function with three parameters and a return value:
    - Write a definition for a function that calculates an average price and:
      - Has three parameters. Each one for the price of an item.
@@ -41,7 +41,7 @@ For each problem, write a function in your .js file. In the .html file, below th
 5. `quizQuestion`&mdash;a function with one parameter, and a return value:
    - Write a definition for a function that:
      - Has a parameter for the name of the capital of Oregon.
-     - Checks to see if the user entered the right name (Salem).
+     - Checks to see if the user entered the right name (Salem)[^1].
      - Returns true or false.
    - Write the code to call the function and display the result.
 6. `mathQuestion`&mdash;a function with three parameters and a return value:
@@ -65,3 +65,7 @@ For each problem, write a function in your .js file. In the .html file, below th
         *temperatureC = (temperatureF - 32)* * *5/9*
       - Returns the temperature in Celsius.
     - Add a function call and code to display the result to the .html file.
+
+
+
+[^1]: Use the == [equality operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality) to check whether the user's answer matches the right answer.

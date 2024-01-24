@@ -4,7 +4,7 @@ description: Introduction to the basic programming concepts for all programming 
 material: Lecture Notes
 generator: Typora
 author: Brian Bird
-keywords: control structures, syntax, operators, variables, data types, overload, concatenation, dynamic type
+keywords: control structures, syntax, operators, variables, data types, type conversion, overload, concatenation, dynamic type
 ---
 
 <h1>Basics of Programming</h1>
@@ -294,7 +294,16 @@ Note: these examples assume the variable declarations at the beginning of this s
   console.log(result);
   ```
 
+### Converting Data Types
 
+- String to number : use [parseInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt), [parseFloat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat), or [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/Number)
+  ```javascript
+  var age = parseInt("18");  // use this for integers
+  var temperature = parseFloat("69.5");  // for floating point numbers
+  var score = Number("95.7"); // use this for any kind of number
+  ```
+
+- Learn about other [type conversions on W3Schools](https://www.w3schools.com/js/js_type_conversion.asp).
 
 
 ### Variable Naming Rules and Conventions

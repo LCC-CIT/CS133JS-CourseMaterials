@@ -34,10 +34,8 @@ author: Brian Bird
   - Code reveiws are due tomrrow.
   - Production version is due Thursday.
 
-- This week's reading quiz
-  - 4 people didn't take the quiz, so I'm reopening it.
-  - I won't normally do this :-)
-
+- Remember to take this week's reading quiz before class time on Wednesday!
+  
 - Does anyone have any general questions about anything?
 
 # Review
@@ -107,7 +105,7 @@ In math, a function has: input, operation(s), output
 - Functions can be tested independently.
 - Variables can be isolated into local scopes inside functions.
 
-## Writing  a Function
+## Writing  and Calling our Own Functions
 
  We can use pre-written functions, or write our own. We call this *defining* a function.
 
@@ -148,12 +146,13 @@ function helloWorld()
     }
     ```
 
-2. Call the function in FunctionPractice.js from within a script element.
-
+2. Call the function in FunctionPractice.js from within a script element.  
+   Note that when we call a function, we call the thing we put between the parenthesis an *argument* (not a *parameter*).
+   
    ```javascript
      hello("Brian");
    ```
-
+   
    
 
 ### A function with a parameter and a return value

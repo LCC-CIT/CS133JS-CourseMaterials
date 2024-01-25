@@ -260,11 +260,11 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 | **3**<br />1/22  | Functions, Expressions and Operators                         | lab 1 code review <br />Reading quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
 | **4**<br />1/29  | Selection                                                    | lab 2 code review  <br />Reading quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
 | **5**<br />2/5   | Repetition                                                   | lab 3 code review<br />Reading quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
-| **6**<br />2/12  | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Term project proposal<br />Midterm quiz:<br />- In the classroom at 12:00 on 2/7<br />- In the testing center 2/7 through 2/9 |
+| **6**<br />2/12  | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Term project proposal<br />Midterm quiz:<br />- In the classroom on 2/14<br />- In the testing center 2/14 through 2/17 |
 | **7**<br />2/19  | Arrays                                                       | Reading quiz 5  <br />Beta version of lab 5                  |
 | **8**<br />2/26  | Objects                                                      | lab 5 code review<br />Reading quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
 | **9**<br />3/4   | Monday: Memorial Day Holiday<br />Document Object Model and Events | lab 6 code review<br />Reading quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |
 | **10**<br />3/11 | Regular Expressions<br />Term project completion<br />Review | lab 7 code review<br />Reading quiz 8<br />Production version of lab 7<br />Beta version of lab 8 |
-| **11**<br />3/18 | Finals week                                                  | Term project<br />Extra credit lab<br />Final quiz:<br />- In the classroom at 10:00 3/18<br />- In the testing center 3/18&mdash;3/21 |
+| **11**<br />3/18 | Finals week                                                  | Term project<br />Extra credit lab<br />Final quiz:<br />- In the classroom on 3/18<br />- In the testing center 3/18&mdash;3/21 |
 
  

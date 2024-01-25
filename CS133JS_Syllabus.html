@@ -1,13 +1,13 @@
 <!doctype html>
-<html>
+<html style='font-size:20px !important'>
 <head>
 <meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
-<meta name="title" content="${title}">
-<meta name="description" content="${description}">
-<meta name="keywords" content="${keywords}">
-<meta name="material" content="${material}">
-<meta name="author" content="${author}">
-<meta name="generator" content="${generator}">
+<meta name="title" content="">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="material" content="">
+<meta name="author" content="">
+<meta name="generator" content="">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
 .mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
@@ -25,7 +25,7 @@ a:active, a:hover { outline: 0px; }
 body.typora-export { padding-left: 30px; padding-right: 30px; }
 .typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
 .typora-export .task-list-item input { pointer-events: none; }
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 500px) {
   body.typora-export { padding-left: 0px; padding-right: 0px; }
   #write { padding-left: 20px; padding-right: 20px; }
 }
@@ -50,7 +50,7 @@ h6 { font-size: 1rem; }
 .hidden { display: none; }
 .md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
 a { cursor: pointer; }
-sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
 sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
 #write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
 figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
@@ -90,10 +90,10 @@ blockquote > :last-child { margin-bottom: 0px; }
 blockquote > :first-child, li > :first-child { margin-top: 0px; }
 .footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
 #write .footnote-line { white-space: pre-wrap; }
-@media print { 
+@media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
-  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export * { print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
@@ -116,7 +116,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
 .md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
 .math { font-size: 1rem; }
-.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
 .md-toc-content::after, .md-toc::after { display: none; }
 .md-toc-item { display: block; color: rgb(65, 131, 196); }
@@ -129,7 +129,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 .md-toc-h4 .md-toc-inner { margin-left: 6em; }
 .md-toc-h5 .md-toc-inner { margin-left: 8em; }
 .md-toc-h6 .md-toc-inner { margin-left: 10em; }
-@media screen and (max-width: 48em) { 
+@media screen and (max-width: 48em) {
   .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
   .md-toc-h4 .md-toc-inner { margin-left: 5em; }
   .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
@@ -141,7 +141,7 @@ a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; 
 .md-attr { display: none; }
 .md-fn-count::after { content: "."; }
 code, pre, samp, tt { font-family: var(--monospace); }
-kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; }
 a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; }
@@ -157,7 +157,7 @@ mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
 .md-expand mark .md-meta { opacity: 0.3 !important; }
 mark .md-meta { color: rgb(0, 0, 0); }
-@media print { 
+@media print {
   .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
 }
 .md-diagram-panel .messageText { stroke: none !important; }
@@ -170,19 +170,19 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
 .typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
 .typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
-@media screen and (max-width: 1024px) { 
+@media screen and (max-width: 1024px) {
   .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
 }
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 800px) {
   .typora-export-sidebar { display: none; }
 }
-.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; }
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
 .outline-content ul { margin-top: 0px; margin-bottom: 0px; }
 .outline-content strong { font-weight: 400; }
 .outline-expander { width: 1rem; height: 1.428571429rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
-.outline-expander::before { content: ''; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
 .outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
-.outline-expander:hover::before { content: ''; }
+.outline-expander:hover::before { content: ""; }
 .outline-h1 > .outline-item { padding-left: 0px; }
 .outline-h2 > .outline-item { padding-left: 1em; }
 .outline-h3 > .outline-item { padding-left: 2em; }
@@ -194,20 +194,34 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
 .outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
 .outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
-.outline-item-open > .outline-item > .outline-expander::before { content: ''; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
 .outline-children { display: none; }
 .info-panel-tab-wrapper { display: none; }
 .outline-item-open > .outline-children { display: block; }
 .typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
 .typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
 .typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
-.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: '−'; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
 .typora-export-collapse-outline .outline-children { display: none; }
 .typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
 .typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
 .typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
 .md-inline-math-container mjx-container { zoom: 0.95; }
 mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
 
 
 :root {
@@ -563,6 +577,10 @@ header, .context-menu, .megamenu-content, footer{
     background-color: var(--side-bar-bg-color);
 }
 
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
 .md-lang {
     color: #b4654d;
 }
@@ -604,6 +622,6 @@ header, .context-menu, .megamenu-content, footer{
 <span>Plan ahead! Exceptions will only be made for illness or emergency situations.</span></p></li></ul><p><span> </span></p><h2 id='accessibility'><span>Accessibility</span></h2><p><span>Lane Community College (LCC) is dedicated to providing inclusive learning environments. The Center for Accessible Resources (CAR) coordinates all academic accommodations for students at LCC. If you anticipate or experience academic barriers due to a disability, to request assistance or accommodations, contact the Center for Accessible Resources.</span></p><p><strong><span>In-Person Services:</span></strong><span> Monday and Thursday, 9:00am - 12:30 and 1:30pm - 3:00pm.</span>
 <strong><span>Location:</span></strong><span> Main Campus, Building 19, Room 263A</span></p><p><strong><span>Remote Support through Support Hub:</span></strong><span> Monday - Thursday 9:00am</span>&ndash;<span>12:30 and 1:30pm</span>&ndash;<span>3:00pm. </span>
 <span>Enter the Support Hub by going to </span><a href='https://www.lanecc.edu/hub'><span>lanecc.edu/hub</span></a><span>. Wait for a Lane staff to let you into the Zoom.</span></p><p><strong><span>Phone:</span></strong><span> Voice, (541) 463-5150 TTY: 711, Monday</span>&mdash;<span>Friday 9:00am</span>&ndash;<span>12:30pm and 1:30pm</span>&ndash;<span>3:00pm.</span>
-<strong><span>Email:</span></strong><span> </span><a href='mailto:AccessibleResources@lanecc.edu' target='_blank' class='url'>AccessibleResources@lanecc.edu</a></p><p><span>For upcoming closures, please visit the </span><a href='https://www.lanecc.edu/disability'><span>Center for Accessible Resources webpage </span></a></p><p><span> </span></p><h2 id='schedules'><span>Schedules</span></h2><h2 id='academic-calendar-for-winter-term-2024'><span>Academic Calendar for Winter Term 2024</span></h2><figure class='table-figure'><table><thead><tr><th><span>Event</span></th><th><span>Date</span></th></tr></thead><tbody><tr><td><span>Fall term classes begin</span></td><td><span>1/8 Monday</span></td></tr><tr><td><span>Last day to receive refund</span></td><td><span>1/15 Monday</span></td></tr><tr><td><span>Martin Luther King Jr. holiday</span>&mdash;<span>college closed</span></td><td><span>1/15 Monday</span></td></tr><tr><td><span>Presidents Day holiday</span>&mdash;<span>college closed</span></td><td><span>2/19 Monday</span></td></tr><tr><td><span>Last day for schedule changes</span></td><td><span>3/1 Friday</span></td></tr><tr><td><span>Final exam</span></td><td><span>3/18 Monday</span></td></tr></tbody></table></figure><p><span>View </span><a href='https://www.lanecc.edu/calendars/academic-calendar'><span>academic calendars</span></a><span> on the LCC web site.  </span></p><p>&nbsp;</p><h2 id='weekly-learning-activities'><span>Weekly Learning Activities</span></h2><ul><li><p><span>Monday</span></p><ul><li><p><span>Start the assigned reading</span><br/><span>(Take the reading quiz when you finish the reading)</span></p></li><li><p><span>Participate in class in person, via Zoom, or watch the Zoom recording</span></p></li></ul></li></ul><ul><li><p><span>By Tuesday night</span></p><ul><li><p><span>Complete a code review of last week&#39;s lab for your lab partner (starting the 2nd week).</span></p></li></ul></li></ul><ul><li><p><span>Wednesday</span></p><ul><li><p><span>Before class starts, take the reading quiz.</span></p></li><li><p><span>Participate in class</span></p></li></ul></li><li><p><span>Thursday</span></p><ul><li><p><span>By midnight: submit the production version of your lab work from last week.</span></p></li></ul></li></ul><ul><li><p><span>By Friday night</span></p><ul><li><p><span>Post the beta version of your lab for this week.</span></p><p>&nbsp;</p></li></ul></li></ul><p>&nbsp;</p><h3 id='tentative-course-schedule'><span>Tentative Course Schedule</span></h3><figure class='table-figure'><table><thead><tr><th><span>Week</span></th><th><span>Topic</span></th><th><span>Learning Activities</span></th></tr></thead><tbody><tr><td><strong><span>1</span></strong><br/><span>1/8</span></td><td><span>Intro to  JavaScript:</span><br /><span>algorithms, variables, and data types</span></td><td><span>Reading quiz 1</span><br /><span>Beta version of lab 1</span></td></tr><tr><td><strong><span>2</span></strong><br /><span>1/15</span></td><td><span>No classes due to the ice storm</span></td><td><span>Nothing due this week</span></td></tr><tr><td><strong><span>3</span></strong><br /><span>1/22</span></td><td><span>Functions, Expressions and Operators</span></td><td><span>lab 1 code review </span><br /><span>Reading quiz 2  </span><br /><span>Production version of lab 1</span><br /><span>Beta version of lab 2</span></td></tr><tr><td><strong><span>4</span></strong><br /><span>1/29</span></td><td><span>Selection</span></td><td><span>lab 2 code review  </span><br /><span>Reading quiz 3 </span><br /><span>Production version of lab 2 </span><br /><span>Beta version of lab 3</span></td></tr><tr><td><strong><span>5</span></strong><br /><span>2/5</span></td><td><span>Repetition</span></td><td><span>lab 3 code review</span><br /><span>Reading quiz 4</span><br /><span>Production version of lab 3</span><br /><span>Beta version of lab 4</span></td></tr><tr><td><strong><span>6</span></strong><br /><span>2/12</span></td><td><span>Midterm Check-Point</span></td><td><span>lab 4 code review   </span><br /><span>Production version of lab 4  </span><br /><span>Term project proposal</span><br /><span>Midterm quiz:</span><br /><span>- In the classroom at 12:00 on 2/7</span><br /><span>- In the testing center 2/7 through 2/9</span></td></tr><tr><td><strong><span>7</span></strong><br /><span>2/19</span></td><td><span>Arrays</span></td><td><span>Reading quiz 5  </span><br /><span>Beta version of lab 5</span></td></tr><tr><td><strong><span>8</span></strong><br /><span>2/26</span></td><td><span>Objects</span></td><td><span>lab 5 code review</span><br /><span>Reading quiz 6</span><br /><span>Production version of lab 5</span><br /><span>Beta version of lab 6</span></td></tr><tr><td><strong><span>9</span></strong><br /><span>3/4</span></td><td><span>Monday: Memorial Day Holiday</span><br /><span>Document Object Model and Events</span></td><td><span>lab 6 code review</span><br /><span>Reading quiz 7</span><br /><span>Production version of lab 6</span><br /><span>Beta version of lab 7</span></td></tr><tr><td><strong><span>10</span></strong><br /><span>3/11</span></td><td><span>Regular Expressions</span><br /><span>Term project completion</span><br /><span>Review</span></td><td><span>lab 7 code review</span><br /><span>Reading quiz 8</span><br /><span>Production version of lab 7</span><br /><span>Beta version of lab 8</span></td></tr><tr><td><strong><span>11</span></strong><br /><span>3/18</span></td><td><span>Finals week</span></td><td><span>Term project</span><br /><span>Extra credit lab</span><br /><span>Final quiz:</span><br /><span>- In the classroom at 10:00 3/18</span><br /><span>- In the testing center 3/18</span>&mdash;<span>3/21</span></td></tr></tbody></table></figure><p><span> </span></p></div></div>
-</body>
+<strong><span>Email:</span></strong><span> </span><a href='mailto:AccessibleResources@lanecc.edu' target='_blank' class='url'>AccessibleResources@lanecc.edu</a></p><p><span>For upcoming closures, please visit the </span><a href='https://www.lanecc.edu/disability'><span>Center for Accessible Resources webpage </span></a></p><p><span> </span></p><h2 id='schedules'><span>Schedules</span></h2><h2 id='academic-calendar-for-winter-term-2024'><span>Academic Calendar for Winter Term 2024</span></h2><figure class='table-figure'><table><thead><tr><th><span>Event</span></th><th><span>Date</span></th></tr></thead><tbody><tr><td><span>Fall term classes begin</span></td><td><span>1/8 Monday</span></td></tr><tr><td><span>Last day to receive refund</span></td><td><span>1/15 Monday</span></td></tr><tr><td><span>Martin Luther King Jr. holiday</span>&mdash;<span>college closed</span></td><td><span>1/15 Monday</span></td></tr><tr><td><span>Presidents Day holiday</span>&mdash;<span>college closed</span></td><td><span>2/19 Monday</span></td></tr><tr><td><span>Last day for schedule changes</span></td><td><span>3/1 Friday</span></td></tr><tr><td><span>Final exam</span></td><td><span>3/18 Monday</span></td></tr></tbody></table></figure><p><span>View </span><a href='https://www.lanecc.edu/calendars/academic-calendar'><span>academic calendars</span></a><span> on the LCC web site.  </span></p><p>&nbsp;</p><h2 id='weekly-learning-activities'><span>Weekly Learning Activities</span></h2><ul><li><p><span>Monday</span></p><ul><li><p><span>Start the assigned reading</span><br/><span>(Take the reading quiz when you finish the reading)</span></p></li><li><p><span>Participate in class in person, via Zoom, or watch the Zoom recording</span></p></li></ul></li></ul><ul><li><p><span>By Tuesday night</span></p><ul><li><p><span>Complete a code review of last week&#39;s lab for your lab partner (starting the 2nd week).</span></p></li></ul></li></ul><ul><li><p><span>Wednesday</span></p><ul><li><p><span>Before class starts, take the reading quiz.</span></p></li><li><p><span>Participate in class</span></p></li></ul></li><li><p><span>Thursday</span></p><ul><li><p><span>By midnight: submit the production version of your lab work from last week.</span></p></li></ul></li></ul><ul><li><p><span>By Friday night</span></p><ul><li><p><span>Post the beta version of your lab for this week.</span></p><p>&nbsp;</p></li></ul></li></ul><p>&nbsp;</p><h3 id='tentative-course-schedule'><span>Tentative Course Schedule</span></h3><figure class='table-figure'><table><thead><tr><th><span>Week</span></th><th><span>Topic</span></th><th><span>Learning Activities</span></th></tr></thead><tbody><tr><td><strong><span>1</span></strong><br/><span>1/8</span></td><td><span>Intro to  JavaScript:</span><br /><span>algorithms, variables, and data types</span></td><td><span>Reading quiz 1</span><br /><span>Beta version of lab 1</span></td></tr><tr><td><strong><span>2</span></strong><br /><span>1/15</span></td><td><span>No classes due to the ice storm</span></td><td><span>Nothing due this week</span></td></tr><tr><td><strong><span>3</span></strong><br /><span>1/22</span></td><td><span>Functions, Expressions and Operators</span></td><td><span>lab 1 code review </span><br /><span>Reading quiz 2  </span><br /><span>Production version of lab 1</span><br /><span>Beta version of lab 2</span></td></tr><tr><td><strong><span>4</span></strong><br /><span>1/29</span></td><td><span>Selection</span></td><td><span>lab 2 code review  </span><br /><span>Reading quiz 3 </span><br /><span>Production version of lab 2 </span><br /><span>Beta version of lab 3</span></td></tr><tr><td><strong><span>5</span></strong><br /><span>2/5</span></td><td><span>Repetition</span></td><td><span>lab 3 code review</span><br /><span>Reading quiz 4</span><br /><span>Production version of lab 3</span><br /><span>Beta version of lab 4</span></td></tr><tr><td><strong><span>6</span></strong><br /><span>2/12</span></td><td><span>Midterm Check-Point</span></td><td><span>lab 4 code review   </span><br /><span>Production version of lab 4  </span><br /><span>Term project proposal</span><br /><span>Midterm quiz:</span><br /><span>- In the classroom on 2/14</span><br /><span>- In the testing center 2/14 through 2/17</span></td></tr><tr><td><strong><span>7</span></strong><br /><span>2/19</span></td><td><span>Arrays</span></td><td><span>Reading quiz 5  </span><br /><span>Beta version of lab 5</span></td></tr><tr><td><strong><span>8</span></strong><br /><span>2/26</span></td><td><span>Objects</span></td><td><span>lab 5 code review</span><br /><span>Reading quiz 6</span><br /><span>Production version of lab 5</span><br /><span>Beta version of lab 6</span></td></tr><tr><td><strong><span>9</span></strong><br /><span>3/4</span></td><td><span>Monday: Memorial Day Holiday</span><br /><span>Document Object Model and Events</span></td><td><span>lab 6 code review</span><br /><span>Reading quiz 7</span><br /><span>Production version of lab 6</span><br /><span>Beta version of lab 7</span></td></tr><tr><td><strong><span>10</span></strong><br /><span>3/11</span></td><td><span>Regular Expressions</span><br /><span>Term project completion</span><br /><span>Review</span></td><td><span>lab 7 code review</span><br /><span>Reading quiz 8</span><br /><span>Production version of lab 7</span><br /><span>Beta version of lab 8</span></td></tr><tr><td><strong><span>11</span></strong><br /><span>3/18</span></td><td><span>Finals week</span></td><td><span>Term project</span><br /><span>Extra credit lab</span><br /><span>Final quiz:</span><br /><span>- In the classroom on 3/18</span><br /><span>- In the testing center 3/18</span>&mdash;<span>3/21</span></td></tr></tbody></table></figure><p><span> </span></p></div></div>
+<base target="_blank"></body>
 </html>

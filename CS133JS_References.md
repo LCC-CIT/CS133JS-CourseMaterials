@@ -24,9 +24,12 @@
 
 [*Eloquent JavaScript, A Modern Introduction to Programming*](http://eloquentjavascript.net/), Third Edition, by Marijn Haverbeke, No Starch Press, 2018.
 
-*[The Modern JavaScript Tutorial](https://javascript.info/)*, (aka JavaScript.info) by Ilya Kantor, 2020.
+*[You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md)*, 1st Edition, book series (6 books) by Kyle Simpson,  O'Reilly, 2015.
+*[You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md)*, 2nd Edition, (just 2 books so far) by Kyle Simpson,  [Leanpub](https://leanpub.com/ydkjsy-get-started), 2020.
 
-*[You Don't Know JS](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/README.md)*, 1st Edition, book series by Kyle Simpson,  O'Reilly, March 2015.
+[The JavaScript Beginner's Handbook](https://www.freecodecamp.org/news/the-complete-javascript-handbook-f26b2c71719c/), by Flavio Copes, 2020.
+
+*[The Modern JavaScript Tutorial](https://javascript.info/)*, (aka JavaScript.info) by Ilya Kantor, 2020, updated 2024.
 
 [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 
@@ -48,11 +51,10 @@
 
 [CS133JS Course Materials](https://github.com/LCC-CIT/CS133JS-CourseMaterials/) - Instructor's course materials, including code examples, on GitHub.
 
-
 ~~[CIT Computer Lab Wiki](http://nlms.lanecc.edu/wiki/doku.php?id=start) - Information about our department's computer lab.~~ (Out of date as of spring 2022.)
 
 ------
 
 
 
-Compiled by [Brian Bird](https://profbird.dev), 2020, revised by Brian Bird 2022.
+Compiled by [Brian Bird](https://profbird.dev), 2020, revised by Brian Bird 2024.

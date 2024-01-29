@@ -29,17 +29,20 @@ author: Brian Bird
 
 ## Introduction
 
-### Q and A (Fall 2023)
+### Announcements (Winter 2024)
 
-- Lab 1, I still need to grade this. I'm teaching an extra section of CIS 195 this term and there is just a lot of grading to do!
+- Lab 1, I finished the grading. Some of you have not submitted the production version yet. You can still do this!
 - Lab 2, last week's lab assignment&mdash; how is it going?
   - Beta versions of part 2 were due at the end of last week. I see quite a few posts in the forum&mdash;which is good, but there should be a few more.
     - Remember that the beta version is like a draft. It doesn't need to be complete or completely working. 70% done is good enough for a beta version.
     - Are there questions on how to do it?
     - See me or a tutor if you'd like some help.
     - The production (final) version is due Thursday
-- Get started on the reading. The quiz is due before the next class.
-  
+- Get started on the reading&mdash;if you haven't already.  
+  Quiz 3 is due before the next class.
+
+### Q and A
+
 - Does anyone have any general questions about anything?
 
 
@@ -412,7 +415,7 @@ There are three examples posted on Moodle. The first two use `if else` statement
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2024</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 [^1]: Their values can be re-assigned from anywhere in the program, in any function, and it's easy for the dev to loose track of what should be stored in it.
 [^2]: JavaScript will treat an undeclared variable as a global variable even if you first assign a value to it in a local scope.

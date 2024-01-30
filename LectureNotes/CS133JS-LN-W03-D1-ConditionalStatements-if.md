@@ -241,7 +241,9 @@ Let's take a break from talking about coding and talk about designing an algorit
   | 44    |                           | Wear a jacket          |
   | 45    | temp 45 degrees or higher | Enjoy the nice weather |
 
-  In the next section we'll go back to coding.
+  Q: Would be helpful to add "temp less than 45 degrees" to the 2nd row, *processing* column?[^4]
+  
+  
 
 ### Conditional expressions using *logical operators*
 

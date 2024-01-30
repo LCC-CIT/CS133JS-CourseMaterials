@@ -93,6 +93,8 @@ console.log(extraVariable);
 
 #### Logical operators and expressions
 
+These are also called *Boolean*[^3] operators. They are used to form Boolean expressions that evaluate to a value of either *true* or *false*.
+
 | Symbol | Name | Condition for truth    | Examples of true expressions where:  a = true, b = false; |
 | ------ | ---- | ---------------------- | --------------------------------------------------------- |
 | &&     | and  | Both operands are true | `a  && a`                                                 |
@@ -175,7 +177,7 @@ The ternary operator is the question mark, `?`
 
 #### Try this:
 
-> Write an expression using a ternary operator that determines whether a person is old enough to get a driver's license in Oregon[^3].
+> Write an expression using a ternary operator that determines whether a person is old enough to get a driver's license in Oregon[^4].
 
 
 
@@ -419,5 +421,6 @@ There are three examples posted on Moodle. The first two use `if else` statement
 
 [^1]: Their values can be re-assigned from anywhere in the program, in any function, and it's easy for the dev to loose track of what should be stored in it.
 [^2]: JavaScript will treat an undeclared variable as a global variable even if you first assign a value to it in a local scope.
-[^3]: To get a driver's license in Oregon you must be: 18 years of age or older. Or at least 16 year's of age, have had a permit for 6 months, have had a driver's ed class and 50 hours of supervised driving time, or no driver driver's ed and 100 hours of supervised driving time.
+[^3]: Logical operators are a part of [Boolean algebra](https://en.wikipedia.org/wiki/Boolean_algebra), a mathematical system developed by George Boole in the mid-ninteenth century&mdash;long before the invention of digital computers which use Boolean logic.
+[^4]: To get a driver's license in Oregon you must be: 18 years of age or older. Or at least 16 year's of age, have had a permit for 6 months, have had a driver's ed class and 50 hours of supervised driving time, or no driver driver's ed and 100 hours of supervised driving time.
 

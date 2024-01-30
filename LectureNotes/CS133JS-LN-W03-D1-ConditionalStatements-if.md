@@ -424,3 +424,5 @@ There are three examples posted on Moodle. The first two use `if else` statement
 [^2]: JavaScript will treat an undeclared variable as a global variable even if you first assign a value to it in a local scope.
 [^3]: To get a driver's license in Oregon you must be: 18 years of age or older. Or at least 16 year's of age, have had a permit for 6 months, have had a driver's ed class and 50 hours of supervised driving time, or no driver driver's ed and 100 hours of supervised driving time.
 
+[^4]: The second processing condition is implied. You could add it to the IPO or not, but it does need to be added explicitly in the code as an `else if` statement.
+

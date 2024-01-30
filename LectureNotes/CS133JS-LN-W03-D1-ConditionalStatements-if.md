@@ -32,7 +32,7 @@ author: Brian Bird
 ### Announcements (Winter 2024)
 
 - Lab 1, I finished the grading. Some of you have not submitted the production version yet. You can still do this!
-- Lab 2, last week's lab assignment&mdash; how is it going?
+- Lab 2, last week's lab assignment&mdash; how is it going?
   - Beta versions of part 2 were due at the end of last week. I see quite a few posts in the forum&mdash;which is good, but there should be a few more.
     - Remember that the beta version is like a draft. It doesn't need to be complete or completely working. 70% done is good enough for a beta version.
     - Are there questions on how to do it?
@@ -80,7 +80,8 @@ console.log(extraVariable);
 
 | Symbol | Condition for truth                                         | Examples of true expressions<br />where: a = 7, b = 8; |
 | ------ | ----------------------------------------------------------- | ------------------------------------------------------ |
-| ==     | Operands are equal to each other                            | `b == b`                                               |
+| ==     | Operands are equal to each other                            | `a == "7"` or `a == 7`                                 |
+| ===    | Operand values and types are equal to each other            | `a === 7`                                              |
 | !=     | Operands are not equal to each  other                       | `a  != b`                                              |
 | >      | Left operand is greater than  the right operand             | `b  > a`                                               |
 | <      | Left operand is less than the  right operand                | `a  < b`                                               |
@@ -255,7 +256,7 @@ let wind = 0; // Wind speed in MPH
    
    ```javascript
    degrees = prompt("Enter the temperature.");
-   wind = prompt("Enter the wind speed.")
+   wind = prompt("Enter the wind speed.");
    if(degrees < 60 && wind > 10)
       alert("Wear a jacket");
    ```
@@ -269,7 +270,7 @@ let wind = 0; // Wind speed in MPH
    
    ```javascript
    degrees = prompt("Enter the temperature.");
-   wind = prompt("Enter the wind speed.")
+   wind = prompt("Enter the wind speed.");
    if(degrees < 45 || wind > 20)
     alert("Wear a warm coat");
    ```

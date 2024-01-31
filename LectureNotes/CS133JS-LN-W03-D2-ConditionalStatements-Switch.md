@@ -41,8 +41,21 @@ author: Brian Bird
 
 # Review
 
+## Selection Using the Ternariy Operator, `?`
+
+A ternary expression evaluates to a value.
+
+```javascript
+let speed = Number(prompt("How fast are you going?"));
+let warning = speed <= 55 ? "Doing the speed limit" : "Going too fast";
+console.log(warning);
+```
+
+
+
 ## Selection Using `if` Statements
 
+An `if` statement determines which branch of code will be executed.  
 Parts of an if statement:
 
 ```javascript

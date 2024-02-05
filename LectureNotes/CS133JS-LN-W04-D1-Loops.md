@@ -40,19 +40,19 @@ Winter 2024
   
 - Lab 3 production version due Thursday 2/8.
   
-- Midterm next Thursday, 2/15. 
+- Midterm next Wednesday, 2/15. 
   - Review lecture notes
   - Practice midterm.
   - You can take the quiz in the classroom at class time, or you can take it in the testing center. 
-    - **Classroom** from 10:00 to 11:50 on Thursday, 10/26/2023. 
+    - **Classroom** from 10:00 to 11:50 (normal class time). 
     - **[Testing center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services)**  
       The testing center is located in the Center Building, Room 311 (upstairs and across from the library).
-      - Wednesday, 2/14 9:00am&ndash;7:00pm
-      - Thursday
-      - Friday, 2/16 12:30pm to 4:00pm.
+      - Wednesday, 2/14, 9:00am&ndash;7:00pm
+      - Thursday, 2/15, 9:00am&mdash;4:00pm
+      - Friday, 2/16, 12:30pm&mdash;4:00pm.
       - Saturday ? (I need to find out)
     - In both locations: 
-      - help from others, internet searches, ChatGPT, and any other outside sources are not allowed.
+      - You aren't allowed to use: help from others, internet searches, ChatGPT, and any other outside sources.
       -  You will be allowed to refer to one page of notes.
   
 - Does anyone have any general questions about anything?
@@ -89,6 +89,8 @@ switch (color)
         response = "I don’t think so"; 
         break;
 }
+
+console.log("score: " + score + , "comment: " + response);
 ```
 
 ## Control Structures
@@ -148,7 +150,7 @@ degrees = parseFloat(prompt("Enter the temperature"));
 while(degrees < -100 || degrees > 150)  // invalid temperatures
 {
    alert("Please enter a temperature between -100 and 150");
-   degrees = ParseFloat(prompt("Enter the temperature"));
+   degrees = parseFloat(prompt("Enter the temperature"));
 }
 // Do something with the user's input
 ```

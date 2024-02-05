@@ -34,9 +34,13 @@ author: Brian Bird
 
 Winter 2024
 
-- Alternative beta code review for lab 3. 
-  If your lab partner didn't post a beta version for you to review, you can review this instead.
-- Midterm next Thursday. 
+- Lab 3 code review due Tuesday (tomorrow) 2/6  
+  If your lab partner didn't post a beta version for you to review, there is alternative beta code you can review this instead.
+- Reading quiz closes at class time on Wednesday 2/7.
+  
+- Lab 3 production version due Thursday 2/8.
+  
+- Midterm next Thursday, 2/15. 
   - Review lecture notes
   - Practice midterm.
   - You can take the quiz in the classroom at class time, or you can take it in the testing center. 

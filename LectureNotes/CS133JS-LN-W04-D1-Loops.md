@@ -17,7 +17,8 @@ author: Brian Bird
 | 2. Functions, Operators and Expressions | 7. Objects |
 | 3. Conditional Statements: if and switch | 8. Methods  |
 | 4. <mark>Repetition</mark> | 9. DOM       |
-| 5. Midterm                                           | 10. Final    |
+| 5. Midterm                                           | 10. Review |
+| 11. Final |  |
 
 
 
@@ -31,25 +32,27 @@ author: Brian Bird
 
 ## Announcements
 
-Fall 2023
+Winter 2024
 
-- Alternative for code review for lab 3. 
+- Alternative beta code review for lab 3. 
   If your lab partner didn't post a beta version for you to review, you can review this instead.
 - Midterm next Thursday. 
   - Review lecture notes
   - Practice midterm.
   - You can take the quiz in the classroom at class time, or you can take it in the testing center. 
     - **Classroom** from 10:00 to 11:50 on Thursday, 10/26/2023. 
-    - **[Testing center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services)** 
-      - Thursday, 10/26 10:30am&ndash;1:30pm, 4:30pm&ndash;7 pm
-      - Friday and Saturday 10/27 and 28 10:00am to 2:00pm.
-      - The testing center is located in the Center Building, Room 311 (upstairs and across from the library). You will be allowed to refer to a 3 x 5 card with notes on it
+    - **[Testing center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services)**  
+      The testing center is located in the Center Building, Room 311 (upstairs and across from the library).
+      - Wednesday, 2/14 9:00am&ndash;7:00pm
+      - Thursday
+      - Friday, 2/16 12:30pm to 4:00pm.
+      - Saturday ? (I need to find out)
     - In both locations: 
       - help from others, internet searches, ChatGPT, and any other outside sources are not allowed.
-      - You will be allowed to refer to a 3 x 5 card with notes on it.
-
+      -  You will be allowed to refer to one page of notes.
+  
 - Does anyone have any general questions about anything?
-  - Lab 3 (on selection)?
+  - Lab 3 on selection
 
 
 
@@ -347,7 +350,7 @@ These are the examples on Moodle:
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2024</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
    ```

@@ -20,6 +20,7 @@ author: Brian Bird
 | 3. <mark>Conditional Statements:</mark> if and <mark>switch</mark> | 8. Methods  |
 | 4. Loops                                             | 9. DOM       |
 | 5. Midterm                                           | 10. Final    |
+| 11. Final |  |
 
 
 
@@ -151,8 +152,8 @@ Write the code and run it in the console so you can simply assign values to vari
            response = "Just for lab mice"; 
            break;
        default:                   // like an else
-           response = "I don’t think so"; 
-           break;
+           response = "I don’t think so";   
+           // no break needed
    }
    ```
 
@@ -176,7 +177,6 @@ Write the code and run it in the console so you can simply assign values to vari
      break;
    default: 
      response = "I don’t think so"; 
-     break;
  }
 ```
 
@@ -202,7 +202,6 @@ Write the code and run it in the console so you can simply assign values to vari
    default: 
      score = 0;
      response = "I don’t think so"; 
-     break;
  }
 ```
 
@@ -219,6 +218,6 @@ Write code in the console to determine the price of *The Joy of JavaScript* usin
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2024</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------

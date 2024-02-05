@@ -87,10 +87,9 @@ switch (color)
     default: 
         score = 0;
         response = "I don’t think so"; 
-        break;
 }
 
-console.log("score: " + score + , "comment: " + response);
+console.log("score: " + score + ", comment: " + response);
 ```
 
 ## Control Structures

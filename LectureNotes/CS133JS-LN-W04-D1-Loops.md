@@ -307,28 +307,92 @@ for (; i < 5;)
 
 Again, moving the increment expression is something you can do, but it's not recommended since it makes your code more difficult to understand. You would only do this if you really needed to.
 
-## Examples
-
-Show everyone how to download the example .html and .js files from a browser.
-
-These are the examples on Moodle:
-
-- This is similar to part 1 of the lab assignment:
-
-  - [Loop Practice](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/CS133JS_Lab04_Part1_Example.html)
-    - [Starter .js file](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/CS133JS_Lab04_Part1_Example_Starter.js)
-
-- These are similar to part 2 of the lab assignment.
-
-  - Rainfall table - for loop 
-
-  - Car Seat - with input validation
-
-  - Actors and Movies - with validation and do-again
-
-- [Additional loop practice problems, with solutions](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/PracticeProblems-Loops.html).
 
 
+## Solving Problems that Involve Loops
+
+We have looked at several problem solving approaches in the past: 
+
+- Writing algorithms in English (or pseudo-code)  
+  We will do this again for problems involving loops
+- Making IPO charts  
+  This is especially helpful for problems involving selection, but not so much for problems involving loops.
+
+Here is a practice problem:  
+Count the number of digits in an integer.
+
+The computer can't just look at the integer and count the digits like we do. One solution that would work for a computer is to repeatedly divide by 10, counting each time you divide, until the result of the division is 1 or less. 
+
+### Writing the Algorithm
+
+1. Get an integer as input
+2. Set a counter to 0 
+3. Divide the integer by 10
+4. Add 1 to the counter.
+5. If the result > 1, go back to step 3
+6. Display the counter
+
+### Testing the Algorithm
+
+What if you're not sure whether step 4 should check for result > 0, result > 1, or result >= 1. Try some numbers (test data) and see what happens. The table shows a the data at step 5
+
+- For example, integer = 123
+
+| counter | result | result > 0 | result > 1 | result >= 1 |
+| ------- | ------ | ---------- | ---------- | ----------- |
+| 1       | 12.3   | true       | true       | true        |
+| 2       | 1.23   | true       | true       | true        |
+| 3       | .123   | true       | false      | false       |
+| 4       | .0123  | true       | false      | false       |
+
+Which condition gave us the right count? Will the condition, result > 0, ever become false?
+
+- Let's try this again for integer = 100
+
+| counter | result | result > 0 | result > 1 | result >= 1 |
+| ------- | ------ | ---------- | ---------- | ----------- |
+| 1       | 10     | true       | true       | true        |
+| 2       | 1      | true       | false      | true        |
+| 3       | .1     | true       | false      | false       |
+
+### The Solution
+
+```javascript
+number = prompt("Enter an integer");
+ counter = 0;
+do
+    {
+        counter++;
+        number /= 10;
+        console.log(result);
+    } while(number > 1);
+console.log(counter);
+```
+
+
+
+## Practice Exercises and Examples
+
+Show everyone how to download the example .html and .js files from a browser by right-clicking on the link in the instructions and selecting "Save as".
+
+These are the same examples that are on Moodle:
+
+- Loop Practice. These problems are similar to part 1 of the lab assignment:
+
+  [CS133JS_Lab04_Part1_Example.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/CS133JS_Lab04_Part1_Example.html)&mdash;use this html file with the practice problems or the solution.  After downloading, uncomment the `<script>` element linking the .js file you want.
+
+  - [CS133JS_Lab04_Part1_Example_Starter.js](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/CS133JS_Lab04_Part1_Example_Starter.js) &mdash;practice problems. 
+  - [CS133JS_Lab04_Part1_Example.js](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/CS133JS_Lab04_Part1_Example.js) &mdash; solved practice problems. 
+
+- These examples are similar to part 2 of the lab assignment:
+
+  - [Rainfall table](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/RainFall.html) - uses a for loop.
+
+  - [Car Seat](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/CarSeat2.html) - uses a while loop for input validation.
+
+  - [Actors and Movies](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/MoviesAndActors.html) - uses a while loop for validation and a do-while loop to re-run the program.
+
+- [Additional loop practice problems](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab04/PracticeProblems-Loops.html)&mdash;Fifteen loop problems, with solutions, that are similar to those in part 1 of the lab assignment.
 
 
 ------

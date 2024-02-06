@@ -205,6 +205,14 @@ Write the code and run it in the console so you can simply assign values to vari
  }
 ```
 
+
+
+### Best Practices
+
+- Only one return from a function  
+  When you use a `switch` statement inside a funciton, you should only have one `return` statement in the function, don't return from inside a case.
+- If you are only comparing for equality, use a `switch` instead of `if`, `else if`, `else` statements.
+
 ### Exercise
 
 Write code in the console to determine the price of *The Joy of JavaScript* using a `switch` statement instead of a multi-branching `if else` statement.

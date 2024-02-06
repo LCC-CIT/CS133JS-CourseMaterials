@@ -405,7 +405,11 @@ Note that it is best practice to <u>not</u> put a `return` statement inside an `
 
 There are three examples posted on Moodle. The first two use `if else` statements. Lets do one of them together.
 
+### Best Practices
 
+- Only one `return` from a function  
+  When you use an `if` statement inside a funciton, you should only have one `return` statement in the function, don't return from inside an if statement.
+- Use curly braces around the code in each branch of an `if`, `else if`, `else` statement whether they are requried or not.
 
 ## Reference
 

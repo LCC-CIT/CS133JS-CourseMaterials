@@ -76,3 +76,59 @@ Try to solve these problems without looking at the solutions. When you are done 
 
 7. 
 
+
+
+Here is a practice problem:  
+Count the number of digits in an integer.
+
+The computer can't just look at the integer and count the digits like we do. One solution that would work for a computer is to repeatedly divide by 10, counting each time you divide, until the result of the division is 1 or less. 
+
+### Writing the Algorithm
+
+1. Get an integer as input
+2. Set a counter to 0 
+3. Divide the integer by 10
+4. Add 1 to the counter.
+5. If the result > 1, go back to step 3
+6. Display the counter
+
+### Testing the Algorithm
+
+What if you're not sure whether step 4 should check for result > 0, result > 1, or result >= 1. Try some numbers (test data) and see what happens. The table shows a the data at step 5
+
+- For example, integer = 123
+
+| counter | result | result > 0 | result > 1 | result >= 1 |
+| ------- | ------ | ---------- | ---------- | ----------- |
+| 1       | 12.3   | true       | true       | true        |
+| 2       | 1.23   | true       | true       | true        |
+| 3       | .123   | true       | false      | false       |
+| 4       | .0123  | true       | false      | false       |
+
+Which condition gave us the right count? Will the condition, result > 0, ever become false?
+
+- Let's try this again for integer = 100
+
+| counter | result | result > 0 | result > 1 | result >= 1 |
+| ------- | ------ | ---------- | ---------- | ----------- |
+| 1       | 10     | true       | true       | true        |
+| 2       | 1      | true       | false      | true        |
+| 3       | .1     | true       | false      | false       |
+
+### The Solution
+
+```javascript
+number = prompt("Enter an integer");
+ counter = 0;
+do
+    {
+        counter++;
+        number /= 10;
+        console.log(result);
+    } while(number > 1);
+console.log(counter);
+```
+
+
+
+## 

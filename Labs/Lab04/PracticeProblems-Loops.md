@@ -50,9 +50,9 @@ You can also use the solutions to these problems as examples to help you underst
 
 2. Write a nested while loop that prompts the user to enter a string, and then checks if the string is a palindrome.
 
-3. Write a nested while loop that prompts the user to enter a positive  integer, and then prints the factors of the number to the console.
+3. Write a nested while loop that prompts the user to enter a positive integer, and then prints the factors of the number to the console.
 
-4. Write a nested do-while loop that prompts the user to enter a number  between 1 and 10, and then prints a right triangle of asterisks with the number of rows equal to the input value.
+4. Write a nested do-while loop that prompts the user to enter a number between 1 and 10, and then prints a right triangle of asterisks with the number of rows equal to the input value.
 
    
 

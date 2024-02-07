@@ -318,55 +318,26 @@ We have looked at several problem solving approaches in the past:
 - Making IPO charts  
   This is especially helpful for problems involving selection, but not so much for problems involving loops.
 
-Here is a practice problem:  
-Count the number of digits in an integer.
-
-The computer can't just look at the integer and count the digits like we do. One solution that would work for a computer is to repeatedly divide by 10, counting each time you divide, until the result of the division is 1 or less. 
+**Practice problem:**  
+Assume a person is registering a new password for an account. Write code that prompts the user to enter a password, and keeps  prompting until the user enters a password that is at least 8 characters  long. When they enter one that is long enough, display a success message.
 
 ### Writing the Algorithm
 
-1. Get an integer as input
-2. Set a counter to 0 
-3. Divide the integer by 10
-4. Add 1 to the counter.
-5. If the result > 1, go back to step 3
-6. Display the counter
+You can often come up with an algorithm by thinking about how you would do something without using a computer. For example, if you were checking a person's password yourself,  the person would tell you their password and you would keep telling them to try another one until it was long enough.
 
-### Testing the Algorithm
-
-What if you're not sure whether step 4 should check for result > 0, result > 1, or result >= 1. Try some numbers (test data) and see what happens. The table shows a the data at step 5
-
-- For example, integer = 123
-
-| counter | result | result > 0 | result > 1 | result >= 1 |
-| ------- | ------ | ---------- | ---------- | ----------- |
-| 1       | 12.3   | true       | true       | true        |
-| 2       | 1.23   | true       | true       | true        |
-| 3       | .123   | true       | false      | false       |
-| 4       | .0123  | true       | false      | false       |
-
-Which condition gave us the right count? Will the condition, result > 0, ever become false?
-
-- Let's try this again for integer = 100
-
-| counter | result | result > 0 | result > 1 | result >= 1 |
-| ------- | ------ | ---------- | ---------- | ----------- |
-| 1       | 10     | true       | true       | true        |
-| 2       | 1      | true       | false      | true        |
-| 3       | .1     | true       | false      | false       |
+1. Give the user instructions for registering a password.
+2. Get a password as input.
+3. Check the length, go to 1 if it's less than 8 characters long.
+4. Display  "New password accepted"
 
 ### The Solution
 
 ```javascript
-number = prompt("Enter an integer");
- counter = 0;
-do
-    {
-        counter++;
-        number /= 10;
-        console.log(result);
-    } while(number > 1);
-console.log(counter);
+let password = "";
+do {
+  password = prompt("Please enter a string with at least 5 characters:");
+} while (password.length < 8);
+console.log("New password accepted");
 ```
 
 
@@ -379,10 +350,10 @@ These are the same examples that are on Moodle:
 
 - Loop Practice. These problems are similar to part 1 of the lab assignment:
 
-  [CS133JS_Lab04_Part1_Example.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/CS133JS_Lab04_Part1_Example.html)&mdash;use this html file with the practice problems or the solution.  After downloading, uncomment the `<script>` element linking the .js file you want.
+  [CS133JS_Lab04_Part1_Example.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/CS133JS_Lab04_Part1_Example.html)&mdash;use this html file with the practice problems or with the solution.  After downloading, uncomment the `<script>` element linking the .js file you want.
 
   - [CS133JS_Lab04_Part1_Example_Starter.js](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/CS133JS_Lab04_Part1_Example_Starter.js) &mdash;practice problems. 
-  - [CS133JS_Lab04_Part1_Example.js](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/CS133JS_Lab04_Part1_Example.js) &mdash; solved practice problems. 
+  - [CS133JS_Lab04_Part1_Example.js](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week04/CS133JS_Lab04_Part1_Example.js) &mdash; solution to the practice problems. 
 
 - These examples are similar to part 2 of the lab assignment:
 
@@ -397,13 +368,13 @@ These are the same examples that are on Moodle:
 
 ------
 
-## Reference
+# Reference
 
-### Mozilla Developer Network
+**Mozilla Developer Network**
 
 [Loops and Iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
 
-### JavaScript Tutorial
+**JavaScript Tutorial**
 
 [JavaScript while Loop](https://www.javascripttutorial.net/javascript-while-loop/)
 
@@ -411,7 +382,7 @@ These are the same examples that are on Moodle:
 
 [JavaScript for Loop](https://www.javascripttutorial.net/javascript-for-loop/)
 
-### *Eloquent JavaScript*
+***Eloquent JavaScript***
 
 [Ch. 2, Program Structure](https://eloquentjavascript.net/02_program_structure.html)&mdash;The sections on loops.
 

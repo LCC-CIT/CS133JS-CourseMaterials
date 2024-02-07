@@ -16,6 +16,8 @@ function forPractice() {
 }
 
 // 2. Use a do while loop to count the number of As in a sentence.
+// Hint: You can use text.charAt(index) to get a single letter from a text string. 
+// See https://www.w3schools.com/jsref/jsref_charat.asp
 function countAs(text) {
     let index = 0; // Beginning position of the string
     let count = 0;

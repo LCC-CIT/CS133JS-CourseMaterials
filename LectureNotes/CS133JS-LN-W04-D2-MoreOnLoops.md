@@ -31,25 +31,16 @@ author: Brian Bird
 
 ## Announcements
 
-- Lab 4, part 2.
+- Do a code review for a lab partner, if you haven't already.
 
-- Midterm Quiz.
+- Lab 3 production version is due tomorrow (Thursday).
 
+- Next wednesday is the midterm.
 
-  You can take the quiz in the classroom at class time, or you can take it in the testing center. 
-
-  - **Classroom** from 10:00 to 11:50 on Thursday, 10/26/2023. 
-  - **[Testing center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services)** 
-    - Thursday, 10/26 10:30am&ndash;1:30pm, 4:30pm&ndash;7 pm
-    - Friday and Saturday 10/27 and 28 10:00am to 2:00pm.
-    - The testing center is located in the Center Building, Room 311 (upstairs and across from the library).  Bring ID.
-  - In both locations: 
-    - Help from others, internet searches, AI chatbots, and any other outside sources is not allowed.
-    - You will be allowed to refer to a 4 x 6 card with notes on it.
 
 ## Q and A
 
-- How was lab 4, part 1? Any questions?
+- How is lab 4, part 1 going?
 - Does anyone have any general questions about anything?
 
 
@@ -213,7 +204,14 @@ Q: What would you need to change to use this code in a web page[^1]?
 
 - Test snippets of code in the console.
 
-- Watch out for infinite loops!
+- Watch out for <u>infinite loops</u>!
+
+## Best Practices
+
+- If a loop is inside a function, don't put a `return` statement inside the loop.
+- Don't use an `if` statement inside a loop in order to control iterations.  
+  But you can use an `if` statement inside a loop for other purposes.
+- Don't change the value of a loop counter inside the body of a `for` loop.
 
 
 

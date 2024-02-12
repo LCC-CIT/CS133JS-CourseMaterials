@@ -46,13 +46,14 @@ Focus on understanding concepts&mdash;not on memorizing answers. The only thing 
 - The quiz will cover material in the lecture notes from the first four weeks of the term.
 - When and where to take the quiz:
   - In the classroom at the normal class time.
-  - In the Instructional Testing Center between 9:00 am and 7:00 pm on Wednesday or Thursday.
+  - In the Instructional Testing Center Wednesday, Thursday or Friday.
     - Bring ID.
+    - Check the [web site](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services) for the hours they are open.
 - For both locations:
   - You will have 1 hour and 50 minutes to finish the quiz.
   - There are 30 questions.
-  - The quiz is restricted for the CRN of the section you registered for and the IP address of the location where you take the quiz. Make sure you are connected to "LCC WiFi", not "LCC Guest".
-  - You can bring a 4 X 6 note card.
+  - The quiz is restricted for IP address of the location where you take the quiz. Make sure you are connected to "LCC WiFi", not "LCC Guest".
+  - You can bring an 8.5 x 11 inch sheet of notes.
   - You are not allowed to search the internet for answers, use AI (like chatGPT) or get help from another person.
   - Seeing your results:  
     You will be able to see your score and review your answers immediately after you finish the quiz. After you exit the quiz you won't be able to review your answers again, but you will be able to see your score.
@@ -126,7 +127,7 @@ There are links to additional programming practice problems on Moodle:
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written <time>2022</time>, revised <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written <time>2022</time>, revised <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
 

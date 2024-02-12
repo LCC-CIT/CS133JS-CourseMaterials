@@ -197,20 +197,6 @@ The same as the *while* loop, but it checks the condition at the end of the loop
 
 Note the semicolon at the end of the loop condition&mdash;this is a syntactic detail that's easy to miss!
 
-**Example: input validation**
-
-```javascript
-// Enter input until the user enters it correctly
-do
-{
-   alert("Please enter a temperature between -100 and 150")
-   degrees = prompt("Enter the temperature");
-} while(degrees < -100 || degrees > 150);  // invalid temperatures
-// Do something with the user's input
-```
-
-Is there any way this loop would not iterate at least once?
-
 **Example: a loop with a counter**
 
 ```javascript
@@ -225,7 +211,23 @@ do
 
 Is there any value of `count` that would prevent this loop from iterating at least once?
 
+### Input Validation with a `do while` Loop
 
+**Example: input validation**
+
+```javascript
+// Enter input until the user enters it correctly
+do
+{
+   alert("Please enter a temperature between -100 and 150")
+   degrees = prompt("Enter the temperature");
+} while(degrees < -100 || degrees > 150);  // invalid temperatures
+// Do something with the user's input
+```
+
+Is there any way this loop would not iterate at least once?
+
+This example we validated the range of input. What could it make sense to validate?
 
 ## `for` Loops
 
@@ -388,12 +390,12 @@ These are the same examples that are on Moodle:
 
 
 
-------
+[^1]: Other things to validate besides rang:  a) data type, length of string, not an empty string.
+
+
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2024</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
-   ```
 
-   ```
 

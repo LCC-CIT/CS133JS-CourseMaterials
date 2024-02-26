@@ -29,11 +29,12 @@ author: Brian Bird
 
 ### Q and A
 
-- Winter registration is open!  
+- Sprint registration is open!  
   [Upcoming classes](CS133JS-LN-W06-DX-NextSoftwareDevClasses.html) for the Software Development AAS degree program 
   
 - Lab 5 on Arrays&mdash; any questions?
-  - Due Thursday.
+  - Beta version due tomorrow (Tuesday).
+  - Production version due Thursday.
   
 - Does anyone have any other questions about anything?
 
@@ -364,6 +365,6 @@ balin = boffer;  // this works!
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) written in 2020 and revised in <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) written in 2020 and revised in <time>2024</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------

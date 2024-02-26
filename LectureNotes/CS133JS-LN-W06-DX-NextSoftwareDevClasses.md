@@ -33,29 +33,26 @@ Classes to take next if you are pursuing the AAS in Software Development
     (Currently listed as "Intermediate Mobile Application Development: Android")
 
 - CS 161N, Beginning C# Programming
+
 - WR 121, Composition I
-- 
+
+  
 
 ### Spring Term 2024
 
 - CS 162N Intermediate C# Programming
 
+- CS 233JS, Intermediate JavaScript Programming 
+
 - WR 227 Technical Writing
 
-- JavaScript:
-
-  - Program Elective: CS 135IM, Intermediate Mobile App Development with JavaScript  
-    or  
-
-  - CS 233JS, Intermediate JavaScript Programming 
-
-- Elective: CS 199: Introduction to Artificial Intelligence
+- Program Elective: CS 135IM, Intermediate Mobile App Development with JavaScript
 
   
 
 ## Reference
 
-[LCC Winter 2024 Class Schedule](https://crater.lanecc.edu/banp/zwsktsc2.P_DispGroupSchd?chunk_in=C2550&term_in=202430&)
+[LCC 2023&ndash;2024 Class Schedule](https://www.lanecc.edu/programs-academics/registration-schedules-and-academic-calendar/class-schedule)
 
 [AAS in Software Development Program Info Page](https://www.lanecc.edu/programs-academics/areas-study/computer-science-and-information-technology/software-development)
 
@@ -65,6 +62,6 @@ Classes to take next if you are pursuing the AAS in Software Development
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) <time>2024</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------

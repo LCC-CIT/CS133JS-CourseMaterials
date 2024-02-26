@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
+        <!-- These functions are defined here in the head because they are used in the .js file linked below them -->
         const microwave = {
             power: "medium",
             time: 30,
-            cook: function() {
+            cook: function () {
                 return "Cooking on " + this.power + " for " + this.time + " seconds.";
             }
         }
@@ -16,7 +17,7 @@
         const cdPlayer = {
             power: true,
             track: 9,
-            play: function() {
+            play: function () {
                 return "Playing track " + this.track + ".";
             }
         }
@@ -33,7 +34,9 @@
 <body>
     <h1>Object Exercises</h1>
     <h2>CS133JS Lab 6, Part 1</h2>
-    <p>Create a file named <em>ObjectExercises.js</em>. For each of the exercises below, add the code required to complete the exercise.</p>
+    <p>Create a file named <em>ObjectExercises.js</em>. For each of the exercises below, add the code required to
+        complete the exercise.
+        You only need to write code in your ObjectExercises.js file.</p>
 
     <!-- #1 Creating Objects -->
     <hr>
@@ -55,7 +58,8 @@
         </li>
     </ul>
     <h4>Check</h4>
-    <p>If you have created the objects correctly, the property keys will be listed here:<br> (Don't worry about the formatting of the lists.)</p>
+    <p>If you have created the objects correctly, the property keys will be listed here:<br> (Don't worry about the
+        formatting of the lists.)</p>
     The book object: <span id="bookProperties"></span><br> The author object: <span id="authorProperties"></span>
     <script>
         document.getElementById("bookProperties").innerHTML = Object.keys(book).toString();
@@ -66,6 +70,7 @@
     <hr>
     <h3>Accessing Properties</h3>
     <b>2. Write two functions with the following names and return values:</b>
+    <br>(These functions are outside the objects.)
     <ul>
         <li>getTitle()
             <ul>
@@ -110,7 +115,8 @@
     <hr>
     <h3>Calling a Method</h3>
     <p><b>4. For this exercise, the object below has already been created:</b>
-        <br>(It is in the header of the html file.)</p>
+        <br>(It is in the header of the html file.)
+    </p>
     <pre>
         const microwave = {
             power: "Medium",
@@ -130,7 +136,7 @@
                 <li>Call the cook method</li>
             </ul>
         </li>
-        <li>Returns he string from cook.</li>
+        <li>Returns he string from the cook method.</li>
     </ul>
     <h4>Check</h4>
     <p>If you have written the function correctly, the cooking message will be shown here:</p>
@@ -169,9 +175,10 @@
     <!-- #6 Adding methods -->
     <hr>
     <h3>Adding Methods to an Object</h3>
-    <b>6. Write code to add the method shown below to the <em>cdPlayer</em> object</b> <br>skip()
+    <b>6. Write code to add the method shown below to the <em>cdPlayer</em> object</b>
+    <br>skip()
     <ul>
-        <li>Sets the track to the next track.</li>
+        <li>Sets the track to the next track.<br>(Increments the track number.)</li>
         <li>No parameters or return value</li>
     </ul>
     <p>If you have added the method correctly, the track number will be 10.</p>
@@ -194,7 +201,7 @@
     <!-- #8 Loopiong throug properties -->
     <hr>
     <h3>Looping through Properties on an Object</h3>
-    <p><b>8. Write the function described below that will use a loop to return an list of the <u>values</u> (not keys)
+    <p><b>8. Write the function described below that will use a loop to return a list of the <u>values</u> (not keys)
             of the properties in the <em>cdPlayer</em> object</b></p>
     listValues()
     <ul>

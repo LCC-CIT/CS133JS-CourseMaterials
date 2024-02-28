@@ -30,12 +30,9 @@ author: Brian Bird
 
 ## Q and A
 
-- Term proejct
-  - I finished reading proposals. For those of you who didn't post one, do it now.
-  - If you want to do a harder project, you can do it with a partner.
-
-- Hackathon--see the announcements forum.
-- Lab 5, any questions?
+- Lab 5, let's look at how to download the files.
+  - We'll look at the instructions at the end of the lecture.
+  - Any questions?
 - Does anyone have any questions about anything else?
 
 
@@ -124,7 +121,7 @@ function Pigeon(name, breed, speed){
 }
 ```
 
-Now we can use the constructor function to make some `Pigeon` objects. We set the property values by passing them into the constructor function:
+Now we can use the constructor function to make some `Pigeon` objects. We call the constructor with the keword `new` which indicates that we are making a new object. We set the property values in the new object by passing them in the constructor function call:
 
 ```javascript
 const agatha = new Pigeon("Agatha", "Egyptian Swift", 50);
@@ -141,19 +138,19 @@ elizabeth.fly();
 
 ## The `this` Keyword
 
-Now that we have multiple objects that use the same object definition, we can see the importance of using `this` inside of object methods. The *this* keyword represents whatever object it is in and now it can be in different objects.
+Now that we have multiple objects that use the same object definition, we can see the importance of using `this` inside of object methods. The `this` keyword represents whatever object it is in and now it can be in multiple objects made by the same object constructor function.
 
-What would have happened if we used the object name inside the method instead of `this`?
+Q: What would have happened if we used the object name inside the method instead of `this`?
 
 
 
 # Complex Objects
 
-Object properties can be other objects. When we put objects inside of objects we say they are a *complex object*. That doesn't mean they are complicated, just that objects are composed with one or more other objects inside.
+Object properties can be other objects. When we put objects inside of objects we say they are a *complex object*. That doesn't mean they are complicated, just that objects are composed with one or more other objects inside of them.
 
 ## An Object Inside an Object
 
-An object can have a property that has an object as it's value. For example we can make a loft objects for our pigeons to live in (a pigeon house is called a *loft*). Here is a loft for just one pigeon. The pigeon property is an object literal.
+An object can have a property that has an object as it's value. For example we can make a loft object for our pigeons to live in (a pigeon house is called a *loft*). Here is a loft for just one pigeon. (The pigeon property is an object literal.)
 
 ```javascript
 // Object literal
@@ -256,9 +253,9 @@ These are the same examples that are posted on Moodle.
 
 [GPA Calculator with Objects](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week07/GpaCalculator-Object.html)
 
-This is a new version of the GPA calculator.
+This is a new version of the GPA calculator. (The old one used arrays.)
 
-[Movies and Actors with Objects]()
+[Movies and Actors with Objects](https://lcc-cit.github.io/CS133JS-CourseMaterials/Examples/Week07/MoviesAndActors.html)
 
 This is a new version of the Movie and Actors web app.
 
@@ -325,4 +322,4 @@ function Pigeon(name, breed, speed) {
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), 2020, revised <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), 2020, revised <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

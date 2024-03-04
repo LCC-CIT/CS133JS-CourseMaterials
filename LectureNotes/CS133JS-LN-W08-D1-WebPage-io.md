@@ -29,18 +29,15 @@ author: Brian Bird
 
 ## Announcements
 
-**For November 14, 2023**
+**For Winter 2024**
 
 - Note: the tutorial you are reading this week has examples that use *arrow functions*. You will learn about those next term. I've translated those examples to use "normal" functions.
-  
 - Reminders: 
   - Lab 6 (objects) code reviews are due today (Tuesday).
 
-  - The reading quiz closes before class on Thursday.
+  - The reading quiz closes before class on Wednesday.
 
   - Lab 6 is due Thursday.
-
-- No class next Thursday (11/27), it's Thanksgiving day.
 
 ## Q and A
 
@@ -109,13 +106,19 @@ document.getElementById("lcc").innerHTML = "Hello Lane Community College!";
 
 #### Using `querySelector` with a single selector
 
-Review: in a CSS rule, the first part is the selector. For example, in the rule below, `.cit` is the class selector:
+**Review of CSS**
+
+ in a CSS rule, the first part is the selector. For example, in the rule below, `.cit` is the class selector:
 
 ```css
 .cit {
 	background-color: green;
 }
 ```
+
+
+
+**Back to the `querySelector`**
 
 In JavaScript, we can use `document.querySelector` to get a reference to an HTML element.
 
@@ -126,7 +129,7 @@ In JavaScript, we can use `document.querySelector` to get a reference to an HTML
   - element name (tag name)
   - or a combination of the selectors above
   
-- The `querySelector` method will return a single reference to the first matching element it finds on the page. In this case, it will find an element with the attribute `class="cit"`.
+- The `querySelector` method will return a single reference to the first matching element it finds on the page. In the example below, it will find an element with the attribute `class="cit"`.
 
   ```javascript
   document.querySelector(".cit").innerHTML = "Greetings CIT!";

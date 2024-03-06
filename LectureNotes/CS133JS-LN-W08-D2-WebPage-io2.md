@@ -360,7 +360,7 @@ Sometimes we need to execute some code as soon as the page loads. The example be
 
 
 
-[^1]: `getElementById` doesn't actually "get" an HTML object, it gets a *reference* (aka *binding*) to the object. You can think of a *reference* as a connection to the object that allows your code to do things with, or to, the object. In the inner workings of JavaScript, it's actually the memory address of the object. 
+[^1]: `getElementById` doesn't actually "get" an HTML object, it gets a *reference* (aka *binding*) to the object. You can think of a *reference* as a connection to the object that allows your code to do things with, or to, the object. In the inner workings of JavaScript, a reference contains the memory address of the object. 
 
 ------
 

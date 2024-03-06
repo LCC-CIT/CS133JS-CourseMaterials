@@ -29,10 +29,11 @@ author: Brian Bird
 
 ### Announcements
 
-**For 11/16/23**
+**For Winter 2024**
 
-- Lab 6 (arrays) is due tonight (Thursday).
-- Friday of this week is the last day to: drop, withdraw, or change to pass/no pass.
+- This week's quiz on events closes next Wednesday, 3/13, the same date as next week's quiz. This was an accident, but I don't think it's fair to move a due date back. Do the reading and take the quiz as soon as you can!
+- Lab 6 (objects) is due tomorrow night (Thursday).
+- I need to catch up on grading and read all your term project proposals.
 
 ### Q and A
 
@@ -42,7 +43,7 @@ author: Brian Bird
 
 
 
-## Review (with some Additions)
+## Review
 
 ### The DOM
 
@@ -84,7 +85,7 @@ Given this HTML code:
 
 
 
-This JavaScript code returns a reference to th HTML `li` element with `id="s1"`.
+In the JavaScript code below, `getElementById` gets[^1] the HTML `li` element with `id="s1"`.
 
 ```javascript
 let lccElement = document.getElementById("s1");
@@ -92,14 +93,14 @@ let lccElement = document.getElementById("s1");
 
 #####  Accessing elements using `querySelector` 
 
-The `querySelector` method can select an HTML element by:
+The `querySelector` method can select an HTML element using its:
 
 - Element name
 - id attribute
 - class attribute
 - Any combination of selectors that is legal in a CSS rule selector.
 
-Given the HTML code in the preceding example, these lines of JavaScript will each return a reference to the first matching HTML element. 
+Given the HTML code in the preceding example, these lines of JavaScript will each return the first matching HTML element. 
 
 ```javascript
 let lccElement = document.querySelector("#s2");  // second li
@@ -112,7 +113,7 @@ let degreeElement = document.querySelector("#s2 p span");  // fourth span
 
 #### `innerHTML`
 
-A property used to get or set the text and any HTML tags between the tags of an element.
+A property used to get or set the text as well as any HTML tags between the tags of an element.
 
 ```javascript
 document.getElementById("ex").innerHTML = "<u>This</u> text contains <em>tags</em>."
@@ -134,7 +135,7 @@ This property used to get or set the value of an HTML input element.
 let person = document.getElementById("name").value;
 ```
 
-#### Get User Input with a `<button>` and `onclick`Event Handler
+#### Get User Input with a `<button>` and `onclick` Event Handler
 
 Use a button with an `onclick` *event handler* to get user input.
 
@@ -159,9 +160,9 @@ Here are some additional tips and techniques for accessing HTML elements using t
 
 ### Accessing HTML Element Attributes
 
-Once we have gotten a reference to an HTML element, we can not only change the `innerHTML`, `textContent` or `value`, we can also change the value of its attributes (if it has any).
+Once we have gotten an HTML element object, we can not only change the `innerHTML`, `textContent` or `value`, we can also change the value of its attributes (if it has any).
 
-Review: An *attribute* defines some characteristic of an HTML element and is coded as a key value pair. In the example below, `href` is an attribute.
+**Review**: An *attribute* defines some characteristic of an HTML element and is coded as a key value pair. In the example below, `href` is an attribute.
 
 ```html
 <a href="https://profbird.dev">Your instructor's web site</a>
@@ -175,7 +176,19 @@ document.querySelector("a").href = "https://birdsbits.wordpress.com/";
 
 ### Getting Collections of Elements
 
-There are four DOM methods you can use to get an array containing multiple element objects. Each of these are listed below along with an example based on this HTML:
+There are four DOM methods you can use to get an array containing multiple HTML element objects. Each of these are listed below along with an example based on the HTML below.
+
+In the head:
+
+```css
+<style>
+  .highlight {
+    background-color: yellow;
+}
+</style>
+```
+
+In the body:
 
 ```html
 <ul>
@@ -250,7 +263,7 @@ Try changing the parameter passed to the event handler to:
 
 ### Adding an Event Handler to an Element Using JavaScript
 
-You can add an event hander to an HTML element *dynamically* using JavaScript code rather than adding it as an attribute of the element using the `addEventListener` method.
+You can add an event hander to an HTML element *dynamically* using JavaScript code rather than adding it as an attribute of the element. You do this by using the `addEventListener` method.
 
 In the first line of the script element below, note that the first parameter passed to `addEventListener`  is the name of the event, `"click"`. In this context, events are named <u>without</u> the "on" prefix. For example, use the event name "<u>click</u>", not "onclick".
 
@@ -314,7 +327,7 @@ If you want to add a function that has parameters to an HTML element, you need t
 
 ### Running Code after the Page Loads with the `onload` Event
 
-Sometimes we need to execute some code as soon as the page loads. The example below reads the contents of an array and puts it into a list on the web page. Note that the `listTrees()` function could also be in a separate .js file.
+Sometimes we need to execute some code as soon as the page loads. The example below reads the contents of an array and puts it into a list on the web page. Note that the `listTrees()` function could alternatively be in a separate .js file.
 
 ```html
 <body onload="listTrees()"> 
@@ -344,6 +357,10 @@ Sometimes we need to execute some code as soon as the page loads. The example be
 [Event Reference](https://developer.mozilla.org/en-US/docs/Web/Events)&mdash;MDN
 
 [JavaScript HTML DOM Event Listener](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)&mdash;W3Schools
+
+
+
+[^1]: `getElementById` doesn't actually "get" an HTML object, it gets a *reference* (aka *binding*) to the object. You can think of a *reference* as a connection to the object that allows your code to do things with, or to, the object. In the inner workings of JavaScript, it's actually the memory address of the object. 
 
 ------
 

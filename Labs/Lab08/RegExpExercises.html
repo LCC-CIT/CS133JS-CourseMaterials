@@ -29,16 +29,19 @@
         checkAnswer("2b", false, result);
     </script>
 
-    <p><span id="3a">3a. Validate a number in the range of 1 through 5: </span><br>
-        <span id="3b">3b. Don't match a number above the range:</span><br>
-        <span id="3c">3c. Don't match a number below the range:</span></p>
+    <p><span id="3a">3a. Validate a number at the beginning of the range of 1 through 5: </span><br>
+        <span id="3b">3b. Validate a number at the end of the range:</span><br>
+        <span id="3c">3c. Don't match a number above the range:</span><br>
+        <span id="3d">3d. Don't match a number below the range:</span></p>
     <script>
-        result = pattern3.test("5");
+        result = pattern3.test("1");
         checkAnswer("3a", true, result);
+        result = pattern3.test("5");
+        checkAnswer("3b", true, result);
         result = pattern3.test("6");
-        checkAnswer("3b", false, result);
-        result = pattern3.test("0");
         checkAnswer("3c", false, result);
+        result = pattern3.test("0");
+        checkAnswer("3d", false, result);
     </script>
 
     <p><span id="4a">4a. Validate a name as just letters: </span><br>
@@ -64,12 +67,15 @@
     </script>
 
     <p><span id="6a">6a. Validate an e-mail address as alpha-numeric, then @, then leters, then ., then letters.: </span><br>
-        <span id="6b">6b. Without @ and . : </span></p>
+        <span id="6c">6b. With characters that are not alpha-numeric and after . not alphabetic: </span>
+        <span id="6c">6c. Without @ and . : </span></p>
     <script>
-        result = pattern6.test("AnnSmith@airpost.net");
+        result = pattern6.test("AnnSmith1@airpost.net");
         checkAnswer("6a", true, result);
-        result = pattern6.test("AnnSmith-gmail-com");
+        result = pattern6.test("Ann_J.Smith@gmail1.com");
         checkAnswer("6b", false, result);
+        result = pattern6.test("AnnSmith-gmail-com");
+        checkAnswer("6c", false, result);
     </script>
 
 

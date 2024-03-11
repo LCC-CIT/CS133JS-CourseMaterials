@@ -105,7 +105,7 @@ You will need to download these applications and install them on your computer. 
 None of the software provided in these offers is required for this class, but you may want to take advantage of the free and discounted software offers.
 
 - [**Azure Dev Tools for Teaching**](https://signup.azure.com/studentverification?offerType=3) (previously known as Microsoft Imagine Premium, Dream Spark, and MSDNAA) is a subscription-based offering, paid for by the LCC CIT department, providing access to professional development and design tools, software, and services from Microsoft. 
-- [**Microsoft Office 365**](https://help.lanecc.edu/index.php?/Knowledgebase/Article/View/1143) LCC students and staff can get a free subscription to Office 365, which includes Microsoft Word, Excel, PowerPoint, Access, and more.
+- [**Microsoft Office 365**](https://help.lanecc.edu/TDClient/389/Portal/KB/ArticleDet?ID=5328) LCC students and staff can get a free subscription to Office 365, which includes Microsoft Word, Excel, PowerPoint, Access, and more.
 - **[On The Hub](https://lanecc.onthehub.com/WebStore/ProductsByMajorVersionList.aspx?cmi_mnuMain=f189368a-f0a6-e811-8109-000d3af41938)** has partnered with Microsoft, Adobe, IBM, Symantec, VMware and other software publishers to offer discounted and free software for students and faculty.
 
 

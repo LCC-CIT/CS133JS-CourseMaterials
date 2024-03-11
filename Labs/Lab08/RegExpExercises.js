@@ -18,7 +18,7 @@ let pattern4 = /ToDo/;
 
 // 5. Validate a username. Write a regex pattern that will match a string containing 
 // between 8 and 15 upper or lower case letters or numbers.
-let pattern5 = /^[a-zA-Z0-9]{8,15}$/;
+let pattern5 = /ToDo/;
 
 // 6. Validate an e-mail address. Write a regex pattern that will match a string containing 
 // alpha-numeric characters, then @, then leters, then ., then letters.

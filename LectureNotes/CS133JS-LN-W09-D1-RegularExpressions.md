@@ -31,24 +31,16 @@ author: Brian Bird
 
 ## Announcements
 
-**For November 21, 2023**
-
-- **No class Thursday**. It's the Thanksgiving holiday!
+**For winter 2024**
 
 - **Due dates:** 
-  
-  - Lab 7, on JavaScript events, code review due tonight, 11/21.
-  
-  - Lab 7 production version due date is extended to Friday night, 11/24.
-  
-  - This week's quiz closing date extended to Friday night, 11/24.
-  
-  - Lab 8 on regular expressions, this week's lab, doesn't require a code review, only part 1 is required. Part 2 is fun and optional. It's due Friday night, 12/1.
-  
-- **Study Jam for Students November 28th!**
-  Tuesday, November 28 from 2-4 pm will be Study Jam. The library will provide free pizza and snacks for students as you study for finals. In addition to food and drink, there will be research help, tutoring, relaxation and yoga tips, and therapy dogs. 
 
-  <img src="Images/StudyJam.png" alt="StudyJam" style="zoom:40%;" />
+  - Lab 7, on JavaScript events, code review due tomorrow (Tuesday), 3/12.
+  - This week's quiz closes Wednesday at class time, 3/13.
+  - Lab 7 production version due Thursday, 3/14.
+  - Term project code review due Friday, 3/15.
+  - Lab 8 on regular expressions doesn't require a code review, only part 1 is required, due Sunday, 3/17.
+  - Term project due Tuesday, 3/19.
 
 
 ### Q and A
@@ -109,14 +101,14 @@ You might have used `*` and `?` as wildcards in a search before.
   - "They live"
   - "They love"
 
--  Adding a `*` will match <u>zero</u>-to-many of the character preceding the `*`. 
+-  Adding a `*` will match <u>zero</u>-to-many of the character preceding the `*` . 
   Example: `/Bo*t/` will match:
 
   - "Bt"
   - "Bot"
   - "Boot"
 
-- Adding the `+` will match <u>one</u>-to-many of the character preceding the `+`.
+- Adding the `+` will match <u>one</u>-to-many of the character preceding the `+` .
 
   Example: `/Bo+t/` will match:
 

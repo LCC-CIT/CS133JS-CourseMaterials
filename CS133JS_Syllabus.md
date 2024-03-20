@@ -183,7 +183,7 @@ The college’s “no show, drop” policy requires that: during the first week 
 ### Late Work
 
 - Grades for lab production versions submitted after the due date will be reduced by 10%.
-- No late assignments may be submitted after week 10.
+- No late assignments accepted after Tuesday of week 11, finals week.
 - Code reviews, quizzes and exams cannot be taken after the due date. 
   Plan ahead! Exceptions will only be made for illness or emergency situations.
 

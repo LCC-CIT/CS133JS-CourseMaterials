@@ -36,7 +36,7 @@ author: Brian Bird
 
 ## Course Prerequisites
 
-You need to know a little bit of HTML which is taught in CIS 195, Wed Authoring, and which can be taken at the same time as this class. These are the specific parts of HTML you will need to know:
+You need to know a little bit of HTML which is taught in CIS 195, Web Authoring, and which can be taken at the same time as this class. These are the specific parts of HTML you will need to know:
 
 - HTML elements and tags
 - Attributes (key-value pairs inside the opening tag of a element)

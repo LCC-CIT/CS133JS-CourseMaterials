@@ -1,11 +1,11 @@
 <h1>Beginning Programming: JavaScript</h1>
-**Syllabus for winter 2024**
+**Syllabus for fall 2024**
 
 | <u>Class</u>      |                                                              |      | <u>Instructor</u> |                                                              |
 | ----------------- | ------------------------------------------------------------ | ---- | ----------------- | ------------------------------------------------------------ |
 | **Course Number** | CS 133JS                                                     |      | **Name**          | Brian Bird                                                   |
-| **CRN**           | Hybrid (on campus) 30926<br />Online 30954                   |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
-| **Day & Time**    | M, W 10:00&dash;11:50                                        |      | **Office Hours**  | M&mdash;Th 4:00&ndash;4:50                                   |
+| **CRN**           | Hybrid (on campus) 21547<br />Online 21548                   |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
+| **Day & Time**    | T, Th 10:00&dash;11:50                                       |      | **Office Hours**  | M&mdash;Th 4:00&ndash;4:50                                   |
 | **Room**          | Building 19, Room 128<br />[Zoom meeting](https://lanecc.zoom.us/j/94138742078) |      | **Room**          | Building 19, Room 152<br />[Zoom meeting](https://lanecc.zoom.us/j/93655119209) |
 
 <h2>Table of Contents</h2>
@@ -63,7 +63,7 @@ The intention of the course is to enable you to create and maintain interactive 
 
 ### Textbook                                                      
 
- *Eloquent JavaScript: A Modern Introduction to Programming*, 3rd Edition, by Marijn Haverbeke. No Starch Press. 2018. Available [free online](https://eloquentjavascript.net) to read our download.
+ *Eloquent JavaScript: A Modern Introduction to Programming*, 4rd Edition, by Marijn Haverbeke. No Starch Press. 2024. Available [free online](https://eloquentjavascript.net) to read or download; or a print copy can be purchsed.
 
  
 
@@ -129,13 +129,13 @@ The table below summarizes the possible points for each assessment task as well 
 | **Assessment Tasks**               | **Points Each**          | **Total Points** | Percentage |
 | ---------------------------------- | ------------------------ | ---------------- | ---------- |
 | Labs  1 - 8                        | 40                       | 320              | 32%        |
-| Code  Reviews<sup>2</sup> 1 - 8    | 8                        | 64               | 6.5%       |
-| Reading  Quizzes<sup>2</sup> 1 - 8 | 8                        | 64               | 6.5%       |
+| Code  Reviews<sup>*</sup> 1 - 8    | 8                        | 64               | 6.5%       |
+| Reading  Quizzes<sup>*</sup> 1 - 8 | 8                        | 64               | 6.5%       |
 | Term Project                       | 252                      | 252              | 25%        |
 | Midterm and Final Quizzes          | Midterm: 100, Final: 200 | 300              | 30%        |
 | **Course Total**                   |                          | **1000**         |            |
 
-<sup>2</sup> The lowest grades for code reviews and reading quizzes will be dropped from the grade calculation.
+<sup>*</sup> The lowest grades for code reviews and reading quizzes will be dropped from the grade calculation.
 
 Letter grades for the course will be determined by the following percentages:                  
 
@@ -208,16 +208,16 @@ For upcoming closures, please visit the [Center for Accessible Resources webpage
 
 ## Schedules
 
-## Academic Calendar for Winter Term 2024
+## Academic Calendar for Fall Term 2024
 
-| Event                                               | Date        |
-| --------------------------------------------------- | ----------- |
-| Fall term classes begin                             | 1/8 Monday  |
-| Last day to receive refund                          | 1/15 Monday |
-| Martin Luther King Jr. holiday&mdash;college closed | 1/15 Monday |
-| Presidents Day holiday&mdash;college closed         | 2/19 Monday |
-| Last day for schedule changes                       | 3/1 Friday  |
-| Final exam                                          | 3/18 Monday |
+| Event                                                        | Date             |
+| ------------------------------------------------------------ | ---------------- |
+| Fall term classes begin                                      | 9/30 Monday      |
+| Last day to receive refund                                   | 10/7 Monday      |
+| Veteran’s Day&mdash;college closed                           | 11/11 Monday     |
+| Last day for schedule changes                                | 11/22 Friday     |
+| Thanksgiving Vacation – college closed on Thursday and Friday | 11/28&ndash;12/1 |
+| Final exam                                                   | 12/10 Tuesday    |
 
 View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on the LCC web site.  
 
@@ -231,15 +231,15 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
   - Participate in class in person, via Zoom, or watch the Zoom recording
 
 
-- By Tuesday night
+- By Wednesday night
   - Complete a code review of last week's lab for your lab partner (starting the 2nd week).
 
 
-- Wednesday
+- Thursday
   - Before class starts, take the reading quiz.
   - Participate in class
-- Thursday
-  - By midnight: submit the production version of your lab work from last week.
+  
+  - Submit the production version of your lab work from last week.
 
 
 - By Friday night
@@ -255,16 +255,16 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 
 | Week             | Topic                                                        | Learning Activities                                          |
 | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **1**<br/>1/8    | Intro to  JavaScript:<br />algorithms, variables, and data types | Reading quiz 1<br />Beta version of lab 1                    |
-| **2**<br />1/15  | No classes due to the ice storm                              | Nothing due this week                                        |
-| **3**<br />1/22  | Functions, Expressions and Operators                         | lab 1 code review <br />Reading quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
-| **4**<br />1/29  | Selection                                                    | lab 2 code review  <br />Reading quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
-| **5**<br />2/5   | Repetition                                                   | lab 3 code review<br />Reading quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
-| **6**<br />2/12  | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Term project proposal<br />Midterm quiz:<br />- In the classroom on 2/14<br />- In the testing center 2/14 through 2/17 |
-| **7**<br />2/19  | Arrays                                                       | Reading quiz 5  <br />Beta version of lab 5                  |
-| **8**<br />2/26  | Objects                                                      | lab 5 code review<br />Reading quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
-| **9**<br />3/4   | Monday: Memorial Day Holiday<br />Document Object Model and Events | lab 6 code review<br />Reading quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |
-| **10**<br />3/11 | Regular Expressions<br />Term project completion<br />Review | lab 7 code review<br />Reading quiz 8<br />Production version of lab 7<br />Beta version of lab 8 |
-| **11**<br />3/18 | Finals week                                                  | Term project<br />Extra credit lab<br />Final quiz:<br />- In the classroom on 3/18<br />- In the testing center 3/18&mdash;3/21 |
+| **1**<br/>9/30   | Intro to  JavaScript:<br />algorithms, variables, and data types | Reading quiz 1<br />Beta version of lab 1                    |
+| **2**<br />10/7  | Functions, Expressions and Operators                         | lab 1 code review <br />Reading quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
+| **3**<br />10/14 | Selection                                                    | lab 2 code review  <br />Reading quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
+| **4**<br />10/21 | Repetition                                                   | lab 3 code review<br />Reading quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
+| **5**<br />10/28 | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Term project proposal<br />Midterm quiz:<br />- In the classroom on 10/31<br />- In the testing center 10/31 through 11/2 |
+| **6**<br />11/4  | Arrays                                                       | Reading quiz 5  <br />Beta version of lab 5                  |
+| **7**<br />11/11 | Objects                                                      | lab 5 code review<br />Reading quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
+| **8**<br />11/18 | Document Object Model and Events                             | lab 6 code review<br />Reading quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |
+| **9**<br />11/25 | Regular Expressions<br />Term project completion             | lab 7 code review<br />Reading quiz 8<br />Production version of lab 7<br />Beta version of lab 8 |
+| **10**<br />12/2 | Review                                                       | Term project<br />Extra credit lab                           |
+| **11**<br />12/9 | Finals week                                                  | Final quiz:<br />- In the classroom on 12/10<br />- In the testing center 12/10&ndash;12/12 |
 
  

@@ -6,7 +6,7 @@
 | **Course Number** | CS 133JS                                                     |      | **Name**          | Brian Bird                                                   |
 | **CRN**           | Hybrid (on campus) 21547<br />Online 21548                   |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
 | **Day & Time**    | T, Th 10:00&dash;11:50                                       |      | **Office Hours**  | M&mdash;Th 4:00&ndash;4:50                                   |
-| **Room**          | Building 19, Room 128<br />[Zoom meeting](https://lanecc.zoom.us/j/94138742078) |      | **Room**          | Building 19, Room 152<br />[Zoom meeting](https://lanecc.zoom.us/j/93655119209) |
+| **Room**          | Building 19, Room 128<br />[Zoom meeting](https://lanecc.zoom.us/j/95855574335) |      | **Room**          | Building 19, Room 152<br />[Zoom meeting](https://lanecc.zoom.us/j/94514229670) |
 
 <h2>Table of Contents</h2>
 

@@ -158,11 +158,11 @@ Weekly quizzes are given that cover the required reading for that week. These qu
 
 The midterm and final quizzes are given in weeks 5 and 11. See the course schedule for exact dates and times. Quizzes are "closed book", but students may prepare a 8 1/2" x 11" sheet of notes to refer to during the quiz. These quizzes may be taken either:
 
-- On-campus students (hybrid modality) will take the quiz In the classroom during the normal class time.
+- On-campus In the classroom during the normal class time&mdash;primarily for students taking the class in person (hybrid modality).
 
-- online student will take the quiz In the Instructional Testing Center in the Center Building, room 311. See the [Instructional Testing Services](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services) web site for testing times and procedures.  
+- In the Instructional Testing Center in the Center Building, room 311. See the [Instructional Testing Services](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services) web site for testing times and procedures&mdash;primarily for online students. 
 
-  Students who live outside the Eugene/Springfield area can send an email to [online@lanecc.edu](mailto:online@lanecc.edu) well in advance of the test dates to arrange for your midterm and final to be proctored at a location near you.
+Students who live outside the Eugene/Springfield area can send an email to [online@lanecc.edu](mailto:online@lanecc.edu) well in advance of the test dates to arrange for your midterm and final to be proctored at a location near you.
 
 ### Code Reviews
 

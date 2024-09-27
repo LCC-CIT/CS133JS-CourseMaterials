@@ -156,11 +156,11 @@ Weekly quizzes are given that cover the required reading for that week. These qu
 
 <u>Midterm and Final Quizzes</u>
 
-The midterm and final quizzes are given in weeks 5 and 11. See the course schedule for exact dates and times. Quizzes are "closed book", but students may prepare a 4 X 6 notecard to refer to during the quiz. These quizzes may be taken either:
+The midterm and final quizzes are given in weeks 5 and 11. See the course schedule for exact dates and times. Quizzes are "closed book", but students may prepare a 8 1/2" x 11" sheet of notes to refer to during the quiz. These quizzes may be taken either:
 
 - On-campus students (hybrid modality) will take the quiz In the classroom during the normal class time.
 
-- online studentw sill take the quiz In the Instructional Testing Center in the Center Building, room 311. See the [Instructional Testing Services](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services) web site for testing times and procedures.  
+- online student will take the quiz In the Instructional Testing Center in the Center Building, room 311. See the [Instructional Testing Services](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services) web site for testing times and procedures.  
 
   Students who live outside the Eugene/Springfield area can send an email to [online@lanecc.edu](mailto:online@lanecc.edu) well in advance of the test dates to arrange for your midterm and final to be proctored at a location near you.
 
@@ -208,7 +208,7 @@ For upcoming closures, please visit the [Center for Accessible Resources webpage
 
 ## Schedules
 
-## Academic Calendar for Fall Term 2024
+### Academic Calendar for Fall Term 2024
 
 | Event                                                        | Date             |
 | ------------------------------------------------------------ | ---------------- |
@@ -223,7 +223,7 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 
 
 
-## Weekly Learning Activities
+### Weekly Learning Activities
 
 - Monday
   - Start the assigned reading  
@@ -259,12 +259,12 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 | **2**<br />10/7  | Functions, Expressions and Operators                         | lab 1 code review <br />Reading quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
 | **3**<br />10/14 | Selection                                                    | lab 2 code review  <br />Reading quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
 | **4**<br />10/21 | Repetition                                                   | lab 3 code review<br />Reading quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
-| **5**<br />10/28 | Midterm Check-Point                                          | lab 4 code review   <br />Production version of lab 4  <br />Term project proposal<br />Midterm quiz:<br />- In the classroom on 10/31<br />- In the testing center 10/31 through 11/2 |
+| **5**<br />10/28 | Midterm Quiz                                                 | lab 4 code review   <br />Production version of lab 4  <br />Term project proposal<br />Midterm quiz:<br />- In the classroom on 10/31<br />- In the testing center 10/31 through 11/2 |
 | **6**<br />11/4  | Arrays                                                       | Reading quiz 5  <br />Beta version of lab 5                  |
 | **7**<br />11/11 | Objects                                                      | lab 5 code review<br />Reading quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
 | **8**<br />11/18 | Document Object Model and Events                             | lab 6 code review<br />Reading quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |
-| **9**<br />11/25 | Regular Expressions<br />Term project completion             | lab 7 code review<br />Reading quiz 8<br />Production version of lab 7<br />Beta version of lab 8 |
-| **10**<br />12/2 | Review                                                       | Term project<br />Extra credit lab                           |
+| **9**<br />11/25 | Regular Expressions<br />Term project completion<br />Thanksgiving vacation 11/28 | lab 7 code review<br />Reading quiz 8<br />Production version of lab 7<br />Beta version of lab 8 |
+| **10**<br />12/2 | Review and term project                                      | Term project<br />Extra credit lab                           |
 | **11**<br />12/9 | Finals week                                                  | Final quiz:<br />- In the classroom on 12/10<br />- In the testing center 12/10&ndash;12/12 |
 
  

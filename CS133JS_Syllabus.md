@@ -189,7 +189,9 @@ The college’s “no show, drop” policy requires that: during the first week 
 
  
 
-## Accessibility
+## Accessibility and Campus Navigation
+
+### Center for Accessible Resources
 
 Lane Community College (LCC) is dedicated to providing inclusive learning environments. The Center for Accessible Resources (CAR) coordinates all academic accommodations for students at LCC. If you anticipate or experience academic barriers due to a disability, to request assistance or accommodations, contact the Center for Accessible Resources.
 
@@ -204,7 +206,13 @@ Enter the Support Hub by going to [lanecc.edu/hub](https://www.lanecc.edu/hub). 
 
 For upcoming closures, please visit the [Center for Accessible Resources webpage ](https://www.lanecc.edu/disability)
 
- 
+### Campus Location and Maps
+
+- [Bus service and free student bus pass](https://www.lanecc.edu/experience-lane/transportation-getting-around/lcc-bus-pass)
+
+- [Interactive Map of the LCC Main Campus](https://map.concept3d.com/?id=780#!ct/80243,11008,10696,80244,80245?s/)
+
+- [Map (floor plan) of Building 19](Images/Building19FloorPlan.pdf)
 
 ## Schedules
 

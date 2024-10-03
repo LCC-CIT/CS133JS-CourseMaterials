@@ -27,18 +27,14 @@ keywords: control structures, syntax, operators, variables, data types, type con
 
 # Announcements
 
-- I have put everyone into groups
-  - Groups A, B, and C are the lab assignment groups. Each group gets a different version of the lab assignment.
-  - Numbered groups, 1, 2, 3, etc. are lab partner groups. There are three lab partners in each group and each of you are doing a different version of the lab assignment.
-- In the notes for the [into to the course](https://lcc-cit.github.io/CS133JS-CourseMaterials/LectureNotes/CS133JS-LN-W01-D1-IntroToJS.html), I added a list of the parts of HTML you should know for this class. These are the things you will need to know for this week's lab assignment:
-  - HTML Elements
-  - Attributes
-  - Headings
-  - Paragraphs
-  - Quotations `<blockquote>`&mdash;for the group C assignment
-  - Links `<a>`&mdash;for the group B assignment
-  - Images `<img>`&mdash;for the group A assignment
-  - Inline frames `<iframe>` (only used in the example)
+- Assignment groups and lab partners
+  - I have put everyone into assignment groups. Groups A, B, and C are the lab assignment groups. Each group gets a different version of the lab assignment.
+  - I assign lab partners tomorrow. Numbered groups, 1, 2, 3, etc. are lab partner groups. There are three lab partners in each group and each of you are doing a different version of the lab assignment.
+- What's due this week
+  - Reading quiz due today
+  - Beta version of lab 1 due Sunday
+
+- No-show, drop reminder.
 
 # Intro to Programming
 

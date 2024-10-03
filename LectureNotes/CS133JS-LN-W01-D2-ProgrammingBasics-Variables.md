@@ -25,14 +25,18 @@ keywords: control structures, syntax, operators, variables, data types, type con
 
 [TOC]
 
-# Announcements
+# Announcements for Fall 2024
 
 - Assignment groups and lab partners
   - I have put everyone into assignment groups. Groups A, B, and C are the lab assignment groups. Each group gets a different version of the lab assignment.
   - I assign lab partners tomorrow. Numbered groups, 1, 2, 3, etc. are lab partner groups. There are three lab partners in each group and each of you are doing a different version of the lab assignment.
 - What's due this week
   - Reading quiz due today
-  - Beta version of lab 1 due Sunday
+  - <s>Beta version of lab 1 due Sunday</s> 
+    I'm having you submit part 1 and part 2 of this assignment separately since we ran out of time to talk about part 2 of the lab in class today.
+    - Just submit part 1 of lab 1 by Sunday.
+    - Part 2 will be due next Thursday.
+      In the future, you will submit parts 1 and 2 together.
 
 - No-show, drop reminder.
 
@@ -149,7 +153,7 @@ We can also put script elements in the body of a web page:
 </body>
 ```
 
-Variables that are declared in one &lt;script&gt; element are visible in all the &lt;scrpit&gt; elements that are below it on the page.
+Variables that are declared in one &lt;script&gt; element are visible in all the &lt;script&gt; elements that are below it on the page.
 
 
 ```html

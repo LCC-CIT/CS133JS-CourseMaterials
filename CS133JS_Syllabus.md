@@ -135,7 +135,7 @@ The table below summarizes the possible points for each assessment task as well 
 | Midterm and Final Quizzes          | Midterm: 100, Final: 200 | 300              | 30%        |
 | **Course Total**                   |                          | **1000**         |            |
 
-<sup>*</sup> The lowest grades for code reviews and reading quizzes will be dropped from the grade calculation.
+<sup>*</sup> The code review and reading quiz with the lowest grade will be dropped from the grade calculation.
 
 Letter grades for the course will be determined by the following percentages:                  
 
@@ -239,19 +239,19 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 
 - Tuesday
 
-  - Participate in class in person, via Zoom, or watch the Zoom recording
+  - Participate in class (in-person, via Zoom, or watch the Zoom recording).
 
   - Complete a code review of last week's lab for your lab partner (starting the 2nd week).
 
 
 - Thursday
-  - Before class starts, take the reading quiz.
-  - Participate in class
+  - Take the reading quiz.
+  - Participate in class.
   
   - Submit the production version of your lab work from last week.
 
 
-- By Sunday night
+- Sunday
 
   - Post the beta version of your lab for this week.
 

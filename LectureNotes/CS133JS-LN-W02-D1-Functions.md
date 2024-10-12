@@ -175,16 +175,16 @@ Example:
     toPercent(0.25);
     ```
 
-3. Call it from a script element using *document.write*:
+3. Call it from a script element, use *document.write* to show the result
 
     ```javascript
     document.write("<p>Percentage: " + toPercent(0.25) + "!</p>");
     ```
 
-4. Call it from a script element using the *inner.HTML* function:
+4. Call it from a script element using *inner.HTML* function to show the result:
 
     ```javascript
-       document.getElementById("answer").innerHTML = toPercent(0.25);
+    document.getElementById("answer").innerHTML = toPercent(0.25);
     ```
 
 
@@ -259,15 +259,6 @@ document.getElementById("answer").innerHTML = 2 * 3;
 
 
 
-# Coming up...
-
-- Lab 2
-  - Take a look at part 1.
-  - Do the first problem together.
-  - Beta due Friday.
-
-
-
 # Notes
 
 ## Vocabulary
@@ -294,7 +285,7 @@ document.getElementById("answer").innerHTML = 2 * 3;
 
 
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 [^1]: Primitive data types: number, string, boolean, undefined
 [^2]: It is more accurate to say "the data type of the value contained by the variable" since varaibles themselves don't have data types.

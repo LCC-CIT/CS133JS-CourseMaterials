@@ -29,17 +29,18 @@ author: Brian Bird
 
 ## Introduction
 
-### Announcements (Winter 2024)
+### What's Due this Week
 
-- Lab 1, I finished the grading. Some of you have not submitted the production version yet. You can still do this!
 - Lab 2, last week's lab assignment&mdash; how is it going?
-  - Beta versions of part 2 were due at the end of last week. I see quite a few posts in the forum&mdash;which is good, but there should be a few more.
+  - The beta versions of part 2 was due Sunday. 
     - Remember that the beta version is like a draft. It doesn't need to be complete or completely working. 70% done is good enough for a beta version.
     - Are there questions on how to do it?
     - See me or a tutor if you'd like some help.
-    - The production (final) version is due Thursday
 - Get started on the reading&mdash;if you haven't already.  
-  Quiz 3 is due before the next class.
+- Lab 2 code review is due Tuesday.
+- Quiz 3 is due Thursday.
+- Lab 2 production version is due Thursday.
+- Lab 3 beta version is due Sunday
 
 ### Q and A
 

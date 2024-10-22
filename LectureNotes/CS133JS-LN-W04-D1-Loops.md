@@ -32,31 +32,30 @@ author: Brian Bird
 
 ## Announcements
 
-Winter 2024
+Fall 2024
 
-- Lab 3 code review due Tuesday (tomorrow) 2/6  
+- Lab 3 code review due Today  
   If your lab partner didn't post a beta version for you to review, there is alternative beta code you can review this instead.
-- Reading quiz closes at class time on Wednesday 2/7.
+- Reading quiz closes Thursday.
   
-- Lab 3 production version due Thursday 2/8.
+- Lab 3 production version due Thursday.
   
-- Midterm next Wednesday, 2/15. 
-  - Review lecture notes
+- Midterm next week. 
+  - Review lecture notes.
   - Practice midterm.
   - You can take the quiz in the classroom at class time, or you can take it in the testing center. 
     - **Classroom** from 10:00 to 11:50 (normal class time). 
     - **[Testing center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services)**  
       The testing center is located in the Center Building, Room 311 (upstairs and across from the library).
-      - Wednesday, 2/14, 9:00am&ndash;7:00pm
-      - Thursday, 2/15, 9:00am&mdash;4:00pm
-      - Friday, 2/16, 12:30pm&mdash;4:00pm.
-      - Saturday ? (I need to find out)
+      - Thursday, 10/31, 9:00am&ndash;7:30pm
+      - Friday, 11/1, 9:00am&ndash;5:00pm.
+      - Saturday, 11/2, 10:00am&ndash;2:00pm
     - In both locations: 
-      - You aren't allowed to use: help from others, internet searches, ChatGPT, and any other outside sources.
+      - You aren't allowed to use: help from others, internet searches, AI (like ChatGPT), or any other outside sources.
       -  You will be allowed to refer to one page of notes.
   
 - Does anyone have any general questions about anything?
-  - Lab 3 on selection
+  - Questions about lab 3 on selection?
 
 
 
@@ -397,5 +396,4 @@ These are the same examples that are on Moodle:
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2024</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
-
 

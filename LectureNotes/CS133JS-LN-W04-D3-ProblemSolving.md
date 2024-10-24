@@ -117,9 +117,9 @@ alert("Total: " + total)
 
 
 
-### Finding Factors Example
+### Example: Algorithm to Find Factors of a Number
 
-If you had a math assignment to find the factors of various numbers, you would use an algorithm like this:
+If you had a math assignment to find the factors[^1] of various numbers, you would use an algorithm like this:
 
 1. Start a list of factors with 1 since it is a factor of every number.
 
@@ -160,10 +160,10 @@ alert("The factors are: " + factors);
 
 
 
-
+[^1]: Factors are whole numbers that can be evenly divided into another whole number. For example, the factors of 12 are: 12, 6, 4, 3, 2 and 1.
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2022</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------

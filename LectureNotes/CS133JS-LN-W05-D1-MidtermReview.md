@@ -30,7 +30,7 @@ author: Brian Bird
 
 - Are there any questions about lab 4?
 - The next class meeting will be just for the midterm quiz.
-- This week is a good time to start your term project. The term project requirements are posted on Moodle&mdash; let's take a look at those.
+- This week is a good time to start your term project. The [term project requirements](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/TermProject/CS133JS_TermProject_Instructions.html) are posted on Moodle&mdash; let's take a look at those.
   - A proposal for your term project is due next week.
 
 ## Introduction
@@ -46,14 +46,14 @@ Focus on understanding concepts&mdash;not on memorizing answers. The only thing 
 - The quiz will cover material in the lecture notes from the first four weeks of the term.
 - When and where to take the quiz:
   - In the classroom at the normal class time.
-  - In the Instructional Testing Center Wednesday, Thursday or Friday.
+  - In the Instructional Testing Center Thursday, Friday or Saturday.
     - Bring ID.
     - Check the [web site](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services) for the hours they are open.
 - For both locations:
   - You will have 1 hour and 50 minutes to finish the quiz.
   - There are 30 questions.
   - The quiz is restricted for IP address of the location where you take the quiz. Make sure you are connected to "LCC WiFi", not "LCC Guest".
-  - You can bring an 8.5 x 11 inch sheet of notes.
+  - You can bring an 8.5 x 11 inch sheet of notes which can be hand written or printed.
   - You are not allowed to search the internet for answers, use AI (like chatGPT) or get help from another person.
   - Seeing your results:  
     You will be able to see your score and review your answers immediately after you finish the quiz. After you exit the quiz you won't be able to review your answers again, but you will be able to see your score.

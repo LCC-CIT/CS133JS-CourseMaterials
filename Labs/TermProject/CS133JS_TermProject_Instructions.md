@@ -32,7 +32,7 @@ You can choose a project from the list of suggestions below or propose one based
     - Events
   - Use best coding practices like avoiding global variables, writing DRY code, proper indentation, descriptive variable names, explanatory comments, separating I/O from processing, etc.
   - Provide good user experience by using input validation, do-again loops or resets, clear instructions and/or prompts, etc.
-  - Require at least as much effort as an average lab assignment, but not as much as two lab assignments.
+  - Require more effort than an average lab assignment, but not as much as two lab assignments.
   
   - Not be the same as any of the class or textbook examples.
   - Not be the same as a project being done by another student in the class.
@@ -70,6 +70,6 @@ Submit the production (final) version of your project along with an updated copy
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Course Lab Instructions by [Brian Bird](https://profbird.dev), written spring <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Course Lab Instructions by [Brian Bird](https://profbird.dev), written spring 2023, revised fall <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 [^1]: Obstruction game: This is a two-player game in which one player is “O”; the other player is “X.” Use  at least a 6×6 grid. Each player takes turns putting their mark in one of the squares. Players can only mark a square if all of its neighbors, including those on diagonals, are empty. Play ends when one player can no longer move.

@@ -36,7 +36,7 @@ author: Brian Bird
 
 - Lab 3 production version is due tomorrow (Thursday).
 
-- Next wednesday is the midterm.
+- Next week is the midterm.
 
 
 ## Q and A
@@ -68,7 +68,7 @@ alert("You got it!");
 ## Repetition Using `do while` 
 
 This is a *post-test* loop
-The variables used in the condition must be declared outside the loop in this one too.
+The variables used in the loop condition must be declared outside the loop in this one too.
 
 ```javascript
 // Input validation
@@ -145,7 +145,7 @@ for (let i = 1; i <= 10;  i++)
 
 We can put one loop inside another. 
 
-**Example: a `while` nested in a `do while` loop**
+**Example: a `while` loop nested in a `do while` loop**
 
 ```javascript
 // Number guessing game
@@ -230,5 +230,5 @@ Q: What would you need to change to use this code in a web page[^1]?
 
 [^1]:You can't use a tab character in an HTML page (unless it's inside a `<pre>` element. But you can use a series of `&nbsp`. At the end of each row you need to use `<br>` In place of `console.log(), you will use document.write().
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2024</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 

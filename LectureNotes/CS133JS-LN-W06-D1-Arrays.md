@@ -34,13 +34,25 @@ author: Brian Bird
 ## Q and A
 
 - Do you have any questions about:
+
   - The midterm?
-  - The term project?  
-    Don't forget to post your project proposal in forum in the week 5 section on Moodle.  
-    This is a good time to start the skeleton of your project.
-  - The reading on arrays:  
-    Since there was a holiday, I extended the closing time for the quiz to 11:59pm
+
+    - You can come to my office hours if you want to review the questions you missed or were unsure about.
+
+    - The term project?
+      - This is a good time to start the skeleton of your project.
+
+  - The reading on arrays
+
   - Anything else?
+
+- Reminder of due dates:
+
+  - Project proposal on Thursday.
+
+  - Reading quiz on Thursday.
+
+  - Lab 5 beta version on Sunday.
 
 
 
@@ -48,7 +60,7 @@ author: Brian Bird
 
 ## What are Arrays?
 
-- Review of variables:  We can think of a *variable* as a storage place in memory. It has a name and can hold <u>only one value</u> and that value has a *data type*.
+- Review of variables:  We can think of a *variable* as a storage place in memory. It has a name and can hold <u>only one *value*</u> and that value has a *data type*.
 - An *array* is like a variable (it's also one of the things we call an *object*), but it can hold <u>more than one value</u>.
 - An analogy for an array is a set of post office boxes. Each one has an address and something can be stored in it.  
    <img src="Images/PersonOpeningPOBox.jpeg" alt="PersonOpeningPOBox" style="zoom:75%;" />
@@ -59,10 +71,9 @@ author: Brian Bird
 
 - One way to think of an array is as a table with two columns where each row is an element of the array.  
 
-
    **An array represented as a table. **  
    Each row represents an *element*.  
-   This array contains string values.  
+   This array contains *string values*.  
 
 | *index* | *value*s  |
 | ------- | --------- |
@@ -76,13 +87,15 @@ author: Brian Bird
 
 ## Creating an Array
 
-- Without initialization:
+An array can be created by declaring it and it can optionally be initialized. *Initialization* means putting some values into elements of the array. When these values are put into the array, the elements are created in memory.
+
+- Declaration without initialization:
 
   ```javascript
   let starWars = [];
   ```
 
-- With initialization:
+- Declaration with initialization:
 
   ```javascript
   let starWars = ["Rey", "Finn", "Han Solo", "C-3PO", "Chewbacca"];
@@ -331,4 +344,4 @@ This can be visualized as a table:
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) 2018, revised winter<time>2024</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) 2018, revised fall <time>2024</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

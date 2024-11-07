@@ -30,18 +30,23 @@ author: Brian Bird
 
 ## Announcements
 
-Spring term classes for Software Dev majors
+Registration is open. These are the spring term classes reccomended for Software Dev majors:
 
 - CS 233JS Intermediate JavaScript
 - WR 227 Technical Writing 
-- CS 162N Computer Science 1: C# (.NET)
+- CS 161N Computer Science 1: C# (.NET)
 - CS 235IM Mobile App Development with JavaScript
 
 ## Q and A
 
 - Lab 5: Have you started it? Any questions?
-- Term project proposal. Be sure to post yours!
 - Does anyone have any questions about anything?
+
+## What's Due this Week
+
+- Term project proposal: Thursday
+- Reading quiz: Thursday
+- Lab 5 beta version: Sunday
 
 
 
@@ -157,9 +162,9 @@ Use this property when you don't know how many elements are in an array, but nee
 
 ```javascript
 // Exchange the value stored at the end of the array with the one stored at the beginning. (Move Asia to the end of the array and Austrailia to the beginning).
-let firstValue = continents[0];
-let lastIndex = continents.length -1;
-let lastValue = continents[lastIndex];
+const firstValue = continents[0];
+const lastIndex = continents.length -1;
+const lastValue = continents[lastIndex];
 continents[0] = lastValue;
 continents[lastIndex] = firstValue;
 ```
@@ -222,7 +227,7 @@ Use this method when you need to do an operation on a specific element of the ar
 
 ```javascript
 // Change the name of South America to américa del Sur
-let index = continents.indexOf("South America");
+const index = continents.indexOf("South America");
 continents[index] = "américa del Sur";
 ```
 

@@ -29,13 +29,14 @@ author: Brian Bird
 
 ### Q and A
 
-- Sprint registration is open!  
+- Registration is open for next term!  
   [Upcoming classes](CS133JS-LN-W06-DX-NextSoftwareDevClasses.html) for the Software Development AAS degree program 
-  
+
 - Lab 5 on Arrays&mdash; any questions?
-  - Beta version due tomorrow (Tuesday).
+  - Code review due Tuesday.
   - Production version due Thursday.
-  
+
+- Reading quiz due Thursday.
 - Does anyone have any other questions about anything?
 
 
@@ -337,8 +338,6 @@ while (i < filiArray.length)
 }
 ```
 
-#### 
-
 ## Mutability of Objects
 
 Objects declared with `const` are *mutable*, that means they can have their properties changed or removed and can have new properties added. But the *binding* is *immutable*, the object variable can't be assigned to a new object.
@@ -359,7 +358,7 @@ balin = boffer;  // this works!
 
 [Understanding Objects in JavaScript](https://www.digitalocean.com/community/tutorials/understanding-objects-in-javascript) - Tania Rascia, 2021, Digital Ocean
 
-"[Data Structures: Objects and Arrays](https://eloquentjavascript.net/04_data.html)", Ch. 4 in Eloquent JavaScript, 3rd Ed., Marijn Haverbeke, 2018, No Starch Press.
+"[Data Structures: Objects and Arrays](https://eloquentjavascript.net/04_data.html)", Ch. 4 in Eloquent JavaScript, 4th Ed., Marijn Haverbeke, 2024, No Starch Press.
 
 
 

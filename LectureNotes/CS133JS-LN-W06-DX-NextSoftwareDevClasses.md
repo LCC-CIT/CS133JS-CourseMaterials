@@ -22,15 +22,14 @@ author: Brian Bird
 
 Classes to take next if you are pursuing the AAS in Software Development 
 
-### Winter Term 2024
+### Winter Term 2025
 
 - JavaScript:
   - CS 133JS, Beginning JavaScript Programming  
-       or  
-  - CS 233JS, Intermediate JavaScript Programming  
-      and  
-  - Program Elective: CS 135AM, Beginning Mobile App Development with JavaScript  
-    (Currently listed as "Intermediate Mobile Application Development: Android")
+       OR  
+  - CS 233JS, Intermediate JavaScript Programming 
+
+- Program Elective: CS 135M, Beginning Mobile App Development with JavaScript  
 
 - CS 161N, Beginning C# Programming
 
@@ -38,7 +37,7 @@ Classes to take next if you are pursuing the AAS in Software Development
 
   
 
-### Spring Term 2024
+### Spring Term 2025
 
 - CS 162N Intermediate C# Programming
 
@@ -46,19 +45,22 @@ Classes to take next if you are pursuing the AAS in Software Development
 
 - WR 227 Technical Writing
 
-- Program Elective: CS 135IM, Intermediate Mobile App Development with JavaScript
+- Program Elective: CS 235M, Intermediate Mobile App Development with JavaScript
+    OR  
+  
+- Program Elective: CS 295R, Web Development 1: React
 
   
 
 ## Reference
 
-[LCC 2023&ndash;2024 Class Schedule](https://www.lanecc.edu/programs-academics/registration-schedules-and-academic-calendar/class-schedule)
+[LCC 2024&ndash;2025 Class Schedule](https://www.lanecc.edu/programs-academics/registration-schedules-and-academic-calendar/class-schedule)
 
 [AAS in Software Development Program Info Page](https://www.lanecc.edu/programs-academics/areas-study/computer-science-and-information-technology/software-development)
 
-[AAS in Software Development Catalog Page](https://lanecc.smartcatalogiq.com/2023-2024/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas/)
+[AAS in Software Development Catalog Page](https://lanecc.smartcatalogiq.com/2024-2025/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas/)
 
-[AAS in Software Development Term-by-Termp Planner](https://lanecc.smartcatalogiq.com/-/media/institution/lane-community-college/2023-24-term-planners/Software%20Development%20Term%20Plan%2023-24.pdf)
+[AAS in Software Development Term-by-Term Planner](https://docs.google.com/document/d/1F8CJY1M7A4J9uJtGRDFRyF-0j7l2AVe0vpPE5vcfHXE/edit?tab=t.0)
 
 ------
 

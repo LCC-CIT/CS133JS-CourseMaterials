@@ -46,7 +46,7 @@ author: Brian Bird
 These examples use the array declared and initialized below:
 
 ```javascript
-let continents = ["Asia", "Africa", "North America", "South America", "Antarctica", "Europe", "Australia"];
+const continents = ["Asia", "Africa", "North America", "South America", "Antarctica", "Europe", "Australia"];
 ```
 
 
@@ -74,15 +74,15 @@ continents.splice(2, 2, "Americas"); // Remove N. and S. America, replace with A
 #### `concat`
 
 ```javascript
-let tooks = ["Merry", "Pippin"];
-let bagginses = ["Bilbo", "Frodo"];
-let hobbits = tooks.concat(bagginses);
+const tooks = ["Merry", "Pippin"];
+const bagginses = ["Bilbo", "Frodo"];
+const hobbits = tooks.concat(bagginses);
 ```
 
 Copy an array. 
 
 ```javascript
-let hobbitsCopy = [].concat(hobbits);
+const hobbitsCopy = [].concat(hobbits);
 ```
 
 #### `pop`
@@ -287,18 +287,18 @@ for (let item in fili)
 JavaScript objects have a pre-defined method for getting an array of property keys, the `Object.keys()` method. This makes it easy to use all the other loops with object properties.
 
 ```javascript
-let filiKeyArray = Object.keys(fili);
+const filiKeyArray = Object.keys(fili);
 ```
 
 You can also get an array of all the values in an object like this:
 
 ```javascript
-let filiValueArray = Object.values(fili);
+const filiValueArray = Object.values(fili);
 ```
 
 
 
-####`for...of` Loop&mdash;Just for Arrays
+#### `for...of` Loop&mdash;Just for Arrays
 
 The  `for`...`of` loop is specifically designed to operate on arrays.
 

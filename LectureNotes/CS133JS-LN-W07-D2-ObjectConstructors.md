@@ -30,10 +30,12 @@ author: Brian Bird
 
 ## Q and A
 
-- Lab 5, let's look at how to download the files.
-  - We'll look at the instructions at the end of the lecture.
-  - Any questions?
-- Does anyone have any questions about anything else?
+- Due this week:
+  - Lab 5: Thursday
+  - Reading quiz on objects: Thursday
+  - Lab 6 beta version: Sunday
+
+- Does anyone have any questions about anything?
 
 
 

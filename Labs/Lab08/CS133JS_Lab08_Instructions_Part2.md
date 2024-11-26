@@ -26,7 +26,7 @@ You goal in this lab is to improve the chatbot so that more user input strings w
 
 ### Set up the Chatbot on your Computer
 
-Download the [chatbot app files](https://github.com/LCC-CIT/CS133JS-CourseMaterials/archive/refs/tags/Lab8-Part2.zip) from GitHub (this link will download the files in a zip archive.) Unzip the files to an appropriate location on your machine.
+Download the [chatbot app files](https://github.com/LCC-CIT/CS133JS-CourseMaterials/releases/download/Lab8-Part2/Lab8Part2-ChatBotStarter.zip) from GitHub (this link will download the files in a zip archive.) Unzip the files to an appropriate location on your machine.
 
 You can run the chatbot by simply opening the index.html file in a browser.
 

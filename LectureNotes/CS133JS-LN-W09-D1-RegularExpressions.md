@@ -295,7 +295,7 @@ console.log(pattern.test("Python is an interesting language."));
 
 # Resource
 
-[Regular Expression Test Page](https://regexkit.com/javascript-regex/)
+[Regular Expression Test Page](https://regex101.com)&mdash;Regular Expressions 101
 
 Try out regular expressions to see how they work with different test strings.
 
@@ -308,6 +308,8 @@ Try out regular expressions to see how they work with different test strings.
 [JavaScript Guide: Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions)&mdash;MDN
 
 [Regular Expressions](https://eloquentjavascript.net/09_regexp.html)&mdash;Ch. 9 in *Eloquent JavaScript*, 3rd Edition, by Marijn Haverbeke, No Starch Press, 2018.
+
+[The Regular Expressions Book – RegEx for JavaScript Developers](https://www.freecodecamp.org/news/regular-expressions-for-javascript-developers/)&mdash;Kolade Chris, FreeCodeCamp, 2023.
 
 ------
 

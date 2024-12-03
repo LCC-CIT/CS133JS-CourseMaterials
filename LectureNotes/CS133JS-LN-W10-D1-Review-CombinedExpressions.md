@@ -17,26 +17,22 @@
 [TOC]
 
 ## Announcements
-- Today, Tuesday, November 28 from 2:00 to 4:00 pm there will be a [Study Jam in the library](https://library.lanecc.edu/). 
-  The library will provide free pizza and snacks for students as you study for finals. In addition to food and drink, there will be research help, tutoring, relaxation and yoga tips, and therapy dogs.
-- Tomorrow, Wednesday, November 29 from 9:00 am to 2:00 pm there is an [Advising & Financial Aid Reg Fest](https://www.lanecc.edu/community/events/drop-winter-reg-fest-0)  
-  Questions about financial aid, winter term registration and what courses to enroll in? Join us for a drop-in event with academic advising, financial aid and student services representatives. Can't make it? Student Services departments are available on drop-in Monday-Friday. 
-- Any late or extra credit assignments are due by the end of the day on Monday, 12/4/23.
-- CS 235AM, Mobile App Development is being offered next term (Winter 2024). You'll learn to make apps for iOS and Android using JavaScript.
+- Any late or extra credit assignments are due by the end of the day on Wednesday of next week (finals week).
+- CS 235AM, Mobile App Development is being offered next term (Winter term). You'll learn to make apps for iOS and Android using JavaScript.
 
 ### Q and A
 - How is lab 8 going?
   - Only part 1 is required. Is anyone doing part 2?
   - No code review required, production version due Thursday.
 - How is the term project going?
-  - Beta due today (Forum submission for your lab partner).
+  - Beta version: send it to your lab partner Tuesday.
   - Code review for your lab partner due Thursday.
-  - Production version due Monday.
+  - Production version due next Monday.
 - Final quiz
   - There is a, short, ungraded practice quiz open now.
   - Look at the review suggestions in [this week's overview](CS133JS-LN-W10-D0-Review.html).
-  - The final quiz is at the regular class time next Tuesday, December 5.
-    Or, take it in the [Instructional Testing Center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services?_gl=1*62xqx7*_ga*NDEyOTA4MDEzLjE1NzY2NDQ5NTc.*_ga_MMT5BK11VR*MTY4Mjk3ODA0OC4zMjguMS4xNjgyOTgwMTkxLjAuMC4w), Monday 12/4 through Wednesday 12/6.
+  - The final quiz is at the regular class time next week.
+    Or, take it in the [Instructional Testing Center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services?_gl=1*62xqx7*_ga*NDEyOTA4MDEzLjE1NzY2NDQ5NTc.*_ga_MMT5BK11VR*MTY4Mjk3ODA0OC4zMjguMS4xNjgyOTgwMTkxLjAuMC4w), Monday  through Wednesday next week.
   - Any questions?
 
 
@@ -191,4 +187,4 @@ We can combine this all into one statement:
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), <time>2023</time>, revised in <time>2024</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

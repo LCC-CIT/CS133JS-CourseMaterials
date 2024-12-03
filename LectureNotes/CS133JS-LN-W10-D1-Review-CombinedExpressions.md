@@ -23,16 +23,17 @@
 ### Q and A
 - How is lab 8 going?
   - Only part 1 is required. Is anyone doing part 2?
-  - No code review required, production version due Thursday.
+  - No code review required for part 1, production version due Thursday.
 - How is the term project going?
-  - Beta version: send it to your lab partner Tuesday.
-  - Code review for your lab partner due Thursday.
-  - Production version due next Monday.
+  (Dates are for fall 2024)
+  - Beta version: send it to your lab partner Thursday, 12/5.
+  - Code review for your lab partner due Friday, 12/6.
+  - Production version due next Tuesday, 12/6.
 - Final quiz
   - There is a, short, ungraded practice quiz open now.
   - Look at the review suggestions in [this week's overview](CS133JS-LN-W10-D0-Review.html).
   - The final quiz is at the regular class time next week.
-    Or, take it in the [Instructional Testing Center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services?_gl=1*62xqx7*_ga*NDEyOTA4MDEzLjE1NzY2NDQ5NTc.*_ga_MMT5BK11VR*MTY4Mjk3ODA0OC4zMjguMS4xNjgyOTgwMTkxLjAuMC4w), Monday  through Wednesday next week.
+    Or, take it in the [Instructional Testing Center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services?_gl=1*62xqx7*_ga*NDEyOTA4MDEzLjE1NzY2NDQ5NTc.*_ga_MMT5BK11VR*MTY4Mjk3ODA0OC4zMjguMS4xNjgyOTgwMTkxLjAuMC4w), Monday  through Wednesday next week. See their web site to for the times they are open.
   - Any questions?
 
 

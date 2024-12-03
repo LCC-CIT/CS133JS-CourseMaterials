@@ -15,7 +15,7 @@ Download the example apps and play with the code. Put breakpoints in it, and bef
 
 **Lab assignments**
 
-Review the code you wrote for the lab assignments. Make sure you understand how everything works. If there are things you don't understand, look for answers in the class readings, lecture notes, or on the web and post questions in the Q and A forum.
+Review the code you wrote for the lab assignments. Make sure you understand how everything works. If there are things you don't understand, look for answers in the class readings, lecture notes, or on the web and post questions on Discord.
 
 ### Together in Class
 

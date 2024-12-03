@@ -18,7 +18,7 @@
 
 ## Announcements
 - Any late or extra credit assignments are due by the end of the day on Wednesday of next week (finals week).
-- CS 235AM, Mobile App Development is being offered next term (Winter term). You'll learn to make apps for iOS and Android using JavaScript.
+- CS 135M, Mobile App Development is being offered next term (Winter term). You'll learn to make apps for iOS and Android using JavaScript.
 
 ### Q and A
 - How is lab 8 going?

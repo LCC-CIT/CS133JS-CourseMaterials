@@ -29,11 +29,11 @@ author: Brian Bird
 
 ### Announcements
 
-**For Winter 2024**
+### What's Due
 
-- This week's quiz on events closes next Wednesday, 3/13, the same date as next week's quiz. This was an accident, but I don't think it's fair to move a due date back. Do the reading and take the quiz as soon as you can!
-- Lab 6 (objects) is due tomorrow night (Thursday).
-- I need to catch up on grading and read all your term project proposals.
+- This week's reading quiz on events closes Thursday.
+- Lab 6 (objects) is due Thursday as well.
+- Lab 7, beta version, is due Sunday.
 
 ### Q and A
 

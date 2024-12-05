@@ -31,16 +31,20 @@ author: Brian Bird
 
 ## Announcements
 
-**For winter 2024**
+**For fall 2024**
 
 - **Due dates:** 
 
-  - Lab 7, on JavaScript events, code review due tomorrow (Tuesday), 3/12.
-  - This week's quiz closes Wednesday at class time, 3/13.
-  - Lab 7 production version due Thursday, 3/14.
-  - Term project code review due Friday, 3/15.
-  - Lab 8 on regular expressions doesn't require a code review, only part 1 is required, due Sunday, 3/17.
-  - Term project due Tuesday, 3/19.
+  - Lab 7 on JavaScript events:
+    - Code review due Tuesday, 11/26.
+    - Production version due Sunday, 12/1.
+      (The due date is pushed out due to the Thanksgiving holiday)
+  - This week's quiz on regular  expressions closes Sunday, 12/1.
+  - Lab 8 on regular expressions, only part 1 is required, part 2 is extra credit:
+    - Part 2 code review due Tuesday, 12/3.
+    - Part 1 and part 2 production version due Thursday, 12/5.
+  - Term project code review due Thursday, 12/5.
+  - Term project due Tuesday, 12/10.
 
 
 ### Q and A
@@ -291,7 +295,7 @@ console.log(pattern.test("Python is an interesting language."));
 
 # Resource
 
-[Regular Expression Test Page](https://regexkit.com/javascript-regex/)
+[Regular Expression Test Page](https://regex101.com)&mdash;Regular Expressions 101
 
 Try out regular expressions to see how they work with different test strings.
 
@@ -304,6 +308,8 @@ Try out regular expressions to see how they work with different test strings.
 [JavaScript Guide: Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions)&mdash;MDN
 
 [Regular Expressions](https://eloquentjavascript.net/09_regexp.html)&mdash;Ch. 9 in *Eloquent JavaScript*, 3rd Edition, by Marijn Haverbeke, No Starch Press, 2018.
+
+[The Regular Expressions Book – RegEx for JavaScript Developers](https://www.freecodecamp.org/news/regular-expressions-for-javascript-developers/)&mdash;Kolade Chris, FreeCodeCamp, 2023.
 
 ------
 

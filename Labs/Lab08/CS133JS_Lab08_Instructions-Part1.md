@@ -21,8 +21,8 @@ The purpose of this assignment is to get practice using regular expression synta
 
 There are two files to use for this exercise. Right click on each link and select "Save link as" to download the files. Please do not rename them.
 
-- [RegExpExercises.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab08/RegExpExercises.html)
-- [RegExpExercises.js](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab08/RegExpExercises.js)
+- [RegExpExercises.html](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab08/Part1-RegexExercises/RegExpExercises.html)
+- [RegExpExercises.js](https://lcc-cit.github.io/CS133JS-CourseMaterials/Labs/Lab08/Part1-RegexExercises/RegExpExercises.js)
 
 The HTML file contains instructions and code to check the solution to each problem. You will complete the "TODO" parts of the JavaScript file. For this lab, that means writing the regular expressions.
 

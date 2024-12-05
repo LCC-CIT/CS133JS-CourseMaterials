@@ -20,7 +20,7 @@ author: Brian Bird
 
 ## Upcoming Software Development Courses
 
-Classes to take next if you are pursuing the AAS in Software Development 
+These are the classes you are recommended to take next if you are pursuing the AAS in Software Development 
 
 ### Winter Term 2025
 
@@ -42,14 +42,19 @@ Classes to take next if you are pursuing the AAS in Software Development
 - CS 162N Intermediate C# Programming
 
 - CS 233JS, Intermediate JavaScript Programming 
+    (If you didn't take it winter term.)
 
 - WR 227 Technical Writing
 
-- Program Elective: CS 235M, Intermediate Mobile App Development with JavaScript
-    OR  
+- Program Elective: CS 235M, Intermediate Mobile App Development with JavaScript  
+    
+  Take this to get the Mobile App Development certificate
   
-- Program Elective: CS 295R, Web Development 1: React
-
+  OR  
+  
+- Program Elective: CS 295R, Web Development 1: React  
+  Take this to get the front-end web development certificate
+  
   
 
 ## Reference

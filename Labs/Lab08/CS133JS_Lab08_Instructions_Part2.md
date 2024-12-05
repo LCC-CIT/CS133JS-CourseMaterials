@@ -10,8 +10,9 @@ author: Brian Bird
 
 
 <h1>Lab 8, Regular Expressions, Part 2: Chatbot</h1
-
 **CS 133JS, Beginning Programming: JavaScript**
+
+[TOC]
 
 ## Overview
 
@@ -19,13 +20,13 @@ There is only one version of this lab assignment for all groups. You will not do
 
 The objective of this lab assignment is to get practice using string methods as well as regular expressions and the JavaScript RegExp object.
 
-## Instructions
+## About the Chatbot Code
 
 You goal in this lab is to improve the chatbot so that more user input strings will match the chatbot prompt strings that trigger the chatbot's responses.
 
 ### Set up the Chatbot on your Computer
 
-Download the [chatbot app files](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/LCC-CIT/CS133JS-CourseMaterials/tree/master/Labs/Lab08/ChatBotStarter) from github (this link will download the files in a zip archive.) Unzip the files to an appropriate location on your machine.
+Download the [chatbot app files](https://github.com/LCC-CIT/CS133JS-CourseMaterials/releases/download/Lab8-Part2/Lab8Part2-ChatBotStarter.zip) from GitHub (this link will download the files in a zip archive.) Unzip the files to an appropriate location on your machine.
 
 You can run the chatbot by simply opening the index.html file in a browser.
 
@@ -35,7 +36,7 @@ There are two *parallel arrays*: `prompts` and `replies`. When the user enters a
 
 The prompts and replies arrays are 2D arrays which are arranged with each outer array containing a "row" of elements in an inner array. All the prompts in a given row are meant to match all the replies in a given row.
 
-### Modify the Code that Matches User Input to Prompts
+### Finding the Prompt that is the Best Match to User Input
 
 The strategy we'll use to improve matches is to add code that can do partial matches between the user input string and the prompts. We will still want to give first priority to user input that exactly matches one of the prompts, but if the user input doesn't match any prompts, we want to be able to find a partial match.
 
@@ -109,6 +110,14 @@ If the outer for loop has completed and there wasn't an exact match, then we wil
     }
 ```
 
+## Instructions
+
+You will modify the chatbot code to improve its performance.
+
+### Add or Modify the RegExp Code
+
+In the `output` function in `index.js`, there are a series of calls to the `.replace` method on the text input by the user. Modify or add at least five of these to improve the way user input is matched to the prompts (perhaps, specifically to your new prompts).
+
 ### Add More Prompts and Replies
 
 Add at least five more rows of prompts and replies to the chatbot. Look at the way the input has been "regularized" in the `output` function and write your prompts accordingly.
@@ -131,4 +140,12 @@ This will be a total of 3 files.
 ### References
 
 Sylvia Pap, [Make a Simple Chatbot with JavaScript!](https://dev.to/sylviapap/make-a-simple-chatbot-with-javascript-1gc?signin=true), Dev Community, 2020.
+
+
+
+------
+
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+
+------------
 

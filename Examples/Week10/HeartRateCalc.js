@@ -1,3 +1,6 @@
+// Solution to an exercise in the final review lecture notes for CS 133JS
+// By Brian Bird, 12/5/2024
+
 let age = prompt("Enter your age");
 let activityLevel = prompt("Do you want to do moderate or vigorous exercise? (m or v)");
 

@@ -1,4 +1,7 @@
-// Original Code
+// Solution to an exercise in the final review lecture notes for CS 133JS
+// By Brian Bird, 12/5/2024
+
+// Original code from lecture notes
 /*
 const QUALIFYING_TIME = 11.15;
 // Array of runner objects with name and time properties

@@ -303,22 +303,53 @@ You can also define an *anonymous function* when adding the event listener:
 
 
 
-If you want to add a function that has parameters to an HTML element, you need to "wrap" that function in an anonymous function ("wrap", means call it from inside another function), like this:
+#### Dynamically Add an Event Handler to call a Function with Parameters
+
+If you want to add an event handler that has parameters to an HTML element, you need to "wrap" that function in an anonymous function ("wrap", means call it from inside another function), like this:
 
 ```html
-<button>Button A</button>
+<button>Send Message</button>
 <p><span></span></p>
 
 <script>
   document.querySelector("button").addEventListener("click", 
-  function ()  // Anonymous function that calls the event handler
+  function ()  // Anonymous function that calls the target function
  {
-			buttonPressed("I was clicked!");
+			buttonPressed("You clicked the button!");
   });
                                                     
-  // Actual event handler
+  // Target function
   function buttonPressed(message) {
     document.querySelector("span").textContent = message;
+  }
+</script>
+```
+
+
+
+If you want to pass values from HTML input elements to the dynamically added event handler, you can do that in the function that wraps the event handler.
+
+Best practice is to put the web page i/o code in the event listener and not in the function that it calls. The function it calls, should just do processing.
+
+```html
+Enter your name:
+<input id="name" placeholder="Your name"><br>
+<button>Send Message</button>
+<p><span></span></p>
+
+<script>
+  document.querySelector("button").addEventListener("click", 
+  function ()  // Anonymous function that calls another function
+ {
+    	// Do the web page i/o here
+    	let name = cocument.getElementbyID("name").value;
+			let message = makeMessage(name, "clicked the button!");
+    	document.querySelector("span").textContent = message;
+  });
+                                                    
+  // Method that does the processing
+  function makeMessage(name, message) {
+		  return name + " " + message;
   }
 </script>
 ```

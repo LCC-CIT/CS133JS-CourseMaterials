@@ -35,9 +35,12 @@ author: Brian Bird
 
   (No duplicated blocks of code).
   
+- Separation of concerns.  
+  Functions that do processing should not also do i/o.
+  
 - Functions
 
-  - Names should be descriptive and camelCase.
+  - Names should be descriptive and use camelCase.
   - Should have at most one return statement.
   - Should have a single purpose.
 

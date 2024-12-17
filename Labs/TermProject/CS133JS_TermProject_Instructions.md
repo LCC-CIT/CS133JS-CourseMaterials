@@ -36,7 +36,10 @@ You can choose a project from the list of suggestions below or propose one based
   
   - Not be the same as any of the class or textbook examples.
   - Not be the same as a project being done by another student in the class.
-  - Not use code you got from someone else, the internet, or AI.
+  -  Not use code you got from someone else, the internet, or AI.
+  -  Provide attribution where appropriate.
+     -  If you use assets like images or sound files, provide some kind of attribution for them even if you created them yourself or used AI to create them.
+     -  If you got "inspiration" for some part of your project from someone else, the internet, or AI, give attribution for that as well.
 
 ## Project Suggestions
 

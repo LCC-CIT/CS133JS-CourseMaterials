@@ -25,18 +25,18 @@ author: Brian Bird
 
 [TOC]
 
-# Introduction
+## Introduction
 
-## About Me
+### About Me
 
-- Why I like to program
-- Job history
+- Why I like to create software
+- Professional history
 - What I teach
-- LCC's Programming Degree
+- LCC's Software Development degree
 
-## Course Prerequisites
+### Course Prerequisites
 
-You need to know a little bit of HTML which is taught in CIS 195, Web Authoring, and which can be taken at the same time as this class. These are the specific parts of HTML you will need to know:
+You need to know a little bit of HTML which is taught in CIS 195, Web Authoring, and which can be taken at the same time as this course. These are the specific parts of HTML you will need to know:
 
 - HTML elements and tags
 - Attributes (key-value pairs inside the opening tag of a element)
@@ -59,7 +59,7 @@ A good way to review these topics or to get a head-start on them if you are curr
 
 ### Exercise
 
-[LCC](https://www.lanecc.edu/) web site – which parts are interactive?
+- [LCC](https://www.lanecc.edu/) web site – which parts are interactive?
 
 
 ​       			
@@ -67,7 +67,7 @@ A good way to review these topics or to get a head-start on them if you are curr
 ## Server-side vs. client side code
 
 - Server-side code vs. client side (browser) code
-   (Draw a picture)
+   ![Server-ClientCodeDiagram](Images/Server-ClientCodeDiagram.png)
 - What needs to happen on the server?  
   - Storing data
   - Interaction with other users
@@ -93,27 +93,27 @@ Revisit these and discuss what might run on the server and what might run in the
 
 
 
-# Intro to JavaScript 
+## Intro to JavaScript 
 
 - Provides interactivity using client-side code.
   
-  - Originally designed to just run in web browsers (client-side code) but now used everywhere including: server-side, desktop, and mobile.
+  - Originally designed to just run in web browsers (client-side code) but now used everywhere including: server-side, desktop, and mobile thanks to *Node.js*.
   
 - A completely different language from Java, but has some similarities
 
   - JS is interpreted, dynamically typed, and multi-paradigm (procedural & Object Oriented, imperative & functional). *We’ll explain these things later.*
 
-  ## Guided Exercise: Hello world
+  ### Guided Exercise: Hello world
 
   1. Set up your computer to do JavaScript development.
-     - Install [Firefox](https://www.mozilla.org/en-US/firefox/new/).
-  2. Open Firefox, press F12, and select console. We'll put this code in the console.
+     - Install [Chrome](https://www.google.com/chrome/dr/download) if it isn't already installed on your computer.
+  2. Open Chrome, press F12, and select console. We'll put this code in the console.
      (Almost any browser will have a similar feature in it's *developer* menu)
   3. Enter the code below. (This is simple, but not very useful.) 
   ```javascript
   document.write("<p>Hello world!</p>");
   ```
-  3. Lets add a *variable* named `name`. A variable is a thing we can use to store information. Now you'll be able to change the name, but you'll need to change the source code to do it  :-(
+  3. Lets add a *variable* named `name`. A variable is a thing we can use to store information. Now you'll be able to change the name, but you'll need to change the code to do it  :-(
   ```javascript
    var name = "world"; // can change to “other names”
    		 document.write("<p>Hello " + name + "!</p>");
@@ -135,9 +135,9 @@ Let's talk about how this works by looking at some key pieces of the code:
   A function built into JavaScript that pops up a dialog box that displays a message on the web page and lets the user enter some input.
 - `=`
   The *assignment operator*. It takes the information (in this case a name) coming from the prompt on the right and puts it into the variable on the left.  
-  **Note**: in computer programming, the direction information flows with the `=` symbol is the opposite of algebra.
+  **Note**: in computer programming, the direction information flows with the `=` symbol, right to left, is the opposite of algebra.
 
-# Course Tour
+## Course Tour
 
 - Syllabus – quick overview
 
@@ -174,6 +174,6 @@ The *reserved words* are the "vocabulary" of JavaScript.
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------

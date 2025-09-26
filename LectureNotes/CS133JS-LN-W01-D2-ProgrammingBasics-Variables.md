@@ -25,22 +25,7 @@ keywords: control structures, syntax, operators, variables, data types, type con
 
 [TOC]
 
-# Announcements for Fall 2024
-
-- Assignment groups and lab partners
-  - I have put everyone into assignment groups. Groups A, B, and C are the lab assignment groups. Each group gets a different version of the lab assignment.
-  - I assign lab partners tomorrow. Numbered groups, 1, 2, 3, etc. are lab partner groups. There are three lab partners in each group and each of you are doing a different version of the lab assignment.
-- What's due this week
-  - Reading quiz due today
-  - <s>Beta version of lab 1 due Sunday</s> 
-    I'm having you submit part 1 and part 2 of this assignment separately since we ran out of time to talk about part 2 of the lab in class today.
-    - Just submit part 1 of lab 1 by Sunday.
-    - Part 2 will be due next Thursday.
-      In the future, you will submit parts 1 and 2 together.
-
-- No-show, drop reminder.
-
-# Intro to Programming
+## Intro to Programming
 
 Programs are sets of instructions. They implement Algorithms.
 
@@ -62,7 +47,7 @@ An algorithm is a step-by-step set of instructions for doing something.
 **Exercise:** How would we write the algorithm for the hello world program we ran yesterday? 
 (It's listed a few paragraphs down on this page.)
 
-## Three control structures
+### Three control structures
 
 - Sequence – we will learn this first
 - Selection (if statements)
@@ -70,7 +55,7 @@ An algorithm is a step-by-step set of instructions for doing something.
 
 **Question:** Which control structure was used in the grilled cheese algorithm? What about the hello world program?
 
-## Syntax
+### Syntax
 
 The grammar of a programming language
 
@@ -79,7 +64,7 @@ The grammar of a programming language
 - Keywords (reserved words): http://www.w3schools.com/js/js_reserved.asp
 - Statements – End with a semicolon
 
-## JavaScript Programming
+### JavaScript Programming
 
 - Console vs. Web page
 - Input and output (i/o)
@@ -101,15 +86,15 @@ The grammar of a programming language
 
  	
 
-# JavaScript Variables and Data Types
+## JavaScript Variables and Data Types
 
-## Variables 
+### Variables 
 Variables are named memory locations.
 
 - Instructor: draw a picture representing variables in computer memory.
 - Variables are *declared* with `var` or `let` (we'll talk about `let` later).
 
-## Example: Hello world
+### Example: Hello world
 
 Last time, we wrote this code and ran it in the browser console: 
 
@@ -117,7 +102,7 @@ Last time, we wrote this code and ran it in the browser console:
   var name = prompt("Please enter your name");
       		document.write("Hello " + name + "!");
   ```
-### Using Visual Studio Code
+#### Using Visual Studio Code
 
 This time, we'll put it in a web page, but, first, install [Visual Studio Code](https://code.visualstudio.com/). 
 And, optionally, add the following extensions:
@@ -126,7 +111,7 @@ And, optionally, add the following extensions:
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Beautify](https://marketplace.visualstudio.com/items?÷itemName=HookyQR.beautify)
 
-### Putting JS Code in an HTML `<script>` Element
+#### Putting JS Code in an HTML `<script>` Element
 
 Using VS Code, start with a standard [empty HTML page](../Examples/Empty.html) and add this code to the head element inside of a HTML &lt;script&gt; element:
 
@@ -178,7 +163,7 @@ Variables that are declared in one &lt;script&gt; element are visible in all the
     document.write("Hello " + firstName + " " 		+ lastName + "!");
   ```
 
-#### Discussion
+##### Discussion
 
 
 - Two meanings for `+` (it’s an *overloaded* operator)  	
@@ -212,9 +197,9 @@ Variables that are declared in one &lt;script&gt; element are visible in all the
 
 ​    
 
-## Data Types 
+### Data Types 
 
-### Primitive Types
+#### Primitive Types
 
 - string
 - number
@@ -237,7 +222,7 @@ console.log(typeof truth);
 console.log(typeof stuff); 
 ```
 
-#### Null and Undefined
+##### Null and Undefined
 
 This is a bit tricky. If we use the `typeof` keyword to check the type of a variable and we haven't assigned a value to that variable, then it will show its type as *undefined*. Also, if we check its value, it will be *undefined*.  So *undefine*d can be either a description of the value or of the data type. 
 
@@ -256,7 +241,7 @@ console.log(typeof thing);
 
 
 
-### Mixing data types 
+#### Mixing data types 
 
 What is happening here?
 
@@ -294,7 +279,7 @@ Note: these examples assume the variable declarations at the beginning of this s
   console.log(result);
   ```
 
-### Converting Data Types
+#### Converting Data Types
 
 - String to number : use [parseInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt), [parseFloat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat), or [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/Number)
   ```javascript
@@ -303,20 +288,28 @@ Note: these examples assume the variable declarations at the beginning of this s
   var score = Number("95.7"); // use this for any kind of number
   ```
 
-- Learn about other [type conversions on W3Schools](https://www.w3schools.com/js/js_type_conversion.asp).
+- 
 
 
-### Variable Naming Rules and Conventions
+#### Variable Naming Rules and Conventions
 
 - Variable names must start with a letter, _ (underscore), or &dollar; (dollar sign). You can’t use a number as the first character. The rest of the variable name can include any letter, number, &dollar;, or _,  but no other characters including spaces, symbols, and punctuation marks.
 - Normally, variables are named using *camelCase*, meaning that if a variable name is a compound word, the first word is all lower case and the first letter of any additional words are upper case.
 - Variable names should be descriptive of what they are used for.
 
+## References
+
+-  [Visual Studio Code](https://code.visualstudio.com/)
+- [Debugger for Firefox](https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Beautify](https://marketplace.visualstudio.com/items?÷itemName=HookyQR.beautify)
+- [Type conversions on W3Schools](https://www.w3schools.com/js/js_type_conversion.asp).
+
 
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
 
 ------------
 

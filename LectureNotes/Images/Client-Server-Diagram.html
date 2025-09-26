@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server vs. Client Code Diagram</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the drawing lines/text */
+        .diagram-container {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen p-4">
+
+    <div class="diagram-container bg-white p-8 rounded-xl shadow-2xl max-w-4xl w-full">
+
+        <!-- SVG Diagram -->
+        <svg viewBox="0 0 800 450" class="w-full h-auto" xmlns="http://www.w3.org/2000/svg">
+            <!-- Global Styles -->
+            <defs>
+                <style>
+                    .box-server { fill: #fef2f2; stroke: #b91c1c; stroke-width: 3; }
+                    .box-client { fill: #f0f4ff; stroke: #4f46e5; stroke-width: 3; }
+                    /* New style for the Internet box */
+                    .box-internet { fill: #ecfdf5; stroke: #059669; stroke-dasharray: 8; stroke-width: 2; } 
+                    .label { font-size: 20px; font-weight: bold; fill: #1f2937; }
+                    .code-text { font-size: 16px; fill: #374151; font-family: monospace; }
+                    .flow-line { stroke: #10b981; stroke-width: 4; marker-end: url(#arrowhead); }
+                    .flow-text { font-size: 18px; font-weight: 600; fill: #059669; }
+                    .internet-label { font-size: 22px; font-weight: 900; fill: #047857; }
+                </style>
+                <!-- Arrowhead Marker (Points towards the end of the line segment) -->
+                <!-- Size is 8x5 -->
+                <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="8" refY="2.5" orient="auto">
+                    <polygon points="0 0, 8 2.5, 0 5" fill="#10b981" />
+                </marker>
+            </defs>
+
+            <!-- 1. Server Box (Left) - Starts at x=0, ends at x=300 -->
+            <rect x="0" y="50" width="300" height="350" rx="20" class="box-server shadow-lg"/>
+            <text x="150" y="85" text-anchor="middle" class="label" style="fill: #991b1b;">SERVER</text>
+
+            <!-- Server-Side Code Details -->
+            <text x="150" y="120" text-anchor="middle" class="code-text" style="font-weight: bold; fill: #991b1b;">Server-Side Code</text>
+            <text x="150" y="150" text-anchor="middle" class="code-text">Backend Language</text>
+            <text x="150" y="170" text-anchor="middle" class="code-text">(Python, JS, C#, etc.)</text>
+           <text x="150" y="200" text-anchor="middle" class="code-text">Application Logic</text>
+            <text x="150" y="230" text-anchor="middle" class="code-text">Database Access & Security</text>
+            <text x="150" y="270" text-anchor="middle" class="code-text" style="font-weight: bold; fill: #991b1b;">Executed on Remote Machine</text>
+            <text x="150" y="300" text-anchor="middle" class="code-text" style="font-style: italic; fill: #6b7280;">Generates/Manages Data</text>
+
+
+            <!-- 2. Client/Browser Box (Right) - Starts at x=500, ends at x=800 -->
+            <rect x="500" y="50" width="300" height="350" rx="20" class="box-client shadow-lg"/>
+            <text x="650" y="85" text-anchor="middle" class="label">CLIENT</text>
+
+            <!-- Client-Side Code Details -->
+            <text x="650" y="120" text-anchor="middle" class="code-text" style="font-weight: bold; fill: #1e3a8a;">Client-Side Code</text>
+            <text x="650" y="150" text-anchor="middle" class="code-text">HTML (Structure)</text>
+            <text x="650" y="180" text-anchor="middle" class="code-text">CSS (Style & Layout)</text>
+            <text x="650" y="210" text-anchor="middle" class="code-text">JavaScript (Interaction/DOM)</text>
+            <text x="650" y="250" text-anchor="middle" class="code-text" style="font-weight: bold; fill: #1e3a8a;">Executed on User's Device</text>
+            <text x="650" y="280" text-anchor="middle" class="code-text" style="font-style: italic; fill: #6b7280;">Handles UI and Presentation</text>
+
+            
+            <!-- 3. Internet Region Background (Between 300 and 500) -->
+            <rect x="300" y="105" width="200" height="240" rx="10" class="box-internet"/>
+            <!-- MOVED Y from 55 to 90 -->
+            <text x="400" y="90" text-anchor="middle" class="internet-label">THE INTERNET</text>
+
+
+            <!-- 4. Flow Line (Top: Request - Right to Left) -->
+            <line x1="500" y1="160" x2="300" y2="160" class="flow-line"/>
+            <text x="400" y="140" text-anchor="middle" class="flow-text">1. HTTP Request</text>
+            <text x="400" y="185" text-anchor="middle" class="flow-text" style="font-size: 14px; fill: #6b7280;">(User action/Page load)</text>
+
+
+            <!-- 5. Flow Line (Bottom: Response - Left to Right) -->
+            <line x1="300" y1="285" x2="500" y2="285" class="flow-line"/>
+            <text x="400" y="265" text-anchor="middle" class="flow-text">2. HTTP Response</text>
+            <text x="400" y="310" text-anchor="middle" class="flow-text" style="font-size: 14px; fill: #6b7280;">(Data/HTML/Assets)</text>
+
+        </svg>
+
+      </div>
+
+</body>
+</html>

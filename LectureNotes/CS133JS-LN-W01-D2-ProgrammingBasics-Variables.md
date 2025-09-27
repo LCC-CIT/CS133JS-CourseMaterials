@@ -1,4 +1,5 @@
 ---
+
 title: Programming Basics
 description: Introduction to the basic programming concepts for all programming languages: control structures, syntax and data types. Intro to specifics of JavaScript and how to use Visual Studio Code.
 material: Lecture Notes
@@ -25,6 +26,19 @@ keywords: control structures, syntax, operators, variables, data types, type con
 
 [TOC]
 
+## Review
+
+Last time, we wrote a simple hello world program:
+
+```javascript
+var name = prompt("Please enter your name");
+document.write("<p>Hello " + name + "!</p>");
+```
+
+- Where is the variable? What does it do?
+- What do the `+` operators do in this context?
+- Explain how each line in this program works.
+
 ## Intro to Programming
 
 Programs are sets of instructions. They implement Algorithms.
@@ -49,7 +63,7 @@ An algorithm is a step-by-step set of instructions for doing something.
 
 ### Three control structures
 
-- Sequence – we will learn this first
+- Sequence&mdash;we will learn this first
 - Selection (if statements)
 - Repetition (loops)
 
@@ -62,7 +76,7 @@ The grammar of a programming language
 - Variables
 - Operators: =, +, -, *, /, %, ++, --
 - Keywords (reserved words): http://www.w3schools.com/js/js_reserved.asp
-- Statements – End with a semicolon
+- Statements&mdash;End with a semicolon
 
 ### JavaScript Programming
 
@@ -105,15 +119,11 @@ Last time, we wrote this code and ran it in the browser console:
 #### Using Visual Studio Code
 
 This time, we'll put it in a web page, but, first, install [Visual Studio Code](https://code.visualstudio.com/). 
-And, optionally, add the following extensions:
-
-- [Debugger for Firefox](https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Beautify](https://marketplace.visualstudio.com/items?÷itemName=HookyQR.beautify)
+And, optionally, the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension.
 
 #### Putting JS Code in an HTML `<script>` Element
 
-Using VS Code, start with a standard [empty HTML page](../Examples/Empty.html) and add this code to the head element inside of a HTML &lt;script&gt; element:
+Using VS Code, start with a standard [empty HTML page](../Examples/Empty.html)[^1] and add this code to the head element inside of a HTML &lt;script&gt; element:
 
 ```HTML
 <head>
@@ -226,7 +236,7 @@ console.log(typeof stuff);
 
 This is a bit tricky. If we use the `typeof` keyword to check the type of a variable and we haven't assigned a value to that variable, then it will show its type as *undefined*. Also, if we check its value, it will be *undefined*.  So *undefine*d can be either a description of the value or of the data type. 
 
-But, *null* is just a value[^1]. It's the value that means "nothing", which is not the same as zero.
+But, *null* is just a value[^2]. It's the value that means "nothing", which is not the same as zero.
 
 Try this in the console:
 
@@ -300,9 +310,6 @@ Note: these examples assume the variable declarations at the beginning of this s
 ## References
 
 -  [Visual Studio Code](https://code.visualstudio.com/)
-- [Debugger for Firefox](https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug)
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Beautify](https://marketplace.visualstudio.com/items?÷itemName=HookyQR.beautify)
 - [Type conversions on W3Schools](https://www.w3schools.com/js/js_type_conversion.asp).
 
 
@@ -313,4 +320,5 @@ Note: these examples assume the variable declarations at the beginning of this s
 
 ------------
 
-[^1]: I disagree with the textbook, *Eloquaint JavaScript*, on this point. In [chapter 1](https://eloquentjavascript.net/01_values.html), the author asserts that both `null` and `undefined` are types, but I would say that `undefined` is a type and `null` is a value.
+[^1]: You can also use [Emmet](https://emmet.io/), which is built into VS Code, to insert "boilerplate" for an empty web page. In an HTML file, type `!` and then press tab to expand it into the HTML boilerplate.
+[^2]: I disagree with the textbook, *Eloquaint JavaScript*, on this point. In [chapter 1](https://eloquentjavascript.net/01_values.html), the author asserts that both `null` and `undefined` are types, but I would say that `undefined` is a type and `null` is a value.

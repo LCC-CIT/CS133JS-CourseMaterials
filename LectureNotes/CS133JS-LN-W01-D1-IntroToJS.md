@@ -122,7 +122,7 @@ Revisit these and discuss what might run on the server and what might run in the
 4. Finally, we'll add a way for a user to enter information. We do that by adding code that prompts the user for input.
   ```javascript
   var name = prompt("Please enter your name");
-  	document.write("<p>Hello " + name + "!</p>");
+  document.write("<p>Hello " + name + "!</p>");
   ```
   Now it's almost useful :-)
 

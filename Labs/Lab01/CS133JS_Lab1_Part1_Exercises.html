@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>CS133JS_Lab1_Part1_Exercises</title>
+</head>
+<body><h1>Lab 1: First JavaScript Exercises</h1>
+<p>These exercises require you to use only the concepts covered in the first week of class: variable declaration (<code>var</code>), user input (<code>prompt()</code>), arithmetic operators, string concatenation, and explicit type conversion functions.</p>
+<p><strong>IMPORTANT:</strong> For every exercise, all final output MUST be displayed on the web page using the <strong><code>document.write()</code></strong> method. Remember to include necessary HTML elements (like <code>&lt;p&gt;</code> or <code>&lt;br /&gt;</code>) in your output strings for formatting.</p>
+<h2 id='exercise-1-the-simple-greeter'>Exercise 1: The Simple Greeter</h2>
+<p><strong>Concept Focus:</strong> <code>prompt()</code>, <code>var</code>, String Concatenation, <code>document.write()</code></p>
+<p>Write a JavaScript program that does the following:</p>
+<ol start='' >
+<li><strong>Prompts</strong> the user to enter their first name.</li>
+<li>Stores the input in a variable named <code>firstName</code>.</li>
+<li>Uses <strong><code>document.write()</code></strong> to display a greeting on the web page that says, &quot;<strong>Welcome, [User&#39;s Name]! This is your first JS program.</strong>&quot; Ensure the output is formatted as a paragraph.</li>
+
+</ol>
+<h2 id='exercise-2-basic-arithmetic-calculation'>Exercise 2: Basic Arithmetic Calculation</h2>
+<p><strong>Concept Focus:</strong> <code>var</code>, Arithmetic Operators (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>), <code>document.write()</code></p>
+<p>Write a program that uses pre-defined variables (no input needed):</p>
+<ol start='' >
+<li>Declare a variable <code>price</code> and assign it the value 15.50.</li>
+<li>Declare a variable <code>quantity</code> and assign it the value 3.</li>
+<li>Calculate the <code>totalCost</code> by multiplying <code>price</code> and <code>quantity</code>.</li>
+<li>Use <strong><code>document.write()</code></strong> to display the result on the web page in the format: &quot;The total cost is: [Total Cost]&quot;.</li>
+
+</ol>
+<h2 id='exercise-3-time-conversion-modulus-operator'>Exercise 3: Time Conversion (Modulus Operator)</h2>
+<p><strong>Concept Focus:</strong> Arithmetic Operators (<code>%</code>, <code>/</code>), <code>var</code>, Integer Math</p>
+<p>Write a program that converts seconds into minutes and remaining seconds:</p>
+<ol start='' >
+<li>Declare a variable <code>totalSeconds</code> and assign it the value 325.</li>
+<li>Calculate the <code>minutes</code> using the division operator.</li>
+<li>Calculate the <code>remainingSeconds</code> using the modulus operator (<code>%</code>).</li>
+<li>Use <strong><code>document.write()</code></strong> to display the final result on the web page, for example: &quot;<strong>325 seconds is equal to 5 minutes and 25 seconds.</strong>&quot;</li>
+
+</ol>
+<h2 id='exercise-4-area-calculator-with-type-conversion'>Exercise 4: Area Calculator with Type Conversion</h2>
+<p><strong>Concept Focus:</strong> <code>prompt()</code>, <code>parseInt()</code>, Arithmetic Operators, <code>document.write()</code></p>
+<p>Write a program that calculates the area of a rectangle:</p>
+<ol start='' >
+<li><strong>Prompt</strong> the user to enter the rectangle&#39;s width.</li>
+<li><strong>Prompt</strong> the user to enter the rectangle&#39;s height.</li>
+<li>Use <strong><code>parseInt()</code></strong> on both inputs to convert them to numbers.</li>
+<li>Calculate the <code>area</code> (width × height).</li>
+<li>Use <strong><code>document.write()</code></strong> to show the final area on the web page, clearly labeled.</li>
+
+</ol>
+<h2 id='exercise-5-the-overloaded-plus-output'>Exercise 5: The Overloaded Plus Output</h2>
+<p><strong>Concept Focus:</strong> Overloaded <code>+</code> operator, String and Number Mixing, <code>document.write()</code></p>
+<p>Write the following code snippet and then confirm the result by displaying it to the web page.</p>
+<ol start='' >
+<li><p>Write the following variables and calculation:</p>
+<pre><code>var myNumber = 5;
+var myString = &quot;5&quot;;
+var result = myNumber + myString;
+</code></pre>
+</li>
+<li><p>Use <strong><code>document.write()</code></strong> to display the value of the <code>result</code> variable.</p>
+</li>
+
+</ol>
+<h2 id='exercise-6-increment-and-decrement-display'>Exercise 6: Increment and Decrement Display</h2>
+<p><strong>Concept Focus:</strong> Increment (<code>++</code>) and Decrement (<code>--</code>) Operators, <code>document.write()</code></p>
+<p>Write a program to demonstrate the use of the unary operators:</p>
+<ol start='' >
+<li>Declare a variable <code>counter</code> and set its value to 10.</li>
+<li>Use the increment operator (<code>++</code>) on <code>counter</code>.</li>
+<li>Use <strong><code>document.write()</code></strong> to show the new value of <code>counter</code> on a new line.</li>
+<li>Use the decrement operator (<code>--</code>) on <code>counter</code>.</li>
+<li>Use <strong><code>document.write()</code></strong> to show the final value of <code>counter</code> on a new line.</li>
+
+</ol>
+<h2 id='exercise-7-floating-point-average'>Exercise 7: Floating Point Average</h2>
+<p><strong>Concept Focus:</strong> <code>prompt()</code>, <code>parseFloat()</code>, Division Operator, <code>document.write()</code></p>
+<p>Write a program to calculate the average of three quiz scores, allowing for decimal values:</p>
+<ol start='' >
+<li><strong>Prompt</strong> the user to enter three separate quiz scores (e.g., 88.5,92,79.5).</li>
+<li>Use <strong><code>parseFloat()</code></strong> on all three inputs to ensure they are treated as decimal numbers.</li>
+<li>Calculate the <code>averageScore</code>.</li>
+<li>Use <strong><code>document.write()</code></strong> to display the <code>averageScore</code> on the web page.</li>
+
+</ol>
+<h2 id='exercise-8-concatenating-names'>Exercise 8: Concatenating Names</h2>
+<p><strong>Concept Focus:</strong> Multiple Variables, <code>prompt()</code>, String Concatenation</p>
+<p>Write a program to collect and display a user&#39;s full name:</p>
+<ol start='' >
+<li><strong>Prompt</strong> the user for their first name and store it in <code>firstName</code>.</li>
+<li><strong>Prompt</strong> the user for their last name and store it in <code>lastName</code>.</li>
+<li>Use <strong><code>document.write()</code></strong> to display the full name (first name followed by a single space, followed by the last name).</li>
+
+</ol>
+<h2 id='exercise-9-boolean-to-number-coercion-output'>Exercise 9: Boolean to Number Coercion Output</h2>
+<p><strong>Concept Focus:</strong> Boolean Data Type, Type Coercion, <code>document.write()</code></p>
+<p>Write a program that demonstrates how a boolean value is treated in a numeric context:</p>
+<ol start='' >
+<li>Declare a variable <code>initialValue</code> with the value 50.</li>
+<li>Declare a variable <code>isComplete</code> and set it to <code>true</code>.</li>
+<li>Declare a variable <code>finalResult</code> and assign it the result of <code>initialValue + isComplete</code>.</li>
+<li>Use <strong><code>document.write()</code></strong> to display the value of <code>finalResult</code> on the web page.</li>
+
+</ol>
+<h2 id='exercise-10-using-the-number-conversion-function'>Exercise 10: Using the <code>Number()</code> Conversion Function</h2>
+<p><strong>Concept Focus:</strong> <code>Number()</code>, Calculation, <code>document.write()</code></p>
+<p>Write a program that uses the universal <code>Number()</code> function for type conversion:</p>
+<ol start='' >
+<li>Declare a variable <code>inputA</code> and assign it the string value <code>&quot;123&quot;</code>.</li>
+<li>Declare a variable <code>inputB</code> and assign it the string value <code>&quot;4.56&quot;</code>.</li>
+<li>Create new variables <code>numA</code> and <code>numB</code> by converting <code>inputA</code> and <code>inputB</code> to numbers using the <strong><code>Number()</code></strong> function.</li>
+<li>Calculate the <code>sum</code> of <code>numA</code> and <code>numB</code>.</li>
+<li>Use <strong><code>document.write()</code></strong> to display the final <code>sum</code> on the web page.</li>
+
+</ol>
+<h2 id='exercise-11-multi-line-output'>Exercise 11: Multi-Line Output</h2>
+<p><strong>Concept Focus:</strong> <code>document.write()</code> with HTML elements, String literals</p>
+<p>Write a program that uses <code>document.write()</code> to display two separate pieces of information, each on its own line:</p>
+<ol start='' >
+<li>Declare a variable <code>city</code> and assign it the value <code>&quot;Portland&quot;</code>.</li>
+<li>Declare a variable <code>state</code> and assign it the value <code>&quot;Oregon&quot;</code>.</li>
+<li>Use <strong>one</strong> <strong><code>document.write()</code></strong> statement to output &quot;<strong>City: Portland</strong>&quot; and &quot;<strong>State: Oregon</strong>&quot; with a line break (<code>&lt;br /&gt;</code>) or paragraph tags (<code>&lt;p&gt;</code>) between them.</li>
+
+</ol>
+<h2 id='exercise-12-declared-but-unassigned-output'>Exercise 12: Declared but Unassigned Output</h2>
+<p><strong>Concept Focus:</strong> <code>undefined</code>, <code>typeof</code>, <code>document.write()</code></p>
+<p>Write a program that explores the concept of an unassigned variable:</p>
+<ol start='' >
+<li>Declare a variable named <code>unknownItem</code> using <code>var</code>, but <strong>do not</strong> assign it a value.</li>
+<li>Use <strong><code>document.write()</code></strong> to print the <em>value</em> of <code>unknownItem</code> on the web page.</li>
+<li>Use a <strong>second</strong> <strong><code>document.write()</code></strong> statement on a new line to print the <em>type</em> of <code>unknownItem</code> using the <code>typeof</code> operator.</li>
+
+</ol>
+</body>
+</html>

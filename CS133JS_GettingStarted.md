@@ -41,7 +41,11 @@ If you have any course-specific questions, please ask them in the Course Q & A f
 - [Adobe Reader](http://get.adobe.com/reader/) for reading PDF files
 - Software for Word processing and viewing PowerPoint slides such as [MS Office](http://www.microsoftstore.com/store/msusa/en_US/cat/All-Office/categoryID.69403900?icid=Office_365_subnav_22092015_All_Office&s_kwcid=AL!4249!3!82552207853!e!!g!!microsoft office&WT.mc_id=pointitsem+Google+Adwords+5+-+Office+15+Suites&ef_id=UsDFgAAAAHy-iVuM:20160104142119:s), [OpenOffice.org](http://download.openoffice.org/) or [GoogleDocs](https://www.google.com/accounts/ServiceLogin?service=writely&passive=1209600&continue=http://docs.google.com/&followup=http://docs.google.com/&ltmpl=homepage) 
 - A code editor,  [VisualStudio Code](https://code.visualstudio.com) for Mac OS, Windows and Linux is reccomended, alternatively, you could use [Notepad++](https://notepad-plus-plus.org) on Windows, or [BBEdit](https://www.barebones.com/products/bbedit/) on Mac OS.
-- An FTP client for uploading files to a web server,  [FileZilla](https://filezilla-project.org) for Mac OS, Windows and Linux is reccomended, alternatively, you could use [CoreFTP](http://coreftp.com) for Windows, or [CyberDuck](https://cyberduck.io) for Mac OS, or
+- An FTP client for uploading files to a web server,  [FileZilla](https://filezilla-project.org) for Mac OS, Windows and Linux is reccomended, alternatively, you could use [CoreFTP](http://coreftp.com) for Windows, or [CyberDuck](https://cyberduck.io) for Mac OS.
+- [Discord](https://discord.com/) for class communication and collaboration with your team.
+  - Sign up for a free account, if you don't already have one. 
+  - Accept my invitation to the [Intro to AI Discord server](https://discord.com/invite/EpC4cGfG) (click on the link) and join the class server.
+  - If you haven't used Discord before, [here's a 15 minute beginner's tutorial](https://youtu.be/rnYGrq95ezA?si=f2Bfrwu7WMJivcC6).
 
 **Computer Skills**
 

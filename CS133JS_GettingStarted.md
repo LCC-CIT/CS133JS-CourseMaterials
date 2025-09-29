@@ -1,8 +1,8 @@
-# Getting Started Guide
+<h1>Getting Started Guide</h1>
 
 Course introduction and getting started materials
 
-## Table of contents
+<h2>Table of contents</h2>
 
 [TOC]
 
@@ -77,23 +77,23 @@ Learning resources will be listed under Required and Supplemental subheadings. R
 
 Learning activities are required unless they are specifically marked as  optional. Activities will include lab assignments, quizzes, or other participatory activities.
 
-####Lab assignments
+#### Lab assignments
 
 Each week you will have a lab  assignment. This is a hands-on programming assignment.
 
-####Lab Partners
+#### Lab Partners
 
 Each of you will be assigned to a lab partner in Moodle. There are two versions of each lab  assignment. Each lab partner will be given a  different version. This allows each student to look at the other’s work and give them help and feedback without seeing a solution to their own assignment.
 
-####Getting and Giving a Code Review
+#### Getting and Giving a Code Review
 
 When you have a beta (draft) version of you lab assignment ready, you will post it in  the Lab Beta forum in the Moodle section for the current  week. This must be done before the due date for the beta version. Your lab partner will then check your work and complete the "Beta" column of the  code review form. This must be done before the due date for the code review.
 
-####What to Do with the Code Review You Get
+#### What to Do with the Code Review You Get
 
 After your lab partner gives you a code review, a you may revise your lab work and then fill out the "Production" column of the code review form to indicate  your revisions. You will then upload the release version of your lab  work to Moodle along with the completed code review form.
 
-####What to Do If Something Goes Wrong
+#### What to Do If Something Goes Wrong
 
 - Q: What if my lab partner didn’t post a beta version for me to review?
   
@@ -105,7 +105,7 @@ After your lab partner gives you a code review, a you may revise your lab work a
   
   A: You can ask someone else to give you a review, or as long as you have already posted your beta version, you can review your own code and put a note in the comments section saying your partner didn't give you a review by the deadline.
 
-####Additional Questions
+#### Additional Questions
 
 - Q: Can I do a code review for someone else in addition to my lab partner? 
   
@@ -116,18 +116,18 @@ After your lab partner gives you a code review, a you may revise your lab work a
 
 ## On-line Course Communication
 
-All course communication (via e-mail, Moodle Messages, discussion  forums, video chat, etc.) should be clear, concise, and respectful.  Written communication should use complete sentences with standard  spelling and grammar, including proper capitalization and punctuation.
+All course communication (via e-mail, Discord, Moodle Messages, discussion  forums, video chat, etc.) should be clear, concise, and respectful. Do your best to use complete sentences with standard spelling, grammar and punctuation.
 
-[The Core Rules of Netiquette](http://www.albion.com/netiquette/corerules.html) is a guide to the proper protocol for participating in online classes and writing emails.
+[The Core Rules of Netiquette](http://www.albion.com/netiquette/corerules.html) is a guide to the respectful an constructive communication online.
 
-Questions about the course should be posted to the Course Q & A Forum. Questions of a more personal nature, such as grades or extensions,  should be sent to your instructor via e-mail. E-mails to your instructor or e-mails to another department regarding support issues should  include your course number and section.
+We will be using Discord for communication in this class. See the main Moodle page for more information on the class Discord server. Questions about the course should be posted on Discord in the *Discussion* channel. Questions that relate specifically to you, such as grades or extensions,  should be sent to your instructor via e-mail. E-mails to your instructor or e-mails to another department regarding support issues should  include your course number and section (online vs. hybrid/in person).
 
-All course announcements will be posted by the instructor to the News and Announcements Forum. Students are expected to check the News Forum on a daily basis. Any  questions about News Forum announcements should be asked in the Course Q & A Forum.
+All course announcements will be posted by the instructor to the Discord *Announcements* channel. Students are expected to check for announcements regularly (at least every class day). Any  questions about Announcements can be posted on the Discord *Discussion* channel.
 
 ## Support
 ### CIT Computer Lab
 
-For spring term 2022, the on-campus lab in building 19, room 135, has re-opened. Lab and tutoring hours will be announced in class.
+The on-campus computer lab is in building 19, room 135. The lab is equipped with computers and software for student use. There are also tutors in the lab who can help you with your lab assignments. Lab and tutoring hours will be announced in class.
 
 ### LCC Academic and Tutoring Services
 
@@ -135,12 +135,12 @@ Zoom tutoring is also available through [LCC Tutoring Services](https://www.lane
 
 ### Instructor's Office Hours
 
-See the Moodle course page and the syllabus for the instructor's in-person and Zoom office hours.
+See the syllabus for the instructor's in-person and Zoom office hours.
 
 ### General Support
 Click on the Help link at the top-left of the Moodle course page for information on how to contact LCC technical support services. 
 
-Support information is also available at [help.lanecc.edu](https://help.lanecc.edu/).
+Moodle and other technical support is also available at [help.lanecc.edu](https://help.lanecc.edu/).
 
 
 

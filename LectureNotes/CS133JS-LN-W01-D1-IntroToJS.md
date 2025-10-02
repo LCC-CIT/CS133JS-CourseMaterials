@@ -27,7 +27,7 @@ author: Brian Bird
 
 ## Introduction
 
-### About Me
+### About Your Instructor
 
 - Why I like to create software
 - Professional history
@@ -38,14 +38,12 @@ author: Brian Bird
 
 You need to know a little bit of HTML which is taught in CIS 195, Web Authoring, and which can be taken at the same time as this course. These are the specific parts of HTML you will need to know:
 
-- HTML elements and tags
+- HTML elements and tags&mdash;what they are in general
 - Attributes (key-value pairs inside the opening tag of a element)
 - Headings
-- Paragraphs
-- Block quotes
+- Paragraphs and divs
 - Links (`<a>` elements)
 - Images
-- Iframes
 - Forms and input elements  
 
 A good way to review these topics or to get a head-start on them if you are currently taking CIS 195 is by doing the tutorials at [W3Schools](https://www.w3schools.com/html/default.asp).
@@ -116,7 +114,7 @@ Revisit these and discuss what might run on the server and what might run in the
   3. Lets add a *variable* named `name`. A variable is a thing we can use to store information. Now you'll be able to change the name, but you'll need to change the code to do it  :-(
   ```javascript
    var name = "world"; // can change to “other names”
-   		 document.write("<p>Hello " + name + "!</p>");
+   document.write("<p>Hello " + name + "!</p>");
   ```
 
 4. Finally, we'll add a way for a user to enter information. We do that by adding code that prompts the user for input.

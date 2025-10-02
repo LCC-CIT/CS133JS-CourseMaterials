@@ -80,7 +80,7 @@ The grammar of a programming language
 
 ### JavaScript Programming
 
-- Console vs. Web page
+- Console, Web page or separate file.
 - Input and output (i/o)
   - Normally i/o is done to and form HTML *elements* in a web page.
 
@@ -114,7 +114,7 @@ Last time, we wrote this code and ran it in the browser console:
 
   ```javascript
   var name = prompt("Please enter your name");
-      		document.write("Hello " + name + "!");
+  document.write("Hello " + name + "!");
   ```
 #### Using Visual Studio Code
 
@@ -136,7 +136,7 @@ Using VS Code, start with a standard [empty HTML page](../Examples/Empty.html)[^
 </head>
 ```
 
-We can also put script elements in the body of a web page:
+Alternatively, we could put a script element (or elements) in the body of a web page:
 
 ```html
 <body>
@@ -166,7 +166,7 @@ Variables that are declared in one &lt;script&gt; element are visible in all the
 
 
 
-2. Let's *refactor* it to add a second variable and prompt: 
+2. Let's *refactor* the code to add a second variable and prompt: 
   ```javascript
     var firstName = prompt("Enter your first name");
     var lastName = prompt("Enter your last name");
@@ -234,7 +234,7 @@ console.log(typeof stuff);
 
 ##### Null and Undefined
 
-This is a bit tricky. If we use the `typeof` keyword to check the type of a variable and we haven't assigned a value to that variable, then it will show its type as *undefined*. Also, if we check its value, it will be *undefined*.  So *undefine*d can be either a description of the value or of the data type. 
+This is a bit tricky. If we use the `typeof` keyword to check the type of a variable and we haven't assigned a value to that variable, then it will show its type as *undefined*. Also, if we check its value, it will be *undefined*.  So *undefine*d can be either a <u>description of the value or of the data type</u>. 
 
 But, *null* is just a value[^2]. It's the value that means "nothing", which is not the same as zero.
 

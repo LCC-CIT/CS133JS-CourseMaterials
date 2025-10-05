@@ -21,8 +21,8 @@ These are the things you need to do to get started in this class:
 
 1. Read all of this Getting Started guide.
 2. Read the syllabus whole syllabus too. &#128578;
-3. Read the [Code Review Procedure](Lab/CodeReviewProcedure.html).
-4. Familiarize yourself with the cycle of [weekly learning activities](syllabus.html#weekly-learning-activities) in the syllabus.
+3. Read the [Code Review Procedure](Labs/CodeReviewProcedure.html).
+4. Familiarize yourself with the cycle of [weekly learning activities](CS133JS_Syllabus.html#weekly-learning-activities) in the syllabus.
 5. Join the class Discord server, instructions are on Moodle.
 6. Introduce yourself in the Discord introductions channel.
 7. Read the overview for week one on Moodle.
@@ -86,36 +86,9 @@ Each week you will have a lab  assignment. This is a hands-on programming assign
 
 #### Lab Partners
 
-Each of you will be assigned to a lab partner in Moodle. There are two versions of each lab  assignment. Each lab partner will be given a  different version. This allows each student to look at the other’s work and give them help and feedback without seeing a solution to their own assignment.
+Each of you will be assigned to a lab partner team in Moodle. There are three versions of each lab  assignment. Each lab partner will be given a  different version. This allows each student to look at the other’s work and give them help and feedback without seeing a solution to their own assignment.
 
-#### Getting and Giving a Code Review
-
-When you have a beta (draft) version of you lab assignment ready, you will post it in  the Lab Beta forum in the Moodle section for the current  week. This must be done before the due date for the beta version. Your lab partner will then check your work and complete the "Beta" column of the  code review form. This must be done before the due date for the code review.
-
-#### What to Do with the Code Review You Get
-
-After your lab partner gives you a code review, a you may revise your lab work and then fill out the "Production" column of the code review form to indicate  your revisions. You will then upload the release version of your lab  work to Moodle along with the completed code review form.
-
-#### What to Do If Something Goes Wrong
-
-- Q: What if my lab partner didn’t post a beta version for me to review?
-  
-  A: Communicate with them and find out when they will have a beta version  ready. Remind them that a beta version doesn’t need to be fully  complete. Review their code for them when they send it. As long as you  review your partner’s code before the due date for the final version,  your review won’t be counted late.
-- Q: What if I have already communicated with my lab partner and they  haven’t responded or they have said they won’t be posting a beta version anytime soon?
-  
-  A: You can do a code review for someone else. Or, you  can post an offer in the class Q and A forum to see if anyone wants an  additional review of their most recent lab.
-- Q: What if my lab partner didn’t send me a code review by the deadline?
-  
-  A: You can ask someone else to give you a review, or as long as you have already posted your beta version, you can review your own code and put a note in the comments section saying your partner didn't give you a review by the deadline.
-
-#### Additional Questions
-
-- Q: Can I do a code review for someone else in addition to my lab partner? 
-  
-  A: Sure, it is good experience for you and helpful for the other person.  They just need to have done a different assignment than the one you  did. 
-- Q: Can I get more than one code review for a particular lab? 
-  
-  A:  Sure, it’s fine for someone else, in addition to your lab partner, to  review your code. As long as they didn’t do the same assignment that you did. 
+You will review each other's work in "round robin" fashion: student A reviews student B's work, student B reviews C's work and student C reviews A's work.
 
 ## On-line Course Communication
 
@@ -141,9 +114,9 @@ Zoom tutoring is also available through [LCC Tutoring Services](https://www.lane
 See the syllabus for the instructor's in-person and Zoom office hours.
 
 ### General Support
-Click on the Help link at the top-left of the Moodle course page for information on how to contact LCC technical support services. 
+Click on the Help link on the Moodle course page for information on how to contact LCC technical support services. 
 
-Moodle and other technical support is also available at [help.lanecc.edu](https://help.lanecc.edu/).
+Moodle and other technical support is also available at the [Student Help Desk](https://support.lanecc.edu/students).
 
 
 

@@ -10,26 +10,25 @@ Course introduction and getting started materials
 
 Welcome to Beginning Programming: JavaScript!
 
-In order to succeed in this class, you will need access to a computer that can run a code editor like [Visual Studio Code](https://code.visualstudio.com/) (pretty much any computer can) and have a good internet connection. You must  devote at least 12 hours a week to learning activities. This includes 4  hours of in-person class, Zoom live class streams, and at least 8 hours of lab time plus studying and working on your own. (If you are unable to participate during class time you can watch recordings of the Zoom sessions.)
+In order to succeed in this class, you will need access to a computer that can run a code editor like [Visual Studio Code](https://code.visualstudio.com/) (pretty much any computer can) and have a good internet connection. You must  devote at least 12 hours a week to learning activities. This includes:
 
-Next, read [First Steps](https://classes.lanecc.edu/mod/book/view.php?id=2334923&chapterid=146643), and then *let's have fun writing code!*
+-  4 hours of in-person class or Zoom class or watching video recordings of the class lectures and discussions.
+- Approximately 8 hours of lab time plus studying and working on your own.
 
 ## First Steps
 
-To begin this course, please complete the following steps:
+These are the things you need to do to get started in this class:
 
-1. Read every page of this Getting Started guid.
-2. Read every page of the syllabus.
-3. Read the Code Review Procedure.
-4. Familiarize yourself with the cycle of weekly learning activities.
-5. Post an introduction message to the Introductions forum.
+1. Read all of this Getting Started guide.
+2. Read the syllabus whole syllabus too. &#128578;
+3. Read the [Code Review Procedure](Lab/CodeReviewProcedure.html).
+4. Familiarize yourself with the cycle of [weekly learning activities](syllabus.html#weekly-learning-activities) in the syllabus.
+5. Join the class Discord server, instructions are on Moodle.
+6. Introduce yourself in the Discord introductions channel.
+7. Read the overview for week one on Moodle.
+8. Start the required reading for this week.
 
-6. Read the overview for week one.
-7. Do the required reading for this week of the course, skim the lecture notes.
-8. Complete the activities/assignments/forum posts for this week.
-9. Repeat steps 6&ndash;8 every week according to the course schedule.
-
-If you have any course-specific questions, please ask them in the Course Q & A forum. For any other questions, support contact information can be found in the Support block.
+If you have any course-specific questions, please ask them in the Discord discussion forum. For issues with Moodle or Zoom, support information can be found in the Support block on Moodle.
 
 
 
@@ -44,38 +43,38 @@ If you have any course-specific questions, please ask them in the Course Q & A f
 - An FTP client for uploading files to a web server,  [FileZilla](https://filezilla-project.org) for Mac OS, Windows and Linux is reccomended, alternatively, you could use [CoreFTP](http://coreftp.com) for Windows, or [CyberDuck](https://cyberduck.io) for Mac OS.
 - [Discord](https://discord.com/) for class communication and collaboration with your team.
   - Sign up for a free account, if you don't already have one. 
-  - Accept my invitation to the [Intro to AI Discord server](https://discord.com/invite/EpC4cGfG) (click on the link) and join the class server.
+  - Accept the invitation to the class Discord server. It's a link on the class Moodle page.
   - If you haven't used Discord before, [here's a 15 minute beginner's tutorial](https://youtu.be/rnYGrq95ezA?si=f2Bfrwu7WMJivcC6).
 
 **Computer Skills**
 
 - Basic computer skills 
   
-- Experience navigating the Internet and using an Internet browser
-- Basic knowledge of formatting using a word processing program
+- Navigating the Internet and using an Internet browser
+- Basic knowledge of using a word processing program like Word.
   
-- Comfort working with multiple browser windows
-- Ability to create and edit HTML web pages
+- Comfort working with multiple browser windows.
+- Ability to create and edit HTML web pages.
 
 
 
 ## Introduction to Moodle
 
-Moodle is the learning management system of the Lane Community College and the location where you will be able to view the content of your on-line  courses. To learn more about Moodle and how it is used for Lane  Community College courses, please review the course below:
+Moodle is the learning management system used by Lane Community College and the way you will interact with the online content of your courses. To learn more about Moodle and how it is used for Lane  Community College courses, please review the course below:
 
-- [How to Moodle](https://classes.lanecc.edu/course/view.php?id=2637)
+- [Moodle Basics for Students](https://classes.lanecc.edu/course/index.php?categoryid=19)
 
 ## Course Structure
 
-This course is broken into weekly modules. The modules start on Sunday and end on the following Saturday. Every week is broken into  three sections: Overview, Resources, and Activities.
+This course is broken into weekly modules. The modules start on Sunday and end on Saturday. Every week is broken into  three sections: Overview, Resources, and Activities.
 
 ### Overview
 
-Each week includes an overview page that must be read before  reviewing the resources and completing the assigned activities. The  overview will include an introduction to the week's topics, a list of  the week's learning objectives, a list of required and supplemental  resources, and detailed instructions for any activities and assignments.
+Each week includes an overview page for you to read before reviewing the resources and completing the assigned activities. The  overview will include an introduction to the week's topics, a list of  the week's learning objectives and an overview of activities for the week.
 
 ### Resources
 
-Learning resources will be listed under Required and Supplemental subheadings. Reviewing required resources is mandatory. Supplemental resources are  suggested if you want to get additional information about a topic.  Resources may include links to online articles, text listing offline  reading assignments,  videos, or other types of learning materials.
+Learning resources will be listed with links to those that are available online. Resources may include links to online articles, text listing offline  reading assignments,  videos, or other types of learning materials.
 
 ### Activities
 

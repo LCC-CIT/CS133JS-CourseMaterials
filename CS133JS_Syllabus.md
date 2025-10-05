@@ -235,23 +235,23 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 
 - Monday
 
-  - Participate in class (in-person, via Zoom, or watch the Zoom recording).
+  - Participate in **class** (in-person, via Zoom, or watch the Zoom recording).
 
-  - Complete a code review of last week's lab for your lab partner (starting the 2nd week).
+  - Complete a **code review** of last week's lab for your lab partner (starting the 2nd week).
 
 
 - Wednesday
-  - Take the reading quiz.
-  - Participate in class.
+  - Take the reading **quiz**.
+  - Participate in **class**.
   
-  - Submit the production version of your lab work from last week.
+  - Submit the **lab production version** from last week.
 
 
 - Saturday
 
-  - Post the beta version of your lab for this week.
+  - Post the **lab beta version** for this week.
 - Sunday
-  - Start the assigned reading  
+  - Start the assigned **reading**  
     (Take the reading quiz when you finish the reading)
 
 

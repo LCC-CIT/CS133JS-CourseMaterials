@@ -29,6 +29,7 @@ You will be able to:
 - Write a function.
 - Call a function.
 - Link to an external JavaScript file.
+- Writing output to an HTML element.
 - Use the ternary conditional operator.
 
 

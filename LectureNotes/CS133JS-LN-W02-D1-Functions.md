@@ -25,20 +25,7 @@ author: Brian Bird
 
 [TOC]
 
-# Introduction
-
-## Q and A
-
-- How is last week's lab assignment going?
-  - You should have posted a beta version of part 2 for your lab partner to review.
-  - Code reveiws are due tomrrow.
-  - Production version is due Thursday.
-
-- Remember to take this week's reading quiz before class time on Wednesday!
-  
-- Does anyone have any general questions about anything?
-
-# Review
+## Review
 
 This review is selective. These are the concepts we need for todays new topics.
 
@@ -69,9 +56,9 @@ This review is selective. These are the concepts we need for todays new topics.
 
 
 
-# JavaScript Functions
+## JavaScript Functions
 
-## Linking to an External JS File
+### Linking to an External JS File
  We often put all our functions in a separate file. The file that holds the functions should have .js as the file extension.
 
 To use the .js file in your HTML file, add this  the `<head>` element:
@@ -82,21 +69,21 @@ To use the .js file in your HTML file, add this  the `<head>` element:
 
 We will use this for the JavaScript code in the examples below. (We won't use it to write output in an HTML element... yet).
 
-## What a Function is
+### What a Function is
 
-### Definition of a function in math
+#### Definition of a function in math
 
 In math, a function has: input, operation(s), output
  *f(x) = 2x*
  **Example:** Coffee grinder
 
-### Functions we’ve already seen
+#### Functions we’ve already seen
 
 - document.write
 - prompt
 - alert
 
-## Why Use Functions?
+### Why Use Functions?
 
 - They let us reuse code without copying and pasting it.  
   They make our code DRY (Don't Repeat Yourself).
@@ -105,11 +92,11 @@ In math, a function has: input, operation(s), output
 - Functions can be tested independently.
 - Variables can be isolated into local scopes inside functions.
 
-## Writing  and Calling our Own Functions
+### Writing and Calling our Own Functions
 
  We can use pre-written functions, or write our own. We call this *defining* a function.
 
-### A simple function
+#### A simple function
 
 This function has no inputs and put's its output in an alert. 
 
@@ -135,7 +122,7 @@ function helloWorld()
    - Put the function definition in *FunctionPractice.js*.
    - Put the function call inside a script element in an HTML file.
 
-### A function with one parameter
+#### A function with one parameter
 
 1. Define a function with a single parameter and put it in FunctionPractice.js.
 
@@ -153,9 +140,8 @@ function helloWorld()
      hello("Brian");
    ```
    
-   
 
-### A function with a parameter and a return value
+#### A function with a parameter and a return value
 
 Example:
 
@@ -188,9 +174,7 @@ Example:
     ```
 
 
-
-
-### A function can have more than one parameter
+#### A function can have more than one parameter
 
 1. A function definition:
     ```javascript
@@ -206,7 +190,7 @@ Example:
    document.getElementById("name").innerHTML = fullName("Tony", "Stark");
    ```
 
-### Practice: a function with all the combinations
+#### Practice: a function with all the combinations
 
 Let's write a function is for a math quiz. It will do the following:
 
@@ -219,7 +203,7 @@ Think about how you would write this function, and then let's write it together.
 We can test this function in the console, and then in a web page.
 
 
-### Summary: Parts of a function
+#### Summary: Parts of a function
 
 - header
   - name
@@ -230,11 +214,11 @@ We can test this function in the console, and then in a web page.
 
 
 
- # Writing Output into HTML Elements
+ ## Writing Output into HTML Elements
 
 Last week we learned to write html into a web page using `document.write`. Now we will learn to put our JavaScript output into existing HTML elements.
 
-## Using getElementById and innerHTML
+### Using getElementById and innerHTML
 
 ```html
 <p id="answer"></p>
@@ -249,7 +233,7 @@ The `getElementById` function finds the HTML elemet with the id that is passed t
 
 The `innerHTML` property represents the text that goes between the tags. In this case, when we assign a value to `p.InnerHTML` it will go between the  `<p>` and `</p>` tags. 
 
-## Combining statements
+### Combining statements
 
 We can get the element and assign a value to it's innerHTML all in one statement:
 
@@ -259,18 +243,18 @@ document.getElementById("answer").innerHTML = 2 * 3;
 
 
 
-# Notes
+## Notes
 
-## Vocabulary
+### Vocabulary
 
 - Expression: A combination of variables, operators, and functions that produce a value. In other words, a chunk of code that can put a value into a variable.
 - DOM: Document Object Model. The DOM is the HTML API for JavaScript.
 - API: Application Programming Interface. This is a set of functions (aka methods) that can be called by code in an application.
 - Interface: A point of interaction between a piece of software and something or someone else. Interfaces are at boundaries.
 
-## References
+### References
 
-### W3Schools
+All of these are on W3Schools
 
 [What is the HTML DOM?](https://www.w3schools.com/whatis/whatis_htmldom.asp)
 
@@ -285,7 +269,7 @@ document.getElementById("answer").innerHTML = 2 * 3;
 
 
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 [^1]: Primitive data types: number, string, boolean, undefined
 [^2]: It is more accurate to say "the data type of the value contained by the variable" since varaibles themselves don't have data types.

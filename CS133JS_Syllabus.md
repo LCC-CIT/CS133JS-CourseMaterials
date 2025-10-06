@@ -1,12 +1,12 @@
 <h1>Beginning Programming: JavaScript</h1>
-**Syllabus for fall 2024**
+**Syllabus for fall 2025**
 
 | <u>Class</u>      |                                                              |      | <u>Instructor</u> |                                                              |
 | ----------------- | ------------------------------------------------------------ | ---- | ----------------- | ------------------------------------------------------------ |
 | **Course Number** | CS 133JS                                                     |      | **Name**          | Brian Bird                                                   |
-| **CRN**           | Hybrid (on campus) 21547<br />Online 21548                   |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
-| **Day & Time**    | T, Th 10:00&dash;11:50                                       |      | **Office Hours**  | M&mdash;Th 4:00&ndash;4:50                                   |
-| **Room**          | Building 19, Room 128<br />[Zoom meeting](https://lanecc.zoom.us/j/95855574335) |      | **Room**          | Building 19, Room 152<br />[Zoom meeting](https://lanecc.zoom.us/j/94514229670) |
+| **CRN**           | Hybrid (on campus) 20910<br />Online 20911                   |      | **E-mail**        | [birdb@lanecc.edu](mailto:birdb@lanecc.edu)                  |
+| **Day & Time**    | M, W 12:00&dash;1:50                                         |      | **Office Hours**  | M and W 2:00&ndash;2:50<br />Tu and Th 4:00&ndash;4:50       |
+| **Room**          | Building 19, Room 128<br />[Zoom meeting](https://lanecc.zoom.us/j/95739272755) |      | **Room**          | Building 19, Room 152<br />[Zoom meeting](https://lanecc.zoom.us/j/8982554800) |
 
 <h2>Table of Contents</h2>
 
@@ -216,16 +216,16 @@ For upcoming closures, please visit the [Center for Accessible Resources webpage
 
 ## Schedules
 
-### Academic Calendar for Fall Term 2024
+### Academic Calendar for Fall Term 2025
 
-| Event                                                        | Date             |
-| ------------------------------------------------------------ | ---------------- |
-| Fall term classes begin                                      | 9/30 Monday      |
-| Last day to receive refund                                   | 10/7 Monday      |
-| Veteran’s Day&mdash;college closed                           | 11/11 Monday     |
-| Last day for schedule changes                                | 11/22 Friday     |
-| Thanksgiving Vacation – college closed on Thursday and Friday | 11/28&ndash;12/1 |
-| Final exam                                                   | 12/10 Tuesday    |
+| Event                                  | Date              |                  |
+| -------------------------------------- | ----------------- | ---------------- |
+| Fall term classes begin                | 9/29              | Monday           |
+| Last day to receive refund             | 10/6              | Monday           |
+| Veteran’s Day&mdash;college closed     | 11/11             | Tuesday          |
+| Last day for schedule changes          | 11/21             | Friday           |
+| Thanksgiving Vacation – college closed | 11/27&ndash;11/30 | Thursday, Friday |
+| Final exam                             | 12/9              | Tuesday          |
 
 View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on the LCC web site.  
 
@@ -234,28 +234,25 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 ### Weekly Learning Activities
 
 - Monday
-  - Start the assigned reading  
-    (Take the reading quiz when you finish the reading)
 
-- Tuesday
+  - Participate in **class** (in-person, via Zoom, or watch the Zoom recording).
 
-  - Participate in class (in-person, via Zoom, or watch the Zoom recording).
-
-  - Complete a code review of last week's lab for your lab partner (starting the 2nd week).
+  - Complete a **code review** of last week's lab for your lab partner (starting the 2nd week).
 
 
-- Thursday
-  - Take the reading quiz.
-  - Participate in class.
+- Wednesday
+  - Take the reading **quiz**.
+  - Participate in **class**.
   
-  - Submit the production version of your lab work from last week.
+  - Submit the **lab production version** from last week.
 
 
+- Saturday
+
+  - Post the **lab beta version** for this week.
 - Sunday
-
-  - Post the beta version of your lab for this week.
-
-    
+  - Start the assigned **reading**  
+    (Take the reading quiz when you finish the reading)
 
 
 
@@ -264,16 +261,16 @@ View [academic calendars](https://www.lanecc.edu/calendars/academic-calendar) on
 
 | Week             | Topic                                                        | Learning Activities                                          |
 | ---------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **1**<br/>9/30   | Intro to  JavaScript:<br />algorithms, variables, and data types | Reading quiz 1<br />Beta version of lab 1                    |
-| **2**<br />10/7  | Functions, Expressions and Operators                         | lab 1 code review <br />Reading quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
-| **3**<br />10/14 | Selection                                                    | lab 2 code review  <br />Reading quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
-| **4**<br />10/21 | Repetition                                                   | lab 3 code review<br />Reading quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
-| **5**<br />10/28 | Midterm Quiz                                                 | lab 4 code review   <br />Production version of lab 4  <br />Term project proposal<br />Midterm quiz:<br />- In the classroom on 10/31<br />- In the testing center 10/31 through 11/2 |
-| **6**<br />11/4  | Arrays                                                       | Reading quiz 5  <br />Beta version of lab 5                  |
-| **7**<br />11/11 | Objects                                                      | lab 5 code review<br />Reading quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
-| **8**<br />11/18 | Document Object Model and Events                             | lab 6 code review<br />Reading quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |
-| **9**<br />11/25 | Regular Expressions<br />Term project completion<br />Thanksgiving vacation 11/28 | lab 7 code review<br />Reading quiz 8<br />Production version of lab 7<br />Beta version of lab 8 |
-| **10**<br />12/2 | Review and term project                                      | Term project<br />Extra credit lab                           |
-| **11**<br />12/9 | Finals week                                                  | Final quiz:<br />- In the classroom on 12/10<br />- In the testing center 12/10&ndash;12/12 |
+| **1**<br/>9/29   | Intro to  JavaScript:<br />algorithms, variables, and data types | Reading quiz 1<br />Beta version of lab 1                    |
+| **2**<br />10/6  | Functions, Expressions and Operators                         | lab 1 code review <br />Reading quiz 2  <br />Production version of lab 1<br />Beta version of lab 2 |
+| **3**<br />10/13 | Selection                                                    | lab 2 code review  <br />Reading quiz 3 <br />Production version of lab 2 <br />Beta version of lab 3 |
+| **4**<br />10/20 | Repetition                                                   | lab 3 code review<br />Reading quiz 4<br />Production version of lab 3<br />Beta version of lab 4 |
+| **5**<br />10/27 | Midterm Quiz                                                 | lab 4 code review   <br />Production version of lab 4  <br />Term project proposal<br />Midterm quiz:<br />- In the classroom on 10/29<br />- In the testing center 10/27 through 10/30 |
+| **6**<br />11/3  | Arrays                                                       | Reading quiz 5  <br />Beta version of lab 5                  |
+| **7**<br />11/10 | Objects                                                      | lab 5 code review<br />Reading quiz 6<br />Production version of lab 5<br />Beta version of lab 6 |
+| **8**<br />11/17 | Document Object Model and Events                             | lab 6 code review<br />Reading quiz 7<br />Production version of lab 6<br />Beta version of lab 7 |
+| **9**<br />11/24 | Regular Expressions<br />Term project completion<br />Thanksgiving vacation 11/28 | lab 7 code review<br />Reading quiz 8<br />Production version of lab 7<br />Beta version of lab 8 |
+| **10**<br />12/1 | Review and term project                                      | Term project<br />Extra credit lab                           |
+| **11**<br />12/8 | Finals week                                                  | Final quiz:<br />- In the classroom on 12/8<br />- In the testing center 12/6&ndash;12/9 |
 
  

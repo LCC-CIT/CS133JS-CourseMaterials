@@ -36,9 +36,9 @@ This is what you need to do this week:
 
   - Read the first reading before the first class session of the week.
   - Read the second one before the second class session.
-  - Only skim the lecture notes before each lecture.
+  - Take the reading quiz by the end of the day Thursday
 
-- Lectures: Participate in the live interactive video stream at class time, or watch the video recordings. 
+- Lectures: Participate in the live Zoom meeting at class time, or watch the video recordings. 
 
    *Lectures contain valuable information you won't get elsewhere; don't miss a lecture!* 
 
@@ -49,3 +49,10 @@ This is what you need to do this week:
 - Code review: do a code review for your lab partner by Tuesday of next week.
 
 - Production version (final) of the lab assignment: submit it by Thursday of next week.
+
+## Announcements for Fall 2025
+
+- Assignment groups and lab partners
+  - I will put everyone into assignment groups. Groups A, B, and C are the lab assignment groups. Each group gets a different version of the lab assignment.
+  - I will assign lab partners by Friday. Numbered groups, 1, 2, 3, etc. are lab partner groups. There are three lab partners in each group and each of you are doing a different version of the lab assignment.
+- No-show, drop reminder.

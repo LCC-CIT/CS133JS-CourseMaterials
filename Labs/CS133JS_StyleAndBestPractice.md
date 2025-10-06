@@ -16,6 +16,8 @@ author: Brian Bird
 
 - Indentation: use standard indentation.
 
+  - Many JS style guides reccomend indenting by two spaces.
+
 - Variables
 
   - Names should be descriptive.
@@ -24,6 +26,8 @@ author: Brian Bird
   - Use strict mode (`"use strict";`)
 
 - Constants
+
+  - Declared with `const`.
 
   - Names should be descriptive.
 
@@ -34,10 +38,10 @@ author: Brian Bird
 - Code should be DRY&mdash;Don't Repeat Yourself.
 
   (No duplicated blocks of code).
-  
+
 - Separation of concerns.  
   Functions that do processing should not also do i/o.
-  
+
 - Functions
 
   - Names should be descriptive and use camelCase.
@@ -62,4 +66,4 @@ author: Brian Bird
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Course Materials by [Brian Bird](https://profbird.dev), written 2020, revised <time>2022</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Course Materials by [Brian Bird](https://profbird.dev), written 2020, revised <time>2025</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

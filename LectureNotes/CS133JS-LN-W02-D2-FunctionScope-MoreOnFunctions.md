@@ -237,13 +237,13 @@ Variables declared with `const` cannot have a new value assigned to them and the
 Here's an example:
 
 ```javascript
-const inchToCentemeter = 2.54;
-let centemeters = inchToCentementer * 12; // this works
-let inchToCentemeter = 2.54;  // Error, redeclaration is not allowed!
-inchToCententemeter = 2.54;  // Error, assigning a new value is not allowed!
+const INCH_TO_CENTEMETER = 2.54;
+let centemeters = INCH_TO_CENTEMETER * 12; // this works
+let INCH_TO_CENTEMETER = 2.54;  // Error, redeclaration is not allowed!
+INCH_TO_CENTEMETER = 2.54;  // Error, assigning a new value is not allowed!
 
-const centemeterToInch;       // Error, a const must have a value assigned to it!
-centemeterToInch = 0.39370079;
+const CENTEMETER_TO_INCH;       // Error, a const must have a value assigned to it!
+CENTEMETER_TO_INCH = 0.39370079;
 ```
 
 ##### Literal vs. named constants
@@ -260,11 +260,11 @@ There are actually two kinds of constants:
 - *Named constants* are declared with `const` and are like variables in that they provide named storage for a value. For example:
 
   ```javascript
-  const inchToCentemeter = 2.54;
+  const INCH_TO_CENTEMETER = 2.54;
   let length = 12 * inchToCentemeter; 
   
-  const candidate = "Loki";
-  let slogan = candidate + " for president";  
+  const CANDIDATE = "Loki";
+  let slogan = CANDIDATE + " for president";  
   ```
 
 ##### Why use constants?
@@ -282,9 +282,9 @@ There are actually two kinds of constants:
     // Magic numbers
     let price = 10 * 1.25;
     // Meaning made clear with variable and constant names
-    const usToCanadianDollar = 1.25;
+    const US_TO_CANADIAN_DOLLAR = 1.25;
     let costInUsDollar = 10;
-    let price = costInUsDollar * usToCanadianDollar;
+    let price = costInUsDollar * US_TO_CANADIAN_DOLLAR;
     ```
 
   - They give you a way to change a value in one place that is used in many places in your code.
@@ -311,7 +311,7 @@ There are actually two kinds of constants:
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2024</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written in 2018, revised in <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
    ```

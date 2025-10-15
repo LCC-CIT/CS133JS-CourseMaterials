@@ -30,19 +30,19 @@ author: Brian Bird
 
 ------
 
-# Introduction
+## Introduction
 
-## Q and A
+### Q and A
 
 - How is last week's lab assignment (lab 2) going?
-  It's due tomorrow (Thursday).
+  It's due Thursday.
 - Does anyone have any general questions about anything?
 
 
 
-# Review
+## Review
 
-## Selection Using the Ternariy Operator, `?`
+### Selection Using the Ternary Operator, `?`
 
 A ternary expression evaluates to a value.
 
@@ -54,7 +54,7 @@ console.log(warning);
 
 
 
-## Selection Using `if` Statements
+### Selection Using `if` Statements
 
 An `if` statement determines which branch of code will be executed.  
 Parts of an if statement:
@@ -64,7 +64,7 @@ Parts of an if statement:
   alert("wear a coat");  // statement to be executed if the *condition* is true
 ```
 
-### Types of if statements
+#### Types of if statements
 
 - Single branch 
 
@@ -111,7 +111,7 @@ else
 }
 ```
 
-###  Exercise
+####  Exercise
 
 There are three prices for a book titled *The Joy of JavaScript*:
 
@@ -119,20 +119,21 @@ There are three prices for a book titled *The Joy of JavaScript*:
 - $24.99 for the paperback.
 - $14.99 for the e-book, or free for students.
 
-Write the code and run it in the console so you can simply assign values to variables for input.
+Write the code and run it in the console where you can simply assign values to variables for input.
 
 ------
 
-# Selection using `switch case` statements
+## Selection using `switch case` statements
 
-- The third type of selection control structure we are learning in this course
-- Can be replaced with a multi-branching *if, else if, else* statement.
-- A switch can’t do everything that an *if, else if, else* statement can.
+- The third type of selection control structure we are learning in this course is `switch`.
+- Can always be replaced with a multi-branching *if, else if, else* statement.
+- But, a switch can’t do everything that an *if, else if, else* statement can.
    - Can only be used to test for equality, not `>` or `<`
    - Can only operate on a single variable.
 
+#### Parts of a switch statement
 
-### Parts of a switch statement
+This code snippet gives a response to the question: "What is a common color for a mouse?".
 
    ```javascript
    let color = prompt("What is a common color for a mouse?");
@@ -159,7 +160,9 @@ Write the code and run it in the console so you can simply assign values to vari
 
    
 
-### Multiple cases can be used to execute one statement
+#### Multiple cases can be used to execute one statement
+
+In this example, the same response is given for "grey" and "gray" as well as "brown" and "white".
 
 ```javascript
  let color = prompt("What is a common color for a mouse?");
@@ -180,7 +183,9 @@ Write the code and run it in the console so you can simply assign values to vari
  }
 ```
 
-### Multiple statements can be executed in each case
+#### Multiple statements can be executed in each case
+
+In this example two variables are set to values instead of just one variable.
 
 ```javascript
  let color = prompt("What is a common color for a mouse?");
@@ -207,25 +212,26 @@ Write the code and run it in the console so you can simply assign values to vari
 
 
 
-### Best Practices
+#### Best Practices
 
 - Only one return from a function  
-  When you use a `switch` statement inside a funciton, you should only have one `return` statement in the function, don't return from inside a case.
+  When you use a `switch` statement inside a function, you should only have one `return` statement in the function, don't return from inside a case.
 - If you are only comparing for equality, use a `switch` instead of `if`, `else if`, `else` statements.
 
-### Exercise
+#### Exercise
 
 Write code in the console to determine the price of *The Joy of JavaScript* using a `switch` statement instead of a multi-branching `if else` statement.
 
-# Reference
+## Reference
 
-## W3Schools
+### W3Schools
 [Switch Statement](https://www.w3schools.com/js/js_switch.asp)
 
 
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2024</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2025</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------
+

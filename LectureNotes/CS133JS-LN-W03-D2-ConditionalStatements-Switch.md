@@ -35,7 +35,9 @@ author: Brian Bird
 ### Q and A
 
 - How is last week's lab assignment (lab 2) going?
-  It's due Thursday.
+  - Code reviews were due Tuesday. You can still do them. Any questions about those?
+  - The production version is due Thursday.
+  
 - Does anyone have any general questions about anything?
 
 

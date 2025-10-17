@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help - JS Live Workbook</title>
+  <style>
+    body { 
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; 
+      padding: 16px; 
+      line-height: 1.5; 
+      background:#111; 
+      color:#eee;
+      max-width: 100ch;
+      margin: 0 auto;
+    }
+    h1 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.2rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #8ab4ff; }
+    code, pre { background:#1a1a1a; border:1px solid #333; padding:2px 4px; border-radius:3px; }
+    a { color:#8ab4ff; }
+    ul { margin-top: 0.25rem; }
+  </style>
+  </head>
+  <body>
+    <h1>Help</h1>
+    <p>Welcome to the JS Live Workbook. The porpose of this app is to make it easy to try out code 
+      and do experiemnts while you are reading a tutorial or doing coding exercises. The app combines:</p>
+      <ul>
+        <li>A file viewer for HTML and Markdown documnts</li>
+        <li>A code editor</li>
+        <li>A JavaScript console for running code</li>
+        <li>A command line for imediate execution of code in the console</li>
+      </ul>
+      <p>Here are common actions:</p>
+    <h2>File Viewer Menu</h2>
+    <ul>
+      <li><strong>Open Markdown</strong>: Load and preview a local <code>.md</code> file in the left pane with syntax highlighting.</li>
+      <li><strong>Open HTML</strong>: Load and preview a local <code>.html</code> file in the left pane.</li>
+      <li><strong>Open from URL</strong>: Load HTML or Markdown content directly from a URL (local or remote).</li>
+      <li><strong>Recent Files</strong>: Quick access to recently opened files (appears in dropdown when available).</li>
+    </ul>
+    <h2>Editor Menu</h2>
+    <ul>
+      <li><strong>Open File</strong>: Open a local <code>.js</code> or <code>.txt</code> file into a new editor tab.</li>
+      <li><strong>Save File</strong>: Save the current editor tab contents (supports File System Access API where available, with download fallback).</li>
+      <li><strong>Hide/Show Editor</strong>: Toggle visibility of the editor panel to maximize the file viewer area.</li>
+    </ul>
+    <h2>Editor Features</h2>
+    <ul>
+      <li><strong>Tabbed Editing</strong>: Work with multiple files simultaneously using tabs. Click the <code>+</code> button to create a new tab.</li>
+      <li><strong>Run Code</strong>: Executes the current editor code in a persistent sandbox so variables are available in the REPL.</li>
+      <li><strong>Clear Editor</strong>: Clears all code from the current editor tab.</li>
+      <li><strong>Clear Console</strong>: Clears the console output.</li>
+    </ul>
+    <h2>Console & REPL</h2>
+    <ul>
+      <li><strong>Console Output</strong>: Displays results from running code, including <code>console.log()</code> output.</li>
+      <li><strong>REPL (Read-Eval-Print-Loop)</strong>: Type JavaScript at the <code>›</code> prompt below the console to immediately execute code and inspect or modify state. Use Up/Down arrows to navigate command history.</li>
+    </ul>
+    <h2>Layout</h2>
+    <ul>
+      <li><strong>Resizable Panels</strong>: Drag the vertical divider between the file viewer and editor to adjust column widths. Your preference is remembered between visits.</li>
+    </ul>
+  </body>
+  </html>

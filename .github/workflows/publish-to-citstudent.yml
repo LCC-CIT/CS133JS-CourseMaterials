@@ -67,12 +67,12 @@ jobs:
           # Defensive trimming of accidental CR/LF or surrounding whitespace
           REMOTE_BASE="$(printf '%s' "$REMOTE_BASE" | tr -d '\r' | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
 
-          echo "Preparing to upload publish/ -> ${USER}@${HOST}:${DEST_DIR} (port ${PORT})"
+          echo "Preparing to upload publish/ -> ${USER}@${HOST}:${REMOTE_BASE} (port ${PORT})"
 
           # Create remote directory (use ssh to run mkdir -p)
           echo "Creating remote directory..."
           sshpass -p "$PASS" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p "$PORT" \
-            "$USER@$HOST" "mkdir -p -- '$DEST_DIR'"
+            "$USER@$HOST" "mkdir -p -- '$REMOTE_BASE'"
 
           # Ensure publish exists and has files
           if [ ! -d "publish" ]; then
@@ -85,10 +85,10 @@ jobs:
             exit 1
           fi
 
-          echo "Running rsync to ${DEST_DIR} ..."
+          echo "Running rsync to ${REMOTE_BASE} ..."
           # Use rsync over ssh with sshpass; preserve structure and delete extraneous files on remote
           sshpass -p "$PASS" rsync -avz --delete --prune-empty-dirs \
             -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p $PORT" \
-            publish/ "$USER@$HOST:$DEST_DIR/"
+            publish/ "$USER@$HOST:$REMOTE_BASE/"
 
           echo "Rsync exit status: $?"

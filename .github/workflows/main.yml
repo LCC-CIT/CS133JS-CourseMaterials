@@ -1,0 +1,97 @@
+name: Publish static files (rsync-over-SSH)
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install rsync and sshpass
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y rsync sshpass
+
+      - name: Prepare publish/ with selected files
+        run: |
+          set -euo pipefail
+
+          # Working in the repo root (GITHUB_WORKSPACE)
+          echo "Preparing publish/ directory containing .md, .html, .css, .js from root and selected dirs..."
+          rm -rf publish
+          mkdir -p publish
+
+          # Copy top-level (root) files (no recursion into directories)
+          rsync -av --prune-empty-dirs \
+            --include='*.md' --include='*.html' --include='*.css' --include='*.js' \
+            --exclude='*/' --exclude='*' \
+            ./ publish/ || true
+
+          # Copy the specified directories recursively (preserve directory structure)
+          for d in LectureNotes Labs Practice; do
+            if [ -d "$d" ]; then
+              echo "Syncing $d/ -> publish/$d/"
+              rsync -av --prune-empty-dirs \
+                --include='*/' --include='*.md' --include='*.html' --include='*.css' --include='*.js' \
+                --exclude='*' \
+                "$d/" "publish/$d/"
+            else
+              echo "Directory $d does not exist in repository; skipping."
+            fi
+          done
+
+          # Show what will be uploaded
+          echo "Files prepared for publish:"
+          find publish -type f -print || true
+
+      - name: Upload publish/ via rsync over SSH (create remote dir then rsync)
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_PORT: ${{ secrets.FTP_PORT }}
+          FTP_TARGET: ${{ secrets.FTP_TARGET }}
+        run: |
+          set -euo pipefail
+          HOST="${FTP_HOST:?missing FTP_HOST}"
+          USER="${FTP_USERNAME:?missing FTP_USERNAME}"
+          PASS="${FTP_PASSWORD:?missing FTP_PASSWORD}"
+          PORT="${FTP_PORT:-22}"
+          REMOTE_BASE="${FTP_TARGET:-/}"
+
+          # Defensive trimming of accidental CR/LF or surrounding whitespace
+          REMOTE_BASE="$(printf '%s' "$REMOTE_BASE" | tr -d '\r' | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
+
+          # Final destination: append public_html/CS133JS_Course to the base remote path
+          DEST_DIR="${REMOTE_BASE%/}/public_html/CS133JS_Course"
+
+          echo "Preparing to upload publish/ -> ${USER}@${HOST}:${DEST_DIR} (port ${PORT})"
+
+          # Create remote directory (use ssh to run mkdir -p)
+          echo "Creating remote directory..."
+          sshpass -p "$PASS" ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p "$PORT" \
+            "$USER@$HOST" "mkdir -p -- '$DEST_DIR'"
+
+          # Ensure publish exists and has files
+          if [ ! -d "publish" ]; then
+            echo "ERROR: publish/ directory not found."
+            exit 1
+          fi
+          # Ensure there is something to upload
+          if [ -z "$(find publish -type f -print -quit)" ]; then
+            echo "ERROR: publish/ is empty. Nothing to upload."
+            exit 1
+          fi
+
+          echo "Running rsync to ${DEST_DIR} ..."
+          # Use rsync over ssh with sshpass; preserve structure and delete extraneous files on remote
+          sshpass -p "$PASS" rsync -avz --delete --prune-empty-dirs \
+            -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p $PORT" \
+            publish/ "$USER@$HOST:$DEST_DIR/"
+
+          echo "Rsync exit status: $?"

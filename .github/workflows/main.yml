@@ -67,9 +67,6 @@ jobs:
           # Defensive trimming of accidental CR/LF or surrounding whitespace
           REMOTE_BASE="$(printf '%s' "$REMOTE_BASE" | tr -d '\r' | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//')"
 
-          # Final destination: append public_html/CS133JS_Course to the base remote path
-          DEST_DIR="${REMOTE_BASE%/}/public_html/CS133JS_Course"
-
           echo "Preparing to upload publish/ -> ${USER}@${HOST}:${DEST_DIR} (port ${PORT})"
 
           # Create remote directory (use ssh to run mkdir -p)

@@ -27,27 +27,6 @@ author: Brian Bird
 
 ------
 
-## Introduction
-
-### What's Due this Week
-
-- Lab 2, last week's lab assignment&mdash; how is it going?
-  - The beta versions of part 2 was due Sunday. 
-    - Remember that the beta version is like a draft. It doesn't need to be complete or completely working. 70% done is good enough for a beta version.
-    - Are there questions on how to do it?
-    - See me or a tutor if you'd like some help.
-- Get started on the reading&mdash;if you haven't already.  
-- Lab 2 code review is due Tuesday.
-- Quiz 3 is due Thursday.
-- Lab 2 production version is due Thursday.
-- Lab 3 beta version is due Sunday
-
-### Q and A
-
-- Does anyone have any general questions about anything?
-
-
-
 
 ## Review
 
@@ -177,12 +156,6 @@ The ternary operator is the question mark, `?`
   alert(temperature < 50 ? "Wear a coat" : "Enjoy the warm day");
   ```
 
-#### Try this:
-
-> Write an expression using a ternary operator that determines whether a person is old enough to get a driver's license in Oregon[^4].
-
-
-
 ### `if` Statements
 
 An if statement is used to conditionally determine whether or not one or more other statements are executed. Note that it does not form an expression&mdash;it doesn't evaluate to a value.
@@ -246,6 +219,9 @@ Let's take a break from talking about coding and talk about designing an algorit
 
   Q: Would be helpful to add "temp less than 45 degrees" to the 2nd row, *processing* column?[^4]
   
+  #### Try this:
+  
+  > Write an expression using a ternary operator that determines whether a person is old enough to get a driver's license in Oregon[^4].
   
 
 ### Conditional expressions using *logical operators*
@@ -425,7 +401,7 @@ There are three examples posted on Moodle. The first two use `if else` statement
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2024</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2018, revised <time>2025</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 [^1]: Their values can be re-assigned from anywhere in the program, in any function, and it's easy for the dev to loose track of what should be stored in it.
 [^2]: JavaScript will treat an undeclared variable as a global variable even if you first assign a value to it in a local scope.

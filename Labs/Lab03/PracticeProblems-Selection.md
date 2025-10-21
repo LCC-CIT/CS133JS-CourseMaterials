@@ -58,33 +58,32 @@ These are solutions to the problems above. Note that for each problem, there may
 
 These solutions use constants as input (rather than prompting a user for input) and use the ternary operator in the solution to the problem. Output is logged to the console.
 
-1. ```JavaScript
-  /* Write a program that checks to see if a number is between two values using the ternary operator. */
-  
-  // Input is simulated with constants
-  const num = 5;   // number to check
-  const min = 1;
-  const max = 10;
-  
-  const result = num >= min && num <= max ? 'between' : 'not between';
-  console.log(result); // Output: between
-  ```
-  
+1. Write a program that checks to see if a number is between two values, min and max, using the ternary operator.
+```JavaScript
+// Problem 1, ternary statement
+// Input is simulated with constants
+const num = 5;   // number to check
+const min = 1;
+const max = 10;
+
+const result = num >= min && num <= max ? 'between' : 'not between';
+console.log(result); // Output: between
+```
+
    
+
+2. Write a program that checks to see if a string is empty or not using the ternary operator.
+```JavaScript
+const str = '';
+const result = str.length === 0 ? 'empty' : 'not empty';
+console.log(result); // Output: empty
+```
+
   
-2. ```JavaScript
-  /* Write a program that checks to see if a string is empty or not using the ternary operator. */
-  
-  const str = '';
-  const result = str.length === 0 ? 'empty' : 'not empty';
-  console.log(result); // Output: empty
-  ```
-  
-  
-  
+
 3. ```JavaScript
-  /* Write a program that checks to see if a string contains a specific character using the ternary operator. */
-  
+    /* Write a program that checks to see if a string contains a specific character using the ternary operator. */
+
   const str = 'hello';
   const char = 'e';
   const result = str.includes(char) ? 'contains' : 'does not contain';
@@ -109,10 +108,10 @@ These programs prompt the user to enter input using the `prompt` function, which
    } else {
      console.log("The number is zero");
    }
-   ```
+  ```
+
    
-   
-   
+
 2. ```JavaScript
    /* Write a program that takes two numbers as input and prints the larger number. If the two numbers are equal, print "The numbers are equal". */
    
@@ -126,10 +125,10 @@ These programs prompt the user to enter input using the `prompt` function, which
    } else {
      console.log("The numbers are equal");
    }
-   ```
+  ```
+
    
-   
-   
+
 3. ```JavaScript
    /* Write a program that takes a user's age and for the following ages prints a messge letting them know what activities they are old enough to do:
    
@@ -149,7 +148,7 @@ These programs prompt the user to enter input using the `prompt` function, which
    } else {
      console.log("You are old enough to vote, drink, and rent a car.");
    }
-   ```
+  ```
 
 ### Switch Statements
 

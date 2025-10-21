@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JS Live Workbook</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5/lib/codemirror.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="main-split" style="display: flex; flex: 1;">
+    <section id="left-column" style="flex: none; width: 50%; padding: 0; display: flex; flex-direction: column;">
+      <div id="left-header" style="padding:4px 10px; border-bottom: 1px solid #333; display:flex; align-items:center; justify-content:space-between; gap:10px;">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <h1 style="margin:0; font-size:1.2rem;">JS Live Workbook</h1>
+          <button id="file-viewer-back" title="Back" aria-label="Back" style="font-size:18px; padding:4px 8px; border-radius:3px; border:1px solid #444; background:#222; color:#fff; cursor:pointer; margin-left:12px;">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+          </button>
+          <button id="file-viewer-forward" title="Forward" aria-label="Forward" style="font-size:18px; padding:4px 8px; border-radius:3px; border:1px solid #444; background:#222; color:#fff; cursor:pointer;">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </button>
+        </div>
+        <nav class="menu-bar" aria-label="Main menu">
+          <details class="menu-item">
+            <summary class="menu-toggle">File Viewer <i class="fa fa-caret-down" aria-hidden="true"></i></summary>
+            <div class="menu-dropdown" role="menu" aria-label="File Viewer">
+              <button id="menu-open-md" type="button" role="menuitem">Open Markdown</button>
+              <button id="menu-open-html" type="button" role="menuitem">Open HTML</button>
+              <button id="menu-open-url" type="button" role="menuitem">Open from URL</button>
+              <button id="menu-open-welcome" type="button" role="menuitem">Open Welcome Page</button>
+              <hr style="margin: 4px 0; border: none; border-top: 1px solid #444;">
+              <div id="recent-files-container" style="display: none;">
+                <div style="padding: 4px 12px; font-size: 12px; color: #999; font-weight: bold;">Recent Files</div>
+                <div id="recent-files-list"></div>
+              </div>
+            </div>
+          </details>
+          <details class="menu-item">
+            <summary class="menu-toggle">Editor <i class="fa fa-caret-down" aria-hidden="true"></i></summary>
+            <div class="menu-dropdown" role="menu" aria-label="Editor">
+              <button id="menu-editor-open" type="button" role="menuitem">Open File</button>
+              <button id="menu-editor-save" type="button" role="menuitem">Save File</button>
+              <button id="menu-hide-editor" type="button" role="menuitem">Hide Editor</button>
+              <button id="menu-show-editor" type="button" role="menuitem">Show Editor</button>
+            </div>
+          </details>
+          <button id="menu-help" class="menu-toggle" type="button">Help</button>
+        </nav>
+      </div>
+      <div id="html-content" style="flex:1; overflow-y: auto; padding:10px;"></div>
+    </section>
+    <div id="splitter" aria-label="Resize" title="Drag to resize columns"></div>
+    <section id="right-column" style="flex: 1; display: flex; flex-direction: column;">
+      <section>
+        <div id="tab-bar" style="display: flex; align-items: center; border-bottom: 1px solid #444; background: #222; min-height: 32px;">
+          <!-- Tabs and + button will be dynamically inserted here -->
+        </div>
+        <div id="editor-container">
+          <textarea id="editor">// Write your JS code here</textarea>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+          <div>
+            <button id="runBtn" type="button" style="margin-right: 1px; padding: 6px 8px;">Run Code</button>
+            <button id="clearEditorBtn" type="button" style="margin-right: 1px; padding: 6px 8px;">Clear Editor</button>
+            <button id="clearConsoleBtn" type="button" style="padding: 6px 8px;">Clear Console</button>
+          </div>
+          <div></div>
+        </div>
+      </section>
+      <section style="flex: 1; display: flex; flex-direction: column;">
+        <pre id="console"></pre>
+        <div id="repl-row" style="display:flex; align-items:center; gap:8px; padding:6px 8px; border-top:1px solid #333; background:#1a1a1a;">
+          <span style="color:#0f0; font-family:monospace;">›</span>
+          <input id="repl-input" type="text" autocomplete="off" spellcheck="false"
+                 style="flex:1; background:#000; color:#0f0; border:1px solid #333; padding:6px 8px; font-family:monospace; outline:none; border-radius:2px;"
+                 placeholder="Type code and press Enter..." />
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/codemirror@5/lib/codemirror.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/codemirror@5/mode/javascript/javascript.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/lib/marked.umd.min.js"></script>
+  <script src="editorApp.js"></script>
+  <script type="module" src="fileIO.js"></script>
+  <script type="module" src="localFileLoader.js"></script>
+  <script type="module" src="urlContentLoader.js"></script>
+  <script type="module">
+    // Block browser back/forward navigation while app is open
+    window.addEventListener('popstate', function(e) {
+      history.pushState(null, '', document.URL);
+    });
+    // Push a dummy state so back/forward is always blocked
+    history.pushState(null, '', document.URL);
+  // File viewer history navigation (buttons wired in shared.js)
+    import { handleOpenClick, handleSaveClick } from './fileIO.js';
+    import { stripYamlFrontMatter, renderHtmlToLeftColumn, addRecentFile, getRecentFiles } from './shared.js';
+    import { loadFromUrl } from './urlContentLoader.js';
+
+    // Set current year in footer (if present)
+    (function(){
+      const yearEl = document.getElementById('year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+    })();
+
+    function populateRecentFiles() {
+      const container = document.getElementById('recent-files-container');
+      const list = document.getElementById('recent-files-list');
+      if (!container || !list) return;
+
+      const recentFiles = getRecentFiles();
+      console.log('Recent files retrieved:', recentFiles);
+      
+      if (recentFiles.length === 0) {
+        container.style.display = 'none';
+        return;
+      }
+
+      container.style.display = 'block';
+      list.innerHTML = '';
+
+      recentFiles.forEach((file, index) => {
+        console.log(`Processing recent file ${index}:`, file, typeof file);
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.role = 'menuitem';
+        btn.className = 'recent-file-btn';
+        
+        // Ensure we have a valid string for display
+        let displayName = '';
+        if (typeof file === 'object' && file !== null) {
+          displayName = file.name || file.url || file.filename || 'Unknown';
+        } else {
+          displayName = String(file);
+        }
+        
+        if (typeof displayName !== 'string') {
+          displayName = String(displayName);
+        }
+        
+        btn.textContent = displayName.length > 30 ? displayName.substring(0, 27) + '...' : displayName;
+        btn.title = displayName;
+
+        if (typeof file === 'object' && file !== null && file.type === 'url' && file.url) {
+          btn.addEventListener('click', () => {
+            loadFromUrl(file.url);
+          });
+        } else if (typeof file === 'object' && file !== null && file.isUrl && file.filename) {
+          // Support older format with isUrl flag
+          btn.addEventListener('click', () => {
+            loadFromUrl(file.filename);
+          });
+        } else {
+            btn.addEventListener('click', async () => {
+              // Custom dialog: offer to open file chooser
+              const msg = `Local file "${displayName}" cannot be opened directly for security reasons.\n\nWould you like to open a file chooser for the folder containing this file?`;
+              if (window.confirm(msg)) {
+                // Try to use File System Access API if available
+                if ('showOpenFilePicker' in window) {
+                  try {
+                    const opts = {
+                      multiple: false,
+                      types: [
+                        { description: 'All Files', accept: { '': ['.js', '.txt', '.md', '.html'] } }
+                      ],
+                      // Suggest the recent file name if possible
+                      suggestedName: file.name || displayName
+                    };
+                    const [handle] = await window.showOpenFilePicker(opts);
+                    if (handle) {
+                      const f = await handle.getFile();
+                      const text = await f.text();
+                      if (file.name && f.name !== file.name) {
+                        alert(`You selected "${f.name}" instead of the recent file "${file.name}".`);
+                      }
+                      // Render as HTML or Markdown based on extension
+                      let ext = f.name.split('.').pop().toLowerCase();
+                      if (ext === 'md') {
+                        if (window.marked && window.hljs) {
+                          let md = stripYamlFrontMatter(text);
+                          marked.setOptions({
+                            highlight: function(code, lang) {
+                              const validLang = hljs.getLanguage(lang) ? lang : 'plaintext';
+                              return hljs.highlight(code, { language: validLang }).value;
+                            },
+                            langPrefix: 'hljs language-'
+                          });
+                          await renderHtmlToLeftColumn(marked.parse(md));
+                        }
+                      } else {
+                        await renderHtmlToLeftColumn(text);
+                      }
+                    }
+                  } catch (e) {
+                    alert('Could not open file: ' + (e && e.message ? e.message : e));
+                  }
+                } else {
+                  // Fallback: use a hidden file input
+                  const input = document.createElement('input');
+                  input.type = 'file';
+                  input.accept = '.js,.txt,.md,.html';
+                  input.style.display = 'none';
+                  document.body.appendChild(input);
+                  input.addEventListener('change', async () => {
+                    const f = input.files && input.files[0];
+                    if (!f) { input.remove(); return; }
+                    const text = await f.text();
+                    let ext = f.name.split('.').pop().toLowerCase();
+                    if (ext === 'md') {
+                      if (window.marked && window.hljs) {
+                        let md = stripYamlFrontMatter(text);
+                        marked.setOptions({
+                          highlight: function(code, lang) {
+                            const validLang = hljs.getLanguage(lang) ? lang : 'plaintext';
+                            return hljs.highlight(code, { language: validLang }).value;
+                          },
+                          langPrefix: 'hljs language-'
+                        });
+                        await renderHtmlToLeftColumn(marked.parse(md));
+                      }
+                    } else {
+                      await renderHtmlToLeftColumn(text);
+                    }
+                    input.remove();
+                  }, { once: true });
+                  input.click();
+                }
+              }
+            });
+            // Remove not-allowed cursor and opacity
+            btn.style.opacity = '';
+            btn.style.cursor = 'pointer';
+        }
+
+        list.appendChild(btn);
+      });
+    }
+
+    // Populate recent files on page load
+    populateRecentFiles();
+
+    // Expose a debug function to clear recent files from console
+    window.clearRecentFiles = () => {
+      localStorage.removeItem('recentFiles');
+      console.log('Recent files cleared');
+      populateRecentFiles();
+    };
+
+    // Close all open menus (details elements)
+    function closeAllMenus() {
+      document.querySelectorAll('details.menu-item').forEach(d => {
+        d.open = false;
+      });
+    }
+
+    // Close menus when any button in a dropdown is clicked (including dynamically added buttons)
+    document.addEventListener('click', (e) => {
+      // Check if the clicked element is a button inside a menu-dropdown
+      if (e.target.matches('.menu-dropdown button')) {
+        closeAllMenus();
+      }
+    });
+
+    // Wire Welcome Page button
+    const menuOpenWelcome = document.getElementById('menu-open-welcome');
+    if (menuOpenWelcome) {
+      menuOpenWelcome.addEventListener('click', async () => {
+        try {
+          const resp = await fetch('welcome.md');
+          if (!resp.ok) throw new Error('Could not load welcome.md');
+          const text = await resp.text();
+          if (window.marked && window.hljs) {
+            let md = stripYamlFrontMatter(text);
+            marked.setOptions({
+              highlight: function(code, lang) {
+                const validLang = hljs.getLanguage(lang) ? lang : 'plaintext';
+                return hljs.highlight(code, { language: validLang }).value;
+              },
+              langPrefix: 'hljs language-'
+            });
+            await renderHtmlToLeftColumn(marked.parse(md));
+          } else {
+            await renderHtmlToLeftColumn(text);
+          }
+        } catch (e) {
+          alert('Failed to load welcome page: ' + (e && e.message ? e.message : e));
+        }
+      });
+    }
+    // Draggable vertical splitter logic
+    (function setupSplitter(){
+      const left = document.getElementById('left-column');
+      const right = document.getElementById('right-column');
+      const split = document.getElementById('splitter');
+      const main = document.getElementById('main-split');
+      if (!left || !right || !split || !main) return;
+
+      // Restore last width if stored
+      try {
+        const saved = localStorage.getItem('split_left_width');
+        if (saved) left.style.width = saved;
+      } catch(_) {}
+
+      let dragging = false;
+      let startX = 0;
+      let startWidth = 0;
+
+      const minLeft = 200; // px
+      const maxLeftPct = 80; // percent of main width
+
+      function onMouseMove(e){
+        if (!dragging) return;
+        const rect = main.getBoundingClientRect();
+        const maxLeft = rect.width * (maxLeftPct/100);
+        let newWidth = startWidth + (e.clientX - startX);
+        newWidth = Math.max(minLeft, Math.min(maxLeft, newWidth));
+        left.style.width = newWidth + 'px';
+      }
+      function onMouseUp(){
+        if (!dragging) return;
+        dragging = false;
+        document.removeEventListener('mousemove', onMouseMove);
+        document.removeEventListener('mouseup', onMouseUp);
+        try { localStorage.setItem('split_left_width', left.style.width); } catch(_) {}
+      }
+
+      split.addEventListener('mousedown', (e)=>{
+        dragging = true;
+        startX = e.clientX;
+        startWidth = left.getBoundingClientRect().width;
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', onMouseUp);
+        e.preventDefault();
+      });
+    })();
+
+    // Wire Editor menu to file actions
+    const menuEditorOpen = document.getElementById('menu-editor-open');
+    if (menuEditorOpen) menuEditorOpen.addEventListener('click', handleOpenClick);
+    const menuEditorSave = document.getElementById('menu-editor-save');
+    if (menuEditorSave) menuEditorSave.addEventListener('click', handleSaveClick);
+
+    // Wire File Viewer menu - Open from URL
+    const menuOpenUrl = document.getElementById('menu-open-url');
+    if (menuOpenUrl) {
+      menuOpenUrl.addEventListener('click', () => {
+        const url = prompt('Enter the URL to load (HTML or Markdown):');
+        if (url && url.trim()) {
+          console.log('Loading URL from prompt:', url.trim());
+          loadFromUrl(url.trim());
+          // Repopulate recent files after a short delay to ensure async operations complete
+          setTimeout(populateRecentFiles, 500);
+        }
+      });
+    }
+
+    // View menu
+    const hideEditorBtn = document.getElementById('menu-hide-editor');
+    const showEditorBtn = document.getElementById('menu-show-editor');
+    const rightCol = document.getElementById('right-column');
+    const splitter = document.getElementById('splitter');
+
+    // Initial state: editor visible, so hide enabled, show disabled
+    if (hideEditorBtn) hideEditorBtn.disabled = false;
+    if (showEditorBtn) showEditorBtn.disabled = true;
+
+    if (hideEditorBtn) hideEditorBtn.addEventListener('click', () => {
+      if (rightCol) rightCol.style.display = 'none';
+      if (splitter) splitter.style.display = 'none';
+      if (hideEditorBtn) hideEditorBtn.disabled = true;
+      if (showEditorBtn) showEditorBtn.disabled = false;
+    });
+    if (showEditorBtn) showEditorBtn.addEventListener('click', () => {
+      if (rightCol) rightCol.style.display = 'flex';
+      if (splitter) splitter.style.display = '';
+      if (hideEditorBtn) hideEditorBtn.disabled = false;
+      if (showEditorBtn) showEditorBtn.disabled = true;
+    });
+
+    // Help button
+    const helpBtn = document.getElementById('menu-help');
+    if (helpBtn) {
+      helpBtn.addEventListener('click', () => {
+        window.open('help.html', '_blank');
+      });
+    }
+
+    // Simple details close-siblings logic (optional)
+    document.querySelectorAll('details.menu-item').forEach(details => {
+      details.addEventListener('toggle', () => {
+        if (details.open) {
+          // Refresh recent files when File Viewer menu opens
+          if (details.querySelector('.menu-dropdown[aria-label="File Viewer"]')) {
+            populateRecentFiles();
+          }
+          // Close other menus
+          document.querySelectorAll('details.menu-item').forEach(d => {
+            if (d !== details) d.open = false;
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

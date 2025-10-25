@@ -26,42 +26,6 @@ author: Brian Bird
 
 [TOC]
 
-------
-
-# Introduction
-
-## Announcements
-
-Fall 2024
-
-- Lab 3 code review due Today  
-  If your lab partner didn't post a beta version for you to review, there is alternative beta code you can review this instead.
-- Reading quiz closes Thursday.
-  
-- Lab 3 production version due Thursday.
-  
-- Midterm next week. 
-  - Review lecture notes.
-  - Practice midterm.
-  - You can take the quiz in the classroom at class time, or you can take it in the testing center. 
-    - **Classroom** from 10:00 to 11:50 (normal class time). 
-    - **[Testing center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services)**  
-      The testing center is located in the Center Building, Room 311 (upstairs and across from the library).
-      - Thursday, 10/31, 9:00am&ndash;7:30pm
-      - Friday, 11/1, 9:00am&ndash;5:00pm.
-      - Saturday, 11/2, 10:00am&ndash;2:00pm
-    - In both locations: 
-      - You aren't allowed to use: help from others, internet searches, AI (like ChatGPT), or any other outside sources.
-      -  You will be allowed to refer to one page of notes.
-  
-- Does anyone have any general questions about anything?
-  - Questions about lab 3 on selection?
-
-
-
-
-------
-
 # Review
 
 ## Selection Using `switch` Statements

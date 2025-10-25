@@ -162,7 +162,8 @@ The midterm and final quizzes are given in weeks 5 and 11. See the course schedu
 
 - In the Instructional Testing Center in the Center Building, room 311. See the [Instructional Testing Services](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services) web site for testing times and procedures&mdash;primarily for online students. 
 
-Students who live outside the Eugene/Springfield area can send an email to [online@lanecc.edu](mailto:online@lanecc.edu) well in advance of the test dates to arrange for your midterm and final to be proctored at a location near you.
+**If you live outside Eugene/Springfield:** 
+You can send an email to [online@lanecc.edu](mailto:online@lanecc.edu) at least two weeks in advance of the test dates to arrange for your midterm and final to be proctored at a location near you. Copy your instructor when you send the email.
 
 ### Code Reviews
 

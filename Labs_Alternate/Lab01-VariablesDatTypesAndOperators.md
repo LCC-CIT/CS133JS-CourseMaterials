@@ -2,6 +2,12 @@
 
 [TOC]
 
+## Instructions
+
+For each of the topics below, do at least two problems by opening a browser console and writing the code there. You can copy and paste the code into a file if you wish, but you don't need to submit it.
+
+For the first problem you do, pick problems one that is challenging, but not too challenging. After you have done the first one, look at the others and pick a harder one. If there are any you don't think you could do then ask for help. Even if you don't write code for all the problems, you should be sure you know how to solve all of them.
+
 ### 1. Declaring  Variables with `let`
 
 **Concept:** The `let` keyword is used to declare a variable—a named container (think of it as a box) that can hold a value (a number, text, or other things). The value of a variable declared with `let` can be changed (or "reassigned") later in your code.

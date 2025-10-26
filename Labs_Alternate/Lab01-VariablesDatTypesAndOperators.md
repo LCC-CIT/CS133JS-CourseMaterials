@@ -6,7 +6,7 @@
 
 For each of the topics below, do at least two problems by opening a browser console and writing the code there. You can copy and paste the code into a file if you wish, but you don't need to submit it.
 
-For the first problem you do, pick problems one that is challenging, but not too challenging. After you have done the first one, look at the others and pick a harder one. If there are any you don't think you could do then ask for help. Even if you don't write code for all the problems, you should be sure you know how to solve all of them.
+For the first problem you do for each topic, pick a problem that is challenging, but not too challenging. After you have done the first one, look at the others and pick a harder one. If there are any you don't think you could do then ask for help. Even if you don't write code to solve all the problems, you should be sure you know how to solve all of them. Ask for help if you don't.
 
 ### 1. Declaring  Variables with `let`
 
@@ -216,7 +216,7 @@ console.log(myScore); // Prints 28
 
 ### 8. True and False Values in the Boolean Data Type
 
-**Concept:** A "boolean" is a data type that can only have two possible values: `true` or `false`. Booleans are used for logic and making decisions. The `==` (double equals) operator is a *comparison* operator. It "asks a question": are these two values equal? It returns a boolean answer.
+**Concept:** A *boolean* is a data type that can only have two possible values: `true` or `false`. Booleans are used for logic and making decisions. The `==` (double equals) operator is a *comparison* operator. It "asks a question": are these two values equal? It returns a boolean answer.
 
 **Example:**
 
@@ -353,8 +353,9 @@ console.log(yourPet); // ReferenceError: yourPet is not defined
 
 ## Completing and Reporting on Your Work
 
-- Do at least two problems for each topic
+- Do at least two problems for each topic.
 - Report which problems you completed (by topic number and problem number) and anything you had questions about.
+- You don't need to submit the code.
 - You don't need to get a code review for this lab.
 
 

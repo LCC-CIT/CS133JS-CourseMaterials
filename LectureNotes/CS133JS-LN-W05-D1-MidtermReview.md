@@ -18,7 +18,7 @@ author: Brian Bird
 | 2. Functions, Operators and Expressions  | 7. Objects |
 | 3. Conditional Statements: if and switch | 8. Methods |
 | 4. Repetition: while, do while, and for  | 9. DOM     |
-| 5. <mark>Midterm Check-Point</mark>      | 10. Final  |
+| 5. <mark>Midterm Review</mark>           | 10. Final  |
 
 
 

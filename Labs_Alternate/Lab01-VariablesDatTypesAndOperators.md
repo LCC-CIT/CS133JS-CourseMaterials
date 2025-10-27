@@ -30,9 +30,9 @@ console.log(age); // Prints 31
 
 **Problems:**
 
-1. Declare a variable named `score` and set its initial value to `0`.
-2. Declare a variable named `lives` and set its value to `9`. On the next line, change the value of `lives` to `8`.
-3. Declare a variable `coffeeType`, set its value to `"dark roast"`, and then change its value to `"medium roast"`.
+1. Declare a variable named `score` and set its initial value to 10. Use `console.log` to verify that `score` now contains a 10.
+2. Declare a variable named `lives` and set its value to 9. On the next line, change the value of `lives` to 8. Use `console.log` to verify that the value stored in `lives` is now 8.
+3. Declare a variable `coffeeType`, set its value to "dark roast", and then change its value to "medium roast". Use `console.log` to verify that the value stored in `coffeeType` is now "medium roast".
 
 ------
 
@@ -82,10 +82,8 @@ console.log("Hello, " + userName);
 
 **Problems:**
 
-1. Use `prompt()` to ask the user "What city do you live in?". Store their answer in a variable called `city`.
-2. Print the `city` variable to the console.
-3. Use `prompt()` to ask "How old are you?". Store the answer in `userAge`.
-4. Use `typeof` to check the data type of `userAge`. (You will see it is a `string`, even if you typed a number!)
+1. Use `prompt()` to ask the user "What city do you live in?". Store their answer in a variable called `city`. Print the `city` variable to the console.
+3. Use `prompt()` to ask "How old are you?". Store the answer in `userAge`. Print the value to the console.
 
 ---
 
@@ -263,8 +261,16 @@ console.log(typeof isStudent); // Prints "boolean"
 **Problems:**
 
 1. Use `console.log()` and `typeof` to find the data type of the value `42`.
+
 2. Use `console.log()` and `typeof` to find the data type of the value `"42"`. (Notice this is different from problem 1).
+
 3. Create a variable `isHungry` and set it to `true`. Use `typeof` to print the data type of this variable.
+
+4. Experiment with the type returned by `prompt`:
+
+   - Use `prompt()` to ask "What year is it?". Store the answer in `thisYear`. Print the value to the console.
+
+   - Use `typeof` to check the data type of `thisYear`. (You will see it is a `string`, even if you typed a number! That's just how `prompt` works.)
 
 
 

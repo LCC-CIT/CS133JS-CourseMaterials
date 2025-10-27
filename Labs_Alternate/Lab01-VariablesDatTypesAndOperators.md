@@ -77,7 +77,7 @@ console.log(planet); // Prints "Earth"
 let userName = prompt("What is your name?");
 
 // The 'userName' variable now holds the text the user entered
-console.log("Hello, " + userName);
+console.log(userName);
 ```
 
 **Problems:**
@@ -89,7 +89,7 @@ console.log("Hello, " + userName);
 
 
 
-### 4. Text Values in the String Data Type
+### 4. Strings: working with Text
 
 **Concept:** A "string" is a piece of text. In JavaScript, you create strings by wrapping your text in either single quotes (`'`) or double quotes (`"`).
 
@@ -108,15 +108,14 @@ console.log(doubleQuoteString);
 
 **Problems:**
 
-1. Create a variable `firstName` and set its value to your first name as a string.
-2. Create a variable `favoriteColor` and set its value to your favorite color as a string.
-3. Print the `favoriteColor` variable to the console.
+1. Create a variable `firstName` and set its value to your first name as a string. Print the `firstName` variable to the console.
+2. Create a variable `favoriteColor` and set its value to your favorite color as a string. Print the `favoriteColor` variable to the console.
 
 ------
 
 
 
-### 5. Concatenating Strings
+### 5. Joining (Concatenating) Strings
 
 **Concept:** "Concatenation" is the process of joining two or more strings together to create a new, single string. You do this using the same `+` operator you use for adding numbers.
 
@@ -134,10 +133,15 @@ console.log(greeting); // Prints "Hello World!"
 
 **Problems:**
 
-1. Create a variable `greeting` with the value `"Hi, "`.
-2. Create a variable `name` with your name as its value.
-3. Create a new variable `fullGreeting` by concatenating `greeting` and `name`. Print `fullGreeting` to the console.
-4. Concatenate the strings `"JavaScript"`, `" is"`, and `" fun"` and print the final result to the console.
+1. Join two strings to make a greeting:  
+
+   - Create a variable `greeting` with the value `"Hi, "`.
+
+   - Create a variable `name` with your name as its value.
+
+   - Create a new variable `fullGreeting` by concatenating `greeting` and `name`. Print `fullGreeting` to the console.
+
+2. Concatenate the strings `"JavaScript"`, `" is"`, and `" fun"` and print the final result to the console.
 
 ------
 
@@ -164,9 +168,14 @@ console.log(remainder); // Prints 2
 **Problems:**
 
 1. Use `console.log()` to print the result of `(100 + 50) / 3`.
-2. Declare a variable `totalPizzas` and set it to `5`. Declare a variable `slicesPerPizza` and set it to `8`.
-3. Create a variable `totalSlices` by multiplying `totalPizzas` and `slicesPerPizza`. Print `totalSlices`.
-4. You have `26` cookies to divide among `4` friends. Use the modulo operator (`%`) to find out how many cookies will be left over. Print the remainder.
+
+2. Calculate the total slices in multiple pizzas:
+
+   - Declare a variable `totalPizzas` and set it to `5`. Declare a variable `slicesPerPizza` and set it to `8`.
+
+   - Create a variable `totalSlices` by multiplying `totalPizzas` and `slicesPerPizza`. Print `totalSlices`.
+
+3. You have `26` cookies to divide among `4` friends. Use the modulo operator (`%`) to find out how many cookies will be left over. Print the remainder.
 
 ---
 

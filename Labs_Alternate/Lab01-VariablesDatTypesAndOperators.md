@@ -221,7 +221,7 @@ console.log(myScore); // Prints 28
 
 
 
-### 8. True and False Values in the Boolean Data Type
+### 8. Boolean Values:True and False
 
 **Concept:** A *boolean* is a data type that can only have two possible values: `true` or `false`. Booleans are used for logic and making decisions. The `==` (double equals) operator is a *comparison* operator. It "asks a question": are these two values equal? It returns a boolean answer.
 
@@ -245,9 +245,9 @@ console.log(10 == "10"); // Prints true
 
 1. Use `console.log()` to check if the number `50` is equal to `50`.
 2. Use `console.log()` to check if the string `"JavaScript"` is equal to the string `"Python"`.
-3. Declare a variable `password` and set it to `"12345"`.
-4. Use `console.log()` to check if `password` is equal to `"12345"`.
-5. Use `console.log()` to check if `password` is equal to `"hello"`.
+3. Check a password:  
+   - Declare a variable `password` and set it to `"12345"`.
+   - Use `console.log()` to check if `password` is equal to `"12345"`.
 
 ---
 
@@ -308,7 +308,7 @@ console.log(price + 1); // Prints 11.99
 
 1. You have two strings: `a = "100"` and `b = "50"`. Convert both to numbers using `parseInt()` and print their sum.
 2. You have a string `priceString = "19.95"`. Convert it to a number using `parseFloat()` and print the result.
-3. Use `Number()` to convert the string `"123"` into a number, store it in a variable, and print the variable.
+3. Use `Number()` to convert the string `"123"` into a number, store it in a variable, and print the value stored in the variable.
 
 ---
 

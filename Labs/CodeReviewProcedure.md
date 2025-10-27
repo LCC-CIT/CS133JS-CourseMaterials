@@ -1,13 +1,11 @@
  <h1>Code Review Procedure</h1>
 
-**CS 133JS, Beginning Programming: JavaScript**
-
 <h2>Contents</h2>
 
 [TOC]
 ## Overview
 
-Each student is on a team with one or two other students who are their lab partners. On Moodle, each team of lab partners is listed with a team name: Alders, Birches, Cedars, etc. 
+Each student is on a team with one or two other students who are their lab partners. On Moodle, each team of lab partners is listed with a team name
 
 There are three versions of each lab assignment—versions A, B and C. Each lab partner will do a different version. This allows each student to look at the other’s work and give them feedback without seeing a solution to their own assignment. 
 
@@ -17,7 +15,8 @@ There are three versions of each lab assignment—versions A, B and C. Each lab 
 
 When a student has a beta (draft) version of their lab assignment ready, they will post it in team’s Discord channel. This should be done before the due date for the beta version. 
 
-A lab partner will the review the beta version using the code review form provided by the instructor and put *yes* or *no* in the "beta" column for each question on the form. This should be done before the due date for the code review. Each lab partner will do one review in “round robin” order: student A reviews B, student B reviews C, and student C reviews A. 
+A lab partner will the review the beta version using the code review form provided by the instructor and put *yes* or *no* in the "beta" column for each question on the form. This should be done before the due date for the code review. Each lab partner will do one review in “round robin” order:  
+student A reviews B, student B reviews C, and student C reviews A. 
 
 ### What to Do with the Code Review You Give 
 

@@ -43,8 +43,9 @@
     - Dates and times:
       - Wednesday, 10/29, 9:00am to 7:00pm
       - Thursday, 10/30, 9:00am to 7:00pm
+      - Friday, 10/31, 9:00am to 5:00pm
       - Saturday, 11/1, 10:00am to 2:00pm
-    - You must arrive at least 30 minutes before closing.
+    - You must arrive at least 45 minutes before closing time.
     - ID is required.
   - In both locations: 
     - You aren't allowed to use: help from others, internet searches, AI (like ChatGPT), or any other outside sources.

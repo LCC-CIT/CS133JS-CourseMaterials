@@ -4,9 +4,9 @@
 
 ## Instructions
 
-For each of the topics below, do at least two problems by opening a browser console and writing the code there. You can copy and paste the code into a file if you wish, but you don't need to submit it.
+For each of the topics below, do  two problems by opening a browser console and writing the code there. You can copy and paste the code into a file if you wish, but you don't need to submit it. 
 
-For the first problem you do for each topic, pick a problem that is challenging, but not too challenging. After you have done the first one, look at the others and pick a harder one. If there are any you don't think you could do then ask for help. Even if you don't write code to solve all the problems, you should be sure you know how to solve all of them. Ask for help if you don't.
+Reporting: In the Moodle Lab 1, Part 1 assignment submission text area, tell me which sections you compeled (hopefully 1 through 12). If you have questions send me a message.  If you want me to check some of your code you can put it in a file and upload it to Moodle.
 
 ### 1. Declaring  Variables with `let`
 

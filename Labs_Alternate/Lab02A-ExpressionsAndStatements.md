@@ -19,7 +19,7 @@ For example, `let myVariable = 5 + 10;` is a complete statement. It's a set of a
 
 Almost everything that produces a value is an expression.
 
-**Examples:**
+#### Examples
 
 ```JavaScript
 // 1. Literal Value: The value itself is an expression.
@@ -44,7 +44,7 @@ console.log(parseInt("50")); // 'parseInt("50")' is an expression (evaluates to 
 console.log(x + (5 * 2)); // (evaluates to 20)
 ```
 
-**Problems:**
+#### Problems:
 
 1. First, declare two variables: `let price = 10;` and `let quantity = 5;`. On a new line, use `console.log()` and, inside the parentheses, write *only* the expression that calculates the total cost (price times quantity).
 2. First, declare a variable: `let age = 30;`. On a new line, use `console.log()` and, inside the parentheses, write *only* the expression that checks if `age` is less than `50`. (This should print `true` or `false`).

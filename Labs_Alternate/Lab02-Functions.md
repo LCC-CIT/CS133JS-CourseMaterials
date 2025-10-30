@@ -6,7 +6,7 @@
 
 For each of the topics below, do read the concepts and consider the examples. Do the problems by opening a browser console and writing the code there. You can copy and paste the code into a file if you wish, but you don't need to submit it. You don't need to get a code review.
 
-Reporting: In the Moodle Lab 2 assignment submission text area, tell me which sections you compeled (hopefully 1 through 12). If you have questions send me a message.  If you want me to check some of your code you can put it in a file and upload it to Moodle.
+Reporting: In the Moodle Lab 2 assignment submission text area, tell me which sections you completed (hopefully 1 through 12). If you have questions send me a message.  If you want me to check some of your code you can put it in a file and upload it to Moodle.
 
 ### 1. JavaScript's Built-in Functions
 

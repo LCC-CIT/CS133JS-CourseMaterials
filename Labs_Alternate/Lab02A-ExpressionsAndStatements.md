@@ -41,7 +41,7 @@ console.log(x);         // 'x' is an expression (evaluates to 10)
 console.log(5 == x);    // '5 == x' is an expression (evaluates to false)
 
 // 5. Function Call: A function that returns a value is an expression.
-console.log(parseInt("50")); // 'parseInt("50")' is an expression
+console.log(parseInt("50")); // 'parseInt("50")' is an expression (evaluates to 50)
 
 // 6. Complex: Expressions can be made of other expressions.
 // 'x + (5 * 2)' is an expression.

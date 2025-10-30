@@ -17,9 +17,9 @@ The simplest way to understand what expressions and statements are is:
 
 A "litmus test" is that an expression can be put on the right side of an assignment (`=`) or inside a `console.log()`. A statement cannot.
 
-For example, let myVariable = 5 + 10; is a complete statement. It's a set of actions (declaring a variable, adding two numbers and assigning the sum to the variable).
+For example, `let myVariable = 5 + 10;` is a complete statement. It's a set of actions (declaring a variable, adding two numbers and assigning the sum to the variable).
 
-Inside that statement, 5 + 10 is an expression (it evaluates to 15). 5 is an expression. 10 is an expression. 
+Inside that statement, `5 + 10` is an expression (it evaluates to 15). `5` is an expression. `10` is an expression. 
 
 **Examples:**
 
@@ -58,5 +58,5 @@ console.log(x + (5 * 2)); // (evaluates to 20)
 
 
 
-These lab instructions were written by Brian Bird using Gemini 2.5 Pro, 10/29/2025.
+These lab instructions were written by Brian Bird with assistance from Gemini 2.5 Pro, 10/29/2025.
 

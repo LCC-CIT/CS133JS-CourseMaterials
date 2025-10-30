@@ -4,9 +4,7 @@
 
 ## Instructions
 
-The concept of expressions is crucial to understanding how to write JavaScript code. I created this extra set of exercises to help you check your understanding of the difference between expressions and statements. Be sure you fully grasp this. If it's unclear ask for further explanation.
-
-Here is an explanation and some problems to help you understand expressions and statements.
+The concept of *expressions* is crucial to understanding how to write JavaScript code. I created this extra tutorial with exercise problems to help you check your understanding of the difference between an *expression* and a *statement*. Be sure you fully grasp this. If it's unclear ask for further explanation.
 
 ### Expressions and Statements
 

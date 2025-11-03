@@ -4,9 +4,9 @@
 
 ## Instructions
 
-For each of the topics below, do  two problems by opening a browser console and writing the code there. You can copy and paste the code into a file if you wish, but you don't need to submit it. 
+For each of the topics below, do at least two problems by opening a browser console and writing the code there. You can copy and paste the code into a file if you wish, but you don't need to submit it.
 
-Reporting: In the Moodle Lab 1, Part 1 assignment submission text area, tell me which sections you compeled (hopefully 1 through 12). If you have questions send me a message.  If you want me to check some of your code you can put it in a file and upload it to Moodle.
+For the first problem you do for each topic, pick a problem that is challenging, but not too challenging. After you have done the first one, look at the others and pick a harder one. If there are any you don't think you could do then ask for help. Even if you don't write code to solve all the problems, you should be sure you know how to solve all of them. Ask for help if you don't.
 
 ### 1. Declaring  Variables with `let`
 
@@ -30,9 +30,9 @@ console.log(age); // Prints 31
 
 **Problems:**
 
-1. Declare a variable named `score` and set its initial value to 10. Use `console.log` to verify that `score` now contains a 10.
-2. Declare a variable named `lives` and set its value to 9. On the next line, change the value of `lives` to 8. Use `console.log` to verify that the value stored in `lives` is now 8.
-3. Declare a variable `coffeeType`, set its value to "dark roast", and then change its value to "medium roast". Use `console.log` to verify that the value stored in `coffeeType` is now "medium roast".
+1. Declare a variable named `score` and set its initial value to `0`.
+2. Declare a variable named `lives` and set its value to `9`. On the next line, change the value of `lives` to `8`.
+3. Declare a variable `coffeeType`, set its value to `"dark roast"`, and then change its value to `"medium roast"`.
 
 ------
 
@@ -77,19 +77,21 @@ console.log(planet); // Prints "Earth"
 let userName = prompt("What is your name?");
 
 // The 'userName' variable now holds the text the user entered
-console.log(userName);
+console.log("Hello, " + userName);
 ```
 
 **Problems:**
 
-1. Use `prompt()` to ask the user "What city do you live in?". Store their answer in a variable called `city`. Print the `city` variable to the console.
-3. Use `prompt()` to ask "How old are you?". Store the answer in `userAge`. Print the value to the console.
+1. Use `prompt()` to ask the user "What city do you live in?". Store their answer in a variable called `city`.
+2. Print the `city` variable to the console.
+3. Use `prompt()` to ask "How old are you?". Store the answer in `userAge`.
+4. Use `typeof` to check the data type of `userAge`. (You will see it is a `string`, even if you typed a number!)
 
 ---
 
 
 
-### 4. Strings: working with Text
+### 4. Text Values in the String Data Type
 
 **Concept:** A "string" is a piece of text. In JavaScript, you create strings by wrapping your text in either single quotes (`'`) or double quotes (`"`).
 
@@ -108,14 +110,15 @@ console.log(doubleQuoteString);
 
 **Problems:**
 
-1. Create a variable `firstName` and set its value to your first name as a string. Print the `firstName` variable to the console.
-2. Create a variable `favoriteColor` and set its value to your favorite color as a string. Print the `favoriteColor` variable to the console.
+1. Create a variable `firstName` and set its value to your first name as a string.
+2. Create a variable `favoriteColor` and set its value to your favorite color as a string.
+3. Print the `favoriteColor` variable to the console.
 
 ------
 
 
 
-### 5. Joining (Concatenating) Strings
+### 5. Concatenating Strings
 
 **Concept:** "Concatenation" is the process of joining two or more strings together to create a new, single string. You do this using the same `+` operator you use for adding numbers.
 
@@ -133,15 +136,10 @@ console.log(greeting); // Prints "Hello World!"
 
 **Problems:**
 
-1. Join two strings to make a greeting:  
-
-   - Create a variable `greeting` with the value `"Hi, "`.
-
-   - Create a variable `name` with your name as its value.
-
-   - Create a new variable `fullGreeting` by concatenating `greeting` and `name`. Print `fullGreeting` to the console.
-
-2. Concatenate the strings `"JavaScript"`, `" is"`, and `" fun"` and print the final result to the console.
+1. Create a variable `greeting` with the value `"Hi, "`.
+2. Create a variable `name` with your name as its value.
+3. Create a new variable `fullGreeting` by concatenating `greeting` and `name`. Print `fullGreeting` to the console.
+4. Concatenate the strings `"JavaScript"`, `" is"`, and `" fun"` and print the final result to the console.
 
 ------
 
@@ -168,14 +166,9 @@ console.log(remainder); // Prints 2
 **Problems:**
 
 1. Use `console.log()` to print the result of `(100 + 50) / 3`.
-
-2. Calculate the total slices in multiple pizzas:
-
-   - Declare a variable `totalPizzas` and set it to `5`. Declare a variable `slicesPerPizza` and set it to `8`.
-
-   - Create a variable `totalSlices` by multiplying `totalPizzas` and `slicesPerPizza`. Print `totalSlices`.
-
-3. You have `26` cookies to divide among `4` friends. Use the modulo operator (`%`) to find out how many cookies will be left over. Print the remainder.
+2. Declare a variable `totalPizzas` and set it to `5`. Declare a variable `slicesPerPizza` and set it to `8`.
+3. Create a variable `totalSlices` by multiplying `totalPizzas` and `slicesPerPizza`. Print `totalSlices`.
+4. You have `26` cookies to divide among `4` friends. Use the modulo operator (`%`) to find out how many cookies will be left over. Print the remainder.
 
 ---
 
@@ -221,7 +214,7 @@ console.log(myScore); // Prints 28
 
 
 
-### 8. Boolean Values:True and False
+### 8. True and False Values in the Boolean Data Type
 
 **Concept:** A *boolean* is a data type that can only have two possible values: `true` or `false`. Booleans are used for logic and making decisions. The `==` (double equals) operator is a *comparison* operator. It "asks a question": are these two values equal? It returns a boolean answer.
 
@@ -245,9 +238,9 @@ console.log(10 == "10"); // Prints true
 
 1. Use `console.log()` to check if the number `50` is equal to `50`.
 2. Use `console.log()` to check if the string `"JavaScript"` is equal to the string `"Python"`.
-3. Check a password:  
-   - Declare a variable `password` and set it to `"12345"`.
-   - Use `console.log()` to check if `password` is equal to `"12345"`.
+3. Declare a variable `password` and set it to `"12345"`.
+4. Use `console.log()` to check if `password` is equal to `"12345"`.
+5. Use `console.log()` to check if `password` is equal to `"hello"`.
 
 ---
 
@@ -270,16 +263,8 @@ console.log(typeof isStudent); // Prints "boolean"
 **Problems:**
 
 1. Use `console.log()` and `typeof` to find the data type of the value `42`.
-
 2. Use `console.log()` and `typeof` to find the data type of the value `"42"`. (Notice this is different from problem 1).
-
 3. Create a variable `isHungry` and set it to `true`. Use `typeof` to print the data type of this variable.
-
-4. Experiment with the type returned by `prompt`:
-
-   - Use `prompt()` to ask "What year is it?". Store the answer in `thisYear`. Print the value to the console.
-
-   - Use `typeof` to check the data type of `thisYear`. (You will see it is a `string`, even if you typed a number! That's just how `prompt` works.)
 
 
 
@@ -308,7 +293,7 @@ console.log(price + 1); // Prints 11.99
 
 1. You have two strings: `a = "100"` and `b = "50"`. Convert both to numbers using `parseInt()` and print their sum.
 2. You have a string `priceString = "19.95"`. Convert it to a number using `parseFloat()` and print the result.
-3. Use `Number()` to convert the string `"123"` into a number, store it in a variable, and print the value stored in the variable.
+3. Use `Number()` to convert the string `"123"` into a number, store it in a variable, and print the variable.
 
 ---
 

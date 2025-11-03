@@ -27,37 +27,6 @@ author: Brian Bird
 
 [TOC]
 
-# Introduction
-
-
-
-## Q and A
-
-- Do you have any questions about:
-
-  - The midterm?
-
-    - You can come to my office hours if you want to review the questions you missed or were unsure about.
-
-    - The term project?
-      - This is a good time to start the skeleton of your project.
-
-  - The reading on arrays
-
-  - Anything else?
-
-- Reminder of due dates:
-
-  - Project proposal on Thursday.
-
-  - Reading quiz on Thursday.
-
-  - Lab 5 beta version on Sunday.
-
-
-
-# Arrays
-
 ## What are Arrays?
 
 - Review of variables:  We can think of a *variable* as a storage place in memory. It has a name and can hold <u>only one *value*</u> and that value has a *data type*.

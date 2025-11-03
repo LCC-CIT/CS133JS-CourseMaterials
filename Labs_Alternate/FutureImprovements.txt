@@ -1,0 +1,12 @@
+Improvements for alt labs
+
+Add explanation ane exercises about expressions. Get across the idea that expressions evaluate to values. 
+Show this in the console as well as in statements
+
+Include some problems with nested quotes
+
+REDO THE UNITS IN THE COURSE
+
+Don't introduce writing functions so soon. Instead introduce objects and methods from the perspective of just using them.
+Introduce the math object so that you can use random
+Introduce strings as a stand-alone topic before introducing arrays

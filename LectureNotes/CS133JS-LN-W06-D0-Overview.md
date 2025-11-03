@@ -59,7 +59,7 @@ author: Brian Bird
 
 - Reading quiz on Thursday.
 
-- Lab 5 beta version on Sunday.
+- Lab 5 (this week's array lab) beta version on Sunday.
 
 ## This Week's Learning Objectives
 
@@ -79,4 +79,4 @@ This week you will learn to use arrays.
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript course materials by [Brian Bird](https://profbird.online) <time>2025</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript course materials by [Brian Bird](https://profbird.dev) <time>2025</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

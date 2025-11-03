@@ -70,7 +70,7 @@ An array can be created by declaring it and it can optionally be initialized. *I
   let starWars = ["Rey", "Finn", "Han Solo", "C-3PO", "Chewbacca"];
   ```
 
-- Best practice, is to declare an array as a constant:
+- Best practice, is to declare an array as a <u>constant</u>:
 
   ```javascript
   const starTrek = ["Kirk", "Hulu", "McCoy", "Spok", "Scott"];
@@ -78,7 +78,7 @@ An array can be created by declaring it and it can optionally be initialized. *I
 
   - This doesn't mean you can't change the values stored in it. You just can't replace the array as a whole. (More about this later.)
 
-- Arrays can contain multiple data types:  
+- A single array can contain multiple data types:  
   ```javascript
   const mixedStuff = [false, true, "one", 2];
   ```
@@ -124,7 +124,7 @@ Question: Which name got replaced?
   starWars[5] = "Yoda";
   ```
 
-  - When you don't know the index of the last element:  
+  - Adding an element when you don't know the index of the last element:  
     (Note that the length is one more than the last index.)
 
   ```javascript
@@ -165,7 +165,7 @@ Question: Which name got replaced?
 ### for loop
 
 We can use a for loop  to display the contents of an array.
-Look at the loop below, assuming we have defined the original starWars array above.
+Look at the loop below, assuming we have defined the original `starWars` array above.
 
 - How many times will it iterate? 
 - What is the final value of i?
@@ -294,7 +294,7 @@ This can be visualized as a table:
 
 - `splice`
 
-  Used to remove or modify elements in an array
+  Used to remove or modify elements at any location in an array.
 
 
 
@@ -313,4 +313,4 @@ This can be visualized as a table:
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) 2018, revised fall <time>2024</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev) 2018, revised fall <time>2025</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

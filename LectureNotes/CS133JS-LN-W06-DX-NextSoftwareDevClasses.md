@@ -47,7 +47,7 @@ These are the classes you are recommended to take next if you are pursuing the A
 - WR 227 Technical Writing
 
 - Program Elective: CS 235M, Intermediate Mobile App Development with JavaScript  
-    
+  
   Take this to get the Mobile App Development certificate
   
   OR  
@@ -69,6 +69,6 @@ These are the classes you are recommended to take next if you are pursuing the A
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) <time>2024</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev) <time>2024</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------

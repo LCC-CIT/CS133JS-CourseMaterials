@@ -63,16 +63,12 @@ starWars[starWars.length] = "Yoda";   // Adding a new element and value
 prolog += "A New Hope"; // Adding another string (more characters)
 ```
 
-
-
-####Get the index location of a value
+#### Get the index location of a value
 
 ```javascript
 console.log(starWars.indexOf("Finn"));  // Gets the index of the elmeent containing "Finn"
 console.log(prolog.indexOf("g"));  // Gets the index of the character "g"
 ```
-
-#### 
 
 ## Reference
 
@@ -82,6 +78,6 @@ console.log(prolog.indexOf("g"));  // Gets the index of the character "g"
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online) 2018, revised <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev) 2018, revised <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 ------------

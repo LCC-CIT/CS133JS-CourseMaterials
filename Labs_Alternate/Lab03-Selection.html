@@ -1,0 +1,720 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'><style type='text/css'>html {overflow-x: initial !important;}</style>
+<style type='text/css'  id="style-base">:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p *, #write.first-line-indent svg * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-width: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; white-space: nowrap; overflow: visible; }
+foreignObject { overflow: visible; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+li p { orphans: 1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; border-right-style: none; border-right-color: currentcolor; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; border-bottom-style: none; border-bottom-color: currentcolor; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: medium; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+</style>
+<style type='text/css'  id="style-codemirror">.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background: inherit; }
+.CodeMirror-scroll { overflow: auto hidden; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); background: inherit; white-space: nowrap; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background: inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background: inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; outline: 0px; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: auto hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 10px; z-index: 3; overflow-y: hidden; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; background: 0px 0px !important; border: medium !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-radius: 0px; border-width: 0px; background: 0px 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; overflow-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; }
+.CodeMirror-wrap pre { overflow-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right-width: 30px; border-right-style: solid; border-right-color: transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right-width: medium; border-right-style: none; border-right-color: currentcolor; width: auto; }
+.CodeMirror-linebackground { position: absolute; inset: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right-width: medium; border-right-style: none; border-right-color: currentcolor; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background: rgba(255, 255, 0, 0.4); }
+span.cm-underlined { text-decoration: underline; }
+span.cm-strikethrough { text-decoration: line-through; }
+.cm-tw-syntaxerror { color: rgb(255, 255, 255); background-color: rgb(153, 0, 0); }
+.cm-tw-deleted { text-decoration: line-through; }
+.cm-tw-header5 { font-weight: 700; }
+.cm-tw-listitem:first-child { padding-left: 10px; }
+.cm-tw-box { border-style: solid; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-color: inherit; border-top-width: 0px !important; }
+.cm-tw-underline { text-decoration: underline; }
+@media print {
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+</style>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&amp;subset=latin,latin-ext' type='text/css' />
+<style type='text/css'  id="style-theme_css">:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', 'SF Pro', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+</style>
+<style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+<style type='text/css'  id="style-mac-print"> @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}</style>
+
+<title>Lab03-Selection</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1>Lab 3: Selection</h1><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n3"><a class="md-toc-inner" style="" href="#instructions">Instructions</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n706"><a class="md-toc-inner" style="" href="#1-comparison-operators">1. Comparison Operators</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n793"><a class="md-toc-inner" style="" href="#2-conditional-expressions">2. Conditional Expressions</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n299"><a class="md-toc-inner" style="" href="#3-the-ternary-operator--">3. The Ternary Operator (<code>? :</code>)</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n317"><a class="md-toc-inner" style="" href="#4-if-statement-single-branch">4. <code>if</code> Statement (Single Branch)</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n335"><a class="md-toc-inner" style="" href="#5-ifelse-statement-two-branches">5. <code>if...else</code> Statement (Two Branches)</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1170"><a class="md-toc-inner" style="" href="#6-ifelse-ifelse-statement-multiple-branches">6. <code>if...else if...else</code> Statement (Multiple Branches)</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1565"><a class="md-toc-inner" style="" href="#7-executing-multiple-conditional-statements-in-a-block">7. Executing multiple conditional statements in a block</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1292"><a class="md-toc-inner" style="" href="#8-boolean-logical-operators">8. Boolean (Logical) Operators</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n353"><a class="md-toc-inner" style="" href="#9-logical-operators-in-if-statements">9. Logical Operators in <code>if</code> Statements</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1137"><a class="md-toc-inner" style="" href="#10-nested-if-statements">10. Nested <code>if</code> Statements</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n396"><a class="md-toc-inner" style="" href="#11-the-switch-statement">11. The <code>switch</code> Statement</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n982"><a class="md-toc-inner" style="" href="#12-switch-statement-advanced-features">12. <code>switch</code> Statement Advanced Features</a></span></p></div><h2 id='instructions'><span>Instructions</span></h2><p><span>For each of the topics below, read the concepts and consider the examples. Do the problems by opening a browser console and writing the code there. You can copy and paste the code into a file if you wish, but you don&#39;t need to submit it. You only need to do two problems for each topic</span>&mdash;<span>choose the ones you will learn the most from. You don&#39;t need to get a code review.</span></p><p><span>Reporting: In the Moodle Lab 3 assignment submission text area, tell me which sections you compeled (hopefully 1 through 12). If you have questions send me a message.  If you want me to check some of your code you can put it in a file and upload it to Moodle.</span></p><h3 id='1-comparison-operators'><span>1. Comparison Operators</span></h3><p><strong><span>Concept:</span></strong><span> Comparison operators are used to compare two values. The result of a comparison is always a boolean value: </span><code>true</code><span> or </span><code>false</code><span>. For example, </span><code>&gt;</code><span> checks if the left value is greater than the right, while </span><code>==</code><span> checks if two values are equal. The strict equality operator </span><code>===</code><span> is often preferred because it checks for both equal value and equal data type, avoiding potential issues where </span><code>&quot;7&quot; == 7</code><span> might be true.</span></p><p><strong><span>Example:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.200006px; left: 7.999985px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">let</span> <span class="cm-def">a</span> <span class="cm-operator">=</span> <span class="cm-number">7</span>;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">let</span> <span class="cm-def">b</span> <span class="cm-operator">=</span> <span class="cm-number">8</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">a</span> <span class="cm-operator">&lt;</span> <span class="cm-variable">b</span>); &nbsp; &nbsp; &nbsp;<span class="cm-comment">// Prints true</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">a</span> <span class="cm-operator">==</span> <span class="cm-string">"7"</span>); &nbsp; <span class="cm-comment">// Prints true</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">a</span> <span class="cm-operator">===</span> <span class="cm-string">"7"</span>); &nbsp;<span class="cm-comment">// Prints false, because the types are different</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">b</span> <span class="cm-operator">&gt;=</span> <span class="cm-number">8</span>); &nbsp; &nbsp; <span class="cm-comment">// Prints true</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 157px;"></div><div class="CodeMirror-gutters" style="display: none; height: 157px;"></div></div></div></pre><p><strong><span>Problems:</span></strong></p><ol><li><ul><li><p><span>Declare a variable </span><code>myAge</code><span> and set it to your age.</span></p></li><li><p><span>Declare a second variable </span><code>friendAge</code><span> and set it to a friend&#39;s age.</span></p></li><li><p><span>Use </span><code>console.log()</code><span> to check if </span><code>myAge</code><span> is greater than </span><code>friendAge</code><span> and see the result.</span></p></li></ul></li><li><ul><li><p><span>Declare a variable </span><code>pizzasOrdered</code><span> and set it to </span><code>10</code><span>.</span></p></li><li><p><span>Declare a variable </span><code>pizzasEaten</code><span> and set it to </span><code>10</code><span>.</span></p></li><li><p><span>Use </span><code>console.log()</code><span> to check if </span><code>pizzasOrdered</code><span> is less than or equal to </span><code>pizzasEaten</code><span> and see the result.</span></p></li></ul></li><li><ul><li><p><span>Declare a variable </span><code>requiredScore</code><span> and set it to the number </span><code>100</code><span>.</span></p></li><li><p><span>Declare a variable </span><code>myScore</code><span> and set it to the string </span><code>&quot;100&quot;</code><span>.</span></p></li><li><p><span>Use </span><code>console.log()</code><span> to check if </span><code>requiredScore</code><span> is strictly equal (</span><code>===</code><span>) to </span><code>myScore</code><span> and observe the result.</span></p></li></ul></li><li><ul><li><p><span>Use </span><code>prompt()</code><span> to ask the user, &quot;How many hours did you sleep?&quot;.</span></p></li><li><p><span>Convert the user&#39;s input to a number and store it in a variable called </span><code>hoursSlept</code><span>.</span></p></li><li><p><span>Use </span><code>console.log()</code><span> to check if </span><code>hoursSlept</code><span> is greater than or equal to </span><code>8</code><span>.</span></p></li></ul></li></ol><hr /><p>&nbsp;</p><h3 id='2-conditional-expressions'><span>2. Conditional Expressions</span></h3><p><strong><span>Concept:</span></strong><span> A conditional expression is any piece of code that JavaScript can evaluate to a boolean value (</span><code>true</code><span> or </span><code>false</code><span>). These are the &quot;questions&quot; you ask in your code. They are most often used inside </span><code>if</code><span> statements and ternary operators to decide which path the program should take. Every comparison (e.g., </span><code>a &lt; b</code><span>) and logical combination (e.g., </span><code>a &lt; b &amp;&amp; c &gt; d</code><span>) is a conditional expression.</span></p><p><strong><span>Example:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="JavaScript"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8.000015px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">let</span> <span class="cm-def">degrees</span> <span class="cm-operator">=</span> <span class="cm-number">50</span>;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">let</span> <span class="cm-def">wind</span> <span class="cm-operator">=</span> <span class="cm-number">15</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// The entire piece 'degrees &lt; 60 &amp;&amp; wind &gt; 10' is a conditional expression.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">let</span> <span class="cm-def">isJacketWeather</span> <span class="cm-operator">=</span> <span class="cm-variable">degrees</span> <span class="cm-operator">&lt;</span> <span class="cm-number">60</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable">wind</span> <span class="cm-operator">&gt;</span> <span class="cm-number">10</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// It evaluates to true, so isJacketWeather becomes true.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">isJacketWeather</span>);</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 179px;"></div><div class="CodeMirror-gutters" style="display: none; height: 179px;"></div></div></div></pre><p><strong><span>Problems:</span></strong></p><ol><li><ul><li><p><span>Declare a variable </span><code>apples</code><span> with a value of </span><code>10</code><span>.</span></p></li><li><p><span>Declare a variable </span><code>oranges</code><span> with a value of </span><code>12</code><span>.</span></p></li><li><p><span>Write a conditional expression that evaluates to </span><code>true</code><span> if </span><code>oranges</code><span> are more numerous than </span><code>apples</code><span>.</span></p></li><li><p><span>Print the result of this expression to the console.</span></p></li></ul></li><li><ul><li><p><span>Declare a variable </span><code>userName</code><span> and set it to your name.</span></p></li><li><p><span>Write a conditional expression that evaluates to </span><code>true</code><span> if </span><code>userName</code><span> has exactly your name in it.</span></p></li><li><p><span>Print the result of this expression to the console.</span></p></li></ul></li><li><ul><li><p><span>Declare </span><code>let purchaseAmount = 120;</code><span>.</span></p></li><li><p><span>Declare </span><code>let hasCoupon = false;</code><span>.</span></p></li><li><p><span>Write a conditional expression that evaluates to </span><code>true</code><span> if </span><code>purchaseAmount</code><span> is over </span><code>100</code><span> </span><strong><span>OR</span></strong><span> </span><code>hasCoupon</code><span> is </span><code>true</code><span>.</span></p></li><li><p><span>Print the result of this expression to the console.</span></p></li></ul></li><li><ul><li><p><span>Use </span><code>prompt()</code><span> to ask for a number and store it in </span><code>num</code><span>.</span></p></li><li><p><span>Write a single conditional expression that evaluates to </span><code>true</code><span> if </span><code>num</code><span> is greater than </span><code>0</code><span> </span><strong><span>AND</span></strong><span> is an even number (Hint: use the modulo </span><code>%</code><span> operator).</span></p></li><li><p><span>Print the result of this expression to the console.</span></p></li></ul></li></ol><h3 id='3-the-ternary-operator--'><span>3. The Ternary Operator (</span><code>? :</code><span>)</span></h3><p><strong><span>Concept:</span></strong><span> The ternary operator is a compact, one-line shortcut for a simple </span><code>if...else</code><span> statement. It&#39;s an </span><em><span>expression</span></em><span>, which means it evaluates to a single value. It takes three operands: a condition, a value to return if the condition is true, and a value to return if the condition is false. The syntax is: </span><code>condition ? expression_if_true : expression_if_false</code><span>.</span></p><p><strong><span>Example:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">let</span> <span class="cm-def">age</span> <span class="cm-operator">=</span> <span class="cm-variable">prompt</span>(<span class="cm-string">"How old are you?"</span>);</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// If age &gt;= 18 is true, legalStatus becomes "adult".</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// Otherwise, legalStatus becomes "child".</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">let</span> <span class="cm-def">legalStatus</span> <span class="cm-operator">=</span> <span class="cm-variable">age</span> <span class="cm-operator">&gt;=</span> <span class="cm-number">18</span> <span class="cm-operator">?</span> <span class="cm-string">"adult"</span> : <span class="cm-string">"child"</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">legalStatus</span>);</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 157px;"></div><div class="CodeMirror-gutters" style="display: none; height: 157px;"></div></div></div></pre><p><strong><span>Problems:</span></strong></p><ol><li><p><span>What do do if it&#39;s raining</span></p><ul><li><p><span>Declare a variable </span><code>isRaining</code><span> and set it to </span><code>true</code><span>. </span></p></li><li><p><span>Use a ternary operator to create a new variable </span><code>activity</code><span>. </span></p></li><li><p><span>If </span><code>isRaining</code><span> is </span><code>true</code><span>, </span><code>activity</code><span> should be </span><code>&quot;Read a book&quot;</code><span>. </span></p></li><li><p><span>Otherwise, it should be </span><code>&quot;Go for a walk&quot;</code><span>. </span></p></li><li><p><span>Print </span><code>activity</code><span> to the console.</span></p></li></ul></li><li><p><span>Check a login password</span></p><ul><li><p><span>Use </span><code>prompt()</code><span> to ask for a password. </span></p></li></ul><ul><li><p><span>Store the result in a variable </span><code>password</code><span>. </span></p></li><li><p><span>Use a ternary operator to create a </span><code>loginMessage</code><span> variable. </span></p></li><li><p><span>If </span><code>password</code><span> is exactly equal to </span><code>&quot;secret-Password42&quot;</code><span>, the message should be </span><code>&quot;Access Granted&quot;</code><span>. </span></p></li><li><p><span>Otherwise, it should be </span><code>&quot;Access Denied&quot;</code><span>. </span></p></li><li><p><span>Print </span><code>loginMessage</code><span>.</span></p></li></ul></li><li><p><span>Check for a passing grade</span></p><ul><li><p><span>Declare a variable </span><code>score</code><span> and set it to </span><code>85</code><span>. </span></p></li><li><p><span>Use a ternary operator to set a variable </span><code>grade</code><span>. </span></p></li><li><p><span>If </span><code>score</code><span> is greater than or equal to </span><code>60</code><span>, </span><code>grade</code><span> should be </span><code>&quot;Pass&quot;</code><span>. </span></p></li><li><p><span>Otherwise, </span><code>grade</code><span> should be </span><code>&quot;Fail&quot;</code><span>. </span></p></li><li><p><span>Print the </span><code>grade</code><span>.</span></p></li></ul></li><li><p><span>Calculate shipping cost for an online purchase</span></p><ul><li><p><span>Use </span><code>prompt()</code><span> to ask, &quot;How many items are in your cart?&quot;. </span></p></li></ul><ul><li><p><span>Convert the answer to a number and store it in </span><code>itemCount</code><span>. </span></p></li><li><p><span>Use a ternary operator to set a </span><code>shippingCost</code><span> variable.</span></p></li><li><p><span> If </span><code>itemCount</code><span> is greater than </span><code>0</code><span>, the </span><code>shippingCost</code><span> should be </span><code>10</code><span>. </span></p></li><li><p><span>Otherwise, it should be </span><code>0</code><span>. </span></p></li><li><p><span>Print </span><code>&quot;Your shipping cost is $&quot; + shippingCost</code><span>.</span></p></li></ul></li></ol><hr /><p>&nbsp;</p><h3 id='4-if-statement-single-branch'><span>4. </span><code>if</code><span> Statement (Single Branch)</span></h3><p><strong><span>Concept:</span></strong><span> The single-branch </span><code>if</code><span> statement is the simplest selection structure. It specifies a block of code</span>&mdash;<span>one or more statements, usually in curly braces </span><code>{}</code><span> (and must be in curly braces if there is more than one statement) that will be executed </span><em><span>only if</span></em><span> a given condition evaluates to </span><code>true</code><span>. If the condition is </span><code>false</code><span>, the block of code is skipped, and the program continues.</span></p><p><strong><span>Example:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">let</span> <span class="cm-def">degrees</span> <span class="cm-operator">=</span> <span class="cm-number">40</span>;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// The condition (degrees &lt; 45) is true...</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">if</span> (<span class="cm-variable">degrees</span> <span class="cm-operator">&lt;</span> <span class="cm-number">45</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment">// ...so this code block runs.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">alert</span>(<span class="cm-string">"Wear a coat"</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 157px;"></div><div class="CodeMirror-gutters" style="display: none; height: 157px;"></div></div></div></pre><p><strong><span>Problems:</span></strong></p><ol><li><p><span>Cold temperature warning</span></p><ul><li><p><span>Declare a variable </span><code>temperature</code><span> and set it to </span><code>30</code><span>. </span></p></li><li><p><span>Write an </span><code>if</code><span> statement that checks if </span><code>temperature</code><span> is less than </span><code>32</code><span>. </span></p></li><li><p><span>If it is, print </span><code>&quot;Warning: Freezing temperature!&quot;</code><span> to the console.</span></p></li></ul></li><li><p><span>Check a password</span></p><ul><li><p><span>Use </span><code>prompt()</code><span> to ask, &quot;What is the password?&quot;. </span></p></li><li><p><span>Store the answer in </span><code>password</code><span>. </span></p></li><li><p><span>Write an </span><code>if</code><span> statement that checks if </span><code>password</code><span> is exactly equal to </span><code>&quot;JavaScript&quot;</code><span>. </span></p></li><li><p><span>If it is, print </span><code>&quot;Welcome, user!&quot;</code><span> to the console.</span></p></li></ul></li><li><p><span>Check to see if a product is in stock</span></p><ul><li><p><span>Declare a variable </span><code>itemsInStock</code><span> and set it to </span><code>0</code><span>. </span></p></li><li><p><span>Write an </span><code>if</code><span> statement that checks if </span><code>itemsInStock</code><span> is equal to </span><code>0</code><span>. </span></p></li><li><p><span>If it is, print </span><code>&quot;Error: Item is out of stock.&quot;</code><span> to the console.</span></p></li></ul></li><li><p><span>Ask for a number and alert if it&#39;s over 100</span></p><ul><li><p><span>Use </span><code>prompt()</code><span> to ask for a number and store it in </span><code>numString</code><span>. </span></p></li><li><p><span>Convert it to a number using </span><code>parseInt()</code><span> and store it in </span><code>num</code><span>. </span></p></li><li><p><span>Write an </span><code>if</code><span> statement that checks if </span><code>num</code><span> is greater than </span><code>100</code><span>. </span></p></li><li><p><span>If it is, print to the console </span><code>&quot;That&#39;s a big number!&quot;</code><span> </span></p></li><li><p><span>And print </span><code>&quot;The number was &quot; + num</code><span>. </span>
+<span> (Put the second print statement inside the same code block)</span></p></li></ul></li></ol><hr /><p>&nbsp;</p><h3 id='5-ifelse-statement-two-branches'><span>5. </span><code>if...else</code><span> Statement (Two Branches)</span></h3><p><strong><span>Concept:</span></strong><span> The </span><code>if...else</code><span> statement provides two possible paths for execution. If the condition in the </span><code>if</code><span> parentheses is </span><code>true</code><span>, the first block of code runs. If the condition is </span><code>false</code><span>, the code block after the </span><code>else</code><span> keyword runs. One of the two blocks will always be executed.</span></p><p><strong><span>Example:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">let</span> <span class="cm-def">degrees</span> <span class="cm-operator">=</span> <span class="cm-number">70</span>;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">if</span> (<span class="cm-variable">degrees</span> <span class="cm-operator">&lt;</span> <span class="cm-number">45</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment">// This block is skipped because (70 &lt; 45) is false.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">alert</span>(<span class="cm-string">"Wear a coat"</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">} <span class="cm-keyword">else</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment">// This block runs.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">alert</span>(<span class="cm-string">"Enjoy the warm weather!"</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 202px;"></div><div class="CodeMirror-gutters" style="display: none; height: 202px;"></div></div></div></pre><p><strong><span>Problems:</span></strong></p><ol><li><p><span>Check to see if a number is positive or negative</span></p><ul><li><p><span>Use </span><code>prompt()</code><span> to ask, &quot;Enter a number.&quot; </span></p></li><li><p><span>Convert it to a number and store it in </span><code>num</code><span>. </span></p></li><li><p><span>Write an </span><code>if...else</code><span> statement. </span></p></li><li><p><span>If </span><code>num</code><span> is greater than or equal to </span><code>0</code><span>, print </span><code>&quot;Positive&quot;</code><span>. </span></p></li><li><p><span>Otherwise, print </span><code>&quot;Negative&quot;</code><span>.</span></p></li></ul></li><li><p><span>Check for an admission ticket</span></p><ul><li><p><span>Declare a variable </span><code>hasTicket</code><span> and set it to </span><code>false</code><span>. </span></p></li><li><p><span>Write an </span><code>if...else</code><span> statement. </span></p></li><li><p><span>If </span><code>hasTicket</code><span> is </span><code>true</code><span>, print </span><code>&quot;Please proceed to the gate.&quot;</code><span>. </span></p></li><li><p><span>Otherwise, print </span><code>&quot;You must buy a ticket first.&quot;</code><span>.</span></p></li></ul></li><li><p><span>Determine whether an order qualifies for free shippinig</span></p><ul><li><p><span>Use </span><code>prompt()</code><span> to ask, &quot;What is your total purchase amount?&quot;. </span></p></li><li><p><span>Convert it to a number and store it in </span><code>total</code><span>. </span></p></li><li><p><span>Write an </span><code>if...else</code><span> statement. If </span><code>total</code><span> is greater than </span><code>50</code><span>, print </span><code>&quot;You qualify for free shipping!&quot;</code><span>. </span></p></li><li><p><span>Otherwise, print </span><code>&quot;Shipping will cost $5.&quot;</code><span>.</span></p></li></ul></li><li><p><span>Determine whether a number is odd.</span></p><ul><li><p><span>Declare </span><code>let num = 15;</code><span>. </span></p></li><li><p><span>Write an </span><code>if...else</code><span> statement that checks if </span><code>num</code><span> is evenly divisible by 2 (using the modulo operator </span><code>%</code><span>). </span></p></li><li><p><span>If it is, print </span><code>&quot;The number is even.&quot;</code><span>. </span></p></li><li><p><span>Otherwise, print </span><code>&quot;The number is odd.&quot;</code><span>.</span></p></li></ul></li></ol><hr /><h3 id='6-ifelse-ifelse-statement-multiple-branches'><span>6. </span><code>if...else if...else</code><span> Statement (Multiple Branches)</span></h3><p><strong><span>Concept:</span></strong><span> This structure is used when you have more than two possible outcomes. It checks each condition in order from top to bottom. As soon as it finds a condition that is </span><code>true</code><span>, it runs that condition&#39;s code block and then </span><em><span>skips all the rest</span></em><span>. If no </span><code>if</code><span> or </span><code>else if</code><span> conditions are </span><code>true</code><span>, the final </span><code>else</code><span> block runs.</span></p><p><strong><span>Example:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.199986px; left: 8.000015px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">let</span> <span class="cm-def">degrees</span> <span class="cm-operator">=</span> <span class="cm-number">42</span>;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">if</span> (<span class="cm-variable">degrees</span> <span class="cm-operator">&lt;</span> <span class="cm-number">32</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment">// 42 &lt; 32 is false, so it skips this block.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">alert</span>(<span class="cm-string">"Wear a warm coat"</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">} <span class="cm-keyword">else</span> <span class="cm-keyword">if</span> (<span class="cm-variable">degrees</span> <span class="cm-operator">&lt;</span> <span class="cm-number">45</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment">// 42 &lt; 45 is true, so it runs this block.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">alert</span>(<span class="cm-string">"Wear a jacket"</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">} <span class="cm-keyword">else</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment">// This block is skipped because the one above it ran.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">alert</span>(<span class="cm-string">"Enjoy the warm weather!"</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 269px;"></div><div class="CodeMirror-gutters" style="display: none; height: 269px;"></div></div></div></pre><p><strong><span>Problems:</span></strong></p><ol><li><p><span>Convert a score to a grade</span></p><ul><li><p><span>Declare a variable </span><code>score</code><span> and set it to </span><code>78</code><span>. </span></p></li><li><p><span>Write an </span><code>if...else if...else</code><span> statement that prints: </span><code>&quot;A&quot;</code><span> </span></p></li><li><p><span>if </span><code>score</code><span> is 90 or above, </span><code>&quot;B&quot;</code><span> if </span><code>score</code><span> is 80 or above, </span><code>&quot;C&quot;</code><span> if </span><code>score</code><span> is 70 or above, and </span><code>&quot;F&quot;</code><span> for anything else.</span></p></li></ul></li><li><p><span>Determine whether a number is positive, zero, or negative</span></p><ul><li><p><span>Use </span><code>prompt()</code><span> to ask, &quot;Enter a number&quot;. </span></p></li><li><p><span>Convert it to a number and store it in </span><code>num</code><span>. </span></p></li><li><p><span>Write an </span><code>if...else if...else</code><span> statement that prints: </span><code>&quot;Positive&quot;</code><span> if </span><code>num</code><span> is greater than 0, </span><code>&quot;Negative&quot;</code><span> </span></p></li><li><p><span>if </span><code>num</code><span> is less than 0, and </span><code>&quot;Zero&quot;</code><span> if </span><code>num</code><span> is exactly 0.</span></p></li></ul></li><li><p><span>Declare </span><code>let trafficLight = &quot;yellow&quot;;</code><span>. Write an </span><code>if...else if...else</code><span> statement. If </span><code>trafficLight</code><span> is </span><code>&quot;red&quot;</code><span>, print </span><code>&quot;Stop&quot;</code><span>. If </span><code>trafficLight</code><span> is </span><code>&quot;yellow&quot;</code><span>, print </span><code>&quot;Slow down&quot;</code><span>. If </span><code>trafficLight</code><span> is </span><code>&quot;green&quot;</code><span>, print </span><code>&quot;Go&quot;</code><span>.</span></p></li><li><p><span>Use </span><code>prompt()</code><span> to ask, &quot;What time is it (0-23)?&quot;. Convert the answer to a number and store it in </span><code>hour</code><span>. Write an </span><code>if...else if...else</code><span> statement that prints: </span><code>&quot;Good morning&quot;</code><span> if </span><code>hour</code><span> is less than 12, </span><code>&quot;Good afternoon&quot;</code><span> if </span><code>hour</code><span> is less than 18 (but 12 or greater), and </span><code>&quot;Good evening&quot;</code><span> for all other times.</span></p></li></ol><hr /><p>&nbsp;</p><h3 id='7-executing-multiple-conditional-statements-in-a-block'><span>7. Executing multiple conditional statements in a block</span></h3><p><strong><span>Concept:</span></strong><span> By default, a conditional statement like </span><code>if</code><span>, </span><code>else if</code><span> or </span><code>else</code><span> only controls the single line of code that immediately follows it. To execute multiple statements based on a single condition, you </span><u><span>must</span></u><span> group them together in a code block using curly braces </span><code>{ }</code><span>. It is considered a best practice to always use curly braces, even for a single statement, to make your code clearer and prevent accidental errors.</span></p><p><strong><span>Example:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="JavaScript"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">let</span> <span class="cm-def">degrees</span> <span class="cm-operator">=</span> <span class="cm-variable">prompt</span>(<span class="cm-string">"Enter the temperature"</span>);</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// Check for an invalid temperature range.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">if</span> (<span class="cm-variable">degrees</span> <span class="cm-operator">&lt;</span> <span class="cm-operator">-</span><span class="cm-number">100</span> <span class="cm-operator">||</span> <span class="cm-variable">degrees</span> <span class="cm-operator">&gt;</span> <span class="cm-number">150</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; <span class="cm-comment">// Because the condition is true, BOTH of these statements will run.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; <span class="cm-variable">alert</span>(<span class="cm-string">"Please enter a temperature between -100 and 150"</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; <span class="cm-variable">degrees</span> <span class="cm-operator">=</span> <span class="cm-variable">prompt</span>(<span class="cm-string">"Enter the temperature again"</span>);</span></pre><div class="" style="position: relative;"><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 179px;"></div><div class="CodeMirror-gutters" style="display: none; height: 179px;"></div></div></div></pre><p><strong><span>Concept:</span></strong><span> When you declare a variable using </span><code>let</code><span> or </span><code>const</code><span> inside a set of curly braces </span><code>{}</code><span>, that variable has </span><em><span>block scope</span></em><span>. This means it only exists and can only be used </span><em><span>inside</span></em><span> that specific block of code. If you try to access it from outside the curly braces where it was defined, you will get a </span><code>ReferenceError</code><span>. This is a key reason </span><code>let</code><span> is considered safer and more predictable than the older </span><code>var</code><span> keyword.</span></p><p><strong><span>Example:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">let</span> <span class="cm-def">calculation</span> <span class="cm-operator">=</span> <span class="cm-variable">prompt</span>(<span class="cm-string">"Enter 1 for circumference or 2 for area"</span>);</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">let</span> <span class="cm-def">radius</span> <span class="cm-operator">=</span> <span class="cm-number">10</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">if</span> (<span class="cm-variable">calculation</span> <span class="cm-operator">==</span> <span class="cm-number">1</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment">// 'circumference' is created and only exists inside these braces.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">let</span> <span class="cm-def">circumference</span> <span class="cm-operator">=</span> <span class="cm-number">2</span> <span class="cm-operator">*</span> <span class="cm-number">3.141</span> <span class="cm-operator">*</span> <span class="cm-variable">radius</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable-2">circumference</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">} <span class="cm-keyword">else</span> {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-comment">// 'area' is created and only exists inside these braces.</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-keyword">let</span> <span class="cm-def">area</span> <span class="cm-operator">=</span> <span class="cm-number">3.141</span> <span class="cm-operator">*</span> <span class="cm-variable">radius</span> <span class="cm-operator">*</span> <span class="cm-variable">radius</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable-2">area</span>);</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// This next line would cause an error because 'circumference' doesn't exist out here.</span></span></pre><div class="" style="position: relative;"><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// console.log(circumference); // ReferenceError</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 358px;"></div><div class="CodeMirror-gutters" style="display: none; height: 358px;"></div></div></div></pre><p><strong><span>Problems:</span></strong></p><p><span>1 and 2 are relate to putting multiple statements in a block, 3 and 4 relate to block scope. If you are choosing just two problems, do one from each group.</span></p><ol><li><ul><li><p><span>Use </span><code>prompt()</code><span> to ask &quot;Do you want to save your work? (yes/no)&quot;. Store the answer in </span><code>wantsToSave</code><span>.</span></p></li><li><p><span>Write an </span><code>if</code><span> statement that checks if </span><code>wantsToSave</code><span> is equal to </span><code>&quot;yes&quot;</code><span>.</span></p></li><li><p><span>Inside the block, first print </span><code>&quot;Saving your work...&quot;</code><span> and then print </span><code>&quot;Save complete.&quot;</code><span>.</span></p></li></ul></li><li><ul><li><p><span>Declare a variable </span><code>cartTotal</code><span> and set it to </span><code>55</code><span>.</span></p></li><li><p><span>Declare a variable </span><code>couponCode</code><span> and set it to </span><code>&quot;DISCOUNT10&quot;</code><span>.</span></p></li><li><p><span>Write an </span><code>if</code><span> statement that checks if </span><code>cartTotal</code><span> is over 50.</span></p></li><li><p><span>Inside the block, print </span><code>&quot;You qualify for a discount!&quot;</code><span> and on a new line, print </span><code>&quot;Apply code: &quot; + couponCode</code><span>.</span></p></li></ul></li><li><p><span>Declare a variable </span><code>let finalMessage = &quot;&quot;;</code><span> before any </span><code>if</code><span> statements.</span></p><ul><li><p><span>Write an </span><code>if...else</code><span> statement. In the </span><code>if</code><span> block, assign the value </span><code>&quot;Success!&quot;</code><span> to </span><code>finalMessage</code><span>. In the </span><code>else</code><span> block, assign the value </span><code>&quot;Failure!&quot;</code><span> to </span><code>finalMessage</code><span>.</span></p></li><li><p><span>After the entire </span><code>if...else</code><span> structure, print the </span><code>finalMessage</code><span> variable to the console. This works because the variable was declared in the outer scope.</span></p></li></ul></li><li><p><span>Write an </span><code>if (true)</code><span> block. Inside it, declare </span><code>let x = 5;</code><span> and print its value.</span></p><ul><li><p><span>Write a separate </span><code>if (true)</code><span> block immediately after the first one. Inside this second block, declare another variable also named </span><code>let x = 10;</code><span> and print its value.</span></p></li><li><p><span>Notice how this works without error, because each </span><code>x</code><span> is trapped within its own scope and they don&#39;t conflict with each other.</span></p></li></ul></li></ol><hr /><p>&nbsp;</p><h3 id='8-boolean-logical-operators'><span>8. Boolean (Logical) Operators</span></h3><p><strong><span>Concept:</span></strong><span> Boolean, or logical, operators are used to combine multiple conditional expressions into a single </span><code>true</code><span> or </span><code>false</code><span> value.</span></p><ul><li><p><code>&amp;&amp;</code><span> (</span><strong><span>AND</span></strong><span>) is true only if </span><strong><span>both</span></strong><span> of its operands are true.</span></p></li><li><p><code>||</code><span> (</span><strong><span>OR</span></strong><span>) is true if </span><strong><span>either</span></strong><span> of its operands is true.</span></p></li><li><p><code>!</code><span> (</span><strong><span>NOT</span></strong><span>) inverts a boolean value, turning </span><code>true</code><span> into </span><code>false</code><span> and </span><code>false</code><span> into </span><code>true</code><span>.</span></p></li></ul><p><strong><span>Example:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="JavaScript"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">let</span> <span class="cm-def">a</span> <span class="cm-operator">=</span> <span class="cm-atom">true</span>;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">let</span> <span class="cm-def">b</span> <span class="cm-operator">=</span> <span class="cm-atom">false</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">a</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable">a</span>); <span class="cm-comment">// Prints true</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">a</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable">b</span>); <span class="cm-comment">// Prints false</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-variable">a</span> <span class="cm-operator">||</span> <span class="cm-variable">b</span>); <span class="cm-comment">// Prints true</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-variable">console</span>.<span class="cm-property">log</span>(<span class="cm-operator">!</span><span class="cm-variable">b</span>); &nbsp; &nbsp; <span class="cm-comment">// Prints true</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 157px;"></div><div class="CodeMirror-gutters" style="display: none; height: 157px;"></div></div></div></pre><p><strong><span>Problems:</span></strong></p><ol><li><ul><li><p><span>Declare a variable </span><code>isSunny</code><span> and set it to </span><code>true</code><span>.</span></p></li><li><p><span>Declare a variable </span><code>isWarm</code><span> and set it to </span><code>true</code><span>.</span></p></li><li><p><span>Use </span><code>console.log()</code><span> to check if it is sunny </span><strong><span>AND</span></strong><span> warm.</span></p></li></ul></li><li><ul><li><p><span>Declare a variable </span><code>day</code><span> and set it to </span><code>&quot;Sunday&quot;</code><span>.</span></p></li><li><p><span>Use </span><code>console.log()</code><span> to check if </span><code>day</code><span> is equal to </span><code>&quot;Saturday&quot;</code><span> </span><strong><span>OR</span></strong><span> </span><code>day</code><span> is equal to </span><code>&quot;Sunday&quot;</code><span>.</span></p></li></ul></li><li><ul><li><p><span>Declare a variable </span><code>isLoggedIn</code><span> and set it to </span><code>false</code><span>.</span></p></li><li><p><span>Use </span><code>console.log()</code><span> to display the result of </span><code>!isLoggedIn</code><span> to check if a user is </span><strong><span>NOT</span></strong><span> logged in.</span></p></li></ul></li><li><ul><li><p><span>Declare a variable </span><code>carFuel</code><span> and set it to </span><code>15</code><span>.</span></p></li><li><p><span>Declare a variable </span><code>isEmergency</code><span> and set it to </span><code>false</code><span>.</span></p></li><li><p><span>Use </span><code>console.log()</code><span> to check if </span><code>carFuel</code><span> is less than </span><code>20</code><span> </span><strong><span>AND</span></strong><span> </span><code>isEmergency</code><span> is </span><code>false</code><span>.</span></p></li></ul></li></ol><hr /><p>&nbsp;</p><h3 id='9-logical-operators-in-if-statements'><span>9. Logical Operators in </span><code>if</code><span> Statements</span></h3><p><strong><span>Concept:</span></strong><span> Logical operators allow you to combine multiple conditions into a single expression that evaluates to </span><code>true</code><span> or </span><code>false</code><span>.</span></p><ul><li><p><code>&amp;&amp;</code><span> (AND): The entire expression is </span><code>true</code><span> </span><em><span>only if</span></em><span> both conditions are </span><code>true</code><span>.</span></p></li><li><p><code>||</code><span> (OR): The entire expression is </span><code>true</code><span> </span><em><span>if at least one</span></em><span> of the conditions is </span><code>true</code><span>.</span></p></li><li><p><code>!</code><span> (NOT): This inverts the value of a single condition, turning </span><code>true</code><span> to </span><code>false</code><span> and </span><code>false</code><span> to </span><code>true</code><span>.</span></p></li></ul><p><strong><span>Example:</span></strong></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="javascript"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang="javascript"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">let</span> <span class="cm-def">degrees</span> <span class="cm-operator">=</span> <span class="cm-number">55</span>;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">let</span> <span class="cm-def">wind</span> <span class="cm-operator">=</span> <span class="cm-number">12</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">let</span> <span class="cm-def">name</span> <span class="cm-operator">=</span> <span class="cm-string">"Chewbacca"</span>;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// AND: Both must be true</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">if</span> (<span class="cm-variable">degrees</span> <span class="cm-operator">&lt;</span> <span class="cm-number">60</span> <span class="cm-operator">&amp;&amp;</span> <span class="cm-variable">wind</span> <span class="cm-operator">&gt;</span> <span class="cm-number">10</span>) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">alert</span>(<span class="cm-string">"Wear a jacket"</span>); <span class="cm-comment">// This will run (55 &lt; 60 is true AND 12 &gt; 10 is true)</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">// NOT: Inverts the condition</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">if</span> (<span class="cm-operator">!</span>(<span class="cm-variable">name</span> <span class="cm-operator">==</span> <span class="cm-string">"Han Solo"</span>)) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;<span class="cm-variable">alert</span>(<span class="cm-string">"This is not your spacecraft!"</span>); <span class="cm-comment">// This will run</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 291px;"></div><div class="CodeMirror-gutters" style="display: none; height: 291px;"></div></div></div></pre><p><strong><span>Problems:</span></strong></p><ol><li><p><span>(AND) Declare </span><code>let age = 20;</code><span> and </span><code>let hasDriversLicense = true;</code><span>. Write an </span><code>if</code><span> statement that prints </span><code>&quot;You are legal to drive&quot;</code><span> only if </span><code>age</code><span> is 16 or greater </span><em><span>and</span></em><span> </span><code>hasDriversLicense</code><span> is </span><code>true</code><span>.</span></p></li><li><p><span>(OR) Declare </span><code>let isHoliday = false;</code><span> and </span><code>let dayOfWeek = &quot;Saturday&quot;;</code><span>. Write an </span><code>if...else</code><span> statement. If </span><code>isHoliday</code><span> is </span><code>true</code><span> </span><em><span>or</span></em><span> </span><code>dayOfWeek</code><span> is </span><code>&quot;Saturday&quot;</code><span>, print </span><code>&quot;You don&#39;t have to work today!&quot;</code><span>. Otherwise, print </span><code>&quot;Time to go to work.&quot;</code><span>.</span></p></li><li><p><span>(NOT) Declare </span><code>let isMember = false;</code><span>. Write an </span><code>if...else</code><span> statement that uses the </span><code>!</code><span> operator. If the user is </span><em><span>not</span></em><span> a member (</span><code>!isMember</code><span>), print </span><code>&quot;Please sign up to continue.&quot;</code><span>. Otherwise, print </span><code>&quot;Welcome back, member!&quot;</code><span>.</span></p></li><li><p><span>(Combination) Use </span><code>prompt()</code><span> to ask for a username and store it in </span><code>user</code><span>. Use </span><code>prompt()</code><span> again to ask for a password and store it in </span><code>pass</code><span>. Write an </span><code>if</code><span> statement that prints </span><code>&quot;Login successful&quot;</code><span> only if </span><code>user</code><span> is </span><code>&quot;admin&quot;</code><span> </span><em><span>and</span></em><span> </span><code>pass</code><span> is </span><code>&quot;12345&quot;</code><span>.</span></p></li></ol><hr /><p>&nbsp;</p><h3 id='10-nested-if-statements'><span>10. Nested </span><code>if</code><span> Statements</span></h3><p><strong><span>Concept:</span></strong><span> A nested </span><code>if</code><span> statement is an </span><code>if</code><span> statement that is placed inside the code block of another </span><code>if</code><span> or </span><code>else</code><span> statement. This is useful when you need to check a second condition only after a first condition has been proven true. An </span><code>if</code><span> statement nested inside another </span><code>if</code><span> is logically equivalent to using the </span><code>&amp;&amp;</code><span> (AND) operator.</span></p><p><strong><span>Example:</span></strong></p><p><span>JavaScript</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang=""><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.199998px; left: 8.000015px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">let degrees = 55;</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">let wind = 12;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">// First, check if degrees are less than 60.</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">if (degrees &lt; 60) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  // Only if the first condition is true, check if the wind is greater than 10.</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  if (wind &gt; 10) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp; alert("Wear a jacket"); // This runs because both conditions are true.</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  }</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 224px;"></div><div class="CodeMirror-gutters" style="display: none; height: 224px;"></div></div></div></pre><p><strong><span>Problems:</span></strong></p><ol><li><ul><li><p><span>Declare a variable </span><code>isLoggedIn</code><span> and set it to </span><code>true</code><span>.</span></p></li><li><p><span>Declare a variable </span><code>userRole</code><span> and set it to </span><code>&quot;admin&quot;</code><span>.</span></p></li><li><p><span>Write a nested </span><code>if</code><span> statement. The outer </span><code>if</code><span> should check if </span><code>isLoggedIn</code><span> is true. The inner </span><code>if</code><span> should check if </span><code>userRole</code><span> is </span><code>&quot;admin&quot;</code><span>.</span></p></li><li><p><span>If both are true, print </span><code>&quot;Welcome, Admin!&quot;</code><span> to the console.</span></p></li></ul></li><li><ul><li><p><span>Use </span><code>prompt()</code><span> to ask the user, &quot;Are you a member? (yes/no)&quot;. Store the answer in </span><code>isMember</code><span>.</span></p></li><li><p><span>Use </span><code>prompt()</code><span> again to ask, &quot;What is your age?&quot;. Convert the answer to a number and store it in </span><code>age</code><span>.</span></p></li><li><p><span>Write a nested </span><code>if</code><span> statement. The outer </span><code>if</code><span> should check if </span><code>isMember</code><span> is </span><code>&quot;yes&quot;</code><span>.</span></p></li><li><p><span>The inner </span><code>if</code><span> should check if </span><code>age</code><span> is over 65. If both are true, print </span><code>&quot;You qualify for the senior member discount.&quot;</code><span>.</span></p></li></ul></li><li><ul><li><p><span>Declare a variable </span><code>password</code><span> and set its value to </span><code>&quot;Swordfish123&quot;</code><span>.</span></p></li><li><p><span>Write an </span><code>if</code><span> statement that checks if the password&#39;s length is greater than 10 characters.</span></p></li><li><p><span>Inside that </span><code>if</code><span> block, add a nested </span><code>if</code><span> statement that checks if the password includes the number </span><code>&quot;1&quot;</code><span>.</span></p></li><li><p><span>If both conditions are met, print </span><code>&quot;Password meets security requirements.&quot;</code><span>.</span></p></li></ul></li><li><ul><li><p><span>Declare </span><code>let purchaseTotal = 150;</code><span>.</span></p></li><li><p><span>Declare </span><code>let shippingCountry = &quot;USA&quot;;</code><span>.</span></p></li><li><p><span>Write a nested </span><code>if</code><span> statement. The outer </span><code>if</code><span> should check if </span><code>purchaseTotal</code><span> is greater than 100.</span></p></li><li><p><span>The inner </span><code>if</code><span> should check if </span><code>shippingCountry</code><span> is </span><code>&quot;USA&quot;</code><span>. If both are true, print </span><code>&quot;You qualify for free domestic shipping!&quot;</code><span>.</span></p></li></ul></li></ol><hr /><p>&nbsp;</p><h3 id='11-the-switch-statement'><span>11. The </span><code>switch</code><span> Statement</span></h3><p><strong><span>Concept:</span></strong><span> A </span><code>switch</code><span> statement is an alternative to a long </span><code>if...else if...else</code><span> chain, but it is only used for checking if a single variable is </span><em><span>equal</span></em><span> to one of several specific values. It compares the variable in parentheses against each </span><code>case</code><span>. If it finds a match, it runs the code from that point down until it hits a </span><code>break</code><span> keyword. The </span><code>default</code><span> case runs if no other </span><code>case</code><span> matches.</span></p><p><strong><span>Example:</span></strong></p><p><span>JavaScript</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.2px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">let color = prompt("What is a common color for a mouse?");</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">let response = "";</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">switch (color) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  case "grey":</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  case "gray": // Multiple cases can "fall through" to the same code</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  response = "Yes!";</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  break; // The 'break' stops execution here.</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  case "brown":</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  response = "OK, sometimes";</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  break;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  default: // 'default' is like the final 'else'</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  response = "I don’t think so";</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">console.log(response);</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 336px;"></div><div class="CodeMirror-gutters" style="display: none; height: 336px;"></div></div></div></pre><p><strong><span>Problems:</span></strong></p><ol><li><p><span>Declare </span><code>let numericGrade = 4;</code><span>. Write a </span><code>switch</code><span> statement that checks </span><code>numericGrade</code><span>. Print </span><code>&quot;Excellent&quot;</code><span> for case 4, </span><code>&quot;Good&quot;</code><span> for case 3, </span><code>&quot;Average&quot;</code><span> for case 2, and </span><code>&quot;Poor&quot;</code><span> for case 1. Add a </span><code>default</code><span> case that prints </span><code>&quot;Invalid grade&quot;</code><span>.</span></p></li><li><p><span>Use </span><code>prompt()</code><span> to ask, &quot;Enter a direction (north, south, east, west)&quot;. Store it in </span><code>direction</code><span>. Write a </span><code>switch</code><span> statement that prints: </span><code>&quot;You are going North&quot;</code><span> for the </span><code>&quot;north&quot;</code><span> case, </span><code>&quot;You are going South&quot;</code><span> for the </span><code>&quot;south&quot;</code><span> case, </span><code>&quot;You are going East&quot;</code><span> for the </span><code>&quot;east&quot;</code><span> case, and </span><code>&quot;You are going West&quot;</code><span> for the </span><code>&quot;west&quot;</code><span> case.</span></p></li><li><p><span>Declare </span><code>let fruit = &quot;Apple&quot;;</code><span>. Write a </span><code>switch</code><span> statement that checks </span><code>fruit</code><span>.</span></p><ul><li><p><span>Cases </span><code>&quot;Apple&quot;</code><span> and </span><code>&quot;Pear&quot;</code><span> should both print </span><code>&quot;This is a pome fruit.&quot;</code><span> (Hint: let the first case &quot;fall through&quot; to the second).</span></p></li><li><p><span>Case </span><code>&quot;Banana&quot;</code><span> should print </span><code>&quot;This is a tropical fruit.&quot;</code><span>.</span></p></li><li><p><span>The </span><code>default</code><span> case should print </span><code>&quot;Unknown fruit type.&quot;</code><span>.</span></p></li></ul></li><li><p><span>Use </span><code>prompt()</code><span> to ask, &quot;What is your subscription level? (basic, pro, premium)&quot;. Store it in </span><code>level</code><span>. Write a </span><code>switch</code><span> statement.</span></p><ul><li><p><span>Case </span><code>&quot;premium&quot;</code><span> should print </span><code>&quot;Full access + support&quot;</code><span>.</span></p></li><li><p><span>Case </span><code>&quot;pro&quot;</code><span> should print </span><code>&quot;Full access&quot;</code><span>.</span></p></li><li><p><span>Case </span><code>&quot;basic&quot;</code><span> should print </span><code>&quot;Limited access&quot;</code><span>. (Hint: Be careful with your </span><code>break</code><span> statements so they don&#39;t all fall through!)</span></p></li><li><p><span>The </span><code>default</code><span> case should print </span><code>&quot;Please subscribe&quot;</code><span>.</span></p></li></ul></li></ol><hr /><p>&nbsp;</p><h3 id='12-switch-statement-advanced-features'><span>12. </span><code>switch</code><span> Statement Advanced Features</span></h3><p><strong><span>Concept:</span></strong><span> The </span><code>switch</code><span> statement has two powerful features. First, you can make multiple </span><code>case</code><span> labels execute the same code block by listing them sequentially without a </span><code>break</code><span> in between. This is called &quot;fall-through&quot;. Second, you can execute as many statements as you need within a single </span><code>case</code><span> block before you use the </span><code>break</code><span> keyword to exit the </span><code>switch</code><span>.</span></p><p><strong><span>Example:</span></strong></p><p><span>JavaScript</span></p><pre class="md-fences md-end-block ty-contain-cm modeLoaded" spellcheck="false" lang="" style="break-inside: unset;"><div class="CodeMirror cm-s-inner cm-s-null-scroll CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 9.199998px; left: 8.000015px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: currentcolor;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: currentcolor;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">let color = prompt("What is a common color for a mouse?");</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">let response = "";</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">let score = 0;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="" cm-zwsp="">
+</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">switch (color) {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  case "grey":</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  case "gray": // "Fall-through": Both "grey" and "gray" run this code.</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  response = "Yes!";</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  score = 10; // Multiple statements execute in this one case.</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  break;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  case "brown":</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  response = "OK, sometimes";</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  score = 5;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  break;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  default:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  response = "I don’t think so";</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp;  score = 0;</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">console.log("Response: " + response + " Score: " + score);</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 426px;"></div><div class="CodeMirror-gutters" style="display: none; height: 426px;"></div></div></div></pre><p><strong><span>Problems:</span></strong></p><ol><li><ul><li><p><span>Use </span><code>prompt()</code><span> to ask the user to enter a day of the week and store it in </span><code>day</code><span>.</span></p></li><li><p><span>Write a </span><code>switch</code><span> statement for </span><code>day</code><span>.</span></p></li><li><p><span>The cases for </span><code>&quot;Saturday&quot;</code><span> and </span><code>&quot;Sunday&quot;</code><span> should both fall through to a block that prints </span><code>&quot;It&#39;s the weekend!&quot;</code><span>.</span></p></li><li><p><span>Include a </span><code>default</code><span> case that prints </span><code>&quot;It&#39;s a weekday.&quot;</code><span>.</span></p></li></ul></li><li><ul><li><p><span>Declare a variable </span><code>playerAction</code><span> and set it to </span><code>&quot;attack&quot;</code><span>.</span></p></li><li><p><span>Write a </span><code>switch</code><span> statement for </span><code>playerAction</code><span>.</span></p></li><li><p><span>For the case </span><code>&quot;attack&quot;</code><span>, write two statements: one that prints </span><code>&quot;You swing your sword!&quot;</code><span> and another that prints </span><code>&quot;You dealt 10 damage.&quot;</code><span>.</span></p></li><li><p><span>Remember to include a </span><code>break</code><span> and a </span><code>default</code><span> case.</span></p></li></ul></li><li><ul><li><p><span>Use </span><code>prompt()</code><span> to ask for a letter grade (</span><code>&quot;A&quot;</code><span>, </span><code>&quot;B&quot;</code><span>, </span><code>&quot;C&quot;</code><span>, etc.) and store it in </span><code>grade</code><span>.</span></p></li><li><p><span>Write a </span><code>switch</code><span> statement for </span><code>grade</code><span>.</span></p></li><li><p><span>Have cases for </span><code>&quot;A&quot;</code><span>, </span><code>&quot;B&quot;</code><span>, and </span><code>&quot;C&quot;</code><span> all fall through to the same code block.</span></p></li><li><p><span>Inside that block, set a variable </span><code>isPassing</code><span> to </span><code>true</code><span> and another variable </span><code>message</code><span> to </span><code>&quot;You passed the class.&quot;</code><span>. Print both variables.</span></p></li><li><p><span>The </span><code>default</code><span> case should set </span><code>isPassing</code><span> to </span><code>false</code><span> and </span><code>message</code><span> to </span><code>&quot;You must retake the class.&quot;</code><span>. Print both variables here as well.</span></p></li></ul></li><li><ul><li><p><span>Declare a variable </span><code>command</code><span> and set it to </span><code>&quot;open&quot;</code><span>.</span></p></li><li><p><span>Write a </span><code>switch</code><span> statement for </span><code>command</code><span>.</span></p></li><li><p><span>The cases </span><code>&quot;open&quot;</code><span> and </span><code>&quot;start&quot;</code><span> should fall through to the same block.</span></p></li><li><p><span>Inside that block, write three statements: print </span><code>&quot;Executing command...&quot;</code><span>, set a variable </span><code>status</code><span> to </span><code>&quot;running&quot;</code><span>, and print </span><code>&quot;Status is now: &quot; + status</code><span>.</span></p></li><li><p><span>The </span><code>default</code><span> case should print </span><code>&quot;Unknown command&quot;</code><span>.</span></p></li></ul></li></ol><p>&nbsp;</p><p><span>These lab instructions were written by Brian Bird based on drafts by Gemini 2.5 Pro, 11/3/2025.</span></p></div></div>
+</body>
+</html>

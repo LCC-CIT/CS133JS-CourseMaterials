@@ -43,44 +43,7 @@ console.log(b >= 8);     // Prints true
 
 
 
-### 2. Boolean (Logical) Operators
-
-**Concept:** Boolean, or logical, operators are used to combine multiple conditional expressions into a single `true` or `false` value.
-
-- `&&` (**AND**) is true only if **both** of its operands are true.
-- `||` (**OR**) is true if **either** of its operands is true.
-- `!` (**NOT**) inverts a boolean value, turning `true` into `false` and `false` into `true`.
-
-**Example:**
-
-```JavaScript
-let a = true;
-let b = false;
-
-console.log(a && a); // Prints true
-console.log(a && b); // Prints false
-console.log(a || b); // Prints true
-console.log(!b);     // Prints true
-```
-
-**Problems:**
-
-1. - Declare a variable `isSunny` and set it to `true`.
-   - Declare a variable `isWarm` and set it to `true`.
-   - Use `console.log()` to check if it is sunny **AND** warm.
-2. - Declare a variable `day` and set it to `"Sunday"`.
-   - Use `console.log()` to check if `day` is equal to `"Saturday"` **OR** `day` is equal to `"Sunday"`.
-3. - Declare a variable `isLoggedIn` and set it to `false`.
-   - Use `console.log()` to display the result of `!isLoggedIn` to check if a user is **NOT** logged in.
-4. - Declare a variable `carFuel` and set it to `15`.
-   - Declare a variable `isEmergency` and set it to `false`.
-   - Use `console.log()` to check if `carFuel` is less than `20` **AND** `isEmergency` is `false`.
-
-------
-
-
-
-### 3. Conditional Expressions
+### 2. Conditional Expressions
 
 **Concept:** A conditional expression is any piece of code that JavaScript can evaluate to a boolean value (`true` or `false`). These are the "questions" you ask in your code. They are most often used inside `if` statements and ternary operators to decide which path the program should take. Every comparison (e.g., `a < b`) and logical combination (e.g., `a < b && c > d`) is a conditional expression.
 
@@ -114,7 +77,7 @@ console.log(isJacketWeather);
    - Write a single conditional expression that evaluates to `true` if `num` is greater than `0` **AND** is an even number (Hint: use the modulo `%` operator).
    - Print the result of this expression to the console.
 
-### 4. The Ternary Operator (`? :`)
+### 3. The Ternary Operator (`? :`)
 
 **Concept:** The ternary operator is a compact, one-line shortcut for a simple `if...else` statement. It's an *expression*, which means it evaluates to a single value. It takes three operands: a condition, a value to return if the condition is true, and a value to return if the condition is false. The syntax is: `condition ? expression_if_true : expression_if_false`.
 
@@ -172,7 +135,7 @@ console.log(legalStatus);
 
 
 
-### 5. `if` Statement (Single Branch)
+### 4. `if` Statement (Single Branch)
 
 **Concept:** The single-branch `if` statement is the simplest selection structure. It specifies a block of code&mdash;one or more statements, usually in curly braces `{}` (and must be in curly braces if there is more than one statement) that will be executed *only if* a given condition evaluates to `true`. If the condition is `false`, the block of code is skipped, and the program continues.
 
@@ -215,7 +178,7 @@ if (degrees < 45) {
 
 
 
-### 6. `if...else` Statement (Two Branches)
+### 5. `if...else` Statement (Two Branches)
 
 **Concept:** The `if...else` statement provides two possible paths for execution. If the condition in the `if` parentheses is `true`, the first block of code runs. If the condition is `false`, the code block after the `else` keyword runs. One of the two blocks will always be executed.
 
@@ -259,7 +222,7 @@ if (degrees < 45) {
 
 ------
 
-### 7. `if...else if...else` Statement (Multiple Branches)
+### 6. `if...else if...else` Statement (Multiple Branches)
 
 **Concept:** This structure is used when you have more than two possible outcomes. It checks each condition in order from top to bottom. As soon as it finds a condition that is `true`, it runs that condition's code block and then *skips all the rest*. If no `if` or `else if` conditions are `true`, the final `else` block runs.
 
@@ -298,7 +261,105 @@ if (degrees < 32) {
 
 
 
-### 8. Logical Operators in `if` Statements
+### 7. Executing multiple conditional statements in a block
+
+**Concept:** By default, a conditional statement like `if`, `else if` or `else` only controls the single line of code that immediately follows it. To execute multiple statements based on a single condition, you <u>must</u> group them together in a code block using curly braces `{ }`. It is considered a best practice to always use curly braces, even for a single statement, to make your code clearer and prevent accidental errors.
+
+**Example:**
+
+```JavaScript
+let degrees = prompt("Enter the temperature");
+
+// Check for an invalid temperature range.
+if (degrees < -100 || degrees > 150) {
+   // Because the condition is true, BOTH of these statements will run.
+   alert("Please enter a temperature between -100 and 150");
+   degrees = prompt("Enter the temperature again");
+}
+```
+
+**Concept:** When you declare a variable using `let` or `const` inside a set of curly braces `{}`, that variable has *block scope*. This means it only exists and can only be used *inside* that specific block of code. If you try to access it from outside the curly braces where it was defined, you will get a `ReferenceError`. This is a key reason `let` is considered safer and more predictable than the older `var` keyword.
+
+**Example:**
+
+```javascript
+let calculation = prompt("Enter 1 for circumference or 2 for area");
+let radius = 10;
+
+if (calculation == 1) {
+  // 'circumference' is created and only exists inside these braces.
+  let circumference = 2 * 3.141 * radius;
+  console.log(circumference);
+} else {
+  // 'area' is created and only exists inside these braces.
+  let area = 3.141 * radius * radius;
+  console.log(area);
+}
+
+// This next line would cause an error because 'circumference' doesn't exist out here.
+// console.log(circumference); // ReferenceError
+```
+
+**Problems:**
+
+1 and 2 are relate to putting multiple statements in a block, 3 and 4 relate to block scope. If you are choosing just two problems, do one from each group.
+
+1. - Use `prompt()` to ask "Do you want to save your work? (yes/no)". Store the answer in `wantsToSave`.
+   - Write an `if` statement that checks if `wantsToSave` is equal to `"yes"`.
+   - Inside the block, first print `"Saving your work..."` and then print `"Save complete."`.
+2. - Declare a variable `cartTotal` and set it to `55`.
+   - Declare a variable `couponCode` and set it to `"DISCOUNT10"`.
+   - Write an `if` statement that checks if `cartTotal` is over 50.
+   - Inside the block, print `"You qualify for a discount!"` and on a new line, print `"Apply code: " + couponCode`.
+3. Declare a variable `let finalMessage = "";` before any `if` statements.
+   - Write an `if...else` statement. In the `if` block, assign the value `"Success!"` to `finalMessage`. In the `else` block, assign the value `"Failure!"` to `finalMessage`.
+   - After the entire `if...else` structure, print the `finalMessage` variable to the console. This works because the variable was declared in the outer scope.
+4. Write an `if (true)` block. Inside it, declare `let x = 5;` and print its value.
+   - Write a separate `if (true)` block immediately after the first one. Inside this second block, declare another variable also named `let x = 10;` and print its value.
+   - Notice how this works without error, because each `x` is trapped within its own scope and they don't conflict with each other.
+
+------
+
+
+
+### 8. Boolean (Logical) Operators
+
+**Concept:** Boolean, or logical, operators are used to combine multiple conditional expressions into a single `true` or `false` value.
+
+- `&&` (**AND**) is true only if **both** of its operands are true.
+- `||` (**OR**) is true if **either** of its operands is true.
+- `!` (**NOT**) inverts a boolean value, turning `true` into `false` and `false` into `true`.
+
+**Example:**
+
+```JavaScript
+let a = true;
+let b = false;
+
+console.log(a && a); // Prints true
+console.log(a && b); // Prints false
+console.log(a || b); // Prints true
+console.log(!b);     // Prints true
+```
+
+**Problems:**
+
+1. - Declare a variable `isSunny` and set it to `true`.
+   - Declare a variable `isWarm` and set it to `true`.
+   - Use `console.log()` to check if it is sunny **AND** warm.
+2. - Declare a variable `day` and set it to `"Sunday"`.
+   - Use `console.log()` to check if `day` is equal to `"Saturday"` **OR** `day` is equal to `"Sunday"`.
+3. - Declare a variable `isLoggedIn` and set it to `false`.
+   - Use `console.log()` to display the result of `!isLoggedIn` to check if a user is **NOT** logged in.
+4. - Declare a variable `carFuel` and set it to `15`.
+   - Declare a variable `isEmergency` and set it to `false`.
+   - Use `console.log()` to check if `carFuel` is less than `20` **AND** `isEmergency` is `false`.
+
+------
+
+
+
+### 9. Logical Operators in `if` Statements
 
 **Concept:** Logical operators allow you to combine multiple conditions into a single expression that evaluates to `true` or `false`.
 
@@ -335,7 +396,7 @@ if (!(name == "Han Solo")) {
 
 
 
-### 9. Nested `if` Statements
+### 10. Nested `if` Statements
 
 **Concept:** A nested `if` statement is an `if` statement that is placed inside the code block of another `if` or `else` statement. This is useful when you need to check a second condition only after a first condition has been proven true. An `if` statement nested inside another `if` is logically equivalent to using the `&&` (AND) operator.
 
@@ -379,7 +440,7 @@ if (degrees < 60) {
 
 
 
-### 10. The `switch` Statement
+### 11. The `switch` Statement
 
 **Concept:** A `switch` statement is an alternative to a long `if...else if...else` chain, but it is only used for checking if a single variable is *equal* to one of several specific values. It compares the variable in parentheses against each `case`. If it finds a match, it runs the code from that point down until it hits a `break` keyword. The `default` case runs if no other `case` matches.
 
@@ -419,146 +480,11 @@ console.log(response);
    - Case `"basic"` should print `"Limited access"`. (Hint: Be careful with your `break` statements so they don't all fall through!)
    - The `default` case should print `"Please subscribe"`.
 
-
-
-### Nested `if` Statements
-
-
-
-**Concept:** A nested `if` statement is an `if` statement that is placed inside the code block of another `if` or `else` statement. This is useful when you need to check a second condition only after a first condition has been proven true. An `if` statement nested inside another `if` is logically equivalent to using the `&&` (AND) operator.
-
-**Example:**
-
-JavaScript
-
-```
-let degrees = 55;
-let wind = 12;
-
-// First, check if degrees are less than 60.
-if (degrees < 60) {
-  // Only if the first condition is true, check if the wind is greater than 10.
-  if (wind > 10) {
-     alert("Wear a jacket"); // This runs because both conditions are true.
-  }
-}
-```
-
-**Problems:**
-
-1. - Declare a variable `isLoggedIn` and set it to `true`.
-   - Declare a variable `userRole` and set it to `"admin"`.
-   - Write a nested `if` statement. The outer `if` should check if `isLoggedIn` is true. The inner `if` should check if `userRole` is `"admin"`.
-   - If both are true, print `"Welcome, Admin!"` to the console.
-2. - Use `prompt()` to ask the user, "Are you a member? (yes/no)". Store the answer in `isMember`.
-   - Use `prompt()` again to ask, "What is your age?". Convert the answer to a number and store it in `age`.
-   - Write a nested `if` statement. The outer `if` should check if `isMember` is `"yes"`.
-   - The inner `if` should check if `age` is over 65. If both are true, print `"You qualify for the senior member discount."`.
-3. - Declare a variable `password` and set its value to `"Swordfish123"`.
-   - Write an `if` statement that checks if the password's length is greater than 10 characters.
-   - Inside that `if` block, add a nested `if` statement that checks if the password includes the number `"1"`.
-   - If both conditions are met, print `"Password meets security requirements."`.
-4. - Declare `let purchaseTotal = 150;`.
-   - Declare `let shippingCountry = "USA";`.
-   - Write a nested `if` statement. The outer `if` should check if `purchaseTotal` is greater than 100.
-   - The inner `if` should check if `shippingCountry` is `"USA"`. If both are true, print `"You qualify for free domestic shipping!"`.
-
-------
+---
 
 
 
-### Executing Multiple Statements & Using Curly Braces
-
-
-
-**Concept:** By default, a conditional statement like `if` or `else` only controls the single line of code that immediately follows it. To execute multiple statements based on a single condition, you **must** group them together in a code block using curly braces `{ }`. It is considered a best practice to always use curly braces, even for a single statement, to make your code clearer and prevent accidental errors.
-
-**Example:**
-
-JavaScript
-
-```
-let degrees = prompt("Enter the temperature");
-
-// Check for an invalid temperature range.
-if (degrees < -100 || degrees > 150) {
-   // Because the condition is true, BOTH of these statements will run.
-   alert("Please enter a temperature between -100 and 150");
-   degrees = prompt("Enter the temperature again");
-}
-```
-
-**Problems:**
-
-1. - Declare a variable `isCorrect` and set it to `true`.
-   - Write an `if` statement that checks if `isCorrect` is `true`.
-   - Inside the curly braces for the `if` statement, add two lines: one that prints `"That's right!"` and another that prints `"You get 10 points."`.
-2. - Declare a variable `playerHealth` and set it to `0`.
-   - Write an `if` statement that checks if `playerHealth` is equal to `0`.
-   - If it is, add code inside curly braces to print `"Game Over"` and on a new line, print `"Final Score: 0"`.
-3. - Use `prompt()` to ask "Do you want to save your work? (yes/no)". Store the answer in `wantsToSave`.
-   - Write an `if` statement that checks if `wantsToSave` is equal to `"yes"`.
-   - Inside the block, first print `"Saving your work..."` and then print `"Save complete."`.
-4. - Declare a variable `cartTotal` and set it to `55`.
-   - Declare a variable `couponCode` and set it to `"DISCOUNT10"`.
-   - Write an `if` statement that checks if `cartTotal` is over 50.
-   - Inside the block, print `"You qualify for a discount!"` and on a new line, print `"Apply code: " + couponCode`.
-
-------
-
-
-
-### Scope of Variables Inside Curly Braces
-
-
-
-**Concept:** When you declare a variable using `let` or `const` inside a set of curly braces `{}`, that variable has **block scope**. This means it only exists and can only be used *inside* that specific block of code. If you try to access it from outside the curly braces where it was defined, you will get a `ReferenceError`. This is a key reason `let` is considered safer and more predictable than the older `var` keyword.
-
-**Example:**
-
-JavaScript
-
-```
-let calculation = prompt("Enter 1 for circumference or 2 for area");
-let radius = 10;
-
-if (calculation == 1) {
-  // 'circumference' is created and only exists inside these braces.
-  let circumference = 2 * 3.141 * radius;
-  console.log(circumference);
-} else {
-  // 'area' is created and only exists inside these braces.
-  let area = 3.141 * radius * radius;
-  console.log(area);
-}
-
-// This next line would cause an error because 'circumference' doesn't exist out here.
-// console.log(circumference); // ReferenceError
-```
-
-**Problems:**
-
-1. - Write an `if (true)` statement.
-   - Inside its curly braces, declare a variable `let secretMessage = "This is a secret.";`.
-   - Outside and after the `if` statement's curly braces, try to print `secretMessage` to the console and observe the error.
-2. - Declare a variable `let score = 100;`.
-   - Write an `if (score > 50)` statement.
-   - Inside its block, declare a new variable `let bonus = 20;` and then print `score + bonus` to the console.
-   - Outside the `if` block, try to print the `bonus` variable and observe the error.
-3. - Declare a variable `let finalMessage = "";` before any `if` statements.
-   - Write an `if...else` statement. In the `if` block, assign the value `"Success!"` to `finalMessage`. In the `else` block, assign the value `"Failure!"` to `finalMessage`.
-   - After the entire `if...else` structure, print the `finalMessage` variable to the console. This works because the variable was declared in the outer scope.
-4. - Write an `if (true)` block. Inside it, declare `let x = 5;` and print its value.
-   - Write a separate `if (true)` block immediately after the first one. Inside this second block, declare another variable also named `let x = 10;` and print its value.
-   - Notice how this works without error, because each `x` is trapped within its own scope and they don't conflict with each other.
-
-------
-
-
-
-### `switch` Statement Advanced Features
-
-
+### 12. `switch` Statement Advanced Features
 
 **Concept:** The `switch` statement has two powerful features. First, you can make multiple `case` labels execute the same code block by listing them sequentially without a `break` in between. This is called "fall-through". Second, you can execute as many statements as you need within a single `case` block before you use the `break` keyword to exit the `switch`.
 
@@ -609,4 +535,6 @@ console.log("Response: " + response + " Score: " + score);
    - Inside that block, write three statements: print `"Executing command..."`, set a variable `status` to `"running"`, and print `"Status is now: " + status`.
    - The `default` case should print `"Unknown command"`.
 
-These lab instructions were written by Brian Bird based on drafts by Gemini 2.5 Pro, 10/29/2025.
+
+
+These lab instructions were written by Brian Bird based on drafts by Gemini 2.5 Pro, 11/3/2025.

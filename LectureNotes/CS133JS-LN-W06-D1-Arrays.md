@@ -27,6 +27,20 @@ author: Brian Bird
 
 [TOC]
 
+## This Week's Learning Objectives
+
+This week you will learn to use arrays.
+
+- What is an array?
+- How to store and retrieve values in arrays.
+- How to work with arrays in loops.
+- How to create and work with nested arrays.
+- How to use special array methods to:
+  - Add and remove elements at the end of an array.
+
+- Add and remove elements at the beginning of an array.
+- Remove or modify elements in an array
+
 ## What are Arrays?
 
 - Review of variables:  We can think of a *variable* as a storage place in memory. It has a name and can hold <u>only one *value*</u> and that value has a *data type*.

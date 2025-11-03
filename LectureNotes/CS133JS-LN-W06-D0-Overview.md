@@ -10,9 +10,6 @@ author: Brian Bird
 **CS133JS Beginning Programming: JavaScript**
 
 
-<h1>Arrays</h1>
-
-
 | Topics by Week                                       |            |
 | ---------------------------------------------------- | ---------- |
 | 1. Intro to JavaScript programming                   | 6. <mark> Arrays</mark>  |
@@ -40,6 +37,24 @@ author: Brian Bird
 
   In light of the interruption of SNAP benefits, the CIT lab has an increased stock of free snack and lunch food. The [Titan Food Pantry](https://www.lanecc.edu/get-support/daily-living-support/titan-pantry-and-closet) has also has an increased stock and variety of food that is available for students.
 
+## Registration for Winter Term 2026
+
+Registration for winter term is open. If you are pursuing the AAS in Software Development, these are the reccomended courses:
+
+- CS 233JS, Intermediate Programming: JavaScript
+- CS 161N, Beginning Programming: C#
+- Directed Elective: CS 135M, Beginning Mobile Application Development
+- WR 121Z, Composition 1
+
+### Relevant Links:
+
+- [Degree Requirements](https://lanecc.smartcatalogiq.com/en/2023-2024/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas/) for AAS in Software Dev
+- [Term-By-Term Sample Planner](https://lanecc.smartcatalogiq.com/-/media/institution/lane-community-college/2023-24-term-planners/Software%20Development%20Term%20Plan%2023-24.pdf) for AAS in Software Dev
+
+- [Winter 2026 Class Schedule](**CS135M  Beginning Mobile Application Development**)
+- [Academic Advising](https://lanecc.edu/advising)
+- [Registration](https://my.lanecc.edu/StudentRegistrationSsb/ssb/registration)
+
 ## Q and A
 
 - Do you have any questions about:
@@ -61,21 +76,9 @@ author: Brian Bird
 
 - Lab 5 (this week's array lab) beta version on Sunday.
 
-## This Week's Learning Objectives
-
-This week you will learn to use arrays.
-
-- What is an array?
-- How to store and retrieve values in arrays.
-- How to work with arrays in loops.
-- How to create and work with nested arrays.
-- How to use special array methods to:
-  - Add and remove elements at the end of an array.
-
-- Add and remove elements at the beginning of an array.
-- Remove or modify elements in an array
 
 
+<a href="https://lanecc.edu/advising"><img src="Images/F2025Week06_RegAndAdvisingGraphic.png" alt="F2025Week06_RegAndAdvisingGraphic" style="zoom:20%;" /></a>
 
 ------
 

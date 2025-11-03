@@ -1,3 +1,31 @@
+Fall 2025 ideas:
+
+CS 133JS Things to revise
+
+Use let from the beginning
+
+W1-D2  Don't include HMTL or script elements. Just focus on JS and the console.
+
+W2-D1 Only teach functions from the standpoint of calling them. Don't write them.
+	  Consider introducing objects, just from the standpoint of calling methods and accessing properties.
+	  
+W2-D2 Save function scope for later--with selection and repetition.
+
+W2-D2-MoreOnOperatorsAndExpressions Add emphasis on expressions vs. statements (should this come later?)
+
+Weeks 3 and 4 look pretty good.
+
+Summary of Weeks 1 through 4: Sequence (variables and expressions), Selection, repetition, arrays
+
+Week 5. Introduce web page I/O without considering the DOM. Just introduce get
+
+Week 6. Introduce writing functions and address function scope
+
+Summary of weeks 6 through 9: web page I/O, Functions, Objects, DOM and events
+
+Remove regular expressions (cover in 233)
+
+
 
 Fall 2024 notes:
 There is too much in the first two weeks

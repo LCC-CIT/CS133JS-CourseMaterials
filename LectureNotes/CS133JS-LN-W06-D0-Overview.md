@@ -48,9 +48,8 @@ Registration for winter term is open. If you are pursuing the AAS in Software De
 
 ### Relevant Links:
 
-- [Degree Requirements](https://lanecc.smartcatalogiq.com/en/2023-2024/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas/) for AAS in Software Dev
-- [Term-By-Term Sample Planner](https://lanecc.smartcatalogiq.com/-/media/institution/lane-community-college/2023-24-term-planners/Software%20Development%20Term%20Plan%2023-24.pdf) for AAS in Software Dev
-
+- [Degree Requirements](https://lanecc.smartcatalogiq.com/en/current/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas) for AAS in Software Dev
+- [Term-By-Term Sample Planner](https://docs.google.com/document/d/1F8CJY1M7A4J9uJtGRDFRyF-0j7l2AVe0vpPE5vcfHXE/edit?tab=t.0) for AAS in Software Dev
 - [Winter 2026 Class Schedule](**CS135M  Beginning Mobile Application Development**)
 - [Academic Advising](https://lanecc.edu/advising)
 - [Registration](https://my.lanecc.edu/StudentRegistrationSsb/ssb/registration)

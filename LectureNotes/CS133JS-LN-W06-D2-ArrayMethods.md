@@ -26,28 +26,6 @@ author: Brian Bird
 
 [TOC]
 
-# Introduction
-
-## Announcements
-
-Registration is open. These are the spring term classes reccomended for Software Dev majors:
-
-- CS 233JS Intermediate JavaScript
-- WR 227 Technical Writing 
-- CS 161N Computer Science 1: C# (.NET)
-- CS 235IM Mobile App Development with JavaScript
-
-## Q and A
-
-- Lab 5: Have you started it? Any questions?
-- Does anyone have any questions about anything?
-
-## What's Due this Week
-
-- Term project proposal: Thursday
-- Reading quiz: Thursday
-- Lab 5 beta version: Sunday
-
 
 
 ## Review
@@ -136,9 +114,9 @@ grid[2][2] = "X";
 
 ------
 
-# Array Methods (and a Property)
+## Array Methods (and a Property)
 
-## Get Array Information
+### Get Array Information
 
 In the examples below, assume we have defined the array `continents` as shown below.
 
@@ -148,7 +126,7 @@ const continents = ["Asia", "Africa", "North America", "South America", "Antarct
 
 
 
-### `length`
+#### `length`
 
 A property that contains the length of an array.
 
@@ -213,7 +191,7 @@ The continents array is shown as a table below with the operations that swap the
 
 
 
-### `indexOf(...)`
+#### `indexOf(...)`
 
 A method that returns the index of the element containing a specified value.
 If the value isn't found, `indexOf` will return -1.
@@ -233,8 +211,8 @@ continents[index] = "américa del Sur";
 
 
 
-## Modify Array Elements
-### `splice(...)`
+### Modify Array Elements
+#### `splice(...)`
 
 The splice() method can be used to <u>insert</u>, <u>remove</u>, or <u>replace</u> elements anywhere in an array. It returns the removed elements.
 
@@ -256,7 +234,7 @@ continents.splice(2, 2, "Americas"); // Remove N. and S. America, replace with A
 
 
 
-### `concat(...)`
+#### `concat(...)`
 
 Join two arrays.
 
@@ -274,7 +252,7 @@ const hobbitsCopy = [].concat(hobbits);
 
 
 
-## Remove Array Elements
+### Remove Array Elements
 
 ### `pop()`
 
@@ -286,7 +264,7 @@ const continent = continents.pop(); // removes Austrailia
 
 
 
-### `shift()`
+#### `shift()`
 
 Removes the first element from an array and returns it.
 
@@ -296,9 +274,9 @@ const continent = continents.shift(); // removes the first element, Asia
 
 
 
-## Add Array Elements
+### Add Array Elements
 
-### `push(...)`
+#### `push(...)`
 
 Adds an element to the end of an array and returns the length of the new array.
 
@@ -308,7 +286,7 @@ const arrayLength = continents.push("Austrailia"); // adds Austrailia at index =
 
 
 
-### `unshift(...)`
+#### `unshift(...)`
 
 Adds an element to the beginning of an array and returns the length of the new array.
 

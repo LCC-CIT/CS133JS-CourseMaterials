@@ -294,6 +294,16 @@ This can be visualized as a table:
 
 
 
+## Example Code
+
+[JavaScript Quiz](../Examples/Week06/QuizGame.html)
+
+- This example demonstrates using parallel arrays. 
+- There are suggestions in the comments for things to try: like making the parallel arrays into a 2D array.
+- You can copy the code and modify it in the console. (Don't copy the array declarations.)
+
+
+
 ## Next class: Using array methods
 
 - Concept of objects and methods.

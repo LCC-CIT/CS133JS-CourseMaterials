@@ -18,6 +18,13 @@
 
 [Learn JavaScript](https://learnjavascript.online/) - An interactive course. The first 7 chapters (77 lessons) are free.
 
+[Full Stack Developer Curriculum](https://www.freecodecamp.org/learn/full-stack-developer/) on [FreeCodeCamp](https://www.freecodecamp.org/)  
+These three courses are part of the Full Stack curriculum:
+
+- HTML
+- CSS
+- JavaScript
+
 
 
 ## Online Books and References
@@ -57,4 +64,4 @@
 
 
 
-Compiled by [Brian Bird](https://profbird.dev), 2020, revised by Brian Bird 2024.
+Compiled by [Brian Bird](https://profbird.dev), 2020, revised by Brian Bird 2025.

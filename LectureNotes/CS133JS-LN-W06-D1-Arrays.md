@@ -292,6 +292,10 @@ This can be visualized as a table:
 1. Write a function to let you put an X or O into a particular location in the grid
 2. Write a function to output the grid to the console.
 
+## Example Code
+
+[A JavaScript Quiz](../Examples/Week06/QuizGame.html)
+
 
 
 ## Next class: Using array methods

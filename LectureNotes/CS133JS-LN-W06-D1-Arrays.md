@@ -292,9 +292,15 @@ This can be visualized as a table:
 1. Write a function to let you put an X or O into a particular location in the grid
 2. Write a function to output the grid to the console.
 
+
+
 ## Example Code
 
-[A JavaScript Quiz](../Examples/Week06/QuizGame.html)
+[JavaScript Quiz](../Examples/Week06/QuizGame.html)
+
+- This example demonstrates using parallel arrays. 
+- There are suggestions in the comments for things to try: like making the parallel arrays into a 2D array.
+- You can copy the code and modify it in the console. (Don't copy the array declarations.)
 
 
 

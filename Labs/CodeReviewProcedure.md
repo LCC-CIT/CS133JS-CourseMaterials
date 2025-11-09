@@ -28,11 +28,11 @@ After getting a code review, you may revise your lab work. Fill in the right-mos
 
 ## What to Do If Something Goes Wrong 
 
-- Your partner didn’t post a beta version by the deadline. 
+- Your lab partner didn’t post a beta version by the deadline. 
   - Communicate with your lab partner and find out when they will have a beta version ready. Remind them that a beta version doesn’t need to be fully complete. Review their code for them when they post it. As long as you review your partner’s code before the due date for the final version, your review won’t be counted late. 
   - If you have already communicated with your lab partner and they haven’t responded or have said they won’t be posting code for review anytime soon, then you can do a code review for someone else. You can post an offer in the Discord discussion forum and see if anyone wants an additional review of their most recent lab. 
 
-- Your partner didn’t post a review for you by the deadline. 
+- Your lab partner didn’t post a review for you by the deadline. 
   - You can review your own code and put a note in the comments section saying your partner didn't give you a review by the deadline. 
 
 ## FAQ 

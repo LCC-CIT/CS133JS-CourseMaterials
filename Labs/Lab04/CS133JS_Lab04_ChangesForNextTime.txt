@@ -1,0 +1,6 @@
+Add UX requirements:
+- Give user instructions about what to enter and what format is accepted.
+- Convert all input to upper or lower case
+- In the state tax and similar programs, make it clear what states can be entered and whether it should be the full name or state code.
+
+11/8/25

@@ -109,7 +109,10 @@ Submit a copy of the code review you posted in the forum to the *Lab 4 Code Revi
 
 1. The JavaScript (.js) file for part 1.
 2. The three HTML files and one JavaScript file you completed for part 2.
-3. The code review from your lab partner with the “Prod.” column filled out by you.
+3. The code review from your lab partner with the “Prod.” column filled out by you.  
+   If your lab partner or another student didn't do a code review of your code, you can do a self-review. For more details, see the [Code Review Procedure](../CodeReviewProcedure.html).
+
+This will be a total of 6 files.
 
 This will be a total of 6 files.
 

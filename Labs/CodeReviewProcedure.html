@@ -6,7 +6,7 @@
 .mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
 h1, h2, h3, h4, h5 { white-space: pre-wrap; }
-body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
@@ -26,12 +26,12 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
 img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
-button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-width: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
+button, input, select, textarea { color: inherit; font: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
 *, ::after, ::before { box-sizing: border-box; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
 #write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; white-space: nowrap; overflow: visible; }
-foreignObject { overflow: visible; }
+foreignobject { overflow: visible; }
 p { line-height: inherit; }
 h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
 p { orphans: 4; }
@@ -55,8 +55,8 @@ thead, tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
 table.md-table td { min-width: 32px; }
-.CodeMirror-gutters { border-right-width: 0px; border-right-style: none; border-right-color: currentcolor; background-color: inherit; }
-.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
 .CodeMirror { text-align: left; }
 .CodeMirror-placeholder { opacity: 0.3; }
 .CodeMirror pre { padding: 0px 4px; }
@@ -76,7 +76,7 @@ div.hr:focus { cursor: none; }
 svg { break-inside: avoid; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
 .footnotes + .footnotes { margin-top: 0px; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
 li .mathjax-block, li p { margin: 0.5rem 0px; }
@@ -89,7 +89,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 @media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
-  .typora-export * { print-color-adjust: exact; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
@@ -110,7 +110,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 [contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
-.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
 .math { font-size: 1rem; }
 .md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
@@ -140,14 +140,14 @@ code, pre, samp, tt { font-family: var(--monospace); }
 kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; vertical-align: initial; }
-a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
 [lang="mermaid"] .node text { font-size: 1rem; }
-table tr th { border-bottom-width: 0px; border-bottom-style: none; border-bottom-color: currentcolor; }
+table tr th { border-bottom: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
-iframe { max-width: 100%; width: 100%; border: medium; }
+iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
 mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
@@ -176,7 +176,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
 .outline-content ul { margin-top: 0px; margin-bottom: 0px; }
 .outline-content strong { font-weight: 400; }
-.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
 .outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
 .outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
 .outline-expander:hover::before { content: ""; }
@@ -189,14 +189,14 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
 .outline-label:hover { text-decoration: underline; }
 .outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
-.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
 .outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
 .outline-item-open > .outline-item > .outline-expander::before { content: ""; }
 .outline-children { display: none; }
 .info-panel-tab-wrapper { display: none; }
 .outline-item-open > .outline-children { display: block; }
 .typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
-.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
 .typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
 .typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
 .typora-export-collapse-outline .outline-children { display: none; }
@@ -210,7 +210,7 @@ mjx-container { break-inside: avoid; }
 .md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
 .md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
 .md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
-.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
 .md-alert-text-note { color: rgb(9, 105, 218); }
 .md-alert-text-important { color: rgb(130, 80, 223); }
 .md-alert-text-warning { color: rgb(154, 103, 0); }
@@ -611,11 +611,10 @@ header, .context-menu, .megamenu-content, footer{
 }
 </style>
 <style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
-<style type='text/css'  id="style-mac-print"> @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}</style>
 
 <title>CodeReviewProcedure</title>
 </head>
-<body class='typora-export'><div class='typora-export-content'>
-<div id='write'  class=''> <h1>Code Review Procedure</h1><h2>Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n5"><a class="md-toc-inner" style="" href="#overview">Overview</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n8"><a class="md-toc-inner" style="" href="#instructions">Instructions</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n9"><a class="md-toc-inner" style="" href="#giving-and-getting-a-code-review">Giving and Getting a Code Review </a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n12"><a class="md-toc-inner" style="" href="#what-to-do-with-the-code-review-you-give">What to Do with the Code Review You Give </a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n14"><a class="md-toc-inner" style="" href="#what-to-do-with-the-code-review-you-get">What to Do with the Code Review You Get </a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n16"><a class="md-toc-inner" style="" href="#what-to-do-if-something-goes-wrong">What to Do If Something Goes Wrong </a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n30"><a class="md-toc-inner" style="" href="#faq">FAQ </a></span></p></div><h2 id='overview'><span>Overview</span></h2><p><span>Each student is on a team with one or two other students who are their lab partners. On Moodle, each team of lab partners is listed with a team name</span></p><p><span>There are three versions of each lab assignment—versions A, B and C. Each lab partner will do a different version. This allows each student to look at the other’s work and give them feedback without seeing a solution to their own assignment. </span></p><h2 id='instructions'><span>Instructions</span></h2><h3 id='giving-and-getting-a-code-review'><span>Giving and Getting a Code Review </span></h3><p><span>When a student has a beta (draft) version of their lab assignment ready, they will post it in team’s Discord channel. This should be done before the due date for the beta version. </span></p><p><span>A lab partner will the review the beta version using the code review form provided by the instructor and put </span><em><span>yes</span></em><span> or </span><em><span>no</span></em><span> in the &quot;beta&quot; column for each question on the form. This should be done before the due date for the code review. Each lab partner will do one review in “round robin” order:</span><br/><span>student A reviews B, student B reviews C, and student C reviews A. </span></p><h3 id='what-to-do-with-the-code-review-you-give'><span>What to Do with the Code Review You Give </span></h3><p><span>Post the code review for your lab partner in your Discord team channel and submit the review using the Lab Review assignment link on Moodle. </span></p><h3 id='what-to-do-with-the-code-review-you-get'><span>What to Do with the Code Review You Get </span></h3><p><span>After getting a code review, you may revise your lab work. Fill in the right-most column (“production”) of the review form to indicate any revisions. Fill in the right-most column completely, even if you didn’t change anything. Then, upload the final (aka production) version of your lab work to Moodle and the completed code review of your own lab work. </span></p><h2 id='what-to-do-if-something-goes-wrong'><span>What to Do If Something Goes Wrong </span></h2><ul><li><p><span>Your partner didn’t post a beta version by the deadline. </span></p><ul><li><p><span>Communicate with your lab partner and find out when they will have a beta version ready. Remind them that a beta version doesn’t need to be fully complete. Review their code for them when they post it. As long as you review your partner’s code before the due date for the final version, your review won’t be counted late. </span></p></li><li><p><span>If you have already communicated with your lab partner and they haven’t responded or have said they won’t be posting code for review anytime soon, then you can do a code review for someone else. You can post an offer in the Discord discussion forum and see if anyone wants an additional review of their most recent lab. </span></p></li></ul></li><li><p><span>Your partner didn’t post a review for you by the deadline. </span></p><ul><li><p><span>You can review your own code and put a note in the comments section saying your partner didn&#39;t give you a review by the deadline. </span></p></li></ul></li></ul><h2 id='faq'><span>FAQ </span></h2><ul><li><p><span>Q: Can I do a code review for someone else in addition to my lab partner? A: Sure, it is good experience for you and helpful for the other person. They just need to have done a different assignment than the one you did. </span></p></li><li><p><span>Q: Can I get more than one code review for a particular lab? A: Sure, it’s fine for someone else, in addition to your lab partner, to review your code. As long as they didn’t do the same assignment that you did. </span></p></li></ul><p>&nbsp;</p><hr /><p><span> By Brian Bird, Lane Community College. Written winter 2016. Revised fall 2025 </span></p><hr /></div></div>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''> <h1>Code Review Procedure</h1><h2>Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n4"><a class="md-toc-inner" href="#overview">Overview</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n7"><a class="md-toc-inner" href="#instructions">Instructions</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n8"><a class="md-toc-inner" href="#giving-and-getting-a-code-review">Giving and Getting a Code Review </a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n11"><a class="md-toc-inner" href="#what-to-do-with-the-code-review-you-give">What to Do with the Code Review You Give </a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n13"><a class="md-toc-inner" href="#what-to-do-with-the-code-review-you-get">What to Do with the Code Review You Get </a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n15"><a class="md-toc-inner" href="#what-to-do-if-something-goes-wrong">What to Do If Something Goes Wrong </a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n29"><a class="md-toc-inner" href="#faq">FAQ </a></span></p></div><h2 id='overview'><span>Overview</span></h2><p><span>Each student is on a team with one or two other students who are their lab partners. On Moodle, each team of lab partners is listed with a team name</span></p><p><span>There are three versions of each lab assignment—versions A, B and C. Each lab partner will do a different version. This allows each student to look at the other’s work and give them feedback without seeing a solution to their own assignment. </span></p><h2 id='instructions'><span>Instructions</span></h2><h3 id='giving-and-getting-a-code-review'><span>Giving and Getting a Code Review </span></h3><p><span>When a student has a beta (draft) version of their lab assignment ready, they will post it in team’s Discord channel. This should be done before the due date for the beta version. </span></p><p><span>A lab partner will the review the beta version using the code review form provided by the instructor and put </span><em><span>yes</span></em><span> or </span><em><span>no</span></em><span> in the &quot;beta&quot; column for each question on the form. This should be done before the due date for the code review. Each lab partner will do one review in “round robin” order:</span><br/><span>student A reviews B, student B reviews C, and student C reviews A. </span></p><h3 id='what-to-do-with-the-code-review-you-give'><span>What to Do with the Code Review You Give </span></h3><p><span>Post the code review for your lab partner in your Discord team channel and submit the review using the Lab Review assignment link on Moodle. </span></p><h3 id='what-to-do-with-the-code-review-you-get'><span>What to Do with the Code Review You Get </span></h3><p><span>After getting a code review, you may revise your lab work. Fill in the right-most column (“production”) of the review form to indicate any revisions. Fill in the right-most column completely, even if you didn’t change anything. Then, upload the final (aka production) version of your lab work to Moodle and the completed code review of your own lab work. </span></p><h2 id='what-to-do-if-something-goes-wrong'><span>What to Do If Something Goes Wrong </span></h2><ul><li><p><span>Your lab partner didn’t post a beta version by the deadline. </span></p><ul><li><p><span>Communicate with your lab partner and find out when they will have a beta version ready. Remind them that a beta version doesn’t need to be fully complete. Review their code for them when they post it. As long as you review your partner’s code before the due date for the final version, your review won’t be counted late. </span></p></li><li><p><span>If you have already communicated with your lab partner and they haven’t responded or have said they won’t be posting code for review anytime soon, then you can do a code review for someone else. You can post an offer in the Discord discussion forum and see if anyone wants an additional review of their most recent lab. </span></p></li></ul></li><li><p><span>Your lab partner didn’t post a review for you by the deadline. </span></p><ul><li><p><span>You can review your own code and put a note in the comments section saying your partner didn&#39;t give you a review by the deadline. </span></p></li></ul></li></ul><h2 id='faq'><span>FAQ </span></h2><ul><li><p><span>Q: Can I do a code review for someone else in addition to my lab partner? A: Sure, it is good experience for you and helpful for the other person. They just need to have done a different assignment than the one you did. </span></p></li><li><p><span>Q: Can I get more than one code review for a particular lab? A: Sure, it’s fine for someone else, in addition to your lab partner, to review your code. As long as they didn’t do the same assignment that you did. </span></p></li></ul><p>&nbsp;</p><hr /><p><span> By Brian Bird, Lane Community College. Written winter 2016. Revised fall 2025 </span></p><hr /></div></div>
 </body>
 </html>

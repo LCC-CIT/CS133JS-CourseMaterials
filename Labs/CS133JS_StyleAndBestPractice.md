@@ -45,7 +45,7 @@ author: Brian Bird
 - Functions
 
   - Names should be descriptive and use camelCase.
-  - Should have at most one return statement.
+  - Should have only one return statement, sometimes two if it makes the code simpler and easier to read; but don't replace control structure logic with returns that short-circuit the control structure.
   - Should have a single purpose.
 
 - Old code: any unused code should be removed.

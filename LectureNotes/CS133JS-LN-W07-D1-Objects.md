@@ -25,23 +25,9 @@ author: Brian Bird
 
 [TOC]
 
-## Introduction
-
-### Q and A
-
-- Registration is open for next term!  
-  [Upcoming classes](CS133JS-LN-W06-DX-NextSoftwareDevClasses.html) for the Software Development AAS degree program 
-
-- Lab 5 on Arrays&mdash; any questions?
-  - Code review due Tuesday.
-  - Production version due Thursday.
-
-- Reading quiz due Thursday.
-- Does anyone have any other questions about anything?
 
 
-
-### Review of Array Methods
+## Review of Array Methods
 
 These examples use the array declared and initialized below:
 
@@ -352,7 +338,7 @@ balin = boffer;  // this works!
 
 
 
-# References
+## References
 
 [JavaScript Object Basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics) - MDN Guide
 

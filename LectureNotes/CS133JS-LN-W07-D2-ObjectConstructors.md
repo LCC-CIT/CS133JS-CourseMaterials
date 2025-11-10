@@ -26,20 +26,7 @@ author: Brian Bird
 
 [TOC]
 
-# Introduction
-
-## Q and A
-
-- Due this week:
-  - Lab 5: Thursday
-  - Reading quiz on objects: Thursday
-  - Lab 6 beta version: Sunday
-
-- Does anyone have any questions about anything?
-
-
-
-## Review of Objects
+# Review of Objects
 
 ### Creating an Object Literal
 

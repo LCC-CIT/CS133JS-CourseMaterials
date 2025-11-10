@@ -25,18 +25,6 @@ author: Brian Bird
 
 [TOC]
 
-# Introduction
-
-## Announcements 
-
-- Any announcements?
-
-## Q and A
-
-- Does anyone have any questions about anything?
-
-
-
 ## Accessors
 
 We can access the properties of a JavaScript object through special functions called *accessors*. These help us employ a programming concept called *encapsulation*. [TODO: Explain encapsulation.]
@@ -64,9 +52,9 @@ const coffeeMaker =
 
 
 
-# References
+## References
 
-## Tutorials
+### Tutorials
 
 [Getter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get) - MDN
 

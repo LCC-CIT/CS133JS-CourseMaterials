@@ -529,11 +529,16 @@ console.log("Response: " + response + " Score: " + score);
    - Have cases for `"A"`, `"B"`, and `"C"` all fall through to the same code block.
    - Inside that block, set a variable `isPassing` to `true` and another variable `message` to `"You passed the class."`. Print both variables.
    - The `default` case should set `isPassing` to `false` and `message` to `"You must retake the class."`. Print both variables here as well.
-4. - Declare a variable `command` and set it to `"open"`.
+4. Imagine you are writing a switch statement to simulate controlling the execution of a program. The program can be started with the commands "run" or "start" and stopped with the commands "stop" or "end".
+   - Declare two variables:  `command` and `operationStatus`, both initialized to empty strings.
+   - Use prompt to get a command from the user.
    - Write a `switch` statement for `command`.
-   - The cases `"open"` and `"start"` should fall through to the same block.
-   - Inside that block, write three statements: print `"Executing command..."`, set a variable `status` to `"running"`, and print `"Status is now: " + status`.
-   - The `default` case should print `"Unknown command"`.
+   - Add cases "run" and "start"` that fall through to the same block.
+     - Inside that block,, set status to  "running", and print `"Status is now: "` followed by the status.
+   - Add cases "stop" and "end" that fall through to a second block.
+     - set operationStatus to "stopped"
+   - Add a`default` case that sets operationStatus to `"Unknown command"`.
+   - After the end of the switch statement  print `"Status is now: "` followed by the status.
 
 
 

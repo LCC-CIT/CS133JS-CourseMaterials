@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    // Auto responses in order of prompt calls
+    const promptQueue = [
+        "Alice",
+        "42",
+        "yes"
+    ];
+
+    // Override prompt
+    window.prompt = function(message, defaultValue) {
+        console.log("Intercepted prompt:", message);
+        const value = promptQueue.length ? promptQueue.shift() : (defaultValue || "");
+        console.log("Auto-filled value:", value);
+        return value;
+    };
+    </script>
+
+    <script src="Lab03-SelectionSolutions.js"></script>
+</head>
+<body>
+</body>
+</html>

@@ -302,21 +302,37 @@ if (calculation == 1) {
 
 **Problems:**
 
-1 and 2 are relate to putting multiple statements in a block, 3 and 4 relate to block scope. If you are choosing just two problems, do one from each group.
+1 and 2 relate to putting multiple statements in a block, 3 and 4 relate to block scope. If you are choosing just two problems, do one from each group.
 
-1. - Use `prompt()` to ask "Do you want to save your work? (yes/no)". Store the answer in `wantsToSave`.
+1. Write code that simulates asking a user if they want to save their work and then saving it if they answer yes.
+
+   - Use `prompt()` to ask "Do you want to save your work? (yes/no)". Store the answer in `wantsToSave`.
    - Write an `if` statement that checks if `wantsToSave` is equal to `"yes"`.
-   - Inside the block, first print `"Saving your work..."` and then print `"Save complete."`.
-2. - Declare a variable `cartTotal` and set it to `55`.
-   - Declare a variable `couponCode` and set it to `"DISCOUNT10"`.
+   - Inside the block, first print "Saving your work..." and then print "Save complete.".
+
+2. Write code that simulates checking an online shopping cart to see if the user bought enough items to qualify for a discount.
+
+   - Declare a variable `cartTotal` and set it to `55`.
+   - Declare a variable `couponCode` and set it to "DISCOUNT10".
    - Write an `if` statement that checks if `cartTotal` is over 50.
-   - Inside the block, print `"You qualify for a discount!"` and on a new line, print `"Apply code: " + couponCode`.
-3. Declare a variable `let finalMessage = "";` before any `if` statements.
-   - Write an `if...else` statement. In the `if` block, assign the value `"Success!"` to `finalMessage`. In the `else` block, assign the value `"Failure!"` to `finalMessage`.
-   - After the entire `if...else` structure, print the `finalMessage` variable to the console. This works because the variable was declared in the outer scope.
-4. Write an `if (true)` block. Inside it, declare `let x = 5;` and print its value.
-   - Write a separate `if (true)` block immediately after the first one. Inside this second block, declare another variable also named `let x = 10;` and print its value.
-   - Notice how this works without error, because each `x` is trapped within its own scope and they don't conflict with each other.
+   - Inside the block, print "You qualify for a discount!" and on a new line, print "Apply code: " +` couponCode`.
+
+3. Write code that shows that a global variable can be set inside a local scope (in this case inside { } of an if statement)
+
+   - Declare and initialize variables: `let finalMessage = "";` and `let condition = true;` before any `if` statements.
+
+   - Write an `if(condition === true)...else` statement. In the `if` block, assign the value "Success!" to `finalMessage`. In the `else` block, assign the value "Failure!" to `finalMessage`.
+
+   - After the entire `if...else` statement, print the `finalMessage` variable to the console. This works because the variable was declared in the outer (global) scope.
+
+4. Write code that demonstrates how variable declared inside {} are local to that block of code. 
+
+   - Declare a variable `let userType = "admin";`.
+
+   - Write an `if...else` statement that checks if `userType` is equal to `"admin"`.
+   - Inside the `if` block, declare and initialize a variable `let message = "Welcome, Admin!"` and print it to the console.
+   - Inside the `else` block, declare and initialize a *different* variable, also named `let message = "Welcome, User!"`, and print it to the console.
+   - Notice how this works without error. The `message` in the `if` block is a completely separate variable from the `message` in the `else` block because each is scoped only to its own `{}`.
 
 ------
 
@@ -427,10 +443,6 @@ if (degrees < 60) {
    - Use `prompt()` again to ask, "What is your age?". Convert the answer to a number and store it in `age`.
    - Write a nested `if` statement. The outer `if` should check if `isMember` is `"yes"`.
    - The inner `if` should check if `age` is over 65. If both are true, print `"You qualify for the senior member discount."`.
-3. - Declare a variable `password` and set its value to `"Swordfish123"`.
-   - Write an `if` statement that checks if the password's length is greater than 10 characters.
-   - Inside that `if` block, add a nested `if` statement that checks if the password includes the number `"1"`.
-   - If both conditions are met, print `"Password meets security requirements."`.
 4. - Declare `let purchaseTotal = 150;`.
    - Declare `let shippingCountry = "USA";`.
    - Write a nested `if` statement. The outer `if` should check if `purchaseTotal` is greater than 100.
@@ -468,8 +480,14 @@ console.log(response);
 
 **Problems:**
 
-1. Declare `let numericGrade = 4;`. Write a `switch` statement that checks `numericGrade`. Print `"Excellent"` for case 4, `"Good"` for case 3, `"Average"` for case 2, and `"Poor"` for case 1. Add a `default` case that prints `"Invalid grade"`.
-2. Use `prompt()` to ask, "Enter a direction (north, south, east, west)". Store it in `direction`. Write a `switch` statement that prints: `"You are going North"` for the `"north"` case, `"You are going South"` for the `"south"` case, `"You are going East"` for the `"east"` case, and `"You are going West"` for the `"west"` case.
+1. Write a switch statement that will print a phrase describing the quality of a student's work based on a numeric score.
+   - Declare `let numericGrade = 4;`. 
+   - Write a `switch` statement that checks `numericGrade`. 
+   - Print "Excellent" for case 4, "Good" for case 3, "Average" for case 2, and `"Poor"` for case 1. Add a `default` case that prints "Invalid grade".
+2. Write a switch statement that will print a phrase saying which way you are going based on setting a variable.
+   - Use `prompt()` to ask, "Enter a direction (north, south, east, west)". 
+   - Store it in `direction`. 
+   - Write a `switch` statement that prints: "You are going North" for the "north" case, "You are going South" for the "south" case, "You are going East" for the "east" case, and "You are going West" for the "west" case.
 3. Declare `let fruit = "Apple";`. Write a `switch` statement that checks `fruit`.
    - Cases `"Apple"` and `"Pear"` should both print `"This is a pome fruit."` (Hint: let the first case "fall through" to the second).
    - Case `"Banana"` should print `"This is a tropical fruit."`.
@@ -516,29 +534,33 @@ console.log("Response: " + response + " Score: " + score);
 
 **Problems:**
 
-1. - Use `prompt()` to ask the user to enter a day of the week and store it in `day`.
+1. Use a switch statement to tell the user if a day is a weekday or weekend day.
+   - Use `prompt()` to ask the user to enter a day of the week and store it in `day`.
    - Write a `switch` statement for `day`.
-   - The cases for `"Saturday"` and `"Sunday"` should both fall through to a block that prints `"It's the weekend!"`.
-   - Include a `default` case that prints `"It's a weekday."`.
-2. - Declare a variable `playerAction` and set it to `"attack"`.
+   - Add cases for "Saturday" and "Sunday" which should both fall through to a block that prints "It's the weekend!".
+   - Include a `default` case that prints "It's a weekday.".
+2. This code simulates part of a computer game where some action takes place based on setting a variable.
+   - Declare a variable `playerAction` and set it to "attack".
    - Write a `switch` statement for `playerAction`.
-   - For the case `"attack"`, write two statements: one that prints `"You swing your sword!"` and another that prints `"You dealt 10 damage."`.
+   - For the case "attack", write two statements: one that prints "You swing your sword!" and another that prints "You dealt 10 damage.".
    - Remember to include a `break` and a `default` case.
-3. - Use `prompt()` to ask for a letter grade (`"A"`, `"B"`, `"C"`, etc.) and store it in `grade`.
+3. Write code that will tell a user if they are passing a class or not.
+   - Declare and initialize three variables: `grade` (a string), `message` (a string) and `isPassing` (a boolean).
+   - Use `prompt()` to ask for a letter grade (`"A"`, `"B"`, `"C"`, etc.) and store it in `grade`.
    - Write a `switch` statement for `grade`.
    - Have cases for `"A"`, `"B"`, and `"C"` all fall through to the same code block.
-   - Inside that block, set a variable `isPassing` to `true` and another variable `message` to `"You passed the class."`. Print both variables.
-   - The `default` case should set `isPassing` to `false` and `message` to `"You must retake the class."`. Print both variables here as well.
+   - Inside that block, set a variable `isPassing` to `true` and another variable `message` to "You passed the class.". Print both variables.
+   - The `default` case should set `isPassing` to `false` and `message` to "You must retake the class.". Print both variables here as well.
 4. Imagine you are writing a switch statement to simulate controlling the execution of a program. The program can be started with the commands "run" or "start" and stopped with the commands "stop" or "end".
    - Declare two variables:  `command` and `operationStatus`, both initialized to empty strings.
    - Use prompt to get a command from the user.
    - Write a `switch` statement for `command`.
    - Add cases "run" and "start"` that fall through to the same block.
-     - Inside that block,, set status to  "running", and print `"Status is now: "` followed by the status.
+     - Inside that block,, set `operationalStatus` to  "running".
    - Add cases "stop" and "end" that fall through to a second block.
-     - set operationStatus to "stopped"
-   - Add a`default` case that sets operationStatus to `"Unknown command"`.
-   - After the end of the switch statement  print `"Status is now: "` followed by the status.
+     - set `operationStatus` to "stopped".
+   - Add a`default` case that sets `operationStatus` to "Unknown command".
+   - After the end of the switch statement  print "Status is now: " followed by the status.
 
 
 

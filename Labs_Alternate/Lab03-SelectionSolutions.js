@@ -247,15 +247,28 @@ if (condition) {
 }
 console.log(finalMessage); // Works because finalMessage was declared outside
 
+
 // Problem 7.4
-if (true) {
-  let x = 5; // This 'x' only exists in this block
-  console.log(x);
+
+// 1. Declare a variable `let userType = "admin";`.
+let userType = "admin";
+
+// 2. Write an `if...else` statement that checks if `userType` is equal to `"admin"`.
+if (userType === "admin") {
+  // 3. Inside the `if` block, declare a variable `let message = "Welcome, Admin!"` and print it.
+  // This 'message' only exists inside these curly braces.
+  let message = "Welcome, Admin!";
+  console.log(message);
+} else {
+  // 4. Inside the `else` block, declare a *different* variable, also named `let message = "Welcome, User!"`.
+  // This 'message' only exists inside *these* curly braces and is separate from the one above.
+  let message = "Welcome, User!";
+  console.log(message);
 }
-if (true) {
-  let x = 10; // This is a *different* 'x' that only exists here
-  console.log(x);
-}
+
+// If you were to try:
+// console.log(message);
+// ...out here, you would get a ReferenceError because 'message' does not exist in this outer scope.
 
 /*
  * ----------------------------------------

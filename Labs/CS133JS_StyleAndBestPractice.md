@@ -52,6 +52,8 @@ author: Brian Bird
 
 - Comments: explanatory comments should be included.
 
+- File names should be written in PascalCase and should not contain spaces or special characters other than numbers, dots, hyphens or underbars.
+
   
 
 ## References

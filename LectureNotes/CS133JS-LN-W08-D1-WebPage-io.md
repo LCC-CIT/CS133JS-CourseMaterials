@@ -196,7 +196,7 @@ Event handlers are JavaScript functions that are called when events occur.
   <p onmouseover="doSomething()">This paragraph has an onmouseover event</p>
   ```
 
-  > In our next session, you'll learn the more common way to add an event handler, which is by using JavaScript to assign a handler to an HTML element. 
+  > In our next session, you'll learn the more common way to add an event handler, which is by using JavaScript to assign a handler to an HTML element (or elements). 
 
 
 - An event handler is just an ordinary function:

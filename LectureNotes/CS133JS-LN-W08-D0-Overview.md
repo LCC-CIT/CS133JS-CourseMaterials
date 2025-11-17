@@ -1,7 +1,7 @@
 ---
-title: Objects
-description: Learn what objects are and how to use them in loops.
-keywords: object, for, for in, key, value, proerty
+title: Week 8 announcements and overview
+description: Announcements, due dates and overview info for this week.
+keywords: web page io, week 8
 material: Lecture Notes
 generator: Typora
 author: Brian Bird

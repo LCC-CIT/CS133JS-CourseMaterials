@@ -35,7 +35,7 @@ The browser has a set of built-in JavaScript objects that represent the web page
 
 ![DOM-model](../Images/DOM-model.svg)
 
-By <a href="//commons.wikimedia.org/w/index.php?title=User:Eib&amp;action=edit&amp;redlink=1" class="new" title="User:Eib (page does not exist)">Birger Eriksson</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=18034500">Link</a>
+*By <a href="//commons.wikimedia.org/w/index.php?title=User:Eib&amp;action=edit&amp;redlink=1" class="new" title="User:Eib (page does not exist)">Birger Eriksson</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=18034500">Link</a>*
 
 
 
@@ -55,17 +55,17 @@ By <a href="//commons.wikimedia.org/w/index.php?title=User:Eib&amp;action=edit&a
 </html>
 ```
 
-
+**Exercise**: Open this web page in a browser and explore the objects in the console.
 
 ### Referencing HTML Elements
 
-We can reference elements directly through the DOM tree, like this:
+We could reference elements directly through the DOM tree, like this:
 
 ```javascript
 document.body.children[0].innerHTML = "Dom Demo"; // Change the h1 element
 ```
 
-But usually, we use some method to search for an element by id, selector or some other identifying feature.
+But usually, we use a special method to search for an element by id, selector or some other identifying feature.
 
 For the examples below, assume we have this in our web page:
 
@@ -95,8 +95,6 @@ document.getElementById("lcc").innerHTML = "Hello Lane Community College!";
 	background-color: green;
 }
 ```
-
-
 
 **Back to the `querySelector`**
 
@@ -179,10 +177,12 @@ JavaScript can respond to various actions a user preforms when interacting with 
 
 #### Common events
 
-- onclick                 The user clicks an HTML element.
-- onmouseover     The mouse pointer moves over an HTML element.
-- onkeydown         The user presses a keyboard key.
-- onload                 The browser has finished loading the page.
+These events are HTML attributes.
+
+- `onclick`                 The user clicks an HTML element.
+- `onmouseover`     The mouse pointer moves over an HTML element.
+- `onkeydown`         The user presses a keyboard key.
+- `onload`                 The browser has finished loading the page.
 
 #### Event Handlers
 
@@ -190,11 +190,13 @@ Event handlers are JavaScript functions that are called when events occur.
 
 - The event handler must be specified for a particular HTML element.
 
-  One way to do this is with an HTML attribute:
+  <u>One way</u> to do this is with an HTML attribute:
 
   ```html
   <p onmouseover="doSomething()">This paragraph has an onmouseover event</p>
   ```
+
+  > In our next session, you'll learn the more common way to add an event handler, which is by using JavaScript to assign a handler to an HTML element. 
 
 
 - An event handler is just an ordinary function:
@@ -205,7 +207,7 @@ Event handlers are JavaScript functions that are called when events occur.
   }
   ```
 
-- Event handlers that write something to the document (web page) need to have a target element. 
+- Event handlers that write something to the document (web page) need to have a target element.  In this example, it's the paragraph, "p".
 
   ```javascript
   function doSomething() {
@@ -234,7 +236,7 @@ Note: The `onclick` event can be used with any element, but we frequently use it
 
 ### When to Use an HTML `<form>`
 
-The purpose of a `<form>` is to send the information entered in the form to a program running on a server. Only use a form if that is what you want to do. If you are just using input elements with JavaScript running in the browser, don't put the input elements in a form.
+The purpose of a `<form>` is to <u>send the information to a program running on a server</u>. Only use a form if that is what you want to do. If you are just using input elements with JavaScript running in the browser, don't put the input elements in a form.
 
 When you click a button on a form, the information entered on the form will be sent in an HTTP request either to a program at a URL specified in the form's *action* attribute or back to the URL of the web page the form is in&mdash;this is called a *postback*. A postback will reset the web page to its original state and any information entered on the form will be lost.
 
@@ -261,4 +263,4 @@ When you click a button on a form, the information entered on the form will be s
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), 2020, revised <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), 2020, revised <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

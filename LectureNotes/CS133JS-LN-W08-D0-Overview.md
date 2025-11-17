@@ -31,6 +31,25 @@ author: Brian Bird
   This **Friday, November 21** is the last day to make fall term schedule changes. This includes adding or dropping a course, withdrawing, taking an incomplete, or changing grading methods. 
   
   **Note**: Students should <u>always</u> consult [an academic advisor](https://www.lanecc.edu/get-support/academic-support/academic-advising) and/or [financial aid](https://www.lanecc.edu/costs-admission/paying-college/financial-aid) representative before making these changes, especially withdrawing. These types of changes can sometimes have implications for academic progress and/or financial aid awards. 
+  
+- **LCC Team Gets First Place at QuackHacks!**
+
+  LCC took a six member team to the QuackHacks Hackathon this weekend, where they worked on a game together for 24 hours straight. They used Miro to brainstorm, Jira to manage the project, GitHub to coordinate their efforts, the Godot game engine with GDScript to build the game and Libresprite to build the game assets.
+  
+  <u>They earned first place in the Game Dev track!</u>
+  
+  You can see their work and description of themselves and their process here.
+  
+  https://devpost.com/software/tina-s-big-adventure
+  
+  If you see these students this week, let them know how proud we are!
+  
+  - Cole McLain
+  - Drew McKenzie
+  - Josh Ginsberg
+  - Leah Higman
+  - Max Ferguson
+  - Morgan Titsworth
 
 ## Registration for Winter Term 2026
 

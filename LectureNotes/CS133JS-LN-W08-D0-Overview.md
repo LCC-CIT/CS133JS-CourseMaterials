@@ -13,8 +13,8 @@ author: Brian Bird
 | Topics by Week                                       |            |
 | ---------------------------------------------------- | ---------- |
 | 1. Intro to JavaScript programming                   | 6.Arrays  |
-| 2. Functions, Operators and Expressions              | 7.  <mark> Objects and Object Constructors</mark> |
-| 3. Conditional Statements: if and switch             | 8. Web Page I/O |
+| 2. Functions, Operators and Expressions              | 7.  Objects and Object Constructors |
+| 3. Conditional Statements: if and switch             | 8.  <mark>Web Page I/O</mark> |
 | 4. Repetition: while, do while, and for | 9. Review |
 | 5. Midterm Check-Point                               | 10. Term Project |
 | 11. Final |  |
@@ -26,16 +26,9 @@ author: Brian Bird
 
 ## Announcements for Fall 2025
 
-- **The CIT Lab is hiring workers**
-  The CIT Lab is looking for Front/Help Desk workers. [Here is the link to apply](https://lanecc.studentemployment.ngwebsolutions.com/JobXJobDetail.aspx?JobId=12268&s=1). It's a great opportunity and a fun place to work.
+- **This is the last week to drop a class or change grade options**
 
-- **Student Emergent Tech & AI Club**
-  Fusion Lab Faculty and students are forming a [club on emergent technology and AI](Images/ETAIClubPoster.pdf).
-   [Interest Form](https://out.smore.com/e/nd345/V0ERKC?__$u__) | Contact: [Kevin Steeves](https://out.smore.com/e/nd345/X14b6G?__$u__)
-
-- **Snacks/Food available**
-
-  In light of the interruption of SNAP benefits, the CIT lab has an increased stock of free snack and lunch food. The [Titan Food Pantry](https://www.lanecc.edu/get-support/daily-living-support/titan-pantry-and-closet) has also has an increased stock and variety of food that is available for students.
+  If you think you might need to make one of these changes, it's best to talk to an [academic advisor](https://www.lanecc.edu/get-support/academic-support/academic-advising) first so that you know all your options.
 
 ## Registration for Winter Term 2026
 
@@ -58,27 +51,23 @@ Registration for winter term is open. If you are pursuing the AAS in Software De
 
 - Do you have any questions about:
 
-  - The term project?
-    - Let's look at the proposals
-    - This is a good time to start the skeleton of your project or continue working on it.
+  - Lab 6 (on objects)
   
-- The reading on objects (if you've started it.)
+- The reading on events (if you've started it.)
   
 - Anything else?
 
 ## Due Dates
 
-- Lab 5 (on arrays) code review due Tuesday  
+- Lab 6 (on objects) code review due Tuesday  
   If your lab partner didn't post a beta version for you to review, there is alternative beta code you can review this instead.
 
-- Reading quiz on objects closes Thursday.
+- Reading quiz on events closes Thursday.
 
-- Lab 5 (on arrays) production version due Thursday.
-- Lab 6 (this week's lab on objects) beta version on Sunday.
+- Lab 6 (on objects) production version due Thursday.
+- Lab 7 (this week's lab on events) beta version on Sunday.
 
 
-
-<a href="https://lanecc.edu/advising"><img src="Images/F2026-Week 7.jpg" alt="F2025Week06_RegAndAdvisingGraphic" style="zoom:50%;" /></a>
 
 ------
 

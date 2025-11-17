@@ -25,31 +25,11 @@ author: Brian Bird
 
 [TOC]
 
-# Introduction
-
-## Announcements
-
-**For Winter 2024**
-
-- Note: the tutorial you are reading this week has examples that use *arrow functions*. You will learn about those next term. I've translated those examples to use "normal" functions.
-- Reminders: 
-  - Lab 6 (objects) code reviews are due today (Tuesday).
-
-  - The reading quiz closes before class on Wednesday.
-
-  - Lab 6 is due Thursday.
-
-## Q and A
-
-- Any questions?
-
-
-
-# Web Page Input and Output
+## Web Page Input and Output
 
 **A brief introduction**
 
-## What is the DOM?
+### What is the DOM?
 
 The browser has a set of built-in JavaScript objects that represent the web page and all its HTML elements. The objects are arranged in a hierarchy:
 
@@ -77,7 +57,7 @@ By <a href="//commons.wikimedia.org/w/index.php?title=User:Eib&amp;action=edit&a
 
 
 
-## Referencing HTML Elements
+### Referencing HTML Elements
 
 We can reference elements directly through the DOM tree, like this:
 
@@ -96,13 +76,13 @@ For the examples below, assume we have this in our web page:
 <p id="cit" class="cit">Hello CIT!</p>
 ```
 
-### By id attribute
+#### By id attribute
 
 ```javascript
 document.getElementById("lcc").innerHTML = "Hello Lane Community College!";
 ```
 
-### By CSS selector
+#### By CSS selector
 
 #### Using `querySelector` with a single selector
 
@@ -135,7 +115,7 @@ In JavaScript, we can use `document.querySelector` to get a reference to an HTML
   document.querySelector(".cit").innerHTML = "Greetings CIT!";
   ```
 
-#### Using `querySelector` with multiple selectors
+##### Using `querySelector` with multiple selectors
 
 For the html below,
 
@@ -165,13 +145,13 @@ document.querySelector("#s2 p span").innerHTML = "Computer Network Operations";
 
 
 
-## I/O Using HTML Elements
+### I/O Using HTML Elements
 
 In previous examples and lab assignments you've used the `prompt` function to get input `document.write`, or `getElementById` with `innerHTML` to put output on a web page.
 
 Now we'll look at a couple new ways to do input and output (I/O).
 
-### `textContent`
+#### `textContent`
 
 This is another way to access the content between tags. The difference between this property and `innerHTML` is that `textContent` just gets or set text, no HTML tags will be processed and no formatting done on the web page.  Here's an example showing the differences: 
 
@@ -179,7 +159,7 @@ This is another way to access the content between tags. The difference between t
 
 The `textContent` property is the best one to use when you just need to output text (without HTML tags) to a web page.
 
-### `value`
+#### `value`
 
 This object property is useful for getting or setting the value in an HTML `<input>` element. The input element would normally be in an HTML form.
 
@@ -193,18 +173,18 @@ This object property is useful for getting or setting the value in an HTML `<inp
 
 
 
-## JavaScript Events
+### JavaScript Events
 
 JavaScript can respond to various actions a user preforms when interacting with a web page in a browser. These user actions are called *events*.
 
-### Common events
+#### Common events
 
 - onclick                 The user clicks an HTML element.
 - onmouseover     The mouse pointer moves over an HTML element.
 - onkeydown         The user presses a keyboard key.
 - onload                 The browser has finished loading the page.
 
-### Event Handlers
+#### Event Handlers
 
 Event handlers are JavaScript functions that are called when events occur. 
 
@@ -233,7 +213,7 @@ Event handlers are JavaScript functions that are called when events occur.
   }
   ```
 
-### Using a Button to Get Input
+#### Using a Button to Get Input
 
 We can use a button with an onclick event handler to get user input. Here's an example:
 
@@ -252,7 +232,7 @@ Enter your name:<input>
 
 Note: The `onclick` event can be used with any element, but we frequently use it with a button. 
 
-## When to Use an HTML `<form>`
+### When to Use an HTML `<form>`
 
 The purpose of a `<form>` is to send the information entered in the form to a program running on a server. Only use a form if that is what you want to do. If you are just using input elements with JavaScript running in the browser, don't put the input elements in a form.
 
@@ -260,16 +240,16 @@ When you click a button on a form, the information entered on the form will be s
 
 
 
-# Further Reading
+## Further Reading
 
-## Tutorials
+### Tutorials
 
 - [JavaScript HTML DOM](https://www.w3schools.com/js/js_htmldom.asp) - W3Schools
 - [JavaScript HTML DOM Document](https://www.w3schools.com/js/js_htmldom_document.asp) - W3Schools
 - [JavaScript HTML DOM Elements](https://www.w3schools.com/js/js_htmldom_elements.asp) - W3Schools
 - [JavaScript Events](https://www.w3schools.com/js/js_events.asp) - W3Schools
 
-## Reference
+### Reference
 
 [DOM (Document Object Model)](https://developer.mozilla.org/en-US/docs/Glossary/DOM) - MDN
 
@@ -281,4 +261,4 @@ When you click a button on a form, the information entered on the form will be s
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), 2020, revised <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), 2020, revised <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 

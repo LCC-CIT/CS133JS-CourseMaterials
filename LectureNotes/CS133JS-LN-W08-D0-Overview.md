@@ -61,7 +61,7 @@ Registration for winter term is open. If you are pursuing the AAS in Software De
 
 ## Due Dates
 
-- Lab 6 (on objects) code review due Tuesday  
+- Lab 6 (on objects) code review due Tuesday.  
   If your lab partner didn't post a beta version for you to review, there is alternative beta code you can review this instead.
 
 - Reading quiz on events closes Thursday.

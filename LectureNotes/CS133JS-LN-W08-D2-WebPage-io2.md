@@ -25,24 +25,6 @@ author: Brian Bird
 
 [TOC]
 
-## Introduction
-
-### Announcements
-
-### What's Due
-
-- This week's reading quiz on events closes Thursday.
-- Lab 6 (objects) is due Thursday as well.
-- Lab 7, beta version, is due Sunday.
-
-### Q and A
-
-- How is lab 6 going?
-- How is the term project going?
-- Any other questions?
-
-
-
 ## Review
 
 ### The DOM

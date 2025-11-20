@@ -67,7 +67,7 @@ Given this HTML code:
 
 
 
-In the JavaScript code below, `getElementById` gets[^1] the HTML `li` element with `id="s1"`.
+In the JavaScript code below, `getElementById` gets[^2] the HTML `li` element with `id="s1"`.
 
 ```javascript
 let lccElement = document.getElementById("s1");
@@ -144,17 +144,58 @@ Here are some additional tips and techniques for accessing HTML elements using t
 
 Once we have gotten an HTML element object, we can not only change the `innerHTML`, `textContent` or `value`, we can also change the value of its attributes (if it has any).
 
-**Review**: An *attribute* defines some characteristic of an HTML element and is coded as a key value pair. In the example below, `href` is an attribute.
+> **Review**: An *attribute* defines some characteristic of an HTML element and is coded as a key-value pair. In the example below, `href` and `target` are attributes.
 
 ```html
-<a href="https://profbird.dev">Your instructor's web site</a>
+<a href="https://profbird.dev" target="_self">Your instructor's web site</a>
 ```
 
-Here is the JavaScript code to change the attribute:
+Here is the JavaScript code to change each attribute:
 
 ```javascript
-document.querySelector("a").href = "https://birdsbits.wordpress.com/";
+let a = document.querySelector("a");
+a.href = "https://birdsbits.wordpress.com/";
+a.target = "_blank";
 ```
+
+#### Accessing and changing the HTML `class` attribute
+
+To access the class attribute of an HTML element, you use the `className` property[^1]. To do this a class has to have already been defined. For example:
+
+```css
+/* CSS Rules */
+.lightGreyBackground {
+    background-color: #d3d3d3;
+}
+
+.greenText {
+    color: green;
+}
+```
+
+##### The `className` property
+
+Then in the JavaScript code you can assign that class name to the class attribute of an element. (Using the same `a` element as above.)
+
+`a.className="lightGreyBackground";`
+
+##### The `classList` property
+
+If an element's `class` attribute has already has been assigned a CSS rule, you can add additional ones using the `classList` property. For example:
+
+`a.classList.add("greenText");`
+
+#### Accessing and changing the HTML `style` attribute
+
+There are two ways to get or set the inline style on an HTML element
+
+- By accessing the style property directly. For example:
+
+  `a.style = "fontweight: bold";`
+
+- By accessing sub-properties on the style attribute:
+
+  `a.style.fontWeight = "bold"`
 
 ### Getting Collections of Elements
 
@@ -324,7 +365,7 @@ Enter your name:
   function ()  // Anonymous function that calls another function
  {
     	// Do the web page i/o here
-    	let name = cocument.getElementbyID("name").value;
+    	let name = document.getElementById("name").value;
 			let message = makeMessage(name, "clicked the button!");
     	document.querySelector("span").textContent = message;
   });
@@ -373,7 +414,8 @@ Sometimes we need to execute some code as soon as the page loads. The example be
 
 
 
-[^1]: `getElementById` doesn't actually "get" an HTML object, it gets a *reference* (aka *binding*) to the object. You can think of a *reference* as a connection to the object that allows your code to do things with, or to, the object. In the inner workings of JavaScript, a reference contains the memory address of the object. 
+[^1]: The HTML `class` attribute is accessed through a JavaScript object property named `className` because in the ES6 release of JavaScript, the keyword `class` was added for creating object-oriented classes.
+[^2]: The `document.getElementById` method doesn't actually "get" an HTML object, it gets a *reference* (aka *binding*) to the object. You can think of a *reference* as a connection to the object that allows your code to do things with, or to, the object. In the inner workings of JavaScript, a reference contains the memory address of the object. 
 
 ------
 

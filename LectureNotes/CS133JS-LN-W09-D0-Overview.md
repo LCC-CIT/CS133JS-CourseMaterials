@@ -9,6 +9,10 @@ author: Brian Bird
 
 **CS133JS Beginning Programming: JavaScript**
 
+<h1>Week 9 Overview and Announcements</h1>
+
+
+
 
 | Topics by Week                                       |            |
 | ---------------------------------------------------- | ---------- |
@@ -55,6 +59,8 @@ If you are pursuing the AAS in Software Development, these are the reccomended c
 - [Academic Advising](https://lanecc.edu/advising)
 - [Registration](https://my.lanecc.edu/StudentRegistrationSsb/ssb/registration)
 
+
+
 ## Q and A
 
 - Do you have any questions about:
@@ -64,6 +70,8 @@ If you are pursuing the AAS in Software Development, these are the reccomended c
 - The reading on regular  expressions (if you've started it.)
   
 - Anything else?
+
+
 
 ## Due Dates
 

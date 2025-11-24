@@ -24,13 +24,23 @@ author: Brian Bird
 
 [TOC]
 
+## This Week's Objective
+
+This week you'll learn how to use *regular expressions* to search in strings.
+
+
+
 ## Announcements for Fall 2025
 
-- The college will be clsed Thursday and Friday for the Thanksgiviing holiday.
+The college will be clsed Thursday and Friday, 11/27 and 11/28, for the Thanksgiviing holiday.
+
+
 
 ## Registration for Winter Term 2026
 
-Registration for winter term is open. If you are pursuing the AAS in Software Development, these are the reccomended courses:
+Registration for winter term is still open. If you haven't registered yet, do it now! &#128512;
+
+If you are pursuing the AAS in Software Development, these are the reccomended courses:
 
 - CS 233JS, Intermediate Programming: JavaScript
 - CS 161N, Beginning Programming: C#
@@ -67,6 +77,10 @@ Registration for winter term is open. If you are pursuing the AAS in Software De
 - Lab 8 (this week's lab on regular expressions) beta version on Sunday.
 
 
+
+![F2025Week09](Images/F2025Week09.jpg)
+
+[Mental Health and Wellness Center (MHWC)](https://www.lanecc.edu/get-support/health-wellness/mental-health-wellness-center)
 
 
 

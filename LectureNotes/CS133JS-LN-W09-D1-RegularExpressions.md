@@ -14,50 +14,21 @@ author: Brian Bird
 <h1>Regular Expressions</h1>
 
 
-| Topics by Week                           |                                     |
-| ---------------------------------------- | ----------------------------------- |
-| 1. Intro to JavaScript programming       | 6. Arrays                           |
-| 2. Functions, Operators and Expressions  | 7. Objects and Object Constructors  |
-| 3. Conditional Statements: if and switch | 8. Web Page I/O                     |
-| 4. Repetition: while, do while, and for  | 9. <mark>Regular Expressions</mark> |
-| 5. Midterm Check-Point                   | 10. Review                          |
+| Topics by Week                           |                                      |
+| ---------------------------------------- | ------------------------------------ |
+| 1. Intro to JavaScript programming       | 6. Arrays                            |
+| 2. Functions, Operators and Expressions  | 7.  Objects and Object Constructors  |
+| 3. Conditional Statements: if and switch | 8. Web Page I/O                      |
+| 4. Repetition: while, do while, and for  | 9.  <mark>Regular Expressions</mark> |
+| 5. Midterm Check-Point                   | 10. Term Project and Review          |
+|                                          | 11. Final                            |
 
 
 <h2>Table of Contents</h2>
 
 [TOC]
 
-# Introduction
-
-## Announcements
-
-**For fall 2024**
-
-- **Due dates:** 
-
-  - Lab 7 on JavaScript events:
-    - Code review due Tuesday, 11/26.
-    - Production version due Sunday, 12/1.
-      (The due date is pushed out due to the Thanksgiving holiday)
-  - This week's quiz on regular  expressions closes Sunday, 12/1.
-  - Lab 8 on regular expressions, only part 1 is required, part 2 is extra credit:
-    - Part 2 code review due Tuesday, 12/3.
-    - Part 1 and part 2 production version due Thursday, 12/5.
-  - Term project code review due Thursday, 12/5.
-  - Term project due Tuesday, 12/10.
-
-
-### Q and A
-
-- How is lab 7 going?
-- How is the term project going?
-- Any other questions?
-
-----
-
-
-
-# Regular Expressions
+## Regular Expressions
 
 One way to compare strings to see if they match is to use a  *Regular Expression* object, this object is a part of the JavaScript language, and something similar exists in almost every other programming language. 
 
@@ -69,11 +40,11 @@ One way to compare strings to see if they match is to use a  *Regular Expression
 
 The real power is in finding partial matches. Regular expressions are a powerful way to find matches for complex patterns in a string.
 
-## RegExp Methods
+### RegExp Methods
 
 These are the most commonly used methods. For a comprehensive list, see the [description of RegExp on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp).
 
-### `test`  
+#### `test`  
 
 This method will return true when you pass it a string that contains a match for the pattern defined in the RegExp object.
 
@@ -82,7 +53,7 @@ let pattern = /matchThis/;
 let foundMatch = pattern.test("Does matchThis match?"); // foundMatch will be true
 ```
 
-### `exec`
+#### `exec`
 
 This method will return an array containing just the first matched sub-string. The array also has a number of properties; including the index of the first match in the string&mdash;if it finds a match, otherwise it returns null.
 
@@ -94,7 +65,7 @@ let matches = pattern.exec("There are two matches in this sentence for 'th'.");
 
 This method has a number of other more complex features that you can read about in the [MDN documentation for `exec`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec).
 
-## Matching "wild card" Characters
+### Matching "wild card" Characters
 
 You might have used `*` and `?` as wildcards in a search before. 
  With `RegExp`, the syntax is a little different:
@@ -143,7 +114,7 @@ You might have used `*` and `?` as wildcards in a search before.
 
   
 
-## Matching at the Beginning, Middle, or End of a String
+### Matching at the Beginning, Middle, or End of a String
 
 *Anchors* are used to indicate that a pattern must be applied at the beginning of a string, the end, or must match the entire string.
 
@@ -171,7 +142,7 @@ You might have used `*` and `?` as wildcards in a search before.
   foundMatch = pattern.test(text);  // foundMatch will be true
   ````
 
-## Flags
+### Flags
 
 - RegExp flags (aka properties) include: 
   - `g` – global
@@ -187,7 +158,7 @@ You might have used `*` and `?` as wildcards in a search before.
   - RegExp constructor: Add a second argument to the constructor for the flag(s). 
     `let pattern2 = new RegExp("that", gi);`
 
-## Groups
+### Groups
 
 - Character groups – a group of characters that can match one character in a string:
 
@@ -211,7 +182,7 @@ You might have used `*` and `?` as wildcards in a search before.
   
   
 
-## Quantifiers
+### Quantifiers
 
 Curly braces, `{ }`, specify the number of times a pattern must match:
 
@@ -225,13 +196,13 @@ For example, the pattern `/[0-9]{5}/` will match only strings containing 5 digit
 
 
 
-## Escape Characters
+### Escape Characters
 
 Escape character – backslash is an escape character that lets you use a special character, like the dot as a dot, not for pattern matching. For example, check for a period at the end of a string:
 
 `let pattern = /\.$/`
 
-## Metacharacters
+### Metacharacters
 
 Metacharacters are characters with a special meaning. A partial listing is shown below. Notice that the upper-case versions do the inverse of the lower-case versions. 
 
@@ -258,7 +229,7 @@ let results = pattern.exec("How many pecks of pickled peppers did Peter Piper pi
 
 
 
-## Choice (Logical OR)
+### Choice (Logical OR)
 
 Pipe character, `|` to allow choice between patterns 
 
@@ -276,7 +247,7 @@ console.log(pattern.test("Python is an interesting language."));
 
 
 
-## Examples
+### Examples
 
 - Test for a valid e-mail address: 
    (This pattern uses `{2,}` to indicate a minimum of 2 characters.)
@@ -293,7 +264,7 @@ console.log(pattern.test("Python is an interesting language."));
 
 
 
-# Resource
+## Resource
 
 [Regular Expression Test Page](https://regex101.com)&mdash;Regular Expressions 101
 
@@ -301,7 +272,7 @@ Try out regular expressions to see how they work with different test strings.
 
 
 
-# References
+## References
 
 [JavaScript RegExp Reference](http://www.w3schools.com/jsref/jsref_obj_regexp.asp)&mdash;W3Schools
 
@@ -313,6 +284,6 @@ Try out regular expressions to see how they work with different test strings.
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), written 2018, updated <time>2023</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written 2018, updated <time>2025</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 [^1]: Apace (␣), tab (\t), new line (\n) and the carriage return (\r) are all considered *white space*.

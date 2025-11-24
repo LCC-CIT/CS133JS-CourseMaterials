@@ -9,15 +9,20 @@ author: Brian Bird
 
 **CS133JS Beginning Programming: JavaScript**
 
+<h1>Week 8 Overview and Announcements</h1>
 
-| Topics by Week                                       |            |
-| ---------------------------------------------------- | ---------- |
-| 1. Intro to JavaScript programming                   | 6.Arrays  |
-| 2. Functions, Operators and Expressions              | 7.  Objects and Object Constructors |
-| 3. Conditional Statements: if and switch             | 8.  <mark>Web Page I/O</mark> |
-| 4. Repetition: while, do while, and for | 9. Review |
-| 5. Midterm Check-Point                               | 10. Term Project |
-| 11. Final |  |
+
+
+
+| Topics by Week                           |                                      |
+| ---------------------------------------- | ------------------------------------ |
+| 1. Intro to JavaScript programming       | 6. Arrays                            |
+| 2. Functions, Operators and Expressions  | 7.  Objects and Object Constructors  |
+| 3. Conditional Statements: if and switch | 8. Web Page I/O                      |
+| 4. Repetition: while, do while, and for  | 9.  <mark>Regular Expressions</mark> |
+| 5. Midterm Check-Point                   | 10. Term Project and Review          |
+|                                          | 11. Final                            |
+
 
 
 <h2>Table of Contents</h2>

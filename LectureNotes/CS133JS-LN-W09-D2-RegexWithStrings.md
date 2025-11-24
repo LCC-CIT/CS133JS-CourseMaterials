@@ -14,30 +14,21 @@ author: Brian Bird
 <h1>Regular Expressions</h1>
 
 
-| Topics by Week                           |                                     |
-| ---------------------------------------- | ----------------------------------- |
-| 1. Intro to JavaScript programming       | 6. Arrays                           |
-| 2. Functions, Operators and Expressions  | 7. Objects and Object Constructors  |
-| 3. Conditional Statements: if and switch | 8. Web Page I/O                     |
-| 4. Repetition: while, do while, and for  | 9. <mark>Regular Expressions</mark> |
-| 5. Midterm Check-Point                   | 10. Review                          |
+
+
+| Topics by Week                           |                                      |
+| ---------------------------------------- | ------------------------------------ |
+| 1. Intro to JavaScript programming       | 6. Arrays                            |
+| 2. Functions, Operators and Expressions  | 7.  Objects and Object Constructors  |
+| 3. Conditional Statements: if and switch | 8. Web Page I/O                      |
+| 4. Repetition: while, do while, and for  | 9.  <mark>Regular Expressions</mark> |
+| 5. Midterm Check-Point                   | 10. Term Project and Review          |
+|                                          | 11. Final                            |
 
 
 <h2>Table of Contents</h2>
 
 [TOC]
-
-# Introduction
-
-## Announcements
-
-
-
-## Q and A
-
-- Does anyone have any questions about anything?
-
-  
 
 ## String Methods that use Regular Expressions
 

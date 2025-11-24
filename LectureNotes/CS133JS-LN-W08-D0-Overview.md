@@ -12,8 +12,6 @@ author: Brian Bird
 <h1>Week 8 Overview and Announcements</h1>
 
 
-
-
 | Topics by Week                           |                                      |
 | ---------------------------------------- | ------------------------------------ |
 | 1. Intro to JavaScript programming       | 6. Arrays                            |
@@ -33,7 +31,7 @@ author: Brian Bird
 
 - **Week 8 is the last week to drop a class or change grade options**
 
-  This **Friday, November 21** is the last day to make fall term schedule changes. This includes adding or dropping a course, withdrawing, taking an incomplete, or changing grading methods. 
+  This **Friday, November 21** is the last day to make fall term schedule changes. This includes adding or dropping a course, withdrawing or changing grading methods. 
   
   **Note**: Students should <u>always</u> consult [an academic advisor](https://www.lanecc.edu/get-support/academic-support/academic-advising) and/or [financial aid](https://www.lanecc.edu/costs-admission/paying-college/financial-aid) representative before making these changes, especially withdrawing. These types of changes can sometimes have implications for academic progress and/or financial aid awards. 
   

@@ -30,13 +30,27 @@ author: Brian Bird
 
 ## Regular Expressions
 
-One way to compare strings to see if they match is to use a  *Regular Expression* object, this object is a part of the JavaScript language, and something similar exists in almost every other programming language. 
+One way to compare strings to see if they match is to use a *Regular Expression* object, this object is a part of the JavaScript language, and something similar exists in almost every other programming language. 
+
+### Side-note on `grep`
+
+---
+
+The command line utility, `grep` (get regular expression) was added to the Unix operating system in 1973[^1]. It is available in most modern operating systems:
+
+- **Linux**: It has always been distributed with the Linux operating system.
+- **Mac OS**: it is available in the  terminal.
+- **Windows**: Power Shell doesn't have `grep`, but has the `select-string` command which uses regular expressions for searching.
+
+---
+
+### How to Use `RegExp`
 
 `RegExp` – Regular expression object. Used for pattern matching in strings. A JavaScript RegExp object can be created two ways:
 
-- Defined with forward slashes: `let pattern1 = /matchThis/;`
+- Defined with forward slashes: `const pattern1 = /matchThis/;`
 
-- Or by using the `new` operator: `let pattern2 = new RegExp("matchThisToo");`
+- Or by using the `new` operator: `const pattern2 = new RegExp("matchThisToo");`
 
 The real power is in finding partial matches. Regular expressions are a powerful way to find matches for complex patterns in a string.
 
@@ -49,7 +63,7 @@ These are the most commonly used methods. For a comprehensive list, see the [des
 This method will return true when you pass it a string that contains a match for the pattern defined in the RegExp object.
 
 ```javascript
-let pattern = /matchThis/;
+const pattern = /matchThis/;
 let foundMatch = pattern.test("Does matchThis match?"); // foundMatch will be true
 ```
 
@@ -58,7 +72,7 @@ let foundMatch = pattern.test("Does matchThis match?"); // foundMatch will be tr
 This method will return an array containing just the first matched sub-string. The array also has a number of properties; including the index of the first match in the string&mdash;if it finds a match, otherwise it returns null.
 
 ```javascript
-let pattern = /th/;
+const pattern = /th/;
 let matches = pattern.exec("There are two matches in this sentence for 'th'.");
 // matches: ["th"], matches.index: 25
 ```
@@ -121,7 +135,7 @@ You might have used `*` and `?` as wildcards in a search before.
 - The pattern below, without anchors, will match a string that <u>contains</u> “this” anywhere:
 
    ````javascript
-   let pattern = /this/;
+   const pattern = /this/;
    let text = "Is this going to match?";
    let foundMatch = pattern.test(text);  // foundMatch will be true
    ````
@@ -154,29 +168,29 @@ You might have used `*` and `?` as wildcards in a search before.
   
 - Flags can be applied when crating regular expression object.
   - Literal RegExp object: Put the flag(s) after the slash that ends the regular expression: 
-    `let let pattern1 = /this/i;`
+    `let const pattern1 = /this/i;`
   - RegExp constructor: Add a second argument to the constructor for the flag(s). 
-    `let pattern2 = new RegExp("that", gi);`
+    `const pattern2 = new RegExp("that", gi);`
 
 ### Groups
 
 - Character groups – a group of characters that can match one character in a string:
 
-  `let pattern = /[Tt]his/; // matches capital or lower case T`
+  `const pattern = /[Tt]his/; // matches capital or lower case T`
 
 - A group can be negated with a caret, ^ 
 
-  `let pattern = /[^T]his/; // matches anything except a capital T`
+  `const pattern = /[^T]his/; // matches anything except a capital T`
 
 - The caret also can be used to indicate a group that matches the beginning of a string. For example, checking for capitalization of at least the first character: 
 
-  `let pattern = /^[A-Z][a-z]*/`
+  `const pattern = /^[A-Z][a-z]*/`
 
   (There can be zero or more lower case letters following the capital letter at the beginning. They may be followed by anything, including upper case letters.)
 
 - The $ specifies that a char or group must be at the end of the string. For example, now only the first char can be capitalized:  
 
-  `let pattern = /^[A-Z][a-z]*$/`
+  `const pattern = /^[A-Z][a-z]*$/`
   
   (All the characters following the first character must be lower case all the way to the end.)
   
@@ -200,7 +214,7 @@ For example, the pattern `/[0-9]{5}/` will match only strings containing 5 digit
 
 Escape character – backslash is an escape character that lets you use a special character, like the dot as a dot, not for pattern matching. For example, check for a period at the end of a string:
 
-`let pattern = /\.$/`
+`const pattern = /\.$/`
 
 ### Metacharacters
 
@@ -212,17 +226,17 @@ Metacharacters are characters with a special meaning. A partial listing is shown
 | \W            | Find a non-word character                                    |
 | \d            | Find a digit                                                 |
 | \D            | Find a non-digit character                                   |
-| \s            | Find a whitespace[^1] character                              |
+| \s            | Find a whitespace[^2] character                              |
 | \S            | Find a non-whitespace character                              |
 | \b            | Find a match at either the beginning or end of a word.       |
-| \B            | Finc a match that is not at the  beginning or end of a word. |
+| \B            | Find a match that is not at the  beginning or end of a word. |
 
 For a complete list, see the W3Schools *JavaScript RegExp Reference* in the [References](#References) below.
 
 Here is an example that will only match whole words:
 
 ```javascript
-let pattern = /\bpick\b/;
+const pattern = /\bpick\b/;
 let results = pattern.exec("How many pecks of pickled peppers did Peter Piper pick?"); 
 // results: ["pick"], result.index: 50 meaning it matched "pick" but not "pickled"
 ```
@@ -234,14 +248,14 @@ let results = pattern.exec("How many pecks of pickled peppers did Peter Piper pi
 Pipe character, `|` to allow choice between patterns 
 
 ````javascript
-let pattern = /JavaScript|C#|Python/;
+const pattern = /JavaScript|C#|Python/;
 console.log(pattern.test("We teach C# at LCC"));
 ````
 
 If you want to add a modifer before or after the choice, put the choice inside parenthesis:
 
 ````javascript
-let pattern = /^(JavaScript|C#|Python)/;
+const pattern = /^(JavaScript|C#|Python)/;
 console.log(pattern.test("Python is an interesting language."));
 ````
 
@@ -252,15 +266,15 @@ console.log(pattern.test("Python is an interesting language."));
 - Test for a valid e-mail address: 
    (This pattern uses `{2,}` to indicate a minimum of 2 characters.)
 
-  `let pattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i`
+  `const pattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i`
 
 - Rules for naming variables:  Names can contain letters, digits, underscores, and dollar signs, but names cannot begin with a digit: 
 
-  `let pattern = /^[A-Z_$][A-Z0-9_$]*$/i`
+  `const pattern = /^[A-Z_$][A-Z0-9_$]*$/i`
 
 - Check for a valid uoregon.edu address:
 
-  `let pattern = /^[A-Z0-9._%+-]+@uoregon\.edu$/i`
+  `const pattern = /^[A-Z0-9._%+-]+@uoregon\.edu$/i`
 
 
 
@@ -286,4 +300,5 @@ Try out regular expressions to see how they work with different test strings.
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.dev), written 2018, updated <time>2025</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
-[^1]: Apace (␣), tab (\t), new line (\n) and the carriage return (\r) are all considered *white space*.
+[^1]: See the [Wikipedia article on grep](https://en.wikipedia.org/wiki/Grep)
+[^2]: Space (␣), tab (\t), new line (\n) and the carriage return (\r) are all considered *white space*.

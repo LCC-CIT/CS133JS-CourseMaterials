@@ -159,11 +159,12 @@ You might have used `*` and `?` as wildcards in a search before.
 ### Flags
 
 - RegExp flags (aka properties) include: 
-  - `g` – global
-    All matches in the string will be found.
-  - `i` – ignoreCase
+  - **`g` – global**
+    All matches in the string will be found.  
+    **Note**: The easiest way to use this is with the `match` method on a string.
+  - **`i` – ignoreCase**
     Matches either upper or lower case letters.
-  - `m` – multiline.
+  - **`m` – multiline.**
     Works with a string that has multiple lines separated by a `\n` (new line) character.
   
 - Flags can be applied when crating regular expression object.
@@ -171,6 +172,36 @@ You might have used `*` and `?` as wildcards in a search before.
     `let const pattern1 = /this/i;`
   - RegExp constructor: Add a second argument to the constructor for the flag(s). 
     `const pattern2 = new RegExp("that", gi);`
+  
+  #### Multiple matches with the `g` flag and the `lastIndex` property
+  
+  The `lastIndex` property of a JavaScript `RegExp` object:
+  
+  - **Starting Position:** It indicates the character position in the target string where the next search for a match should begin. It starts at 0.
+  - **After a match is found**: it is set to one character after the match.
+  - **The Global Flag (`g`):** The `lastIndex` property is only used and updated when the regular expression has the `g` flag. 
+  
+  This is how you would count multiple matches using a `RegExp` object:
+  
+  ```javascript
+  const str = "There are two matches in this sentence for 'th'.";
+  const regex = /th/g; // The regular expression with the global flag
+  
+  let count = 0;
+  let match;
+  // Use a while loop that continues as long as exec() finds a match
+  while ((match = regex.exec(str)) !== null) {
+    count++;
+    // This check is important to avoid an infinite loop in some edge cases
+    // like zero-length matches, though not strictly necessary for '/th/'.
+    if (match.index === regex.lastIndex) {
+      regex.lastIndex++;
+    }
+  }
+  console.log("The total number of matches is: " + count);
+  ```
+  
+  
 
 ### Groups
 

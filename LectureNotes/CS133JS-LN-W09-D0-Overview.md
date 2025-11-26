@@ -30,13 +30,13 @@ author: Brian Bird
 
 ## This Week's Objective
 
-This week you'll learn how to use *regular expressions* to search in strings.
+This week you'll learn how to use *regular expressions* to search for pattern matches in strings.
 
 
 
 ## Announcements for Fall 2025
 
-The college will be clsed Thursday and Friday, 11/27 and 11/28, for the Thanksgiviing holiday.
+The college will be clsed Thursday and Friday, 11/27 and 11/28, for the Thanksgiving holiday.
 
 
 
@@ -85,6 +85,36 @@ If you are pursuing the AAS in Software Development, these are the reccomended c
 - Lab 8 (this week's lab on regular expressions) beta version on Sunday.
 
 
+
+## Contacting Your Instructor and Getting Help
+
+### Contact Info
+
+- Email: birdb@lanecc.edu
+- Discord: @profbird
+- Moodle messages
+- Text or phone: 541-525-0213
+
+### Office Hours
+
+You don't need an appointment. Come say "hi", get help, or talk about anything!   
+Drop in on [Zoom](https://lanecc.zoom.us/j/8982554800) or in person in building 19, room 152.
+
+- Monday and Wednesday 2:00 to 3:50
+- Tuesday and Thursday 4:00 to 4:50
+- You can also make an appointment to meet at another time.
+
+### Tutoring
+
+#### CIT Computer Lab
+
+The on-campus computer lab is in building 19, room 135. The lab is equipped with computers and software for student use. There are also tutors in the lab who can help you with your lab assignments.
+
+#### LCC Academic and Tutoring Services
+
+Zoom tutoring is also available through [LCC Tutoring Services](https://www.lanecc.edu/tutor).
+
+---
 
 ![F2025Week09](Images/F2025Week09.jpg)
 

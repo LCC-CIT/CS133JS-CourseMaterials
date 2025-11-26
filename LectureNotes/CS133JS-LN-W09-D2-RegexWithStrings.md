@@ -7,14 +7,9 @@ generator: Typora
 author: Brian Bird
 ---
 
-
-
 **CS133JS Beginning Programming: JavaScript**
 
 <h1>Regular Expressions</h1>
-
-
-
 
 | Topics by Week                           |                                      |
 | ---------------------------------------- | ------------------------------------ |
@@ -24,7 +19,6 @@ author: Brian Bird
 | 4. Repetition: while, do while, and for  | 9.  <mark>Regular Expressions</mark> |
 | 5. Midterm Check-Point                   | 10. Term Project and Review          |
 |                                          | 11. Final                            |
-
 
 <h2>Table of Contents</h2>
 
@@ -43,23 +37,21 @@ These methods match a string against a string or a regular expression and return
   let resultArray = text.match("pi");
   // resultArray: ["pi"], resultArray.index: 12
   ```
-  
-- `match` using regex. Note that this is more flexible, for example, we can ignore case and match globally.
 
+- `match` using regex. Note that this is more flexible, for example, we can ignore case and match globally.
+  
   ```javascript
   text = "Peter Piper picked a peck of pickled peppers.";
   resultArray = text.match(/pi/ig);  // ignore case
   // resultArray: ["Pi", "pi", pi"]
   ```
 
-
-
-### `replace` 
+### `replace`
 
 This method searches a string using another string value or a regular expression. It returns a new string with the value(s) replaced. It does not change the original string.
 
 - Replace a sub-string with another string: 
-
+  
   ```javascript
   text = "Peter Piper picked a peck of pickled peppers.";
   result = text.replace("peck", "pint");
@@ -67,16 +59,14 @@ This method searches a string using another string value or a regular expression
   ```
 
 - Replace using regex: 
-
+  
   ```javascript
   text = "Once a duck, always a duck.";
   result = text.replace(/duck/g, "titan");
   // result: "Once a titan, always a titan."
   ```
 
-
-
-### `search` 
+### `search`
 
 This method matches a string against a regular expression. It returns the index (position) of the first match. If no match is found, it returns -1. The method is case sensitive.
 
@@ -86,8 +76,6 @@ let position = text.search(/spring/ig);
 // position: 0
 ```
 
-
-
 ### `split`
 
 This method splits a string into an array of substrings. It returns a new array. It does not change the original string.
@@ -95,12 +83,10 @@ This method splits a string into an array of substrings. It returns a new array.
 Note: if (" ") is used as separator, the string is split between words.
 
 ```javascript
-let inputText = "Are you a robot?";
-const inputArray = text.split(/\s/);
-// inputArray: ["Are", "you", "a", "robot?"]
+let text = "Are you a robot?";
+const outputArray = text.split(/\s/);
+// outputArray: ["Are", "you", "a", "robot?"]
 ```
-
-
 
 ### Using Variables in a RegExp
 
@@ -120,11 +106,9 @@ To insert a variable into a literal regex string (not RegExp object), just conca
 ```javascript
 let word = "cat";
 regExpObj = new RegExp("^" + word, "i");
-let result = regExpObj.test("Cats are mamals.");
+let result = regExpObj.test("Cats are mammals.");
 // result: true
 ```
-
-
 
 ## Reference
 

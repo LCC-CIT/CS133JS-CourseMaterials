@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Written by Brian Bird, 5/11/2020, revised 5/9/2022 -->
+    <!-- Written by Brian Bird, 5/11/2020, revised 11/26/2025 -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="ArrayExercises.js"></script>
@@ -11,8 +11,7 @@
 
 <body>
     <h1>Lab 5, Part 1: Array Exercises</h1>
-    <p>For each of the problems below, create an array, or write a function in a file named
-        <em>ArrayExercises.js</em><br> This HTML page contains code to test your solution code.<br>
+    <p>You need to create a file named <em>ArrayExercises.js</em>. For each of the problems below, you will asked to add code to that file.<br> This HTML page contains code to test your solution code.<br>
     </p>
 
     <h2>Basic Array Operations</h2>
@@ -35,36 +34,46 @@
             <hr>
         </li>
 
-        <li>Write a function named <em>renameDegree</em> that takes an index number and degree name as parameters. It will let you change the name of a degree in the global <em>degrees</em> array by index.<br> We'll change the name of Computer Programming
-            to Software Development<br> <mark>The degree with index 2 is named: <span id="degree2"></span></mark>
+        <li>Write a function named <em>renameDegree</em> that takes an index number and degree name as parameters. 
+            When the function is called, it will change the name of a degree in the global <em>degrees</em> array by index.<br> 
+            The code in the HTML page will call it and change the name of Computer Programming to Software Development<br>
             <script>
                 renameDegree(2, "Software Development");
                 document.getElementById("degree2").innerHTML = degrees[2];
             </script>
+            Result:  <mark>The degree with index 2 is now named: <span id="degree2"></span></mark>
         </li>
     </ol>
     <h2>Using Arrays in Loops</h2>
     <ol>
-        <li>Write a function named <em>copyDegrees</em> to create a copy of the global <em>degrees</em> array.
-            <br> It should take no parameters, just return a new array.<br> We'll create a new array named <em>programs</em> and we'll change the name of the third degree back to "Computer Programming".<br> <mark>In <em>degrees</em>, the third
-            degree is: <span id="degrees3"></span><br> In <em>programs</em>, the third degree is: <span id="programs3"></span></mark>
+        <li>Write a function named <em>copyDegrees</em> that will create a copy of the global <em>degrees</em> array.
+            <br> It should take no parameters, just return a new array.<br> The code in the HTML page will create a new array named 
+            <em>programs</em> and it will change the name of the third degree back to "Computer Programming".<br> 
             <script>
                 let programs = copyDegrees();
                 programs[2] = "Computer Programming";
                 document.getElementById("degrees3").innerHTML = degrees[2];
                 document.getElementById("programs3").innerHTML = programs[2];
             </script>
+            Result:<br>
+            <mark>In <em>degrees</em>, the third degree is: <span id="degrees3"></span><br> 
+            In <em>programs</em>, the third degree is: <span id="programs3"></span></mark>
         </li>
-        <li>Write a function named <em>countMatches</em>, that takes two parameters, compares two arrays, and returns the number of elements with matching values.<br> We will compare the two arrays above. There should be 4 elements that contain the same values.<br>            <mark>Number of matches: <span id="matches"></span></mark>
+        <li>Write a function named <em>countMatches</em>, that takes two parameters, compares each element in two arrays, and returns the number of elements with matching values at the same indicies.<br> 
+            The code in the HTML page will compare the two arrays above. There should be 4 elements that contain the same values.<br>            
+        
             <script>
                 document.getElementById("matches").innerHTML = countMatches(degrees, programs);
             </script>
+            Result:<br>
+            <mark>Number of matches: <span id="matches"></span></mark>
         </li>
 
     </ol>
     <h2>Working with 2D Arrays</h2>
     <ol>
         <li>Declare an array named <em>checkers</em> to represent a checker board. Don't initialize it.<br>
+            The code in the HTML page will initialize it as an 8x8 array and fill it with "B" for Black squares and "R" for Red squares.<br>
             <script>
                 let color = "";
                 for (let row = 0; row < 8; row++) {

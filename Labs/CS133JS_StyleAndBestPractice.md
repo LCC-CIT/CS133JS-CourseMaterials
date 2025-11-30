@@ -31,7 +31,7 @@ author: Brian Bird
 
   - Names should be descriptive.
 
-  - Names should be in ALL_CAPS.
+  - Names should be in ALL_CAPS if the constant is for a value, not an object or array.
 
   - Should be used in place of literals.
 

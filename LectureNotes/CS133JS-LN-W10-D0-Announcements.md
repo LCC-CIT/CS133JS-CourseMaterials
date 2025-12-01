@@ -9,9 +9,7 @@ author: Brian Bird
 
 **CS133JS Beginning Programming: JavaScript**
 
-<h1>Week 9 Overview and Announcements</h1>
-
-
+<h1>Week 10 Overview and Announcements</h1>
 
 
 | Topics by Week                                       |            |
@@ -19,8 +17,8 @@ author: Brian Bird
 | 1. Intro to JavaScript programming                   | 6. Arrays |
 | 2. Functions, Operators and Expressions              | 7.  Objects and Object Constructors |
 | 3. Conditional Statements: if and switch             | 8. Web Page I/O |
-| 4. Repetition: while, do while, and for | 9.  <mark>Regular Expressions</mark> |
-| 5. Midterm Check-Point                               | 10. Term Project and Review |
+| 4. Repetition: while, do while, and for | 9.  Regular Expressions |
+| 5. Midterm Check-Point                               | 10. <mark>Term Project and Review</mark> |
 |  | 11. Final |
 
 
@@ -30,17 +28,13 @@ author: Brian Bird
 
 ## This Week's Objective
 
-This week you'll learn how to use *regular expressions* to search for pattern matches in strings.
+This week is your opportunity to review all that we've covered in this class&mdash;both as preparation for the final quiz as well as a way to firm up your knowledge of JavaScript so you will be ready to write great JavaScript code in the future!
 
 
 
 ## Announcements for Fall 2025
 
-The college will be closed Thursday and Friday, 11/27 and 11/28, for the Thanksgiving holiday.
-
-
-
-## Registration for Winter Term 2026
+- Regfest
 
 Registration for winter term is still open. If you haven't registered yet, do it now! &#128512;
 

@@ -68,6 +68,8 @@ This week is your opportunity to review all that we've covered in this class&mda
 - How is lab 8 going?
   - Only part 1 is required. Is anyone doing part 2?
   - No code review required for part 1, production version due Thursday.
+- How is the term project going?
+- Any Questions?
 
 ## Due Dates
 

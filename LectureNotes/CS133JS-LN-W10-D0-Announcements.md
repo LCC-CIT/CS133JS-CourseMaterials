@@ -1,7 +1,7 @@
 ---
-title: Week 9 announcements and overview
+title: Week 10 announcements and overview
 description: Announcements, due dates and overview info for this week.
-keywords: regular expressions, week 9
+keywords: regular expressions, week 10
 material: Lecture Notes
 generator: Typora
 author: Brian Bird
@@ -30,53 +30,60 @@ author: Brian Bird
 
 This week is your opportunity to review all that we've covered in this class&mdash;both as preparation for the final quiz as well as a way to firm up your knowledge of JavaScript so you will be ready to write great JavaScript code in the future!
 
-
-
 ## Announcements for Fall 2025
 
-- Regfest
+- **RegFest**: Tues, December 2, from 9 a.m.-2 p.m. on the first floor of Building 1. This event is designed for students:
 
-Registration for winter term is still open. If you haven't registered yet, do it now! &#128512;
+  - who have not yet registered for the upcoming term  
+                                    and/or
 
-If you are pursuing the AAS in Software Development, these are the reccomended courses:
+  - those needing assistance with Financial Aid, Advising, or Student Accounts (Bursar).
 
-- CS 233JS, Intermediate Programming: JavaScript
-- CS 161N, Beginning Programming: C#
-- Directed Elective: CS 135M, Beginning Mobile Application Development
-- WR 121Z, Composition 1
+  - If you are pursuing the AAS in Software Development, these are the recommended courses:
 
-### Relevant Links:
+    - CS 233JS, Intermediate Programming: JavaScript
 
-- [Degree Requirements](https://lanecc.smartcatalogiq.com/en/current/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas) for AAS in Software Dev
-- [Term-By-Term Sample Planner](https://docs.google.com/document/d/1F8CJY1M7A4J9uJtGRDFRyF-0j7l2AVe0vpPE5vcfHXE/edit?tab=t.0) for AAS in Software Dev
-- [Winter 2026 Class Schedule](**CS135M  Beginning Mobile Application Development**)
-- [Academic Advising](https://lanecc.edu/advising)
-- [Registration](https://my.lanecc.edu/StudentRegistrationSsb/ssb/registration)
+    - CS 161N, Beginning Programming: C#
 
+    - Directed Elective: CS 135M, Beginning Mobile Application Development
 
+    - WR 121Z, Composition 1
+
+  - Relevant Links:
+
+    - [Degree Requirements](https://lanecc.smartcatalogiq.com/en/current/lcc-catalog/programs-of-study/computer-information-technology/software-development-aas) for AAS in Software Dev
+
+    - [Term-By-Term Sample Planner](https://docs.google.com/document/d/1F8CJY1M7A4J9uJtGRDFRyF-0j7l2AVe0vpPE5vcfHXE/edit?tab=t.0) for AAS in Software Dev
+
+    - [Winter 2026 Class Schedule](**CS135M  Beginning Mobile Application Development**)
+
+    - [Academic Advising](https://lanecc.edu/advising)
+
+    - [Registration](https://my.lanecc.edu/StudentRegistrationSsb/ssb/registration)
+
+- **Last Day for Submissions**: Any late or extra credit assignments are due by the end of the day on Monday of next week (finals week).
 
 ## Q and A
 
-- Do you have any questions about:
-
-  - Lab 7 (on the DOM, events and web page i/o)
-  
-- The reading on regular  expressions (if you've started it.)
-  
-- Anything else?
-
-
+- How is lab 8 going?
+  - Only part 1 is required. Is anyone doing part 2?
+  - No code review required for part 1, production version due Thursday.
 
 ## Due Dates
 
-- Lab 7 (on web page i/o) code review due Tuesday.  
-  If your lab partner didn't post a beta version for you to review, there is alternative beta code you can review this instead.
+- Lab 8, Part 2 (optional) Code Review: Tuesday, 12/2.
+- Lab 8 Production Version: Thursday, 12/4.
+- Term Project Code Review:  Friday, 12/5.
+- Term Project  Production Version: <u>next</u> Tuesday, 12/9
+- Alternative Array Lab Production Version: <u>next</u> Tuesday, 12/9
 
-- Reading quiz 8 (on regular expressions) closes Sunday.  
-  The quiz is closing later than usual because of the holiday.
+## Final quiz
 
-- Lab 7 (on web i/o) production version due Sunday.
-- Lab 8 (this week's lab on regular expressions) beta version on Sunday.
+- There is a, short, ungraded practice quiz open now.
+- Look at the review suggestions in [this week's overview](CS133JS-LN-W10-D0-Review.html).
+- The final quiz will be given in the classroom at the regular class time next Monday.
+  Or, take it in the [Instructional Testing Center](https://www.lanecc.edu/get-support/academic-support/instructional-testing-services?_gl=1*62xqx7*_ga*NDEyOTA4MDEzLjE1NzY2NDQ5NTc.*_ga_MMT5BK11VR*MTY4Mjk3ODA0OC4zMjguMS4xNjgyOTgwMTkxLjAuMC4w), Monday  through Wednesday next week. See their web site to for the times they are open.
+- Any questions?
 
 
 
@@ -110,9 +117,7 @@ Zoom tutoring is also available through [LCC Tutoring Services](https://www.lane
 
 ---
 
-![F2025Week09](Images/F2025Week09.jpg)
-
-[Mental Health and Wellness Center (MHWC)](https://www.lanecc.edu/get-support/health-wellness/mental-health-wellness-center)
+![F2025Week10](Images\F2025Week10.png)
 
 
 

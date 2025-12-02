@@ -63,6 +63,8 @@ This week is your opportunity to review all that we've covered in this class&mda
 
 - **Last Day for Submissions**: Any late or extra credit assignments are due by the end of the day on Monday of next week (finals week).
 
+- **Global Game Jam**: Save the date! Jan 30&ndash;Feb 1, 2026. LCC is hosting this game jam in the CIT Lab, building 19, room 135. Food and drinks will be provided. Come build a game!  [Registration is now open](https://globalgamejam.org/jam-sites/2026/lcc-bitforest-ggj26)
+
 ## Q and A
 
 - How is lab 8 going?

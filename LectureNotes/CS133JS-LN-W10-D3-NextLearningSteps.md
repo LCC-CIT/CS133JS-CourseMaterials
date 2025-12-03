@@ -64,7 +64,7 @@ These three courses are part of the Full Stack curriculum:
 
 ## Reference
 
-[Your instructor's lecture notes](https://github.com/LCC-CIT/CS133JS-CourseMaterials/tree/master/LectureNotes)
+[Your instructor's lecture notes and course materials](https://lcc-cit.github.io/CS133JS-CourseMaterials/)
 
 [Your instructor's curated list of online resources for learning JavaScript](https://lcc-cit.github.io/CS133JS-CourseMaterials/CS133JS_References.html)
 

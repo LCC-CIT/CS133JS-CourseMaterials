@@ -20,7 +20,7 @@
 
 - Register for CS 233JS, Intermediate Programming: JavaScript if you haven't already.
 - Register for next term's Sofware Development classes (see this week's [overview and announcements](CS133JS-LN-W10-D0-Announcements.html) for recommendations).
-- Don't Forget JavaScript over the Break.
+- Don't Forget JavaScript over the Break. Do projects, tutorials and free courses&mdash;suggestions are listed below.
 
 ### Projects
 

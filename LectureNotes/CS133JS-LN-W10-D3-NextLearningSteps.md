@@ -49,7 +49,17 @@
 
 The college has a subscription to [LinkedIn Learning](https://www.linkedin.com/learning-login/continue?account=88355058&forceAccount=false&authModeName=LaneSAML&authUUID=ZG0W38TeRvKNJgtIUiNCMA%3D%3D&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2F) (formerly known as Linda.com) which provides many great self-study programming courses, including [JavaScript](https://www.linkedin.com/learning/topics/javascript?u=88355058). LCC faculty, staff, and students can take the courses free of charge.
 
+### FreeCodeCamp
 
+> Our mission: to help people learn to code for free. We accomplish this  by creating thousands of videos, articles, and interactive coding  lessons - all freely available to the public.
+
+[Full Stack Developer Curriculum](https://www.freecodecamp.org/learn/full-stack-developer/) on [FreeCodeCamp](https://www.freecodecamp.org/)
+These three courses are part of the Full Stack curriculum:
+
+- HTML
+- CSS
+- JavaScript
+- 
 
 ## Reference
 
@@ -61,4 +71,7 @@ The college has a subscription to [LinkedIn Learning](https://www.linkedin.com/l
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), <time>2023</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), 2023, updated <time>2025</time>, are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+
+---
+

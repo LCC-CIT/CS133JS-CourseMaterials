@@ -1,3 +1,15 @@
+---
+title: Functions and Scope
+description: Review of functions and scope
+keywords: function, code block, scope, parameter, local scope, global scope, local variable, global variable.
+material: Lecture Notes
+generator: Typora
+author: Brian Bird
+
+---
+
+
+
 **CS133JS Beginning Programming: JavaScript**
 
 <h1>Functions and Scope</h1>
@@ -16,15 +28,15 @@
 
 [TOC]
 
-# Functions
+## Functions
 
 A function is a module of code that performs some function. It has inputs and an output. 
 
 A function has to first be *defined*, then to use it, you *call* it.
 
-## A simple function
+### A simple function
 
-This function has no inputs and put's its output in an alert. 
+This function has no *parameters* (inputs) and no *return* statement (output). It puts its output in an alert. 
 
 1. This is the function definition. 
 
@@ -43,7 +55,7 @@ function helloWorld()
 
 ## A function with parameters and a return value
 
-This function has multiple inputs via the function parameters and its one output is via the return statement at the end.
+This function has two *parameters* (inputs) and a *return* statement (output).
 
 1. A function definition:
 
@@ -62,17 +74,17 @@ This function has multiple inputs via the function parameters and its one output
 
 
 
-# Scope
+## Scope
 
-*Scope* means the part of a program in which a variable is recognized by JavaScript. 
+*Scope* means the part of a program in which a variable is considered visible and valid by JavaScript. 
 
 Variables (or constants, or objects) can be defined as *local* to a block of code or *global* (visible to the entire program).
 
-## Blocks of code
+### Blocks of code
 
-There are a number of code structures that create blocks of code where local variables can be defined:
+There are a number of code structures that create blocks of code where local variables can be declared:
 
-### Functions
+#### Functions
 
 Example:
 
@@ -86,11 +98,12 @@ Example:
  }
 ```
 
-function parameters are also local variables.
+<u>Note: function parameters are also local variables!</u>.
 
-Exercise: how can we demonstrate that function parameters are local to the function?
+How can we demonstrate that function parameters are local to the function?  
+Exercise: write code that demonstrates this.
 
-Another exercise: 
+Here's another exercise: 
 
 ```javascript
 console.log(t);    // is t valid here?
@@ -106,7 +119,7 @@ console.log(t);      // is t valid here?
 
 Where would be the best place to declare the variable `t`?
 
-### Conditional Statements
+#### Conditional Statements
 
 When we put code inside curly braces, in a branch of an if statement, or in a case of a switch statement, that is a new scope.
 
@@ -136,11 +149,11 @@ console.log("Your heart rate should be between: " + lowerHeartRate.toFixed(0) +
 
 ```
 
-Exercise: Put the code above into a function
+Exercise: Put the code above into a function.
 
-### Loops
+#### Loops
 
-The loop counter's scope is local to the loop.
+The scope of the loop counter, `i`, is the body of the loop, It is local to the loop.
 
 ```javascript
 // Display powers of 10
@@ -158,9 +171,9 @@ Questions:
 - Does `result` need to be declared outside the loop? Why or why not?
 - Can we eliminate the `result` variable and just use `i`?
 
-### Objects
+#### Objects
 
-Inside a compound object, we don't really have scope. Instead we need to think about the concept of encapsulation and how we access things inside the object via the dot operator.
+Inside a compound object, we don't really have scope. Instead we need to think about the concept of *encapsulation* and how we access things inside the object via the dot operator.
 
 ```javascript
 const loft = {          // parent object
@@ -185,7 +198,7 @@ Questions:
 
   
 
-# Exercises
+## Exercises
 
 ```javascript
 const QUALIFYING_TIME = 11.15;
@@ -203,20 +216,20 @@ for(let runner of runners) {
 
 Exercises: 
 
-- Put the for loop into a function.
+- Put the for loop inside a function.
 
 - 
-  Put the array and function into an object.
+  Put the array and function inside an object.
 
-  Does it make sense for the const to be global?
+  Does it make sense for the constant to be global?
 
-- Write another function to find the runner with the fastest time.
+- Write another function to determine the runner with the fastest time.
 
 
 
 ------
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), 2023, revised <time>2024</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/) Beginning JavaScript Lecture Notes by [Brian Bird](https://profbird.online), 2023, revised <time>2025</time> are licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/). 
 
 [^1]: No, but they can be accessed using dot notation: `console.log(loft.pigeon.name)`
 [^2]: Yes, the loft could have this method: `function getPigeonName() { return this.pigeon.name};`

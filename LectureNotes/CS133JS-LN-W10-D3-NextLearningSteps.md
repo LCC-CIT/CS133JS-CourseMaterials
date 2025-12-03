@@ -16,13 +16,11 @@
 
 [TOC]
 
-## Next Classes to Take
+## Continue to Learn!
 
-[Next Classes for Software Development degree](CS133JS-LN-W06-DX-NextSoftwareDevClasses.html)
-
-
-
-## Continue to Learn and Don't Forget JavaScript over the Break
+- Register for CS 233JS, Intermediate Programming: JavaScript
+- Register for next term's Sofware Development classes (see this week's [overview and announcements](CS133JS-LN-W10-D0-Announcements.html)).
+- Don't Forget JavaScript over the Break.
 
 ### Projects
 

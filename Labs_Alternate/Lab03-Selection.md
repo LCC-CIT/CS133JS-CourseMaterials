@@ -41,8 +41,6 @@ console.log(b >= 8);     // Prints true
 
 ------
 
-
-
 ### 2. Conditional Expressions
 
 **Concept:** A conditional expression is any piece of code that JavaScript can evaluate to a boolean value (`true` or `false`). These are the "questions" you ask in your code. They are most often used inside `if` statements and ternary operators to decide which path the program should take. Every comparison (e.g., `a < b`) and logical combination (e.g., `a < b && c > d`) is a conditional expression.
@@ -96,7 +94,7 @@ console.log(legalStatus);
 **Problems:**
 
 1. What do do if it's raining
-
+   
    - Declare a variable `isRaining` and set it to `true`. 
    - Use a ternary operator to create a new variable `activity`. 
    - If `isRaining` is `true`, `activity` should be `"Read a book"`. 
@@ -104,17 +102,21 @@ console.log(legalStatus);
    - Print `activity` to the console.
 
 2. Check a login password
-
+   
    - Use `prompt()` to ask for a password. 
-
+   
    - Store the result in a variable `password`. 
+   
    - Use a ternary operator to create a `loginMessage` variable. 
+   
    - If `password` is exactly equal to `"secret-Password42"`, the message should be `"Access Granted"`. 
+   
    - Otherwise, it should be `"Access Denied"`. 
+   
    - Print `loginMessage`.
 
 3. Check for a passing grade
-
+   
    - Declare a variable `score` and set it to `85`. 
    - Use a ternary operator to set a variable `grade`. 
    - If `score` is greater than or equal to `60`, `grade` should be `"Pass"`. 
@@ -122,18 +124,20 @@ console.log(legalStatus);
    - Print the `grade`.
 
 4. Calculate shipping cost for an online purchase
-
+   
    - Use `prompt()` to ask, "How many items are in your cart?". 
-
+   
    - Convert the answer to a number and store it in `itemCount`. 
+   
    - Use a ternary operator to set a `shippingCost` variable.
-   -  If `itemCount` is greater than `0`, the `shippingCost` should be `10`. 
+   
+   - If `itemCount` is greater than `0`, the `shippingCost` should be `10`. 
+   
    - Otherwise, it should be `0`. 
+   
    - Print `"Your shipping cost is $" + shippingCost`.
 
 ------
-
-
 
 ### 4. `if` Statement (Single Branch)
 
@@ -175,8 +179,6 @@ if (degrees < 45) {
       (Put the second print statement inside the same code block)
 
 ------
-
-
 
 ### 5. `if...else` Statement (Two Branches)
 
@@ -259,8 +261,6 @@ if (degrees < 32) {
 
 ------
 
-
-
 ### 7. Executing multiple conditional statements in a block
 
 **Concept:** By default, a conditional statement like `if`, `else if` or `else` only controls the single line of code that immediately follows it. To execute multiple statements based on a single condition, you <u>must</u> group them together in a code block using curly braces `{ }`. It is considered a best practice to always use curly braces, even for a single statement, to make your code clearer and prevent accidental errors.
@@ -305,38 +305,39 @@ if (calculation == 1) {
 1 and 2 relate to putting multiple statements in a block, 3 and 4 relate to block scope. If you are choosing just two problems, do one from each group.
 
 1. Write code that simulates asking a user if they want to save their work and then saving it if they answer yes.
-
+   
    - Use `prompt()` to ask "Do you want to save your work? (yes/no)". Store the answer in `wantsToSave`.
    - Write an `if` statement that checks if `wantsToSave` is equal to `"yes"`.
    - Inside the block, first print "Saving your work..." and then print "Save complete.".
 
 2. Write code that simulates checking an online shopping cart to see if the user bought enough items to qualify for a discount.
-
+   
    - Declare a variable `cartTotal` and set it to `55`.
    - Declare a variable `couponCode` and set it to "DISCOUNT10".
    - Write an `if` statement that checks if `cartTotal` is over 50.
    - Inside the block, print "You qualify for a discount!" and on a new line, print "Apply code: " +` couponCode`.
 
 3. Write code that shows that a global variable can be set inside a local scope (in this case inside { } of an if statement)
-
+   
    - Declare and initialize variables: `let finalMessage = "";` and `let condition = true;` before any `if` statements.
-
+   
    - Write an `if(condition === true)...else` statement. In the `if` block, assign the value "Success!" to `finalMessage`. In the `else` block, assign the value "Failure!" to `finalMessage`.
-
+   
    - After the entire `if...else` statement, print the `finalMessage` variable to the console. This works because the variable was declared in the outer (global) scope.
 
 4. Write code that demonstrates how variable declared inside {} are local to that block of code. 
-
+   
    - Declare a variable `let userType = "admin";`.
-
+   
    - Write an `if...else` statement that checks if `userType` is equal to `"admin"`.
+   
    - Inside the `if` block, declare and initialize a variable `let message = "Welcome, Admin!"` and print it to the console.
+   
    - Inside the `else` block, declare and initialize a *different* variable, also named `let message = "Welcome, User!"`, and print it to the console.
+   
    - Notice how this works without error. The `message` in the `if` block is a completely separate variable from the `message` in the `else` block because each is scoped only to its own `{}`.
 
 ------
-
-
 
 ### 8. Boolean (Logical) Operators
 
@@ -373,8 +374,6 @@ console.log(!b);     // Prints true
 
 ------
 
-
-
 ### 9. Logical Operators in `if` Statements
 
 **Concept:** Logical operators allow you to combine multiple conditions into a single expression that evaluates to `true` or `false`.
@@ -410,8 +409,6 @@ if (!(name == "Han Solo")) {
 
 ------
 
-
-
 ### 10. Nested `if` Statements
 
 **Concept:** A nested `if` statement is an `if` statement that is placed inside the code block of another `if` or `else` statement. This is useful when you need to check a second condition only after a first condition has been proven true. An `if` statement nested inside another `if` is logically equivalent to using the `&&` (AND) operator.
@@ -443,14 +440,12 @@ if (degrees < 60) {
    - Use `prompt()` again to ask, "What is your age?". Convert the answer to a number and store it in `age`.
    - Write a nested `if` statement. The outer `if` should check if `isMember` is `"yes"`.
    - The inner `if` should check if `age` is over 65. If both are true, print `"You qualify for the senior member discount."`.
-4. - Declare `let purchaseTotal = 150;`.
+3. - Declare `let purchaseTotal = 150;`.
    - Declare `let shippingCountry = "USA";`.
    - Write a nested `if` statement. The outer `if` should check if `purchaseTotal` is greater than 100.
    - The inner `if` should check if `shippingCountry` is `"USA"`. If both are true, print `"You qualify for free domestic shipping!"`.
 
 ------
-
-
 
 ### 11. The `switch` Statement
 
@@ -499,8 +494,6 @@ console.log(response);
    - The `default` case should print `"Please subscribe"`.
 
 ---
-
-
 
 ### 12. `switch` Statement Advanced Features
 
@@ -561,7 +554,5 @@ console.log("Response: " + response + " Score: " + score);
      - set `operationStatus` to "stopped".
    - Add a`default` case that sets `operationStatus` to "Unknown command".
    - After the end of the switch statement  print "Status is now: " followed by the status.
-
-
 
 These lab instructions were written by Brian Bird based on drafts by Gemini 2.5 Pro, 11/3/2025.

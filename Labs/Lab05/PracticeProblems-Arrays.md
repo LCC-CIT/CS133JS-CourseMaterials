@@ -29,7 +29,7 @@ You can also use the solutions to these problems as examples to help you underst
 
 For these problems, solve them using loops, not by using any of the built-in array methods like `indexOf(...)`,  `splice(..)`, etc.
 
-1. Write a program that initializes an array with integer values, then  finds the index of the first occurrence of a specified value in the  array and prints it.
+1. Write a program that initializes an array with integer values, then  finds the index of the first occurrence of a specified value in the array and prints it.
 2. Write a program that takes an array of numbers as input and returns the sum of all the numbers.
 3. Write a program that takes an array of strings as input and returns the length of the longest string in the array.
 10. Write a program that takes an array of strings as input and returns a new array that contains the same strings, but in reverse order.
@@ -51,7 +51,7 @@ For these problems, solve them using built-in array methods like `indexOf(...)`,
 ### 2D (Nested) Arrays
 
 1. Write a program that initializes a 2D array of integers and prints the sum of all the elements to the console.
-1. Write a program that initializes a 2D array with  integers and prints the largest element to the console.
+1. Write a program that initializes a 2D array with integers and prints the largest element to the console.
 1. Write a program that initializes a 2D array with strings and prints the longest string to the console.
 1. Write a program that initializes a 2D array with integers, fills a new array with the sum of each column, and prints that array to the console.
 
@@ -116,7 +116,7 @@ These are solutions to the problems above. Note that for each problem, there may
    }
    console.log ("The sum of the numbers in the array is: " + sum);
   ```
-  
+
 3. ```JavaScript
   const fruits = ["apple", "bannanna", "lemon", "orange", "pear", "persimmon"]; 
    let longestName = ""; // start with no name.
@@ -144,7 +144,7 @@ These are solutions to the problems above. Note that for each problem, there may
      console.log(fruit);
    }
   ```
-  
+
    
 
 ### Using Array Methods
@@ -186,10 +186,10 @@ These are solutions to the problems above. Note that for each problem, there may
    // log the resulting array to the console
    console.log(fruits);
   ```
-  
+
 4. ```javascript
   let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-   
+      
    // loop through the array and remove all odd numbers
    for (let i = 0; i < numbers.length; i++) {
      if (numbers[i] % 2 !== 0) {
@@ -223,7 +223,7 @@ These are solutions to the problems above. Note that for each problem, there may
    
    console.log("Sum of all elements in the array: " + sum);
   ```
-  
+
 2. ```JavaScript
    let arr = [
      [1, 2, 3],

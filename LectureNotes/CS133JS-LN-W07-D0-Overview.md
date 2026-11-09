@@ -24,6 +24,17 @@ author: Brian Bird
 
 [TOC]
 
+## Learning Objectives
+
+This week you will learn to create and use objects.
+
+- What an object is, and how its properties and methods work.
+- How to create objects using object literals and object constructors.
+- How to access, add, change, and remove an object's properties and methods, including how to use the `this` keyword.
+- How to loop through an object's properties using `for...in`, and by using `Object.keys()` or `Object.values()` with other loops.
+- How to build complex objects: objects inside objects, and arrays of objects.
+- How to encapsulate an object's data using getters and setters.
+
 ## Announcements for Fall 2025
 
 - **The CIT Lab is hiring workers**

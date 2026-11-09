@@ -24,6 +24,19 @@ author: Brian Bird
 
 [TOC]
 
+## Learning Objectives
+
+This week you will learn to use arrays.
+
+- What an array is.
+- How to store and retrieve values in arrays.
+- How to work with arrays in loops.
+- How to create and work with nested arrays.
+- How to use special array methods to:
+  - Add and remove elements at the end of an array.
+  - Add and remove elements at the beginning of an array.
+  - Remove or modify elements in an array.
+
 ## Announcements for Fall 2025
 
 - **The CIT Lab is hiring workers**

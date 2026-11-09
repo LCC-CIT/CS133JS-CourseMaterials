@@ -12,20 +12,31 @@ author: Brian Bird
 <h1>Week 8 Overview and Announcements</h1>
 
 
-| Topics by Week                           |                                      |
-| ---------------------------------------- | ------------------------------------ |
-| 1. Intro to JavaScript programming       | 6. Arrays                            |
-| 2. Functions, Operators and Expressions  | 7.  Objects and Object Constructors  |
-| 3. Conditional Statements: if and switch | 8. Web Page I/O                      |
-| 4. Repetition: while, do while, and for  | 9.  <mark>Regular Expressions</mark> |
-| 5. Midterm Check-Point                   | 10. Term Project and Review          |
-|                                          | 11. Final                            |
+| Topics by Week                           |                                     |
+| ---------------------------------------- | ----------------------------------- |
+| 1. Intro to JavaScript programming       | 6. Arrays                           |
+| 2. Functions, Operators and Expressions  | 7.  Objects and Object Constructors |
+| 3. Conditional Statements: if and switch | 8. <mark>Web Page I/O</mark>        |
+| 4. Repetition: while, do while, and for  | 9.  Regular Expressions             |
+| 5. Midterm Check-Point                   | 10. Term Project and Review         |
+|                                          | 11. Final                           |
 
 
 
 <h2>Table of Contents</h2>
 
 [TOC]
+
+## Learning Objectives
+
+This week you will learn to use JavaScript to interact with a web page.
+
+- What the DOM (Document Object Model) is.
+- How to reference HTML elements by `id`, by CSS selector, and as collections (`querySelectorAll`, `getElementsByClassName`, etc.).
+- How to read and write page content using `value`, `textContent`, and `innerHTML`.
+- How to read and change HTML element attributes, including `class` and `style`.
+- How to write event handlers that respond to user actions such as button clicks, including event handlers with parameters.
+- How to add event handlers to elements using JavaScript, and how to run code after the page loads.
 
 ## Announcements for Fall 2025
 

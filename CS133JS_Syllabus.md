@@ -14,50 +14,23 @@
 
 ## Course Description
 
-This course provides students who have working knowledge of HTML with the concepts and skills required to create dynamic, interactive web pages using client side JavaScript. Through lectures, demonstrations and independent hands-on activities students will learn fundamental programming concepts and will learn about variables, operators, functions, control structures, arrays, pre-defined objects, and event handling in JavaScript. 
+This course provides students who have working knowledge of HTML with the concepts and skills required to create dynamic, interactive web pages using client side JavaScript. Through lectures, demonstrations, and hands-on lab assignments, students will learn fundamental programming concepts and how to plan algorithms, then write, test, and debug JavaScript programs that use variables, operators, functions, control structures, arrays, objects, and regular expressions. Students will also learn to use the DOM and event handling to make web pages interactive, organize code into multiple source files, and evaluate their own and their peers' code through code reviews.
 
  
 
-## Learning Outcome
+## Learning Outcomes
 
-The intention of the course is to enable you to create and maintain interactive web pages containing JavaScript that might be part of any web site using modern technologies and tools.
+Upon successful completion of this course, the student will be able to:
 
- 
-
-## Course Content
-
-| Main Concepts         |                                 |                                         |
-| --------------------- | ------------------------------- | --------------------------------------- |
-| Programming languages | Compilation and  interpretation | Dynamic and strong typing               |
-| Variables and scope   | Operators and expressions       | Functions: parameters and return values |
-| Control structures    | Event handling                  | Pre-defined objects                     |
-
-
-
-| Cross-Cutting Concepts      |                              |                                  |
-| --------------------------- | ---------------------------- | -------------------------------- |
-| Internet technologies       | Dynamic and static web sites | Client-side and server-side code |
-| Syntax, semantics and style | Communication                | Giving and receiving feedback    |
-
- 
-
-| Tools and Technologies   |             |                         |
-| ------------------------ | ----------- | ----------------------- |
-| JavaScript / ECMA Script | Debugger    | Web browser DOM         |
-| FTP client               | Code editor | Browser developer tools |
-
- 
-
-| Skills                                                       |
-| ------------------------------------------------------------ |
-| Explain the relationship between presentation layer,  client-side programming and server-side programming and JavaScript in modern web sites. |
-| Effectively use: variables,  operators, functions, control structures, arrays, document object model, math  object, date object, string object, regular expressions and event handlers. |
-| Design, implement and test algorithms and client side JavaScripts to: write to a web page, display  random images or ads on a web page, automatically update the display on a web  page at regular time intervals, create a dynamic monthly calendar on a web  page, create an interactive puzzle on a web page. |
-| Discuss concepts, themes  and issues orally and in writing.  |
-| Evaluate your own web site implementation work. Evaluate the web site implementation work of other students and provide constructive feedback orally and in writing. |
-| Respond appropriately to and assimilate feedback provided by other students and your instructor. |
-
- 
+1. Explain the role of client-side JavaScript in dynamic web pages, and explain introductory programming concepts such as data types, scope, control flow, functions, and how variable values change as a program runs.
+2. Develop algorithms using the three control structures: sequence, selection, and repetition. Outline them in plain language before writing code.
+3. Implement JavaScript programs that use variables, operators, expressions, conditional statements, loops, and functions with parameters and return values.
+4. Store and process data using arrays (including nested arrays), objects, and strings. Use regular expressions to search and validate strings.
+5. Build interactive web pages that use the DOM to read user input, display output, change page content and styling, and respond to events.
+6. Organize programs into multiple JavaScript source files and load them from an HTML page to run as a single application.
+7. Test and debug programs using planned test cases, console output, and the browser's developer tools, including breakpoints, stepping through code, and inspecting variables.
+8. Publish web applications to a web server using an FTP client or other tool.
+9. Evaluate code, both their own and their peers', for correctness, readability, and style. 
 
 ## Learning Resources
 

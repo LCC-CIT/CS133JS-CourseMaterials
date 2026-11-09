@@ -14,7 +14,7 @@
 
 ## Course Description
 
-This course provides students who have working knowledge of HTML with the concepts and skills required to create dynamic, interactive web pages using client side JavaScript. Through lectures, demonstrations, and hands-on lab assignments, students will learn fundamental programming concepts and how to plan algorithms, then write, test, and debug JavaScript programs that use variables, operators, functions, control structures, arrays, objects, and regular expressions. Students will also learn to use the DOM and event handling to make web pages interactive, organize code into multiple source files, and evaluate their own and their peers' code through code reviews.
+This course introduces students to the JavaScript programming language and fundamental programming concepts such as algorithm design, variables, operators, functions, control structures, arrays, objects, strings, regular expressions, and event handling. Students also learn how to create interactive web pages using JavaScript and the DOM, and how to test and debug their programs. They publish their web applications to a web server and evaluate code through peer code reviews.
 
  
 
@@ -36,7 +36,7 @@ Upon successful completion of this course, the student will be able to:
 
 ### Textbook                                                      
 
- *Eloquent JavaScript: A Modern Introduction to Programming*, 4rd Edition, by Marijn Haverbeke. No Starch Press. 2024. Available [free online](https://eloquentjavascript.net) to read or download; or a print copy can be purchsed.
+ *Eloquent JavaScript: A Modern Introduction to Programming*, 4th Edition, by Marijn Haverbeke. No Starch Press. 2024. Available [free online](https://eloquentjavascript.net) to read or download, or a print copy can be purchased.
 
  
 
@@ -144,7 +144,7 @@ Students will work in groups of two or three, to review the *beta* versions of e
 
 ### Academic Honesty
 
-While students are encouraged to discuss labs and to use each other as resources, each student is responsible for his/her own work. In other words you can help each other, but you can’t copy any part of someone else’s work. The end product must be each student’s own individual work.
+While students are encouraged to discuss labs and to use each other as resources, each student is responsible for their own work. In other words you can help each other, but you can’t copy any part of someone else’s work. The end product must be each student’s own individual work.
 
 ### Participation and Attendance
 
